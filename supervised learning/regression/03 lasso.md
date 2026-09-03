@@ -14,7 +14,7 @@ aliases:
 > [!abstract] In one sentence
 > Same line, different tax: **pay for the size of each knob, not the square.** Small knobs get **snapped to zero**. Some *x* leave the room.
 
-![[private/data science/assets/la-00-hero.svg]]
+![[assets/la-00-hero.svg]]
 
 Read [[01 linear regression]] then [[02 ridge regression]]. This is the sibling ridge almost introduced: the one that **fires people**.
 
@@ -57,7 +57,7 @@ Lasso adds:
 
 Absolute value. The *size*, not the square.
 
-![[private/data science/assets/la-02-tax.svg]]
+![[assets/la-02-tax.svg]]
 
 The ridge tax is a **smooth U**. Near zero it is almost flat. There is never a special reason to sit *exactly* at 0. So knobs shrink and linger.
 
@@ -71,7 +71,7 @@ Same λ idea: louder tax → more death.
 
 Two knobs on the page. Ridge’s fence was a **circle** around zero. Lasso’s fence is a **diamond**.
 
-![[private/data science/assets/la-03-diamond.svg]]
+![[assets/la-03-diamond.svg]]
 
 The ordinary “best” still lives somewhere out in the residual rings.
 
@@ -88,7 +88,7 @@ That is the whole trick, as a picture. Corners create zeros.
 
 After lasso, the roster looks different.
 
-![[private/data science/assets/la-04-leave.svg]]
+![[assets/la-04-leave.svg]]
 
 Hours: stays.
 Sleep: stays.
@@ -110,7 +110,7 @@ Start with λ = 0. Ordinary line. Everyone in, drama allowed.
 
 Turn λ up. Watch the knobs.
 
-![[private/data science/assets/la-05-path.svg]]
+![[assets/la-05-path.svg]]
 
 Noise dies first. Then maybe coffee. Hours hangs on the longest.
 
@@ -128,7 +128,7 @@ Ridge: they share the job. Two modest knobs.
 
 Lasso: often **keeps one and fires the other.**
 
-![[private/data science/assets/la-06-twins.svg]]
+![[assets/la-06-twins.svg]]
 
 The leftover after “hours” is already explained. Minutes has nothing new to say. The diamond is happy to park minutes at a corner.
 
@@ -141,7 +141,7 @@ It is a shaky **fairness** tool when *x* are copies of each other. The one that 
 
 Another way to feel it. Compare ordinary *b* to lasso *b*.
 
-![[private/data science/assets/la-07-threshold.svg]]
+![[assets/la-07-threshold.svg]]
 
 Small ordinary knobs fall in a **dead zone** and get snapped to 0.
 Big ones survive, a bit shrunken.
@@ -171,7 +171,7 @@ Skip this and you are selecting on units, not on meaning.
 
 ## Page 9 — When to use it
 
-![[private/data science/assets/la-08-when.svg]]
+![[assets/la-08-when.svg]]
 
 **Lasso** — you want a short list. Many *x*, most probably junk. You would like a sentence, not a committee.
 

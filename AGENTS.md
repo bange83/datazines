@@ -14,14 +14,14 @@ aliases:
 > [!abstract] In one sentence
 > Today we built a **regression shelf** in paper-and-ink English. Everything after this — classification, forests, boosting, distributions — uses the **same notebook**, not a new personality.
 
-![[private/data science/assets/sb-00-hero.svg]]
+![[assets/sb-00-hero.svg]]
 
 This file is two things at once:
 
 1. A **receipt** for what landed (which notes, which prefixes).
 2. The **house rules** for the next agent (or you, on a later night) who adds a topic.
 
-**What to write next** (encyclopedia map, path to LLMs as one summit): [[private/data science/PATH.md]].
+**What to write next** (encyclopedia map, path to LLMs as one summit): [[PATH.md]].
 
 Read this file for *how*. Read PATH for *which shelf*. Then copy the shape, not the metaphors.
 
@@ -31,7 +31,7 @@ Flip it like a notebook. One page = one idea. Done.
 
 ## Page 1 — What landed today
 
-Folder: `private/data science/`
+Vault root. Notes live under `supervised learning/`, `optimization/`, `probability/`.
 
 **Notes** live under `regression/`, numbered so the file list *is* the reading order:
 
@@ -68,7 +68,7 @@ Folder: `private/data science/`
 | 01 | [[01 gradient descent]] | walk the bowl; rate = stride |
 | 01 | [[01 distributions]] | bell, coin, counts — leftover costumes |
 
-**Drawings** live in `private/data science/assets/`, prefixes so they do not collide:
+**Drawings** live in `assets/`, prefixes so they do not collide:
 
 | prefix | series |
 |---|---|
@@ -92,16 +92,16 @@ Folder: `private/data science/`
 Hero of each note is `*-00-hero.svg`. Embed with vault paths:
 
 ```
-![[private/data science/assets/lr-00-hero.svg]]
+![[assets/lr-00-hero.svg]]
 ```
 
-Empty slots on the lower shelf are not decoration. The **walk** is [[private/data science/PATH.md]]. Descent, distributions, softmax are written. **Next brick: a tiny neural net.** Not SVM, not attention yet.
+Empty slots on the lower shelf are not decoration. The **walk** is [[PATH.md]]. Descent, distributions, softmax are written. **Next brick: a tiny neural net.** Not SVM, not attention yet.
 
 ---
 
 ## Page 2 — Anatomy of a note
 
-![[private/data science/assets/sb-01-anatomy.svg]]
+![[assets/sb-01-anatomy.svg]]
 
 Every sketchbook, in this order:
 
@@ -123,7 +123,7 @@ Length: roughly 8–16 pages. Dense, not encyclopedic. If you need a second topi
 
 ## Page 3 — Pictures
 
-![[private/data science/assets/sb-02-palette.svg]]
+![[assets/sb-02-palette.svg]]
 
 **Medium:** hand-drawn SVG. Paper fill `#f4efe4`, grain filter, wobble on the strokes. Rounded-rect page. Ink blobs for points, not perfect circles.
 
@@ -151,7 +151,7 @@ Length: roughly 8–16 pages. Dense, not encyclopedic. If you need a second topi
 
 ## Page 4 — Voice
 
-![[private/data science/assets/sb-03-voice.svg]]
+![[assets/sb-03-voice.svg]]
 
 **Language: English.** The series started in German and moved. Stay put.
 
@@ -176,7 +176,7 @@ Sit between lecture and baby talk:
 
 ## Page 5 — Do / don’t
 
-![[private/data science/assets/sb-04-do.svg]]
+![[assets/sb-04-do.svg]]
 
 **Do**
 
@@ -244,14 +244,14 @@ If the method has no sklearn estimator worth using, a tiny numpy loop is fine. F
 
 Classification, ensembles, distributions — same ritual:
 
-1. Make a folder under `private/data science/`, named for the family (`classification/`, `ensembles/`, `distributions/`).
+1. Make a folder at vault root (or under `supervised learning/` if it *is* supervised), named for the family (`classification/`, `ensembles/`, `probability/`).
 2. Number the notes. 01 is the ordinary idea. Sequels are the seatbelts, the haircuts, the cameras.
 3. Pick **one story** for the whole family and write it on page 1 of 01. Do not switch stories in 03.
-4. Draw SVGs into `private/data science/assets/` with a new two-letter prefix (`cl-`, `rf-`, `xb-`, `ds-`, …). Do not reuse `lr-`.
+4. Draw SVGs into `assets/` with a new two-letter prefix (`cl-`, `rf-`, `xb-`, `ds-`, …). Do not reuse `lr-`.
 5. Open with hero + one sentence. Close with: mini recipe → **sklearn mini (story + numbers match)** → cheat sheet **with Use / skip** → sequel pointer.
 6. Come back here and put the new spines on the shelf (a line in the table on page 1 is enough). Do not rewrite the house rules unless the rules were wrong.
 
-**Next spine:** [[private/data science/PATH.md]] — `neural nets/01 neural net`. SVM / attention are later.
+**Next spine:** [[PATH.md]] — `neural nets/01 neural net`. SVM / attention are later.
 
 If a topic does not fit the notebook voice, it does not belong in this series yet.
 
@@ -259,7 +259,7 @@ If a topic does not fit the notebook voice, it does not belong in this series ye
 
 ## Page 8 — Mini recipe for the next agent
 
-1. Read this file for *how*. Read [[private/data science/PATH.md]] for *which room*. Then read **01 of the family you are extending**, not a random blog.
+1. Read this file for *how*. Read [[PATH.md]] for *which room*. Then read **01 of the family you are extending**, not a random blog.
 2. Name the idea in one sentence. If you fail, stop.
 3. List 8–12 page titles. Each must be *one* idea.
 4. Draw the pictures first, or at least know what each picture claims.
@@ -278,8 +278,8 @@ If you keep only one thing:
 
 | thing | rule |
 |---|---|
-| place | `private/data science/<family>/0N name.md` |
-| pictures | `private/data science/assets/<prefix>-….svg` |
+| place | `<family>/0N name.md` (supervised families under `supervised learning/`) |
+| pictures | `assets/<prefix>-….svg` |
 | language | English |
 | voice | smart 18, not lecture, not cutesy |
 | page | one idea, picture, then names |

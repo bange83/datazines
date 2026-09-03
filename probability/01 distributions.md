@@ -14,7 +14,7 @@ aliases:
 > [!abstract] In one sentence
 > A distribution is the **shape leftovers are allowed to wear**: a bell, a coin, a pile of counts. Dots are people; the curve is the rule that spat them out.
 
-![[private/data science/assets/ds-00-hero.svg]]
+![[assets/ds-00-hero.svg]]
 
 Read [[01 linear regression]] and [[06 GLM]]. GLM already picked glasses for *y*. This notebook names the **shapes** those glasses assumed — without a 40-curve catalog.
 
@@ -34,7 +34,7 @@ Mean **exactly 0** (OLS). Spread about 0.46. They look like a small **bell** aro
 
 A **distribution** says: *if I drew another leftover, where would it like to land?* The curve is the rule. The eight numbers are **one sample** from that rule.
 
-![[private/data science/assets/ds-03-sample.svg]]
+![[assets/ds-03-sample.svg]]
 
 You never see the curve in the wild. You see dots. You guess the costume.
 
@@ -55,7 +55,7 @@ The costume has two usual knobs:
 - **center** — where it sits (mean, or P(yes), or mean count)
 - **spread** — how fat (for the bell: standard deviation)
 
-![[private/data science/assets/ds-02-spread.svg]]
+![[assets/ds-02-spread.svg]]
 
 Same middle, different spread: tight grades vs wild grades. The line’s *b* does not know this. Tests later *do*.
 

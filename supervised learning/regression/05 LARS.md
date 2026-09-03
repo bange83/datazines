@@ -15,7 +15,7 @@ aliases:
 > [!abstract] In one sentence
 > Not a new tax. A **walk**: start with nobody in the model, inch toward the leftover, let a new *x* join when it **ties**.
 
-![[private/data science/assets/ls-00-hero.svg]]
+![[assets/ls-00-hero.svg]]
 
 Read [[01 linear regression]] and [[03 lasso]] first. LARS is how you *travel* across models. Lasso is one of the destinations.
 
@@ -46,7 +46,7 @@ Whatever line you have right now, each person still has a leftover:
 
 > leftover = real grade − current guess
 
-![[private/data science/assets/ls-02-residual.svg]]
+![[assets/ls-02-residual.svg]]
 
 That leftover is a direction. “The part we still get wrong.”
 
@@ -61,7 +61,7 @@ LARS always moves **with** the leftover. The next step should shrink those verti
 
 Two *x* on the page: hours and sleep. The leftover is a third arrow.
 
-![[private/data science/assets/ls-03-angle.svg]]
+![[assets/ls-03-angle.svg]]
 
 If hours is closer to the leftover, take a step with hours.
 If sleep catches up — **same angle** to the leftover — don’t pick a favorite. Walk **between** them.
@@ -82,7 +82,7 @@ Old-school “stepwise”:
 
 Jumps. Corners. Easy to overcommit.
 
-![[private/data science/assets/ls-04-steps.svg]]
+![[assets/ls-04-steps.svg]]
 
 LARS:
 
@@ -99,7 +99,7 @@ Same “who is useful” instinct. Different gait. A walk, not a staircase.
 
 As you walk, knobs grow. New ones enter at kinks.
 
-![[private/data science/assets/ls-05-path.svg]]
+![[assets/ls-05-path.svg]]
 
 Hours enters first (closest to the leftover).
 Sleep joins later, when it ties.
@@ -123,7 +123,7 @@ If you take the LARS walk, and you add one extra rule —
 
 — you trace the **lasso path**.
 
-![[private/data science/assets/ls-06-lasso.svg]]
+![[assets/ls-06-lasso.svg]]
 
 LARS: knobs come in. They tend to stay.
 Lasso-via-LARS: a knob can come in, look useful, then get **kicked back out** if it stops helping.
@@ -138,7 +138,7 @@ You do not need the algebra. You need: **lasso has a film, and LARS is the camer
 
 Who joins first is already a story, if you stay humble.
 
-![[private/data science/assets/ls-07-order.svg]]
+![[assets/ls-07-order.svg]]
 
 1. Hours — currently the best match to the leftover.
 2. Sleep — ties later, then shares the walk.

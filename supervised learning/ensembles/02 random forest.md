@@ -14,7 +14,7 @@ aliases:
 > [!abstract] In one sentence
 > **Many trees, grown on purpose disagreeing, then a vote.** One tree memorizes. The vote is the tax.
 
-![[private/data science/assets/rf-00-hero.svg]]
+![[assets/rf-00-hero.svg]]
 
 Read [[01 decision tree]] first. Same pass/fail exam. Same hours, sleep, tutor. One deep tree hit train **1.0** and test **0.71**. This notebook is what you do with that gap.
 
@@ -38,11 +38,11 @@ Wrong on purpose. Average out the drama.
 
 **Bagging.** Each tree does not see the same 56 people. It gets a **redraw with replacement**: some students twice, some never. That bag is its whole world.
 
-![[private/data science/assets/rf-02-bag.svg]]
+![[assets/rf-02-bag.svg]]
 
 **Random levers at each cut.** Even in one bag, the tree is not allowed to always pick hours. At every split it is handed a **shortlist** (often √p of the features). Sleep might win this cut only because hours was muted.
 
-![[private/data science/assets/rf-03-mtry.svg]]
+![[assets/rf-03-mtry.svg]]
 
 Together: different people, different allowed questions. Trees start with different first cuts. On our data, tree 0 opened with **sleep**; tree 1 opened with **hours**. Same exam. Different bags.
 
@@ -54,7 +54,7 @@ If they all opened with hours, the vote would be one stump in a choir. The rando
 
 A new student walks in. Each tree casts fail or pass. Majority wins. (Or average the P(pass) from the leaves.)
 
-![[private/data science/assets/rf-04-vote.svg]]
+![[assets/rf-04-vote.svg]]
 
 You cannot read 100 flowcharts aloud. You **traded a sentence for a stabler call**. That is the cost, same family as ridge: less drama, less story.
 

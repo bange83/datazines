@@ -15,9 +15,9 @@ aliases:
 > [!abstract] In one sentence
 > This series is a **data-science encyclopedia** in sketchbooks. LLMs are **one room in the nets wing**, not the building. Walk wings in order so later rooms don’t go hollow.
 
-![[private/data science/assets/pa-00-hero.svg]]
+![[assets/pa-00-hero.svg]]
 
-House style lives in [[private/data science/AGENTS.md]]. This file is only **what to write next**, and how the shelves fit together.
+House style lives in [[AGENTS.md]]. This file is only **what to write next**, and how the shelves fit together.
 
 Flip it like a notebook. One page = one idea. Done.
 
@@ -31,13 +31,13 @@ Flip it like a notebook. One page = one idea. Done.
 
 A is the building. B is a marked staircase through it. Do not skip A to finish B. Do not pretend B is the only staircase.
 
-Same pencils as always. Same “one idea per page.” New family = new folder under `private/data science/` (or under `supervised learning/` only if it *is* supervised).
+Same pencils as always. Same “one idea per page.” New family = new folder at vault root (or under `supervised learning/` only if it *is* supervised).
 
 ---
 
 ## Page 2 — The first wing is already standing
 
-![[private/data science/assets/pa-02-done.svg]]
+![[assets/pa-02-done.svg]]
 
 **Supervised learning** (done enough — do not fatten it):
 
@@ -77,7 +77,7 @@ Optional side doors, when a project knocks: SVM / margins, clustering extras, re
 
 ## Page 4 — Those three rooms exist. Next is a tiny net.
 
-![[private/data science/assets/pa-03-next.svg]]
+![[assets/pa-03-next.svg]]
 
 **Written:** [[01 gradient descent]] · [[01 distributions]] · [[03 softmax]]
 
@@ -131,7 +131,7 @@ Do not start a wing from the summit. Causal impact without confounding is a demo
 1. Open **this file**. Next room is page 4 until those three exist. Then the next empty 01 in the table on page 3.
 2. One sketchbook per session if it is 01 of a wing. Sequels can be shorter.
 3. Same story when the wing allows it (exam / grades) until the idea *needs* a new story (tokens, time).
-4. Update the shelf table in [[private/data science/AGENTS.md]] when a note lands. Update **page 2 of this file** when a wing’s 01 exists.
+4. Update the shelf table in [[AGENTS.md]] when a note lands. Update **page 2 of this file** when a wing’s 01 exists.
 5. If a topic is shiny (SVM, GAN, agents): ask “which wing, which 01 does it need?” If the 01 is missing, write that first.
 
 If you keep only one thing:
@@ -151,7 +151,7 @@ If you keep only one thing:
 | then | embeddings → attention → one LLM sketchbook |
 | parallel | inference / t-test (chance wing) |
 | don’t | SVM / XGB encyclopedia / attention as the next file |
-| style | [[private/data science/AGENTS.md]] |
+| style | [[AGENTS.md]] |
 
 ### Use / skip
 

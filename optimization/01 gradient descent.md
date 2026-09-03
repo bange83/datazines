@@ -13,7 +13,7 @@ aliases:
 > [!abstract] In one sentence
 > OLS **solved** the bowl. Descent **walks** it: look which way is downhill, take a step, repeat. Step size = learning rate.
 
-![[private/data science/assets/gd-00-hero.svg]]
+![[assets/gd-00-hero.svg]]
 
 Read [[01 linear regression]] first, especially the bowl on page 14. Same eight people. Same line ŷ = a + b · hours. Different verb: **walk** to a and b instead of jumping to the bottom.
 
@@ -40,7 +40,7 @@ The slope is the **gradient**. Descent = go against it (down).
 
 ## Page 2 — Gradient is just slope
 
-![[private/data science/assets/gd-03-slope.svg]]
+![[assets/gd-03-slope.svg]]
 
 On a 1-D hill: steep → big step. Flat (near the bottom) → tiny step. You do not jump to the answer. You slide.
 
@@ -54,7 +54,7 @@ You have met this knob in boosting. Here it is the **step size**.
 
 new knob ≈ old knob − (learning rate) × slope
 
-![[private/data science/assets/gd-02-step.svg]]
+![[assets/gd-02-step.svg]]
 
 | too loud | just right | too shy |
 |---|---|---|

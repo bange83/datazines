@@ -15,7 +15,7 @@ aliases:
 > [!abstract] In one sentence
 > Trees in a **line**, not a choir: each new tree is trained on the **leftover mistakes**. Add them quietly (learning rate). That is boosting.
 
-![[private/data science/assets/gb-00-hero.svg]]
+![[assets/gb-00-hero.svg]]
 
 Read [[01 decision tree]] and [[02 random forest]] first. Same exam. Forest: many trees **in parallel**, then a vote. Boosting: many trees **in sequence**, each fixing what the last still got wrong.
 
@@ -31,7 +31,7 @@ Forest: disagreement by bagging and muted levers. Vote.
 
 Boosting: **no vote at the start.** Tree 1 fits *y* (pass/fail, or a score). Look at who is still wrong — the leftover. Tree 2 fits **that leftover**. Tree 3 fits the leftover of 1+2. Add them up.
 
-![[private/data science/assets/gb-02-vs.svg]]
+![[assets/gb-02-vs.svg]]
 
 | | forest | boosting |
 |---|---|---|
@@ -58,7 +58,7 @@ Then **shrink** that tree before adding it. If you add it at full volume, tree 2
 
 ## Page 3 — Learning rate is the volume knob
 
-![[private/data science/assets/gb-03-rate.svg]]
+![[assets/gb-03-rate.svg]]
 
 **Learning rate** (*ν*, sklearn `learning_rate`): how much of each new tree you actually add.
 
