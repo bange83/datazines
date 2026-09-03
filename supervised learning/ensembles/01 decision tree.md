@@ -14,7 +14,7 @@ aliases:
 > [!abstract] In one sentence
 > **Ask a yes/no about one *x*. Split. Repeat.** The first question is whichever cut **drops the mix** the most (entropy / Gini). Each leaf is a vote.
 
-![[assets/dt-00-hero.svg]]
+![dt-00-hero](../../assets/dt-00-hero.svg)
 
 Read [[01 logistic regression]] first. Same pass/fail exam. Logistic drew an S. LDA drew two ovals. A tree draws **rectangles** with questions on the doors.
 
@@ -46,7 +46,7 @@ The rest of this notebook is *why hours went first.*
 
 The computer does not draw a diagonal LDA line. It picks **one lever** and a **cut**: hours = 3.4. Everyone left of the cut goes to one room. Everyone right, the other.
 
-![[assets/dt-02-cuts.svg]]
+![dt-02-cuts](../../assets/dt-02-cuts.svg)
 
 Then, in a room, it may cut **another** axis: sleep = 6.2. The map becomes rectangles. Never a tilt — unless you invent a tilted *x* yourself.
 
@@ -58,7 +58,7 @@ That looks crude. It is also why trees eat mixes: “hours low **and** sleep hig
 
 People in a rectangle: 5 pass, 3 fail. The leaf says **pass**. If you ask for a probability: 5/8.
 
-![[assets/dt-04-leaf.svg]]
+![dt-04-leaf](../../assets/dt-04-leaf.svg)
 
 No line through the room. No Gaussian. The guess is the majority (or the mean, if *y* were a grade — a regression tree). New student lands in a leaf, inherits that vote.
 
@@ -72,7 +72,7 @@ A room that is still 50/50 is a bad place to stop. That is impurity.
 
 Eight people. Three rooms.
 
-![[assets/dt-06-pure.svg]]
+![dt-06-pure](../../assets/dt-06-pure.svg)
 
 | room | mix | entropy | Gini |
 |---|---|---:|---:|
@@ -88,7 +88,7 @@ $$H = -\,p\log_2 p - (1-p)\log_2(1-p)$$
 
 $$G = 1 - p^2 - (1-p)^2 = 2p(1-p)$$
 
-![[assets/dt-07-scale.svg]]
+![dt-07-scale](../../assets/dt-07-scale.svg)
 
 sklearn’s default is **Gini**. Entropy is the textbook twin. They almost always pick the **same first lever**. They may disagree on the exact threshold. Both are “how mixed.” You do not need a physics course. You need: **0 = pure. 1 (or 0.5 for Gini) = useless mix.**
 
@@ -102,7 +102,7 @@ Parent Gini ≈ **0.45**. Still mixed.
 
 Try every lever, every possible cut. Score = how much the **weighted average Gini of the two new rooms** drops. That drop is **information gain** (entropy) or **Gini gain**. Biggest bite wins. That *x* goes first.
 
-![[assets/dt-08-gain.svg]]
+![dt-08-gain](../../assets/dt-08-gain.svg)
 
 On this exam (seed 7, train split):
 
@@ -127,7 +127,7 @@ Gini and entropy both pick hours. They disagree slightly on the number (3.21 vs 
 
 The tree does **not** rank features globally and then use 2nd place next. It walks into **each room** and repeats the contest **there**.
 
-![[assets/dt-09-second.svg]]
+![dt-09-second](../../assets/dt-09-second.svg)
 
 **Left room** (hours ≤ 3.21): 25 people, only 7 pass. Still mixed (Gini 0.40). New contest:
 
@@ -159,7 +159,7 @@ Order, then:
 
 **Depth “until perfect”** — a room for every oddball. Train accuracy 1.0. The next person is not those oddballs.
 
-![[assets/dt-03-overfit.svg]]
+![dt-03-overfit](../../assets/dt-03-overfit.svg)
 
 On our eighty students:
 

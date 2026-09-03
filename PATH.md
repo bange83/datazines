@@ -15,7 +15,7 @@ aliases:
 > [!abstract] In one sentence
 > This series is a **data-science encyclopedia** in sketchbooks. LLMs are **one room in the nets wing**, not the building. Walk wings in order so later rooms don’t go hollow.
 
-![[assets/pa-00-hero.svg]]
+![pa-00-hero](assets/pa-00-hero.svg)
 
 House style lives in [[AGENTS.md]]. This file is only **what to write next**, and how the shelves fit together.
 
@@ -37,7 +37,7 @@ Same pencils as always. Same “one idea per page.” New family = new folder at
 
 ## Page 2 — The first wing is already standing
 
-![[assets/pa-02-done.svg]]
+![pa-02-done](assets/pa-02-done.svg)
 
 **Supervised learning** (done enough — do not fatten it):
 
@@ -77,7 +77,7 @@ Optional side doors, when a project knocks: SVM / margins, clustering extras, re
 
 ## Page 4 — Those three rooms exist. Next is a tiny net.
 
-![[assets/pa-03-next.svg]]
+![pa-03-next](assets/pa-03-next.svg)
 
 **Written:** [[01 gradient descent]] · [[01 distributions]] · [[03 softmax]]
 

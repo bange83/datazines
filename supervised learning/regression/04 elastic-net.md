@@ -14,7 +14,7 @@ aliases:
 > [!abstract] In one sentence
 > **Lasso’s haircut + ridge’s sharing.** Junk can still die. Twins get to stay in the room together.
 
-![[assets/en-00-hero.svg]]
+![en-00-hero](../../assets/en-00-hero.svg)
 
 Read [[03 lasso]] and [[02 ridge regression]] first. Elastic net is the compromise kid.
 
@@ -50,7 +50,7 @@ Elastic net’s score:
 > **+** a lasso tax on |b|
 > **+** a ridge tax on b²
 
-![[assets/en-02-mix.svg]]
+![en-02-mix](../../assets/en-02-mix.svg)
 
 The V *and* the U. Sharp corner (so zeros can happen) plus a smooth bowl (so twins are not forced into a knife-fight).
 
@@ -65,7 +65,7 @@ Ridge: circle.
 Lasso: diamond.
 Elastic net: a **rounded diamond**. Corners exist, but they are less stabby. Sides bulge toward a circle.
 
-![[assets/en-03-shape.svg]]
+![en-03-shape](../../assets/en-03-shape.svg)
 
 Corners still let a knob hit exactly 0. So selection lives.
 The bulge means the kiss-point can sit on an edge with **two modest knobs**, not just one winner. So grouping lives.
@@ -78,7 +78,7 @@ If you only remember the picture: *diamond enough to fire, circle enough to shar
 
 Hours and minutes. Same fact.
 
-![[assets/en-04-twins.svg]]
+![en-04-twins](../../assets/en-04-twins.svg)
 
 | | hours | minutes | vibe |
 |---|---:|---:|---|
@@ -97,7 +97,7 @@ Do not confuse the two knobs.
 - **λ** — volume. How hard you squeeze.
 - **α** — recipe. How much of the squeeze is lasso vs ridge.
 
-![[assets/en-05-alpha.svg]]
+![en-05-alpha](../../assets/en-05-alpha.svg)
 
 | α | you are basically doing |
 |---|---|
@@ -119,7 +119,7 @@ Lasso often keeps *sleep* and zeros the cousins, even if they all carry a bit of
 
 Elastic net likes to **bring the pack**.
 
-![[assets/en-06-group.svg]]
+![en-06-group](../../assets/en-06-group.svg)
 
 The leftover after one cousin still looks a lot like the other cousins. Ridge-tax says: share. Lasso-tax says: you may still zero *luck* and *coffee*.
 
@@ -129,7 +129,7 @@ That is why people reach for elastic net in “wide” data: lots of *x*, cluste
 
 ## Page 7 — When it shines
 
-![[assets/en-07-when.svg]]
+![en-07-when](../../assets/en-07-when.svg)
 
 Picture:
 

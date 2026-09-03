@@ -45,6 +45,6 @@ PATH.md                which shelf is next
 
 ## Viewing
 
-Clone, then **Open folder as vault** in Obsidian. Wikilinks and `![[assets/….svg]]` embeds resolve there.
+Clone, then **Open folder as vault** in Obsidian. Note-to-note wikilinks (`[[01 linear regression]]`) work there.
 
-On GitHub the markdown still reads; drawings work as ordinary images if you use the paths above.
+Drawings use ordinary markdown images (`![](…svg)`), so they also render on GitHub.

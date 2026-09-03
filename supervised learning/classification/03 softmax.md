@@ -14,7 +14,7 @@ aliases:
 > [!abstract] In one sentence
 > Logistic was P(yes) vs P(no). Softmax is **P(each room)** when there are **three or more exclusive rooms**. Scores in → slices that add to 1. An LLM’s last layer is this over a huge word-list.
 
-![[assets/sm-00-hero.svg]]
+![sm-00-hero](../../assets/sm-00-hero.svg)
 
 Read [[01 logistic regression]] and [[01 distributions]]. Coin with two faces → coin with many faces. Same exam world: now fail / pass / **honors**.
 
@@ -30,7 +30,7 @@ Three rooms cannot share one S. Fail, pass, honors: you need **three scores**, t
 
 That squash is **softmax**. Ugly name. Friendly job: *biggest score gets the biggest slice; everyone shares 1.*
 
-![[assets/sm-02-vs.svg]]
+![sm-02-vs](../../assets/sm-02-vs.svg)
 
 ---
 
@@ -42,7 +42,7 @@ Exponentiate (so nothing is negative), then divide by the total:
 
 P = [0.08, 0.61, 0.30]  —  pass takes the pile.
 
-![[assets/sm-00-hero.svg]]
+![sm-00-hero](../../assets/sm-00-hero.svg)
 
 Each class still has a **linear score** inside (a + b · hours), like logistic. Softmax is only the **sharing**.
 
@@ -54,7 +54,7 @@ Each class still has a **linear score** inside (a + b · hours), like logistic. 
 
 A language model’s last layer is softmax over the **vocabulary**. Rooms = possible next tokens.
 
-![[assets/sm-03-vocab.svg]]
+![sm-03-vocab](../../assets/sm-03-vocab.svg)
 
 Train: the true next word should get a big slice. Loss = **cross-entropy** = surprise if that slice was small. (Tree entropy measured mix in a room. Here surprise is *aimed at the true room*.)
 

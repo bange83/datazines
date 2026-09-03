@@ -14,7 +14,7 @@ aliases:
 > [!abstract] In one sentence
 > Same line as before — but you **tax huge knobs**. The line gets a bit more boring, and a lot more trustworthy on new people.
 
-![[assets/rr-00-hero.svg]]
+![rr-00-hero](../../assets/rr-00-hero.svg)
 
 Read [[01 linear regression]] first. This is the sequel: what to do when that line goes feral.
 
@@ -48,7 +48,7 @@ Same story as last time: hours studied, grade.
 
 Only now the cloud is messier. One person in the corner had a weird day.
 
-![[assets/rr-02-feral.svg]]
+![rr-02-feral](../../assets/rr-02-feral.svg)
 
 Ordinary least squares **must** chase that yank. Big misses cost a lot (they get squared). So the line leans hard, just to shave a little error off one point.
 
@@ -65,7 +65,7 @@ Clever is not the same as true.
 The job is not “look smart on the people you already asked.”
 The job is: **guess well for the next person.**
 
-![[assets/rr-03-newpoints.svg]]
+![rr-03-newpoints](../../assets/rr-03-newpoints.svg)
 
 Left: the line hugs the old cloud. Right: new people arrive. The clever tilt is suddenly just… wrong.
 
@@ -91,7 +91,7 @@ Ordinary regression can do this:
 
 Net effect ≈ 1. A fight. The math found a cancellation, not a story.
 
-![[assets/rr-04-explode.svg]]
+![rr-04-explode](../../assets/rr-04-explode.svg)
 
 Ridge does not let knobs get theatrical. It asks both to **share the job** with small numbers.
 
@@ -105,7 +105,7 @@ Ridge does not invent a new kind of curve. Still a straight line. Still ŷ = a +
 
 It changes **what “best” means**.
 
-![[assets/rr-05-score.svg]]
+![rr-05-score](../../assets/rr-05-score.svg)
 
 **Old score** (ordinary):
 
@@ -128,7 +128,7 @@ The intercept *a* usually does **not** pay the tax. Starting height is allowed. 
 
 λ (lambda) is not magic. It is **how loud the tax is**.
 
-![[assets/rr-06-lambda.svg]]
+![rr-06-lambda](../../assets/rr-06-lambda.svg)
 
 | λ | what happens |
 |---|---|
@@ -144,7 +144,7 @@ There is no holy number. λ is a choice: *how much boring do I want to buy, in e
 
 Ridge’s move is simple to see on the knobs:
 
-![[assets/rr-07-shrink.svg]]
+![rr-07-shrink](../../assets/rr-07-shrink.svg)
 
 Every *b* gets **pulled toward zero**. Not to zero, unless it was already tiny.
 
@@ -160,7 +160,7 @@ Here is the trade, as a dartboard.
 
 Bullseye = the true line, if you could see it.
 
-![[assets/rr-08-biasvar.svg]]
+![rr-08-biasvar](../../assets/rr-08-biasvar.svg)
 
 **Ordinary:** darts average around the center, but they fly everywhere. Ask 8 new people, get 8 different wild lines.
 
@@ -185,7 +185,7 @@ Ordinary “best” is some point far out, where the residual-error rings are sm
 
 Ridge says: **you may only pick a point inside a circle around zero.**
 
-![[assets/rr-09-circle.svg]]
+![rr-09-circle](../../assets/rr-09-circle.svg)
 
 The best allowed point is where an error-ring just kisses the circle.
 
@@ -204,7 +204,7 @@ Minutes studied live around 60–360.
 
 Same fact. Different spelling. The tax treats them differently unless you fix the spelling first.
 
-![[assets/rr-10-scale.svg]]
+![rr-10-scale](../../assets/rr-10-scale.svg)
 
 Recipe, boring and important:
 
@@ -226,7 +226,7 @@ Hide some people. Fit on the rest. Score the hidden ones. Repeat. Average the pa
 
 That ritual is **cross-validation**. Fancy name, simple idea: *grade the line on people it has not seen.*
 
-![[assets/rr-11-cv.svg]]
+![rr-11-cv](../../assets/rr-11-cv.svg)
 
 The curve of “error on new data” is usually a U:
 
@@ -242,7 +242,7 @@ You do not need the formula. You need the habit: **tune on held-out pain, not on
 
 Same family. Different fence.
 
-![[assets/rr-12-lasso.svg]]
+![rr-12-lasso](../../assets/rr-12-lasso.svg)
 
 | | ridge | lasso |
 |---|---|---|

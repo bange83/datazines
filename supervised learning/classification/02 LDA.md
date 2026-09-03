@@ -16,7 +16,7 @@ aliases:
 > [!abstract] In one sentence
 > Draw **two blobs** (fail / pass). A new person is whoever’s blob they sit in. Same blob-shape → a **line** (LDA). Each blob its own shape → a **curve** (QDA).
 
-![[assets/ld-00-hero.svg]]
+![ld-00-hero](../../assets/ld-00-hero.svg)
 
 Read [[01 logistic regression]] first. Same exam. Same hours and sleep. Different religion: logistic never drew the clouds. LDA **starts** with the clouds.
 
@@ -44,7 +44,7 @@ You did not miss this as a foundation. You missed a twin. Logistic can live with
 
 Imagine the scatter: hours vs sleep. Failers clump left. Passers clump right. Each clump has a **center** (the average failer, the average passer).
 
-![[assets/ld-02-blobs.svg]]
+![ld-02-blobs](../../assets/ld-02-blobs.svg)
 
 On our eighty students (seed 7, same world as logistic), the fitted centers are roughly:
 
@@ -61,7 +61,7 @@ Sleep barely moves. Hours does the separating. The picture is already a story: *
 
 Someone walks in: 3 hours, 7 of sleep. Not in the old cloud.
 
-![[assets/ld-03-ask.svg]]
+![ld-03-ask](../../assets/ld-03-ask.svg)
 
 LDA: measure how close they are to each center, **in a fair way** that knows the blob is oval, not a circle (hours and sleep may stretch differently, even lean together). Then pick the nearer blob.
 
@@ -77,7 +77,7 @@ If the two blobs have the **same sausage shape**, the set of points equally clos
 
 **QDA** (quadratic): each class gets its own oval — failers maybe tall and thin, passers wide. Boundary **bends**.
 
-![[assets/ld-04-shared.svg]]
+![ld-04-shared](../../assets/ld-04-shared.svg)
 
 QDA is the first gentle *curve* in this series that is not a kernel and not a tree. It is still “two Gaussians fighting.” Only the fight is allowed to be unfair in shape.
 
@@ -91,7 +91,7 @@ Name cheat:
 
 ## Page 5 — Logistic never drew the blobs
 
-![[assets/ld-05-vs.svg]]
+![ld-05-vs](../../assets/ld-05-vs.svg)
 
 | | logistic | LDA |
 |---|---|---|

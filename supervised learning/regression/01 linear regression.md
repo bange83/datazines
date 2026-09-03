@@ -14,7 +14,7 @@ aliases:
 > [!abstract] In one sentence
 > You have points. You draw **a straight line** through them. After that the line is a **prediction machine**: *x in, ŷ out.*
 
-![[assets/lr-00-hero.svg]]
+![lr-00-hero](../../assets/lr-00-hero.svg)
 
 Flip it like a notebook. One page = one idea. Done.
 
@@ -53,7 +53,7 @@ Not perfect. Good enough.
 
 Each person = **one dot**.
 
-![[assets/lr-02-wolke.svg]]
+![lr-02-wolke](../../assets/lr-02-wolke.svg)
 
 That is a **cloud of points**.
 
@@ -74,7 +74,7 @@ You can already see some things without math:
 
 You put **a straight line** through the cloud.
 
-![[assets/lr-03-linie.svg]]
+![lr-03-linie](../../assets/lr-03-linie.svg)
 
 The line does not say: “This *is* the world.”
 It says: “Roughly, **on average**.”
@@ -100,7 +100,7 @@ Every straight line on paper has **exactly two knobs**:
 - **a** — intercept. Where the line hits the y-axis.
 - **b** — slope. How steep.
 
-![[assets/lr-04-knoepfe.svg]]
+![lr-04-knoepfe](../../assets/lr-04-knoepfe.svg)
 
 ### a — the start
 
@@ -142,7 +142,7 @@ Two points on the line:
 
 $$b = \frac{\Delta y}{\Delta x} = \frac{6.8 - 3.8}{5 - 2} = \frac{3}{3} = 1$$
 
-![[assets/lr-05-steigung.svg]]
+![lr-05-steigung](../../assets/lr-05-steigung.svg)
 
 Slope = **rise over run**.
 School math — except the line does not have to go through *two* points. It has to go through *a whole cloud*.
@@ -153,7 +153,7 @@ School math — except the line does not have to go through *two* points. It has
 
 The line almost never hits the point exactly. The gap **up / down** is the error.
 
-![[assets/lr-06-rest.svg]]
+![lr-06-rest](../../assets/lr-06-rest.svg)
 
 **residual = real − prediction = y − ŷ**
 
@@ -172,7 +172,7 @@ Under **ordinary least squares** (the default line, next page), the mean of all 
 
 You could draw a thousand lines through the cloud. Most of them are bad.
 
-![[assets/lr-07-drei.svg]]
+![lr-07-drei](../../assets/lr-07-drei.svg)
 
 Idea: **make the residuals small.**
 
@@ -194,7 +194,7 @@ A point 4 grades off costs 16.
 Two points 1 grade off cost 2.
 So outliers **yank** the line toward themselves.
 
-![[assets/lr-15-ausreisser.svg]]
+![lr-15-ausreisser](../../assets/lr-15-ausreisser.svg)
 
 > [!note] Why square?
 > You could use absolute values (|residual|) instead. That is a different method.
@@ -240,7 +240,7 @@ The line has **no bend**. No plateau. No “after 4 hours it stops helping.”
 
 If the truth looks like this:
 
-![[assets/lr-09-decke.svg]]
+![lr-09-decke](../../assets/lr-09-decke.svg)
 
 …then a straight line is **the wrong tool**. It cuts the curve and lies at both ends.
 
@@ -265,7 +265,7 @@ $$\bar x = 2.5 \qquad \bar y = 4.5$$
 
 The best line **always goes through the centroid** *(x̄, ȳ)*. Keep that.
 
-![[assets/lr-10-vier.svg]]
+![lr-10-vier](../../assets/lr-10-vier.svg)
 
 Slope from how x and y walk together:
 
@@ -300,7 +300,7 @@ Best guess for y: just the average ȳ. A flat line.
 **B. You know x.**
 You may use the slanted line.
 
-![[assets/lr-11-r2.svg]]
+![lr-11-r2](../../assets/lr-11-r2.svg)
 
 **R²** says: *how much of the scatter did the line explain away?*
 
@@ -323,7 +323,7 @@ Classic trap, everyone falls in once:
 
 No. Both rise because it is **summer**. A third variable.
 
-![[assets/lr-12-sommer.svg]]
+![lr-12-sommer](../../assets/lr-12-sommer.svg)
 
 The line between ice cream and drownings would be steep and “significant” — and still **wrong as a story**.
 
@@ -352,7 +352,7 @@ $$\text{grade} \approx a + b_1\cdot\text{hours} + b_2\cdot\text{sleep} + b_3\cdo
 Same idea. Still “linear”: each lever has **one fixed add-on**.
 Only now the “line” lives in a space with more axes. In your head: **a flat plane through a 3D cloud.**
 
-![[assets/lr-13-ebene.svg]]
+![lr-13-ebene](../../assets/lr-13-ebene.svg)
 
 *b₂ = 0.4* then means: *holding hours and prior grade fixed* — so **after the others are already in the model** — +1 hour of sleep goes with +0.4 grade, on average.
 
@@ -368,7 +368,7 @@ You do not need to derive the formula. Just see the landscape.
 
 Think of a and b as coordinates on the floor. At every spot you measure the sum of squared errors. That makes a bowl.
 
-![[assets/lr-14-schuessel.svg]]
+![lr-14-schuessel](../../assets/lr-14-schuessel.svg)
 
 The computer rolls to the lowest point. Done.
 

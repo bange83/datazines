@@ -15,7 +15,7 @@ aliases:
 > [!abstract] In one sentence
 > **One chain, three dialects.** AdaBoost reweights *people*. Gradient boosting fits *leftovers*. XGBoost & co. are that leftover-chain with a faster engine and extra taxes — not a new idea.
 
-![[assets/bf-00-hero.svg]]
+![bf-00-hero](../../assets/bf-00-hero.svg)
 
 Read [[03 gradient boosting]] first. That notebook is the religion. This one is the **family portrait**: AdaBoost vs gradient boosting vs the brand names, short enough to remember, not a second encyclopedia.
 
@@ -42,7 +42,7 @@ Oldest dialect. Usually **stumps** (depth 1).
 Round 1: every student weighs the same. Fit a stump.
 Whoever was misclassified gets **heavier**. The next stump is scored as if those people were sitting in the room twice.
 
-![[assets/bf-02-ada.svg]]
+![bf-02-ada](../../assets/bf-02-ada.svg)
 
 A stump that does well on the heavy dots gets a bigger say in the final **weighted vote**.
 
@@ -58,7 +58,7 @@ Current sum → leftover (the **gradient** of the loss) → plant a small tree o
 
 People do not change weight. The *target* of the next tree changes.
 
-![[assets/bf-03-hunt.svg]]
+![bf-03-hunt](../../assets/bf-03-hunt.svg)
 
 | dialect | the next tree hunts | typical brick | combine |
 |---|---|---|---|

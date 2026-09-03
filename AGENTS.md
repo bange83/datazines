@@ -14,7 +14,7 @@ aliases:
 > [!abstract] In one sentence
 > Today we built a **regression shelf** in paper-and-ink English. Everything after this — classification, forests, boosting, distributions — uses the **same notebook**, not a new personality.
 
-![[assets/sb-00-hero.svg]]
+![sb-00-hero](assets/sb-00-hero.svg)
 
 This file is two things at once:
 
@@ -89,11 +89,13 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | `sm-` | softmax |
 | `sb-` | this receipt |
 
-Hero of each note is `*-00-hero.svg`. Embed with vault paths:
+Hero of each note is `*-00-hero.svg`. Embed as ordinary markdown so GitHub can render it. Path is **relative to the note**:
 
 ```
-![[assets/lr-00-hero.svg]]
+![lr-00-hero](assets/lr-00-hero.svg)
 ```
+
+From a nested family note that is two folders down: `![lr-00-hero](../../assets/lr-00-hero.svg)`. Do not use `![[…]]` — GitHub prints that as text.
 
 Empty slots on the lower shelf are not decoration. The **walk** is [[PATH.md]]. Descent, distributions, softmax are written. **Next brick: a tiny neural net.** Not SVM, not attention yet.
 
@@ -101,7 +103,7 @@ Empty slots on the lower shelf are not decoration. The **walk** is [[PATH.md]]. 
 
 ## Page 2 — Anatomy of a note
 
-![[assets/sb-01-anatomy.svg]]
+![sb-01-anatomy](assets/sb-01-anatomy.svg)
 
 Every sketchbook, in this order:
 
@@ -123,7 +125,7 @@ Length: roughly 8–16 pages. Dense, not encyclopedic. If you need a second topi
 
 ## Page 3 — Pictures
 
-![[assets/sb-02-palette.svg]]
+![sb-02-palette](assets/sb-02-palette.svg)
 
 **Medium:** hand-drawn SVG. Paper fill `#f4efe4`, grain filter, wobble on the strokes. Rounded-rect page. Ink blobs for points, not perfect circles.
 
@@ -151,7 +153,7 @@ Length: roughly 8–16 pages. Dense, not encyclopedic. If you need a second topi
 
 ## Page 4 — Voice
 
-![[assets/sb-03-voice.svg]]
+![sb-03-voice](assets/sb-03-voice.svg)
 
 **Language: English.** The series started in German and moved. Stay put.
 
@@ -176,7 +178,7 @@ Sit between lecture and baby talk:
 
 ## Page 5 — Do / don’t
 
-![[assets/sb-04-do.svg]]
+![sb-04-do](assets/sb-04-do.svg)
 
 **Do**
 

@@ -14,7 +14,7 @@ aliases:
 > [!abstract] In one sentence
 > **One engine, different glasses for y.** Inside: still a + b x. Outside: a **link** that speaks grade, pass/fail, or a count of mistakes.
 
-![[assets/gm-00-hero.svg]]
+![gm-00-hero](../../assets/gm-00-hero.svg)
 
 Read [[01 linear regression]] and [[01 logistic regression]]. Those two are not strangers. They are the same machine in two outfits. This note is the family portrait.
 
@@ -52,7 +52,7 @@ Logistic was already this: binomial family, logit link, linear score.
 
 ## Page 3 — The link is the translation
 
-![[assets/gm-02-link.svg]]
+![gm-02-link](../../assets/gm-02-link.svg)
 
 | link | says | you already know it as |
 |---|---|---|
@@ -70,7 +70,7 @@ The link is not decoration. It is the promise that ŷ will not wander into a non
 
 ## Page 4 — The family is how y is allowed to rattle
 
-![[assets/gm-03-family.svg]]
+![gm-03-family](../../assets/gm-03-family.svg)
 
 **Gaussian** — leftovers are a blob around the mean. Classic line. Grades.
 

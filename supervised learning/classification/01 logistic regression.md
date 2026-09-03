@@ -14,7 +14,7 @@ aliases:
 > [!abstract] In one sentence
 > Same knobs as the line — **a + b x** — then you **squash** the score into a number between 0 and 1. That number is **P(yes)**.
 
-![[assets/lg-00-hero.svg]]
+![lg-00-hero](../../assets/lg-00-hero.svg)
 
 Read [[01 linear regression]] first. Same hours-and-grades world. Only now *y* is not a grade. *y* is **did they pass?**
 
@@ -39,7 +39,7 @@ A straight line will happily say “pass = 1.4” or “pass = −0.2”. Those 
 
 Fit an ordinary line to the 0/1 dots anyway. It slices through. Then it keeps going.
 
-![[assets/lg-02-linefails.svg]]
+![lg-02-linefails](../../assets/lg-02-linefails.svg)
 
 Above 1: “more than certainly pass.”
 Below 0: “negative chance.”
@@ -58,7 +58,7 @@ Then you push it through an S:
 
 $$P(\text{pass}) = \frac{1}{1 + e^{-\text{score}}}$$
 
-![[assets/lg-03-squash.svg]]
+![lg-03-squash](../../assets/lg-03-squash.svg)
 
 Score −2 → probability near 0.
 Score 0 → 0.5. Coin flip.
@@ -80,7 +80,7 @@ $$\text{odds} = \frac{P}{1-P}$$
 
 +1 on *x* **multiplies** the odds by *e^b*. Always the same factor. Not the same probability jump.
 
-![[assets/lg-05-odds.svg]]
+![lg-05-odds](../../assets/lg-05-odds.svg)
 
 If that feels slippery, keep this sentence instead:
 
@@ -94,7 +94,7 @@ The model gives **P(pass) = 0.64**. That is not yet “pass” or “fail.”
 
 You pick a cut. Classic: 0.5.
 
-![[assets/lg-04-threshold.svg]]
+![lg-04-threshold](../../assets/lg-04-threshold.svg)
 
 Above the cut: say yes. Below: say no.
 
