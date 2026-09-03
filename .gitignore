@@ -1,0 +1,5 @@
+# All hidden files and folders (Obsidian, Claudian, OS, editors, …)
+.*
+
+# Keep this file
+!.gitignore
