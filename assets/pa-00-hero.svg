@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" width="860" height="420" role="img" aria-label="encyclopedia as a library of wings">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="860" height="420" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="860" height="420" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="430.0" y="40.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#241c14" text-anchor="middle">a library, not a ladder to one summit</text>
+<path d="M 60.00,360.00 L 152.50,360.16 Q 152.50,360.16 198.75,360.19 Q 245.00,360.22 291.25,359.98 Q 337.50,359.73 383.75,359.86 Q 430.00,359.99 476.25,359.97 Q 522.50,359.94 568.75,360.04 Q 615.00,360.13 661.25,360.13 Q 707.50,360.13 753.75,360.07 L 800.00,360.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 35.0,140 L 145.0,140 L 145.0,300 L 35.0,300 Z" fill="#4f6d55" stroke="#4f6d55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.1"/>
+<text x="90.0" y="185.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#4f6d55" text-anchor="middle">you are here</text>
+<text x="90.0" y="230.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle">line</text>
+<text x="90.0" y="252.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle">S</text>
+<path d="M 195.0,140 L 305.0,140 L 305.0,300 L 195.0,300 Z" fill="#c4a35a" stroke="#c4a35a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.1"/>
+<text x="250.0" y="185.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#c4a35a" text-anchor="middle">chance</text>
+<text x="250.0" y="230.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle">curves</text>
+<text x="250.0" y="252.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle">tests</text>
+<path d="M 355.0,140 L 465.0,140 L 465.0,300 L 355.0,300 Z" fill="#3d5f86" stroke="#3d5f86" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.1"/>
+<text x="410.0" y="185.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#3d5f86" text-anchor="middle">cause</text>
+<text x="410.0" y="230.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle">why, not just ŷ</text>
+<text x="410.0" y="252.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle"></text>
+<path d="M 515.0,140 L 625.0,140 L 625.0,300 L 515.0,300 Z" fill="#b44a28" stroke="#b44a28" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.1"/>
+<text x="570.0" y="185.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="middle">opt</text>
+<text x="570.0" y="230.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle">walk downhill</text>
+<text x="570.0" y="252.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle"></text>
+<path d="M 675.0,140 L 785.0,140 L 785.0,300 L 675.0,300 Z" fill="#241c14" stroke="#241c14" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.1"/>
+<text x="730.0" y="185.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">nets</text>
+<text x="730.0" y="230.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle">LLM is one room</text>
+<text x="730.0" y="252.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle"></text>
+<text x="430.0" y="390.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">walk the wings in order. skip a wing, the later rooms go hollow.</text>
+</svg>

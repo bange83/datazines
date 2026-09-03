@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" role="img" aria-label="when elastic net shines">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="380" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="380" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380.0" y="48.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">a lot of x, some are twins, some are junk</text>
+<ellipse cx="120" cy="180" rx="78" ry="78" fill="none" stroke="#c4a35a" stroke-width="2.2"/>
+<text x="120.0" y="176.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#c4a35a" text-anchor="middle" font-style="normal" font-weight="normal">many x</text>
+<text x="120.0" y="290.0" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">more levers than people</text>
+<ellipse cx="380" cy="180" rx="78" ry="78" fill="none" stroke="#c4a35a" stroke-width="2.2"/>
+<text x="380.0" y="176.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#c4a35a" text-anchor="middle" font-style="normal" font-weight="normal">twins</text>
+<text x="380.0" y="290.0" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">sleep / naps / rest</text>
+<ellipse cx="640" cy="180" rx="78" ry="78" fill="none" stroke="#c4a35a" stroke-width="2.2"/>
+<text x="640.0" y="176.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#c4a35a" text-anchor="middle" font-style="normal" font-weight="normal">junk</text>
+<text x="640.0" y="290.0" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">coffee, luck, noise</text>
+<text x="380.0" y="345.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="middle" font-style="normal" font-weight="normal">elastic net: kill junk, keep packs.</text>
+</svg>

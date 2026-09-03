@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380" width="860" height="380" role="img" aria-label="do and don't for sketchbooks">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="860" height="380" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="860" height="380" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<path d="M 40,50 L 400,50 L 400,340 L 40,340 Z" fill="#4f6d55" stroke="#4f6d55" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="0.07"/>
+<path d="M 460,50 L 820,50 L 820,340 L 460,340 Z" fill="#b44a28" stroke="#b44a28" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="0.07"/>
+<text x="220.0" y="88.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="26" fill="#4f6d55" text-anchor="middle" font-style="normal">do</text>
+<text x="640.0" y="88.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="26" fill="#b44a28" text-anchor="middle" font-style="normal">don’t</text>
+<text x="70.0" y="130.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start" font-style="normal">·  one idea per page</text>
+<text x="70.0" y="162.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start" font-style="normal">·  picture before formula</text>
+<text x="70.0" y="194.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start" font-style="normal">·  same story across sequels</text>
+<text x="70.0" y="226.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start" font-style="normal">·  run the code, paste the output</text>
+<text x="70.0" y="258.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start" font-style="normal">·  scale when a tax cares about size</text>
+<text x="70.0" y="290.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start" font-style="normal">·  end with a cheat sheet</text>
+<text x="490.0" y="130.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start" font-style="normal">·  ASCII plots in code fences</text>
+<text x="490.0" y="162.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start" font-style="normal">·  German (this series is English)</text>
+<text x="490.0" y="194.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start" font-style="normal">·  invented numbers that fight the figure</text>
+<text x="490.0" y="226.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start" font-style="normal">·  cause from a coefficient</text>
+<text x="490.0" y="258.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start" font-style="normal">·  a new shape when a tax would do</text>
+<text x="490.0" y="290.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start" font-style="normal">·  unnumbered files in a family</text>
+</svg>

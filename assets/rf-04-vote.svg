@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" width="760" height="320" role="img" aria-label="forest vs deep tree">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="320" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="320" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380.0" y="42.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#7a6e5e" text-anchor="middle">one deep tree vs a vote of messy trees</text>
+<path d="M 50,80 L 340,80 L 340,250 L 50,250 Z" fill="#b44a28" stroke="#b44a28" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.07"/>
+<text x="195.0" y="120.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#b44a28" text-anchor="middle">one deep tree</text>
+<text x="195.0" y="165.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">train 1.00</text>
+<text x="195.0" y="200.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">test 0.71</text>
+<text x="195.0" y="230.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle">memorized</text>
+<path d="M 420,80 L 710,80 L 710,250 L 420,250 Z" fill="#4f6d55" stroke="#4f6d55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.08"/>
+<text x="565.0" y="120.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#4f6d55" text-anchor="middle">forest</text>
+<text x="565.0" y="165.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">train calmer</text>
+<text x="565.0" y="200.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">test better</text>
+<text x="565.0" y="230.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle">the vote is the tax</text>
+</svg>

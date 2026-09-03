@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" width="860" height="400" role="img" aria-label="stump vs deep tree">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="860" height="400" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="860" height="400" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="215.0" y="42.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#4f6d55" text-anchor="middle">stump  (depth 1)</text>
+<text x="645.0" y="42.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#b44a28" text-anchor="middle">deep tree  (chases noise)</text>
+<path d="M 50.00,328.00 L 49.77,284.00 Q 49.77,284.00 50.00,262.00 Q 50.22,240.00 49.87,218.00 Q 49.53,196.00 50.04,174.00 Q 50.54,152.00 50.39,130.00 Q 50.24,108.00 50.12,86.00 L 50.00,64.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 42.00,320.00 L 95.00,320.23 Q 95.00,320.23 121.50,319.96 Q 148.00,319.69 174.50,319.92 Q 201.00,320.14 227.50,319.99 Q 254.00,319.84 280.50,319.92 Q 307.00,319.99 333.50,320.00 L 360.00,320.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 349.0,314.0 L 360.0,320.0 L 349.0,326.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 44.0,75.0 L 50.0,64.0 L 56.0,75.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="366.0" y="326.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start">hours</text>
+<text x="42.0" y="56.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="end">sleep</text>
+<ellipse cx="111.4" cy="228.8" rx="5.7" ry="5.9" transform="rotate(2.9 111.4 228.8)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="162.9" cy="206.9" rx="5.9" ry="6.2" transform="rotate(23.3 162.9 206.9)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="160.3" cy="231.7" rx="6.0" ry="6.2" transform="rotate(3.5 160.3 231.7)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="140.7" cy="236.6" rx="5.8" ry="6.3" transform="rotate(24.8 140.7 236.6)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="103.0" cy="240.2" rx="5.9" ry="6.0" transform="rotate(-21.9 103.0 240.2)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="154.9" cy="228.4" rx="6.3" ry="6.0" transform="rotate(6.7 154.9 228.4)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="125.8" cy="250.0" rx="5.3" ry="5.9" transform="rotate(5.3 125.8 250.0)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="131.0" cy="242.1" rx="5.3" ry="5.7" transform="rotate(12.2 131.0 242.1)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="133.9" cy="224.4" rx="6.2" ry="6.1" transform="rotate(8.7 133.9 224.4)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="80.7" cy="234.0" rx="6.4" ry="6.2" transform="rotate(-21.6 80.7 234.0)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="99.5" cy="248.0" rx="5.6" ry="5.2" transform="rotate(20.4 99.5 248.0)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="104.6" cy="214.1" rx="6.1" ry="5.4" transform="rotate(-16.0 104.6 214.1)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="263.8" cy="153.4" rx="6.4" ry="5.8" transform="rotate(3.3 263.8 153.4)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="231.5" cy="185.5" rx="5.6" ry="5.3" transform="rotate(-7.2 231.5 185.5)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="239.7" cy="158.3" rx="5.3" ry="5.3" transform="rotate(-16.9 239.7 158.3)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="246.8" cy="150.3" rx="5.1" ry="5.9" transform="rotate(-19.0 246.8 150.3)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="240.3" cy="131.9" rx="6.0" ry="5.6" transform="rotate(20.3 240.3 131.9)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="263.5" cy="128.6" rx="6.0" ry="6.2" transform="rotate(7.4 263.5 128.6)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="254.1" cy="165.5" rx="6.2" ry="6.4" transform="rotate(24.8 254.1 165.5)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="229.0" cy="148.3" rx="5.3" ry="5.5" transform="rotate(-10.4 229.0 148.3)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="272.5" cy="159.1" rx="5.4" ry="6.2" transform="rotate(21.1 272.5 159.1)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="257.8" cy="166.2" rx="5.2" ry="5.3" transform="rotate(20.9 257.8 166.2)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="238.8" cy="166.5" rx="5.3" ry="5.2" transform="rotate(19.8 238.8 166.5)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="205.3" cy="178.5" rx="5.5" ry="5.1" transform="rotate(3.5 205.3 178.5)" fill="#3d5f86" opacity="0.9"/>
+<path d="M 188.46,311.67 L 188.25,254.38 Q 188.25,254.38 188.23,225.73 Q 188.21,197.08 188.35,168.44 Q 188.48,139.79 188.47,111.15 L 188.46,82.50" fill="none" stroke="#4f6d55" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 470.00,328.00 L 469.74,284.00 Q 469.74,284.00 469.74,262.00 Q 469.73,240.00 469.82,218.00 Q 469.90,196.00 469.66,174.00 Q 469.41,152.00 469.71,130.00 Q 470.00,108.00 470.00,86.00 L 470.00,64.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 462.00,320.00 L 515.00,320.23 Q 515.00,320.23 541.50,320.40 Q 568.00,320.56 594.50,319.94 Q 621.00,319.33 647.50,319.37 Q 674.00,319.41 700.50,319.68 Q 727.00,319.96 753.50,319.98 L 780.00,320.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 769.0,314.0 L 780.0,320.0 L 769.0,326.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 464.0,75.0 L 470.0,64.0 L 476.0,75.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="786.0" y="326.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start">hours</text>
+<ellipse cx="531.4" cy="228.8" rx="6.2" ry="5.8" transform="rotate(24.9 531.4 228.8)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="582.9" cy="206.9" rx="5.9" ry="6.4" transform="rotate(-18.6 582.9 206.9)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="580.3" cy="231.7" rx="5.8" ry="5.3" transform="rotate(-24.4 580.3 231.7)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="560.7" cy="236.6" rx="5.2" ry="5.5" transform="rotate(-15.3 560.7 236.6)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="523.0" cy="240.2" rx="5.9" ry="5.8" transform="rotate(-15.3 523.0 240.2)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="574.9" cy="228.4" rx="6.0" ry="5.6" transform="rotate(12.2 574.9 228.4)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="545.8" cy="250.0" rx="5.6" ry="5.3" transform="rotate(-15.8 545.8 250.0)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="551.0" cy="242.1" rx="6.4" ry="6.0" transform="rotate(5.0 551.0 242.1)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="553.9" cy="224.4" rx="5.9" ry="5.8" transform="rotate(-17.1 553.9 224.4)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="500.7" cy="234.0" rx="6.1" ry="6.1" transform="rotate(18.7 500.7 234.0)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="519.5" cy="248.0" rx="5.8" ry="5.1" transform="rotate(-6.5 519.5 248.0)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="524.6" cy="214.1" rx="5.8" ry="5.9" transform="rotate(-10.0 524.6 214.1)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="683.8" cy="153.4" rx="5.6" ry="6.4" transform="rotate(-5.2 683.8 153.4)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="651.5" cy="185.5" rx="5.4" ry="6.2" transform="rotate(12.9 651.5 185.5)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="659.7" cy="158.3" rx="6.1" ry="5.1" transform="rotate(-4.6 659.7 158.3)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="666.8" cy="150.3" rx="5.5" ry="5.5" transform="rotate(-8.0 666.8 150.3)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="660.3" cy="131.9" rx="5.5" ry="5.8" transform="rotate(-24.4 660.3 131.9)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="683.5" cy="128.6" rx="5.9" ry="6.5" transform="rotate(-0.8 683.5 128.6)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="674.1" cy="165.5" rx="5.5" ry="6.1" transform="rotate(-7.7 674.1 165.5)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="649.0" cy="148.3" rx="6.4" ry="6.3" transform="rotate(15.0 649.0 148.3)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="692.5" cy="159.1" rx="5.8" ry="5.1" transform="rotate(-21.9 692.5 159.1)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="677.8" cy="166.2" rx="5.7" ry="6.3" transform="rotate(-6.4 677.8 166.2)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="658.8" cy="166.5" rx="6.5" ry="5.9" transform="rotate(-19.3 658.8 166.5)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="625.3" cy="178.5" rx="5.9" ry="6.5" transform="rotate(-9.9 625.3 178.5)" fill="#3d5f86" opacity="0.9"/>
+<path d="M 502.3,90.8 L 539.2,90.8 L 539.2,182.5 L 590.0,182.5 L 590.0,124.2 L 631.5,124.2 L 631.5,253.3 L 686.9,253.3 L 686.9,157.5 L 737.7,157.5" fill="none" stroke="#b44a28" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="215.0" y="370.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#4f6d55" text-anchor="middle">boring. often better.</text>
+<text x="645.0" y="370.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="middle">memorizes the old cloud.</text>
+</svg>

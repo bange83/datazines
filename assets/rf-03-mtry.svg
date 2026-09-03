@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" width="760" height="340" role="img" aria-label="random feature subset at a cut">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="340" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="340" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380.0" y="42.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#7a6e5e" text-anchor="middle">at each cut, only a few levers are allowed to speak</text>
+<text x="160.0" y="100.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="middle">this cut:</text>
+<path d="M 80,122.0 L 240,122.0 L 240,158.0 L 80,158.0 Z" fill="#c4a35a" stroke="#c4a35a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.12"/>
+<text x="160.0" y="146.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#c4a35a" text-anchor="middle">hours</text>
+<path d="M 80,172.0 L 240,172.0 L 240,208.0 L 80,208.0 Z" fill="#7a6e5e" stroke="#7a6e5e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.04"/>
+<text x="160.0" y="196.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">sleep</text>
+<path d="M 80,222.0 L 240,222.0 L 240,258.0 L 80,258.0 Z" fill="#7a6e5e" stroke="#7a6e5e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.04"/>
+<text x="160.0" y="246.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">tutor</text>
+<text x="500.0" y="160.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="start">sleep is muted</text>
+<text x="500.0" y="200.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="start">tutor is muted</text>
+<text x="500.0" y="240.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#c4a35a" text-anchor="start">hours may win — this time</text>
+<text x="380.0" y="310.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">next tree, next cut: a different shortlist. trees disagree on purpose.</text>
+</svg>

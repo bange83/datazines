@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 340" width="860" height="340" role="img" aria-label="forest vs boosting">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="860" height="340" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="860" height="340" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<path d="M 40,60 L 400,60 L 400,290 L 40,290 Z" fill="#4f6d55" stroke="#4f6d55" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="0.07"/>
+<path d="M 460,60 L 820,60 L 820,290 L 460,290 Z" fill="#c4a35a" stroke="#c4a35a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="0.07"/>
+<text x="220.0" y="100.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#4f6d55" text-anchor="middle">forest</text>
+<text x="640.0" y="100.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#c4a35a" text-anchor="middle">boosting</text>
+<text x="70.0" y="150.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">·  trees in parallel</text>
+<text x="70.0" y="188.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">·  vote / average</text>
+<text x="70.0" y="226.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">·  bag + random levers</text>
+<text x="490.0" y="150.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">·  trees in a line</text>
+<text x="490.0" y="188.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">·  each fixes the last</text>
+<text x="490.0" y="226.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">·  small steps, learning rate</text>
+</svg>

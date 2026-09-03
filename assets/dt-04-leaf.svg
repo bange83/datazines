@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" width="720" height="340" role="img" aria-label="leaf as a vote">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="720" height="340" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="720" height="340" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="360.0" y="48.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#7a6e5e" text-anchor="middle">a leaf is a vote, not a line</text>
+<path d="M 80,90 L 640,90 L 640,250 L 80,250 Z" fill="#efe6d4" stroke="#241c14" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="140.0" cy="170.0" rx="9.2" ry="8.8" transform="rotate(3.9 140.0 170.0)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="200.0" cy="170.0" rx="8.4" ry="9.7" transform="rotate(16.2 200.0 170.0)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="260.0" cy="170.0" rx="9.3" ry="8.3" transform="rotate(1.0 260.0 170.0)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="320.0" cy="170.0" rx="8.6" ry="8.5" transform="rotate(22.6 320.0 170.0)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="380.0" cy="170.0" rx="10.1" ry="8.0" transform="rotate(18.0 380.0 170.0)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="440.0" cy="170.0" rx="9.2" ry="8.7" transform="rotate(-10.8 440.0 170.0)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="500.0" cy="170.0" rx="9.4" ry="8.9" transform="rotate(9.3 500.0 170.0)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="560.0" cy="170.0" rx="9.3" ry="8.2" transform="rotate(13.4 560.0 170.0)" fill="#b44a28" opacity="0.9"/>
+<text x="360.0" y="290.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="middle">5 pass, 3 fail  →  leaf says pass  (P ≈ 5/8)</text>
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" role="img" aria-label="walking down the error bowl">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="420" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="420" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<path d="M 80.0,298.8 L 102.2,279.2 L 124.4,260.9 L 146.7,243.7 L 168.9,227.8 L 191.1,213.0 L 213.3,199.5 L 235.6,187.1 L 257.8,176.0 L 280.0,166.1 L 302.2,157.4 L 324.4,149.8 L 346.7,143.5 L 368.9,138.4 L 391.1,134.5 L 413.3,131.8 L 435.6,130.3 L 457.8,130.0 L 480.0,131.0 L 502.2,133.1 L 524.4,136.4 L 546.7,140.9 L 568.9,146.7 L 591.1,153.6 L 613.3,161.8 L 635.6,171.1 L 657.8,181.7 L 680.0,193.4" fill="none" stroke="#241c14" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 70.00,370.00 L 173.33,370.17 Q 173.33,370.17 225.00,370.20 Q 276.67,370.23 328.33,369.99 Q 380.00,369.76 431.67,369.88 Q 483.33,370.00 535.00,369.99 Q 586.67,369.97 638.33,369.99 L 690.00,370.00" fill="none" stroke="#241c14" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="700.0" y="376.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start">b</text>
+<text x="54.0" y="48.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start">error²</text>
+<path d="M 180.00,250.00 L 203.14,228.13 Q 203.14,228.13 214.79,217.28 Q 226.44,206.43 238.22,195.71 L 250.00,185.00" fill="none" stroke="#b44a28" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="180.0" cy="250.0" rx="6.9" ry="7.4" transform="rotate(-24.9 180.0 250.0)" fill="#b44a28" opacity="0.9"/>
+<path d="M 250.00,185.00 L 276.74,171.80 Q 276.74,171.80 289.99,164.98 Q 303.25,158.17 316.62,151.58 L 330.00,145.00" fill="none" stroke="#b44a28" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="250.0" cy="185.0" rx="7.7" ry="6.2" transform="rotate(-23.7 250.0 185.0)" fill="#b44a28" opacity="0.9"/>
+<path d="M 330.00,145.00 L 356.76,136.29 Q 356.76,136.29 370.04,131.61 Q 383.31,126.92 396.65,122.46 L 410.00,118.00" fill="none" stroke="#b44a28" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="330.0" cy="145.0" rx="6.9" ry="6.2" transform="rotate(-13.9 330.0 145.0)" fill="#b44a28" opacity="0.9"/>
+<path d="M 410.00,118.00 L 440.00,114.66 Q 440.00,114.66 454.99,112.91 Q 469.98,111.15 484.99,109.57 L 500.00,108.00" fill="none" stroke="#b44a28" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="410.0" cy="118.0" rx="6.5" ry="6.9" transform="rotate(-10.5 410.0 118.0)" fill="#b44a28" opacity="0.9"/>
+<path d="M 500.00,108.00 L 519.98,109.57 Q 519.98,109.57 529.99,110.14 Q 540.00,110.71 550.00,111.35 L 560.00,112.00" fill="none" stroke="#b44a28" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="500.0" cy="108.0" rx="6.5" ry="7.8" transform="rotate(18.0 500.0 108.0)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="560.0" cy="112.0" rx="8.2" ry="8.6" transform="rotate(11.1 560.0 112.0)" fill="#c4a35a" opacity="0.9"/>
+<text x="170.0" y="236.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="start">start</text>
+<text x="574.0" y="104.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#c4a35a" text-anchor="start">bottom</text>
+<text x="380.0" y="400.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">don’t solve the bowl. walk it.</text>
+</svg>

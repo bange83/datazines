@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 360" width="860" height="360" role="img" aria-label="GLM families">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="860" height="360" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="860" height="360" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="430.0" y="42.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#7a6e5e" text-anchor="middle" font-style="normal">pick the family to match how y is allowed to look</text>
+<ellipse cx="70.0" cy="90.0" rx="9.9" ry="9.7" transform="rotate(-18.1 70.0 90.0)" fill="#b44a28" opacity="0.92"/>
+<text x="100.0" y="96.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#b44a28" text-anchor="start" font-style="normal">Gaussian</text>
+<text x="280.0" y="96.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal">y wanders around a mean</text>
+<text x="720.0" y="96.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="end" font-style="normal">linear regression</text>
+<ellipse cx="70.0" cy="170.0" rx="10.9" ry="8.8" transform="rotate(0.1 70.0 170.0)" fill="#3d5f86" opacity="0.92"/>
+<text x="100.0" y="176.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#3d5f86" text-anchor="start" font-style="normal">Binomial</text>
+<text x="280.0" y="176.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal">y is 0 or 1 (or k out of n)</text>
+<text x="720.0" y="176.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="end" font-style="normal">logistic</text>
+<ellipse cx="70.0" cy="250.0" rx="11.0" ry="9.0" transform="rotate(2.7 70.0 250.0)" fill="#4f6d55" opacity="0.92"/>
+<text x="100.0" y="256.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#4f6d55" text-anchor="start" font-style="normal">Poisson</text>
+<text x="280.0" y="256.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal">y is 0,1,2,3… a count</text>
+<text x="720.0" y="256.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="end" font-style="normal">log link, counts</text>
+</svg>

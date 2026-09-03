@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" width="860" height="400" role="img" aria-label="LARS path vs lasso path">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="860" height="400" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="860" height="400" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="215.0" y="42.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#4f6d55" text-anchor="middle" font-style="normal" font-weight="normal">LARS path</text>
+<text x="645.0" y="42.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#b44a28" text-anchor="middle" font-style="normal" font-weight="normal">lasso path</text>
+<path d="M 70.00,320.00 L 140.00,320.14 Q 140.00,320.14 175.00,319.98 Q 210.00,319.81 245.00,320.01 Q 280.00,320.21 315.00,320.11 L 350.00,320.00" fill="none" stroke="#7a6e5e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 70.0,320 L 140.0,230 L 230.0,170 L 330.0,130" fill="none" stroke="#4f6d55" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 140.0,320 L 230.0,240 L 330.0,200" fill="none" stroke="#3d5f86" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 500.00,320.00 L 570.00,319.83 Q 570.00,319.83 605.00,319.99 Q 640.00,320.15 675.00,320.00 Q 710.00,319.85 745.00,319.93 L 780.00,320.00" fill="none" stroke="#7a6e5e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 500.0,320 L 570.0,230 L 660.0,170 L 760.0,130" fill="none" stroke="#b44a28" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 570.0,320 L 660.0,240 L 700.0,260 L 760.0,255" fill="none" stroke="#3d5f86" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="710.0" y="248.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#3d5f86" text-anchor="start" font-style="normal" font-weight="normal">drops</text>
+<text x="430.0" y="365.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">almost the same walk. lasso may kick someone back out.</text>
+</svg>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" width="860" height="430" role="img" aria-label="elastic net sits between lasso and ridge">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="860" height="430" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="860" height="430" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="160.0" y="42.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#b44a28" text-anchor="middle" font-style="normal" font-weight="normal">lasso</text>
+<text x="430.0" y="42.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#c4a35a" text-anchor="middle" font-style="normal" font-weight="normal">elastic net</text>
+<text x="700.0" y="42.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#3d5f86" text-anchor="middle" font-style="normal" font-weight="normal">ridge</text>
+<path d="M 150.00,80.00 L 150.03,150.00 Q 150.03,150.00 149.99,185.00 Q 149.95,220.00 150.04,255.00 Q 150.12,290.00 150.06,325.00 L 150.00,360.00" fill="none" stroke="#7a6e5e" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="150.0" y="72.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">0</text>
+<text x="20.0" y="96.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">hours</text>
+<path d="M 150.00,90.00 L 169.25,90.11 Q 169.25,90.11 178.88,89.88 Q 188.50,89.66 198.12,89.84 Q 207.75,90.01 217.38,90.01 L 227.00,90.00" fill="none" stroke="#b44a28" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="227.0" cy="90.0" rx="7.0" ry="8.3" transform="rotate(24.8 227.0 90.0)" fill="#b44a28" opacity="0.92"/>
+<ellipse cx="228.2" cy="88.9" rx="2.0" ry="1.8" fill="#f7f2ea" opacity="0.35"/>
+<text x="241.0" y="96.0" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#b44a28" text-anchor="start" font-style="normal" font-weight="normal">+1.1</text>
+<text x="20.0" y="154.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">sleep</text>
+<path d="M 150.00,148.00 L 158.75,148.25 Q 158.75,148.25 163.12,148.18 Q 167.50,148.10 171.88,148.01 Q 176.25,147.92 180.62,147.96 L 185.00,148.00" fill="none" stroke="#b44a28" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="185.0" cy="148.0" rx="7.8" ry="7.4" transform="rotate(9.3 185.0 148.0)" fill="#b44a28" opacity="0.92"/>
+<ellipse cx="186.2" cy="146.9" rx="2.2" ry="1.6" fill="#f7f2ea" opacity="0.35"/>
+<text x="199.0" y="154.0" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#b44a28" text-anchor="start" font-style="normal" font-weight="normal">+0.5</text>
+<text x="20.0" y="212.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">coffee</text>
+<ellipse cx="150.0" cy="206.0" rx="6.8" ry="5.9" transform="rotate(13.4 150.0 206.0)" fill="#7a6e5e" opacity="0.92"/>
+<ellipse cx="151.2" cy="204.9" rx="1.9" ry="1.3" fill="#f7f2ea" opacity="0.35"/>
+<text x="168.0" y="212.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="start" font-style="normal" font-weight="normal">zero</text>
+<text x="20.0" y="270.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">tutor</text>
+<path d="M 150.00,264.00 L 154.38,264.33 Q 154.38,264.33 156.56,264.22 Q 158.75,264.11 160.94,263.90 Q 163.12,263.68 165.31,263.84 L 167.50,264.00" fill="none" stroke="#b44a28" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="167.5" cy="264.0" rx="6.8" ry="8.3" transform="rotate(-9.9 167.5 264.0)" fill="#b44a28" opacity="0.92"/>
+<ellipse cx="168.7" cy="262.9" rx="1.9" ry="1.8" fill="#f7f2ea" opacity="0.35"/>
+<text x="181.5" y="270.0" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#b44a28" text-anchor="start" font-style="normal" font-weight="normal">+0.2</text>
+<text x="20.0" y="328.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">noise</text>
+<ellipse cx="150.0" cy="322.0" rx="6.3" ry="7.1" transform="rotate(-9.3 150.0 322.0)" fill="#7a6e5e" opacity="0.92"/>
+<ellipse cx="151.2" cy="320.9" rx="1.8" ry="1.6" fill="#f7f2ea" opacity="0.35"/>
+<text x="168.0" y="328.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="start" font-style="normal" font-weight="normal">zero</text>
+<path d="M 430.00,80.00 L 429.97,150.00 Q 429.97,150.00 429.86,185.00 Q 429.75,220.00 429.88,255.00 Q 430.01,290.00 430.01,325.00 L 430.00,360.00" fill="none" stroke="#7a6e5e" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="430.0" y="72.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">0</text>
+<text x="300.0" y="96.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">hours</text>
+<path d="M 430.00,90.00 L 444.88,89.78 Q 444.88,89.78 452.31,89.89 Q 459.75,90.01 467.19,90.05 Q 474.62,90.09 482.06,90.05 L 489.50,90.00" fill="none" stroke="#c4a35a" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="489.5" cy="90.0" rx="6.8" ry="7.1" transform="rotate(-20.5 489.5 90.0)" fill="#c4a35a" opacity="0.92"/>
+<ellipse cx="490.7" cy="88.9" rx="1.9" ry="1.6" fill="#f7f2ea" opacity="0.35"/>
+<text x="503.5" y="96.0" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#c4a35a" text-anchor="start" font-style="normal" font-weight="normal">+0.8</text>
+<text x="300.0" y="154.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">sleep</text>
+<path d="M 430.00,148.00 L 437.88,148.14 Q 437.88,148.14 441.81,147.84 Q 445.75,147.54 449.69,147.94 Q 453.62,148.34 457.56,148.17 L 461.50,148.00" fill="none" stroke="#c4a35a" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="461.5" cy="148.0" rx="7.8" ry="7.7" transform="rotate(-17.1 461.5 148.0)" fill="#c4a35a" opacity="0.92"/>
+<ellipse cx="462.7" cy="146.9" rx="2.2" ry="1.7" fill="#f7f2ea" opacity="0.35"/>
+<text x="475.5" y="154.0" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#c4a35a" text-anchor="start" font-style="normal" font-weight="normal">+0.5</text>
+<text x="300.0" y="212.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">coffee</text>
+<ellipse cx="430.0" cy="206.0" rx="5.7" ry="6.5" transform="rotate(-22.0 430.0 206.0)" fill="#7a6e5e" opacity="0.92"/>
+<ellipse cx="431.2" cy="204.9" rx="1.6" ry="1.4" fill="#f7f2ea" opacity="0.35"/>
+<text x="448.0" y="212.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="start" font-style="normal" font-weight="normal">zero</text>
+<text x="300.0" y="270.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">tutor</text>
+<path d="M 430.00,264.00 L 433.50,263.82 Q 433.50,263.82 435.25,263.67 Q 437.00,263.53 438.75,263.75 Q 440.50,263.97 442.25,263.99 L 444.00,264.00" fill="none" stroke="#c4a35a" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="444.0" cy="264.0" rx="8.1" ry="7.5" transform="rotate(7.0 444.0 264.0)" fill="#c4a35a" opacity="0.92"/>
+<ellipse cx="445.2" cy="262.9" rx="2.3" ry="1.7" fill="#f7f2ea" opacity="0.35"/>
+<text x="458.0" y="270.0" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#c4a35a" text-anchor="start" font-style="normal" font-weight="normal">+0.2</text>
+<text x="300.0" y="328.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">noise</text>
+<ellipse cx="430.0" cy="322.0" rx="6.5" ry="6.8" transform="rotate(-2.1 430.0 322.0)" fill="#7a6e5e" opacity="0.92"/>
+<ellipse cx="431.2" cy="320.9" rx="1.8" ry="1.5" fill="#f7f2ea" opacity="0.35"/>
+<text x="448.0" y="328.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="start" font-style="normal" font-weight="normal">zero</text>
+<path d="M 710.00,80.00 L 709.93,150.00 Q 709.93,150.00 709.92,185.00 Q 709.90,220.00 710.03,255.00 Q 710.15,290.00 710.08,325.00 L 710.00,360.00" fill="none" stroke="#7a6e5e" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="710.0" y="72.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">0</text>
+<text x="580.0" y="96.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">hours</text>
+<path d="M 710.00,90.00 L 722.25,89.84 Q 722.25,89.84 728.38,90.08 Q 734.50,90.31 740.62,90.22 Q 746.75,90.13 752.88,90.07 L 759.00,90.00" fill="none" stroke="#3d5f86" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="759.0" cy="90.0" rx="7.6" ry="7.8" transform="rotate(-17.7 759.0 90.0)" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="760.2" cy="88.9" rx="2.1" ry="1.7" fill="#f7f2ea" opacity="0.35"/>
+<text x="773.0" y="96.0" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#3d5f86" text-anchor="start" font-style="normal" font-weight="normal">+0.7</text>
+<text x="580.0" y="154.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">sleep</text>
+<path d="M 710.00,148.00 L 717.00,147.76 Q 717.00,147.76 720.50,148.08 Q 724.00,148.41 727.50,148.05 Q 731.00,147.69 734.50,147.84 L 738.00,148.00" fill="none" stroke="#3d5f86" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="738.0" cy="148.0" rx="6.7" ry="7.8" transform="rotate(-8.2 738.0 148.0)" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="739.2" cy="146.9" rx="1.9" ry="1.7" fill="#f7f2ea" opacity="0.35"/>
+<text x="752.0" y="154.0" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#3d5f86" text-anchor="start" font-style="normal" font-weight="normal">+0.4</text>
+<text x="580.0" y="212.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">coffee</text>
+<path d="M 710.00,206.00 L 711.40,206.24 Q 711.40,206.24 712.10,205.88 Q 712.80,205.52 713.50,205.60 Q 714.20,205.69 714.90,205.84 L 715.60,206.00" fill="none" stroke="#3d5f86" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="715.6" cy="206.0" rx="7.5" ry="6.8" transform="rotate(24.4 715.6 206.0)" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="716.8" cy="204.9" rx="2.1" ry="1.5" fill="#f7f2ea" opacity="0.35"/>
+<text x="729.6" y="212.0" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#3d5f86" text-anchor="start" font-style="normal" font-weight="normal">+0.1</text>
+<text x="580.0" y="270.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">tutor</text>
+<path d="M 710.00,264.00 L 713.85,263.73 Q 713.85,263.73 715.78,263.82 Q 717.70,263.92 719.62,263.83 Q 721.55,263.74 723.47,263.87 L 725.40,264.00" fill="none" stroke="#3d5f86" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="725.4" cy="264.0" rx="7.7" ry="6.9" transform="rotate(9.8 725.4 264.0)" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="726.6" cy="262.9" rx="2.2" ry="1.5" fill="#f7f2ea" opacity="0.35"/>
+<text x="739.4" y="270.0" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#3d5f86" text-anchor="start" font-style="normal" font-weight="normal">+0.2</text>
+<text x="580.0" y="328.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">noise</text>
+<path d="M 710.00,322.00 L 707.90,322.23 Q 707.90,322.23 706.85,321.96 Q 705.80,321.68 704.75,321.88 Q 703.70,322.07 702.65,322.04 L 701.60,322.00" fill="none" stroke="#3d5f86" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="701.6" cy="322.0" rx="7.7" ry="7.5" transform="rotate(-5.8 701.6 322.0)" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="702.8" cy="320.9" rx="2.1" ry="1.6" fill="#f7f2ea" opacity="0.35"/>
+<text x="715.6" y="328.0" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#3d5f86" text-anchor="start" font-style="normal" font-weight="normal">-0.1</text>
+</svg>

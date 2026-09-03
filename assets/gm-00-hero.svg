@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" width="860" height="400" role="img" aria-label="GLM three glasses">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="860" height="400" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="860" height="400" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="430.0" y="42.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#7a6e5e" text-anchor="middle" font-style="normal">same engine. different glasses for y.</text>
+<path d="M 90.0,80 L 290.0,80 L 290.0,320 L 90.0,320 Z" fill="#b44a28" stroke="#b44a28" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="0.08"/>
+<text x="190.0" y="130.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#b44a28" text-anchor="middle" font-style="normal">number</text>
+<text x="190.0" y="190.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="middle" font-style="normal">grade</text>
+<text x="190.0" y="250.0" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#7a6e5e" text-anchor="middle" font-style="normal">link: identity</text>
+<text x="190.0" y="290.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle" font-style="normal">still a + b x inside</text>
+<path d="M 330.0,80 L 530.0,80 L 530.0,320 L 330.0,320 Z" fill="#3d5f86" stroke="#3d5f86" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="0.08"/>
+<text x="430.0" y="130.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#3d5f86" text-anchor="middle" font-style="normal">yes / no</text>
+<text x="430.0" y="190.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="middle" font-style="normal">pass?</text>
+<text x="430.0" y="250.0" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#7a6e5e" text-anchor="middle" font-style="normal">link: logit</text>
+<text x="430.0" y="290.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle" font-style="normal">still a + b x inside</text>
+<path d="M 570.0,80 L 770.0,80 L 770.0,320 L 570.0,320 Z" fill="#4f6d55" stroke="#4f6d55" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="0.08"/>
+<text x="670.0" y="130.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#4f6d55" text-anchor="middle" font-style="normal">count</text>
+<text x="670.0" y="190.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="middle" font-style="normal">mistakes</text>
+<text x="670.0" y="250.0" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#7a6e5e" text-anchor="middle" font-style="normal">link: log</text>
+<text x="670.0" y="290.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle" font-style="normal">still a + b x inside</text>
+</svg>

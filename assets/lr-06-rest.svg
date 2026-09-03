@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" role="img" aria-label="residual is vertical">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+  <filter id="ink" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" result="t"/>
+    <feDisplacementMap in="SourceGraphic" in2="t" scale="0.7" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</defs>
+<rect width="720" height="400" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="720" height="400" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<path d="M 80.00,280.00 L 150.04,262.64 Q 150.04,262.64 185.02,253.82 Q 220.00,244.99 254.97,236.12 Q 289.94,227.24 324.90,218.33 Q 359.85,209.42 394.95,201.05 Q 430.04,192.68 465.02,183.83 Q 499.99,174.98 535.01,166.30 Q 570.03,157.62 605.01,148.81 L 640.00,140.00" fill="none" stroke="#b44a28" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 400.00,200.00 L 399.90,174.00 Q 399.90,174.00 400.04,161.00 Q 400.18,148.00 400.14,135.00 Q 400.10,122.00 400.05,109.00 L 400.00,96.00" fill="none" stroke="#3d5f86" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="400.0" cy="200.0" rx="6.1" ry="6.3" transform="rotate(-15.4 400.0 200.0)" fill="#b44a28" opacity="0.92"/>
+<ellipse cx="401.2" cy="198.9" rx="1.7" ry="1.4" fill="#f7f2ea" opacity="0.35"/>
+<ellipse cx="400.0" cy="96.0" rx="8.6" ry="9.1" transform="rotate(-11.7 400.0 96.0)" fill="#241c14" opacity="0.92"/>
+<ellipse cx="401.2" cy="94.9" rx="2.4" ry="2.0" fill="#f7f2ea" opacity="0.35"/>
+<text x="416.0" y="100.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">real point  y</text>
+<text x="416.0" y="222.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#b44a28" text-anchor="start" font-style="normal" font-weight="normal">prediction  ŷ</text>
+<text x="386.0" y="154.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#3d5f86" text-anchor="end" font-style="normal" font-weight="normal">residual</text>
+<text x="80.0" y="56.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#7a6e5e" text-anchor="start" font-style="normal" font-weight="normal">The error is vertical — we care about y.</text>
+</svg>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" width="760" height="460" role="img" aria-label="an outlier pulls the line">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+  <filter id="ink" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" result="t"/>
+    <feDisplacementMap in="SourceGraphic" in2="t" scale="0.7" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</defs>
+<rect width="760" height="460" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="460" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<path d="M 80.00,398.00 L 79.61,339.00 Q 79.61,339.00 79.97,309.50 Q 80.33,280.00 79.89,250.50 Q 79.45,221.00 80.06,191.50 Q 80.67,162.00 80.14,132.50 Q 79.61,103.00 79.81,73.50 L 80.00,44.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 72.00,390.00 L 178.33,390.29 Q 178.33,390.29 231.50,390.49 Q 284.67,390.69 337.83,390.14 Q 391.00,389.58 444.17,389.68 Q 497.33,389.78 550.50,389.97 Q 603.67,390.17 656.83,390.08 L 710.00,390.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 699.0,384.0 L 710.0,390.0 L 699.0,396.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 74.0,55.0 L 80.0,44.0 L 86.0,55.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="718.0" y="396.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">hours studied</text>
+<text x="72.0" y="34.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="end" font-style="normal" font-weight="normal">grade</text>
+<path d="M 168.6,390.0 L 168.6,397.0" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="168.6" y="414.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">1</text>
+<path d="M 257.1,390.0 L 257.1,397.0" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="257.1" y="414.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">2</text>
+<path d="M 345.7,390.0 L 345.7,397.0" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="345.7" y="414.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">3</text>
+<path d="M 434.3,390.0 L 434.3,397.0" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="434.3" y="414.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">4</text>
+<path d="M 522.9,390.0 L 522.9,397.0" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="522.9" y="414.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">5</text>
+<path d="M 611.4,390.0 L 611.4,397.0" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="611.4" y="414.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">6</text>
+<path d="M 80.0,322.0 L 73.0,322.0" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="68.0" y="327.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="end" font-style="normal" font-weight="normal">2</text>
+<path d="M 80.0,254.0 L 73.0,254.0" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="68.0" y="259.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="end" font-style="normal" font-weight="normal">4</text>
+<path d="M 80.0,186.0 L 73.0,186.0" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="68.0" y="191.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="end" font-style="normal" font-weight="normal">6</text>
+<path d="M 80.0,118.0 L 73.0,118.0" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="68.0" y="123.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="end" font-style="normal" font-weight="normal">8</text>
+<path d="M 124.29,335.60 L 196.37,309.26 Q 196.37,309.26 232.50,296.33 Q 268.63,283.41 304.70,270.33 Q 340.78,257.26 376.83,244.11 Q 412.87,230.96 448.85,217.61 Q 484.82,204.25 520.95,191.33 Q 557.08,178.40 593.11,165.20 L 629.14,152.00" fill="none" stroke="#4f6d55" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="1" stroke-dasharray="6 5"/>
+<path d="M 124.29,349.20 L 196.40,313.24 Q 196.40,313.24 232.45,295.25 Q 268.50,277.26 304.49,259.13 Q 340.47,241.00 376.64,223.24 Q 412.80,205.49 448.83,187.44 Q 484.85,169.39 520.94,151.48 Q 557.03,133.57 593.09,115.58 L 629.14,97.60" fill="none" stroke="#b44a28" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="168.6" cy="315.2" rx="6.5" ry="6.2" transform="rotate(-7.7 168.6 315.2)" fill="#241c14" opacity="0.92"/>
+<ellipse cx="169.8" cy="314.1" rx="1.8" ry="1.4" fill="#f7f2ea" opacity="0.35"/>
+<ellipse cx="257.1" cy="284.6" rx="6.8" ry="7.5" transform="rotate(-24.5 257.1 284.6)" fill="#241c14" opacity="0.92"/>
+<ellipse cx="258.3" cy="283.5" rx="1.9" ry="1.6" fill="#f7f2ea" opacity="0.35"/>
+<ellipse cx="345.7" cy="254.0" rx="7.1" ry="7.0" transform="rotate(20.2 345.7 254.0)" fill="#241c14" opacity="0.92"/>
+<ellipse cx="346.9" cy="252.9" rx="2.0" ry="1.5" fill="#f7f2ea" opacity="0.35"/>
+<ellipse cx="434.3" cy="220.0" rx="7.2" ry="7.2" transform="rotate(0.8 434.3 220.0)" fill="#241c14" opacity="0.92"/>
+<ellipse cx="435.5" cy="218.9" rx="2.0" ry="1.6" fill="#f7f2ea" opacity="0.35"/>
+<ellipse cx="522.9" cy="192.8" rx="6.5" ry="7.8" transform="rotate(-7.2 522.9 192.8)" fill="#241c14" opacity="0.92"/>
+<ellipse cx="524.1" cy="191.7" rx="1.8" ry="1.7" fill="#f7f2ea" opacity="0.35"/>
+<ellipse cx="593.7" cy="77.2" rx="8.3" ry="9.1" transform="rotate(5.7 593.7 77.2)" fill="#b44a28" opacity="0.92"/>
+<ellipse cx="594.9" cy="76.1" rx="2.3" ry="2.0" fill="#f7f2ea" opacity="0.35"/>
+<text x="602.6" y="59.2" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#b44a28" text-anchor="start" font-style="normal" font-weight="normal">outlier</text>
+<text x="274.9" y="165.6" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#b44a28" text-anchor="start" font-style="normal" font-weight="normal">pulls the line with it</text>
+</svg>

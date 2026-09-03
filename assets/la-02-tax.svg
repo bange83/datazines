@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" width="860" height="400" role="img" aria-label="ridge parabola vs lasso V">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="860" height="400" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="860" height="400" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<path d="M 70.00,308.00 L 69.69,264.00 Q 69.69,264.00 69.77,242.00 Q 69.85,220.00 70.07,198.00 Q 70.29,176.00 69.90,154.00 Q 69.50,132.00 69.59,110.00 Q 69.69,88.00 69.84,66.00 L 70.00,44.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 62.00,300.00 L 111.67,299.72 Q 111.67,299.72 136.50,300.03 Q 161.33,300.33 186.17,300.30 Q 211.00,300.26 235.83,299.88 Q 260.67,299.50 285.50,299.76 Q 310.33,300.03 335.17,300.01 L 360.00,300.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 349.0,294.0 L 360.0,300.0 L 349.0,306.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 64.0,55.0 L 70.0,44.0 L 76.0,55.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="368.0" y="306.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">b</text>
+<text x="62.0" y="34.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="end" font-style="normal" font-weight="normal">tax</text>
+<path d="M 82.7,189.5 L 93.8,206.9 L 104.9,222.8 L 115.9,237.0 L 127.0,249.7 L 138.1,260.8 L 149.1,270.2 L 160.2,278.2 L 171.3,284.5 L 182.3,289.2 L 193.4,292.4 L 204.5,294.0 L 215.5,294.0 L 226.6,292.4 L 237.7,289.2 L 248.7,284.5 L 259.8,278.2 L 270.9,270.2 L 281.9,260.8 L 293.0,249.7 L 304.1,237.0 L 315.1,222.8 L 326.2,206.9 L 337.3,189.5" fill="none" stroke="#3d5f86" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="210.0" y="345.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#3d5f86" text-anchor="middle" font-style="normal" font-weight="normal">ridge  —  b²</text>
+<text x="210.0" y="372.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">smooth. never a reason to sit at 0.</text>
+<path d="M 490.00,308.00 L 489.77,264.00 Q 489.77,264.00 489.75,242.00 Q 489.73,220.00 490.18,198.00 Q 490.64,176.00 490.32,154.00 Q 489.99,132.00 490.09,110.00 Q 490.18,88.00 490.09,66.00 L 490.00,44.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 482.00,300.00 L 531.67,300.27 Q 531.67,300.27 556.50,300.15 Q 581.33,300.03 606.17,300.37 Q 631.00,300.71 655.83,300.62 Q 680.67,300.53 705.50,300.21 Q 730.33,299.90 755.17,299.95 L 780.00,300.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 769.0,294.0 L 780.0,300.0 L 769.0,306.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 484.0,55.0 L 490.0,44.0 L 496.0,55.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="788.0" y="306.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">b</text>
+<path d="M 502.73,177.91 L 523.92,197.30 Q 523.92,197.30 534.58,206.94 Q 545.23,216.58 555.76,226.35 Q 566.29,236.12 576.90,245.81 Q 587.50,255.51 598.22,265.08 Q 608.93,274.65 619.47,284.42 L 630.00,294.19" fill="none" stroke="#b44a28" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 630.00,294.19 L 651.13,274.72 Q 651.13,274.72 661.70,264.99 Q 672.27,255.26 683.12,245.83 Q 693.97,236.41 704.40,226.53 Q 714.83,216.65 725.50,207.03 Q 736.17,197.41 746.72,187.66 L 757.27,177.91" fill="none" stroke="#b44a28" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="630.0" cy="294.2" rx="7.2" ry="6.4" transform="rotate(6.7 630.0 294.2)" fill="#b44a28" opacity="0.92"/>
+<ellipse cx="631.2" cy="293.1" rx="2.0" ry="1.4" fill="#f7f2ea" opacity="0.35"/>
+<text x="630.0" y="345.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#b44a28" text-anchor="middle" font-style="normal" font-weight="normal">lasso  —  |b|</text>
+<text x="630.0" y="372.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">sharp corner. sitting at 0 is cheap.</text>
+</svg>

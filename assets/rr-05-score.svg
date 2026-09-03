@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img" aria-label="ridge score is error plus a tax">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380.0" y="48.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">ridge changes the score the line is graded on</text>
+<path d="M 40.0,80.0 L 340.0,80.0 L 340.0,300.0 L 40.0,300.0 Z" fill="#efe6d4" stroke="#b44a28" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+<text x="190.0" y="122.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#b44a28" text-anchor="middle" font-style="normal" font-weight="normal">old score</text>
+<text x="190.0" y="168.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="middle" font-style="normal" font-weight="normal">how wrong on the points</text>
+<text x="380.0" y="200.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="40" fill="#241c14" text-anchor="middle" font-style="normal" font-weight="normal">+</text>
+<path d="M 420.0,80.0 L 720.0,80.0 L 720.0,300.0 L 420.0,300.0 Z" fill="#efe6d4" stroke="#3d5f86" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+<text x="570.0" y="122.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#3d5f86" text-anchor="middle" font-style="normal" font-weight="normal">new tax</text>
+<text x="570.0" y="168.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="middle" font-style="normal" font-weight="normal">λ  ×  how huge the knobs are</text>
+</svg>

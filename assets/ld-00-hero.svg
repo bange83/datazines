@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" width="760" height="460" role="img" aria-label="two blobs and an LDA line">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="460" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="460" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<path d="M 80.00,398.00 L 80.24,339.00 Q 80.24,339.00 80.28,309.50 Q 80.32,280.00 79.99,250.50 Q 79.66,221.00 79.83,191.50 Q 79.99,162.00 79.98,132.50 Q 79.96,103.00 79.98,73.50 L 80.00,44.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 72.00,390.00 L 175.00,389.72 Q 175.00,389.72 226.50,389.57 Q 278.00,389.43 329.50,389.95 Q 381.00,390.47 432.50,390.19 Q 484.00,389.92 535.50,390.05 Q 587.00,390.18 638.50,390.09 L 690.00,390.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 679.0,384.0 L 690.0,390.0 L 679.0,396.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 74.0,55.0 L 80.0,44.0 L 86.0,55.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="696.0" y="396.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start">hours studied</text>
+<text x="72.0" y="36.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="end">sleep</text>
+<path d="M 360.3,248.2 L 350.8,236.2 L 336.0,225.9 L 316.7,217.9 L 293.9,212.6 L 268.7,210.1 L 242.3,210.8 L 216.2,214.4 L 191.6,220.9 L 169.7,229.9 L 151.6,241.0 L 138.3,253.5 L 130.3,267.0 L 128.2,280.6 L 132.0,293.8 L 141.6,305.8 L 156.3,316.1 L 175.6,324.1 L 198.4,329.4 L 223.6,331.9 L 250.0,331.2 L 276.1,327.6 L 300.7,321.1 L 322.7,312.1 L 340.7,301.0 L 354.1,288.5 L 362.0,275.0 L 364.1,261.4 Z" fill="#b44a28" stroke="#b44a28" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="0.1"/>
+<path d="M 360.3,248.2 L 350.8,236.2 L 336.0,225.9 L 316.7,217.9 L 293.9,212.6 L 268.7,210.1 L 242.3,210.8 L 216.2,214.4 L 191.6,220.9 L 169.7,229.9 L 151.6,241.0 L 138.3,253.5 L 130.3,267.0 L 128.2,280.6 L 132.0,293.8 L 141.6,305.8 L 156.3,316.1 L 175.6,324.1 L 198.4,329.4 L 223.6,331.9 L 250.0,331.2 L 276.1,327.6 L 300.7,321.1 L 322.7,312.1 L 340.7,301.0 L 354.1,288.5 L 362.0,275.0 L 364.1,261.4 Z" fill="none" stroke="#b44a28" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 591.0,146.2 L 581.5,134.2 L 566.8,123.9 L 547.5,115.9 L 524.7,110.6 L 499.5,108.1 L 473.1,108.8 L 447.0,112.4 L 422.3,118.9 L 400.4,127.9 L 382.3,139.0 L 369.0,151.5 L 361.1,165.0 L 359.0,178.6 L 362.8,191.8 L 372.3,203.8 L 387.1,214.1 L 406.4,222.1 L 429.2,227.4 L 454.4,229.9 L 480.7,229.2 L 506.9,225.6 L 531.5,219.1 L 553.4,210.1 L 571.5,199.0 L 584.8,186.5 L 592.7,173.0 L 594.9,159.4 Z" fill="#3d5f86" stroke="#3d5f86" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="0.1"/>
+<path d="M 591.0,146.2 L 581.5,134.2 L 566.8,123.9 L 547.5,115.9 L 524.7,110.6 L 499.5,108.1 L 473.1,108.8 L 447.0,112.4 L 422.3,118.9 L 400.4,127.9 L 382.3,139.0 L 369.0,151.5 L 361.1,165.0 L 359.0,178.6 L 362.8,191.8 L 372.3,203.8 L 387.1,214.1 L 406.4,222.1 L 429.2,227.4 L 454.4,229.9 L 480.7,229.2 L 506.9,225.6 L 531.5,219.1 L 553.4,210.1 L 571.5,199.0 L 584.8,186.5 L 592.7,173.0 L 594.9,159.4 Z" fill="none" stroke="#3d5f86" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="169.7" cy="255.8" rx="5.9" ry="5.7" transform="rotate(-11.5 169.7 255.8)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="262.4" cy="203.3" rx="5.9" ry="6.4" transform="rotate(-24.7 262.4 203.3)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="256.5" cy="275.1" rx="6.2" ry="6.2" transform="rotate(19.3 256.5 275.1)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="308.7" cy="265.4" rx="6.1" ry="6.2" transform="rotate(0.9 308.7 265.4)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="292.3" cy="281.4" rx="5.9" ry="5.7" transform="rotate(-22.2 292.3 281.4)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="257.2" cy="242.0" rx="6.3" ry="5.9" transform="rotate(-15.0 257.2 242.0)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="281.5" cy="267.4" rx="5.8" ry="5.8" transform="rotate(-7.2 281.5 267.4)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="191.2" cy="258.4" rx="5.6" ry="5.9" transform="rotate(6.2 191.2 258.4)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="250.1" cy="250.6" rx="6.0" ry="5.7" transform="rotate(-23.6 250.1 250.6)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="257.1" cy="240.2" rx="5.4" ry="5.4" transform="rotate(4.2 257.1 240.2)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="243.5" cy="265.3" rx="6.3" ry="6.2" transform="rotate(14.9 243.5 265.3)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="280.0" cy="301.8" rx="6.2" ry="5.5" transform="rotate(17.1 280.0 301.8)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="225.8" cy="285.2" rx="6.0" ry="5.2" transform="rotate(-24.2 225.8 285.2)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="346.7" cy="273.6" rx="5.1" ry="6.2" transform="rotate(-12.5 346.7 273.6)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="279.3" cy="253.5" rx="5.3" ry="6.0" transform="rotate(-7.8 279.3 253.5)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="231.9" cy="314.9" rx="5.2" ry="5.3" transform="rotate(1.4 231.9 314.9)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="295.1" cy="282.5" rx="5.3" ry="5.5" transform="rotate(10.6 295.1 282.5)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="282.6" cy="308.0" rx="5.7" ry="5.6" transform="rotate(-1.3 282.6 308.0)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="454.7" cy="133.4" rx="5.1" ry="5.6" transform="rotate(-4.0 454.7 133.4)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="549.6" cy="205.9" rx="5.4" ry="5.3" transform="rotate(20.0 549.6 205.9)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="409.3" cy="170.3" rx="5.8" ry="5.4" transform="rotate(5.3 409.3 170.3)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="513.9" cy="164.5" rx="6.2" ry="5.1" transform="rotate(-24.1 513.9 164.5)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="492.3" cy="197.0" rx="5.3" ry="6.1" transform="rotate(-17.0 492.3 197.0)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="506.7" cy="137.4" rx="6.1" ry="6.0" transform="rotate(2.2 506.7 137.4)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="454.8" cy="209.6" rx="5.4" ry="6.5" transform="rotate(14.9 454.8 209.6)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="438.4" cy="147.4" rx="5.8" ry="5.4" transform="rotate(7.4 438.4 147.4)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="388.9" cy="171.6" rx="5.7" ry="5.9" transform="rotate(-8.9 388.9 171.6)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="426.6" cy="172.7" rx="6.0" ry="5.2" transform="rotate(-10.1 426.6 172.7)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="464.5" cy="168.6" rx="6.5" ry="6.3" transform="rotate(-9.7 464.5 168.6)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="553.1" cy="157.1" rx="6.3" ry="5.5" transform="rotate(22.0 553.1 157.1)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="544.6" cy="173.0" rx="6.1" ry="5.7" transform="rotate(-12.4 544.6 173.0)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="452.6" cy="158.3" rx="5.1" ry="6.3" transform="rotate(-23.1 452.6 158.3)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="333.0" cy="170.1" rx="6.2" ry="6.4" transform="rotate(3.5 333.0 170.1)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="485.1" cy="204.0" rx="5.3" ry="6.3" transform="rotate(23.7 485.1 204.0)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="500.5" cy="184.8" rx="6.1" ry="5.8" transform="rotate(-6.1 500.5 184.8)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="352.1" cy="175.0" rx="5.6" ry="5.4" transform="rotate(8.7 352.1 175.0)" fill="#3d5f86" opacity="0.9"/>
+<path d="M 144.62,112.33 L 210.60,141.35 Q 210.60,141.35 243.61,155.85 Q 276.61,170.34 309.48,185.12 Q 342.35,199.91 375.39,214.32 Q 408.43,228.72 441.36,243.39 Q 474.29,258.05 507.27,272.58 Q 540.25,287.12 573.20,301.73 L 606.15,316.33" fill="none" stroke="#241c14" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="181.5" y="293.7" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="start">fail</text>
+<text x="523.1" y="118.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#3d5f86" text-anchor="start">pass</text>
+<text x="403.1" y="259.7" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">LDA line</text>
+</svg>

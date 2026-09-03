@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" width="760" height="460" role="img" aria-label="intercept and slope">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+  <filter id="ink" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" result="t"/>
+    <feDisplacementMap in="SourceGraphic" in2="t" scale="0.7" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</defs>
+<rect width="760" height="460" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="460" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<path d="M 90.00,388.00 L 89.68,334.00 Q 89.68,334.00 89.77,307.00 Q 89.86,280.00 89.65,253.00 Q 89.45,226.00 89.42,199.00 Q 89.40,172.00 89.66,145.00 Q 89.92,118.00 89.96,91.00 L 90.00,64.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 82.00,380.00 L 171.67,380.21 Q 171.67,380.21 216.50,379.91 Q 261.33,379.61 306.17,379.84 Q 351.00,380.06 395.83,379.87 Q 440.67,379.69 485.50,379.71 Q 530.33,379.74 575.17,379.87 L 620.00,380.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 609.0,374.0 L 620.0,380.0 L 609.0,386.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 84.0,75.0 L 90.0,64.0 L 96.0,75.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="628.0" y="386.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">hours studied</text>
+<text x="82.0" y="54.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="end" font-style="normal" font-weight="normal">grade</text>
+<path d="M 189.4,380.0 L 189.4,387.0" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="189.4" y="404.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">1</text>
+<path d="M 265.9,380.0 L 265.9,387.0" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="265.9" y="404.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">2</text>
+<path d="M 342.4,380.0 L 342.4,387.0" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="342.4" y="404.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">3</text>
+<path d="M 418.8,380.0 L 418.8,387.0" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="418.8" y="404.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">4</text>
+<path d="M 495.3,380.0 L 495.3,387.0" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="495.3" y="404.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">5</text>
+<path d="M 571.8,380.0 L 571.8,387.0" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="571.8" y="404.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">6</text>
+<path d="M 90.0,305.9 L 83.0,305.9" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="78.0" y="310.9" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="end" font-style="normal" font-weight="normal">2</text>
+<path d="M 90.0,238.5 L 83.0,238.5" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="78.0" y="243.5" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="end" font-style="normal" font-weight="normal">4</text>
+<path d="M 90.0,171.1 L 83.0,171.1" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="78.0" y="176.1" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="end" font-style="normal" font-weight="normal">6</text>
+<path d="M 90.0,103.7 L 83.0,103.7" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="78.0" y="108.7" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="end" font-style="normal" font-weight="normal">8</text>
+<path d="M 112.94,314.29 L 172.29,288.36 Q 172.29,288.36 201.93,275.34 Q 231.58,262.32 261.23,249.29 Q 290.87,236.26 320.51,223.21 Q 350.15,210.17 379.64,196.79 Q 409.13,183.41 438.80,170.44 Q 468.46,157.46 498.14,144.50 Q 527.82,131.55 557.44,118.46 L 587.06,105.38" fill="none" stroke="#b44a28" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="112.9" cy="314.3" rx="7.6" ry="7.6" transform="rotate(-20.7 112.9 314.3)" fill="#b44a28" opacity="0.92"/>
+<ellipse cx="114.1" cy="313.2" rx="2.1" ry="1.7" fill="#f7f2ea" opacity="0.35"/>
+<path d="M 124.94,314.29 L 152.62,305.57 Q 152.62,305.57 166.37,300.94 Q 180.12,296.31 193.83,291.54 Q 207.54,286.77 221.42,282.53 L 235.29,278.29" fill="none" stroke="#b44a28" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="239.1" y="282.3" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#b44a28" text-anchor="start" font-style="normal" font-weight="normal">a  —  intercept</text>
+<text x="239.1" y="304.3" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#7a6e5e" text-anchor="start" font-style="normal" font-weight="normal">here ≈ 1.8</text>
+<path d="M 265.9,246.9 L 418.8,246.9 L 418.8,179.5" fill="none" stroke="#3d5f86" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="1" stroke-dasharray="4 4"/>
+<text x="342.4" y="268.9" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#3d5f86" text-anchor="middle" font-style="normal" font-weight="normal">Δx = 2</text>
+<text x="428.8" y="219.2" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#3d5f86" text-anchor="start" font-style="normal" font-weight="normal">Δy = 2</text>
+<text x="449.4" y="130.7" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#3d5f86" text-anchor="start" font-style="normal" font-weight="normal">b = Δy / Δx = 1</text>
+</svg>

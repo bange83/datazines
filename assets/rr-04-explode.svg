@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" width="760" height="430" role="img" aria-label="correlated x make coefficients explode">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="430" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="430" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380.0" y="48.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">two x that say almost the same thing</text>
+<text x="200.0" y="92.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#b44a28" text-anchor="middle" font-style="normal" font-weight="normal">ordinary</text>
+<path d="M 112.0,340.0 L 148.0,340.0 L 146.0,130.0 L 114.0,130.0 Z" fill="#b44a28" stroke="#b44a28" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.22"/>
+<path d="M 130.00,340.00 L 129.55,287.50 Q 129.55,287.50 129.69,261.25 Q 129.83,235.00 129.72,208.75 Q 129.61,182.50 129.80,156.25 L 130.00,130.00" fill="none" stroke="#b44a28" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="130.0" y="368.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="middle" font-style="normal" font-weight="normal">hours</text>
+<text x="130.0" y="120.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#b44a28" text-anchor="middle" font-style="normal" font-weight="normal">+48</text>
+<path d="M 252.0,340.0 L 288.0,340.0 L 286.0,140.0 L 254.0,140.0 Z" fill="#b44a28" stroke="#b44a28" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.22"/>
+<path d="M 270.00,340.00 L 270.47,290.00 Q 270.47,290.00 270.48,265.00 Q 270.48,240.00 270.39,215.00 Q 270.30,190.00 270.15,165.00 L 270.00,140.00" fill="none" stroke="#b44a28" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="270.0" y="368.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="middle" font-style="normal" font-weight="normal">minutes</text>
+<text x="270.0" y="130.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#b44a28" text-anchor="middle" font-style="normal" font-weight="normal">−47</text>
+<text x="200.0" y="400.0" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">a fight. net effect ≈ 1</text>
+<text x="560.0" y="92.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#3d5f86" text-anchor="middle" font-style="normal" font-weight="normal">ridge</text>
+<path d="M 472.0,340.0 L 508.0,340.0 L 506.0,270.0 L 474.0,270.0 Z" fill="#3d5f86" stroke="#3d5f86" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.22"/>
+<path d="M 490.00,340.00 L 489.75,322.50 Q 489.75,322.50 489.61,313.75 Q 489.48,305.00 489.52,296.25 Q 489.55,287.50 489.78,278.75 L 490.00,270.00" fill="none" stroke="#3d5f86" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="490.0" y="368.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="middle" font-style="normal" font-weight="normal">hours</text>
+<text x="490.0" y="260.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#3d5f86" text-anchor="middle" font-style="normal" font-weight="normal">+0.5</text>
+<path d="M 612.0,340.0 L 648.0,340.0 L 646.0,278.0 L 614.0,278.0 Z" fill="#3d5f86" stroke="#3d5f86" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.22"/>
+<path d="M 630.00,340.00 L 630.37,324.50 Q 630.37,324.50 630.43,316.75 Q 630.49,309.00 630.42,301.25 Q 630.34,293.50 630.17,285.75 L 630.00,278.00" fill="none" stroke="#3d5f86" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="630.0" y="368.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="middle" font-style="normal" font-weight="normal">minutes</text>
+<text x="630.0" y="268.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#3d5f86" text-anchor="middle" font-style="normal" font-weight="normal">+0.5</text>
+<text x="560.0" y="400.0" font-family="Georgia, Times New Roman, serif" font-size="16" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">they share the job</text>
+</svg>

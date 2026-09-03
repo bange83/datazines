@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 460" width="860" height="460" role="img" aria-label="lasso diamond hits a corner">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="860" height="460" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="860" height="460" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="215.0" y="42.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#3d5f86" text-anchor="middle" font-style="normal" font-weight="normal">ridge  (circle)</text>
+<text x="645.0" y="42.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#b44a28" text-anchor="middle" font-style="normal" font-weight="normal">lasso  (diamond)</text>
+<path d="M 60.00,230.00 L 122.00,229.81 Q 122.00,229.81 153.00,229.87 Q 184.00,229.92 215.00,229.83 Q 246.00,229.74 277.00,229.77 Q 308.00,229.80 339.00,229.90 L 370.00,230.00" fill="none" stroke="#241c14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 215.00,75.00 L 214.86,137.00 Q 214.86,137.00 214.83,168.00 Q 214.80,199.00 215.00,230.00 Q 215.21,261.00 215.10,292.00 Q 214.98,323.00 214.99,354.00 L 215.00,385.00" fill="none" stroke="#241c14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="377.0" y="236.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">b₁</text>
+<text x="223.0" y="68.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">b₂</text>
+<ellipse cx="215" cy="230" rx="92" ry="92" fill="#3d5f86" opacity="0.10"/>
+<ellipse cx="215" cy="230" rx="92" ry="92" fill="none" stroke="#3d5f86" stroke-width="2.4"/>
+<ellipse cx="279.0" cy="280.0" rx="6.9" ry="6.8" transform="rotate(-14.3 279.0 280.0)" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="280.2" cy="278.9" rx="1.9" ry="1.5" fill="#f7f2ea" opacity="0.35"/>
+<text x="215.0" y="410.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">kisses a side. both knobs live.</text>
+<path d="M 490.00,230.00 L 552.00,230.15 Q 552.00,230.15 583.00,230.19 Q 614.00,230.23 645.00,230.23 Q 676.00,230.23 707.00,230.04 Q 738.00,229.86 769.00,229.93 L 800.00,230.00" fill="none" stroke="#241c14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 645.00,75.00 L 644.89,137.00 Q 644.89,137.00 644.81,168.00 Q 644.73,199.00 644.72,230.00 Q 644.71,261.00 644.95,292.00 Q 645.19,323.00 645.10,354.00 L 645.00,385.00" fill="none" stroke="#241c14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="807.0" y="236.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">b₁</text>
+<text x="653.0" y="68.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">b₂</text>
+<path d="M 645.0,138.0 L 737.0,230.0 L 645.0,322.0 L 553.0,230.0 Z" fill="#b44a28" stroke="#b44a28" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.1"/>
+<ellipse cx="645.0" cy="138.0" rx="7.8" ry="7.5" transform="rotate(-16.1 645.0 138.0)" fill="#b44a28" opacity="0.92"/>
+<ellipse cx="646.2" cy="136.9" rx="2.2" ry="1.7" fill="#f7f2ea" opacity="0.35"/>
+<text x="645.0" y="410.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">hits a corner. one knob is exactly 0.</text>
+</svg>

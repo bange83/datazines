@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img" aria-label="new point asks which blob">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380.0" y="48.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#7a6e5e" text-anchor="middle">a new student. which blob is this closer to?</text>
+<ellipse cx="200" cy="200" rx="90" ry="70" fill="#b44a28" opacity="0.12" stroke="#b44a28" stroke-width="2"/>
+<ellipse cx="520" cy="190" rx="90" ry="70" fill="#3d5f86" opacity="0.12" stroke="#3d5f86" stroke-width="2"/>
+<text x="200.0" y="205.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#b44a28" text-anchor="middle">fail</text>
+<text x="520.0" y="195.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#3d5f86" text-anchor="middle">pass</text>
+<ellipse cx="370.0" cy="210.0" rx="9.4" ry="10.1" transform="rotate(-6.5 370.0 210.0)" fill="#241c14" opacity="0.9"/>
+<text x="370.0" y="250.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="middle">you</text>
+<path d="M 370.00,210.00 L 346.01,207.88 Q 346.01,207.88 333.98,207.27 Q 321.95,206.66 309.94,205.70 Q 297.94,204.74 285.98,203.21 Q 274.03,201.68 262.01,200.84 L 250.00,200.00" fill="none" stroke="#b44a28" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="1" stroke-dasharray="5 4"/>
+<path d="M 370.00,210.00 L 386.11,206.45 Q 386.11,206.45 394.05,204.20 Q 401.99,201.96 410.06,200.23 Q 418.12,198.50 426.06,196.24 Q 433.99,193.98 442.00,191.99 L 450.00,190.00" fill="none" stroke="#3d5f86" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="380.0" y="320.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">LDA: closer in a fair, shared-shape sense → that class.</text>
+</svg>

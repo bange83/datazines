@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="slope as rise over run">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+  <filter id="ink" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" result="t"/>
+    <feDisplacementMap in="SourceGraphic" in2="t" scale="0.7" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</defs>
+<rect width="720" height="420" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="720" height="420" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<path d="M 160.00,310.00 L 207.56,285.11 Q 207.56,285.11 231.35,272.69 Q 255.14,260.26 278.95,247.88 Q 302.77,235.51 326.46,222.90 Q 350.16,210.30 373.96,197.89 Q 397.75,185.48 421.27,172.54 Q 444.78,159.59 468.64,147.29 Q 492.49,134.98 516.25,122.49 L 540.00,110.00" fill="none" stroke="#b44a28" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 160.0,310.0 L 540.0,310.0 L 540.0,110.0" fill="none" stroke="#3d5f86" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="1" stroke-dasharray="6 5"/>
+<ellipse cx="160.0" cy="310.0" rx="9.3" ry="9.9" transform="rotate(-19.3 160.0 310.0)" fill="#241c14" opacity="0.92"/>
+<ellipse cx="161.2" cy="308.9" rx="2.6" ry="2.2" fill="#f7f2ea" opacity="0.35"/>
+<ellipse cx="540.0" cy="110.0" rx="8.9" ry="8.5" transform="rotate(2.2 540.0 110.0)" fill="#241c14" opacity="0.92"/>
+<ellipse cx="541.2" cy="108.9" rx="2.5" ry="1.9" fill="#f7f2ea" opacity="0.35"/>
+<text x="152.0" y="342.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">A  (2 hrs, 3.8)</text>
+<text x="554.0" y="116.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">B  (5 hrs, 6.8)</text>
+<text x="350.0" y="346.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#3d5f86" text-anchor="middle" font-style="normal" font-weight="normal">run  Δx</text>
+<text x="556.0" y="218.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#3d5f86" text-anchor="start" font-style="normal" font-weight="normal">rise  Δy</text>
+<text x="360.0" y="64.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="26" fill="#241c14" text-anchor="middle" font-style="normal" font-weight="normal">slope  =  rise  /  run</text>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" width="720" height="360" role="img" aria-label="gradient as slope">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="720" height="360" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="720" height="360" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<path d="M 80.0,266.8 L 109.5,244.1 L 138.9,223.2 L 168.4,204.0 L 197.9,186.7 L 227.4,171.1 L 256.8,157.2 L 286.3,145.2 L 315.8,134.9 L 345.3,126.4 L 374.7,119.7 L 404.2,114.7 L 433.7,111.5 L 463.2,110.1 L 492.6,110.4 L 522.1,112.6 L 551.6,116.5 L 581.1,122.1 L 610.5,129.6 L 640.0,138.8" fill="none" stroke="#241c14" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 140.00,250.00 L 175.01,222.51 Q 175.01,222.51 192.48,208.73 Q 209.95,194.94 227.49,181.24 Q 245.03,167.53 262.51,153.77 L 280.00,140.00" fill="none" stroke="#b44a28" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="200.0" cy="200.0" rx="7.2" ry="7.1" transform="rotate(16.9 200.0 200.0)" fill="#b44a28" opacity="0.9"/>
+<text x="290.0" y="130.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="start">steep  →  big step</text>
+<ellipse cx="520.0" cy="115.0" rx="7.5" ry="7.5" transform="rotate(24.8 520.0 115.0)" fill="#c4a35a" opacity="0.9"/>
+<path d="M 470.00,125.00 L 510.02,119.45 Q 510.02,119.45 530.01,116.55 Q 550.00,113.66 570.00,110.83 L 590.00,108.00" fill="none" stroke="#c4a35a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="600.0" y="100.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#c4a35a" text-anchor="start">flat  →  tiny step</text>
+<text x="360.0" y="330.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">gradient = which way is downhill, and how steep.</text>
+</svg>

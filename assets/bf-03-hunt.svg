@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" width="860" height="420" role="img" aria-label="what each dialect hunts">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="860" height="420" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="860" height="420" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="430.0" y="40.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#7a6e5e" text-anchor="middle">what the next tree actually hunts</text>
+<ellipse cx="70.0" cy="90.0" rx="11.2" ry="12.1" transform="rotate(-6.5 70.0 90.0)" fill="#b44a28" opacity="0.9"/>
+<text x="110.0" y="96.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#b44a28" text-anchor="start">AdaBoost</text>
+<text x="110.0" y="126.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">people  —  wrong ones get heavier</text>
+<ellipse cx="70.0" cy="180.0" rx="12.3" ry="12.4" transform="rotate(-21.7 70.0 180.0)" fill="#c4a35a" opacity="0.9"/>
+<text x="110.0" y="186.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#c4a35a" text-anchor="start">gradient boosting</text>
+<text x="110.0" y="216.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">leftover  —  the current sum’s error</text>
+<ellipse cx="70.0" cy="270.0" rx="10.6" ry="13.0" transform="rotate(-12.0 70.0 270.0)" fill="#3d5f86" opacity="0.9"/>
+<text x="110.0" y="276.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#3d5f86" text-anchor="start">XGBoost / LightGBM / CatBoost</text>
+<text x="110.0" y="306.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">leftover + taxes  —  same chain, faster engine</text>
+</svg>

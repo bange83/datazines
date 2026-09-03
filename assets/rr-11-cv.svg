@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" width="760" height="460" role="img" aria-label="pick lambda on new-data error">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="460" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="460" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<path d="M 90.00,358.00 L 90.05,305.67 Q 90.05,305.67 90.32,279.50 Q 90.59,253.33 90.27,227.17 Q 89.95,201.00 89.98,174.83 Q 90.01,148.67 90.04,122.50 Q 90.07,96.33 90.03,70.17 L 90.00,44.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 82.00,350.00 L 178.33,350.10 Q 178.33,350.10 226.50,350.25 Q 274.67,350.41 322.83,349.88 Q 371.00,349.35 419.17,349.54 Q 467.33,349.73 515.50,349.70 Q 563.67,349.67 611.83,349.84 L 660.00,350.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 649.0,344.0 L 660.0,350.0 L 649.0,356.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 84.0,55.0 L 90.0,44.0 L 96.0,55.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="668.0" y="356.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">λ  (more tax →)</text>
+<text x="82.0" y="34.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="end" font-style="normal" font-weight="normal">error on new data</text>
+<path d="M 112.4,204.3 L 138.3,215.7 L 164.3,225.8 L 190.2,235.0 L 216.1,243.6 L 242.1,251.5 L 268.0,258.4 L 294.0,263.8 L 319.9,267.1 L 345.8,267.8 L 371.8,265.6 L 397.7,260.2 L 423.6,251.8 L 449.6,240.9 L 475.5,228.0 L 501.5,213.6 L 527.4,198.2 L 553.3,182.2 L 579.3,165.6 L 605.2,148.0" fill="none" stroke="#3d5f86" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="605.2" cy="148.0" rx="8.4" ry="7.1" transform="rotate(24.1 605.2 148.0)" fill="#b44a28" opacity="0.92"/>
+<ellipse cx="606.4" cy="146.9" rx="2.3" ry="1.6" fill="#f7f2ea" opacity="0.35"/>
+<text x="619.2" y="140.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#b44a28" text-anchor="start" font-style="normal" font-weight="normal">sweet spot</text>
+<text x="162.8" y="140.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="start" font-style="normal" font-weight="normal">too wild</text>
+<text x="538.0" y="132.5" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="end" font-style="normal" font-weight="normal">too shy</text>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img" aria-label="when to use lasso">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<path d="M 70.0,70 L 270.0,70 L 270.0,280 L 70.0,280 Z" fill="#efe6d4" stroke="#4f6d55" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="170.0" y="130.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#4f6d55" text-anchor="middle" font-style="normal" font-weight="normal">use lasso when</text>
+<text x="170.0" y="190.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="middle" font-style="normal" font-weight="normal">you want a short list</text>
+<path d="M 280.0,70 L 480.0,70 L 480.0,280 L 280.0,280 Z" fill="#efe6d4" stroke="#3d5f86" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="380.0" y="130.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#3d5f86" text-anchor="middle" font-style="normal" font-weight="normal">use ridge when</text>
+<text x="380.0" y="190.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="middle" font-style="normal" font-weight="normal">twins should share</text>
+<path d="M 490.0,70 L 690.0,70 L 690.0,280 L 490.0,280 Z" fill="#efe6d4" stroke="#b44a28" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="590.0" y="130.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="middle" font-style="normal" font-weight="normal">use neither when</text>
+<text x="590.0" y="190.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="middle" font-style="normal" font-weight="normal">the cloud is bent</text>
+</svg>

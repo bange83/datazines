@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" width="860" height="400" role="img" aria-label="random forest as a vote">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="860" height="400" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="860" height="400" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="430.0" y="42.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="24" fill="#241c14" text-anchor="middle">many trees. one vote.</text>
+<path d="M 70.0,160.0 L 106.0,90.0 L 142.0,160.0 Z" fill="#b44a28" stroke="#b44a28" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.12"/>
+<path d="M 70.0,160.0 L 106.0,90.0 L 142.0,160.0 Z" fill="none" stroke="#b44a28" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 106.00,160.00 L 105.82,167.33 Q 105.82,167.33 105.84,171.00 Q 105.86,174.67 105.93,178.33 L 106.00,182.00" fill="none" stroke="#b44a28" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="106.0" y="202.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="13" fill="#b44a28" text-anchor="middle">tree 1</text>
+<path d="M 165.0,160.0 L 201.0,90.0 L 237.0,160.0 Z" fill="#3d5f86" stroke="#3d5f86" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.12"/>
+<path d="M 165.0,160.0 L 201.0,90.0 L 237.0,160.0 Z" fill="none" stroke="#3d5f86" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 201.00,160.00 L 201.03,167.33 Q 201.03,167.33 200.97,171.00 Q 200.92,174.67 200.96,178.33 L 201.00,182.00" fill="none" stroke="#3d5f86" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="201.0" y="202.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="13" fill="#3d5f86" text-anchor="middle">tree 2</text>
+<path d="M 260.0,160.0 L 296.0,90.0 L 332.0,160.0 Z" fill="#4f6d55" stroke="#4f6d55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.12"/>
+<path d="M 260.0,160.0 L 296.0,90.0 L 332.0,160.0 Z" fill="none" stroke="#4f6d55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 296.00,160.00 L 296.25,167.33 Q 296.25,167.33 296.04,171.00 Q 295.83,174.67 295.91,178.33 L 296.00,182.00" fill="none" stroke="#4f6d55" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="296.0" y="202.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="13" fill="#4f6d55" text-anchor="middle">tree 3</text>
+<path d="M 355.0,160.0 L 391.0,90.0 L 427.0,160.0 Z" fill="#c4a35a" stroke="#c4a35a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.12"/>
+<path d="M 355.0,160.0 L 391.0,90.0 L 427.0,160.0 Z" fill="none" stroke="#c4a35a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 391.00,160.00 L 391.26,167.33 Q 391.26,167.33 391.14,171.00 Q 391.03,174.67 391.01,178.33 L 391.00,182.00" fill="none" stroke="#c4a35a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="391.0" y="202.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="13" fill="#c4a35a" text-anchor="middle">tree 4</text>
+<path d="M 450.0,160.0 L 486.0,90.0 L 522.0,160.0 Z" fill="#241c14" stroke="#241c14" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.12"/>
+<path d="M 450.0,160.0 L 486.0,90.0 L 522.0,160.0 Z" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 486.00,160.00 L 485.77,167.33 Q 485.77,167.33 485.78,171.00 Q 485.79,174.67 485.90,178.33 L 486.00,182.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<text x="486.0" y="202.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="13" fill="#241c14" text-anchor="middle">tree 5</text>
+<path d="M 250.00,230.00 L 285.99,238.04 Q 285.99,238.04 303.92,242.35 Q 321.86,246.65 339.95,250.24 Q 358.04,253.82 376.05,257.78 Q 394.06,261.74 412.03,265.87 L 430.00,270.00" fill="none" stroke="#7a6e5e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 430.00,230.00 L 430.19,243.33 Q 430.19,243.33 430.12,250.00 Q 430.04,256.67 430.02,263.33 L 430.00,270.00" fill="none" stroke="#7a6e5e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 610.00,230.00 L 574.05,238.25 Q 574.05,238.25 556.07,242.33 Q 538.09,246.42 520.05,250.24 Q 502.01,254.06 484.03,258.13 Q 466.04,262.19 448.02,266.10 L 430.00,270.00" fill="none" stroke="#7a6e5e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<ellipse cx="430" cy="310" rx="70" ry="32" fill="#efe6d4" stroke="#241c14" stroke-width="2"/>
+<text x="430.0" y="316.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="middle">majority: pass</text>
+</svg>
