@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" role="img" aria-label="stack the same block">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="380" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="380" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380.0" y="40.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">depth = how many times you run the block</text>
+<path d="M 230,90 L 530,90 L 530,152 L 230,152 Z" fill="#efe6d4" stroke="#b44a28" stroke-width="2.2"/>
+<text x="380.0" y="128.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="middle">block 1   look + net</text>
+<path d="M 380.0,152.0 L 380.0,175.0" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round" opacity="1"/>
+<path d="M 372,167 L 380,177 L 388,167" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M 230,175 L 530,175 L 530,237 L 230,237 Z" fill="#efe6d4" stroke="#c4a35a" stroke-width="2.2"/>
+<text x="380.0" y="213.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#c4a35a" text-anchor="middle">block 2   look + net</text>
+<path d="M 380.0,237.0 L 380.0,260.0" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round" opacity="1"/>
+<path d="M 372,252 L 380,262 L 388,252" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M 230,260 L 530,260 L 530,322 L 230,322 Z" fill="#efe6d4" stroke="#4f6d55" stroke-width="2.2"/>
+<text x="380.0" y="298.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#4f6d55" text-anchor="middle">block 3   look + net</text>
+<text x="560.0" y="128.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="start">tokens in</text>
+<text x="560.0" y="298.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="start">still points</text>
+<text x="380.0" y="355.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">two is a stack. ninety-six is a career. this notebook stops at the idea.</text>
+</svg>

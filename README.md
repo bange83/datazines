@@ -23,7 +23,7 @@ File sort order **is** reading order. Start here:
 
 1. [Linear regression](supervised%20learning/regression/01%20linear%20regression.md) — cloud → straight line
 2. Walk the rest of **regression** (ridge, lasso, elastic-net, LARS, GLM)
-3. Then **classification**, **ensembles**, **gradient descent**, **distributions**
+3. Then **classification**, **ensembles**, **gradient descent**, **distributions**, **a tiny net**
 
 Or open [`PATH.md`](PATH.md) and treat it as the library map. LLMs are one room in a later wing, not the building.
 
@@ -36,12 +36,14 @@ supervised learning/
   ensembles/           01–04  tree, forest, leftover-chain, boosting dialects
 optimization/          01     gradient descent
 probability/           01     distributions
-assets/                drawings (prefix per series: lr-, rr-, dt-, …)
+neural nets/           01–04  tiny net, embeddings, attention, one LLM
+inference/             01     t-test (could leftover have faked this?)
+assets/                drawings (prefix per series: lr-, rr-, dt-, nn-, …)
 AGENTS.md              how to write the next note
 PATH.md                which shelf is next
 ```
 
-**Next brick:** a tiny neural net. Not SVM, not attention yet.
+**Next brick:** causal 01 (pattern ≠ mechanism). Not SVM.
 
 ## Viewing
 

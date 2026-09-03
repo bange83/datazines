@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" role="img" aria-label="p is the leftover tail">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="380" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="380" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<path d="M 40.0,298.1 L 48.5,297.8 L 57.0,297.5 L 65.5,297.2 L 74.0,296.8 L 82.5,296.3 L 91.0,295.8 L 99.5,295.2 L 108.0,294.5 L 116.5,293.7 L 125.0,292.7 L 133.5,291.6 L 142.0,290.3 L 150.5,288.9 L 159.0,287.2 L 167.5,285.2 L 176.0,282.9 L 184.5,280.3 L 193.0,277.3 L 201.5,273.8 L 210.0,269.9 L 218.5,265.4 L 227.0,260.3 L 235.5,254.5 L 244.0,248.1 L 252.5,241.0 L 261.0,233.1 L 269.5,224.5 L 278.0,215.2 L 286.5,205.4 L 295.0,195.1 L 303.5,184.4 L 312.0,173.8 L 320.5,163.2 L 329.0,153.2 L 337.5,144.0 L 346.0,135.8 L 354.5,129.1 L 363.0,124.1 L 371.5,121.0 L 380.0,120.0 L 388.5,121.0 L 397.0,124.1 L 405.5,129.1 L 414.0,135.8 L 422.5,144.0 L 431.0,153.2 L 439.5,163.2 L 448.0,173.8 L 456.5,184.4 L 465.0,195.1 L 473.5,205.4 L 482.0,215.2 L 490.5,224.5 L 499.0,233.1 L 507.5,241.0 L 516.0,248.1 L 524.5,254.5 L 533.0,260.3 L 541.5,265.4 L 550.0,269.9 L 558.5,273.8 L 567.0,277.3 L 575.5,280.3 L 584.0,282.9 L 592.5,285.2 L 601.0,287.2 L 609.5,288.9 L 618.0,290.3 L 626.5,291.6 L 635.0,292.7 L 643.5,293.7 L 652.0,294.5 L 660.5,295.2 L 669.0,295.8 L 677.5,296.3 L 686.0,296.8 L 694.5,297.2 L 703.0,297.5 L 711.5,297.8 L 720.0,298.1" fill="none" stroke="#241c14" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M 70.0,300.0 L 690.0,300.0" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round" opacity="1"/>
+<path d="M 584.0,300.0 L 584.0,282.9 L 592.5,285.2 L 601.0,287.2 L 609.5,288.9 L 618.0,290.3 L 626.5,291.6 L 635.0,292.7 L 643.5,293.7 L 652.0,294.5 L 660.5,295.2 L 669.0,295.8 L 677.5,296.3 L 686.0,296.8 L 694.5,297.2 L 703.0,297.5 L 711.5,297.8 L 720.0,298.1 L 720.0,300.0" fill="#b44a28" stroke="#b44a28" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" opacity="0.22"/>
+<path d="M 40.0,300.0 L 40.0,298.1 L 48.5,297.8 L 57.0,297.5 L 65.5,297.2 L 74.0,296.8 L 82.5,296.3 L 91.0,295.8 L 99.5,295.2 L 108.0,294.5 L 116.5,293.7 L 125.0,292.7 L 133.5,291.6 L 142.0,290.3 L 150.5,288.9 L 159.0,287.2 L 167.5,285.2 L 176.0,282.9 L 176.0,300.0" fill="#b44a28" stroke="#b44a28" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" opacity="0.22"/>
+<path d="M 580.6,300.0 L 580.6,281.9" fill="none" stroke="#c4a35a" stroke-width="2" stroke-linecap="round" opacity="1"/>
+<text x="586.6" y="250.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#c4a35a" text-anchor="start">2.36</text>
+<text x="380.0" y="40.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#7a6e5e" text-anchor="middle">p = how often leftover is this loud, or louder</text>
+<text x="380.0" y="340.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">both tails. we did not bet on the sign.</text>
+<text x="380.0" y="366.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">p is not P(the slope is real).  p is P(leftover this noisy).</text>
+</svg>

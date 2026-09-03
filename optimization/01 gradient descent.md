@@ -147,4 +147,4 @@ SGD later: use **one person** (or a handful) per step instead of all eight. Same
 
 ---
 
-*Walk wing, 01. Chance wing next door: [[01 distributions]]. Softmax after that. Tiny net once you have both.*
+*Walk wing, 01. Chance wing next door: [[01 distributions]]. Softmax after that. The leftover walking backward: [[01 neural net]].*

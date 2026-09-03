@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" width="860" height="420" role="img" aria-label="P(next token) as slices over the word-list">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="860" height="420" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="860" height="420" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="430.0" y="38.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#7a6e5e" text-anchor="middle">coffee study  →  P(next word)</text>
+<ellipse cx="140.0" cy="180.0" rx="48" ry="30" transform="rotate(-4 140.0 180.0)" fill="#efe6d4" stroke="#c4a35a" stroke-width="2.2" opacity="1"/>
+<text x="140.0" y="186.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#c4a35a" text-anchor="middle">coffee</text>
+<ellipse cx="280.0" cy="180.0" rx="48" ry="30" transform="rotate(5 280.0 180.0)" fill="#efe6d4" stroke="#b44a28" stroke-width="2.2" opacity="1"/>
+<text x="280.0" y="186.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="middle">study</text>
+<path d="M 330.0,180.0 L 410.0,180.0" fill="none" stroke="#241c14" stroke-width="2.2" stroke-linecap="round" opacity="1"/>
+<path d="M 398,172 L 412,180 L 398,188" fill="none" stroke="#241c14" stroke-width="2.2" stroke-linecap="round"/>
+<text x="370.0" y="160.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="middle">block</text>
+<text x="620.0" y="100.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">P(next)</text>
+<path d="M 450,430 L 596.4,430 L 596.4,458 L 450,458 Z" fill="#b44a28" stroke="#b44a28" stroke-width="1.4" opacity="0.28"/>
+<text x="458.0" y="450.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#b44a28" text-anchor="start">hours</text>
+<text x="604.4" y="450.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#b44a28" text-anchor="start">0.38</text>
+<path d="M 450,490 L 520.8,490 L 520.8,518 L 450,518 Z" fill="#4f6d55" stroke="#4f6d55" stroke-width="1.4" opacity="0.28"/>
+<text x="458.0" y="510.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#4f6d55" text-anchor="start">textbook</text>
+<text x="528.8" y="510.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#4f6d55" text-anchor="start">0.11</text>
+<path d="M 450,550 L 515.2,550 L 515.2,578 L 450,578 Z" fill="#3d5f86" stroke="#3d5f86" stroke-width="1.4" opacity="0.28"/>
+<text x="458.0" y="570.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#3d5f86" text-anchor="start">night</text>
+<text x="523.2" y="570.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#3d5f86" text-anchor="start">0.09</text>
+<path d="M 450,610 L 607.6,610 L 607.6,638 L 450,638 Z" fill="#7a6e5e" stroke="#7a6e5e" stroke-width="1.4" opacity="0.28"/>
+<text x="458.0" y="630.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="start">…</text>
+<text x="430.0" y="390.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">same softmax as 03. rooms = the vocabulary.</text>
+</svg>

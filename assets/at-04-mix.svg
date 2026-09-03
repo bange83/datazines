@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img" aria-label="mix = slices times points">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380.0" y="40.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#7a6e5e" text-anchor="middle">each token keeps a mix of the points it listened to</text>
+<ellipse cx="160.0" cy="170.0" rx="44" ry="30" transform="rotate(-4 160.0 170.0)" fill="#efe6d4" stroke="#c4a35a" stroke-width="2.2" opacity="1"/>
+<text x="160.0" y="176.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#c4a35a" text-anchor="middle">coffee</text>
+<text x="160.0" y="230.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#c4a35a" text-anchor="middle">mix = itself</text>
+<text x="160.0" y="254.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle">(−0.42, −2.89)</text>
+<ellipse cx="430.0" cy="170.0" rx="44" ry="30" transform="rotate(4 430.0 170.0)" fill="#efe6d4" stroke="#b44a28" stroke-width="2.2" opacity="1"/>
+<text x="430.0" y="176.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="middle">study</text>
+<text x="430.0" y="230.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#4f6d55" text-anchor="middle">0.95 hours</text>
+<text x="430.0" y="254.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle">(5.20, 1.73)</text>
+<ellipse cx="680.0" cy="170.0" rx="44" ry="30" transform="rotate(2 680.0 170.0)" fill="#efe6d4" stroke="#4f6d55" stroke-width="2.2" opacity="1"/>
+<text x="680.0" y="176.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#4f6d55" text-anchor="middle">hours</text>
+<text x="680.0" y="230.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#4f6d55" text-anchor="middle">0.98 itself</text>
+<text x="680.0" y="254.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle">(5.22, 1.75)</text>
+<text x="380.0" y="320.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">a bag would have moved coffee. attention did not.</text>
+</svg>

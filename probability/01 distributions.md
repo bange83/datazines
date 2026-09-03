@@ -139,4 +139,4 @@ Mean 0: OLS. Std ~0.46: the bell’s spread, guessed from eight dots. Two leftov
 
 ---
 
-*Chance wing, 01. Tests later. Many-faced coin: [[03 softmax]]. Walking knobs: [[01 gradient descent]].*
+*Chance wing, 01. The first test: [[01 t-test]]. Many-faced coin: [[03 softmax]]. Walking knobs: [[01 gradient descent]].*

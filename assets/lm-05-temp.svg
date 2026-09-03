@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" width="760" height="340" role="img" aria-label="temperature is volume on the slices">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="340" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="340" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380.0" y="40.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#7a6e5e" text-anchor="middle">same scores. divide before softmax. louder / flatter.</text>
+<text x="150.0" y="88.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="middle">temp 0.5</text>
+<path d="M 110,112.19999999999999 L 190,112.19999999999999 L 190,260 L 110,260 Z" fill="#b44a28" stroke="#b44a28" stroke-width="1.8" opacity="0.3"/>
+<text x="150.0" y="100.2" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#b44a28" text-anchor="middle">hours 0.77</text>
+<text x="150.0" y="290.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">peaky</text>
+<text x="380.0" y="88.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#c4a35a" text-anchor="middle">temp 1</text>
+<path d="M 340,166.8 L 420,166.8 L 420,260 L 340,260 Z" fill="#c4a35a" stroke="#c4a35a" stroke-width="1.8" opacity="0.3"/>
+<text x="380.0" y="154.8" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#c4a35a" text-anchor="middle">hours 0.38</text>
+<text x="380.0" y="290.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">as trained</text>
+<text x="610.0" y="88.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#3d5f86" text-anchor="middle">temp 2</text>
+<path d="M 570,194.8 L 650,194.8 L 650,260 L 570,260 Z" fill="#3d5f86" stroke="#3d5f86" stroke-width="1.8" opacity="0.3"/>
+<text x="610.0" y="182.8" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#3d5f86" text-anchor="middle">hours 0.18</text>
+<text x="610.0" y="290.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">flat</text>
+<text x="380.0" y="322.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">use: sample from the slices. 0.5 is sure. 2 is chatty.</text>
+</svg>

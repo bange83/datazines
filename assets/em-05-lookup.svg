@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img" aria-label="embedding is a lookup table into the net">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380.0" y="40.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">word in  →  point  →  the rest of the net</text>
+<path d="M 50,130 L 230,130 L 230,220 L 50,220 Z" fill="#efe6d4" stroke="#241c14" stroke-width="2.2"/>
+<text x="140.0" y="184.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#241c14" text-anchor="middle">study</text>
+<path d="M 310,130 L 510,130 L 510,220 L 310,220 Z" fill="#efe6d4" stroke="#b44a28" stroke-width="2.2"/>
+<text x="410.0" y="172.0" font-family="Georgia, Times New Roman, serif" font-size="18" fill="#b44a28" text-anchor="middle">4.46 , 1.02</text>
+<text x="410.0" y="200.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="middle">the point</text>
+<path d="M 590,130 L 710,130 L 710,220 L 590,220 Z" fill="#efe6d4" stroke="#4f6d55" stroke-width="2.2"/>
+<text x="650.0" y="184.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#4f6d55" text-anchor="middle">net</text>
+<path d="M 230.0,175.0 L 310.0,175.0" fill="none" stroke="#b44a28" stroke-width="2.4" stroke-linecap="round" opacity="1"/>
+<path d="M 300,169 L 312,175 L 300,181" fill="none" stroke="#b44a28" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M 510.0,175.0 L 590.0,175.0" fill="none" stroke="#b44a28" stroke-width="2.4" stroke-linecap="round" opacity="1"/>
+<path d="M 580,169 L 592,175 L 580,181" fill="none" stroke="#b44a28" stroke-width="2.2" stroke-linecap="round"/>
+<text x="380.0" y="280.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">lookup, not a new kind of score.</text>
+<text x="380.0" y="312.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">an LLM’s first floor is this table, one row per token.</text>
+<text x="140.0" y="250.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="middle">token</text>
+<text x="410.0" y="250.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="middle">embedding</text>
+<text x="650.0" y="250.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="middle">then 01</text>
+</svg>

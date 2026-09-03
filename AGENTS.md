@@ -31,7 +31,7 @@ Flip it like a notebook. One page = one idea. Done.
 
 ## Page 1 — What landed today
 
-Vault root. Notes live under `supervised learning/`, `optimization/`, `probability/`.
+Vault root. Notes live under `supervised learning/`, `optimization/`, `probability/`, `neural nets/`, `inference/`.
 
 **Notes** live under `regression/`, numbered so the file list *is* the reading order:
 
@@ -67,6 +67,16 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 |--:|---|---|
 | 01 | [[01 gradient descent]] | walk the bowl; rate = stride |
 | 01 | [[01 distributions]] | bell, coin, counts — leftover costumes |
+| 01 | [[01 t-test]] | could leftover have faked this number? |
+
+**Nets (path page 4, now standing):**
+
+| # | note | idea in one breath |
+|--:|---|---|
+| 01 | [[01 neural net]] | score → squash → score → squash; leftover walks home |
+| 02 | [[02 embeddings]] | a word is a point; nearby = same notes |
+| 03 | [[03 attention]] | look around, share 1, mix; who matters depends on the asker |
+| 04 | [[04 LLM]] | P(next token); lookup + look + net, stacked |
 
 **Drawings** live in `assets/`, prefixes so they do not collide:
 
@@ -87,6 +97,11 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | `gd-` | gradient descent |
 | `ds-` | distributions |
 | `sm-` | softmax |
+| `nn-` | tiny neural net |
+| `em-` | embeddings |
+| `at-` | attention |
+| `lm-` | LLM / next token |
+| `tt-` | t-test / inference |
 | `sb-` | this receipt |
 
 Hero of each note is `*-00-hero.svg`. Embed as ordinary markdown so GitHub can render it. Path is **relative to the note**:
@@ -97,7 +112,7 @@ Hero of each note is `*-00-hero.svg`. Embed as ordinary markdown so GitHub can r
 
 From a nested family note that is two folders down: `![lr-00-hero](../../assets/lr-00-hero.svg)`. Do not use `![[…]]` — GitHub prints that as text.
 
-Empty slots on the lower shelf are not decoration. The **walk** is [[PATH.md]]. Descent, distributions, softmax are written. **Next brick: a tiny neural net.** Not SVM, not attention yet.
+Empty slots on the lower shelf are not decoration. The **walk** is [[PATH.md]]. Descent, distributions, softmax, a tiny net, embeddings, attention, one LLM sketchbook, and a t-test are written. **Next brick: causal 01** (or bootstrap as a chance sequel). SVM is later.
 
 ---
 
@@ -253,7 +268,7 @@ Classification, ensembles, distributions — same ritual:
 5. Open with hero + one sentence. Close with: mini recipe → **sklearn mini (story + numbers match)** → cheat sheet **with Use / skip** → sequel pointer.
 6. Come back here and put the new spines on the shelf (a line in the table on page 1 is enough). Do not rewrite the house rules unless the rules were wrong.
 
-**Next spine:** [[PATH.md]] — `neural nets/01 neural net`. SVM / attention are later.
+**Next spine:** [[PATH.md]] — `causal/01` (pattern ≠ mechanism), or `inference/02 bootstrap`. SVM is later.
 
 If a topic does not fit the notebook voice, it does not belong in this series yet.
 

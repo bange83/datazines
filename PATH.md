@@ -50,10 +50,15 @@ Same pencils as always. Same “one idea per page.” New family = new folder at
 - [[01 gradient descent]] — walk the bowl
 - [[01 distributions]] — bell, coin, counts
 - [[03 softmax]] — many-class S; LLM last layer
+- [[01 neural net]] — one hidden layer; leftover walks home
+- [[02 embeddings]] — a word is a point; nearby = same notes
+- [[03 attention]] — look around, share 1, mix
+- [[04 LLM]] — P(next token); this block, stacked
+- [[01 t-test]] — could leftover have faked this number?
 
-You already own: score, leftover, tax, squash, impurity, vote vs chain, learning rate (as volume). That is the furniture later wings reuse.
+You already own: score, leftover, tax, squash, impurity, vote vs chain, learning rate (as volume), a tiny net, a lookup table of points, a look, a next-token pile, a judge for a mean and a slope. That is the furniture later wings reuse.
 
-**Do not write next:** SVM, another boosting brand, kernel ridge, attention, a 12-page XGBoost. Next 01 is a **tiny net**. Side doors when a project knocks.
+**Do not write next:** SVM, another boosting brand, kernel ridge, a 12-page XGBoost, a second LLM. Next is **causal 01**, or bootstrap as a chance sequel. Side doors when a project knocks.
 
 ---
 
@@ -75,19 +80,13 @@ Optional side doors, when a project knocks: SVM / margins, clustering extras, re
 
 ---
 
-## Page 4 — Those three rooms exist. Next is a tiny net.
+## Page 4 — t-test exists. Next is cause (or bootstrap).
 
 ![pa-03-next](assets/pa-03-next.svg)
 
-**Written:** [[01 gradient descent]] · [[01 distributions]] · [[03 softmax]]
+**Written:** [[01 gradient descent]] · [[01 distributions]] · [[03 softmax]] · [[01 neural net]] · [[02 embeddings]] · [[03 attention]] · [[04 LLM]] · [[01 t-test]]
 
-Stop arguing about transformers until a **tiny net** exists too.
-
-**Next 01:** `neural nets/01 neural net` — one hidden layer on the exam (or the 3-class pile). Score → squash → score → squash. Backprop = leftover flowing backward.
-
-Then embeddings, then attention, then **one** LLM sketchbook.
-
-Chance wing in parallel: `inference/01 t-test` after distributions. **Do not** do attention before the tiny net.
+Job B’s staircase is standing, and the chance wing has its first test. **Next:** `causal/01` — pattern ≠ mechanism. Chance sequel: bootstrap. Do not fatten the LLM into twelve heads.
 
 ---
 
@@ -99,10 +98,10 @@ Reuse the encyclopedia; don’t clone it.
 2. Logistic S *(have)*  
 3. **GD** *(have)*  
 4. **Distributions** + **softmax / cross-entropy** *(have)*  
-5. Tiny net + backprop as leftover flowing backward *(next)*  
-6. Embeddings (tokens as points in a cloud)  
-7. Attention (which other tokens matter)  
-8. Transformer block = attention + net, stacked; train = next token; use = sample from softmax  
+5. Tiny net + backprop as leftover flowing backward *(have)*  
+6. Embeddings (tokens as points in a cloud) *(have)*  
+7. Attention (which other tokens matter) *(have)*  
+8. Transformer block = attention + net, stacked; train = next token; use = sample from softmax *(have)*  
 9. Cheap extras as *pages*, not shelves: tokenizer, context window, temperature, pretrain vs chat
 
 Weight decay = ridge. Dropout ≈ bagging. Pages, not wings.
@@ -128,7 +127,7 @@ Do not start a wing from the summit. Causal impact without confounding is a demo
 
 ## Page 7 — How to walk (for future sessions)
 
-1. Open **this file**. Next room is page 4 until those three exist. Then the next empty 01 in the table on page 3.
+1. Open **this file**. Next room is page 4. Then the next empty 01 in the table on page 3 (cause wing).
 2. One sketchbook per session if it is 01 of a wing. Sequels can be shorter.
 3. Same story when the wing allows it (exam / grades) until the idea *needs* a new story (tokens, time).
 4. Update the shelf table in [[AGENTS.md]] when a note lands. Update **page 2 of this file** when a wing’s 01 exists.
@@ -136,7 +135,7 @@ Do not start a wing from the summit. Causal impact without confounding is a demo
 
 If you keep only one thing:
 
-> encyclopedia first. LLM is a room in the nets wing. next three: **descent, distributions, softmax.**
+> encyclopedia first. LLM is a room in the nets wing. next: **cause**, or bootstrap.
 
 ---
 
@@ -146,11 +145,10 @@ If you keep only one thing:
 |---|---|
 | building | data-science encyclopedia, sketchbook voice |
 | LLM | one room, nets wing, after GD + softmax + a tiny net |
-| standing | supervised: line, S, blobs, tree, forest, boosting |
-| **next** | **01 neural net** (one hidden layer) |
-| then | embeddings → attention → one LLM sketchbook |
-| parallel | inference / t-test (chance wing) |
-| don’t | SVM / XGB encyclopedia / attention as the next file |
+| standing | supervised + GD + distributions + softmax + tiny net + embeddings + attention + LLM + **t-test** |
+| **next** | **causal 01** (pattern ≠ mechanism) |
+| then | bootstrap as a chance sequel; cheap extras as pages |
+| don’t | SVM / XGB encyclopedia / a transformer cartoon without 01–03 |
 | style | [[AGENTS.md]] |
 
 ### Use / skip
@@ -161,4 +159,4 @@ If you keep only one thing:
 
 ---
 
-*Map for the library. House rules stay in AGENTS. Next brick: a tiny neural net.*
+*Map for the library. House rules stay in AGENTS. Next brick: causal 01.*

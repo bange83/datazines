@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" width="760" height="460" role="img" aria-label="the real 2-d cloud from the notes">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="460" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="460" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<path d="M 80.0,400.0 L 690.0,400.0" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round" opacity="1"/>
+<path d="M 90.0,410.0 L 90.0,50.0" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round" opacity="1"/>
+<text x="700.0" y="406.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="start">dim 1</text>
+<text x="96.0" y="44.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="start">dim 2</text>
+<text x="380.0" y="36.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">same numbers as the sklearn page</text>
+<ellipse cx="143.9" cy="193.8" rx="6.4" ry="6.6" transform="rotate(10 143.9 193.8)" fill="#3d5f86" stroke="#3d5f86" stroke-width="0" opacity="0.9"/>
+<text x="153.9" y="185.8" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#3d5f86" text-anchor="start">bed</text>
+<ellipse cx="297.6" cy="360.5" rx="6.4" ry="6.6" transform="rotate(10 297.6 360.5)" fill="#c4a35a" stroke="#c4a35a" stroke-width="0" opacity="0.9"/>
+<text x="307.6" y="352.5" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#c4a35a" text-anchor="start">coffee</text>
+<ellipse cx="451.3" cy="256.0" rx="6.4" ry="6.6" transform="rotate(10 451.3 256.0)" fill="#b44a28" stroke="#b44a28" stroke-width="0" opacity="0.9"/>
+<text x="461.3" y="248.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="start">cram</text>
+<ellipse cx="442.1" cy="268.8" rx="6.4" ry="6.6" transform="rotate(10 442.1 268.8)" fill="#b44a28" stroke="#b44a28" stroke-width="0" opacity="0.9"/>
+<text x="452.1" y="282.8" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="start">exam</text>
+<ellipse cx="249.5" cy="344.5" rx="6.4" ry="6.6" transform="rotate(10 249.5 344.5)" fill="#c4a35a" stroke="#c4a35a" stroke-width="0" opacity="0.9"/>
+<text x="197.5" y="348.5" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#c4a35a" text-anchor="start">hallway</text>
+<ellipse cx="625.3" cy="194.8" rx="6.4" ry="6.6" transform="rotate(10 625.3 194.8)" fill="#b44a28" stroke="#b44a28" stroke-width="0" opacity="0.9"/>
+<text x="635.3" y="210.8" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="start">hours</text>
+<ellipse cx="249.5" cy="326.4" rx="6.4" ry="6.6" transform="rotate(10 249.5 326.4)" fill="#c4a35a" stroke="#c4a35a" stroke-width="0" opacity="0.9"/>
+<text x="259.5" y="330.4" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#c4a35a" text-anchor="start">instagram</text>
+<ellipse cx="305.8" cy="219.4" rx="6.4" ry="6.6" transform="rotate(10 305.8 219.4)" fill="#3d5f86" stroke="#3d5f86" stroke-width="0" opacity="0.9"/>
+<text x="315.8" y="211.4" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#3d5f86" text-anchor="start">night</text>
+<ellipse cx="246.6" cy="359.5" rx="6.4" ry="6.6" transform="rotate(10 246.6 359.5)" fill="#c4a35a" stroke="#c4a35a" stroke-width="0" opacity="0.9"/>
+<text x="210.6" y="373.5" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#c4a35a" text-anchor="start">noise</text>
+<ellipse cx="240.8" cy="371.6" rx="6.4" ry="6.6" transform="rotate(10 240.8 371.6)" fill="#c4a35a" stroke="#c4a35a" stroke-width="0" opacity="0.9"/>
+<text x="250.8" y="363.6" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#c4a35a" text-anchor="start">phone</text>
+<ellipse cx="124.2" cy="126.2" rx="6.4" ry="6.6" transform="rotate(10 124.2 126.2)" fill="#3d5f86" stroke="#3d5f86" stroke-width="0" opacity="0.9"/>
+<text x="134.2" y="118.2" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#3d5f86" text-anchor="start">rest</text>
+<ellipse cx="242.0" cy="360.5" rx="6.4" ry="6.6" transform="rotate(10 242.0 360.5)" fill="#c4a35a" stroke="#c4a35a" stroke-width="0" opacity="0.9"/>
+<text x="252.0" y="374.5" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#c4a35a" text-anchor="start">scroll</text>
+<ellipse cx="159.6" cy="119.1" rx="6.4" ry="6.6" transform="rotate(10 159.6 119.1)" fill="#3d5f86" stroke="#3d5f86" stroke-width="0" opacity="0.9"/>
+<text x="169.6" y="111.1" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#3d5f86" text-anchor="start">sleep</text>
+<ellipse cx="580.7" cy="221.5" rx="6.4" ry="6.6" transform="rotate(10 580.7 221.5)" fill="#b44a28" stroke="#b44a28" stroke-width="0" opacity="0.9"/>
+<text x="590.7" y="213.5" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="start">study</text>
+<ellipse cx="522.7" cy="239.3" rx="6.4" ry="6.6" transform="rotate(10 522.7 239.3)" fill="#b44a28" stroke="#b44a28" stroke-width="0" opacity="0.9"/>
+<text x="532.7" y="231.3" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="start">textbook</text>
+<ellipse cx="146.3" cy="187.0" rx="6.4" ry="6.6" transform="rotate(10 146.3 187.0)" fill="#3d5f86" stroke="#3d5f86" stroke-width="0" opacity="0.9"/>
+<text x="156.3" y="201.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#3d5f86" text-anchor="start">tired</text>
+<ellipse cx="445.5" cy="233.6" rx="6.4" ry="6.6" transform="rotate(10 445.5 233.6)" fill="#b44a28" stroke="#b44a28" stroke-width="0" opacity="0.9"/>
+<text x="455.5" y="225.6" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="start">tutor</text>
+<text x="380.0" y="442.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">study huddles right. sleep up. coffee down.</text>
+</svg>

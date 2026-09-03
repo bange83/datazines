@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img" aria-label="one block is lookup, look, net">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380.0" y="40.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#7a6e5e" text-anchor="middle">one transformer block  —  three floors you already own</text>
+<path d="M 80,110 L 240,110 L 240,210 L 80,210 Z" fill="#efe6d4" stroke="#b44a28" stroke-width="2.2"/>
+<text x="160.0" y="154.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#b44a28" text-anchor="middle">lookup</text>
+<text x="160.0" y="186.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="middle">02 embeddings</text>
+<path d="M 280,110 L 440,110 L 440,210 L 280,210 Z" fill="#efe6d4" stroke="#c4a35a" stroke-width="2.2"/>
+<text x="360.0" y="154.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#c4a35a" text-anchor="middle">look</text>
+<text x="360.0" y="186.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="middle">03 attention</text>
+<path d="M 480,110 L 640,110 L 640,210 L 480,210 Z" fill="#efe6d4" stroke="#4f6d55" stroke-width="2.2"/>
+<text x="560.0" y="154.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#4f6d55" text-anchor="middle">net</text>
+<text x="560.0" y="186.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="middle">01 neural net</text>
+<path d="M 640,125 L 730,125 L 730,195 L 640,195 Z" fill="#efe6d4" stroke="#3d5f86" stroke-width="2.2"/>
+<text x="685.0" y="166.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#3d5f86" text-anchor="middle">S</text>
+<path d="M 240.0,160.0 L 280.0,160.0" fill="none" stroke="#241c14" stroke-width="2" stroke-linecap="round" opacity="1"/>
+<path d="M 268,152 L 282,160 L 268,168" fill="none" stroke="#241c14" stroke-width="2" stroke-linecap="round"/>
+<path d="M 440.0,160.0 L 480.0,160.0" fill="none" stroke="#241c14" stroke-width="2" stroke-linecap="round" opacity="1"/>
+<path d="M 468,152 L 482,160 L 468,168" fill="none" stroke="#241c14" stroke-width="2" stroke-linecap="round"/>
+<path d="M 640.0,160.0 L 640.0,160.0" fill="none" stroke="#241c14" stroke-width="2" stroke-linecap="round" opacity="1"/>
+<path d="M 600.0,160.0 L 640.0,160.0" fill="none" stroke="#241c14" stroke-width="2" stroke-linecap="round" opacity="1"/>
+<path d="M 628,152 L 642,160 L 628,168" fill="none" stroke="#241c14" stroke-width="2" stroke-linecap="round"/>
+<text x="380.0" y="260.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#241c14" text-anchor="middle">stack this. leftover walks home. that is an LLM.</text>
+<text x="380.0" y="300.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">not a new animal. a pile of 01–03.</text>
+</svg>

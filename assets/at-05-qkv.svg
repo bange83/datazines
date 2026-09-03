@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" width="760" height="340" role="img" aria-label="query asks, key matches, value is what you carry">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="340" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="340" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380.0" y="40.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#7a6e5e" text-anchor="middle">three jobs. on this page, one point plays all three.</text>
+<path d="M 50,90 L 230,90 L 230,200 L 50,200 Z" fill="#efe6d4" stroke="#b44a28" stroke-width="2.2"/>
+<text x="140.0" y="128.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#b44a28" text-anchor="middle">query</text>
+<text x="140.0" y="162.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">ask</text>
+<text x="140.0" y="188.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#241c14" text-anchor="middle">who do I need?</text>
+<path d="M 290,90 L 470,90 L 470,200 L 290,200 Z" fill="#efe6d4" stroke="#3d5f86" stroke-width="2.2"/>
+<text x="380.0" y="128.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#3d5f86" text-anchor="middle">key</text>
+<text x="380.0" y="162.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">match</text>
+<text x="380.0" y="188.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#241c14" text-anchor="middle">here I am</text>
+<path d="M 530,90 L 710,90 L 710,200 L 530,200 Z" fill="#efe6d4" stroke="#4f6d55" stroke-width="2.2"/>
+<text x="620.0" y="128.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#4f6d55" text-anchor="middle">value</text>
+<text x="620.0" y="162.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">carry</text>
+<text x="620.0" y="188.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#241c14" text-anchor="middle">what I hand over</text>
+<text x="380.0" y="250.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">grown-up attention walks three extra floors so ask ≠ carry.</text>
+<text x="380.0" y="286.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">here: score = (point · point) / √2.  then softmax.  then mix.</text>
+<text x="380.0" y="318.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">people call this scaled dot-product. the name can wait.</text>
+</svg>

@@ -138,4 +138,4 @@ Hours up: fail’s *b* negative, honors positive. At 2 hours the pile is mixed; 
 
 ---
 
-*Classification 03. Descent: [[01 gradient descent]]. Costumes: [[01 distributions]]. Next honest net: one hidden layer on this pile.*
+*Classification 03. Descent: [[01 gradient descent]]. Costumes: [[01 distributions]]. The hidden floor: [[01 neural net]].*
