@@ -343,22 +343,19 @@ More traps:
 
 ## Page 13 — More than one x
 
-So far: **one** x. Simple linear regression.
+So far: **one** x. Hours, a **line**.
 
-Often you have several levers:
-
-$$\text{grade} \approx a + b_1\cdot\text{hours} + b_2\cdot\text{sleep} + b_3\cdot\text{prior grade}$$
-
-Same idea. Still “linear”: each lever has **one fixed add-on**.
-Only now the “line” lives in a space with more axes. In your head: **a flat plane through a 3D cloud.**
+Often you have two levers. Hours **and** sleep. Same machine. The picture changes:
 
 ![lr-13-ebene](../../assets/lr-13-ebene.svg)
 
-*b₂ = 0.4* then means: *holding hours and prior grade fixed* — so **after the others are already in the model** — +1 hour of sleep goes with +0.4 grade, on average.
+$$\text{grade} \approx a + b_1\cdot\text{hours} + b_2\cdot\text{sleep}$$
 
-That little phrase *holding the rest equal* is new and it matters. Without it you misread b.
+Still “linear”: each lever has **one fixed add-on**. No bend. Only now the fit is a **flat plane** through a 3-D cloud, not a line through a 2-D one.
 
-If two levers say almost the same thing — hours studied and minutes studied — they **fight**. One *b* goes huge, the other huge the other way. Net effect maybe fine; the story is garbage. The textbook name is **multicollinearity**. Ridge is the seatbelt ([[02 ridge regression]]).
+Each *b* is still “+1 on that lever, on average.” The new phrase: **holding the other lever still.** Without it you misread *b*. (The eight people on page 1 have no sleep column. This page is the shape, not a fitted number.)
+
+A third lever is the same trick in a space you cannot draw. If two levers say almost the same thing — hours studied and minutes studied — they **fight**. One *b* goes huge, the other huge the other way. Net effect maybe fine; the story is garbage. The textbook name is **multicollinearity**. Ridge is the seatbelt ([[02 ridge regression]]).
 
 ---
 

@@ -15,7 +15,7 @@ Each note is a short notebook, not a textbook chapter:
 - a tiny sklearn (or numpy) example with **real** printed numbers
 - a cheat sheet that says when to use the method and when to skip it
 
-House style lives in [`AGENTS.md`](AGENTS.md). The map of shelves — what exists, what to write next — lives in [`PATH.md`](PATH.md).
+House style lives in [`AGENTS.md`](AGENTS.md). The map of shelves — what exists, what to write next — lives in [`PATH.md`](PATH.md). The long game is **[datazines.com](https://datazines.com)**: these sketchbooks as zines. HTML recipe: [`html/README.md`](html/README.md).
 
 ## How to read
 
@@ -41,6 +41,8 @@ inference/             01–02  t-test, bootstrap (leftover replayed)
 causal/                01–02  confounding, causal impact (actual − would-have)
 time series/           01     lag, trend, season
 assets/                drawings (prefix per series: lr-, rr-, dt-, nn-, …)
+html/                  browser zines (prototype: linear 01). recipe in html/README.md
+scripts/note_to_html.py  markdown note → paper leaf (live SVG)
 AGENTS.md              how to write the next note
 PATH.md                which shelf is next
 ```
@@ -52,3 +54,5 @@ PATH.md                which shelf is next
 Clone, then **Open folder as vault** in Obsidian. Note-to-note wikilinks (`[[01 linear regression]]`) work there.
 
 Drawings use ordinary markdown images (`![](…svg)`), so they also render on GitHub.
+
+A browser leaf (same paper, live SVG): [`html/01 linear regression.html`](html/01%20linear%20regression.html). That layout is the seed of datazines.com.

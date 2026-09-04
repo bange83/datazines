@@ -288,6 +288,8 @@ Classification, ensembles, distributions — same ritual:
 
 **Next spine:** [[PATH.md]] — `unsupervised/01`. SVM is later.
 
+**The site (later):** [datazines.com](https://datazines.com) is these zines in a browser. Notes stay markdown. HTML is a leaf, not a new personality. Recipe: [[html/README.md]]. Converter: `scripts/note_to_html.py`. Drawings stay **SVG**. Do not start the site from a blog theme.
+
 If a topic does not fit the notebook voice, it does not belong in this series yet.
 
 ---
@@ -323,6 +325,8 @@ If you keep only one thing:
 | end of every note | recipe → sklearn mini (same story, matching numbers, real stdout) → cheat sheet **with Use / skip** → next sibling |
 | sklearn mini | mandatory. family story, not iris. numbers agree with the pages |
 | Use / skip | on every cheat sheet: when to use, when not, pays / costs |
+| HTML zine | `scripts/note_to_html.py` → `html/<stem>.html`. live SVG. recipe: [[html/README.md]] |
+| site | datazines.com when the shelf is thick. same pencils, not a blog |
 | this file | receipt + rules. update the shelf, rarely the rules |
 
 ---
