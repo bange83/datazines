@@ -31,7 +31,7 @@ Flip it like a notebook. One page = one idea. Done.
 
 ## Page 1 — What landed today
 
-Vault root. Notes live under `supervised learning/`, `optimization/`, `probability/`, `neural nets/`, `inference/`.
+Vault root. Notes live under `supervised learning/`, `optimization/`, `probability/`, `neural nets/`, `inference/`, `causal/`, `time series/`.
 
 **Notes** live under `regression/`, numbered so the file list *is* the reading order:
 
@@ -68,6 +68,19 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | 01 | [[01 gradient descent]] | walk the bowl; rate = stride |
 | 01 | [[01 distributions]] | bell, coin, counts — leftover costumes |
 | 01 | [[01 t-test]] | could leftover have faked this number? |
+| 02 | [[02 bootstrap]] | redraw the people; the pile is leftover |
+
+**Time (path page 4, now standing):**
+
+| # | note | idea in one breath |
+|--:|---|---|
+| 01 | [[01 lag trend season]] | yesterday is a lever; the calendar repeats |
+
+**Cause (path page 4, now standing):**
+
+| # | note | idea in one breath |
+|--:|---|---|
+| 01 | [[01 confounding]] | pattern ≠ mechanism; a loud *b* can be a passenger |
 
 **Nets (path page 4, now standing):**
 
@@ -102,6 +115,9 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | `at-` | attention |
 | `lm-` | LLM / next token |
 | `tt-` | t-test / inference |
+| `bs-` | bootstrap / resample |
+| `ca-` | cause / confounding |
+| `ts-` | time series |
 | `sb-` | this receipt |
 
 Hero of each note is `*-00-hero.svg`. Embed as ordinary markdown so GitHub can render it. Path is **relative to the note**:
@@ -112,7 +128,7 @@ Hero of each note is `*-00-hero.svg`. Embed as ordinary markdown so GitHub can r
 
 From a nested family note that is two folders down: `![lr-00-hero](../../assets/lr-00-hero.svg)`. Do not use `![[…]]` — GitHub prints that as text.
 
-Empty slots on the lower shelf are not decoration. The **walk** is [[PATH.md]]. Descent, distributions, softmax, a tiny net, embeddings, attention, one LLM sketchbook, and a t-test are written. **Next brick: causal 01** (or bootstrap as a chance sequel). SVM is later.
+Empty slots on the lower shelf are not decoration. The **walk** is [[PATH.md]]. Descent, distributions, softmax, a tiny net, embeddings, attention, one LLM sketchbook, a t-test, cause 01, bootstrap, and time 01 are written. **Next brick: causal impact** (or unsupervised 01). SVM is later.
 
 ---
 
@@ -268,7 +284,7 @@ Classification, ensembles, distributions — same ritual:
 5. Open with hero + one sentence. Close with: mini recipe → **sklearn mini (story + numbers match)** → cheat sheet **with Use / skip** → sequel pointer.
 6. Come back here and put the new spines on the shelf (a line in the table on page 1 is enough). Do not rewrite the house rules unless the rules were wrong.
 
-**Next spine:** [[PATH.md]] — `causal/01` (pattern ≠ mechanism), or `inference/02 bootstrap`. SVM is later.
+**Next spine:** [[PATH.md]] — causal impact on a series, or `unsupervised/01`. SVM is later.
 
 If a topic does not fit the notebook voice, it does not belong in this series yet.
 

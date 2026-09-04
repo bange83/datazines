@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" width="860" height="430" role="img" aria-label="24 weeks of hours: slow climb, a dip every fourth week">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="860" height="430" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="860" height="430" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="430.0" y="36.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">weekly hours. every fourth week is a break.</text>
+<path d="M 60.0,350.0 L 740.0,350.0" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round" opacity="1"/>
+<path d="M 70.0,360.0 L 70.0,70.0" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round" opacity="1"/>
+<text x="750.0" y="356.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#241c14" text-anchor="start">week</text>
+<text x="64.0" y="62.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#241c14" text-anchor="end">hours</text>
+<path d="M 143.5,80 L 163.5,80 L 163.5,350 L 143.5,350 Z" fill="#c4a35a" opacity="0.12"/>
+<path d="M 254.8,80 L 274.8,80 L 274.8,350 L 254.8,350 Z" fill="#c4a35a" opacity="0.12"/>
+<path d="M 366.1,80 L 386.1,80 L 386.1,350 L 366.1,350 Z" fill="#c4a35a" opacity="0.12"/>
+<path d="M 477.4,80 L 497.4,80 L 497.4,350 L 477.4,350 Z" fill="#c4a35a" opacity="0.12"/>
+<path d="M 588.7,80 L 608.7,80 L 608.7,350 L 588.7,350 Z" fill="#c4a35a" opacity="0.12"/>
+<path d="M 700.0,80 L 720.0,80 L 720.0,350 L 700.0,350 Z" fill="#c4a35a" opacity="0.12"/>
+<path d="M 70.0,191.2 L 97.8,205.5 L 125.7,223.9 L 153.5,320.4 L 181.3,182.9 L 209.1,209.0 L 237.0,209.0 L 264.8,268.6 L 292.6,148.3 L 320.4,176.3 L 348.3,176.3 L 376.1,256.7 L 403.9,122.1 L 431.7,157.3 L 459.6,163.8 L 487.4,234.0 L 515.2,122.1 L 543.0,138.2 L 570.9,171.0 L 598.7,254.9 L 626.5,126.9 L 654.3,125.1 L 682.2,144.2 L 710.0,207.9" fill="none" stroke="#b44a28" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="70.0" cy="191.2" rx="5.5" ry="5.8" transform="rotate(-12 70.0 191.2)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="97.8" cy="205.5" rx="5.5" ry="5.8" transform="rotate(-1 97.8 205.5)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="125.7" cy="223.9" rx="5.5" ry="5.8" transform="rotate(10 125.7 223.9)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="153.5" cy="320.4" rx="5.5" ry="5.8" transform="rotate(-3 153.5 320.4)" fill="#c4a35a" opacity="0.9"/>
+<ellipse cx="181.3" cy="182.9" rx="5.5" ry="5.8" transform="rotate(8 181.3 182.9)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="209.1" cy="209.0" rx="5.5" ry="5.8" transform="rotate(-5 209.1 209.0)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="237.0" cy="209.0" rx="5.5" ry="5.8" transform="rotate(6 237.0 209.0)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="264.8" cy="268.6" rx="5.5" ry="5.8" transform="rotate(-7 264.8 268.6)" fill="#c4a35a" opacity="0.9"/>
+<ellipse cx="292.6" cy="148.3" rx="5.5" ry="5.8" transform="rotate(4 292.6 148.3)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="320.4" cy="176.3" rx="5.5" ry="5.8" transform="rotate(-9 320.4 176.3)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="348.3" cy="176.3" rx="5.5" ry="5.8" transform="rotate(2 348.3 176.3)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="376.1" cy="256.7" rx="5.5" ry="5.8" transform="rotate(-11 376.1 256.7)" fill="#c4a35a" opacity="0.9"/>
+<ellipse cx="403.9" cy="122.1" rx="5.5" ry="5.8" transform="rotate(0 403.9 122.1)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="431.7" cy="157.3" rx="5.5" ry="5.8" transform="rotate(11 431.7 157.3)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="459.6" cy="163.8" rx="5.5" ry="5.8" transform="rotate(-2 459.6 163.8)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="487.4" cy="234.0" rx="5.5" ry="5.8" transform="rotate(9 487.4 234.0)" fill="#c4a35a" opacity="0.9"/>
+<ellipse cx="515.2" cy="122.1" rx="5.5" ry="5.8" transform="rotate(-4 515.2 122.1)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="543.0" cy="138.2" rx="5.5" ry="5.8" transform="rotate(7 543.0 138.2)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="570.9" cy="171.0" rx="5.5" ry="5.8" transform="rotate(-6 570.9 171.0)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="598.7" cy="254.9" rx="5.5" ry="5.8" transform="rotate(5 598.7 254.9)" fill="#c4a35a" opacity="0.9"/>
+<ellipse cx="626.5" cy="126.9" rx="5.5" ry="5.8" transform="rotate(-8 626.5 126.9)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="654.3" cy="125.1" rx="5.5" ry="5.8" transform="rotate(3 654.3 125.1)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="682.2" cy="144.2" rx="5.5" ry="5.8" transform="rotate(-10 682.2 144.2)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="710.0" cy="207.9" rx="5.5" ry="5.8" transform="rotate(1 710.0 207.9)" fill="#c4a35a" opacity="0.9"/>
+<path d="M 612.6,80.0 L 612.6,350.0" fill="none" stroke="#3d5f86" stroke-width="1.4" stroke-linecap="round" opacity="0.7"/>
+<text x="668.3" y="100.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#3d5f86" text-anchor="middle">holdout</text>
+<text x="430.0" y="392.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">gold ticks = break weeks. the last four are the future.</text>
+<text x="430.0" y="416.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">a line through time is not enough.</text>
+</svg>

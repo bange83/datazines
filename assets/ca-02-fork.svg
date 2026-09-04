@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img" aria-label="hours causes coffee and the grade">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380.0" y="40.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">the fork. hours is the common cause.</text>
+<ellipse cx="380" cy="100" rx="78" ry="34" transform="rotate(-4 380 100)" fill="#efe6d4" stroke="#4f6d55" stroke-width="2.4"/>
+<text x="380.0" y="108.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#4f6d55" text-anchor="middle">hours</text>
+<ellipse cx="160" cy="250" rx="78" ry="34" transform="rotate(5 160 250)" fill="#efe6d4" stroke="#c4a35a" stroke-width="2.4"/>
+<text x="160.0" y="258.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#c4a35a" text-anchor="middle">coffee</text>
+<ellipse cx="600" cy="250" rx="78" ry="34" transform="rotate(-3 600 250)" fill="#efe6d4" stroke="#b44a28" stroke-width="2.4"/>
+<text x="600.0" y="258.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#b44a28" text-anchor="middle">grade</text>
+<path d="M 330.0,130.0 L 200.0,220.0" fill="none" stroke="#4f6d55" stroke-width="2.4" stroke-linecap="round" opacity="1"/>
+<path d="M 206.4,209.9 L 200.0,220.0 L 211.7,217.6" fill="none" stroke="#4f6d55" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M 430.0,130.0 L 560.0,220.0" fill="none" stroke="#4f6d55" stroke-width="2.4" stroke-linecap="round" opacity="1"/>
+<path d="M 548.3,217.6 L 560.0,220.0 L 553.6,209.9" fill="none" stroke="#4f6d55" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M 240.0,250.0 L 520.0,250.0" fill="none" stroke="#7a6e5e" stroke-width="1.6" stroke-linecap="round" opacity="0.45"/>
+<text x="380.0" y="238.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">no</text>
+<text x="380.0" y="330.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">people who study drink more. the grade follows hours, not the cup.</text>
+</svg>

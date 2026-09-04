@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img" aria-label="t interval and bootstrap interval sit on the same slope">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380.0" y="40.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#7a6e5e" text-anchor="middle">same eight grades. two intervals for b.</text>
+<path d="M 70.0,160.0 L 700.0,160.0" fill="none" stroke="#241c14" stroke-width="1.6" stroke-linecap="round" opacity="1"/>
+<path d="M 136.2,150.0 L 136.2,170.0" fill="none" stroke="#241c14" stroke-width="2" stroke-linecap="round" opacity="1"/>
+<text x="136.2" y="192.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#241c14" text-anchor="middle">0</text>
+<path d="M 413.8,130.0 L 608.7,130.0" fill="none" stroke="#3d5f86" stroke-width="5" stroke-linecap="round" opacity="1"/>
+<ellipse cx="511.2" cy="130.0" rx="6" ry="6" transform="rotate(0 511.2 130.0)" fill="#3d5f86" opacity="1"/>
+<text x="120.0" y="124.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#3d5f86" text-anchor="start">t-test  0.74–1.26</text>
+<path d="M 432.5,210.0 L 593.7,210.0" fill="none" stroke="#b44a28" stroke-width="5" stroke-linecap="round" opacity="1"/>
+<ellipse cx="511.2" cy="210.0" rx="6" ry="6" transform="rotate(0 511.2 210.0)" fill="#b44a28" opacity="1"/>
+<text x="120.0" y="204.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="start">bootstrap  0.79–1.22</text>
+<text x="380.0" y="270.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">0 is outside both. hours-do-nothing still does not fit.</text>
+<text x="380.0" y="304.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">mean: t 3.72–6.78 · boot 4.12–6.38.  5 sits inside both.</text>
+<text x="380.0" y="336.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">the pile did not need a bell. it still agreed.</text>
+</svg>

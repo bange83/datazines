@@ -37,13 +37,15 @@ supervised learning/
 optimization/          01     gradient descent
 probability/           01     distributions
 neural nets/           01–04  tiny net, embeddings, attention, one LLM
-inference/             01     t-test (could leftover have faked this?)
+inference/             01–02  t-test, bootstrap (leftover replayed)
+causal/                01     confounding (pattern ≠ mechanism)
+time series/           01     lag, trend, season
 assets/                drawings (prefix per series: lr-, rr-, dt-, nn-, …)
 AGENTS.md              how to write the next note
 PATH.md                which shelf is next
 ```
 
-**Next brick:** causal 01 (pattern ≠ mechanism). Not SVM.
+**Next brick:** causal impact on a series, or unsupervised 01. Not SVM.
 
 ## Viewing
 

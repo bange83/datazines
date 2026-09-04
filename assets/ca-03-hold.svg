@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" role="img" aria-label="hold hours still: coffee’s slope dies">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="380" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="380" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380.0" y="40.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#7a6e5e" text-anchor="middle">same hours. extra coffee. grade barely moves.</text>
+<path d="M 50,70 L 360,70 L 360,310 L 50,310 Z" fill="#b44a28" stroke="#b44a28" stroke-width="1.8" opacity="0.07"/>
+<text x="205.0" y="108.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#b44a28" text-anchor="middle">coffee only</text>
+<text x="205.0" y="160.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="26" fill="#b44a28" text-anchor="middle">b = 0.71</text>
+<text x="205.0" y="204.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">t = 12.6</text>
+<text x="205.0" y="244.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">looks like a cause</text>
+<text x="205.0" y="280.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">R² = 0.67</text>
+<path d="M 400,70 L 710,70 L 710,310 L 400,310 Z" fill="#4f6d55" stroke="#4f6d55" stroke-width="1.8" opacity="0.07"/>
+<text x="555.0" y="108.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#4f6d55" text-anchor="middle">hours in the room</text>
+<text x="555.0" y="160.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#4f6d55" text-anchor="middle">coffee b = −0.15</text>
+<text x="555.0" y="204.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">hours b = 1.16</text>
+<text x="555.0" y="244.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">coffee is leftover</text>
+<text x="555.0" y="280.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">R² still 0.83</text>
+<text x="380.0" y="350.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">the pattern died when the common cause sat down.</text>
+</svg>
