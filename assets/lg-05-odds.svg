@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img" aria-label="odds climbing with hours">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" role="img" aria-label="odds 1:1 becomes 3:1; P only goes 50 to 75">
 <defs>
   <filter id="grain" x="0" y="0" width="100%" height="100%">
     <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
@@ -10,20 +10,39 @@
     <feBlend in="SourceGraphic" mode="multiply"/>
   </filter>
 </defs>
-<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4"/>
-<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
-<text x="380.0" y="48.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#7a6e5e" text-anchor="middle" font-style="normal">b is not “+1 grade”. it is “times the odds”.</text>
-<path d="M 140.0,280.0 L 210.0,280.0 L 210.0,236.0 L 140.0,236.0 Z" fill="#4f6d55" stroke="#4f6d55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"/>
-<path d="M 140.0,236.0 L 210.0,236.0 L 210.0,60.0 L 140.0,60.0 Z" fill="#b44a28" stroke="#b44a28" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.18"/>
-<text x="175.0" y="308.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle" font-style="normal">2 hours</text>
-<text x="175.0" y="264.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#4f6d55" text-anchor="middle" font-style="normal">2 pass</text>
-<path d="M 360.0,280.0 L 430.0,280.0 L 430.0,170.0 L 360.0,170.0 Z" fill="#4f6d55" stroke="#4f6d55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"/>
-<path d="M 360.0,170.0 L 430.0,170.0 L 430.0,60.0 L 360.0,60.0 Z" fill="#b44a28" stroke="#b44a28" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.18"/>
-<text x="395.0" y="308.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle" font-style="normal">3 hours</text>
-<text x="395.0" y="231.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#4f6d55" text-anchor="middle" font-style="normal">5 pass</text>
-<path d="M 580.0,280.0 L 650.0,280.0 L 650.0,104.0 L 580.0,104.0 Z" fill="#4f6d55" stroke="#4f6d55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"/>
-<path d="M 580.0,104.0 L 650.0,104.0 L 650.0,60.0 L 580.0,60.0 Z" fill="#b44a28" stroke="#b44a28" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.18"/>
-<text x="615.0" y="308.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle" font-style="normal">4 hours</text>
-<text x="615.0" y="198.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#4f6d55" text-anchor="middle" font-style="normal">8 pass</text>
-<text x="380.0" y="340.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle" font-style="normal">odds 2:8 → 5:5 → 8:2.  the S is that climb, squeezed into 0–1.</text>
+<rect width="760" height="380" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="380" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+
+<text x="380" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">odds = yeses per no.  P is the slice of the pile.</text>
+
+<!-- left card: 50/50 -->
+<text x="175" y="68" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#3d5f86" text-anchor="middle">50 / 50</text>
+<!-- 2 pass (rust) 2 fail (ink) as blobs -->
+<ellipse cx="140" cy="120" rx="16" ry="15" transform="rotate(-8 140 120)" fill="#b44a28" opacity="0.85"/>
+<ellipse cx="210" cy="118" rx="15" ry="16" transform="rotate(11 210 118)" fill="#b44a28" opacity="0.85"/>
+<ellipse cx="142" cy="175" rx="15" ry="14" transform="rotate(6 142 175)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="208" cy="178" rx="16" ry="15" transform="rotate(-14 208 178)" fill="#241c14" opacity="0.88"/>
+<text x="175" y="230" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="middle">2 pass</text>
+<text x="175" y="252" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">2 fail</text>
+<text x="175" y="286" font-family="Georgia, Times New Roman, serif" font-size="18" fill="#3d5f86" text-anchor="middle">odds 1 : 1</text>
+<text x="175" y="312" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">P = 0.50</text>
+
+<!-- arrow -->
+<path d="M 300,160 L 430,160" fill="none" stroke="#c4a35a" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M 414,152 L 432,160 L 414,168" fill="none" stroke="#c4a35a" stroke-width="2.4" stroke-linecap="round"/>
+<text x="365" y="140" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#c4a35a" text-anchor="middle">× 3</text>
+<text x="365" y="188" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="middle">on the odds</text>
+
+<!-- right card: 75/25 -->
+<text x="585" y="68" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#b44a28" text-anchor="middle">75 / 25</text>
+<ellipse cx="530" cy="112" rx="15" ry="15" transform="rotate(8 530 112)" fill="#b44a28" opacity="0.85"/>
+<ellipse cx="585" cy="108" rx="16" ry="14" transform="rotate(-10 585 108)" fill="#b44a28" opacity="0.85"/>
+<ellipse cx="640" cy="114" rx="15" ry="16" transform="rotate(14 640 114)" fill="#b44a28" opacity="0.85"/>
+<ellipse cx="585" cy="178" rx="16" ry="15" transform="rotate(-6 585 178)" fill="#241c14" opacity="0.88"/>
+<text x="585" y="230" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="middle">3 pass</text>
+<text x="585" y="252" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">1 fail</text>
+<text x="585" y="286" font-family="Georgia, Times New Roman, serif" font-size="18" fill="#b44a28" text-anchor="middle">odds 3 : 1</text>
+<text x="585" y="312" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">P = 0.75</text>
+
+<text x="380" y="354" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">odds ×3.  P only +0.25.  that is why b is not “+ probability”.</text>
 </svg>

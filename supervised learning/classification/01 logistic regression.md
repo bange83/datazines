@@ -33,6 +33,8 @@ You still have hours, sleep, a tutor. Same levers. The output changed species.
 
 A straight line will happily say “pass = 1.4” or “pass = −0.2”. Those are not answers. A probability lives in **[0, 1]**. That is the whole problem this sketchbook solves.
 
+One person is 0 or 1. A **share** of yeses — 3 in 10 of this group passed — is the same machine. Still a number in 0–1. Not a free grade.
+
 ---
 
 ## Page 2 — The line escapes the tracks
@@ -74,15 +76,18 @@ On the grade line, *b = 1* meant “+1 hour → +1 grade.” Clean.
 
 Here *b* does **not** mean “+1 hour → +0.2 probability.” The S is not equally steep everywhere. In the middle it is steep. Near 0 and 1 it is almost flat. Extra hours help most when you were on the fence.
 
-What *is* constant: **the odds**.
+What *is* constant is a different count: **how many yeses per no.** People call that the **odds**.
 
-$$\text{odds} = \frac{P}{1-P}$$
-
-+1 on *x* **multiplies** the odds by *e^b*. Always the same factor. Not the same probability jump.
+50/50: one yes per no. Odds **1 : 1**.
+75/25: three yeses per no. Odds **3 : 1**.
 
 ![lg-05-odds](../../assets/lg-05-odds.svg)
 
-If that feels slippery, keep this sentence instead:
+Odds got **×3**. P only went 0.50 → 0.75. Same factor on the odds, every time you add 1 to *x*. Not the same jump in P.
+
+That factor is *e^b*. The name can wait.
+
+If the algebra still feels slippery, keep this instead:
 
 > *b* says how fast the S climbs. Sign says up or down. Size says how dramatic.
 
@@ -114,11 +119,13 @@ If the yes-dots and no-dots are a mixed blob that no tilted S can separate, logi
 
 Logistic = **linear score + squash**. Remember which part is the line.
 
+If two levers are written in different units — hours and minutes — the *b*s are not comparable until you **scale**, same as ridge. One *x* (this notebook): skip it.
+
 ---
 
 ## Page 7 — Mini recipe
 
-1. **y is yes/no.** If y is a grade, go back to [[01 linear regression]].
+1. **y is yes/no — or a share of yeses in 0–1.** If y is a free grade, go back to [[01 linear regression]].
 2. **Same levers.** Hours, sleep, tutor. Score = a + b’s.
 3. **Squash** to P(yes).
 4. **Read b** as “how the S climbs,” not as “+b probability.”
@@ -133,7 +140,7 @@ If you keep only one thing:
 
 ## Page 8 — Hours → pass, in sklearn
 
-Same world as the grade shelf. Eighty students. *y* is pass/fail, driven by hours (and a bit of sleep and tutor). House seed 7.
+Same world as the grade shelf. Eighty students. *y* is pass/fail, driven by hours (and a bit of sleep and tutor). House seed 7. One lever, no scaler — the S is the lesson, not a fight between hours and minutes. Mixed units: scale first ([[02 ridge regression]], page 10).
 
 ```python
 import numpy as np
@@ -163,7 +170,7 @@ accuracy on these 80 = 0.838
 
 Three hours: still a coin with a lean (0.64). Five hours: almost sure (0.98). The S climbed. Accuracy 0.84 is on *these* people — pride, like R² without a split.
 
-`predict_proba` is the S. `predict` is the 0.5 cut.
+`predict_proba` is the S. `predict` is the 0.5 cut. Do not copy this unscaled one-column fit onto hours *and* minutes. The inside is still a line; size of a knob starts to matter.
 
 ---
 
@@ -173,6 +180,7 @@ Three hours: still a coin with a lean (0.64). Five hours: almost sure (0.98). Th
 |---|---|
 | score = a + b x | the old line, still inside |
 | P = 1 / (1 + e^(−score)) | the squash |
+| y | 0/1 for one person, or a share of yeses |
 | P | probability of yes |
 | b | steepness of the S (log-odds) |
 | 0.5 | default cut, not sacred |
@@ -186,7 +194,7 @@ Three hours: still a coin with a lean (0.64). Five hours: almost sure (0.98). Th
 
 **Pays you:** output stays in 0–1. Knobs stay readable. Fast, stable, a good first classifier.
 
-**Costs you:** still linear on the inside. A threshold is extra politics. Rare events and tangled *x* need extra care (or a sequel with a tax).
+**Costs you:** still linear on the inside. A threshold is extra politics. Rare events and tangled *x* need extra care (or a sequel with a tax). Levers in different units: **scale**, like ridge. This page did not.
 
 ---
 

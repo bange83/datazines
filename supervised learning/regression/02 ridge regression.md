@@ -72,6 +72,8 @@ Left: the line hugs the old cloud. Right: new people arrive. The clever tilt is 
 This has a name: **overfitting**.
 The line memorized noise and called it a pattern.
 
+On **one** machine, that is a problem. Later, a forest will grow jumpy trees **on purpose** and **vote** — the choir is the tax, not a calmer tree ([[02 random forest]]). Not this notebook.
+
 Ridge’s whole personality is: *be a little worse on the old points, so you do not embarrass yourself on the new ones.*
 
 ---
@@ -96,6 +98,8 @@ Net effect ≈ 1. A fight. The math found a cancellation, not a story.
 Ridge does not let knobs get theatrical. It asks both to **share the job** with small numbers.
 
 You still cannot say which of the twins “really” did it. You *can* stop the explosion.
+
+No magic cutoff (“corr 0.7 → ridge”). The test is the **fight**: ordinary *b*s huge and opposite, net effect ordinary. Hours and minutes on page 14 do that. Two honest, different levers with corr 0.5 can be fine. A number named VIF exists; it is a later camera, not this notebook.
 
 ---
 
@@ -224,7 +228,9 @@ Do not pick λ because it looks pretty on the old cloud. The old cloud is the th
 
 Hide some people. Fit on the rest. Score the hidden ones. Repeat. Average the pain.
 
-That ritual is **cross-validation**. Fancy name, simple idea: *grade the line on people it has not seen.*
+Three piles: hide pile 1, fit 2+3. Then hide 2. Then hide 3. Three pains, one average. That ritual is **cross-validation**. Fancy name, simple idea: *grade the line on people it has not seen.*
+
+![rr-11-folds](../../assets/rr-11-folds.svg)
 
 ![rr-11-cv](../../assets/rr-11-cv.svg)
 
@@ -307,6 +313,8 @@ Xtr, Xte, ytr, yte = train_test_split(X, grade, test_size=0.3, random_state=0)
 ols = LinearRegression().fit(Xtr, ytr)
 ridge = make_pipeline(StandardScaler(), Ridge(alpha=10)).fit(Xtr, ytr)
 
+print("mean grade (train)", round(ytr.mean(), 3))
+
 def show(title, coef, intercept, train, test):
     print(title)
     print(f"  intercept  {intercept:7.3f}")
@@ -322,6 +330,7 @@ show("ridge (scaled, alpha=10)", ridge.named_steps["ridge"].coef_,
 ```
 
 ```
+mean grade (train) 7.418
 ordinary (no scale, no tax)
   intercept    2.016
   hours        2.311
@@ -349,6 +358,8 @@ Read the ordinary pair: +2.31 hours and −0.025 minutes. Minutes live around 60
 
 Ridge, after scaling: hours 0.54, minutes 0.53. Twins share. Junk is quieter. Train R² dips a little (the tax); that is the point.
 
+Ridge’s intercept **7.418** is not a tax on *a*. It is the **mean grade** on the trainers. After `StandardScaler`, every *x* is 0 at the average person, so ŷ at “all knobs typical” *is* ȳ. Ordinary’s 2.016 is “grade if hours, sleep, minutes were all **literally zero**” — a fantasy. Page 5 still holds: *a* does not pay. The number jumped because **zero moved**.
+
 `alpha` here is λ. sklearn’s name, same volume knob.
 
 ---
@@ -362,7 +373,7 @@ Ridge, after scaling: hours 0.54, minutes 0.53. Twins share. Junk is quieter. Tr
 | ridge | that, plus λ × (knobs)² |
 | λ | volume of the tax. 0 = ordinary |
 | shrink | knobs pulled toward 0, not deleted |
-| scale | make every *x* comparable first |
+| scale | make every *x* comparable first; then *a* is ȳ, not “all x = 0” |
 | bias | a bit systematically off |
 | variance | how much the line jumps |
 

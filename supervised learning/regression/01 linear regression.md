@@ -312,6 +312,8 @@ You may use the slanted line.
 
 R² = 0.8 sounds great. It does not mean x is the *cause*. It only means the points hug the line.
 
+0.6 is not a medal and not a fail. It is **60% of the scatter explained — on these people.** New people: usually less. Compare to the flat average (R² = 0), not to a textbook “good.”
+
 ---
 
 ## Page 12 — Correlation is not cause
@@ -392,7 +394,7 @@ If you keep only one thing:
 
 ## Page 16 — Eight people, in sklearn
 
-Same eight rows as page 1. No pipeline, no scaling. Just the line.
+Same eight rows as page 1. No pipeline, no scaling. Just the line. One *x*, least squares: scale does not change the story. Ridge will tax **size**, so it will **demand** a scaler ([[02 ridge regression]], page 10). Not tonight.
 
 ```python
 from sklearn.linear_model import LinearRegression
@@ -415,7 +417,7 @@ print("R² =", round(line.score(hours, grade), 3))
 R² = 0.936
 ```
 
-Same numbers as the sketchbook. `.score` is R² on *these* eight people — pride, not a test. Next person: different sketchbook, or at least a split.
+Same numbers as the sketchbook. `.score` is R² on *these* eight people — pride, not a test. Next person: different sketchbook, or at least a split. Do not copy this unscaled fit into lasso or elastic-net. Those taxes care how big the knobs are written.
 
 ---
 
@@ -429,7 +431,7 @@ Same numbers as the sketchbook. `.score` is R² on *these* eight people — prid
 | ŷ | prediction (“y hat”) |
 | y | real value |
 | y − ŷ | residual / error |
-| R² | share of scatter explained, 0 to 1 |
+| R² | share of scatter explained on *these* people, 0 to 1 |
 
 Best line = smallest sum of (residuals)².
 It always goes through the centroid (x̄, ȳ).
@@ -445,7 +447,7 @@ It always goes through the centroid (x̄, ȳ).
 
 **Pays you:** simple, fast, knobs you can read. The starting machine.
 
-**Costs you:** no legal region for ŷ. Outliers scream. Twin *x* fight (multicollinearity). Cause is not in the formula.
+**Costs you:** no legal region for ŷ. Outliers scream. Twin *x* fight (multicollinearity). Cause is not in the formula. A later tax on size ([[02 ridge regression]], [[03 lasso]]) needs **scale** first — this notebook did not.
 
 ---
 

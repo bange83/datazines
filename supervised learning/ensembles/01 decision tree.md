@@ -169,7 +169,7 @@ On our eighty students:
 | depth 2 | 0.893 | 0.792 | 4 |
 | deep (depth 8, actually 5) | **1.000** | **0.708** | 11 |
 
-The deep tree **memorized** the old cloud and got worse on new people. Same lesson as an un-taxed line. Here the tax is **don’t go deep** (or don’t grow tiny leaves). Forests will tax by *voting many shallow-ish trees*. Not this notebook.
+The deep tree **memorized** the old cloud and got worse on new people. Same lesson as an un-taxed line. Here the tax is **don’t go deep** (or don’t grow tiny leaves). Forests will tax by *voting many jumpy trees* — member overfit, choir not ([[02 random forest]]). Not this notebook.
 
 ---
 

@@ -58,7 +58,7 @@ A new student walks in. Each tree casts fail or pass. Majority wins. (Or average
 
 You cannot read 100 flowcharts aloud. You **traded a sentence for a stabler call**. That is the cost, same family as ridge: less drama, less story.
 
-One deep tree still sits in the forest as a member. It just does not get to decide alone.
+One deep tree still sits in the forest as a member. It just does not get to decide alone. Ridge called that tree’s hug **overfitting** and taxed the knobs. Here the members may still memorize. The **vote** is what you ship. Overfit of one learner is not overfit of the choir.
 
 ---
 
@@ -163,7 +163,7 @@ Deep tree memorizes (test 0.71). Forest’s vote lands at **0.79**. Tree 0 opene
 
 **Skip it when** you must explain every cut ([[01 decision tree]] is the sentence); a line or logistic already fits; tiny *n* and you were going to grow huge trees anyway.
 
-**Pays you:** the usual first ensemble. Better test than one deep tree. Importances that let sleep speak. Few knobs.
+**Pays you:** the usual first ensemble. Better test than one deep tree. Importances that let sleep speak. Few knobs. Jumpy members + a vote — overfitting of *one* tree is not the forest’s score.
 
 **Costs you:** the flowchart is gone. Train can still look perfect on small *n*. Not a cause machine. Sequential leftovers (boosting) are a different religion: [[03 gradient boosting]].
 
