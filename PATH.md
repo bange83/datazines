@@ -58,10 +58,11 @@ Same pencils as always. Same “one idea per page.” New family = new folder at
 - [[01 confounding]] — pattern ≠ mechanism; a loud *b* can be a passenger
 - [[02 bootstrap]] — redraw the people; the pile is leftover
 - [[01 lag trend season]] — yesterday is a lever; the calendar repeats
+- [[02 causal impact]] — actual − would-have, after a start date
 
-You already own: score, leftover, tax, squash, impurity, vote vs chain, learning rate (as volume), a tiny net, a lookup table of points, a look, a next-token pile, a judge for a mean and a slope, see vs do, leftover replayed without a bell, a series with a holdout in time. That is the furniture later wings reuse.
+You already own: score, leftover, tax, squash, impurity, vote vs chain, learning rate (as volume), a tiny net, a lookup table of points, a look, a next-token pile, a judge for a mean and a slope, see vs do, leftover replayed without a bell, a series with a holdout in time, a gap vs would-have. That is the furniture later wings reuse.
 
-**Do not write next:** SVM, another boosting brand, kernel ridge, a 12-page XGBoost, a second LLM, BSTS as 01. Next is **causal impact** on that series, or unsupervised 01. Side doors when a project knocks.
+**Do not write next:** SVM, another boosting brand, kernel ridge, a 12-page XGBoost, a second LLM, BSTS as 01. Next is **unsupervised 01**. Side doors when a project knocks.
 
 ---
 
@@ -83,13 +84,13 @@ Optional side doors, when a project knocks: SVM / margins, clustering extras, re
 
 ---
 
-## Page 4 — Time 01 exists. Next is impact (or no-y).
+## Page 4 — Impact exists. Next is no-y.
 
 ![pa-03-next](assets/pa-03-next.svg)
 
-**Written:** [[01 gradient descent]] · [[01 distributions]] · [[03 softmax]] · [[01 neural net]] · [[02 embeddings]] · [[03 attention]] · [[04 LLM]] · [[01 t-test]] · [[01 confounding]] · [[02 bootstrap]] · [[01 lag trend season]]
+**Written:** [[01 gradient descent]] · [[01 distributions]] · [[03 softmax]] · [[01 neural net]] · [[02 embeddings]] · [[03 attention]] · [[04 LLM]] · [[01 t-test]] · [[01 confounding]] · [[02 bootstrap]] · [[01 lag trend season]] · [[02 causal impact]]
 
-The series has a holdout. **Next:** causal impact on that series (fork + counterfactual weeks), or `unsupervised/01`. Do not start BSTS before you can name lag / trend / season.
+Would-have is trend + season on the past. **Next:** `unsupervised/01` — no *y*. Do not start BSTS before you can name lag / trend / season.
 
 ---
 
@@ -130,7 +131,7 @@ Do not start a wing from the summit. Causal impact without confounding is a demo
 
 ## Page 7 — How to walk (for future sessions)
 
-1. Open **this file**. Next room is page 4. Then the next empty 01 in the table on page 3 (unsupervised), or impact as a cause sequel.
+1. Open **this file**. Next room is page 4. Then the next empty 01 in the table on page 3 (unsupervised).
 2. One sketchbook per session if it is 01 of a wing. Sequels can be shorter.
 3. Same story when the wing allows it (exam / grades) until the idea *needs* a new story (tokens, time).
 4. Update the shelf table in [[AGENTS.md]] when a note lands. Update **page 2 of this file** when a wing’s 01 exists.
@@ -138,7 +139,7 @@ Do not start a wing from the summit. Causal impact without confounding is a demo
 
 If you keep only one thing:
 
-> encyclopedia first. LLM is a room in the nets wing. next: **impact**, or no-y.
+> encyclopedia first. LLM is a room in the nets wing. next: **no-y.**
 
 ---
 
@@ -148,8 +149,8 @@ If you keep only one thing:
 |---|---|
 | building | data-science encyclopedia, sketchbook voice |
 | LLM | one room, nets wing, after GD + softmax + a tiny net |
-| standing | supervised + GD + distributions + softmax + tiny net + embeddings + attention + LLM + t-test + cause 01 + bootstrap + **time 01** |
-| **next** | **causal impact** on a series, or unsupervised 01 |
+| standing | supervised + GD + distributions + softmax + tiny net + embeddings + attention + LLM + t-test + cause + bootstrap + time 01 + **impact** |
+| **next** | **unsupervised 01** (no *y*) |
 | then | cheap extras as pages |
 | don’t | SVM / XGB encyclopedia / a transformer cartoon without 01–03 |
 | style | [[AGENTS.md]] |
@@ -162,4 +163,4 @@ If you keep only one thing:
 
 ---
 
-*Map for the library. House rules stay in AGENTS. Next brick: impact on a series, or no-y.*
+*Map for the library. House rules stay in AGENTS. Next brick: no-y.*

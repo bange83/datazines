@@ -81,6 +81,7 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | # | note | idea in one breath |
 |--:|---|---|
 | 01 | [[01 confounding]] | pattern ≠ mechanism; a loud *b* can be a passenger |
+| 02 | [[02 causal impact]] | actual − would-have, after a start date |
 
 **Nets (path page 4, now standing):**
 
@@ -117,6 +118,7 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | `tt-` | t-test / inference |
 | `bs-` | bootstrap / resample |
 | `ca-` | cause / confounding |
+| `ci-` | causal impact |
 | `ts-` | time series |
 | `sb-` | this receipt |
 
@@ -128,7 +130,7 @@ Hero of each note is `*-00-hero.svg`. Embed as ordinary markdown so GitHub can r
 
 From a nested family note that is two folders down: `![lr-00-hero](../../assets/lr-00-hero.svg)`. Do not use `![[…]]` — GitHub prints that as text.
 
-Empty slots on the lower shelf are not decoration. The **walk** is [[PATH.md]]. Descent, distributions, softmax, a tiny net, embeddings, attention, one LLM sketchbook, a t-test, cause 01, bootstrap, and time 01 are written. **Next brick: causal impact** (or unsupervised 01). SVM is later.
+Empty slots on the lower shelf are not decoration. The **walk** is [[PATH.md]]. Descent, distributions, softmax, a tiny net, embeddings, attention, one LLM sketchbook, a t-test, cause 01–02, bootstrap, and time 01 are written. **Next brick: unsupervised 01.** SVM is later.
 
 ---
 
@@ -284,7 +286,7 @@ Classification, ensembles, distributions — same ritual:
 5. Open with hero + one sentence. Close with: mini recipe → **sklearn mini (story + numbers match)** → cheat sheet **with Use / skip** → sequel pointer.
 6. Come back here and put the new spines on the shelf (a line in the table on page 1 is enough). Do not rewrite the house rules unless the rules were wrong.
 
-**Next spine:** [[PATH.md]] — causal impact on a series, or `unsupervised/01`. SVM is later.
+**Next spine:** [[PATH.md]] — `unsupervised/01`. SVM is later.
 
 If a topic does not fit the notebook voice, it does not belong in this series yet.
 

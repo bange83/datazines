@@ -174,4 +174,4 @@ Coffee-only: 0.71 and a proud R². Hours-only: *b* ≈ 1, as planted. Both: coff
 
 ---
 
-*Cause wing, 01. Pattern ≠ mechanism. The series that impact would sit on: [[01 lag trend season]]. Chance sequel: [[02 bootstrap]].*
+*Cause wing, 01. Pattern ≠ mechanism. The gap on a series: [[02 causal impact]]. Time furniture: [[01 lag trend season]]. Chance sequel: [[02 bootstrap]].*

@@ -205,4 +205,4 @@ Shuffle looks kinder than the future (0.29 vs −0.28). Season turns the future 
 
 ---
 
-*Time wing, 01. Yesterday is a lever. Next: a simple forecast holdout, then impact on a series — after the fork.*
+*Time wing, 01. Yesterday is a lever. The gap after a start date: [[02 causal impact]].*

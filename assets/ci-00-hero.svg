@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" width="860" height="440" role="img" aria-label="actual hours vs would-have after a week-17 campaign">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="860" height="440" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="860" height="440" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="430.0" y="36.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">week 17: extra office hours. actual vs would-have.</text>
+<path d="M 60.0,350.0 L 800.0,350.0" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round" opacity="1"/>
+<path d="M 70.0,360.0 L 70.0,70.0" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round" opacity="1"/>
+<text x="808.0" y="356.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#241c14" text-anchor="start">week</text>
+<text x="64.0" y="62.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#241c14" text-anchor="end">hours</text>
+<path d="M 549.0,78 L 790,78 L 790,350 L 549.0,350 Z" fill="#b44a28" opacity="0.07"/>
+<path d="M 549.0,78.0 L 549.0,350.0" fill="none" stroke="#b44a28" stroke-width="1.6" stroke-linecap="round" opacity="0.8"/>
+<text x="648.3" y="96.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="middle">campaign</text>
+<path d="M 70.0,224.9 L 100.4,243.3 L 130.9,246.6 L 161.3,309.8 L 191.7,207.5 L 222.2,225.8 L 252.6,229.2 L 283.0,292.4 L 313.5,190.0 L 343.9,208.4 L 374.3,211.7 L 404.8,274.9 L 435.2,172.5 L 465.7,190.9 L 496.1,194.2 L 526.5,257.5 L 557.0,155.1 L 587.4,173.5 L 617.8,176.8 L 648.3,240.0 L 678.7,137.6 L 709.1,156.0 L 739.6,159.3 L 770.0,222.5" fill="none" stroke="#3d5f86" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 6"/>
+<path d="M 70.0,222.1 L 100.4,233.4 L 130.9,249.4 L 161.3,322.5 L 191.7,209.8 L 222.2,230.1 L 252.6,229.2 L 283.0,282.5 L 313.5,193.3 L 343.9,209.3 L 374.3,207.5 L 404.8,275.4 L 435.2,170.2 L 465.7,195.2 L 496.1,196.1 L 526.5,255.1 L 557.0,125.8 L 587.4,131.0 L 617.8,156.0 L 648.3,215.9 L 678.7,114.1 L 709.1,111.7 L 739.6,132.5 L 770.0,182.9" fill="none" stroke="#b44a28" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="70.0" cy="222.1" rx="5.4" ry="5.6" transform="rotate(-10 70.0 222.1)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="100.4" cy="233.4" rx="5.4" ry="5.6" transform="rotate(-1 100.4 233.4)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="130.9" cy="249.4" rx="5.4" ry="5.6" transform="rotate(8 130.9 249.4)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="161.3" cy="322.5" rx="5.4" ry="5.6" transform="rotate(-3 161.3 322.5)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="191.7" cy="209.8" rx="5.4" ry="5.6" transform="rotate(6 191.7 209.8)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="222.2" cy="230.1" rx="5.4" ry="5.6" transform="rotate(-5 222.2 230.1)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="252.6" cy="229.2" rx="5.4" ry="5.6" transform="rotate(4 252.6 229.2)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="283.0" cy="282.5" rx="5.4" ry="5.6" transform="rotate(-7 283.0 282.5)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="313.5" cy="193.3" rx="5.4" ry="5.6" transform="rotate(2 313.5 193.3)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="343.9" cy="209.3" rx="5.4" ry="5.6" transform="rotate(-9 343.9 209.3)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="374.3" cy="207.5" rx="5.4" ry="5.6" transform="rotate(0 374.3 207.5)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="404.8" cy="275.4" rx="5.4" ry="5.6" transform="rotate(9 404.8 275.4)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="435.2" cy="170.2" rx="5.4" ry="5.6" transform="rotate(-2 435.2 170.2)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="465.7" cy="195.2" rx="5.4" ry="5.6" transform="rotate(7 465.7 195.2)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="496.1" cy="196.1" rx="5.4" ry="5.6" transform="rotate(-4 496.1 196.1)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="526.5" cy="255.1" rx="5.4" ry="5.6" transform="rotate(5 526.5 255.1)" fill="#241c14" opacity="0.9"/>
+<ellipse cx="557.0" cy="125.8" rx="5.4" ry="5.6" transform="rotate(-6 557.0 125.8)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="587.4" cy="131.0" rx="5.4" ry="5.6" transform="rotate(3 587.4 131.0)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="617.8" cy="156.0" rx="5.4" ry="5.6" transform="rotate(-8 617.8 156.0)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="648.3" cy="215.9" rx="5.4" ry="5.6" transform="rotate(1 648.3 215.9)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="678.7" cy="114.1" rx="5.4" ry="5.6" transform="rotate(-10 678.7 114.1)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="709.1" cy="111.7" rx="5.4" ry="5.6" transform="rotate(-1 709.1 111.7)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="739.6" cy="132.5" rx="5.4" ry="5.6" transform="rotate(8 739.6 132.5)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="770.0" cy="182.9" rx="5.4" ry="5.6" transform="rotate(-3 770.0 182.9)" fill="#b44a28" opacity="0.9"/>
+<text x="200.0" y="120.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#3d5f86" text-anchor="start">would-have</text>
+<text x="200.0" y="148.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#b44a28" text-anchor="start">actual</text>
+<text x="430.0" y="392.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">the gap after the line is the impact. not the jump from week 1.</text>
+<text x="430.0" y="418.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">naive before/after steals the climb.</text>
+</svg>
