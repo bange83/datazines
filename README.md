@@ -40,6 +40,7 @@ neural nets/           01–04  tiny net, embeddings, attention, one LLM
 inference/             01–02  t-test, bootstrap (leftover replayed)
 causal/                01–02  confounding, causal impact (actual − would-have)
 time series/           01     lag, trend, season
+unsupervised/          01–02  PCA, k-means (no y; sausage, then rooms)
 assets/                drawings (prefix per series: lr-, rr-, dt-, nn-, …)
 html/                  browser zines (prototype: linear 01). recipe in html/README.md
 scripts/note_to_html.py  markdown note → paper leaf (live SVG)
@@ -47,7 +48,7 @@ AGENTS.md              how to write the next note
 PATH.md                which shelf is next
 ```
 
-**Next brick:** unsupervised 01 (no *y*). Not SVM.
+**Next brick:** a side door when a project knocks. Not SVM as 01.
 
 ## Viewing
 

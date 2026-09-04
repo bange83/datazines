@@ -31,7 +31,7 @@ Flip it like a notebook. One page = one idea. Done.
 
 ## Page 1 — What landed today
 
-Vault root. Notes live under `supervised learning/`, `optimization/`, `probability/`, `neural nets/`, `inference/`, `causal/`, `time series/`.
+Vault root. Notes live under `supervised learning/`, `optimization/`, `probability/`, `neural nets/`, `inference/`, `causal/`, `time series/`, `unsupervised/`.
 
 **Notes** live under `regression/`, numbered so the file list *is* the reading order:
 
@@ -83,6 +83,13 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | 01 | [[01 confounding]] | pattern ≠ mechanism; a loud *b* can be a passenger |
 | 02 | [[02 causal impact]] | actual − would-have, after a start date |
 
+**Unsupervised (path page 4, now standing):**
+
+| # | note | idea in one breath |
+|--:|---|---|
+| 01 | [[01 PCA]] | no y. turn the sausage. drop the thin axis |
+| 02 | [[02 k-means]] | no y. paint k rooms. you pick k |
+
 **Nets (path page 4, now standing):**
 
 | # | note | idea in one breath |
@@ -120,6 +127,8 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | `ca-` | cause / confounding |
 | `ci-` | causal impact |
 | `ts-` | time series |
+| `pc-` | PCA / unsupervised |
+| `km-` | k-means |
 | `sb-` | this receipt |
 
 Hero of each note is `*-00-hero.svg`. Embed as ordinary markdown so GitHub can render it. Path is **relative to the note**:
@@ -130,7 +139,7 @@ Hero of each note is `*-00-hero.svg`. Embed as ordinary markdown so GitHub can r
 
 From a nested family note that is two folders down: `![lr-00-hero](../../assets/lr-00-hero.svg)`. Do not use `![[…]]` — GitHub prints that as text.
 
-Empty slots on the lower shelf are not decoration. The **walk** is [[PATH.md]]. Descent, distributions, softmax, a tiny net, embeddings, attention, one LLM sketchbook, a t-test, cause 01–02, bootstrap, and time 01 are written. **Next brick: unsupervised 01.** SVM is later.
+Empty slots on the lower shelf are not decoration. The **walk** is [[PATH.md]]. Descent, distributions, softmax, a tiny net, embeddings, attention, one LLM sketchbook, a t-test, cause 01–02, bootstrap, time 01, PCA, and k-means are written. **Next brick: a side door when a project knocks.** SVM later.
 
 ---
 
@@ -286,7 +295,7 @@ Classification, ensembles, distributions — same ritual:
 5. Open with hero + one sentence. Close with: mini recipe → **sklearn mini (story + numbers match)** → cheat sheet **with Use / skip** → sequel pointer.
 6. Come back here and put the new spines on the shelf (a line in the table on page 1 is enough). Do not rewrite the house rules unless the rules were wrong.
 
-**Next spine:** [[PATH.md]] — `unsupervised/01`. SVM is later.
+**Next spine:** [[PATH.md]] — a side door when a project knocks. SVM is later. Do not start a wing from the summit.
 
 **The site (later):** [datazines.com](https://datazines.com) is these zines in a browser. Notes stay markdown. HTML is a leaf, not a new personality. Recipe: [[html/README.md]]. Converter: `scripts/note_to_html.py`. Drawings stay **SVG**. Do not start the site from a blog theme.
 

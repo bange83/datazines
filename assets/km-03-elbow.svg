@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" width="760" height="340" role="img" aria-label="inertia drops hard until k=3, then whispers">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="340" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="340" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#7a6e5e" text-anchor="middle">sum of leftover² to the center. look for the elbow.</text>
+<path d="M 90,52.0 L 180,52.0 L 180,270 L 90,270 Z" fill="#7a6e5e" stroke="#7a6e5e" stroke-width="1.6" opacity="0.32"/>
+<text x="135" y="294" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">k=1</text>
+<text x="135" y="44.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle">160</text>
+<path d="M 220,187.1375 L 310,187.1375 L 310,270 L 220,270 Z" fill="#3d5f86" stroke="#3d5f86" stroke-width="1.6" opacity="0.32"/>
+<text x="265" y="294" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#3d5f86" text-anchor="middle">k=2</text>
+<text x="265" y="179.1375" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#3d5f86" text-anchor="middle">46</text>
+<path d="M 350,217.89375 L 440,217.89375 L 440,270 L 350,270 Z" fill="#b44a28" stroke="#b44a28" stroke-width="1.6" opacity="0.32"/>
+<text x="395" y="294" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="middle">k=3</text>
+<text x="395" y="209.89375" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#b44a28" text-anchor="middle">20</text>
+<path d="M 480,222.64375 L 570,222.64375 L 570,270 L 480,270 Z" fill="#7a6e5e" stroke="#7a6e5e" stroke-width="1.6" opacity="0.32"/>
+<text x="525" y="294" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">k=4</text>
+<text x="525" y="214.64375" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle">16.3</text>
+<path d="M 610,225.73125 L 700,225.73125 L 700,270 L 610,270 Z" fill="#7a6e5e" stroke="#7a6e5e" stroke-width="1.6" opacity="0.32"/>
+<text x="655" y="294" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">k=5</text>
+<text x="655" y="217.73125" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle">13.7</text>
+<text x="380" y="322" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">1→2 drops 114. 2→3 drops 26. 3→4 drops 4. stop at 3.</text>
+</svg>

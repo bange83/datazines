@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" width="760" height="320" role="img" aria-label="unscaled PCA is all minutes">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="320" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="320" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380" y="40" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">unscaled: minutes eat the first axis</text>
+<path d="M 90,236.94 L 180,236.94 L 180,260 L 90,260 Z" fill="#3d5f86" stroke="#3d5f86" stroke-width="1.6" opacity="0.28"/>
+<text x="135" y="286" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#3d5f86" text-anchor="middle">hours</text>
+<text x="135" y="226.94" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#3d5f86" text-anchor="middle">0.02</text>
+<path d="M 250,60.0 L 340,60.0 L 340,260 L 250,260 Z" fill="#b44a28" stroke="#b44a28" stroke-width="1.6" opacity="0.28"/>
+<text x="295" y="286" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="middle">minutes</text>
+<text x="295" y="50.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#b44a28" text-anchor="middle">1.00</text>
+<path d="M 410,239.82 L 500,239.82 L 500,260 L 410,260 Z" fill="#7a6e5e" stroke="#7a6e5e" stroke-width="1.6" opacity="0.28"/>
+<text x="455" y="286" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">sleep</text>
+<text x="455" y="229.82" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle">0.00</text>
+<path d="M 570,240.0 L 660,240.0 L 660,260 L 570,260 Z" fill="#7a6e5e" stroke="#7a6e5e" stroke-width="1.6" opacity="0.28"/>
+<text x="615" y="286" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">coffee</text>
+<text x="615" y="230.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle">0.00</text>
+<text x="380" y="308" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">biggest unit wins. that is not a rotation. that is a ruler.</text>
+</svg>

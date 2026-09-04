@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" width="860" height="400" role="img" aria-label="rotate the sausage so the long axis is first">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="860" height="400" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="860" height="400" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="215" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">the cloud</text>
+<text x="645" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">after the turn</text>
+<ellipse cx="215" cy="210" rx="150" ry="42" transform="rotate(-28 215 210)" fill="#b44a28" opacity="0.12" stroke="#b44a28" stroke-width="2"/>
+<path d="M 80,300 L 350,300" fill="none" stroke="#241c14" stroke-width="1.6"/>
+<path d="M 90,310 L 90,90" fill="none" stroke="#241c14" stroke-width="1.6"/>
+<text x="360" y="306" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#241c14" text-anchor="start">hours</text>
+<text x="78" y="80" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#241c14" text-anchor="end">minutes</text>
+<ellipse cx="109.04628885692875" cy="253.1365875343069" rx="5.8" ry="6.1" transform="rotate(-12 109.04628885692875 253.1365875343069)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="121.5114313443489" cy="255.30875370674138" rx="5.8" ry="6.1" transform="rotate(-1 121.5114313443489 255.30875370674138)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="133.97657383176906" cy="257.4809198791759" rx="5.8" ry="6.1" transform="rotate(10 133.97657383176906 257.4809198791759)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="146.4417163191892" cy="259.65308605161033" rx="5.8" ry="6.1" transform="rotate(-3 146.4417163191892 259.65308605161033)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="158.90685880660934" cy="233.22525222404482" rx="5.8" ry="6.1" transform="rotate(8 158.90685880660934 233.22525222404482)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="171.3720012940295" cy="235.39741839647928" rx="5.8" ry="6.1" transform="rotate(-5 171.3720012940295 235.39741839647928)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="183.83714378144964" cy="237.5695845689138" rx="5.8" ry="6.1" transform="rotate(6 183.83714378144964 237.5695845689138)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="196.30228626886978" cy="211.14175074134826" rx="5.8" ry="6.1" transform="rotate(-7 196.30228626886978 211.14175074134826)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="208.76742875628992" cy="213.31391691378275" rx="5.8" ry="6.1" transform="rotate(4 208.76742875628992 213.31391691378275)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="221.23257124371008" cy="215.48608308621726" rx="5.8" ry="6.1" transform="rotate(-9 221.23257124371008 215.48608308621726)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="233.69771373113022" cy="189.05824925865173" rx="5.8" ry="6.1" transform="rotate(2 233.69771373113022 189.05824925865173)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="246.16285621855036" cy="191.23041543108621" rx="5.8" ry="6.1" transform="rotate(-11 246.16285621855036 191.23041543108621)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="258.6279987059705" cy="193.40258160352067" rx="5.8" ry="6.1" transform="rotate(0 258.6279987059705 193.40258160352067)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="271.09314119339064" cy="166.9747477759552" rx="5.8" ry="6.1" transform="rotate(11 271.09314119339064 166.9747477759552)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="283.5582836808108" cy="169.14691394838965" rx="5.8" ry="6.1" transform="rotate(-2 283.5582836808108 169.14691394838965)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="296.0234261682309" cy="171.31908012082414" rx="5.8" ry="6.1" transform="rotate(9 296.0234261682309 171.31908012082414)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="308.4885686556511" cy="173.4912462932586" rx="5.8" ry="6.1" transform="rotate(-4 308.4885686556511 173.4912462932586)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="320.95371114307125" cy="147.06341246569312" rx="5.8" ry="6.1" transform="rotate(7 320.95371114307125 147.06341246569312)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="645" cy="210" rx="150" ry="42" fill="#4f6d55" opacity="0.12" stroke="#4f6d55" stroke-width="2"/>
+<path d="M 490,300 L 800,300" fill="none" stroke="#241c14" stroke-width="1.6"/>
+<path d="M 500,310 L 500,90" fill="none" stroke="#241c14" stroke-width="1.6"/>
+<text x="808" y="306" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="start">PC1</text>
+<text x="488" y="80" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#3d5f86" text-anchor="end">PC2</text>
+<ellipse cx="515.0" cy="192.5" rx="5.8" ry="6.1" transform="rotate(-10 515.0 192.5)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="530.2941176470588" cy="199.5" rx="5.8" ry="6.1" transform="rotate(-1 530.2941176470588 199.5)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="545.5882352941177" cy="206.5" rx="5.8" ry="6.1" transform="rotate(8 545.5882352941177 206.5)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="560.8823529411765" cy="213.5" rx="5.8" ry="6.1" transform="rotate(-3 560.8823529411765 213.5)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="576.1764705882352" cy="220.5" rx="5.8" ry="6.1" transform="rotate(6 576.1764705882352 220.5)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="591.4705882352941" cy="227.5" rx="5.8" ry="6.1" transform="rotate(-5 591.4705882352941 227.5)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="606.7647058823529" cy="196.0" rx="5.8" ry="6.1" transform="rotate(4 606.7647058823529 196.0)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="622.0588235294117" cy="203.0" rx="5.8" ry="6.1" transform="rotate(-7 622.0588235294117 203.0)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="637.3529411764706" cy="210.0" rx="5.8" ry="6.1" transform="rotate(2 637.3529411764706 210.0)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="652.6470588235294" cy="217.0" rx="5.8" ry="6.1" transform="rotate(-9 652.6470588235294 217.0)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="667.9411764705883" cy="224.0" rx="5.8" ry="6.1" transform="rotate(0 667.9411764705883 224.0)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="683.2352941176471" cy="192.5" rx="5.8" ry="6.1" transform="rotate(9 683.2352941176471 192.5)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="698.5294117647059" cy="199.5" rx="5.8" ry="6.1" transform="rotate(-2 698.5294117647059 199.5)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="713.8235294117646" cy="206.5" rx="5.8" ry="6.1" transform="rotate(7 713.8235294117646 206.5)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="729.1176470588235" cy="213.5" rx="5.8" ry="6.1" transform="rotate(-4 729.1176470588235 213.5)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="744.4117647058823" cy="220.5" rx="5.8" ry="6.1" transform="rotate(5 744.4117647058823 220.5)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="759.7058823529412" cy="227.5" rx="5.8" ry="6.1" transform="rotate(-6 759.7058823529412 227.5)" fill="#241c14" opacity="0.88"/>
+<ellipse cx="775.0" cy="196.0" rx="5.8" ry="6.1" transform="rotate(3 775.0 196.0)" fill="#241c14" opacity="0.88"/>
+<text x="430" y="372" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#7a6e5e" text-anchor="middle">same people. first axis now runs along the sausage.</text>
+</svg>
