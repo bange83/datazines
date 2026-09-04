@@ -197,4 +197,4 @@ k=3 is the elbow and the silhouette peak. Sizes **28 / 28 / 24** — the plant, 
 
 ---
 
-*Unsupervised 02. No grade. Rooms, not axes. Next: a side door when a project knocks — SVM later.*
+*Unsupervised 02. No grade. Rooms, not axes. Remaining rooms, short: SVM after the S; MCMC after the walk.*

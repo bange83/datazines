@@ -139,7 +139,7 @@ Hero of each note is `*-00-hero.svg`. Embed as ordinary markdown so GitHub can r
 
 From a nested family note that is two folders down: `![lr-00-hero](../../assets/lr-00-hero.svg)`. Do not use `![[…]]` — GitHub prints that as text.
 
-Empty slots on the lower shelf are not decoration. The **walk** is [[PATH.md]]. Descent, distributions, softmax, a tiny net, embeddings, attention, one LLM sketchbook, a t-test, cause 01–02, bootstrap, time 01, PCA, and k-means are written. **Next brick: a side door when a project knocks.** SVM later.
+Empty slots on the lower shelf are not decoration. The **walk** is [[PATH.md]]. Descent, distributions, softmax, a tiny net, embeddings, attention, one LLM sketchbook, a t-test, cause 01–02, bootstrap, time 01, PCA, and k-means are written. **Remaining rooms get written, short. Order not locked.** SVM, fundamentals (train/test, bias–variance, metrics), Bayes (road to PyMC), RL, MCMC, beta — they belong. Do not start a wing from the summit. Do not omit a topic because it is fancy. Do not shorten ridge / lasso / LARS unless asked.
 
 ---
 
@@ -161,7 +161,7 @@ Every sketchbook, in this order:
 10. **Cheat sheet.** A table a tired person can screenshot. Always ends with a **Use / skip** remark: when to reach for *this* method, when to skip it, what it pays you, what it costs you. Short. Honest. Points at siblings instead of hand-waving “use something else.”
 11. **Closing italics** pointing at the next sibling.
 
-Length: roughly 8–16 pages. Dense, not encyclopedic. If you need a second topic, make a sequel. Do not fatten 01.
+Length: roughly 8–16 pages. Dense, not encyclopedic. If you need a second topic, make a sequel. Do not fatten 01. Sequels **must** be shorter than 01 — a tax, a walk, a camera, not a second textbook. Omit nothing that belongs on the map; write it short.
 
 ---
 
@@ -197,7 +197,7 @@ Length: roughly 8–16 pages. Dense, not encyclopedic. If you need a second topi
 
 ![sb-03-voice](assets/sb-03-voice.svg)
 
-**Language: English.** The series started in German and moved. Stay put.
+**Language: English.** The series started in German and moved. Stay put. Chat may be German; the notes are not.
 
 **Reader:** smart 18-year-old. No stats course. Not a child.
 
@@ -241,6 +241,9 @@ Sit between lecture and baby talk:
 - Leave unnumbered siblings in a folder that is supposed to be a sequence.
 - Write a new house style because the new topic feels fancier. Forests still get paper, ink, pages, a cheat sheet, and a tiny fitted example.
 - Ship a note without the sklearn page. A sketchbook that never touches data is a comic.
+- Omit SVM, MCMC, kernels, BSTS, Bayes, RL, fundamentals because they feel advanced. They belong. After their 01. Short.
+- Fatten a sequel (ridge, lasso, LARS) until it is longer than the idea. Keep the topic; cut the repetition — **but do not rewrite ridge / lasso / LARS unless asked.**
+- Write notes in German because the chat was German.
 
 ---
 
@@ -295,7 +298,7 @@ Classification, ensembles, distributions — same ritual:
 5. Open with hero + one sentence. Close with: mini recipe → **sklearn mini (story + numbers match)** → cheat sheet **with Use / skip** → sequel pointer.
 6. Come back here and put the new spines on the shelf (a line in the table on page 1 is enough). Do not rewrite the house rules unless the rules were wrong.
 
-**Next spine:** [[PATH.md]] — a side door when a project knocks. SVM is later. Do not start a wing from the summit.
+**Next spine:** [[PATH.md]] — remaining rooms, short, **order not locked**. SVM, fundamentals, Bayes (not PyMC as 01), RL (not PPO as 01). Do not start a wing from the summit. Do not omit a topic because it is fancy.
 
 **The site (later):** [datazines.com](https://datazines.com) is these zines in a browser. Notes stay markdown. HTML is a leaf, not a new personality. Recipe: [[html/README.md]]. Converter: `scripts/note_to_html.py`. Drawings stay **SVG**. Do not start the site from a blog theme.
 

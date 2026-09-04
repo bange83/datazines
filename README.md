@@ -48,7 +48,7 @@ AGENTS.md              how to write the next note
 PATH.md                which shelf is next
 ```
 
-**Next brick:** a side door when a project knocks. Not SVM as 01.
+**Next brick:** remaining rooms, short. Order not locked. SVM, fundamentals, Bayes (road to PyMC), RL belong. Not PyMC / PPO as 01.
 
 ## Viewing
 
