@@ -85,7 +85,7 @@ If the two blobs have the **same sausage shape**, the set of points equally clos
 
 QDA is the first gentle *curve* in this series that is not a kernel and not a tree. It is still “two Gaussians fighting.” Only the fight is allowed to be unfair in shape.
 
-That extra freedom **costs data**. Each oval has to learn its own stretch. Two levers, eighty people: often fine. Five levers, eighty people: QDA is guessing a lot of sausage from a thin cloud — train looks clever, the next person not. If you cannot *see* the shapes differ, stay LDA.
+That extra freedom **costs data**. Each oval has to learn its own stretch. Two levers, eighty people: often fine. Five levers, eighty people: each blob wants a center plus a 5×5 sausage (about **20 knobs a class**); 40 people per class is tight. Train looks clever, the next person not. If you cannot *see* the shapes differ, stay LDA.
 
 Name cheat:
 

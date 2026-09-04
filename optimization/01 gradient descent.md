@@ -69,6 +69,8 @@ A line’s bowl has **one** bottom. Uglier scores (a net) can have a smaller dip
 
 ![gd-04-local](../assets/gd-04-local.svg)
 
+How you don’t sit there forever: start again from somewhere else, or take noisier steps (SGD, above). A later page. The eight-person line does not need this.
+
 ---
 
 ## Page 4 — Mini recipe

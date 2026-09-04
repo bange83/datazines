@@ -52,7 +52,7 @@ Each class still has a **linear score** inside (a + b · hours), like logistic. 
 
 ## Page 3 — Surprise of the true room
 
-Train: the **true** room should get a big slice. If honors was true and P(honors) = 0.10, that is a nasty surprise. If it was 0.60, a smaller one. People call that leftover **cross-entropy**. Tree entropy measured mix in a room. Here surprise is *aimed at the true room*.
+Train: the **true** room should get a big slice. If honors was true and P(honors) = 0.10, that is a nasty surprise. If it was 0.60, a smaller one. People call that leftover **cross-entropy** — surprise of the true room, −log P(true). Formula lives with next-token: [[04 LLM]]. Tree entropy measured mix in a room. Here surprise is *aimed at the true room*.
 
 ![sm-03-vocab](../../assets/sm-03-vocab.svg)
 

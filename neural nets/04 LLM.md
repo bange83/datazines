@@ -38,7 +38,7 @@ An LLM does not “know the exam.” It asks, again and again:
 
 Rooms = the vocabulary. Seventeen words here. A grown-up list is tens of thousands. Same squash as [[03 softmax]]: scores in, slices that add to 1.
 
-Train: the true next word should get a big slice. Leftover = surprise if that slice was small (**cross-entropy**). Walk the knobs ([[01 gradient descent]]).
+Train: the true next word should get a big slice. Leftover = surprise if that slice was small. **Cross-entropy** = −log P(true token). Same leftover as [[03 softmax]], aimed at the next word. Walk the knobs ([[01 gradient descent]]).
 
 Use: pick the biggest slice, or **sample**. Then glue that word on and ask again.
 
