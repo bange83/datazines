@@ -53,11 +53,17 @@ That is enough for a first encyclopedia room. Uniform, exponential, binomial-as-
 The costume has two usual knobs:
 
 - **center** — where it sits (mean, or P(yes), or mean count)
-- **spread** — how fat (for the bell: standard deviation)
+- **spread** — how fat
+
+For the **bell**, spread is σ (standard deviation). Tight grades vs wild grades.
+
+For the **coin**, there is no extra σ. Fatness is already in **P**: a 50/50 coin rattles most; a 0.95 coin almost always lands yes. Spread = P(1 − P).
+
+For **counts**, mean and spread travel together (Poisson: variance ≈ mean). A busy week of mistakes is also a wild week.
 
 ![ds-02-spread](../assets/ds-02-spread.svg)
 
-Same middle, different spread: tight grades vs wild grades. The line’s *b* does not know this. Tests later *do*.
+The line’s *b* does not know this. Tests later *do*. The three shapes are the hero drawing — bell, two bars, a pile of 0,1,2,…
 
 ---
 
@@ -72,7 +78,7 @@ You need a costume when you ask:
 - May ŷ go negative? (counts say no)
 - What is P(class) for *three* rooms? (softmax: a coin with three faces)
 
-GLM was “pick glasses.” This is “name the light those glasses assume.”
+GLM was “pick glasses.” This is “name the light those glasses assume.” The **link** ([[06 GLM]]) is the translation (score → ŷ). The **family** is this costume. Identity + bell = the grade line. Logit + coin = logistic. Log + counts = Poisson. Wrong costume → ŷ in a nonsense region, and smug leftover.
 
 ---
 
@@ -80,7 +86,7 @@ GLM was “pick glasses.” This is “name the light those glasses assume.”
 
 1. Look at *y* (or at leftovers). Number? Coin? Count?
 2. Pick a **costume**, not a menu of forty.
-3. Name **center** and **spread** (when the costume has spread).
+3. Name **center** and **spread**. Bell: σ. Coin: P already is the spread. Counts: spread rides with the mean.
 4. Remember: dots = sample, curve = rule.
 5. Prediction can ignore the costume. **Uncertainty cannot.**
 
@@ -125,7 +131,8 @@ Mean 0: OLS. Std ~0.46: the bell’s spread, guessed from eight dots. Two leftov
 | Bernoulli / coin | yes / no |
 | Poisson / counts | 0, 1, 2, … |
 | mean | center |
-| std | spread of the bell |
+| std / σ | spread of the **bell** |
+| P(1−P) | spread of the **coin** (no extra σ) |
 
 ### Use / skip
 

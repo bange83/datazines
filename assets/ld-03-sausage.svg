@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" width="760" height="340" role="img" aria-label="round ruler vs sausage oval">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="340" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="340" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+
+<text x="190" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">round ruler</text>
+<ellipse cx="190" cy="175" rx="70" ry="70" fill="none" stroke="#b44a28" stroke-width="2"/>
+<ellipse cx="190" cy="175" rx="6" ry="6" fill="#b44a28"/>
+<ellipse cx="280" cy="175" rx="8" ry="8" fill="#241c14" opacity="0.92"/>
+<path d="M 196,175 L 270,175" fill="none" stroke="#241c14" stroke-width="1.6" stroke-dasharray="4 4"/>
+<text x="190" y="270" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">far = far. always.</text>
+<text x="190" y="294" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="middle">circle</text>
+
+<text x="560" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">the blob is a sausage</text>
+<ellipse cx="530" cy="175" rx="130" ry="42" transform="rotate(-18 530 175)" fill="#b44a28" opacity="0.12" stroke="#b44a28" stroke-width="2"/>
+<ellipse cx="530" cy="175" rx="6" ry="6" fill="#b44a28"/>
+<ellipse cx="640" cy="140" rx="8" ry="8" fill="#241c14" opacity="0.92"/>
+<path d="M 536,172 L 632,142" fill="none" stroke="#241c14" stroke-width="1.6" stroke-dasharray="4 4"/>
+<text x="560" y="270" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">along the sausage = still typical.</text>
+<text x="560" y="294" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="middle">off the thin side = actually far</text>
+</svg>

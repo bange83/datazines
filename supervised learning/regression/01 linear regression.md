@@ -292,17 +292,11 @@ You do not have to do this by hand every time. The computer does exactly that �
 
 How good is the line?
 
-Imagine two worlds:
+Without *x*, best guess is the average ȳ. A flat line. R² against that is **0**.
 
-**A. You do not know x.**
-Best guess for y: just the average ȳ. A flat line.
-
-**B. You know x.**
-You may use the slanted line.
+With *x*, a slanted line. R² is *how much of the scatter that line explained away.*
 
 ![lr-11-r2](../../assets/lr-11-r2.svg)
-
-**R²** says: *how much of the scatter did the line explain away?*
 
 | R² | means |
 |---:|---|

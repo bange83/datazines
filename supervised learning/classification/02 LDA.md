@@ -63,9 +63,13 @@ Someone walks in: 3 hours, 7 of sleep. Not in the old cloud.
 
 ![ld-03-ask](../../assets/ld-03-ask.svg)
 
-LDA: measure how close they are to each center, **in a fair way** that knows the blob is oval, not a circle (hours and sleep may stretch differently, even lean together). Then pick the nearer blob.
+LDA: measure how close they are to each center — **not with a round ruler** if the blob is a sausage.
 
-“Fair way” is the Mahalanobis distance if you want the name later. For now: *not raw Euclidean if the oval is a sausage.*
+Hours stretch more than sleep. A student far along the long axis can still be a typical failer. A student a little *off* the thin side is actually weird for that blob.
+
+![ld-03-sausage](../../assets/ld-03-sausage.svg)
+
+People call that oval-aware ruler **Mahalanobis**. Name later. Job now: *along the sausage is cheap; off the thin side is expensive.*
 
 If the two blobs have the **same sausage shape**, the set of points equally close to both centers is a **straight line**. That line is LDA.
 
@@ -80,6 +84,8 @@ If the two blobs have the **same sausage shape**, the set of points equally clos
 ![ld-04-shared](../../assets/ld-04-shared.svg)
 
 QDA is the first gentle *curve* in this series that is not a kernel and not a tree. It is still “two Gaussians fighting.” Only the fight is allowed to be unfair in shape.
+
+That extra freedom **costs data**. Each oval has to learn its own stretch. Two levers, eighty people: often fine. Five levers, eighty people: QDA is guessing a lot of sausage from a thin cloud — train looks clever, the next person not. If you cannot *see* the shapes differ, stay LDA.
 
 Name cheat:
 
@@ -116,7 +122,7 @@ QDA is the one that **can** leave logistic behind, if the ovals truly differ. It
 
 1. **y is a class.** Pass / fail. (More classes: more blobs.)
 2. **Draw the clouds** in your head. Ovals? Same shape?
-3. **Same shape → LDA** (line). **Different → QDA** (curve).
+3. **Same shape → LDA** (line). **Different → QDA** (curve) — only if you have enough people for two ovals.
 4. **A new point:** which center, in the oval metric?
 5. **Compare to logistic** on hidden people. If they tie, prefer the story you believe (S vs blobs).
 6. **Do not** treat the line as cause. Same sermon.

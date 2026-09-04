@@ -12,7 +12,7 @@ aliases:
 # Softmax — a sketchbook
 
 > [!abstract] In one sentence
-> Logistic was P(yes) vs P(no). Softmax is **P(each room)** when there are **three or more exclusive rooms**. Scores in → slices that add to 1. An LLM’s last layer is this over a huge word-list.
+> Logistic was P(yes) vs P(no). Softmax is **P(each room)** when there are **three or more exclusive rooms**. Scores in → slices that add to 1.
 
 ![sm-00-hero](../../assets/sm-00-hero.svg)
 
@@ -50,15 +50,15 @@ Each class still has a **linear score** inside (a + b · hours), like logistic. 
 
 ---
 
-## Page 3 — The LLM one-liner
+## Page 3 — Surprise of the true room
 
-A language model’s last layer is softmax over the **vocabulary**. Rooms = possible next tokens.
+Train: the **true** room should get a big slice. If honors was true and P(honors) = 0.10, that is a nasty surprise. If it was 0.60, a smaller one. People call that leftover **cross-entropy**. Tree entropy measured mix in a room. Here surprise is *aimed at the true room*.
 
 ![sm-03-vocab](../../assets/sm-03-vocab.svg)
 
-Train: the true next word should get a big slice. Loss = **cross-entropy** = surprise if that slice was small. (Tree entropy measured mix in a room. Here surprise is *aimed at the true room*.)
+A language model is the same squash over a huge room-list (next words). Bookmark, not this notebook: [[04 LLM]].
 
-Use: pick the biggest slice, or **sample** (temperature: louder slices vs flatter pile). That is a later page. The machine is already this one.
+Use: pick the biggest slice, or **sample**. Temperature later. The machine is already this one.
 
 ---
 
@@ -69,6 +69,7 @@ Use: pick the biggest slice, or **sample** (temperature: louder slices vs flatte
 3. Softmax → P’s add to 1.
 4. Read *b* as “this lever feeds that room.”
 5. Two rooms only? Logistic is enough (softmax with two rooms *is* logistic).
+6. LLM last layer: same machine, later shelf.
 
 If you keep only one thing:
 

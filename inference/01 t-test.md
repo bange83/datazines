@@ -57,7 +57,9 @@ People call se the **standard error**. Not the leftover’s sd. The leftover’s
 
 ## Page 3 — If the boring story is true, t sits near 0
 
-Draw leftover’s favorite *t*s. A bell, a bit fatter than a z because eight people is not infinity. Degrees of freedom = how many leftovers you really have (7 for a mean, 6 for a slope — you already spent knobs).
+Draw leftover’s favorite *t*s. A bell, a bit fatter than a **z** because eight people is not infinity. **z** is the same ratio when you already know σ and *n* is huge. Here you **guess** σ from the eight — so the tail is fatter. That extra fat is *t*.
+
+**Degrees of freedom** = leftovers you still own after you spent knobs. Mean: you spent ȳ, so **n − 1 = 7**. Slope: you spent *a* and *b*, so **n − 2 = 6**. Spend more knobs, fatter *t*, louder leftover needed to look “real.”
 
 ![tt-03-bell](../assets/tt-03-bell.svg)
 
@@ -98,6 +100,8 @@ Mean: 5.25 ± (2.36 × 0.65) → **3.72 to 6.78**. Five *is* in it. About-averag
 Same leftover, two knobs. The interval is the picture you can screenshot. *p* is a tail of that picture.
 
 Light vs heavy study (hours ≤ 3 vs ≥ 4): means 3.75 vs 6.75, **t = 4.43**, p = 0.004. A two-sample cousin. Same ratio. You split the class; you did not invent a new test.
+
+If the two piles have **different spread**, do not pretend they share σ. People call the fix **Welch**. Same *t* idea, a messier df. Ranks instead of a bell (Mann–Whitney) is a later camera — this notebook stays on the costume you guessed.
 
 ---
 
@@ -159,7 +163,7 @@ light/heavy means 3.75 6.75   t 4.43   p 0.004
 
 Mean vs 5: leftover shrugs (p = 0.71; 5 sits in 3.72–6.78). Slope vs 0: leftover would have to scream (t = 9.38; 0 is outside 0.74–1.26). Light vs heavy is the same verb on two piles.
 
-`ttest_1samp` is question A. `linregress` already prints the slope’s *t* and *p*. `ddof=1` is the honest sd (n − 1). Fake a smaller se and *t* gets louder — don’t.
+`ttest_1samp` is question A. `linregress` already prints the slope’s *t* and *p*. `ddof=1` is the honest sd (**n − 1** leftover after the mean). Fake a smaller se and *t* gets louder — don’t. `ttest_ind(..., equal_var=True)` is the shared-σ cousin; Welch is `equal_var=False`.
 
 ---
 
@@ -170,7 +174,9 @@ Mean vs 5: leftover shrugs (p = 0.71; 5 sits in 3.72–6.78). Slope vs 0: leftov
 | boring story / H0 | the number leftover is asked to fake |
 | se | leftover’s rattle for this knob |
 | t | (saw − boring) / se |
-| df | leftovers you still own |
+| df | leftovers you still own (mean: n−1; slope: n−2) |
+| z | same ratio when σ is known and *n* is huge |
+| Welch | two piles, don’t share σ |
 | p | tail: leftover this loud or louder |
 | CI | boring numbers leftover still fits |
 

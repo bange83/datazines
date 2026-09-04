@@ -44,15 +44,17 @@ Same bricks (shallow trees). Different glue.
 
 ---
 
-## Page 2 — Leftover, again
+## Page 2 — Leftover is not a 0/1 miss
 
 You have met leftovers: *y − ŷ* on the grade line.
 
-Here the leftover is “how wrong is our current **sum** of trees?” For pass/fail it is not always a raw 0/1 miss — it is the **gradient** of the loss (hence the name). For a first picture, still:
+Pass/fail is the same verb, **not** “tree 2 refits 0 or 1.” Tree 1 puts out a **score**. Squash to P(pass). Leftover = **y − P**. People call that the **gradient** of the loss. Hence the name.
 
-> who did we still call fail when they passed? plant a small tree there.
+They failed (y = 0). Tree 1 still said score +0.5 → P ≈ 0.62. Leftover = 0 − 0.62 = **−0.62**. Tree 2 fits that pull toward fail — not a second binary label.
 
-Then **shrink** that tree before adding it. If you add it at full volume, tree 2 memorizes the noise of tree 1’s misses. That is overfit, only faster.
+![gb-02-leftover](../../assets/gb-02-leftover.svg)
+
+Then **shrink** that tree before adding it. If you add it at full volume, tree 2 memorizes the noise of tree 1’s leftover. That is overfit, only faster.
 
 ---
 
@@ -83,10 +85,11 @@ House seed 7. The forest lifted test from 0.71 → 0.79. Boosting on this **tiny
 | boosting | rate 0.1, 30 trees, depth 2 | 0.964 | 0.750 |
 | boosting | rate 1.0, 30 trees | 1.000 | 0.750 |
 | boosting | rate 0.1, 80 trees | 1.000 | 0.708 |
+| boosting | rate 0.05, 40 trees, depth 3 | 1.000 | **0.667** |
 
-Quiet + short chain: a bit better than the deep tree, **not** better than the forest, on 24 test people. Longer chain: train perfect, test back to 0.71 — memorized again.
+Quiet + short chain: a bit better than the deep tree, **not** better than the forest, on 24 test people. Longer chain: train perfect, test back to 0.71 — memorized again. Deeper bricks + quieter rate is **not** a free swap: test **0.667**. Same 80 people, worse.
 
-That is the lesson, not a scandal. Boosting **shines on bigger tables**. Here the notebook shows the knob. Importances still hours-first (~0.83), then sleep, tutor whisper.
+That is the lesson, not a scandal. Boosting **shines on bigger tables**. On this toy exam the choir is enough. Importances still hours-first (~0.83), then sleep, tutor whisper.
 
 If you later open XGBoost: same leftover-chain + extra taxes (shrinkage, column samples, regularizers). Different engine, same religion.
 
@@ -96,7 +99,7 @@ If you later open XGBoost: same leftover-chain + extra taxes (shrinkage, column 
 
 1. Know one tree (Gini, leftover as a *room*).
 2. Fit a **small** tree to *y* (or to the score).
-3. Compute the leftover. Fit the **next** small tree to that.
+3. Compute leftover = *y − P* (not a 0/1 miss). Fit the **next** small tree to that.
 4. Add it **quietly** (`learning_rate`).
 5. Repeat. Stop when hidden people stop improving — more trees can hurt.
 6. Do not start at XGBoost. Start here. Then change the engine if you need speed.
@@ -148,7 +151,7 @@ boost   0.964 0.75
 importances {'hours': 0.831, 'sleep': 0.15, 'tutor': 0.019}
 ```
 
-On this small test set the **forest wins**. Boosting is the chain you will want when *n* grows and you are willing to tune rate × trees. The printout is the honesty, not a demo that boosting always beats the choir.
+On this small test set the **forest wins**. That does **not** mean boosting is weaker. It means 56 trainers + a chain is easy to spoil. Boosting is the chain you will want when *n* grows and you are willing to tune rate × trees. The printout is the honesty, not a demo that boosting always beats the choir.
 
 `n_estimators` = length of the chain. `learning_rate` = how loud each new tree is. `max_depth=2` keeps each brick small.
 
@@ -158,7 +161,7 @@ On this small test set the **forest wins**. Boosting is the chain you will want 
 
 | word | meaning |
 |---|---|
-| leftover / gradient | what the current sum still gets wrong |
+| leftover / gradient | y − P (pass/fail), not a second 0/1 label |
 | chain | tree k fits the leftover of 1…k−1 |
 | learning rate | shrink each tree before adding |
 | n_estimators | how many leftover-trees |

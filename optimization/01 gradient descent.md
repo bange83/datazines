@@ -17,7 +17,7 @@ aliases:
 
 Read [[01 linear regression]] first, especially the bowl on page 14. Same eight people. Same line ŷ = a + b · hours. Different verb: **walk** to a and b instead of jumping to the bottom.
 
-This is 01 of the optimization wing. Nets, boosting’s inner loop, “training” — they all walk. LLMs walk this bowl with billions of knobs.
+This is 01 of the optimization wing. Logistic, a tiny net, an LLM — they all **walk**. Boosting hunts leftover with a tree; this hunts leftover by moving knobs. Same verb.
 
 Flip it like a notebook. One page = one idea. Done.
 
@@ -64,6 +64,10 @@ On our eight people, rate **0.05**: after 400 steps you are at a ≈ 1.71, b ≈
 Rate **0.2**: after 30 steps a and b are in the billions. The bowl spat you out.
 
 Same word as boosting. Different machine. Still: **quiet steps, more of them.**
+
+A line’s bowl has **one** bottom. Uglier scores (a net) can have a smaller dip on the way. The walk sits where it walks — not always the deepest hole.
+
+![gd-04-local](../assets/gd-04-local.svg)
 
 ---
 
@@ -120,7 +124,24 @@ step 400  a=1.706  b=1.010  mse=0.1879
 
 Walk, don’t jump: 400 quiet steps land next to 1.75 + 1·hours. MSE almost the OLS floor (0.1875). A loud rate (0.2) explodes — do not paste that into production.
 
-SGD later: use **one person** (or a handful) per step instead of all eight. Same downhill, noisier path. Nets need that.
+**SGD** = one person per step, not all eight. Same downhill, noisier path. Nets need that. Same eight people, same rate, shuffle each pass (house seed 7):
+
+```python
+rng = np.random.default_rng(7)
+a, b, rate = 0.0, 0.0, 0.05
+for epoch in range(50):
+    for i in rng.permutation(len(hours)):
+        resid = (a + b * hours[i]) - grade[i]
+        a -= rate * resid
+        b -= rate * resid * hours[i]
+print(f"SGD 400 one-person steps  a={a:.3f}  b={b:.3f}  mse={((a + b * hours - grade) ** 2).mean():.4f}")
+```
+
+```
+SGD 400 one-person steps  a=1.625  b=1.122  mse=0.3206
+```
+
+Nearby, not on the floor. The path wiggled. That is the point, not a bug. Quiet the rate or average a handful (a mini-batch) if the wiggle is too loud.
 
 ---
 
@@ -141,9 +162,9 @@ SGD later: use **one person** (or a handful) per step instead of all eight. Same
 
 **Skip it when** one line and OLS already solved it; you only needed a and b once.
 
-**Pays you:** the verb of modern ML. Same rate-knob as boosting. The only way an LLM gets its weights.
+**Pays you:** the verb of modern ML. Logistic, nets, LLMs — they walk this. Same rate-knob as boosting.
 
-**Costs you:** knobs to tune. Can bounce or crawl. Local dips on uglier bowls (later page). Not a new *model* — a way to **fit** one.
+**Costs you:** knobs to tune. Can bounce or crawl. A smaller dip can trap the walk (the line’s bowl does not). Not a new *model* — a way to **fit** one.
 
 ---
 
