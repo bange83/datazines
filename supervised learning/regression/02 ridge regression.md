@@ -99,7 +99,7 @@ Ridge does not let knobs get theatrical. It asks both to **share the job** with 
 
 You still cannot say which of the twins “really” did it. You *can* stop the explosion.
 
-No magic cutoff (“corr 0.7 → ridge”). The test is the **fight**: ordinary *b*s huge and opposite, net effect ordinary. Hours and minutes on page 14 do that. Two honest, different levers with corr 0.5 can be fine. A number named VIF exists; it is a later camera, not this notebook.
+No magic cutoff (“corr 0.7 → ridge”). The test is the **fight**: ordinary *b*s huge and opposite, net effect ordinary. Hours and minutes on page 14 do that. Two honest, different levers with corr 0.5 can be fine.
 
 ---
 
@@ -284,9 +284,9 @@ If you keep only one thing:
 
 ## Page 14 — Twins, in sklearn
 
-Eighty students. Grade from hours, sleep, tutor. **Minutes** is hours in another unit (a twin). Coffee and noise are junk.
+Thirty students — few enough that the ordinary line can overreact. Grade from hours, sleep, tutor. **Minutes** is hours in another unit (a twin). Coffee and noise are junk.
 
-Ordinary least squares, unscaled: hours and minutes start a fight. Ridge, scaled, `alpha=10`: they share.
+Ordinary least squares, unscaled: hours and minutes start a fight. Ridge, scaled, `alpha=10`: they share. Train R² dips (the tax). Test R² **rises** (the point).
 
 ```python
 import numpy as np
@@ -296,7 +296,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
 rng = np.random.default_rng(7)
-n = 80
+n = 30
 hours = rng.uniform(1, 6, n)
 sleep = rng.uniform(4, 9, n)
 tutor = (rng.random(n) > 0.6).astype(float)
@@ -330,35 +330,35 @@ show("ridge (scaled, alpha=10)", ridge.named_steps["ridge"].coef_,
 ```
 
 ```
-mean grade (train) 7.418
+mean grade (train) 7.241
 ordinary (no scale, no tax)
-  intercept    2.016
-  hours        2.311
-  minutes     -0.025
-  sleep        0.627
-  naps        -0.271
-  tutor        0.447
-  coffee       0.029
-  noise       -0.099
-R² train 0.872   R² test 0.835
+  intercept    1.475
+  hours        5.653
+  minutes     -0.079
+  sleep       -0.258
+  naps         0.555
+  tutor        0.775
+  coffee       0.112
+  noise        0.068
+R² train 0.955   R² test 0.626
 
 ridge (scaled, alpha=10)
-  intercept    7.418
-  hours        0.536
-  minutes      0.527
-  sleep        0.261
-  naps         0.171
-  tutor        0.171
-  coffee       0.039
-  noise       -0.076
-R² train 0.856   R² test 0.797
+  intercept    7.241
+  hours        0.564
+  minutes      0.555
+  sleep        0.124
+  naps         0.136
+  tutor        0.318
+  coffee       0.122
+  noise        0.094
+R² train 0.907   R² test 0.748
 ```
 
-Read the ordinary pair: +2.31 hours and −0.025 minutes. Minutes live around 60–360, so that tiny *b* is huge in real life. Together they still add up to about **+0.80 grade per extra hour** — a cancellation, not a story.
+Read the ordinary pair: +5.65 hours and −0.079 minutes. Minutes live around 60–360, so that tiny *b* is huge in real life. Together they still add up to about **+0.92 grade per extra hour** — a cancellation, not a story. Train R² **0.955**, test **0.626**. Pride on the old 21, embarrassment on the new 9.
 
-Ridge, after scaling: hours 0.54, minutes 0.53. Twins share. Junk is quieter. Train R² dips a little (the tax); that is the point.
+Ridge, after scaling: hours 0.56, minutes 0.56. Twins share. Train R² **0.907** — a bit worse (the tax). Test R² **0.748** — better on people it has not seen. That is the deal from page 3. Do not pick the method by train R².
 
-Ridge’s intercept **7.418** is not a tax on *a*. It is the **mean grade** on the trainers. After `StandardScaler`, every *x* is 0 at the average person, so ŷ at “all knobs typical” *is* ȳ. Ordinary’s 2.016 is “grade if hours, sleep, minutes were all **literally zero**” — a fantasy. Page 5 still holds: *a* does not pay. The number jumped because **zero moved**.
+Ridge’s intercept **7.241** is not a tax on *a*. It is the **mean grade** on the trainers. After `StandardScaler`, every *x* is 0 at the average person, so ŷ at “all knobs typical” *is* ȳ. Ordinary’s 1.475 is “grade if hours, sleep, minutes were all **literally zero**” — a fantasy. Page 5 still holds: *a* does not pay. The number jumped because **zero moved**.
 
 `alpha` here is λ. sklearn’s name, same volume knob.
 

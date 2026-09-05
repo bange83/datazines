@@ -18,18 +18,23 @@
 <rect x="100" y="58" width="140" height="36" rx="6" fill="#b44a28" opacity="0.22" stroke="#b44a28" stroke-width="1.6"/>
 <text x="170" y="82" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="middle">hide</text>
 <rect x="250" y="58" width="140" height="36" rx="6" fill="#4f6d55" opacity="0.18" stroke="#4f6d55" stroke-width="1.6"/>
+<text x="320" y="82" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#4f6d55" text-anchor="middle">fit</text>
 <rect x="400" y="58" width="140" height="36" rx="6" fill="#4f6d55" opacity="0.18" stroke="#4f6d55" stroke-width="1.6"/>
 <text x="470" y="82" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#4f6d55" text-anchor="middle">fit</text>
 <!-- fold 2 -->
 <text x="70" y="148" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14">2</text>
 <rect x="100" y="128" width="140" height="36" rx="6" fill="#4f6d55" opacity="0.18" stroke="#4f6d55" stroke-width="1.6"/>
+<text x="170" y="152" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#4f6d55" text-anchor="middle">fit</text>
 <rect x="250" y="128" width="140" height="36" rx="6" fill="#b44a28" opacity="0.22" stroke="#b44a28" stroke-width="1.6"/>
 <text x="320" y="152" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="middle">hide</text>
 <rect x="400" y="128" width="140" height="36" rx="6" fill="#4f6d55" opacity="0.18" stroke="#4f6d55" stroke-width="1.6"/>
+<text x="470" y="152" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#4f6d55" text-anchor="middle">fit</text>
 <!-- fold 3 -->
 <text x="70" y="218" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14">3</text>
 <rect x="100" y="198" width="140" height="36" rx="6" fill="#4f6d55" opacity="0.18" stroke="#4f6d55" stroke-width="1.6"/>
+<text x="170" y="222" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#4f6d55" text-anchor="middle">fit</text>
 <rect x="250" y="198" width="140" height="36" rx="6" fill="#4f6d55" opacity="0.18" stroke="#4f6d55" stroke-width="1.6"/>
+<text x="320" y="222" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#4f6d55" text-anchor="middle">fit</text>
 <rect x="400" y="198" width="140" height="36" rx="6" fill="#b44a28" opacity="0.22" stroke="#b44a28" stroke-width="1.6"/>
 <text x="470" y="222" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="middle">hide</text>
 <text x="380" y="268" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">sage = trainers. rust = the people who grade the line.</text>

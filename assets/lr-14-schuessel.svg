@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="squared error as a bowl">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="least squares is the bottom of the bowl, not the peak">
 <defs>
   <filter id="grain" x="0" y="0" width="100%" height="100%">
     <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
@@ -9,21 +9,21 @@
     </feComponentTransfer>
     <feBlend in="SourceGraphic" mode="multiply"/>
   </filter>
-  <filter id="ink" x="-10%" y="-10%" width="120%" height="120%">
-    <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" result="t"/>
-    <feDisplacementMap in="SourceGraphic" in2="t" scale="0.7" xChannelSelector="R" yChannelSelector="G"/>
-  </filter>
 </defs>
 <rect width="720" height="420" rx="18" ry="18" fill="#f4efe4"/>
 <rect width="720" height="420" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
-<path d="M 90.0,246.8 L 113.5,229.4 L 137.0,212.1 L 160.4,197.2 L 183.9,181.6 L 207.4,169.3 L 230.9,159.8 L 254.3,150.6 L 277.8,142.4 L 301.3,137.7 L 324.8,132.9 L 348.3,131.4 L 371.7,129.1 L 395.2,130.2 L 418.7,134.4 L 442.2,137.3 L 465.7,142.9 L 489.1,151.6 L 512.6,160.4 L 536.1,170.0 L 559.6,183.4 L 583.0,197.7 L 606.5,212.2 L 630.0,230.7" fill="none" stroke="#241c14" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<path d="M 70.00,360.00 L 170.00,359.90 Q 170.00,359.90 220.00,359.73 Q 270.00,359.57 320.00,359.61 Q 370.00,359.65 420.00,360.07 Q 470.00,360.50 520.00,360.22 Q 570.00,359.94 620.00,359.97 L 670.00,360.00" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<path d="M 70.00,360.00 L 70.06,308.33 Q 70.06,308.33 70.23,282.50 Q 70.39,256.67 70.31,230.83 Q 70.22,205.00 69.91,179.17 Q 69.60,153.33 69.82,127.50 Q 70.05,101.67 70.03,75.83 L 70.00,50.00" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<text x="680.0" y="366.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">a, b</text>
-<text x="54.0" y="48.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">sum of squared errors</text>
-<ellipse cx="371.7" cy="129.1" rx="7.4" ry="7.2" transform="rotate(18.7 371.7 129.1)" fill="#b44a28" opacity="0.92"/>
-<ellipse cx="372.9" cy="128.0" rx="2.1" ry="1.6" fill="#f7f2ea" opacity="0.35"/>
-<text x="387.7" y="121.1" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#b44a28" text-anchor="start" font-style="normal" font-weight="normal">best line</text>
-<text x="200.0" y="200.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">too flat</text>
-<text x="560.0" y="200.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">too steep</text>
+<path d="M 70.00,50.00 L 70.00,360.00" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M 70.00,360.00 L 670.00,360.00" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M 64.0,61.0 L 70.0,50.0 L 76.0,61.0" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M 659.0,354.0 L 670.0,360.0 L 659.0,366.0" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round"/>
+<text x="680.0" y="366.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14">a, b</text>
+<text x="54.0" y="42.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14">sum of squared errors</text>
+<path d="M 95.0,80.3 L 117.1,119.0 L 139.2,151.8 L 161.2,180.1 L 183.3,206.6 L 205.4,232.4 L 227.5,255.7 L 249.6,273.6 L 271.7,286.0 L 293.8,295.4 L 315.8,304.0 L 337.9,311.2 L 360.0,312.0 L 382.1,311.4 L 404.2,304.1 L 426.2,295.4 L 448.3,285.9 L 470.4,273.5 L 492.5,255.8 L 514.6,232.6 L 536.7,206.6 L 558.8,179.9 L 580.8,151.7 L 602.9,119.0 L 625.0,80.5" fill="none" stroke="#241c14" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="360.0" cy="312.0" rx="8.0" ry="7.6" transform="rotate(12 360.0 312.0)" fill="#b44a28" opacity="0.95"/>
+<ellipse cx="361.2" cy="310.9" rx="2.2" ry="1.7" fill="#f7f2ea" opacity="0.35"/>
+<text x="374.0" y="304.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#b44a28">best line</text>
+<text x="374.0" y="326.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e">smallest leftover²</text>
+<text x="155.0" y="155.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">too flat</text>
+<text x="565.0" y="155.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">too steep</text>
+<text x="360.0" y="398.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">least squares = the dip. not the peak.</text>
 </svg>

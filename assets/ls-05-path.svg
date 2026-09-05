@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" width="760" height="460" role="img" aria-label="LARS coefficient path">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" width="760" height="460" role="img" aria-label="LARS coefficient path; joins sit where a knob leaves zero">
 <defs>
   <filter id="grain" x="0" y="0" width="100%" height="100%">
     <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
@@ -12,22 +12,22 @@
 </defs>
 <rect width="760" height="460" rx="18" ry="18" fill="#f4efe4"/>
 <rect width="760" height="460" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
-<path d="M 80.00,378.00 L 80.36,322.33 Q 80.36,322.33 80.45,294.50 Q 80.54,266.67 79.94,238.83 Q 79.33,211.00 79.73,183.17 Q 80.13,155.33 80.03,127.50 Q 79.94,99.67 79.97,71.83 L 80.00,44.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<path d="M 72.00,370.00 L 175.00,369.75 Q 175.00,369.75 226.50,369.84 Q 278.00,369.92 329.50,369.74 Q 381.00,369.55 432.50,369.75 Q 484.00,369.94 535.50,369.78 Q 587.00,369.62 638.50,369.81 L 690.00,370.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<path d="M 679.0,364.0 L 690.0,370.0 L 679.0,376.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<path d="M 74.0,55.0 L 80.0,44.0 L 86.0,55.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<text x="698.0" y="376.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">steps along the path  →</text>
-<text x="72.0" y="34.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="end" font-style="normal" font-weight="normal">knob b</text>
-<path d="M 80.0,340.9 L 200.0,234.2 L 380.0,166.4 L 560.0,117.9 L 680.0,88.8" fill="none" stroke="#b44a28" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<text x="524.0" y="92.7" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="start" font-style="normal" font-weight="normal">hours</text>
-<path d="M 80.0,340.9 L 200.0,340.9 L 200.0,340.9 L 380.0,263.3 L 560.0,205.2 L 680.0,176.1" fill="none" stroke="#3d5f86" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<text x="524.0" y="220.7" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#3d5f86" text-anchor="start" font-style="normal" font-weight="normal">sleep</text>
-<path d="M 80.0,340.9 L 380.0,340.9 L 380.0,340.9 L 560.0,292.4 L 680.0,263.3" fill="none" stroke="#4f6d55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<text x="536.0" y="286.6" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#4f6d55" text-anchor="start" font-style="normal" font-weight="normal">tutor</text>
-<path d="M 200.00,340.91 L 199.97,250.40 Q 199.97,250.40 199.99,205.15 Q 200.00,159.90 200.00,114.65 L 200.00,69.39" fill="none" stroke="#7a6e5e" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" stroke-dasharray="4 4"/>
-<text x="206.0" y="65.5" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="start" font-style="normal" font-weight="normal">hours in</text>
-<path d="M 380.00,340.91 L 379.85,250.40 Q 379.85,250.40 379.97,205.15 Q 380.10,159.90 380.05,114.65 L 380.00,69.39" fill="none" stroke="#7a6e5e" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" stroke-dasharray="4 4"/>
-<text x="386.0" y="65.5" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="start" font-style="normal" font-weight="normal">sleep in</text>
-<path d="M 560.00,340.91 L 560.04,250.40 Q 560.04,250.40 560.10,205.15 Q 560.16,159.90 560.08,114.65 L 560.00,69.39" fill="none" stroke="#7a6e5e" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" stroke-dasharray="4 4"/>
-<text x="566.0" y="65.5" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="start" font-style="normal" font-weight="normal">tutor in</text>
+<path d="M 80.00,378.00 L 80.00,44.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round"/>
+<path d="M 72.00,370.00 L 690.00,370.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round"/>
+<path d="M 679.0,364.0 L 690.0,370.0 L 679.0,376.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round"/>
+<path d="M 74.0,55.0 L 80.0,44.0 L 86.0,55.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round"/>
+<text x="698.0" y="376.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14">steps along the path  →</text>
+<text x="72.0" y="34.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="end">knob b</text>
+<path d="M 80.0,340.9 L 200.0,234.2 L 380.0,166.4 L 560.0,117.9 L 680.0,88.8" fill="none" stroke="#b44a28" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="524.0" y="92.7" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28">hours</text>
+<path d="M 80.0,340.9 L 200.0,340.9 L 380.0,263.3 L 560.0,205.2 L 680.0,176.1" fill="none" stroke="#3d5f86" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="524.0" y="220.7" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#3d5f86">sleep</text>
+<path d="M 80.0,340.9 L 380.0,340.9 L 560.0,292.4 L 680.0,263.3" fill="none" stroke="#4f6d55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="536.0" y="286.6" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#4f6d55">tutor</text>
+<path d="M 80.00,340.91 L 80.00,69.39" fill="none" stroke="#7a6e5e" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.7"/>
+<text x="86.0" y="65.5" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e">hours in</text>
+<path d="M 200.00,340.91 L 200.00,69.39" fill="none" stroke="#7a6e5e" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.7"/>
+<text x="206.0" y="65.5" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e">sleep in</text>
+<path d="M 380.00,340.91 L 380.00,69.39" fill="none" stroke="#7a6e5e" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.7"/>
+<text x="386.0" y="65.5" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e">tutor in</text>
 </svg>

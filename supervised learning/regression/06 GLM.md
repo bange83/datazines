@@ -125,14 +125,14 @@ If you keep only one thing:
 
 ## Page 8 — Mistakes, in sklearn
 
-Same eighty students, house seed 7. *y* is a Poisson count of mistakes. PoissonRegressor uses a **log link**. LinearRegression is the identity-link cousin — and it will go negative if you ask it far enough.
+Same **thirty** students as ridge, house seed 7. Same hours, sleep, tutor. *y* is not a grade — it is a Poisson count of mistakes. PoissonRegressor uses a **log link**. LinearRegression is the identity-link cousin — and it will go negative if you ask it far enough.
 
 ```python
 import numpy as np
 from sklearn.linear_model import LinearRegression, PoissonRegressor
 
 rng = np.random.default_rng(7)
-n = 80
+n = 30
 hours = rng.uniform(1, 6, n)
 sleep = rng.uniform(4, 9, n)
 tutor = (rng.random(n) > 0.6).astype(float)
@@ -152,16 +152,16 @@ print("linear | 10 hours →", round(lh.predict([[10]])[0], 2))
 ```
 
 ```
-poisson  log(mean) = 2.331 + -0.366 · hours
-mean mistakes | 1 hour → 7.14
-mean mistakes | 6 hours → 1.15
-linear | 1 hour → 6.12
-linear | 6 hours → 0.43
-linear | 10 hours → -4.12
+poisson  log(mean) = 2.011 + -0.264 · hours
+mean mistakes | 1 hour → 5.74
+mean mistakes | 6 hours → 1.53
+linear | 1 hour → 5.21
+linear | 6 hours → 1.16
+linear | 10 hours → -2.08
 ```
 
-Poisson: 7 mistakes down to about 1. Always positive.
-Ordinary line: already nearly 0 at 6 hours, then **−4** at 10. The glasses were the point.
+Poisson: about 6 mistakes down to about 1.5. Always positive.
+Ordinary line: still fine at 6 hours, then **−2** at 10. The glasses were the point.
 
 `alpha=0` turns the penalty off so this is a plain GLM, not a ridge-GLM. sklearn’s `score` here is D² (like R² for this family), not R².
 

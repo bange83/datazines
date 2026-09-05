@@ -359,11 +359,13 @@ A third lever is the same trick in a space you cannot draw. If two levers say al
 
 You do not need to derive the formula. Just see the landscape.
 
-Think of a and b as coordinates on the floor. At every spot you measure the sum of squared errors. That makes a bowl.
+Think of *a* and *b* as coordinates on the floor. At every pair you measure the **sum of squared errors** from page 7. That pile is a height. The heights make a **bowl**.
 
 ![lr-14-schuessel](../../assets/lr-14-schuessel.svg)
 
-The computer rolls to the lowest point. Done.
+The best line is the **bottom** of the bowl — leftover² as small as it can get. That is why people say **least** squares, not most. The rust blob is the dip, not a peak.
+
+The computer rolls downhill and stops. Done.
 
 For a straight line there is **one** clear dip. That is why simple linear regression is well-behaved: one answer, no magic. When there is no formula for the bottom, you **walk** the bowl: [[01 gradient descent]].
 
@@ -382,7 +384,7 @@ For a straight line there is **one** clear dip. That is why simple linear regres
 
 If you keep only one thing:
 
-> cloud → line → ŷ = a + b x → prediction + humility
+> cloud → line → ŷ = a + b x. leftover is vertical. pattern ≠ cause.
 
 ---
 

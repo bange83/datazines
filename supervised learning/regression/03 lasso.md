@@ -200,7 +200,7 @@ If you keep only one thing:
 
 ## Page 11 — Shortlist, in sklearn
 
-Same eighty students as the ridge page. Lasso, scaled, `alpha=0.18`. Watch who leaves.
+Same **thirty** students as the ridge page. Same grade recipe: hours, sleep, tutor, leftover 0.55. Minutes is the twin. Coffee and noise are junk. Lasso, scaled, `alpha=0.18`. Watch who leaves.
 
 ```python
 import numpy as np
@@ -210,7 +210,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
 rng = np.random.default_rng(7)
-n = 80
+n = 30
 hours = rng.uniform(1, 6, n)
 sleep = rng.uniform(4, 9, n)
 tutor = (rng.random(n) > 0.6).astype(float)
@@ -239,24 +239,28 @@ print(f"R² train {lasso.score(Xtr, ytr):.3f}   R² test {lasso.score(Xte, yte):
 ```
 
 ```
-intercept    7.418
-hours        0.000  ← 0
-minutes      0.970
-sleep        0.293
-naps         0.000  ← 0
-tutor        0.034
+intercept    7.241
+hours        1.188
+minutes      0.000  ← 0
+sleep        0.000  ← 0
+naps         0.167
+tutor        0.343
 coffee       0.000  ← 0
-noise       -0.000  ← 0
-stayed: minutes, sleep, tutor
-grade ≈ minutes + sleep + tutor
-R² train 0.802   R² test 0.724
+noise        0.000  ← 0
+stayed: hours, naps, tutor
+grade ≈ hours + naps + tutor
+R² train 0.898   R² test 0.794
 ```
 
-Coffee and noise: fired. Good. Those were junk.
-Naps: fired. Sleep’s cousin lost the talent show.
-Hours: **also fired.** Minutes kept the job. Same fact, two names — lasso picked a favorite. Do not write a story about why minutes “mattered more.”
+Intercept **7.241** — same trainers as ridge, same ȳ. Coffee and noise: fired. Good. Those were junk.
 
-`alpha` is λ again. Bigger α, shorter sentence.
+Hours stayed. Minutes **0**. Same fact, two names — lasso picked a favorite. Ridge had them share (0.56 / 0.56). Do not write a story about why hours “mattered more.”
+
+Sleep fired. Naps kept. Cousins, same talent show. Page 4’s cartoon kept sleep; this sample kept the cousin. The gift is the **zero**, not which twin won.
+
+Train R² **0.898** (ridge was 0.907 — the shortlist costs a little pride). Test **0.794** (ordinary 0.626, ridge 0.748). A sentence, and still better on new people.
+
+sklearn’s `alpha` is λ — the **volume of the tax**, same knob as ridge. Louder tax, more zeros, shorter sentence. (Elastic net will add a *second* knob, the mix. Not this notebook.)
 
 ---
 

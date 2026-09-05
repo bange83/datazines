@@ -183,7 +183,7 @@ If you keep only one thing:
 
 ## Page 10 — The walk, in sklearn
 
-Same eighty students. Scale, then `Lars(n_nonzero_coefs=4)`: stop after four joins. `active_` is the order. `coef_path_` is the film.
+Same **thirty** students as ridge and lasso. Scale, then `Lars(n_nonzero_coefs=3)`: stop after three joins, before junk walks in. `active_` is the order. `coef_path_` is the film.
 
 ```python
 import numpy as np
@@ -192,7 +192,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 rng = np.random.default_rng(7)
-n = 80
+n = 30
 hours = rng.uniform(1, 6, n)
 sleep = rng.uniform(4, 9, n)
 tutor = (rng.random(n) > 0.6).astype(float)
@@ -207,7 +207,7 @@ names = ["hours", "minutes", "sleep", "naps", "tutor", "coffee", "noise"]
 Xtr, Xte, ytr, yte = train_test_split(X, grade, test_size=0.3, random_state=0)
 
 Ztr = StandardScaler().fit_transform(Xtr)
-lars = Lars(n_nonzero_coefs=4).fit(Ztr, ytr)
+lars = Lars(n_nonzero_coefs=3).fit(Ztr, ytr)
 
 print("join order:", [names[i] for i in lars.active_])
 print()
@@ -225,29 +225,31 @@ for i, name in enumerate(names):
 ```
 
 ```
-join order: ['minutes', 'sleep', 'tutor', 'hours']
+join order: ['hours', 'tutor', 'naps']
 
-intercept    7.418
-hours        1.136
-minutes     -0.073
-sleep        0.377
-naps         0.000  ← 0
-tutor        0.117
+intercept    7.241
+hours        1.189
+minutes      0.000  ← 0
+sleep        0.000  ← 0
+naps         0.169
+tutor        0.344
 coffee       0.000  ← 0
 noise        0.000  ← 0
 
 coef_path_  (columns = steps along the walk)
-                    0       1       2       3       4
-hours            0.00    0.00    0.00    0.00    1.14
-minutes          0.00    0.67    0.93    0.99   -0.07
-sleep            0.00    0.00    0.25    0.32    0.38
-naps             0.00    0.00    0.00    0.00    0.00
-tutor            0.00    0.00    0.00    0.05    0.12
-coffee           0.00    0.00    0.00    0.00    0.00
-noise            0.00    0.00    0.00    0.00    0.00
+                   0       1       2       3
+hours           0.00    0.80    1.03    1.19
+minutes         0.00    0.00    0.00    0.00
+sleep           0.00    0.00    0.00    0.00
+naps            0.00    0.00    0.00    0.17
+tutor           0.00    0.00    0.23    0.34
+coffee          0.00    0.00    0.00    0.00
+noise           0.00    0.00    0.00    0.00
 ```
 
-Empty → minutes walks in first (hours’ twin won the race) → sleep joins → tutor joins → hours joins late, and minutes’ knob **flips**. Twins sharing a leftover: the walk gets dramatic at the end. Coffee, noise, naps: never joined. Still zero.
+Empty → hours walks in first → tutor joins → naps joins. Minutes never entered (hours already had the leftover). Sleep never entered (naps, the cousin, won). Coffee would be fourth if we kept walking — that is why we stop at three. Intercept **7.241**, same trainers.
+
+Page 5’s cartoon had sleep in second. This sample’s leftover liked tutor, then naps. Tiny noise swaps the later joins. Same walk. Do not write a story about the order as fate.
 
 `LarsCV` would pick the stopping step by hiding people. Same habit as λ.
 

@@ -168,7 +168,7 @@ If you keep only one thing:
 
 ## Page 9 — Packs, in sklearn
 
-Same eighty students. Elastic net, scaled, `alpha=0.25`, `l1_ratio=0.5` (half V, half U).
+Same **thirty** students as ridge and lasso. Same grade recipe. Elastic net, scaled, `alpha=0.40`, `l1_ratio=0.5` (half V, half U). Mix still half and half; λ a bit louder so junk actually dies on this small class.
 
 ```python
 import numpy as np
@@ -178,7 +178,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
 rng = np.random.default_rng(7)
-n = 80
+n = 30
 hours = rng.uniform(1, 6, n)
 sleep = rng.uniform(4, 9, n)
 tutor = (rng.random(n) > 0.6).astype(float)
@@ -194,7 +194,7 @@ Xtr, Xte, ytr, yte = train_test_split(X, grade, test_size=0.3, random_state=0)
 
 en = make_pipeline(
     StandardScaler(),
-    ElasticNet(alpha=0.25, l1_ratio=0.5, max_iter=10_000),
+    ElasticNet(alpha=0.40, l1_ratio=0.5, max_iter=10_000),
 ).fit(Xtr, ytr)
 b = en.named_steps["elasticnet"].coef_
 
@@ -211,22 +211,23 @@ print(f"R² train {en.score(Xtr, ytr):.3f}   R² test {en.score(Xte, yte):.3f}")
 ```
 
 ```
-intercept    7.418
-hours        0.485
-minutes      0.485
-sleep        0.226
-naps         0.090
-tutor        0.083
+intercept    7.241
+hours        0.547
+minutes      0.517
+sleep        0.055
+naps         0.074
+tutor        0.296
 coffee       0.000  ← 0
-noise       -0.000  ← 0
+noise        0.000  ← 0
 stayed: hours, minutes, sleep, naps, tutor
 fired:  coffee, noise
-R² train 0.814   R² test 0.747
+R² train 0.858   R² test 0.776
 ```
 
+Intercept **7.241** — same trainers as ridge and lasso.
 Coffee and noise: gone. Junk died.
-Hours and minutes: **0.485 and 0.485.** Twins share, no talent show.
-Sleep and naps: both still in the room — naps quieter, not fired.
+Hours and minutes: **0.55 and 0.52.** Twins share, no talent show. Lasso on this class fired minutes.
+Sleep and naps: both still in the room — quieter, not fired. Lasso kept only naps.
 
 `l1_ratio` is α in the sketchbook (1 = pure lasso, 0 = pure ridge). `alpha` is still λ, the volume.
 
