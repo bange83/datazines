@@ -109,7 +109,7 @@ Do not start the site from a WordPress theme or a PDF. Start from this leaf.
 | type | Georgia body, Bradley Hand titles |
 | palette | paper / ink / rust — [[AGENTS.md]] |
 | math | keep LaTeX, MathJax in the page |
-| site | datazines.com, when the shelf is ready |
+| site | datazines.com — freeze the rooms, ship magazine leaves. [[HANDOFF.md]] |
 | script | `scripts/note_to_html.py` |
 
 ### Use / skip

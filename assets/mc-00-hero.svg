@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" role="img" aria-label="GD walks downhill; MCMC wanders the bump">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="380" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="380" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">downhill finds a point. this walk piles a bump.</text>
+<path d="M 60,300 Q 190,80 320,300" fill="none" stroke="#241c14" stroke-width="2"/>
+<ellipse cx="190" cy="118" rx="7" ry="6.4" fill="#b44a28"/>
+<path d="M 100,250 L 140,200 L 170,150 L 190,118" fill="none" stroke="#b44a28" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="190" y="330" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="middle">GD  —  sit at the dip</text>
+<path d="M 440,300 Q 570,90 700,300" fill="none" stroke="#241c14" stroke-width="2"/>
+<path d="M 500,220 L 540,160 L 580,130 L 560,170 L 600,140 L 620,180 L 570,150 L 610,200" fill="none" stroke="#3d5f86" stroke-width="2"/>
+<ellipse cx="570" cy="130" rx="6" ry="5.6" fill="#c4a35a"/>
+<ellipse cx="540" cy="160" rx="5" ry="4.6" fill="#3d5f86" opacity="0.7"/>
+<ellipse cx="600" cy="140" rx="5" ry="4.6" fill="#3d5f86" opacity="0.7"/>
+<ellipse cx="610" cy="200" rx="5" ry="4.6" fill="#3d5f86" opacity="0.7"/>
+<text x="570" y="330" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#3d5f86" text-anchor="middle">MCMC  —  wander, pile visits</text>
+</svg>

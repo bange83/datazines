@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" role="img" aria-label="prior is a starting bump; data slides it">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="380" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="380" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">start with a bump. see data. the bump moves.</text>
+<path d="M 80,300 L 680,300" fill="none" stroke="#241c14" stroke-width="1.6"/>
+<path d="M 86.0,260.0 L 101.1,260.0 L 116.2,260.0 L 131.2,260.0 L 146.3,260.0 L 161.4,260.0 L 176.5,260.0 L 191.5,260.0 L 206.6,260.0 L 221.7,260.0 L 236.8,260.0 L 251.8,260.0 L 266.9,260.0 L 282.0,260.0 L 297.1,260.0 L 312.2,260.0 L 327.2,260.0 L 342.3,260.0 L 357.4,260.0 L 372.5,260.0 L 387.5,260.0 L 402.6,260.0 L 417.7,260.0 L 432.8,260.0 L 447.8,260.0 L 462.9,260.0 L 478.0,260.0 L 493.1,260.0 L 508.2,260.0 L 523.2,260.0 L 538.3,260.0 L 553.4,260.0 L 568.5,260.0 L 583.5,260.0 L 598.6,260.0 L 613.7,260.0 L 628.8,260.0 L 643.8,260.0 L 658.9,260.0 L 674.0,260.0" fill="none" stroke="#7a6e5e" stroke-width="2" stroke-linecap="round"/>
+<path d="M 86.0,300.0 L 101.1,298.7 L 116.2,294.2 L 131.2,285.7 L 146.3,273.0 L 161.4,256.8 L 176.5,237.9 L 191.5,217.6 L 206.6,196.9 L 221.7,177.1 L 236.8,159.2 L 251.8,144.0 L 266.9,132.2 L 282.0,124.2 L 297.1,120.1 L 312.2,120.0 L 327.2,123.7 L 342.3,130.7 L 357.4,140.7 L 372.5,153.0 L 387.5,167.1 L 402.6,182.2 L 417.7,197.9 L 432.8,213.4 L 447.8,228.3 L 462.9,242.2 L 478.0,254.7 L 493.1,265.6 L 508.2,274.9 L 523.2,282.4 L 538.3,288.3 L 553.4,292.6 L 568.5,295.7 L 583.5,297.7 L 598.6,298.9 L 613.7,299.6 L 628.8,299.9 L 643.8,300.0 L 658.9,300.0 L 674.0,300.0" fill="none" stroke="#b44a28" stroke-width="2.4" stroke-linecap="round"/>
+<text x="80" y="322" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="start">0</text>
+<text x="680" y="322" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="end">1</text>
+<text x="200" y="80" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="start">prior  (I don't know)</text>
+<text x="430" y="80" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="start">posterior  after 3 yes, 5 no</text>
+<text x="380" y="354" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">Bayes is that move, named.</text>
+</svg>

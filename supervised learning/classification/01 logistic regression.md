@@ -200,4 +200,4 @@ Three hours: still a coin with a lean (0.64). Five hours: almost sure (0.98). Th
 
 ---
 
-*First spine on the classification shelf. Twin that draws the clouds: [[02 LDA]]. Many rooms, share 1: [[03 softmax]]. A boundary made of questions: [[01 decision tree]]. If *y* is a count: [[06 GLM]].*
+*First spine on the classification shelf. Twin that draws the clouds: [[02 LDA]]. Many rooms, share 1: [[03 softmax]]. A fence, not an S: [[04 SVM]]. A boundary made of questions: [[01 decision tree]]. If *y* is a count: [[06 GLM]].*

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" width="760" height="320" role="img" aria-label="a skinny cut vs a fat street">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="320" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="320" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="190" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">any cut</text>
+<text x="570" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">the fat street</text>
+<ellipse cx="150" cy="170" rx="55" ry="70" fill="#b44a28" opacity="0.12" stroke="#b44a28" stroke-width="1.6"/>
+<ellipse cx="250" cy="170" rx="55" ry="70" fill="#3d5f86" opacity="0.12" stroke="#3d5f86" stroke-width="1.6"/>
+<path d="M 200,80 L 200,260" fill="none" stroke="#7a6e5e" stroke-width="2"/>
+<ellipse cx="510" cy="170" rx="55" ry="70" fill="#b44a28" opacity="0.12" stroke="#b44a28" stroke-width="1.6"/>
+<ellipse cx="650" cy="170" rx="55" ry="70" fill="#3d5f86" opacity="0.12" stroke="#3d5f86" stroke-width="1.6"/>
+<path d="M 545,80 L 615,80 L 615,260 L 545,260 Z" fill="#c4a35a" opacity="0.2"/>
+<path d="M 580,80 L 580,260" fill="none" stroke="#241c14" stroke-width="2.2"/>
+<text x="380" y="296" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">many lines separate. SVM picks the one with the widest gutter.</text>
+</svg>

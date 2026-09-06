@@ -15,7 +15,7 @@ Each note is a short notebook, not a textbook chapter:
 - a tiny sklearn (or numpy) example with **real** printed numbers
 - a cheat sheet that says when to use the method and when to skip it
 
-House style lives in [`AGENTS.md`](AGENTS.md). The map of shelves — what exists, what to write next — lives in [`PATH.md`](PATH.md). The long game is **[datazines.com](https://datazines.com)**: these sketchbooks as zines. HTML recipe: [`html/README.md`](html/README.md).
+House style lives in [`AGENTS.md`](AGENTS.md). The map of shelves lives in [`PATH.md`](PATH.md). **Freeze:** no new rooms — [`HANDOFF.md`](HANDOFF.md). The product is **[datazines.com](https://datazines.com)**: these sketchbooks as magazine leaves. HTML recipe: [`html/README.md`](html/README.md).
 
 ## How to read
 
@@ -34,24 +34,27 @@ This is a **library**, not a ladder. File sort is reading order *inside a family
 00 how to read this.md  front door (leftover, four classrooms)
 supervised learning/
   regression/          01–06  line, tax, shortlist, mix, walk, glasses for y
-  classification/      01–03  S, blobs, softmax
+  classification/      01–04  S, blobs, softmax, SVM
   ensembles/           01–04  tree, forest, leftover-chain, boosting dialects
 optimization/          01     gradient descent
-probability/           01     distributions
+probability/           01–02  distributions, beta (coin’s cousin)
 neural nets/           01–04  tiny net, embeddings, attention, one LLM
 inference/             01–02  t-test, bootstrap (leftover replayed)
 causal/                01–02  confounding, causal impact (actual − would-have)
 time series/           01     lag, trend, season
 unsupervised/          01–02  PCA, k-means (no y; sausage, then rooms)
 fundamentals/            01–03  train / test; bias vs variance; metrics
+bayes/                 01–02  prior; MCMC (walk the height)
+rl/                    01–03  the loop; bandits; Q (the table)
 assets/                drawings (prefix per series: lr-, rr-, dt-, nn-, …)
 html/                  browser zines (prototype: linear 01). recipe in html/README.md
 scripts/note_to_html.py  markdown note → paper leaf (live SVG)
-AGENTS.md              how to write the next note
-PATH.md                which shelf is next
+AGENTS.md              how a note is shaped (freeze: no new rooms)
+PATH.md                map of what exists
+HANDOFF.md             freeze receipt; polish → site
 ```
 
-**Next brick:** remaining rooms, short. Order not locked. SVM, Bayes (road to PyMC), RL belong. Not PyMC / PPO as 01.
+**Freeze:** no new wings. Next: fix, refine, then magazine leaves on datazines.com. [`HANDOFF.md`](HANDOFF.md).
 
 ## Viewing
 

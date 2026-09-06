@@ -54,6 +54,10 @@ That miss wears costumes:
 | a shape leftovers are allowed | [[01 distributions]] |
 | surprise of the true next word | [[04 LLM]] |
 | actual − would-have | [[02 causal impact]] |
+| a starting bump, then data | [[01 prior]] |
+| a reward you chose, then next week | [[01 the loop]] |
+| one room, many arms, no next | [[02 bandits]] |
+| from here, this act, points from now on | [[03 Q]] |
 
 Ridge taxes leftover. A t-test asks if leftover could have faked a number. A forest votes leftover away. Same verb. New costume.
 
@@ -126,7 +130,7 @@ If you keep only one thing:
 | 01 | the ordinary idea of a family |
 | Use / skip | when to reach for it, when not |
 | classroom | 8 / 30 graders / 80 pass-fail / unlabeled |
-| PATH | what to *write* next (not this file) |
+| PATH | map of shelves (writers). Freeze: [[HANDOFF.md]] |
 
 **Also called:** leftover = residual / error · 01 = the first sketchbook of a wing · zine = one note.
 
@@ -136,7 +140,7 @@ If you keep only one thing:
 
 **Reach for it when** you just walked in, you mixed the classrooms, or you are lost between shelves.
 
-**Skip it when** you wanted a textbook; you are writing the next note ([[PATH.md]], [[AGENTS.md]]); you wanted a chapter list as 01.
+**Skip it when** you wanted a textbook; you wanted a chapter list as 01. Writers: [[HANDOFF.md]] (freeze), [[AGENTS.md]] (shape).
 
 **Pays you:** the verb, the four piles, three honest starts. Permission not to read in folder order.
 

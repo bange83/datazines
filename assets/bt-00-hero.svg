@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" role="img" aria-label="a coin is one toss; beta is the unknown P">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="380" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="380" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">the coin is one toss. beta is the unknown P.</text>
+<rect x="90" y="140" width="70" height="140" rx="6" fill="#b44a28" opacity="0.25" stroke="#b44a28" stroke-width="1.8"/>
+<rect x="180" y="90" width="70" height="190" rx="6" fill="#3d5f86" opacity="0.25" stroke="#3d5f86" stroke-width="1.8"/>
+<text x="125" y="310" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="middle">fail</text>
+<text x="215" y="310" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#3d5f86" text-anchor="middle">pass</text>
+<text x="170" y="80" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">coin  P = 0.6</text>
+<path d="M 400,280 L 700,280" fill="none" stroke="#241c14" stroke-width="1.6"/>
+<path d="M 403.0,280.0 L 410.5,280.0 L 418.1,280.0 L 425.6,279.9 L 433.2,279.7 L 440.7,279.4 L 448.2,278.9 L 455.8,278.1 L 463.3,276.9 L 470.8,275.4 L 478.4,273.3 L 485.9,270.6 L 493.5,267.3 L 501.0,263.3 L 508.5,258.6 L 516.1,253.1 L 523.6,246.8 L 531.2,239.8 L 538.7,231.9 L 546.2,223.4 L 553.8,214.2 L 561.3,204.4 L 568.8,194.2 L 576.4,183.7 L 583.9,173.0 L 591.5,162.6 L 599.0,152.5 L 606.5,143.0 L 614.1,134.7 L 621.6,127.7 L 629.2,122.7 L 636.7,120.0 L 644.2,120.2 L 651.8,124.0 L 659.3,131.9 L 666.8,144.6 L 674.4,163.1 L 681.9,188.0 L 689.5,220.4 L 697.0,261.2" fill="none" stroke="#4f6d55" stroke-width="2.4" stroke-linecap="round"/>
+<text x="400" y="300" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="start">0</text>
+<text x="700" y="300" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="end">1</text>
+<text x="550" y="80" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#4f6d55" text-anchor="middle">beta on P</text>
+<text x="380" y="348" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">P lives in 0–1. the bump is where P likes to sit.</text>
+</svg>

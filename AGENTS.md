@@ -21,11 +21,11 @@ This file is two things at once:
 1. A **receipt** for what landed (which notes, which prefixes).
 2. The **house rules** for the next agent (or you, on a later night) who adds a topic.
 
-**What to write next** (encyclopedia map, path to LLMs as one summit): [[PATH.md]].
-
 **What a human reads first:** [[00 how to read this]] — leftover, four classrooms, pick a 01. Not this file.
 
-Read this file for *how*. Read PATH for *which shelf*. Then copy the shape, not the metaphors.
+**Freeze (6 Sep 2026):** no new wings, no new rooms. Bugfix and refine only. Then HTML zines → [datazines.com](https://datazines.com). Receipt: [[HANDOFF.md]]. Map of what exists: [[PATH.md]].
+
+Read this file for *how*. During the freeze, do not copy the “add a shelf” ritual. Fix the shelves that stand.
 
 Flip it like a notebook. One page = one idea. Done.
 
@@ -53,6 +53,7 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | 01 | [[01 logistic regression]] | line inside, S outside, output is P(yes) |
 | 02 | [[02 LDA]] | two blobs; shared shape → line; QDA bends |
 | 03 | [[03 softmax]] | many rooms share P=1; LLM last layer |
+| 04 | [[04 SVM]] | fattest street; fence in the middle; only the curb holds it |
 
 **Ensembles** (starts with one brick):
 
@@ -69,6 +70,7 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 |--:|---|---|
 | 01 | [[01 gradient descent]] | walk the bowl; rate = stride |
 | 01 | [[01 distributions]] | bell, coin, counts — leftover costumes |
+| 02 | [[02 beta]] | coin’s cousin: a bump on unknown P |
 | 01 | [[01 t-test]] | could leftover have faked this number? |
 | 02 | [[02 bootstrap]] | redraw the people; the pile is leftover |
 
@@ -91,6 +93,21 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 |--:|---|---|
 | 01 | [[01 PCA]] | no y. turn the sausage. drop the thin axis |
 | 02 | [[02 k-means]] | no y. paint k rooms. you pick k |
+
+**Act (path page 4, now standing):**
+
+| # | note | idea in one breath |
+|--:|---|---|
+| 01 | [[01 the loop]] | state, action, reward, next; leftover is a score you chose |
+| 02 | [[02 bandits]] | one room, many arms; try or cash; no next |
+| 03 | [[03 Q]] | from here, this act, points from now on |
+
+**Bayes (path page 4, now standing):**
+
+| # | note | idea in one breath |
+|--:|---|---|
+| 01 | [[01 prior]] | a prior is a starting bump; data slides it |
+| 02 | [[02 MCMC]] | cannot add? walk the height; the pile is the bump |
 
 **Fundamentals (path page 4, now standing):**
 
@@ -127,7 +144,9 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | `bf-` | boosting flavors (Ada / GB / XGB) |
 | `gd-` | gradient descent |
 | `ds-` | distributions |
+| `bt-` | beta |
 | `sm-` | softmax |
+| `sv-` | SVM / margin |
 | `nn-` | tiny neural net |
 | `em-` | embeddings |
 | `at-` | attention |
@@ -141,6 +160,11 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | `km-` | k-means |
 | `fm-` | fundamentals / train-test |
 | `in-` | intro / how to read |
+| `by-` | Bayes / prior |
+| `mc-` | MCMC / Metropolis |
+| `rl-` | RL / the loop |
+| `bd-` | bandits / UCB |
+| `ql-` | Q / action value |
 | `sb-` | this receipt |
 
 Hero of each note is `*-00-hero.svg`. Embed as ordinary markdown so GitHub can render it. Path is **relative to the note**:
@@ -151,7 +175,7 @@ Hero of each note is `*-00-hero.svg`. Embed as ordinary markdown so GitHub can r
 
 From a nested family note that is two folders down: `![lr-00-hero](../../assets/lr-00-hero.svg)`. Do not use `![[…]]` — GitHub prints that as text.
 
-Empty slots on the lower shelf are not decoration. The **walk** is [[PATH.md]]. Descent, distributions, softmax, a tiny net, embeddings, attention, one LLM sketchbook, a t-test, cause 01–02, bootstrap, time 01, PCA, k-means, and fundamentals 01–03 (train/test, bias–variance, metrics) are written. **Remaining rooms get written, short. Order not locked.** SVM, Bayes (road to PyMC), RL, MCMC, beta — they belong. Do not start a wing from the summit. Do not omit a topic because it is fancy. Do not shorten ridge / lasso / LARS unless asked.
+The encyclopedia **stands**. Descent, distributions, softmax, a tiny net, embeddings, attention, one LLM sketchbook, a t-test, cause 01–02, bootstrap, time 01, PCA, k-means, fundamentals 01–03, SVM, beta, Bayes 01–02, and RL 01–03 (loop, bandits, Q) are written. **Freeze:** no new rooms. Polish numbers and drawings. Then magazine leaves ([[html/README.md]]). Do not shorten ridge / lasso / LARS unless asked. Session receipt: [[HANDOFF.md]].
 
 ---
 
@@ -310,9 +334,9 @@ Classification, ensembles, distributions — same ritual:
 5. Open with hero + one sentence. Close with: mini recipe → **sklearn mini (story + numbers match)** → cheat sheet **with Use / skip** → sequel pointer.
 6. Come back here and put the new spines on the shelf (a line in the table on page 1 is enough). Do not rewrite the house rules unless the rules were wrong.
 
-**Next spine:** [[PATH.md]] — remaining rooms, short, **order not locked**. SVM, Bayes (not PyMC as 01), RL (not PPO as 01). Do not start a wing from the summit. Do not omit a topic because it is fancy.
+**Freeze.** Do not run this page’s ritual until the freeze lifts. No new family folder. No new 01.
 
-**The site (later):** [datazines.com](https://datazines.com) is these zines in a browser. Notes stay markdown. HTML is a leaf, not a new personality. Recipe: [[html/README.md]]. Converter: `scripts/note_to_html.py`. Drawings stay **SVG**. Do not start the site from a blog theme.
+**The site (now the product):** [datazines.com](https://datazines.com) is these zines in a browser. Notes stay markdown. HTML is a leaf, not a new personality. Recipe: [[html/README.md]]. Converter: `scripts/note_to_html.py`. Drawings stay **SVG**. Do not start the site from a blog theme. First desk: 00 + linear 01 + logistic 01 + train/test 01. Details: [[HANDOFF.md]].
 
 If a topic does not fit the notebook voice, it does not belong in this series yet.
 
@@ -320,18 +344,18 @@ If a topic does not fit the notebook voice, it does not belong in this series ye
 
 ## Page 8 — Mini recipe for the next agent
 
-1. Read this file for *how*. Read [[PATH.md]] for *which room*. Then read **01 of the family you are extending**, not a random blog.
-2. Name the idea in one sentence. If you fail, stop.
-3. List 8–12 page titles. Each must be *one* idea.
-4. Draw the pictures first, or at least know what each picture claims.
-5. Write English, sketchbook pages, YAML, numbered filename.
-6. Run the sklearn mini on the **same story and numbers** as the pages. Paste the stdout. Read it in one paragraph. If the printout contradicts the sketch, fix the sketch or the knobs — do not shrug.
-7. Link sequels both ways. Aliases for old names.
-8. Do not “improve” the voice. Match it.
+**During the freeze:**
+
+1. Open [[HANDOFF.md]]. Then this file for *how* a note is shaped.
+2. **Do not** add a wing or a room. Fix a lie: drawing vs caption, printout vs page, mixed classrooms, a brand name in a reader zine.
+3. Run the snippet. Paste **that** stdout.
+4. Convert a note with `scripts/note_to_html.py` when asked. Live SVG. Recipe: [[html/README.md]].
+5. English. Match the voice. Do not “improve” it.
+6. Do not shorten ridge / lasso / LARS unless asked.
 
 If you keep only one thing:
 
-> paper, ink, one idea per page, real numbers, same story till the shelf is done.
+> freeze the rooms. fix the paper. then the desk of the web.
 
 ---
 
@@ -351,8 +375,9 @@ If you keep only one thing:
 | sklearn mini | mandatory. family story, not iris. numbers agree with the pages |
 | Use / skip | on every cheat sheet: when to use, when not, pays / costs |
 | HTML zine | `scripts/note_to_html.py` → `html/<stem>.html`. live SVG. recipe: [[html/README.md]] |
-| site | datazines.com when the shelf is thick. same pencils, not a blog |
-| this file | receipt + rules. update the shelf, rarely the rules |
+| site | datazines.com — magazine leaves, same pencils, not a blog |
+| freeze | no new wings / rooms. bugs + refine + HTML only. [[HANDOFF.md]] |
+| this file | receipt + rules. update the freeze rarely; do not reopen the map |
 
 ---
 

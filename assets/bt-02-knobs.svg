@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" width="760" height="340" role="img" aria-label="three betas: flat, leans yes, leans no">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="340" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="340" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380" y="32" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#7a6e5e" text-anchor="middle">α is yes-ish. β is no-ish. mean = α / (α+β).</text>
+<path d="M 80,280 L 680,280" fill="none" stroke="#241c14" stroke-width="1.6"/>
+<path d="M 86.0,240.0 L 101.1,240.0 L 116.2,240.0 L 131.2,240.0 L 146.3,240.0 L 161.4,240.0 L 176.5,240.0 L 191.5,240.0 L 206.6,240.0 L 221.7,240.0 L 236.8,240.0 L 251.8,240.0 L 266.9,240.0 L 282.0,240.0 L 297.1,240.0 L 312.2,240.0 L 327.2,240.0 L 342.3,240.0 L 357.4,240.0 L 372.5,240.0 L 387.5,240.0 L 402.6,240.0 L 417.7,240.0 L 432.8,240.0 L 447.8,240.0 L 462.9,240.0 L 478.0,240.0 L 493.1,240.0 L 508.2,240.0 L 523.2,240.0 L 538.3,240.0 L 553.4,240.0 L 568.5,240.0 L 583.5,240.0 L 598.6,240.0 L 613.7,240.0 L 628.8,240.0 L 643.8,240.0 L 658.9,240.0 L 674.0,240.0" fill="none" stroke="#7a6e5e" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M 86.0,280.0 L 101.1,280.0 L 116.2,280.0 L 131.2,279.9 L 146.3,279.7 L 161.4,279.4 L 176.5,278.8 L 191.5,278.0 L 206.6,276.7 L 221.7,275.1 L 236.8,272.8 L 251.8,270.0 L 266.9,266.5 L 282.0,262.3 L 297.1,257.3 L 312.2,251.4 L 327.2,244.8 L 342.3,237.3 L 357.4,228.9 L 372.5,219.8 L 387.5,210.1 L 402.6,199.7 L 417.7,188.8 L 432.8,177.6 L 447.8,166.4 L 462.9,155.2 L 478.0,144.5 L 493.1,134.5 L 508.2,125.6 L 523.2,118.2 L 538.3,112.9 L 553.4,110.0 L 568.5,110.2 L 583.5,114.2 L 598.6,122.6 L 613.7,136.2 L 628.8,155.8 L 643.8,182.3 L 658.9,216.7 L 674.0,260.0" fill="none" stroke="#4f6d55" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M 86.0,260.0 L 101.1,216.7 L 116.2,182.3 L 131.2,155.8 L 146.3,136.2 L 161.4,122.6 L 176.5,114.2 L 191.5,110.2 L 206.6,110.0 L 221.7,112.9 L 236.8,118.2 L 251.8,125.6 L 266.9,134.5 L 282.0,144.5 L 297.1,155.2 L 312.2,166.4 L 327.2,177.6 L 342.3,188.8 L 357.4,199.7 L 372.5,210.1 L 387.5,219.8 L 402.6,228.9 L 417.7,237.3 L 432.8,244.8 L 447.8,251.4 L 462.9,257.3 L 478.0,262.3 L 493.1,266.5 L 508.2,270.0 L 523.2,272.8 L 538.3,275.1 L 553.4,276.7 L 568.5,278.0 L 583.5,278.8 L 598.6,279.4 L 613.7,279.7 L 628.8,279.9 L 643.8,280.0 L 658.9,280.0 L 674.0,280.0" fill="none" stroke="#b44a28" stroke-width="2.4" stroke-linecap="round"/>
+<text x="80" y="300" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="start">0</text>
+<text x="680" y="300" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="end">1</text>
+<text x="140" y="90" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="start">Beta(2,5) no</text>
+<text x="500" y="90" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#4f6d55" text-anchor="start">Beta(5,2) yes</text>
+<text x="380" y="255" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">Beta(1,1) flat — I don’t know</text>
+</svg>

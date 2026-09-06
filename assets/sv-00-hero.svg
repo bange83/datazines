@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" role="img" aria-label="a fat street between fail and pass; the fence is the middle">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="420" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="420" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">the fattest street. the fence is the middle.</text>
+<path d="M 70,360 L 690,360" fill="none" stroke="#241c14" stroke-width="1.8"/>
+<path d="M 80,370 L 80,50" fill="none" stroke="#241c14" stroke-width="1.8"/>
+<text x="700" y="366" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">hours</text>
+<text x="70" y="42" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="end">sleep</text>
+<path d="M 250,360 L 430,50 L 490,50 L 310,360 Z" fill="#c4a35a" opacity="0.18"/>
+<path d="M 280,360 L 460,50" fill="none" stroke="#241c14" stroke-width="2.4"/>
+<path d="M 250,360 L 430,50" fill="none" stroke="#7a6e5e" stroke-width="1.4" stroke-dasharray="5 4"/>
+<path d="M 310,360 L 490,50" fill="none" stroke="#7a6e5e" stroke-width="1.4" stroke-dasharray="5 4"/>
+<ellipse cx="140.0" cy="280.0" rx="6" ry="5.6" transform="rotate(0 140.0 280.0)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="170.0" cy="240.0" rx="6" ry="5.6" transform="rotate(11 170.0 240.0)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="155.0" cy="200.0" rx="6" ry="5.6" transform="rotate(22 155.0 200.0)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="190.0" cy="300.0" rx="6" ry="5.6" transform="rotate(33 190.0 300.0)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="125.0" cy="250.0" rx="6" ry="5.6" transform="rotate(44 125.0 250.0)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="200.0" cy="220.0" rx="6" ry="5.6" transform="rotate(55 200.0 220.0)" fill="#b44a28" opacity="0.9"/>
+<text x="155" y="330" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="middle">fail</text>
+<ellipse cx="560.0" cy="160.0" rx="6" ry="5.6" transform="rotate(0 560.0 160.0)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="600.0" cy="120.0" rx="6" ry="5.6" transform="rotate(9 600.0 120.0)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="540.0" cy="100.0" rx="6" ry="5.6" transform="rotate(18 540.0 100.0)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="620.0" cy="180.0" rx="6" ry="5.6" transform="rotate(27 620.0 180.0)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="580.0" cy="90.0" rx="6" ry="5.6" transform="rotate(36 580.0 90.0)" fill="#3d5f86" opacity="0.9"/>
+<ellipse cx="640.0" cy="140.0" rx="6" ry="5.6" transform="rotate(45 640.0 140.0)" fill="#3d5f86" opacity="0.9"/>
+<text x="600" y="220" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#3d5f86" text-anchor="middle">pass</text>
+<ellipse cx="255.0" cy="250.0" rx="8" ry="7.4" transform="rotate(0 255.0 250.0)" fill="#b44a28" opacity="0.9"/>
+<ellipse cx="330.0" cy="200.0" rx="8" ry="7.4" transform="rotate(10 330.0 200.0)" fill="#3d5f86" opacity="0.9"/>
+<text x="380" y="396" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">only the people on the curb hold the fence.</text>
+</svg>

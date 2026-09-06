@@ -211,4 +211,4 @@ On this split, LDA, QDA, and logistic **tie on the test set**. QDA is a hair wor
 
 ---
 
-*Twin of logistic, not its parent. Next, a boundary made of questions: [[01 decision tree]].*
+*Twin of logistic, not its parent. A fence with a gutter: [[04 SVM]]. A boundary made of questions: [[01 decision tree]].*

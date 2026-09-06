@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="760" height="400" role="img" aria-label="state, action, reward, next state — a loop">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="400" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="400" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">you act. the world answers. you act again.</text>
+<rect x="80" y="140" width="160" height="80" rx="10" fill="#4f6d55" opacity="0.12" stroke="#4f6d55" stroke-width="2"/>
+<text x="160" y="174" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#4f6d55" text-anchor="middle">state</text>
+<text x="160" y="200" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="middle">tired / fresh</text>
+<rect x="310" y="70" width="160" height="80" rx="10" fill="#b44a28" opacity="0.12" stroke="#b44a28" stroke-width="2"/>
+<text x="390" y="104" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#b44a28" text-anchor="middle">action</text>
+<text x="390" y="130" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="middle">rest / study</text>
+<rect x="540" y="140" width="160" height="80" rx="10" fill="#c4a35a" opacity="0.12" stroke="#c4a35a" stroke-width="2"/>
+<text x="620" y="174" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#c4a35a" text-anchor="middle">reward</text>
+<text x="620" y="200" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="middle">points this week</text>
+<rect x="310" y="250" width="160" height="80" rx="10" fill="#3d5f86" opacity="0.12" stroke="#3d5f86" stroke-width="2"/>
+<text x="390" y="284" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#3d5f86" text-anchor="middle">next</text>
+<text x="390" y="310" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="middle">new state</text>
+<path d="M 240,180 L 310,130" fill="none" stroke="#241c14" stroke-width="1.8"/>
+<path d="M 470,110 L 540,160" fill="none" stroke="#241c14" stroke-width="1.8"/>
+<path d="M 620,220 L 470,270" fill="none" stroke="#241c14" stroke-width="1.8"/>
+<path d="M 310,290 L 240,220" fill="none" stroke="#241c14" stroke-width="1.8"/>
+<text x="380" y="372" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">the leftover is now a reward. you chose it.</text>
+</svg>

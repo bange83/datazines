@@ -48,7 +48,7 @@ You never see the curve in the wild. You see dots. You guess the costume.
 | **coin** (Bernoulli) | yes / no | logistic |
 | **counts** (Poisson) | 0, 1, 2, 3… never negative | Poisson GLM, mistakes |
 
-That is enough for a first encyclopedia room. Uniform, exponential, binomial-as-*k*-out-of-*n* — sequels when a project needs the door.
+That is enough for a first encyclopedia room. The coin’s cousin — a bump on unknown *P* — is [[02 beta]]. Uniform, exponential, binomial-as-*k*-out-of-*n* — sequels when a project needs the door.
 
 The costume has two usual knobs:
 
@@ -146,4 +146,4 @@ Mean 0: OLS. Std ~0.46: the bell’s spread, guessed from eight dots. Two leftov
 
 ---
 
-*Chance wing, 01. The first test: [[01 t-test]]. Many-faced coin: [[03 softmax]]. Walking knobs: [[01 gradient descent]].*
+*Chance wing, 01. Coin’s cousin: [[02 beta]]. The first test: [[01 t-test]]. Many-faced coin: [[03 softmax]]. Walking knobs: [[01 gradient descent]].*
