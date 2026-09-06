@@ -377,6 +377,8 @@ Ridge’s intercept **7.241** is not a tax on *a*. It is the **mean grade** on t
 | bias | a bit systematically off |
 | variance | how much the line jumps |
 
+**Also called:** tax = L2 penalty / regularization · knobs = weights · λ = `alpha` in sklearn.
+
 Ridge does **not** fix a bent cloud. If the truth curves, you still need a different shape.
 
 Ridge **does** fix a drama queen of a straight line.

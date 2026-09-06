@@ -268,7 +268,9 @@ A real LLM is this walk with a look and a stack, on a much bigger note pile. The
 | stack | run the block again |
 | cross-entropy | surprise of the true next word |
 | sample | draw from the slices |
-| temperature | volume on the slices |
+| temperature | volume on the slices — divide scores by T, then softmax |
+
+**Also called:** leftover = cross-entropy · look = attention · next token = next word / piece.
 
 ![lm-06-when](../assets/lm-06-when.svg)
 

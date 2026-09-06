@@ -274,9 +274,11 @@ sklearn’s `alpha` is λ — the **volume of the tax**, same knob as ridge. Lou
 | twins | share | one stays |
 | good at | stable prediction | a short list |
 
-λ still = volume of the tax.
+λ still = volume of the tax. sklearn’s `alpha` is λ.
 Path = what happens as you turn λ.
 Dead zone = small knobs get eaten.
+
+**Also called:** tax |b| = L1 penalty · zero = the feature dropped · shortlist = sparse model.
 
 ### Use / skip
 

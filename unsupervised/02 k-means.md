@@ -183,6 +183,8 @@ k=3 is the elbow and the silhouette peak. Sizes **28 / 28 / 24** — the plant, 
 | elbow | where the next *k* barely helps |
 | silhouette | in-the-room vs near-the-next-room |
 
+**Also called:** room = cluster · center = centroid · leftover² = inertia.
+
 ![km-05-when](../assets/km-05-when.svg)
 
 ### Use / skip

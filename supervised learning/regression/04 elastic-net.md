@@ -244,6 +244,8 @@ Sleep and naps: both still in the room — quieter, not fired. Lasso kept only n
 α = which tax you lean toward.
 λ = how loud.
 
+**Also called:** mix α = `l1_ratio` in sklearn · volume λ = `alpha` in sklearn. Not the same knob.
+
 ### Use / skip
 
 **Reach for it when** the spreadsheet is wide: more levers than people, **packs of twins**, plus junk. You want junk to die and cousins to come in together.

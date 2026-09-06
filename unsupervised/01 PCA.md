@@ -165,6 +165,8 @@ Unscaled: minutes **1.00**, story dead. Scaled: PC1 twins share 0.70 / 0.70, kee
 | scale | always, or the fat unit wins |
 | explained | share of scatter that PC keeps |
 
+**Also called:** sausage = first principal component · loading = how much a feature sits on that PC · lever = feature.
+
 ![pc-05-when](../assets/pc-05-when.svg)
 
 ### Use / skip

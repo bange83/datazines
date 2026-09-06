@@ -206,6 +206,8 @@ This is **self-attention** with one head and no extra Q/K/V floors. An LLM walks
 | bag | mean of the points; cannot refuse |
 | self-attention | tokens looking at **this** note |
 
+**Also called:** look = attention scores · mix = weighted average of values · bag = mean pooling.
+
 ![at-06-when](../assets/at-06-when.svg)
 
 ### Use / skip

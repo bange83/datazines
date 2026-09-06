@@ -226,6 +226,8 @@ PCA on co-occurrence is a **sketch** of the table. Word2vec and an LLM walk the 
 | lookup | token → row → the rest of the net |
 | dim | how fat the point is (2 here; hundreds later) |
 
+**Also called:** point / row = embedding vector · one-hot = dummy encoding · nearby = similar meaning.
+
 ![em-06-when](../assets/em-06-when.svg)
 
 ### Use / skip

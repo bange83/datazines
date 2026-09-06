@@ -158,6 +158,8 @@ Nearby, not on the floor. The path wiggled. That is the point, not a bug. Quiet 
 | OLS | the exact bottom, when it exists |
 | SGD | walk on a sample, not the whole class |
 
+**Also called:** bowl = loss surface · knobs = parameters · rate = learning rate · leftover = residual / error.
+
 ### Use / skip
 
 **Reach for it when** there is no closed-form bottom (nets, deep anything). When you want to *see* training as walking.

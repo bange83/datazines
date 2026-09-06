@@ -127,6 +127,8 @@ Hours up: fail’s *b* negative, honors positive. At 2 hours the pile is mixed; 
 | cross-entropy | surprise of the true room |
 | vocab | LLM: rooms = next tokens |
 
+**Also called:** room = class · slices = probabilities · leftover = cross-entropy.
+
 ### Use / skip
 
 **Reach for it when** *y* has 3+ exclusive rooms; last layer of a net; you want P(room), not one S.

@@ -429,6 +429,8 @@ Same numbers as the sketchbook. `.score` is R² on *these* eight people — prid
 | y − ŷ | residual / error |
 | R² | share of scatter explained on *these* people, 0 to 1 |
 
+**Also called** (say this in a room): leftover = residual · lever / *x* = feature · knob *b* = coefficient / weight · cloud = scatter.
+
 Best line = smallest sum of (residuals)².
 It always goes through the centroid (x̄, ȳ).
 

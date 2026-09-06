@@ -25,7 +25,7 @@ Flip it like a notebook. One page = one idea. Done.
 
 ## Page 1 — Two jobs, one voice
 
-**Job A.** A readable encyclopedia: line, chance, tests, cause, optimization, nets, time, unsupervised, fundamentals, Bayes, RL. Simple terms. Real numbers. Use / skip.
+**Job A.** A readable encyclopedia: line, chance, tests, cause, optimization, nets, time, unsupervised, fundamentals, Bayes, RL. Simple terms. Real numbers. Use / skip. This is the **interview overview**. Derivations live elsewhere.
 
 **Job B.** Enough foundation that an LLM is not magic: *P(next token)* is softmax on a deep score, trained by walking downhill.
 

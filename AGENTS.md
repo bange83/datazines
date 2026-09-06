@@ -158,7 +158,7 @@ Every sketchbook, in this order:
 7. **Pages.** `## Page N — short name`. Horizontal rules between them.
 8. **Mini recipe** near the end. Numbered. Hands, not theory.
 9. **sklearn mini — mandatory, last working page before the cheat sheet.** Same family story. Printed numbers must match the pages. Run it. Paste the stdout. Do not invent the printout. (Full rules: page 6.)
-10. **Cheat sheet.** A table a tired person can screenshot. Always ends with a **Use / skip** remark: when to reach for *this* method, when to skip it, what it pays you, what it costs you. Short. Honest. Points at siblings instead of hand-waving “use something else.”
+10. **Cheat sheet.** A table a tired person can screenshot. Always ends with a **Use / skip** remark: when to reach for *this* method, when to skip it, what it pays you, what it costs you. Short. Honest. Points at siblings instead of hand-waving “use something else.” Optional last rows: **Also called** — house word → the word you’d say in a room. Only for words *this* note introduced. Do not clone a glossary into every sequel.
 11. **Closing italics** pointing at the next sibling.
 
 Length: roughly 8–16 pages. Dense, not encyclopedic. If you need a second topic, make a sequel. Do not fatten 01. Sequels **must** be shorter than 01 — a tax, a walk, a camera, not a second textbook. Omit nothing that belongs on the map; write it short.
@@ -199,7 +199,7 @@ Length: roughly 8–16 pages. Dense, not encyclopedic. If you need a second topi
 
 **Language: English.** The series started in German and moved. Stay put. Chat may be German; the notes are not.
 
-**Reader:** smart 18-year-old. No stats course. Not a child.
+**Reader:** smart 18-year-old. No stats course. Not a child. This is the **job-interview version**: picture, one sentence, real numbers. Not a textbook. Whoever wants the derivation goes somewhere else.
 
 Sit between lecture and baby talk:
 

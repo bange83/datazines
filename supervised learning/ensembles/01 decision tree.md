@@ -278,6 +278,8 @@ Deep tree from the old page, for the tax lesson: `max_depth=8` → 11 leaves, tr
 | stump | depth 1 |
 | depth | how many questions stacked |
 
+**Also called:** room = node · cut = split · leftover mix = impurity.
+
 ### Use / skip
 
 **Reach for it when** you want **rules you can read**; *x* mix (hours low **and** sleep high); a first look before a forest; *y* is a class *or* a number.
