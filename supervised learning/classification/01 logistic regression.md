@@ -140,7 +140,7 @@ If you keep only one thing:
 
 ## Page 8 — Hours → pass, in sklearn
 
-Same world as the grade shelf. Eighty students. *y* is pass/fail, driven by hours (and a bit of sleep and tutor). House seed 7. One lever, no scaler — the S is the lesson, not a fight between hours and minutes. Mixed units: scale first ([[02 ridge regression]], page 10).
+Exam world, house seed 7: hours, sleep, tutor. **Eighty** students — a crowd, not the thirty on the ridge page. *y* is pass/fail, not a grade. One lever, no scaler — the S is the lesson, not a fight between hours and minutes. Mixed units: scale first ([[02 ridge regression]], page 10).
 
 ```python
 import numpy as np

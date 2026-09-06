@@ -62,7 +62,7 @@ One deep tree still sits in the forest as a member. It just does not get to deci
 
 ---
 
-## Page 4 — Same eighty people
+## Page 4 — Same pass/fail class
 
 House seed 7. Train 56 / test 24. Deep tree vs forest:
 
@@ -97,7 +97,7 @@ If you keep only one thing:
 
 ## Page 6 — The vote, in sklearn
 
-Same eighty students as the tree notebook.
+Same pass/fail class as the tree notebook — eighty students, house seed 7.
 
 ```python
 import numpy as np

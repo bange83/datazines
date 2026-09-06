@@ -27,7 +27,7 @@ Flip it like a notebook. One page = one idea. Done.
 
 ## Page 1 — The coffee line looks great
 
-Eighty students. House seed 7. Grade is still 1.8 + 1 · hours, plus leftover. Coffee is **not** in that recipe. People who study just drink more.
+Eighty students, house seed 7. A **crowd**, not the thirty on the ridge page. Grade is still 1.8 + 1 · hours, plus leftover. Coffee is **not** in that recipe. People who study just drink more.
 
 Fit coffee only, anyway.
 
@@ -106,7 +106,7 @@ If you keep only one thing:
 
 ## Page 6 — Coffee as passenger, in sklearn
 
-Same eighty people. Grade depends on hours only. Coffee rides with hours. House seed 7.
+Eighty students, house seed 7 — enough that coffee-only looks loud and then dies when hours is in the room. Grade depends on hours only. Coffee rides with hours.
 
 ```python
 import numpy as np

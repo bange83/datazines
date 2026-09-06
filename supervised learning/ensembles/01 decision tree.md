@@ -161,7 +161,7 @@ Order, then:
 
 ![dt-03-overfit](../../assets/dt-03-overfit.svg)
 
-On our eighty students:
+On this pass/fail class (eighty students, seed 7):
 
 | tree | train acc | test acc | leaves |
 |---|---:|---:|---:|
@@ -191,7 +191,7 @@ If you keep only one thing:
 
 ## Page 9 — Gains, in sklearn
 
-Same eighty students as logistic / LDA. House seed 7. The snippet prints the stump (Gini), the entropy stump, and depth 2 — so you can see first vs second.
+Same pass/fail class as logistic / LDA — eighty students, house seed 7. Not the thirty graders on the ridge page. The snippet prints the stump (Gini), the entropy stump, and depth 2 — so you can see first vs second.
 
 ```python
 import numpy as np

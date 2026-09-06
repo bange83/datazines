@@ -72,7 +72,7 @@ XGBoost is gradient boosting with: second-order leftover (a bit more precise), p
 
 ---
 
-## Page 4 — Same eighty people, no brand worship
+## Page 4 — Same pass/fail class, no brand worship
 
 House seed 7. Stumps in a chain (AdaBoost) vs leftover-trees (GB) vs sklearn’s histogram engine (`HistGradientBoosting` — the closest thing here without installing XGBoost):
 
@@ -127,7 +127,7 @@ If you keep only one thing:
 
 ## Page 7 — Three dialects, in sklearn
 
-Same exam. No XGBoost install required: `HistGradientBoostingClassifier` is sklearn’s histogram engine (LightGBM-adjacent). AdaBoost uses **stumps**.
+Same pass/fail class as the boosting notebook — eighty students, house seed 7. No XGBoost install required: `HistGradientBoostingClassifier` is sklearn’s histogram engine (LightGBM-adjacent). AdaBoost uses **stumps**.
 
 ```python
 import numpy as np

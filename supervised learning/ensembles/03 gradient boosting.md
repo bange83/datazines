@@ -74,7 +74,7 @@ Depth of each tree is usually **small** (stumps or depth 2–3). The *chain* sup
 
 ---
 
-## Page 4 — Same eighty people, honestly
+## Page 4 — Same pass/fail class, honestly
 
 House seed 7. The forest lifted test from 0.71 → 0.79. Boosting on this **tiny** exam is easy to spoil:
 
@@ -87,7 +87,7 @@ House seed 7. The forest lifted test from 0.71 → 0.79. Boosting on this **tiny
 | boosting | rate 0.1, 80 trees | 1.000 | 0.708 |
 | boosting | rate 0.05, 40 trees, depth 3 | 1.000 | **0.667** |
 
-Quiet + short chain: a bit better than the deep tree, **not** better than the forest, on 24 test people. Longer chain: train perfect, test back to 0.71 — memorized again. Deeper bricks + quieter rate is **not** a free swap: test **0.667**. Same 80 people, worse.
+Quiet + short chain: a bit better than the deep tree, **not** better than the forest, on 24 test people. Longer chain: train perfect, test back to 0.71 — memorized again. Deeper bricks + quieter rate is **not** a free swap: test **0.667**. Same class, worse.
 
 That is the lesson, not a scandal. Boosting **shines on bigger tables**. On this toy exam the choir is enough. Importances still hours-first (~0.83), then sleep, tutor whisper.
 
@@ -112,7 +112,7 @@ If you keep only one thing:
 
 ## Page 6 — The chain, in sklearn
 
-Same eighty students. `GradientBoostingClassifier` is the plain sklearn chain (not XGBoost). Depth 2 trees, house seed 7.
+Same pass/fail class as the forest notebook — eighty students, house seed 7. `GradientBoostingClassifier` is the plain sklearn chain (not XGBoost). Depth 2 trees.
 
 ```python
 import numpy as np
