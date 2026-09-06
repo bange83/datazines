@@ -23,6 +23,8 @@ This file is two things at once:
 
 **What to write next** (encyclopedia map, path to LLMs as one summit): [[PATH.md]].
 
+**What a human reads first:** [[00 how to read this]] — leftover, four classrooms, pick a 01. Not this file.
+
 Read this file for *how*. Read PATH for *which shelf*. Then copy the shape, not the metaphors.
 
 Flip it like a notebook. One page = one idea. Done.
@@ -138,6 +140,7 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | `pc-` | PCA / unsupervised |
 | `km-` | k-means |
 | `fm-` | fundamentals / train-test |
+| `in-` | intro / how to read |
 | `sb-` | this receipt |
 
 Hero of each note is `*-00-hero.svg`. Embed as ordinary markdown so GitHub can render it. Path is **relative to the note**:
@@ -166,7 +169,7 @@ Every sketchbook, in this order:
 6. **`Flip it like a notebook. One page = one idea. Done.`** Keep that line. It is the contract with the reader.
 7. **Pages.** `## Page N — short name`. Horizontal rules between them.
 8. **Mini recipe** near the end. Numbered. Hands, not theory.
-9. **sklearn mini — mandatory, last working page before the cheat sheet.** Same family story. Printed numbers must match the pages. Run it. Paste the stdout. Do not invent the printout. (Full rules: page 6.)
+9. **sklearn mini — mandatory, last working page before the cheat sheet.** Same family story. Printed numbers must match the pages. Run it. Paste the stdout. Do not invent the printout. (Full rules: page 6.) Exception: [[00 how to read this]] is a **map**, not a fit — no sklearn page.
 10. **Cheat sheet.** A table a tired person can screenshot. Always ends with a **Use / skip** remark: when to reach for *this* method, when to skip it, what it pays you, what it costs you. Short. Honest. Points at siblings instead of hand-waving “use something else.” Optional last rows: **Also called** — house word → the word you’d say in a room. Only for words *this* note introduced. Do not clone a glossary into every sequel.
 11. **Closing italics** pointing at the next sibling.
 
@@ -249,7 +252,7 @@ Sit between lecture and baby talk:
 - Change the *shape* of the model when you only changed the *score* (ridge is still a line).
 - Leave unnumbered siblings in a folder that is supposed to be a sequence.
 - Write a new house style because the new topic feels fancier. Forests still get paper, ink, pages, a cheat sheet, and a tiny fitted example.
-- Ship a note without the sklearn page. A sketchbook that never touches data is a comic.
+- Ship a note without the sklearn page. A sketchbook that never touches data is a comic. (The front door [[00 how to read this]] is the one map that skips it.)
 - Omit SVM, MCMC, kernels, BSTS, Bayes, RL, fundamentals because they feel advanced. They belong. After their 01. Short.
 - Fatten a sequel (ridge, lasso, LARS) until it is longer than the idea. Keep the topic; cut the repetition — **but do not rewrite ridge / lasso / LARS unless asked.**
 - Write notes in German because the chat was German.

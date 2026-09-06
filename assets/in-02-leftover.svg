@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" width="760" height="320" role="img" aria-label="leftover is the vertical miss">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="320" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="320" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">the miss has many costumes. same miss.</text>
+<path d="M 80,260 L 680,260" fill="none" stroke="#241c14" stroke-width="1.8"/>
+<path d="M 80,260 L 80,70" fill="none" stroke="#241c14" stroke-width="1.8"/>
+<path d="M 110,230 L 620,110" fill="none" stroke="#b44a28" stroke-width="2.6" stroke-linecap="round"/>
+<ellipse cx="360" cy="130" rx="7" ry="6.6" fill="#241c14" opacity="0.92"/>
+<path d="M 360,130 L 360,175" fill="none" stroke="#3d5f86" stroke-width="2" stroke-dasharray="4 4"/>
+<text x="376" y="160" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#3d5f86" text-anchor="start">leftover</text>
+<text x="380" y="296" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">grade miss · new people · surprise · would-have.</text>
+</svg>

@@ -19,17 +19,19 @@ House style lives in [`AGENTS.md`](AGENTS.md). The map of shelves — what exist
 
 ## How to read
 
-File sort order **is** reading order. Start here:
+Start at the front door: [`00 how to read this.md`](00%20how%20to%20read%20this.md) — leftover, four classrooms, pick a 01.
+
+Then:
 
 1. [Linear regression](supervised%20learning/regression/01%20linear%20regression.md) — cloud → straight line
-2. Walk the rest of **regression** (ridge, lasso, elastic-net, LARS, GLM)
-3. Then **classification**, **ensembles**, **gradient descent**, **distributions**, **a tiny net**
+2. Or jump: leftover on new people ([train / test](fundamentals/01%20train%20test%20validate.md)), yes/no ([logistic](supervised%20learning/classification/01%20logistic%20regression.md))
 
-Or open [`PATH.md`](PATH.md) and treat it as the library map. LLMs are one room in a later wing, not the building.
+This is a **library**, not a ladder. File sort is reading order *inside a family*. Writers’ map: [`PATH.md`](PATH.md). LLMs are one room in a later wing, not the building.
 
 ## Layout
 
 ```
+00 how to read this.md  front door (leftover, four classrooms)
 supervised learning/
   regression/          01–06  line, tax, shortlist, mix, walk, glasses for y
   classification/      01–03  S, blobs, softmax
