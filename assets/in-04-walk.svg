@@ -15,7 +15,7 @@
 <text x="380" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">you do not have to finish the building.</text>
 <rect x="50" y="70" width="200" height="160" rx="10" fill="#b44a28" opacity="0.10" stroke="#b44a28" stroke-width="2"/>
 <text x="150" y="130" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="middle">1. pick a shelf</text>
-<text x="150" y="168" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">line · S · tree · walk</text>
+<text x="150" y="168" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="middle">line · s-shaped · tree</text>
 <rect x="280" y="70" width="200" height="160" rx="10" fill="#3d5f86" opacity="0.10" stroke="#3d5f86" stroke-width="2"/>
 <text x="380" y="130" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#3d5f86" text-anchor="middle">2. read 01</text>
 <text x="380" y="168" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">then the sequels</text>
@@ -23,5 +23,5 @@
 <text x="610" y="130" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#4f6d55" text-anchor="middle">3. Use / skip</text>
 <text x="610" y="168" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">the door on the last page</text>
 <text x="380" y="270" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">you can open logistic without finishing ridge.</text>
-<text x="380" y="300" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">you cannot open an LLM without the S, a net, a look.</text>
+<text x="380" y="300" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">you cannot open an LLM without the s-curve, a net, a look.</text>
 </svg>
