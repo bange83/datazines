@@ -55,8 +55,9 @@ Each `## Page N` becomes a rounded **leaf**. Hero (h1 + abstract + drawing) is t
 ## Page 3 — Mini recipe
 
 1. Note is done by house rules (hero, pages, sklearn mini with real stdout, Use / skip).
-2. `python3 scripts/note_to_html.py "supervised learning/regression/01 linear regression.md"`
-3. Opens as `html/<stem>.html`. Needs the vault’s `assets/` next door (`../assets/`).
+2. `python3 scripts/note_to_html.py "supervised learning/regression/01 linear regression.md"`  
+   Whole library: `python3 scripts/note_to_html.py --all`
+3. Opens as `html/<same folders as the note>.html` (e.g. `html/supervised learning/regression/01 linear regression.html`). Images climb to vault `assets/` (`../` × depth). Wikilinks are relative hrefs between leaves.
 4. Open the file in a browser. Check: hero drawing, a formula, the sklearn fence, Use / skip.
 5. Do **not** rasterize SVGs. Do **not** inline a matplotlib PNG. Do **not** restyle because HTML “feels like a blog.”
 
@@ -73,7 +74,7 @@ Spine line (the muted bit above the title) is `--spine`. Default is generic. The
 1. Strip YAML.
 2. **Stash** fenced code so `[[3]]` inside sklearn is not a wikilink.
 3. Obsidian callouts (`> [!abstract]`) → `<aside class="callout">`. Run `**bold**` / `*em*` inside them (markdown will not).
-4. `[[01 ridge…]]` → `<span class="wiki">` only if the target has a **letter** (skip `[[3]]`).
+4. `[[01 logistic regression]]` → `<a class="wiki" href="…">` to that zine’s HTML leaf. Unknown / writer-map links (PATH, AGENTS, HANDOFF) stay a dotted span. Skip `[[3]]`.
 5. `![alt](../../assets/foo.svg)` → `<figure class="drawing"><img src="../assets/foo.svg">`. Filename only; HTML always lives one folder down from `assets/`.
 6. Horizontal rules between pages dropped (the leaf *is* the break).
 7. Restore code fences. `markdown` with tables + fenced_code + sane_lists + nl2br.
@@ -103,7 +104,7 @@ Do not start the site from a WordPress theme or a PDF. Start from this leaf.
 | thing | rule |
 |---|---|
 | source | the markdown note |
-| output | `html/<stem>.html` |
+| output | `html/<vault-relative folders>/<stem>.html` |
 | pictures | live SVG from `assets/` |
 | never | PNG, matplotlib default, hand-edited HTML |
 | type | Georgia body, Bradley Hand titles |

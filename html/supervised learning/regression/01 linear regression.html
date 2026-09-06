@@ -112,7 +112,13 @@ pre {
   margin: 10px 0 16px;
 }
 pre code { color: var(--ink); }
-.wiki { color: var(--blue); border-bottom: 1px dotted var(--blue); }
+a.wiki {
+  color: var(--blue);
+  border-bottom: 1px dotted var(--blue);
+  text-decoration: none;
+}
+a.wiki:hover { border-bottom-style: solid; }
+span.wiki { color: var(--blue); border-bottom: 1px dotted var(--blue); }
 .spine {
   font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
   color: var(--muted);
@@ -146,11 +152,11 @@ window.MathJax = {
 </head>
 <body>
 <div class="book">
-<p class="spine">datazines · sketchbook 01 · the line</p>
+<p class="spine">datazines · a sketchbook</p>
 <section class="leaf hero-leaf"><h1>Linear regression — a sketchbook</h1>
 <aside class="callout callout-abstract"><strong>In one sentence.</strong> You have points. You draw <strong>a straight line</strong> through them. After that the line is a <strong>prediction machine</strong>: <em>x in, ŷ out.</em></aside>
 
-<figure class="drawing"><img src="../assets/lr-00-hero.svg" alt="lr-00-hero"></figure>
+<figure class="drawing"><img src="../../../assets/lr-00-hero.svg" alt="lr-00-hero"></figure>
 
 <p>Flip it like a notebook. One page = one idea. Done.</p>
 </section>
@@ -209,7 +215,7 @@ window.MathJax = {
 </section>
 <section class="leaf"><h2>Page 2 — Points are a cloud</h2>
 <p>Each person = <strong>one dot</strong>.</p>
-<figure class="drawing"><img src="../assets/lr-02-wolke.svg" alt="lr-02-wolke"></figure>
+<figure class="drawing"><img src="../../../assets/lr-02-wolke.svg" alt="lr-02-wolke"></figure>
 
 <p>That is a <strong>cloud of points</strong>.</p>
 <p>You can already see some things without math:</p>
@@ -225,7 +231,7 @@ Looks like a round blob: no linear trend. A line would be nonsense.</aside>
 </section>
 <section class="leaf"><h2>Page 3 — The line is the answer</h2>
 <p>You put <strong>a straight line</strong> through the cloud.</p>
-<figure class="drawing"><img src="../assets/lr-03-linie.svg" alt="lr-03-linie"></figure>
+<figure class="drawing"><img src="../../../assets/lr-03-linie.svg" alt="lr-03-linie"></figure>
 
 <p>The line does not say: “This <em>is</em> the world.”<br>
 It says: “Roughly, <strong>on average</strong>.”</p>
@@ -245,7 +251,7 @@ Off, but close. That is the deal.</p>
 <li><strong>a</strong> — intercept. Where the line hits the y-axis.</li>
 <li><strong>b</strong> — slope. How steep.</li>
 </ul>
-<figure class="drawing"><img src="../assets/lr-04-knoepfe.svg" alt="lr-04-knoepfe"></figure>
+<figure class="drawing"><img src="../../../assets/lr-04-knoepfe.svg" alt="lr-04-knoepfe"></figure>
 
 <h3>a — the start</h3>
 <p><em>What comes out when x = 0?</em></p>
@@ -291,14 +297,14 @@ Sometimes a is just math and <strong>nonsense outside the data</strong> — nobo
 <li>B: 5 hours → grade 6.8</li>
 </ul>
 <p>$$b = \frac{\Delta y}{\Delta x} = \frac{6.8 - 3.8}{5 - 2} = \frac{3}{3} = 1$$</p>
-<figure class="drawing"><img src="../assets/lr-05-steigung.svg" alt="lr-05-steigung"></figure>
+<figure class="drawing"><img src="../../../assets/lr-05-steigung.svg" alt="lr-05-steigung"></figure>
 
 <p>Slope = <strong>rise over run</strong>.<br>
 School math — except the line does not have to go through <em>two</em> points. It has to go through <em>a whole cloud</em>.</p>
 </section>
 <section class="leaf"><h2>Page 6 — The error is vertical</h2>
 <p>The line almost never hits the point exactly. The gap <strong>up / down</strong> is the error.</p>
-<figure class="drawing"><img src="../assets/lr-06-rest.svg" alt="lr-06-rest"></figure>
+<figure class="drawing"><img src="../../../assets/lr-06-rest.svg" alt="lr-06-rest"></figure>
 
 <p><strong>residual = real − prediction = y − ŷ</strong></p>
 <ul>
@@ -312,7 +318,7 @@ Because we are <strong>predicting y</strong>. We care about: <em>how far off was
 </section>
 <section class="leaf"><h2>Page 7 — Which line is “the best”?</h2>
 <p>You could draw a thousand lines through the cloud. Most of them are bad.</p>
-<figure class="drawing"><img src="../assets/lr-07-drei.svg" alt="lr-07-drei"></figure>
+<figure class="drawing"><img src="../../../assets/lr-07-drei.svg" alt="lr-07-drei"></figure>
 
 <p>Idea: <strong>make the residuals small.</strong></p>
 <p>Naive thought: add all residuals.<br>
@@ -329,7 +335,7 @@ Problem: +2 and −2 sum to 0. Looks perfect. Is not.</p>
 <p>A point 4 grades off costs 16.<br>
 Two points 1 grade off cost 2.<br>
 So outliers <strong>yank</strong> the line toward themselves.</p>
-<figure class="drawing"><img src="../assets/lr-15-ausreisser.svg" alt="lr-15-ausreisser"></figure>
+<figure class="drawing"><img src="../../../assets/lr-15-ausreisser.svg" alt="lr-15-ausreisser"></figure>
 
 <aside class="callout callout-note"><strong>Note.</strong> You could use absolute values (|residual|) instead. That is a different method.<br>
 Squares are the default recipe because they are smooth and they shout at large errors.</aside>
@@ -385,7 +391,7 @@ Linear means: <strong>the effect of x is the same size everywhere.</strong></p>
 </blockquote>
 <p>The line has <strong>no bend</strong>. No plateau. No “after 4 hours it stops helping.”</p>
 <p>If the truth looks like this:</p>
-<figure class="drawing"><img src="../assets/lr-09-decke.svg" alt="lr-09-decke"></figure>
+<figure class="drawing"><img src="../../../assets/lr-09-decke.svg" alt="lr-09-decke"></figure>
 
 <p>…then a straight line is <strong>the wrong tool</strong>. It cuts the curve and lies at both ends.</p>
 <p>Later you might want other models (a curve, steps, trees). For now it is enough: <strong>straight line = constant effect.</strong></p>
@@ -421,7 +427,7 @@ Linear means: <strong>the effect of x is the same size everywhere.</strong></p>
 <p>Means (the “centroid” of the cloud):</p>
 <p>$$\bar x = 2.5 \qquad \bar y = 4.5$$</p>
 <p>The best line <strong>always goes through the centroid</strong> <em>(x̄, ȳ)</em>. Keep that.</p>
-<figure class="drawing"><img src="../assets/lr-10-vier.svg" alt="lr-10-vier"></figure>
+<figure class="drawing"><img src="../../../assets/lr-10-vier.svg" alt="lr-10-vier"></figure>
 
 <p>Slope from how x and y walk together:</p>
 <p>$$b = 1.6 \qquad a = \bar y - b\cdot\bar x = 4.5 - 1.6\cdot 2.5 = 0.5$$</p>
@@ -473,14 +479,10 @@ Linear means: <strong>the effect of x is the same size everywhere.</strong></p>
 </section>
 <section class="leaf"><h2>Page 11 — R² in one minute</h2>
 <p>How good is the line?</p>
-<p>Imagine two worlds:</p>
-<p><strong>A. You do not know x.</strong><br>
-Best guess for y: just the average ȳ. A flat line.</p>
-<p><strong>B. You know x.</strong><br>
-You may use the slanted line.</p>
-<figure class="drawing"><img src="../assets/lr-11-r2.svg" alt="lr-11-r2"></figure>
+<p>Without <em>x</em>, best guess is the average ȳ. A flat line. R² against that is <strong>0</strong>.</p>
+<p>With <em>x</em>, a slanted line. R² is <em>how much of the scatter that line explained away.</em></p>
+<figure class="drawing"><img src="../../../assets/lr-11-r2.svg" alt="lr-11-r2"></figure>
 
-<p><strong>R²</strong> says: <em>how much of the scatter did the line explain away?</em></p>
 <table>
 <thead>
 <tr>
@@ -504,6 +506,7 @@ You may use the slanted line.</p>
 </tbody>
 </table>
 <p>R² = 0.8 sounds great. It does not mean x is the <em>cause</em>. It only means the points hug the line.</p>
+<p>0.6 is not a medal and not a fail. It is <strong>60% of the scatter explained — on these people.</strong> New people: usually less. Compare to the flat average (R² = 0), not to a textbook “good.”</p>
 </section>
 <section class="leaf"><h2>Page 12 — Correlation is not cause</h2>
 <p>Classic trap, everyone falls in once:</p>
@@ -512,7 +515,7 @@ You may use the slanted line.</p>
 So ice cream causes drowning?</p>
 </blockquote>
 <p>No. Both rise because it is <strong>summer</strong>. A third variable.</p>
-<figure class="drawing"><img src="../assets/lr-12-sommer.svg" alt="lr-12-sommer"></figure>
+<figure class="drawing"><img src="../../../assets/lr-12-sommer.svg" alt="lr-12-sommer"></figure>
 
 <p>The line between ice cream and drownings would be steep and “significant” — and still <strong>wrong as a story</strong>.</p>
 <p>Linear regression finds <strong>patterns</strong>.<br>
@@ -546,24 +549,23 @@ Cause is on you: experiment, time, domain knowledge.</p>
 </table>
 </section>
 <section class="leaf"><h2>Page 13 — More than one x</h2>
-<p>So far: <strong>one</strong> x. Simple linear regression.</p>
-<p>Often you have several levers:</p>
-<p>$$\text{grade} \approx a + b_1\cdot\text{hours} + b_2\cdot\text{sleep} + b_3\cdot\text{prior grade}$$</p>
-<p>Same idea. Still “linear”: each lever has <strong>one fixed add-on</strong>.<br>
-Only now the “line” lives in a space with more axes. In your head: <strong>a flat plane through a 3D cloud.</strong></p>
-<figure class="drawing"><img src="../assets/lr-13-ebene.svg" alt="lr-13-ebene"></figure>
+<p>So far: <strong>one</strong> x. Hours, a <strong>line</strong>.</p>
+<p>Often you have two levers. Hours <strong>and</strong> sleep. Same machine. The picture changes:</p>
+<figure class="drawing"><img src="../../../assets/lr-13-ebene.svg" alt="lr-13-ebene"></figure>
 
-<p><em>b₂ = 0.4</em> then means: <em>holding hours and prior grade fixed</em> — so <strong>after the others are already in the model</strong> — +1 hour of sleep goes with +0.4 grade, on average.</p>
-<p>That little phrase <em>holding the rest equal</em> is new and it matters. Without it you misread b.</p>
-<p>If two levers say almost the same thing — hours studied and minutes studied — they <strong>fight</strong>. One <em>b</em> goes huge, the other huge the other way. Net effect maybe fine; the story is garbage. The textbook name is <strong>multicollinearity</strong>. Ridge is the seatbelt (<span class="wiki">02 ridge regression</span>).</p>
+<p>$$\text{grade} \approx a + b_1\cdot\text{hours} + b_2\cdot\text{sleep}$$</p>
+<p>Still “linear”: each lever has <strong>one fixed add-on</strong>. No bend. Only now the fit is a <strong>flat plane</strong> through a 3-D cloud, not a line through a 2-D one.</p>
+<p>Each <em>b</em> is still “+1 on that lever, on average.” The new phrase: <strong>holding the other lever still.</strong> Without it you misread <em>b</em>. (The eight people on page 1 have no sleep column. This page is the shape, not a fitted number.)</p>
+<p>A third lever is the same trick in a space you cannot draw. If two levers say almost the same thing — hours studied and minutes studied — they <strong>fight</strong>. One <em>b</em> goes huge, the other huge the other way. Net effect maybe fine; the story is garbage. The textbook name is <strong>multicollinearity</strong>. Ridge is the seatbelt (<a class="wiki" href="02%20ridge%20regression.html">02 ridge regression</a>).</p>
 </section>
 <section class="leaf"><h2>Page 14 — What the computer does inside (no panic)</h2>
 <p>You do not need to derive the formula. Just see the landscape.</p>
-<p>Think of a and b as coordinates on the floor. At every spot you measure the sum of squared errors. That makes a bowl.</p>
-<figure class="drawing"><img src="../assets/lr-14-schuessel.svg" alt="lr-14-schuessel"></figure>
+<p>Think of <em>a</em> and <em>b</em> as coordinates on the floor. At every pair you measure the <strong>sum of squared errors</strong> from page 7. That pile is a height. The heights make a <strong>bowl</strong>.</p>
+<figure class="drawing"><img src="../../../assets/lr-14-schuessel.svg" alt="lr-14-schuessel"></figure>
 
-<p>The computer rolls to the lowest point. Done.</p>
-<p>For a straight line there is <strong>one</strong> clear dip. That is why simple linear regression is well-behaved: one answer, no magic. When there is no formula for the bottom, you <strong>walk</strong> the bowl: <span class="wiki">01 gradient descent</span>.</p>
+<p>The best line is the <strong>bottom</strong> of the bowl — leftover² as small as it can get. That is why people say <strong>least</strong> squares, not most. The rust blob is the dip, not a peak.</p>
+<p>The computer rolls downhill and stops. Done.</p>
+<p>For a straight line there is <strong>one</strong> clear dip. That is why simple linear regression is well-behaved: one answer, no magic. When there is no formula for the bottom, you <strong>walk</strong> the bowl: <a class="wiki" href="../../optimization/01%20gradient%20descent.html">01 gradient descent</a>.</p>
 </section>
 <section class="leaf"><h2>Page 15 — Mini recipe</h2>
 <ol>
@@ -578,11 +580,11 @@ Only now the “line” lives in a space with more axes. In your head: <strong>a
 </ol>
 <p>If you keep only one thing:</p>
 <blockquote>
-<p>cloud → line → ŷ = a + b x → prediction + humility</p>
+<p>cloud → line → ŷ = a + b x. leftover is vertical. pattern ≠ cause.</p>
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 16 — Eight people, in sklearn</h2>
-<p>Same eight rows as page 1. No pipeline, no scaling. Just the line.</p>
+<p>Same eight rows as page 1. No pipeline, no scaling. Just the line. One <em>x</em>, least squares: scale does not change the story. Ridge will tax <strong>size</strong>, so it will <strong>demand</strong> a scaler (<a class="wiki" href="02%20ridge%20regression.html">02 ridge regression</a>, page 10). Not tonight.</p>
 <pre><code class="language-python">from sklearn.linear_model import LinearRegression
 import numpy as np
 
@@ -600,7 +602,7 @@ print(&quot;R² =&quot;, round(line.score(hours, grade), 3))
 4 hours → 5.75
 R² = 0.936
 </code></pre>
-<p>Same numbers as the sketchbook. <code>.score</code> is R² on <em>these</em> eight people — pride, not a test. Next person: different sketchbook, or at least a split.</p>
+<p>Same numbers as the sketchbook. <code>.score</code> is R² on <em>these</em> eight people — pride, not a test. Next person: different sketchbook, or at least a split. Do not copy this unscaled fit into lasso or elastic-net. Those taxes care how big the knobs are written.</p>
 </section>
 <section class="leaf"><h2>Last page — cheat sheet</h2>
 <table>
@@ -637,20 +639,21 @@ R² = 0.936
 </tr>
 <tr>
 <td>R²</td>
-<td>share of scatter explained, 0 to 1</td>
+<td>share of scatter explained on <em>these</em> people, 0 to 1</td>
 </tr>
 </tbody>
 </table>
+<p><strong>Also called</strong> (say this in a room): leftover = residual · lever / <em>x</em> = feature · knob <em>b</em> = coefficient / weight · cloud = scatter.</p>
 <p>Best line = smallest sum of (residuals)².<br>
 It always goes through the centroid (x̄, ȳ).</p>
 <p><strong>linear</strong> — effect the same size everywhere (no bend).<br>
 <strong>cause</strong> — extra. Not inside the formula.</p>
 <h3>Use / skip</h3>
 <p><strong>Reach for it when</strong> <em>y</em> is a real number, the cloud looks like a straight smear, and you want a sentence: “+1 on <em>x</em> goes with +b on <em>y</em>.”</p>
-<p><strong>Skip it when</strong> <em>y</em> is yes/no (<span class="wiki">01 logistic regression</span>); <em>y</em> is a count that cannot go negative (<span class="wiki">06 GLM</span>); the cloud bends; one point yanks the line (try <span class="wiki">02 ridge regression</span>); you have more levers than people.</p>
+<p><strong>Skip it when</strong> <em>y</em> is yes/no (<a class="wiki" href="../classification/01%20logistic%20regression.html">01 logistic regression</a>); <em>y</em> is a count that cannot go negative (<a class="wiki" href="06%20GLM.html">06 GLM</a>); the cloud bends; one point yanks the line (try <a class="wiki" href="02%20ridge%20regression.html">02 ridge regression</a>); you have more levers than people.</p>
 <p><strong>Pays you:</strong> simple, fast, knobs you can read. The starting machine.</p>
-<p><strong>Costs you:</strong> no legal region for ŷ. Outliers scream. Twin <em>x</em> fight (multicollinearity). Cause is not in the formula.</p>
-<p><em>Sketched as a notebook, not a lecture. If the line goes feral: <span class="wiki">02 ridge regression</span>. If </em>y<em> is yes/no: <span class="wiki">01 logistic regression</span>.</em></p></section>
+<p><strong>Costs you:</strong> no legal region for ŷ. Outliers scream. Twin <em>x</em> fight (multicollinearity). Cause is not in the formula. A later tax on size (<a class="wiki" href="02%20ridge%20regression.html">02 ridge regression</a>, <a class="wiki" href="03%20lasso.html">03 lasso</a>) needs <strong>scale</strong> first — this notebook did not.</p>
+<p><em>Sketched as a notebook, not a lecture. If the line goes feral: <a class="wiki" href="02%20ridge%20regression.html">02 ridge regression</a>. If </em>y<em> is yes/no: <a class="wiki" href="../classification/01%20logistic%20regression.html">01 logistic regression</a>.</em></p></section>
 <p class="colophon">Flip it like a notebook. One page = one idea.</p>
 </div>
 </body>

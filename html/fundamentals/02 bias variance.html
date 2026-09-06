@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bias vs variance — a sketchbook</title>
+<style>
+:root {
+  --paper: #f4efe4;
+  --ink: #241c14;
+  --rust: #b44a28;
+  --blue: #3d5f86;
+  --sage: #4f6d55;
+  --gold: #c4a35a;
+  --muted: #7a6e5e;
+  --grain: #efe8d8;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #d9d0c0; color: var(--ink); }
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.45;
+}
+.book {
+  max-width: 820px;
+  margin: 32px auto 64px;
+  padding: 0 16px;
+}
+.leaf {
+  background: var(--paper);
+  border-radius: 18px;
+  padding: 36px 44px 40px;
+  margin: 0 0 22px;
+  box-shadow: 0 1px 0 rgba(36,28,20,.06), 0 10px 28px rgba(36,28,20,.08);
+  border: 1px solid rgba(36,28,20,.06);
+}
+.hero-leaf { padding-top: 28px; }
+h1 {
+  font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
+  font-size: 34px;
+  font-weight: normal;
+  color: var(--rust);
+  margin: 0 0 12px;
+  line-height: 1.15;
+}
+h2 {
+  font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
+  font-size: 24px;
+  font-weight: normal;
+  color: var(--rust);
+  margin: 0 0 14px;
+}
+h3 {
+  font-size: 18px;
+  color: var(--blue);
+  margin: 18px 0 8px;
+}
+p { margin: 0 0 12px; }
+blockquote {
+  margin: 12px 0 16px;
+  padding: 4px 0 4px 16px;
+  border-left: 3px solid var(--rust);
+  color: var(--muted);
+  font-style: italic;
+}
+.callout {
+  background: var(--grain);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin: 12px 0 18px;
+}
+.callout-abstract { border-left: 4px solid var(--rust); }
+.callout-tip { border-left: 4px solid var(--gold); }
+.callout-note { border-left: 4px solid var(--blue); }
+.callout strong { color: var(--rust); }
+.drawing { margin: 16px 0 18px; text-align: center; }
+.drawing img {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  display: inline-block;
+}
+table {
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+  width: 100%;
+  font-size: 16px;
+}
+th, td {
+  border: 1px solid #c4b8a4;
+  padding: 6px 10px;
+  vertical-align: top;
+  text-align: left;
+}
+th { background: var(--grain); color: var(--rust); }
+ul, ol { margin: 6px 0 14px 22px; }
+li { margin: 0 0 4px; }
+code {
+  font-family: Menlo, "Courier New", monospace;
+  font-size: 0.86em;
+  color: var(--sage);
+}
+pre {
+  font-family: Menlo, "Courier New", monospace;
+  font-size: 13.5px;
+  line-height: 1.35;
+  background: var(--grain);
+  border-radius: 10px;
+  padding: 14px 16px;
+  overflow-x: auto;
+  margin: 10px 0 16px;
+}
+pre code { color: var(--ink); }
+a.wiki {
+  color: var(--blue);
+  border-bottom: 1px dotted var(--blue);
+  text-decoration: none;
+}
+a.wiki:hover { border-bottom-style: solid; }
+span.wiki { color: var(--blue); border-bottom: 1px dotted var(--blue); }
+.spine {
+  font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
+  color: var(--muted);
+  text-align: center;
+  margin: 0 0 18px;
+  font-size: 16px;
+}
+.colophon {
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+  padding: 8px 0 24px;
+  font-size: 15px;
+}
+@media print {
+  body { background: white; }
+  .book { max-width: none; margin: 0; padding: 0; }
+  .leaf { box-shadow: none; break-after: page; margin: 0; border-radius: 0; border: none; }
+}
+</style>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div class="book">
+<p class="spine">datazines · a sketchbook</p>
+<section class="leaf hero-leaf"><h1>Bias vs variance — a sketchbook</h1>
+<aside class="callout callout-abstract"><strong>In one sentence.</strong> <strong>Variance</strong> is how much the line jumps if you redraw the people. <strong>Bias</strong> is how much it sits systematically off. You buy one with the other.</aside>
+
+<figure class="drawing"><img src="../../assets/fm-10-hero.svg" alt="fm-10-hero"></figure>
+
+<p>Read <a class="wiki" href="01%20train%20test%20validate.html">01 train test validate</a> first. Same <strong>thirty graders</strong>, seed 7, same twins. Ridge already drew this dartboard (page 8). This notebook <em>is</em> that picture: leftover on new people, named.</p>
+<p>Not a second ridge. Not a p-value (<a class="wiki" href="../inference/01%20t-test.html">01 t-test</a>). Metrics: <a class="wiki" href="03%20metrics.html">03 metrics</a>.</p>
+<p>Flip it like a notebook. One page = one idea. Done.</p>
+</section>
+<section class="leaf"><h2>Page 1 — The gap has a name</h2>
+<p><a class="wiki" href="01%20train%20test%20validate.html">01 train test validate</a> hid 9 people. Ordinary: train R² <strong>0.955</strong>, test <strong>0.626</strong>.</p>
+<p>That gap is not “the model is bad.” It is two different sins that look the same on one split:</p>
+<ul>
+<li>the line <strong>hugged this 21</strong> (jumpy — another 21 would have hugged differently)</li>
+<li>or the line is <strong>systematically shy</strong> (off-center on every 21)</li>
+</ul>
+<p>People call the jump <strong>variance</strong>. The shy sit <strong>bias</strong>.</p>
+<p>Ridge’s dartboard: ordinary darts fly everywhere, on average near the bullseye. Ridge’s darts cluster, a bit off-center. Same trade. This page puts numbers on it.</p>
+</section>
+<section class="leaf"><h2>Page 2 — Variance is the jump</h2>
+<p>Redraw the 21 / 9 split <strong>forty</strong> times. Same thirty people. Different hide. Fit ordinary. Read hours <em>b</em>.</p>
+<figure class="drawing"><img src="../../assets/fm-11-jump.svg" alt="fm-11-jump"></figure>
+
+<p>Ordinary hours <em>b</em>: mean <strong>4.76</strong>, sd <strong>1.77</strong>, from <strong>0.33</strong> to <strong>9.51</strong>.</p>
+<p>That is not a slope. That is a fight with minutes, a new winner every redraw. Net effect still ≈ 0.93 grade per extra hour — a cancellation, as ridge said. The <em>story</em> jumps. That jump is variance.</p>
+<p>Ridge, scaled, α = 10: hours <em>b</em> mean <strong>0.54</strong>, sd <strong>0.04</strong>, from <strong>0.46</strong> to <strong>0.62</strong>.</p>
+<p>Different units (scaled). Same lesson: <strong>the pile is tight.</strong> Redraw the 21, get almost the same knob.</p>
+<p>Hours-only, no twins: <em>b</em> mean <strong>0.96</strong>, sd <strong>0.05</strong>. Calm. One honest <em>x</em> did not need a tax.</p>
+</section>
+<section class="leaf"><h2>Page 3 — Bias is the shy sit</h2>
+<p>Ridge’s pile is not on the ordinary mean. It is <strong>smaller on purpose</strong>. The tax pulls knobs toward zero. Every redraw, a little shy.</p>
+<p>That systematic miss is <strong>bias</strong>. Not a moral. A choice: sit off-center so you do not fly.</p>
+<p>Hours-only is the other shy: it never sees sleep or tutor. Calm knobs, a bit simple. Test R² mean <strong>0.70</strong> — less than ordinary’s mean <strong>0.79</strong>, and ordinary’s <em>worst</em> redraw is <strong>0.54</strong>.</p>
+<p>Ordinary: better <em>on average</em>, uglier <em>on a bad hide</em>. Ridge: a bit worse on average (test mean <strong>0.77</strong>), less of a disaster (worst <strong>0.60</strong>).</p>
+<p>You are not trying to be unbiased and heroic. You are trying not to flail (<a class="wiki" href="../supervised%20learning/regression/02%20ridge%20regression.html">02 ridge regression</a>, page 8).</p>
+</section>
+<section class="leaf"><h2>Page 4 — You buy one with the other</h2>
+<figure class="drawing"><img src="../../assets/fm-12-three.svg" alt="fm-12-three"></figure>
+
+<table>
+<thead>
+<tr>
+<th>machine</th>
+<th>bias</th>
+<th>variance</th>
+<th>vibe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hours-only</td>
+<td>a bit high (sleep ignored)</td>
+<td>low</td>
+<td>calm, simple</td>
+</tr>
+<tr>
+<td>ordinary + twins</td>
+<td>low <em>on average</em></td>
+<td><strong>high</strong></td>
+<td>wild knobs</td>
+</tr>
+<tr>
+<td>ridge</td>
+<td>a bit high (shy)</td>
+<td><strong>low</strong></td>
+<td>tight pile</td>
+</tr>
+</tbody>
+</table>
+<p>There is no free dart in the bullseye every time. A deep tree hugs (variance). A stump is shy (bias). A forest votes the hug away (<a class="wiki" href="../supervised%20learning/ensembles/02%20random%20forest.html">02 random forest</a>). Same dartboard, different machine.</p>
+<p><a class="wiki" href="01%20train%20test%20validate.html">01 train test validate</a> is how you <em>see</em> leftover on new people. This notebook is <em>which leftover you bought</em>.</p>
+</section>
+<section class="leaf"><h2>Page 5 — Mini recipe</h2>
+<ol>
+<li><strong>Redraw</strong> the hide (or the people). Fit again. Look at the knobs.</li>
+<li>If they <strong>fly</strong> — variance. Tax, stump, or more people.</li>
+<li>If they <strong>sit still but off</strong> — bias. The machine is too shy or too simple.</li>
+<li><strong>Do not</strong> hunt zero bias. Hunt leftover on people you have not seen.</li>
+<li>One honest <em>x</em>, plenty of people: skip the sermon.</li>
+</ol>
+<p>If you keep only one thing:</p>
+<blockquote>
+<p>jumpy knobs = variance. shy sit = bias. you buy one with the other.</p>
+</blockquote>
+</section>
+<section class="leaf"><h2>Page 6 — Forty hides, in sklearn</h2>
+<p>Same thirty as <a class="wiki" href="01%20train%20test%20validate.html">01 train test validate</a> and ridge. 40 different 21 / 9 splits (<code>random_state=0…39</code>). Ordinary hours <em>b</em> vs ridge hours <em>b</em> (scaled, α = 10). House seed 7 for the people.</p>
+<pre><code class="language-python">import numpy as np
+from sklearn.linear_model import LinearRegression, Ridge
+from sklearn.model_selection import train_test_split
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+
+rng = np.random.default_rng(7)
+n = 30
+hours = rng.uniform(1, 6, n)
+sleep = rng.uniform(4, 9, n)
+tutor = (rng.random(n) &gt; 0.6).astype(float)
+coffee = rng.uniform(0, 4, n)
+noise = rng.normal(0, 1, n)
+minutes = hours * 60 + rng.normal(0, 3, n)
+naps = sleep + rng.normal(0, 0.25, n)
+grade = 1.8 + 0.9 * hours + 0.35 * sleep + 0.6 * tutor + rng.normal(0, 0.55, n)
+X = np.column_stack([hours, minutes, sleep, naps, tutor, coffee, noise])
+
+ols_h, rd_h, ols_te, rd_te, only_b, only_te = [], [], [], [], [], []
+for s in range(40):
+    Xtr, Xte, ytr, yte = train_test_split(X, grade, test_size=0.3, random_state=s)
+    ols = LinearRegression().fit(Xtr, ytr)
+    rd = make_pipeline(StandardScaler(), Ridge(alpha=10)).fit(Xtr, ytr)
+    ols_h.append(ols.coef_[0])
+    rd_h.append(rd.named_steps[&quot;ridge&quot;].coef_[0])
+    ols_te.append(ols.score(Xte, yte))
+    rd_te.append(rd.score(Xte, yte))
+    Htr, Hte, ytr2, yte2 = train_test_split(
+        hours.reshape(-1, 1), grade, test_size=0.3, random_state=s
+    )
+    m = LinearRegression().fit(Htr, ytr2)
+    only_b.append(m.coef_[0])
+    only_te.append(m.score(Hte, yte2))
+
+def row(title, a):
+    a = np.array(a)
+    print(f&quot;{title:20s}  mean {a.mean():6.3f}   sd {a.std(ddof=1):5.3f}   &quot;
+          f&quot;min {a.min():6.3f}   max {a.max():6.3f}&quot;)
+
+print(&quot;40 redraws of 21 / 9&quot;)
+row(&quot;OLS hours b&quot;, ols_h)
+row(&quot;ridge hours (sc.)&quot;, rd_h)
+row(&quot;OLS test R²&quot;, ols_te)
+row(&quot;ridge test R²&quot;, rd_te)
+row(&quot;hours-only b&quot;, only_b)
+row(&quot;hours-only test R²&quot;, only_te)
+</code></pre>
+<pre><code>40 redraws of 21 / 9
+OLS hours b           mean  4.762   sd 1.773   min  0.333   max  9.506
+ridge hours (sc.)     mean  0.541   sd 0.041   min  0.461   max  0.621
+OLS test R²           mean  0.788   sd 0.102   min  0.540   max  0.925
+ridge test R²         mean  0.772   sd 0.083   min  0.601   max  0.941
+hours-only b          mean  0.958   sd 0.052   min  0.864   max  1.102
+hours-only test R²    mean  0.698   sd 0.156   min  0.304   max  0.914
+</code></pre>
+<p>Ordinary hours <em>b</em> spans <strong>nine points</strong>. Ridge’s scaled hours <em>b</em> stays in a <strong>0.16</strong> window. Test R²: ordinary mean a hair higher, worst hide uglier (0.54 vs 0.60). Hours-only <em>b</em> is calm (0.96, planted 0.9) and loses on test because sleep and tutor never got a knob.</p>
+<p><code>alpha=10</code> is the ridge demo, not the honest pick from 01. The dartboard does not care. sd is the jump. mean vs planted is the sit.</p>
+</section>
+<section class="leaf"><h2>Last page — cheat sheet</h2>
+<table>
+<thead>
+<tr>
+<th>word</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>variance</td>
+<td>knobs jump when the people jump</td>
+</tr>
+<tr>
+<td>bias</td>
+<td>knobs sit off, every redraw</td>
+</tr>
+<tr>
+<td>trade</td>
+<td>shy vs jumpy — you buy one with the other</td>
+</tr>
+<tr>
+<td>redraw</td>
+<td>new train/test hide, same thirty</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Also called:</strong> jumpy = high variance · shy = high bias · hug the trainers = overfit.</p>
+<figure class="drawing"><img src="../../assets/fm-13-when.svg" alt="fm-13-when"></figure>
+
+<h3>Use / skip</h3>
+<p><strong>Reach for it when</strong> train is high and test is low, or knobs <strong>jump</strong> if you redraw, and you are choosing shy vs jumpy.</p>
+<p><strong>Skip it when</strong> one honest <em>x</em> and plenty of people (hours-only was already calm); you wanted a <em>p</em> (<a class="wiki" href="../inference/01%20t-test.html">01 t-test</a>); you wanted precision / recall (metrics, next).</p>
+<p><strong>Pays you:</strong> a name for the gap on <a class="wiki" href="01%20train%20test%20validate.html">01 train test validate</a>. The dartboard from ridge, as a habit.</p>
+<p><strong>Costs you:</strong> bias and variance are not two numbers you read off one fit. You need redraws, or a story (twins, a tax, a stump). Not a third pile — that was 01.</p>
+<p><em>Fundamentals 02. Jumpy vs shy. Next: <a class="wiki" href="03%20metrics.html">03 metrics</a> — when accuracy lies. Not a p-value.</em></p></section>
+<p class="colophon">Flip it like a notebook. One page = one idea.</p>
+</div>
+</body>
+</html>

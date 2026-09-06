@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neural net — a sketchbook</title>
+<style>
+:root {
+  --paper: #f4efe4;
+  --ink: #241c14;
+  --rust: #b44a28;
+  --blue: #3d5f86;
+  --sage: #4f6d55;
+  --gold: #c4a35a;
+  --muted: #7a6e5e;
+  --grain: #efe8d8;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #d9d0c0; color: var(--ink); }
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.45;
+}
+.book {
+  max-width: 820px;
+  margin: 32px auto 64px;
+  padding: 0 16px;
+}
+.leaf {
+  background: var(--paper);
+  border-radius: 18px;
+  padding: 36px 44px 40px;
+  margin: 0 0 22px;
+  box-shadow: 0 1px 0 rgba(36,28,20,.06), 0 10px 28px rgba(36,28,20,.08);
+  border: 1px solid rgba(36,28,20,.06);
+}
+.hero-leaf { padding-top: 28px; }
+h1 {
+  font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
+  font-size: 34px;
+  font-weight: normal;
+  color: var(--rust);
+  margin: 0 0 12px;
+  line-height: 1.15;
+}
+h2 {
+  font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
+  font-size: 24px;
+  font-weight: normal;
+  color: var(--rust);
+  margin: 0 0 14px;
+}
+h3 {
+  font-size: 18px;
+  color: var(--blue);
+  margin: 18px 0 8px;
+}
+p { margin: 0 0 12px; }
+blockquote {
+  margin: 12px 0 16px;
+  padding: 4px 0 4px 16px;
+  border-left: 3px solid var(--rust);
+  color: var(--muted);
+  font-style: italic;
+}
+.callout {
+  background: var(--grain);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin: 12px 0 18px;
+}
+.callout-abstract { border-left: 4px solid var(--rust); }
+.callout-tip { border-left: 4px solid var(--gold); }
+.callout-note { border-left: 4px solid var(--blue); }
+.callout strong { color: var(--rust); }
+.drawing { margin: 16px 0 18px; text-align: center; }
+.drawing img {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  display: inline-block;
+}
+table {
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+  width: 100%;
+  font-size: 16px;
+}
+th, td {
+  border: 1px solid #c4b8a4;
+  padding: 6px 10px;
+  vertical-align: top;
+  text-align: left;
+}
+th { background: var(--grain); color: var(--rust); }
+ul, ol { margin: 6px 0 14px 22px; }
+li { margin: 0 0 4px; }
+code {
+  font-family: Menlo, "Courier New", monospace;
+  font-size: 0.86em;
+  color: var(--sage);
+}
+pre {
+  font-family: Menlo, "Courier New", monospace;
+  font-size: 13.5px;
+  line-height: 1.35;
+  background: var(--grain);
+  border-radius: 10px;
+  padding: 14px 16px;
+  overflow-x: auto;
+  margin: 10px 0 16px;
+}
+pre code { color: var(--ink); }
+a.wiki {
+  color: var(--blue);
+  border-bottom: 1px dotted var(--blue);
+  text-decoration: none;
+}
+a.wiki:hover { border-bottom-style: solid; }
+span.wiki { color: var(--blue); border-bottom: 1px dotted var(--blue); }
+.spine {
+  font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
+  color: var(--muted);
+  text-align: center;
+  margin: 0 0 18px;
+  font-size: 16px;
+}
+.colophon {
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+  padding: 8px 0 24px;
+  font-size: 15px;
+}
+@media print {
+  body { background: white; }
+  .book { max-width: none; margin: 0; padding: 0; }
+  .leaf { box-shadow: none; break-after: page; margin: 0; border-radius: 0; border: none; }
+}
+</style>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div class="book">
+<p class="spine">datazines · a sketchbook</p>
+<section class="leaf hero-leaf"><h1>Neural net — a sketchbook</h1>
+<aside class="callout callout-abstract"><strong>In one sentence.</strong> Logistic is <strong>one</strong> score, then an S. A tiny net is <strong>score → squash → score → squash</strong>. The extra floor is what lets the curve bend.</aside>
+
+<figure class="drawing"><img src="../../assets/nn-00-hero.svg" alt="nn-00-hero"></figure>
+
+<p>Read <a class="wiki" href="../supervised%20learning/classification/01%20logistic%20regression.html">01 logistic regression</a> and <a class="wiki" href="../optimization/01%20gradient%20descent.html">01 gradient descent</a> first. Same exam world: hours, sleep, tutor, <em>y</em> = did they pass? Softmax (<a class="wiki" href="../supervised%20learning/classification/03%20softmax.html">03 softmax</a>) is waiting at the last layer if you ever have more rooms.</p>
+<p>This is 01 of the nets wing. Embeddings, attention, an LLM — later rooms. This notebook is the brick they all sit on.</p>
+<p>Flip it like a notebook. One page = one idea. Done.</p>
+</section>
+<section class="leaf"><h2>Page 1 — Hours that help, then hurt</h2>
+<p>The old logistic story: more hours → more likely to pass. An S that only climbs.</p>
+<p>This class is meaner. Too little study: fail. A solid middle: pass. Too much: burnout, fail again. Sleep still helps a little. Tutor is still a lever.</p>
+<p>Same people. Same three knobs. The <strong>shape</strong> of <em>y</em> changed. A single tilted S cannot draw a hill.</p>
+</section>
+<section class="leaf"><h2>Page 2 — Logistic shrugs</h2>
+<p>Fit logistic anyway. Hours, sleep, tutor in. Scale them (the tax from ridge still applies — size of a knob is not a moral). House seed 7.</p>
+<p>It prints a flat <strong>P ≈ 0.39</strong> at every hours, sleep held at 6.5, no tutor. Train 0.57, test 0.60. Barely better than guessing the majority (fail).</p>
+<figure class="drawing"><img src="../../assets/nn-02-hill.svg" alt="nn-02-hill"></figure>
+
+<p>The blue line is honest. It is also useless. The yes-dots live in the <strong>middle</strong>. Logistic has no word for “middle.”</p>
+</section>
+<section class="leaf"><h2>Page 3 — Stack another floor</h2>
+<p>Logistic:</p>
+<p>hours → <strong>score</strong> → <strong>S</strong> → P(pass)</p>
+<p>A tiny net:</p>
+<p>hours → <strong>score</strong> → <strong>squash</strong> → <strong>score</strong> → <strong>S</strong> → P(pass)</p>
+<figure class="drawing"><img src="../../assets/nn-03-stack.svg" alt="nn-03-stack"></figure>
+
+<p>The middle scores are the <strong>hidden layer</strong>. Three of them in this notebook. Each is a line on the levers, then a squash. The last score is a line on <em>those</em> three, then the familiar S.</p>
+<p>Nothing here is magic. Two logistics glued together. The glue is what bends.</p>
+<p>People call this a <strong>multi-layer perceptron</strong>. Ugly name. Friendly job: <em>one extra floor of scores.</em></p>
+</section>
+<section class="leaf"><h2>Page 4 — The cheap squash in the middle</h2>
+<p>The last squash is still the S you know (so P stays in 0–1).</p>
+<p>The hidden squash is usually cheaper: <strong>ReLU</strong>. Negative in → 0. Positive in → the same number. A hinge.</p>
+<figure class="drawing"><img src="../../assets/nn-04-relu.svg" alt="nn-04-relu"></figure>
+
+<p>A dead unit is a unit whose score stayed negative. It contributes nothing this person. That is allowed. Three hinges, mixed, can make a hill. One S cannot.</p>
+<p>You do not pick the hinges by hand. Descent walks the knobs until the hill appears — or doesn’t.</p>
+</section>
+<section class="leaf"><h2>Page 5 — Leftover walks home</h2>
+<p>Forward: levers → hidden → P(pass). A guess.</p>
+<p>The guess is wrong by some leftover. Boosting planted a tree on that leftover. Here the leftover <strong>walks backward</strong> through the floors and tells every knob which way to nudge.</p>
+<figure class="drawing"><img src="../../assets/nn-05-back.svg" alt="nn-05-back"></figure>
+
+<p>People call this <strong>backpropagation</strong>. Then <a class="wiki" href="../optimization/01%20gradient%20descent.html">01 gradient descent</a> takes the quiet step. Same rate-knob as the bowl. Same explosion if you shout.</p>
+<p>On 160 people, three hidden units: <strong>16 knobs</strong>. Logistic had 4 (a plus three <em>b</em>s). Extra floors cost extra knobs. Extra knobs need extra people, or they memorize.</p>
+</section>
+<section class="leaf"><h2>Page 6 — Mini recipe</h2>
+<ol>
+<li><strong>y is still pass/fail</strong> (or a number, later). Same exam levers unless the idea needs new ones.</li>
+<li><strong>Scale x.</strong> Hidden scores tax size the way ridge did.</li>
+<li><strong>One hidden layer</strong> first. Three units is a start, not a religion.</li>
+<li><strong>ReLU</strong> in the middle, <strong>S</strong> at the end if you want P(yes).</li>
+<li><strong>Walk</strong> the knobs (<a class="wiki" href="../optimization/01%20gradient%20descent.html">01 gradient descent</a>). Quiet rate. Stop when new people stop improving.</li>
+<li>If a line already fits, you stacked a floor for sport.</li>
+</ol>
+<p>If you keep only one thing:</p>
+<blockquote>
+<p>score, squash, score, squash. leftover walks home. then you step.</p>
+</blockquote>
+</section>
+<section class="leaf"><h2>Page 7 — Hill vs shrug, in sklearn</h2>
+<p>Same 160 students. Pass is a hill on hours. Logistic vs a net with <strong>3 hidden units</strong>. House seed 7. <code>lbfgs</code> is a quiet walker for a tiny net — not SGD yet.</p>
+<pre><code class="language-python">import numpy as np
+from sklearn.linear_model import LogisticRegression
+from sklearn.neural_network import MLPClassifier
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
+
+rng = np.random.default_rng(7)
+n = 160
+hours = rng.uniform(1, 6, n)
+sleep = rng.uniform(4, 9, n)
+tutor = (rng.random(n) &gt; 0.6).astype(float)
+z = 1.6 - 1.35 * ((hours - 3.5) ** 2) + 0.2 * (sleep - 6.5)
+passed = (rng.random(n) &lt; 1 / (1 + np.exp(-z))).astype(int)
+
+X = np.column_stack([hours, sleep, tutor])
+Xtr, Xte, ytr, yte = train_test_split(X, passed, test_size=0.3, random_state=0)
+
+log = make_pipeline(StandardScaler(), LogisticRegression()).fit(Xtr, ytr)
+net = make_pipeline(
+    StandardScaler(),
+    MLPClassifier(
+        hidden_layer_sizes=(3,),
+        activation=&quot;relu&quot;,
+        solver=&quot;lbfgs&quot;,
+        random_state=7,
+        max_iter=4000,
+    ),
+).fit(Xtr, ytr)
+
+print(&quot;pass / fail&quot;, int(passed.sum()), int((1 - passed).sum()))
+print(&quot;log  train/test&quot;, round(log.score(Xtr, ytr), 3), round(log.score(Xte, yte), 3))
+print(&quot;net  train/test&quot;, round(net.score(Xtr, ytr), 3), round(net.score(Xte, yte), 3))
+m = net.named_steps[&quot;mlpclassifier&quot;]
+print(&quot;hidden units&quot;, m.hidden_layer_sizes[0], &quot;  knobs&quot;,
+      sum(w.size for w in m.coefs_) + sum(b.size for b in m.intercepts_))
+for h in (1.5, 2.5, 3.5, 4.5, 5.5):
+    x = [[h, 6.5, 0]]
+    print(f&quot;P | {h}h   log {log.predict_proba(x)[0, 1]:.2f}   net {net.predict_proba(x)[0, 1]:.2f}&quot;)
+</code></pre>
+<pre><code>pass / fail 64 96
+log  train/test 0.571 0.604
+net  train/test 0.821 0.771
+hidden units 3   knobs 16
+P | 1.5h   log 0.39   net 0.01
+P | 2.5h   log 0.39   net 0.50
+P | 3.5h   log 0.39   net 0.86
+P | 4.5h   log 0.39   net 0.37
+P | 5.5h   log 0.39   net 0.05
+</code></pre>
+<p>Logistic never leaves 0.39. The net is a hill: 0.01 at 1.5 hours, <strong>0.86 at 3.5</strong>, 0.05 at 5.5. Test 0.77 vs 0.60 is the extra floor earning its keep — on <em>these</em> 48 people, not a law. Sixteen knobs on 112 trainers is still a small choir. A deeper net would start singing the training set.</p>
+<p><code>predict_proba</code> is the last S. <code>hidden_layer_sizes=(3,)</code> is the middle floor.</p>
+</section>
+<section class="leaf"><h2>Last page — cheat sheet</h2>
+<table>
+<thead>
+<tr>
+<th>word</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hidden layer</td>
+<td>extra floor of scores + squash</td>
+</tr>
+<tr>
+<td>ReLU</td>
+<td>max(0, score) — the cheap middle squash</td>
+</tr>
+<tr>
+<td>sigmoid / S</td>
+<td>last squash if you want P(yes)</td>
+</tr>
+<tr>
+<td>backprop</td>
+<td>leftover walks backward to every knob</td>
+</tr>
+<tr>
+<td>MLP</td>
+<td>sklearn’s name for this tiny net</td>
+</tr>
+<tr>
+<td>knobs</td>
+<td>every <em>b</em> and <em>a</em> on every floor</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Also called:</strong> leftover walking home = backpropagation · knobs = weights · squash = activation.</p>
+<figure class="drawing"><img src="../../assets/nn-06-when.svg" alt="nn-06-when"></figure>
+
+<h3>Use / skip</h3>
+<p><strong>Reach for it when</strong> a line or one S cannot bend (a hill, a dip, “middle is different”), you still want a <strong>probability</strong>, and you have enough people for the extra knobs.</p>
+<p><strong>Skip it when</strong> one honest line already fits (<a class="wiki" href="../supervised%20learning/regression/01%20linear%20regression.html">01 linear regression</a> / <a class="wiki" href="../supervised%20learning/classification/01%20logistic%20regression.html">01 logistic regression</a>); you needed a <strong>shortlist</strong>, not a bend (<a class="wiki" href="../supervised%20learning/regression/03%20lasso.html">03 lasso</a>); the story is questions and rectangles (<a class="wiki" href="../supervised%20learning/ensembles/01%20decision%20tree.html">01 decision tree</a>); you wanted attention / an LLM as the first file.</p>
+<p><strong>Pays you:</strong> the first machine that can draw a hill without you carving the feature. The verb of every later net. Backprop is just leftover + descent.</p>
+<p><strong>Costs you:</strong> knobs multiply. Scale matters. A loud rate or a fat hidden layer memorizes. The <em>b</em>s are no longer “+1 hour → this.” Readable floors come later (embeddings).</p>
+<p><em>Nets wing, 01. Same leftover, walking backward. Next room: <a class="wiki" href="02%20embeddings.html">02 embeddings</a> — a word is a point.</em></p></section>
+<p class="colophon">Flip it like a notebook. One page = one idea.</p>
+</div>
+</body>
+</html>

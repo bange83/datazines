@@ -73,14 +73,14 @@ Same exam *world*: hours, sleep, tutor, coffee. **Not** the same pile of people.
 
 ![in-03-rooms](assets/in-03-rooms.svg)
 
-| class | *y* | used by |
-|---|---|---|
-| **eight** | grade | the line, t-test, bootstrap |
-| **thirty graders** | grade + twins | ridge → lasso → LARS, train/test, bias–variance |
-| **pass / fail** | yes / no | logistic, LDA, tree, forest, metrics |
-| **unlabeled** | none | PCA, k-means |
+| class | *y* | used by | *n* (side fact) |
+|---|---|---|---:|
+| **the line** | grade | tiny table — t-test, bootstrap | 8 |
+| **twins** | grade + minutes | a tax — ridge → lasso → LARS, train/test, bias–variance | 30 |
+| **pass / fail** | yes / no | s-shaped curve — logistic, LDA, tree, forest, metrics | 80 |
+| **unlabeled** | none | sausage, rooms — PCA, k-means | 80 |
 
-Two crowds can both be “about eighty.” Do not name the class by the headcount. **Pass / fail** is a yes/no pile. **Unlabeled** has no *y* at all. When a note says “same people,” it means **this classroom**, not the whole vault. A grade is not a pass. No *y* is not a grade.
+Name the class by the **job**, not the headcount. Two crowds can both be 80. **Pass / fail** is a yes/no pile. **Unlabeled** has no *y*. When a note says “same people,” it means **this classroom**, not the whole vault. A grade is not a pass. No *y* is not a grade.
 
 ---
 
@@ -113,7 +113,7 @@ An LLM is **one room** in the nets wing. Not the building.
 1. This file is the **door**.
 2. Open **01 of a family**, not a random sequel.
 3. Picture, then the name. Cheat sheet last.
-4. “Same people” → check the classroom (eight / thirty graders / pass-fail / unlabeled).
+4. “Same people” → check the classroom (the line / twins / pass-fail / unlabeled).
 5. If you wanted a derivation, you are in the wrong building. Leave by Use / skip.
 
 If you keep only one thing:
@@ -129,7 +129,7 @@ If you keep only one thing:
 | leftover | real − guess (many costumes) |
 | 01 | the ordinary idea of a family |
 | Use / skip | when to reach for it, when not |
-| classroom | eight / thirty graders / pass-fail / unlabeled |
+| classroom | the line / twins / pass-fail / unlabeled |
 
 **Also called:** leftover = residual / error · 01 = the first sketchbook of a wing · zine = one note.
 

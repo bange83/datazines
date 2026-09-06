@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Attention — a sketchbook</title>
+<style>
+:root {
+  --paper: #f4efe4;
+  --ink: #241c14;
+  --rust: #b44a28;
+  --blue: #3d5f86;
+  --sage: #4f6d55;
+  --gold: #c4a35a;
+  --muted: #7a6e5e;
+  --grain: #efe8d8;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #d9d0c0; color: var(--ink); }
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.45;
+}
+.book {
+  max-width: 820px;
+  margin: 32px auto 64px;
+  padding: 0 16px;
+}
+.leaf {
+  background: var(--paper);
+  border-radius: 18px;
+  padding: 36px 44px 40px;
+  margin: 0 0 22px;
+  box-shadow: 0 1px 0 rgba(36,28,20,.06), 0 10px 28px rgba(36,28,20,.08);
+  border: 1px solid rgba(36,28,20,.06);
+}
+.hero-leaf { padding-top: 28px; }
+h1 {
+  font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
+  font-size: 34px;
+  font-weight: normal;
+  color: var(--rust);
+  margin: 0 0 12px;
+  line-height: 1.15;
+}
+h2 {
+  font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
+  font-size: 24px;
+  font-weight: normal;
+  color: var(--rust);
+  margin: 0 0 14px;
+}
+h3 {
+  font-size: 18px;
+  color: var(--blue);
+  margin: 18px 0 8px;
+}
+p { margin: 0 0 12px; }
+blockquote {
+  margin: 12px 0 16px;
+  padding: 4px 0 4px 16px;
+  border-left: 3px solid var(--rust);
+  color: var(--muted);
+  font-style: italic;
+}
+.callout {
+  background: var(--grain);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin: 12px 0 18px;
+}
+.callout-abstract { border-left: 4px solid var(--rust); }
+.callout-tip { border-left: 4px solid var(--gold); }
+.callout-note { border-left: 4px solid var(--blue); }
+.callout strong { color: var(--rust); }
+.drawing { margin: 16px 0 18px; text-align: center; }
+.drawing img {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  display: inline-block;
+}
+table {
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+  width: 100%;
+  font-size: 16px;
+}
+th, td {
+  border: 1px solid #c4b8a4;
+  padding: 6px 10px;
+  vertical-align: top;
+  text-align: left;
+}
+th { background: var(--grain); color: var(--rust); }
+ul, ol { margin: 6px 0 14px 22px; }
+li { margin: 0 0 4px; }
+code {
+  font-family: Menlo, "Courier New", monospace;
+  font-size: 0.86em;
+  color: var(--sage);
+}
+pre {
+  font-family: Menlo, "Courier New", monospace;
+  font-size: 13.5px;
+  line-height: 1.35;
+  background: var(--grain);
+  border-radius: 10px;
+  padding: 14px 16px;
+  overflow-x: auto;
+  margin: 10px 0 16px;
+}
+pre code { color: var(--ink); }
+a.wiki {
+  color: var(--blue);
+  border-bottom: 1px dotted var(--blue);
+  text-decoration: none;
+}
+a.wiki:hover { border-bottom-style: solid; }
+span.wiki { color: var(--blue); border-bottom: 1px dotted var(--blue); }
+.spine {
+  font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
+  color: var(--muted);
+  text-align: center;
+  margin: 0 0 18px;
+  font-size: 16px;
+}
+.colophon {
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+  padding: 8px 0 24px;
+  font-size: 15px;
+}
+@media print {
+  body { background: white; }
+  .book { max-width: none; margin: 0; padding: 0; }
+  .leaf { box-shadow: none; break-after: page; margin: 0; border-radius: 0; border: none; }
+}
+</style>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div class="book">
+<p class="spine">datazines · a sketchbook</p>
+<section class="leaf hero-leaf"><h1>Attention — a sketchbook</h1>
+<aside class="callout callout-abstract"><strong>In one sentence.</strong> Each token <strong>looks around</strong>, softmax-shares 1 across the others, then <strong>mixes</strong> their points. Who matters depends on who is asking.</aside>
+
+<figure class="drawing"><img src="../../assets/at-00-hero.svg" alt="at-00-hero"></figure>
+
+<p>Read <a class="wiki" href="02%20embeddings.html">02 embeddings</a> first. Same exam notes. Same 2-d points. Softmax (<a class="wiki" href="../supervised%20learning/classification/03%20softmax.html">03 softmax</a>) is the sharing. The tiny net (<a class="wiki" href="01%20neural%20net.html">01 neural net</a>) still waits after the mix.</p>
+<p>This is 03 of the nets wing. A transformer is attention + a net, stacked. Not this file.</p>
+<p>Flip it like a notebook. One page = one idea. Done.</p>
+</section>
+<section class="leaf"><h2>Page 1 — A bag cannot refuse</h2>
+<p>The note is three words:</p>
+<blockquote>
+<p><em>coffee study hours</em></p>
+</blockquote>
+<p><a class="wiki" href="02%20embeddings.html">02 embeddings</a> already put them on the page. Coffee down. Study and hours in the huddle.</p>
+<p>A blunt next step: <strong>average the three points.</strong> A bag of words. Everyone gets 1/3, whether they asked or not.</p>
+<figure class="drawing"><img src="../../assets/at-02-bag.svg" alt="at-02-bag"></figure>
+
+<p>The bag lands at <strong>(3.09, −0.03)</strong> — in the study huddle. Coffee got dragged. It did not ask to be. If the leftover cares about junk, you just erased it.</p>
+<p>Attention is the machine that can <strong>refuse</strong>.</p>
+</section>
+<section class="leaf"><h2>Page 2 — Look, then share 1</h2>
+<p>Coffee asks: <em>who here is like me?</em></p>
+<p>Score = how aligned my point is with yours (dot product), quieter by √dim so fat points don’t explode. Then the same squash as <a class="wiki" href="../supervised%20learning/classification/03%20softmax.html">03 softmax</a>: scores in, <strong>slices that add to 1</strong>.</p>
+<figure class="drawing"><img src="../../assets/at-03-slices.svg" alt="at-03-slices"></figure>
+
+<p>Coffee’s scores: itself <strong>+6.03</strong>, study −3.41, hours −5.16.</p>
+<p>Slices: <strong>1.00 , 0.00 , 0.00</strong>.</p>
+<p>Study’s slices: 0.00 coffee, 0.05 itself, <strong>0.95 hours</strong>. Hours mostly listens to hours. Same note. Three different questions.</p>
+<p>People call the slices <strong>attention weights</strong>. Rooms = the other tokens, not fail / pass / honors.</p>
+</section>
+<section class="leaf"><h2>Page 3 — Mix is a weighted average</h2>
+<p>Each token keeps a <strong>mix</strong> of the points it listened to.</p>
+<figure class="drawing"><img src="../../assets/at-04-mix.svg" alt="at-04-mix"></figure>
+
+<p>Coffee’s mix is coffee. Study’s mix slides toward hours (5.20, 1.73). Hours stays hours.</p>
+<p>A bag moved coffee. Attention did not. That is the gift. Not “understands coffee.” <strong>Refuses the wrong neighbor.</strong></p>
+<p>The mix is still a point. Then <a class="wiki" href="01%20neural%20net.html">01 neural net</a> can score → squash as usual.</p>
+</section>
+<section class="leaf"><h2>Page 4 — Ask, match, carry</h2>
+<p>Three jobs hide in that look:</p>
+<ul>
+<li><strong>query</strong> — who do I need?</li>
+<li><strong>key</strong> — here I am</li>
+<li><strong>value</strong> — what I hand over</li>
+</ul>
+<figure class="drawing"><img src="../../assets/at-05-qkv.svg" alt="at-05-qkv"></figure>
+
+<p>On this page, one point plays all three. Grown-up attention walks <strong>three extra floors</strong> so ask ≠ carry. Same leftover, more knobs.</p>
+<p>Score = (query · key) / √dim. Softmax. Mix the values. People call this <strong>scaled dot-product</strong>. The name can wait.</p>
+<p>Many heads = many looks in parallel (study-vs-junk, grammar, …). Later page. One head is the brick.</p>
+</section>
+<section class="leaf"><h2>Page 5 — Mini recipe</h2>
+<ol>
+<li>Tokens already have <strong>points</strong> (<a class="wiki" href="02%20embeddings.html">02 embeddings</a>). Hours as a number? Skip this notebook.</li>
+<li>Each token <strong>looks</strong> at the others (dot, then /√dim).</li>
+<li><strong>Softmax</strong> → slices add to 1. Same squash as 03.</li>
+<li><strong>Mix</strong> the points (or the values) with those slices.</li>
+<li>Then the tiny net. Then leftover walks home.</li>
+<li>A mean of the note was enough? You stacked a look for sport.</li>
+</ol>
+<p>If you keep only one thing:</p>
+<blockquote>
+<p>look around. share 1. mix. who matters depends on the asker.</p>
+</blockquote>
+</section>
+<section class="leaf"><h2>Page 6 — Coffee study hours, in numpy</h2>
+<p>Same 27 notes, same 2-d table as <a class="wiki" href="02%20embeddings.html">02 embeddings</a>. One sentence. House seed 7 lives in the PCA. No sklearn estimator — the look <em>is</em> the lesson.</p>
+<pre><code class="language-python">import numpy as np
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.decomposition import PCA
+
+notes = [
+    &quot;study hours textbook&quot;,
+    &quot;hours study tutor exam&quot;,
+    &quot;textbook hours cram&quot;,
+    &quot;tutor study hours&quot;,
+    &quot;cram textbook study night&quot;,
+    &quot;hours textbook tutor&quot;,
+    &quot;study cram hours exam&quot;,
+    &quot;tutor textbook hours&quot;,
+    &quot;exam study textbook&quot;,
+    &quot;night cram hours&quot;,
+    &quot;sleep rest tired&quot;,
+    &quot;rest sleep bed&quot;,
+    &quot;tired sleep rest night&quot;,
+    &quot;bed rest sleep&quot;,
+    &quot;sleep tired bed&quot;,
+    &quot;rest bed tired&quot;,
+    &quot;sleep night rest&quot;,
+    &quot;coffee phone scroll&quot;,
+    &quot;phone coffee noise&quot;,
+    &quot;noise hallway coffee&quot;,
+    &quot;coffee noise hallway&quot;,
+    &quot;phone scroll coffee&quot;,
+    &quot;scroll phone instagram&quot;,
+    &quot;study sleep hours&quot;,
+    &quot;coffee study hours&quot;,
+    &quot;tutor sleep rest&quot;,
+    &quot;night exam coffee&quot;,
+]
+
+vec = CountVectorizer()
+X = vec.fit_transform(notes).toarray()
+words = np.array(vec.get_feature_names_out())
+C = X.T @ X
+np.fill_diagonal(C, 0)
+E = PCA(n_components=2, random_state=7).fit_transform(C)
+idx = {w: i for i, w in enumerate(words)}
+
+sent = [&quot;coffee&quot;, &quot;study&quot;, &quot;hours&quot;]
+Xw = np.stack([E[idx[w]] for w in sent])
+scale = np.sqrt(Xw.shape[1])
+scores = (Xw @ Xw.T) / scale
+ex = np.exp(scores - scores.max(1, keepdims=True))
+W = ex / ex.sum(1, keepdims=True)
+mix = W @ Xw
+
+print(&quot;tokens&quot;, sent)
+print(&quot;points&quot;)
+print(np.round(Xw, 2))
+print(&quot;bag mean&quot;, np.round(Xw.mean(0), 2))
+print(&quot;weights&quot;)
+print(np.round(W, 2))
+print(&quot;mix&quot;)
+print(np.round(mix, 2))
+</code></pre>
+<pre><code>tokens ['coffee', 'study', 'hours']
+points
+[[-0.42 -2.89]
+ [ 4.46  1.02]
+ [ 5.23  1.77]]
+bag mean [ 3.09 -0.03]
+weights
+[[1.   0.   0.  ]
+ [0.   0.05 0.95]
+ [0.   0.02 0.98]]
+mix
+[[-0.42 -2.89]
+ [ 5.2   1.73]
+ [ 5.22  1.75]]
+</code></pre>
+<p>Coffee’s row is <strong>1.00 on coffee</strong>. The mix is still (−0.42, −2.89). The bag had already smeared it to (3.09, −0.03). Study mostly listens to hours (0.95) — same huddle, as <a class="wiki" href="02%20embeddings.html">02 embeddings</a> promised (cosine 0.99).</p>
+<p>This is <strong>self-attention</strong> with one head and no extra Q/K/V floors. An LLM walks those floors, stacks the block, and softmaxes the next token. The look is already this page.</p>
+</section>
+<section class="leaf"><h2>Last page — cheat sheet</h2>
+<table>
+<thead>
+<tr>
+<th>word</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>look / score</td>
+<td>(query · key) / √dim</td>
+</tr>
+<tr>
+<td>weights</td>
+<td>softmax of the scores; add to 1</td>
+</tr>
+<tr>
+<td>mix</td>
+<td>weighted average of values</td>
+</tr>
+<tr>
+<td>query / key / value</td>
+<td>ask / match / carry</td>
+</tr>
+<tr>
+<td>bag</td>
+<td>mean of the points; cannot refuse</td>
+</tr>
+<tr>
+<td>self-attention</td>
+<td>tokens looking at <strong>this</strong> note</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Also called:</strong> look = attention scores · mix = weighted average of values · bag = mean pooling.</p>
+<figure class="drawing"><img src="../../assets/at-06-when.svg" alt="at-06-when"></figure>
+
+<h3>Use / skip</h3>
+<p><strong>Reach for it when</strong> a bag would smear the wrong neighbor, <strong>who matters depends on the asker</strong>, and tokens already have points.</p>
+<p><strong>Skip it when</strong> hours already is one number (<a class="wiki" href="01%20neural%20net.html">01 neural net</a>); a mean of the note was enough; you wanted a transformer as the first file.</p>
+<p><strong>Pays you:</strong> a look that can refuse. The brick inside every transformer. Softmax you already own, pointed at <em>other tokens</em>.</p>
+<p><strong>Costs you:</strong> every token looks at every token (n²). Extra Q/K/V knobs. One head on 2-d notes is a postcard. Pattern of looking, not understanding.</p>
+<p><em>Nets wing, 03. Look, share 1, mix. Next room: <a class="wiki" href="04%20LLM.html">04 LLM</a> — this block, stacked, trained on the next token.</em></p></section>
+<p class="colophon">Flip it like a notebook. One page = one idea.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Embeddings — a sketchbook</title>
+<style>
+:root {
+  --paper: #f4efe4;
+  --ink: #241c14;
+  --rust: #b44a28;
+  --blue: #3d5f86;
+  --sage: #4f6d55;
+  --gold: #c4a35a;
+  --muted: #7a6e5e;
+  --grain: #efe8d8;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #d9d0c0; color: var(--ink); }
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.45;
+}
+.book {
+  max-width: 820px;
+  margin: 32px auto 64px;
+  padding: 0 16px;
+}
+.leaf {
+  background: var(--paper);
+  border-radius: 18px;
+  padding: 36px 44px 40px;
+  margin: 0 0 22px;
+  box-shadow: 0 1px 0 rgba(36,28,20,.06), 0 10px 28px rgba(36,28,20,.08);
+  border: 1px solid rgba(36,28,20,.06);
+}
+.hero-leaf { padding-top: 28px; }
+h1 {
+  font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
+  font-size: 34px;
+  font-weight: normal;
+  color: var(--rust);
+  margin: 0 0 12px;
+  line-height: 1.15;
+}
+h2 {
+  font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
+  font-size: 24px;
+  font-weight: normal;
+  color: var(--rust);
+  margin: 0 0 14px;
+}
+h3 {
+  font-size: 18px;
+  color: var(--blue);
+  margin: 18px 0 8px;
+}
+p { margin: 0 0 12px; }
+blockquote {
+  margin: 12px 0 16px;
+  padding: 4px 0 4px 16px;
+  border-left: 3px solid var(--rust);
+  color: var(--muted);
+  font-style: italic;
+}
+.callout {
+  background: var(--grain);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin: 12px 0 18px;
+}
+.callout-abstract { border-left: 4px solid var(--rust); }
+.callout-tip { border-left: 4px solid var(--gold); }
+.callout-note { border-left: 4px solid var(--blue); }
+.callout strong { color: var(--rust); }
+.drawing { margin: 16px 0 18px; text-align: center; }
+.drawing img {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  display: inline-block;
+}
+table {
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+  width: 100%;
+  font-size: 16px;
+}
+th, td {
+  border: 1px solid #c4b8a4;
+  padding: 6px 10px;
+  vertical-align: top;
+  text-align: left;
+}
+th { background: var(--grain); color: var(--rust); }
+ul, ol { margin: 6px 0 14px 22px; }
+li { margin: 0 0 4px; }
+code {
+  font-family: Menlo, "Courier New", monospace;
+  font-size: 0.86em;
+  color: var(--sage);
+}
+pre {
+  font-family: Menlo, "Courier New", monospace;
+  font-size: 13.5px;
+  line-height: 1.35;
+  background: var(--grain);
+  border-radius: 10px;
+  padding: 14px 16px;
+  overflow-x: auto;
+  margin: 10px 0 16px;
+}
+pre code { color: var(--ink); }
+a.wiki {
+  color: var(--blue);
+  border-bottom: 1px dotted var(--blue);
+  text-decoration: none;
+}
+a.wiki:hover { border-bottom-style: solid; }
+span.wiki { color: var(--blue); border-bottom: 1px dotted var(--blue); }
+.spine {
+  font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
+  color: var(--muted);
+  text-align: center;
+  margin: 0 0 18px;
+  font-size: 16px;
+}
+.colophon {
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+  padding: 8px 0 24px;
+  font-size: 15px;
+}
+@media print {
+  body { background: white; }
+  .book { max-width: none; margin: 0; padding: 0; }
+  .leaf { box-shadow: none; break-after: page; margin: 0; border-radius: 0; border: none; }
+}
+</style>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div class="book">
+<p class="spine">datazines · a sketchbook</p>
+<section class="leaf hero-leaf"><h1>Embeddings — a sketchbook</h1>
+<aside class="callout callout-abstract"><strong>In one sentence.</strong> A word is <strong>a point</strong>. Nearby points kept company in the same notes. The table of points is a <strong>lookup</strong> the rest of the net can read.</aside>
+
+<figure class="drawing"><img src="../../assets/em-00-hero.svg" alt="em-00-hero"></figure>
+
+<p>Read <a class="wiki" href="01%20neural%20net.html">01 neural net</a> first. Same exam world. The levers changed species: not hours as a number — <strong>words</strong> in the students’ notes. Softmax (<a class="wiki" href="../supervised%20learning/classification/03%20softmax.html">03 softmax</a>) still waits at the last layer.</p>
+<p>This is 02 of the nets wing. Attention is the next room. Not this file.</p>
+<p>Flip it like a notebook. One page = one idea. Done.</p>
+</section>
+<section class="leaf"><h2>Page 1 — Hours was already a number</h2>
+<p>Hours, sleep, tutor: three numbers. The tiny net could score them.</p>
+<p>Now the input is a <strong>note</strong>:</p>
+<blockquote>
+<p><em>study hours textbook</em></p>
+</blockquote>
+<p>Those are words. A net cannot add “study” to “hours.” It needs a number for each word first.</p>
+<p>Same people. Same exam. New object: the <strong>vocabulary</strong>.</p>
+</section>
+<section class="leaf"><h2>Page 2 — One slot each is a dead map</h2>
+<p>The blunt trick: give every word its own slot. <strong>1</strong> here, <strong>0</strong> everywhere else. People call this <strong>one-hot</strong>.</p>
+<p>Seventeen words → seventeen slots. <code>study</code> is <code>[1, 0, 0, …]</code>. <code>hours</code> is <code>[0, 1, 0, …]</code>.</p>
+<figure class="drawing"><img src="../../assets/em-02-onehot.svg" alt="em-02-onehot"></figure>
+
+<p>They never share a 1. Cosine is <strong>0</strong>. <code>study</code> is as far from <code>hours</code> as from <code>coffee</code>. The map has no neighborhoods. A later floor has nothing to reuse.</p>
+<p>One-hot is a dictionary. It is not a cloud.</p>
+</section>
+<section class="leaf"><h2>Page 3 — Put each word on the page</h2>
+<p>Twenty-seven short notes. Three neighborhoods, on purpose:</p>
+<ul>
+<li><strong>study</strong> — hours, textbook, tutor, exam, cram</li>
+<li><strong>rest</strong> — sleep, tired, bed</li>
+<li><strong>junk</strong> — coffee, phone, scroll</li>
+</ul>
+<p>Count how often two words share a note. Then squash that table down to <strong>two</strong> numbers per word (a picture; grown-up tables have hundreds). Nearby on the page means they kept company.</p>
+<figure class="drawing"><img src="../../assets/em-03-cloud.svg" alt="em-03-cloud"></figure>
+
+<p><code>study</code> lands at <strong>(4.46, 1.02)</strong>. <code>hours</code> at <strong>(5.23, 1.77)</strong> — same huddle. <code>sleep</code> is up and left. <code>coffee</code> is down. That pair of numbers <strong>is</strong> the embedding.</p>
+<p>People call the whole table an <strong>embedding matrix</strong>. One row per word. Lookup, not a new kind of score.</p>
+</section>
+<section class="leaf"><h2>Page 4 — Nearby is an angle</h2>
+<p>How close is close? Not miles on the paper. <strong>Angle.</strong></p>
+<p>Two arrows from the origin. Same direction → cosine near 1. Right angle → 0. Opposite → negative.</p>
+<figure class="drawing"><img src="../../assets/em-04-cosine.svg" alt="em-04-cosine"></figure>
+
+<p>On these notes:</p>
+<table>
+<thead>
+<tr>
+<th>pair</th>
+<th style="text-align: right;">cosine</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>study · hours</td>
+<td style="text-align: right;"><strong>0.99</strong></td>
+</tr>
+<tr>
+<td>sleep · rest</td>
+<td style="text-align: right;"><strong>0.99</strong></td>
+</tr>
+<tr>
+<td>coffee · phone</td>
+<td style="text-align: right;"><strong>0.96</strong></td>
+</tr>
+<tr>
+<td>study · sleep</td>
+<td style="text-align: right;"><strong>−0.39</strong></td>
+</tr>
+<tr>
+<td>study · coffee</td>
+<td style="text-align: right;"><strong>−0.36</strong></td>
+</tr>
+</tbody>
+</table>
+<p>One-hot said study · hours = <strong>0</strong>. The cloud says they are almost the same arrow. That is the whole gift.</p>
+<p>Nearest to <code>study</code>: textbook, tutor, hours. Nearest to <code>sleep</code>: rest, tired, night. Pattern, not a definition of “study.”</p>
+</section>
+<section class="leaf"><h2>Page 5 — The first floor is a lookup</h2>
+<p>A net does not reinvent the point every time. It <strong>looks the row up</strong>.</p>
+<figure class="drawing"><img src="../../assets/em-05-lookup.svg" alt="em-05-lookup"></figure>
+
+<p><code>study</code> → (4.46, 1.02) → then <a class="wiki" href="01%20neural%20net.html">01 neural net</a> does score → squash → …</p>
+<p>An LLM’s first floor is this table, one row per <strong>token</strong> (a word-piece, not always a whole word). The rest of the net never sees the letters. It sees the point.</p>
+<p>Who writes the table? On this page: the notes did, via a short PCA. Grown-up tables <strong>walk</strong> (<a class="wiki" href="../optimization/01%20gradient%20descent.html">01 gradient descent</a>): leftover from “predict the next word” nudges every row. Same leftover as 01. Different floor.</p>
+</section>
+<section class="leaf"><h2>Page 6 — Mini recipe</h2>
+<ol>
+<li>The levers are <strong>words</strong> (or tokens). Hours already a number? Skip this notebook.</li>
+<li>Do <strong>not</strong> leave them one-hot if nearby should mean similar.</li>
+<li>One <strong>point per word</strong>. Dim 2 is for the picture. Real tables are fatter.</li>
+<li><strong>Cosine</strong> to ask “who sits near?” Angle, not miles.</li>
+<li>The net <strong>looks the row up</strong>, then does 01.</li>
+<li>The table can be frozen (a dictionary) or walked with the leftover.</li>
+</ol>
+<p>If you keep only one thing:</p>
+<blockquote>
+<p>a word is a point. nearby = same notes. lookup, then the net.</p>
+</blockquote>
+</section>
+<section class="leaf"><h2>Page 7 — Notes → points, in sklearn</h2>
+<p>Twenty-seven exam notes, house seed 7 (PCA). Count co-occurrence, two dimensions. The printout is the cloud on page 3.</p>
+<pre><code class="language-python">import numpy as np
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.decomposition import PCA
+from sklearn.metrics.pairwise import cosine_similarity
+
+notes = [
+    &quot;study hours textbook&quot;,
+    &quot;hours study tutor exam&quot;,
+    &quot;textbook hours cram&quot;,
+    &quot;tutor study hours&quot;,
+    &quot;cram textbook study night&quot;,
+    &quot;hours textbook tutor&quot;,
+    &quot;study cram hours exam&quot;,
+    &quot;tutor textbook hours&quot;,
+    &quot;exam study textbook&quot;,
+    &quot;night cram hours&quot;,
+    &quot;sleep rest tired&quot;,
+    &quot;rest sleep bed&quot;,
+    &quot;tired sleep rest night&quot;,
+    &quot;bed rest sleep&quot;,
+    &quot;sleep tired bed&quot;,
+    &quot;rest bed tired&quot;,
+    &quot;sleep night rest&quot;,
+    &quot;coffee phone scroll&quot;,
+    &quot;phone coffee noise&quot;,
+    &quot;noise hallway coffee&quot;,
+    &quot;coffee noise hallway&quot;,
+    &quot;phone scroll coffee&quot;,
+    &quot;scroll phone instagram&quot;,
+    &quot;study sleep hours&quot;,
+    &quot;coffee study hours&quot;,
+    &quot;tutor sleep rest&quot;,
+    &quot;night exam coffee&quot;,
+]
+
+vec = CountVectorizer()
+X = vec.fit_transform(notes).toarray()
+words = np.array(vec.get_feature_names_out())
+C = X.T @ X
+np.fill_diagonal(C, 0)
+
+E = PCA(n_components=2, random_state=7).fit_transform(C)
+idx = {w: i for i, w in enumerate(words)}
+sim = cosine_similarity(E)
+oh = np.eye(len(words))
+
+print(&quot;notes&quot;, X.shape[0], &quot;  words&quot;, X.shape[1], &quot;  embed dim 2&quot;)
+print(&quot;one-hot cosine  study·hours&quot;, round(float(oh[idx[&quot;study&quot;]] @ oh[idx[&quot;hours&quot;]]), 2))
+print(&quot;embed  cosine   study·hours&quot;, round(float(sim[idx[&quot;study&quot;], idx[&quot;hours&quot;]]), 2))
+print(&quot;embed  cosine   study·sleep&quot;, round(float(sim[idx[&quot;study&quot;], idx[&quot;sleep&quot;]]), 2))
+print(&quot;embed  cosine   study·coffee&quot;, round(float(sim[idx[&quot;study&quot;], idx[&quot;coffee&quot;]]), 2))
+print(&quot;embed  cosine   sleep·rest&quot;, round(float(sim[idx[&quot;sleep&quot;], idx[&quot;rest&quot;]]), 2))
+print(&quot;embed  cosine   coffee·phone&quot;, round(float(sim[idx[&quot;coffee&quot;], idx[&quot;phone&quot;]]), 2))
+print(&quot;point study &quot;, np.round(E[idx[&quot;study&quot;]], 2))
+print(&quot;point hours &quot;, np.round(E[idx[&quot;hours&quot;]], 2))
+print(&quot;point sleep &quot;, np.round(E[idx[&quot;sleep&quot;]], 2))
+print(&quot;point coffee&quot;, np.round(E[idx[&quot;coffee&quot;]], 2))
+for seed in (&quot;study&quot;, &quot;sleep&quot;, &quot;coffee&quot;):
+    i = idx[seed]
+    order = np.argsort(-sim[i])
+    parts = [f&quot;{words[j]} {sim[i, j]:.2f}&quot; for j in order if j != i][:3]
+    print(f&quot;near {seed:6s}&quot;, &quot;  &quot;.join(parts))
+</code></pre>
+<pre><code>notes 27   words 17   embed dim 2
+one-hot cosine  study·hours 0.0
+embed  cosine   study·hours 0.99
+embed  cosine   study·sleep -0.39
+embed  cosine   study·coffee -0.36
+embed  cosine   sleep·rest 0.99
+embed  cosine   coffee·phone 0.96
+point study  [4.46 1.02]
+point hours  [5.23 1.77]
+point sleep  [-2.8  3.9]
+point coffee [-0.42 -2.89]
+near study  textbook 1.00  tutor 1.00  hours 0.99
+near sleep  rest 0.99  tired 0.93  night 0.93
+near coffee phone 0.96  noise 0.96  scroll 0.95
+</code></pre>
+<p>One-hot: study and hours share <strong>nothing</strong>. Embed: <strong>0.99</strong>, and they sit at (4.46, 1.02) and (5.23, 1.77) — the huddle on page 3. Sleep is another neighborhood (cosine <strong>−0.39</strong> with study). Coffee’s neighbors are phone, noise, scroll — junk, as written.</p>
+<p>PCA on co-occurrence is a <strong>sketch</strong> of the table. Word2vec and an LLM walk the same idea with leftover. Dim 2 is so we can draw it. Do not ship 2-d as a language model.</p>
+</section>
+<section class="leaf"><h2>Last page — cheat sheet</h2>
+<table>
+<thead>
+<tr>
+<th>word</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>token</td>
+<td>a word, or a word-piece</td>
+</tr>
+<tr>
+<td>one-hot</td>
+<td>one slot per token; no neighbors</td>
+</tr>
+<tr>
+<td>embedding</td>
+<td>the point (a row in the table)</td>
+</tr>
+<tr>
+<td>cosine</td>
+<td>angle between two points</td>
+</tr>
+<tr>
+<td>lookup</td>
+<td>token → row → the rest of the net</td>
+</tr>
+<tr>
+<td>dim</td>
+<td>how fat the point is (2 here; hundreds later)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Also called:</strong> point / row = embedding vector · one-hot = dummy encoding · nearby = similar meaning.</p>
+<figure class="drawing"><img src="../../assets/em-06-when.svg" alt="em-06-when"></figure>
+
+<h3>Use / skip</h3>
+<p><strong>Reach for it when</strong> the levers are <strong>words / tokens</strong>, nearby should mean similar, and a later floor will look the row up.</p>
+<p><strong>Skip it when</strong> hours and sleep already are numbers (<a class="wiki" href="01%20neural%20net.html">01 neural net</a> / <a class="wiki" href="../supervised%20learning/classification/01%20logistic%20regression.html">01 logistic regression</a>); you needed a <strong>shortlist</strong> of columns (<a class="wiki" href="../supervised%20learning/regression/03%20lasso.html">03 lasso</a>); you wanted attention as the first file.</p>
+<p><strong>Pays you:</strong> words become knobs a net can score. Neighborhoods. The first floor of an LLM without a transformer cartoon.</p>
+<p><strong>Costs you:</strong> dim 2 is a postcard. Co-occurrence ≠ meaning. A table walked on tiny notes will huddle junk with junk and still not know what coffee <em>is</em>. Pattern, not a dictionary.</p>
+<p><em>Nets wing, 02. A point per token. Next room: <a class="wiki" href="03%20attention.html">03 attention</a> — which other tokens matter.</em></p></section>
+<p class="colophon">Flip it like a notebook. One page = one idea.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap — a sketchbook</title>
+<style>
+:root {
+  --paper: #f4efe4;
+  --ink: #241c14;
+  --rust: #b44a28;
+  --blue: #3d5f86;
+  --sage: #4f6d55;
+  --gold: #c4a35a;
+  --muted: #7a6e5e;
+  --grain: #efe8d8;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #d9d0c0; color: var(--ink); }
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.45;
+}
+.book {
+  max-width: 820px;
+  margin: 32px auto 64px;
+  padding: 0 16px;
+}
+.leaf {
+  background: var(--paper);
+  border-radius: 18px;
+  padding: 36px 44px 40px;
+  margin: 0 0 22px;
+  box-shadow: 0 1px 0 rgba(36,28,20,.06), 0 10px 28px rgba(36,28,20,.08);
+  border: 1px solid rgba(36,28,20,.06);
+}
+.hero-leaf { padding-top: 28px; }
+h1 {
+  font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
+  font-size: 34px;
+  font-weight: normal;
+  color: var(--rust);
+  margin: 0 0 12px;
+  line-height: 1.15;
+}
+h2 {
+  font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
+  font-size: 24px;
+  font-weight: normal;
+  color: var(--rust);
+  margin: 0 0 14px;
+}
+h3 {
+  font-size: 18px;
+  color: var(--blue);
+  margin: 18px 0 8px;
+}
+p { margin: 0 0 12px; }
+blockquote {
+  margin: 12px 0 16px;
+  padding: 4px 0 4px 16px;
+  border-left: 3px solid var(--rust);
+  color: var(--muted);
+  font-style: italic;
+}
+.callout {
+  background: var(--grain);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin: 12px 0 18px;
+}
+.callout-abstract { border-left: 4px solid var(--rust); }
+.callout-tip { border-left: 4px solid var(--gold); }
+.callout-note { border-left: 4px solid var(--blue); }
+.callout strong { color: var(--rust); }
+.drawing { margin: 16px 0 18px; text-align: center; }
+.drawing img {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  display: inline-block;
+}
+table {
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+  width: 100%;
+  font-size: 16px;
+}
+th, td {
+  border: 1px solid #c4b8a4;
+  padding: 6px 10px;
+  vertical-align: top;
+  text-align: left;
+}
+th { background: var(--grain); color: var(--rust); }
+ul, ol { margin: 6px 0 14px 22px; }
+li { margin: 0 0 4px; }
+code {
+  font-family: Menlo, "Courier New", monospace;
+  font-size: 0.86em;
+  color: var(--sage);
+}
+pre {
+  font-family: Menlo, "Courier New", monospace;
+  font-size: 13.5px;
+  line-height: 1.35;
+  background: var(--grain);
+  border-radius: 10px;
+  padding: 14px 16px;
+  overflow-x: auto;
+  margin: 10px 0 16px;
+}
+pre code { color: var(--ink); }
+a.wiki {
+  color: var(--blue);
+  border-bottom: 1px dotted var(--blue);
+  text-decoration: none;
+}
+a.wiki:hover { border-bottom-style: solid; }
+span.wiki { color: var(--blue); border-bottom: 1px dotted var(--blue); }
+.spine {
+  font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
+  color: var(--muted);
+  text-align: center;
+  margin: 0 0 18px;
+  font-size: 16px;
+}
+.colophon {
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+  padding: 8px 0 24px;
+  font-size: 15px;
+}
+@media print {
+  body { background: white; }
+  .book { max-width: none; margin: 0; padding: 0; }
+  .leaf { box-shadow: none; break-after: page; margin: 0; border-radius: 0; border: none; }
+}
+</style>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div class="book">
+<p class="spine">datazines · a sketchbook</p>
+<section class="leaf hero-leaf"><h1>Bootstrap — a sketchbook</h1>
+<aside class="callout callout-abstract"><strong>In one sentence.</strong> Redraw the eight people <strong>with replacement</strong>, refit, pile the knobs. The pile <em>is</em> leftover. The interval is two percentiles. No bell required.</aside>
+
+<figure class="drawing"><img src="../../assets/bs-00-hero.svg" alt="bs-00-hero"></figure>
+
+<p>Read <a class="wiki" href="01%20t-test.html">01 t-test</a> first. Same eight grades. Same line ŷ = 1.75 + 1 · hours. Forests already <strong>bagged</strong> people (<a class="wiki" href="../supervised%20learning/ensembles/02%20random%20forest.html">02 random forest</a>). This notebook uses that redraw as a <strong>judge</strong>, not as a choir.</p>
+<p>This is 02 of the inference wing. MCMC is a later walk when the pile is a posterior. Not this file.</p>
+<p>Flip it like a notebook. One page = one idea. Done.</p>
+</section>
+<section class="leaf"><h2>Page 1 — The t-test borrowed a costume</h2>
+<p><a class="wiki" href="01%20t-test.html">01 t-test</a> needed a <strong>bell</strong> for leftover, then se, then t × se.</p>
+<p>That was honest when the costume fit. Eight leftovers looked like a small bell. A median, a ratio, a forest’s vote — those do not come with a tidy se.</p>
+<p>The bootstrap’s dare:</p>
+<blockquote>
+<p>Pretend these eight <em>are</em> the world. Draw eight again, some twice, some never. Refit. Repeat.</p>
+</blockquote>
+<figure class="drawing"><img src="../../assets/bs-02-vs.svg" alt="bs-02-vs"></figure>
+
+<p>The spread of those fake worlds is leftover, replayed. Same verb as bagging. Different job: <strong>uncertainty</strong>, not a vote.</p>
+</section>
+<section class="leaf"><h2>Page 2 — One bag is a new class</h2>
+<p>House seed 7. First redraw of the eight:</p>
+<p>hours <code>6, 5, 5, 6, 4, 5, 5, 2</code><br>
+grades <code>8, 7, 7, 8, 6, 6, 6, 4</code></p>
+<p>5h showed up four times. 1h and 3h never came. Mean of this bag = <strong>6.50</strong>. Slope = <strong>0.96</strong>.</p>
+<p>The original mean was 5.25. This bag is a loud class. That is allowed. Leftover does that.</p>
+<p>People call it <strong>sampling with replacement</strong>. Forests said <strong>bag</strong>. Same redraw.</p>
+</section>
+<section class="leaf"><h2>Page 3 — The pile is leftover</h2>
+<p>Do it <strong>2000</strong> times. Each bag: a mean, a slope.</p>
+<figure class="drawing"><img src="../../assets/bs-03-pile.svg" alt="bs-03-pile"></figure>
+
+<p>The slope pile sits on <strong>1.00</strong>. Its sd is <strong>0.11</strong> — the same se the t-test printed from a formula. <strong>Zero never showed up.</strong> Hours-do-nothing is not in this world, replayed 2000 times.</p>
+<p>The mean pile’s sd is <strong>0.60</strong>, next to the t-test’s 0.65. Close. Eight people, two judges, same leftover.</p>
+<p>The 2.5% and 97.5% of the pile are the interval. No t-table. No costume.</p>
+</section>
+<section class="leaf"><h2>Page 4 — Two intervals, one story</h2>
+<figure class="drawing"><img src="../../assets/bs-04-ci.svg" alt="bs-04-ci"></figure>
+
+<table>
+<thead>
+<tr>
+<th>knob</th>
+<th>t-test 95%</th>
+<th>bootstrap 95%</th>
+<th>boring story inside?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mean</td>
+<td>3.72 – 6.78</td>
+<td><strong>4.12 – 6.38</strong></td>
+<td>5 sits in both</td>
+</tr>
+<tr>
+<td>slope</td>
+<td>0.74 – 1.26</td>
+<td><strong>0.79 – 1.22</strong></td>
+<td>0 in neither</td>
+</tr>
+</tbody>
+</table>
+<p>Same eight grades. Bootstrap is a hair tighter here (the pile is a bit less fat-tailed than the t with 6 df). The <strong>verdict did not flip</strong>. Mean vs 5 still quiet. Slope vs 0 still loud.</p>
+<p>When they disagree, believe the pile if you do not trust the bell. Believe neither if eight people is a joke.</p>
+</section>
+<section class="leaf"><h2>Page 5 — Mini recipe</h2>
+<ol>
+<li>Keep the original eight (or eighty). They <em>are</em> the world for this trick.</li>
+<li>Draw <strong>n</strong> people <strong>with replacement</strong>. Some twice. Some never.</li>
+<li>Refit the number you care about (mean, <em>b</em>, a median, a vote).</li>
+<li>Repeat until the pile is boring (thousands, not twelve).</li>
+<li>Interval = 2.5% and 97.5% of the pile. se ≈ the pile’s sd.</li>
+<li>If a t-interval already fits and the bell is honest, you replayed leftover for sport.</li>
+</ol>
+<p>If you keep only one thing:</p>
+<blockquote>
+<p>redraw the people. the pile is leftover. percentiles are the interval.</p>
+</blockquote>
+</section>
+<section class="leaf"><h2>Page 6 — Eight grades, redrawn, in numpy</h2>
+<p>Same table as <a class="wiki" href="01%20t-test.html">01 t-test</a>. 2000 bags. House seed 7. <code>LinearRegression</code> only to refit <em>b</em>. The loop <em>is</em> the lesson.</p>
+<pre><code class="language-python">import numpy as np
+from sklearn.linear_model import LinearRegression
+
+hours = np.array([1, 2, 2, 3, 4, 5, 5, 6], float)
+grade = np.array([3, 4, 3, 5, 6, 7, 6, 8], float)
+rng = np.random.default_rng(7)
+n, B = 8, 2000
+means = np.empty(B)
+slopes = np.empty(B)
+for i in range(B):
+    ix = rng.integers(0, n, n)
+    means[i] = grade[ix].mean()
+    slopes[i] = LinearRegression().fit(hours[ix].reshape(-1, 1), grade[ix]).coef_[0]
+
+print(&quot;people&quot;, n, &quot;  redraws&quot;, B)
+print(&quot;original mean&quot;, round(grade.mean(), 2), &quot;  slope&quot;, 1.00)
+print(&quot;boot se mean&quot;, round(means.std(ddof=1), 2), &quot;  slope&quot;, round(slopes.std(ddof=1), 2))
+print(&quot;95% boot mean &quot;, np.round(np.percentile(means, [2.5, 97.5]), 2))
+print(&quot;95% boot slope&quot;, np.round(np.percentile(slopes, [2.5, 97.5]), 2))
+print(&quot;redraws with slope ≤ 0&quot;, int((slopes &lt;= 0).sum()))
+ix = np.random.default_rng(7).integers(0, n, n)
+print(&quot;first bag hours&quot;, hours[ix].astype(int).tolist())
+print(&quot;first bag grade&quot;, grade[ix].astype(int).tolist())
+print(&quot;first bag mean&quot;, round(grade[ix].mean(), 2),
+      &quot;  slope&quot;, round(float(LinearRegression().fit(hours[ix].reshape(-1, 1), grade[ix]).coef_[0]), 2))
+</code></pre>
+<pre><code>people 8   redraws 2000
+original mean 5.25   slope 1.0
+boot se mean 0.6   slope 0.11
+95% boot mean  [4.12 6.38]
+95% boot slope [0.79 1.22]
+redraws with slope ≤ 0 0
+first bag hours [6, 5, 5, 6, 4, 5, 5, 2]
+first bag grade [8, 7, 7, 8, 6, 6, 6, 4]
+first bag mean 6.5   slope 0.96
+</code></pre>
+<p>First bag is a loud class (mean 6.50) — leftover, one replay. Across 2000, slope se = 0.11 matches the t-test. Zero never appears. The mean interval still covers 5.</p>
+<p><code>rng.integers(0, n, n)</code> is the bag. <code>percentile(..., [2.5, 97.5])</code> is the interval. No <code>ttest_1samp</code>. The bell stayed home.</p>
+</section>
+<section class="leaf"><h2>Last page — cheat sheet</h2>
+<table>
+<thead>
+<tr>
+<th>word</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bag / redraw</td>
+<td>n draws with replacement</td>
+</tr>
+<tr>
+<td>pile</td>
+<td>the knobs from every bag</td>
+</tr>
+<tr>
+<td>boot se</td>
+<td>sd of the pile</td>
+</tr>
+<tr>
+<td>percentile interval</td>
+<td>2.5% and 97.5% of the pile</td>
+</tr>
+<tr>
+<td>with replacement</td>
+<td>some people twice, some never</td>
+</tr>
+</tbody>
+</table>
+<figure class="drawing"><img src="../../assets/bs-05-when.svg" alt="bs-05-when"></figure>
+
+<h3>Use / skip</h3>
+<p><strong>Reach for it when</strong> se has no tidy formula, you do not want to swear a <strong>bell</strong>, and you already have the dots.</p>
+<p><strong>Skip it when</strong> a t-interval already fits (<a class="wiki" href="01%20t-test.html">01 t-test</a>); the sample is one person; you wanted MCMC / NUTS as the first file.</p>
+<p><strong>Pays you:</strong> leftover without a costume. Same redraw forests used to disagree. An interval for ugly knobs (median, a ratio, a vote).</p>
+<p><strong>Costs you:</strong> the eight <em>are</em> the world — a weird sample makes a weird pile. 2000 loops, not a one-shot formula. Still not cause (<a class="wiki" href="../causal/01%20confounding.html">01 confounding</a>). Still not a posterior (MCMC later).</p>
+<p><em>Inference 02. Same leftover, replayed. Forests bagged to vote; here the bag judges. Next empty 01: a little time.</em></p></section>
+<p class="colophon">Flip it like a notebook. One page = one idea.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confounding — a sketchbook</title>
+<style>
+:root {
+  --paper: #f4efe4;
+  --ink: #241c14;
+  --rust: #b44a28;
+  --blue: #3d5f86;
+  --sage: #4f6d55;
+  --gold: #c4a35a;
+  --muted: #7a6e5e;
+  --grain: #efe8d8;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #d9d0c0; color: var(--ink); }
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.45;
+}
+.book {
+  max-width: 820px;
+  margin: 32px auto 64px;
+  padding: 0 16px;
+}
+.leaf {
+  background: var(--paper);
+  border-radius: 18px;
+  padding: 36px 44px 40px;
+  margin: 0 0 22px;
+  box-shadow: 0 1px 0 rgba(36,28,20,.06), 0 10px 28px rgba(36,28,20,.08);
+  border: 1px solid rgba(36,28,20,.06);
+}
+.hero-leaf { padding-top: 28px; }
+h1 {
+  font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
+  font-size: 34px;
+  font-weight: normal;
+  color: var(--rust);
+  margin: 0 0 12px;
+  line-height: 1.15;
+}
+h2 {
+  font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
+  font-size: 24px;
+  font-weight: normal;
+  color: var(--rust);
+  margin: 0 0 14px;
+}
+h3 {
+  font-size: 18px;
+  color: var(--blue);
+  margin: 18px 0 8px;
+}
+p { margin: 0 0 12px; }
+blockquote {
+  margin: 12px 0 16px;
+  padding: 4px 0 4px 16px;
+  border-left: 3px solid var(--rust);
+  color: var(--muted);
+  font-style: italic;
+}
+.callout {
+  background: var(--grain);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin: 12px 0 18px;
+}
+.callout-abstract { border-left: 4px solid var(--rust); }
+.callout-tip { border-left: 4px solid var(--gold); }
+.callout-note { border-left: 4px solid var(--blue); }
+.callout strong { color: var(--rust); }
+.drawing { margin: 16px 0 18px; text-align: center; }
+.drawing img {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  display: inline-block;
+}
+table {
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+  width: 100%;
+  font-size: 16px;
+}
+th, td {
+  border: 1px solid #c4b8a4;
+  padding: 6px 10px;
+  vertical-align: top;
+  text-align: left;
+}
+th { background: var(--grain); color: var(--rust); }
+ul, ol { margin: 6px 0 14px 22px; }
+li { margin: 0 0 4px; }
+code {
+  font-family: Menlo, "Courier New", monospace;
+  font-size: 0.86em;
+  color: var(--sage);
+}
+pre {
+  font-family: Menlo, "Courier New", monospace;
+  font-size: 13.5px;
+  line-height: 1.35;
+  background: var(--grain);
+  border-radius: 10px;
+  padding: 14px 16px;
+  overflow-x: auto;
+  margin: 10px 0 16px;
+}
+pre code { color: var(--ink); }
+a.wiki {
+  color: var(--blue);
+  border-bottom: 1px dotted var(--blue);
+  text-decoration: none;
+}
+a.wiki:hover { border-bottom-style: solid; }
+span.wiki { color: var(--blue); border-bottom: 1px dotted var(--blue); }
+.spine {
+  font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
+  color: var(--muted);
+  text-align: center;
+  margin: 0 0 18px;
+  font-size: 16px;
+}
+.colophon {
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+  padding: 8px 0 24px;
+  font-size: 15px;
+}
+@media print {
+  body { background: white; }
+  .book { max-width: none; margin: 0; padding: 0; }
+  .leaf { box-shadow: none; break-after: page; margin: 0; border-radius: 0; border: none; }
+}
+</style>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div class="book">
+<p class="spine">datazines · a sketchbook</p>
+<section class="leaf hero-leaf"><h1>Confounding — a sketchbook</h1>
+<aside class="callout callout-abstract"><strong>In one sentence.</strong> A loud <em>b</em> is a <strong>pattern</strong>. Cause is a <strong>mechanism</strong>: what happens if you <em>do</em> the lever. A common cause can make a passenger look like a driver.</aside>
+
+<figure class="drawing"><img src="../../assets/ca-00-hero.svg" alt="ca-00-hero"></figure>
+
+<p>Read <a class="wiki" href="../supervised%20learning/regression/01%20linear%20regression.html">01 linear regression</a> and <a class="wiki" href="../inference/01%20t-test.html">01 t-test</a> first. Same exam world. Hours still make the grade. Coffee is back — as junk that <strong>rides with hours</strong>. The t-test can call coffee “real.” It cannot tell you coffee <em>did</em> it.</p>
+<p>This is 01 of the cause wing. Experiments, DAGs as sequels, causal impact after a little time. Not MCMC. Not BSTS.</p>
+<p>Flip it like a notebook. One page = one idea. Done.</p>
+</section>
+<section class="leaf"><h2>Page 1 — The coffee line looks great</h2>
+<p>Eighty students, house seed 7. A <strong>crowd</strong>, not the thirty on the ridge page. Grade is still 1.8 + 1 · hours, plus leftover. Coffee is <strong>not</strong> in that recipe. People who study just drink more.</p>
+<p>Fit coffee only, anyway.</p>
+<p>ŷ = <strong>1.79 + 0.71 · coffee</strong>. R² = 0.67. <em>t</em> = 12.6.</p>
+<p>The t-test shouts. The cloud rises. A campaign could print “drink coffee, raise your grade.”</p>
+<p>That is a <strong>pattern</strong>. The line is honest about the cloud. It is silent about the tap.</p>
+</section>
+<section class="leaf"><h2>Page 2 — Hours sits behind both</h2>
+<p>Why do coffee and grade rise together? Because <strong>hours</strong> pushes both.</p>
+<figure class="drawing"><img src="../../assets/ca-02-fork.svg" alt="ca-02-fork"></figure>
+
+<p>Hours → coffee (they drink while they study).<br>
+Hours → grade (the real lever).<br>
+Coffee → grade? <strong>No.</strong> We wrote the world that way.</p>
+<p>People call this a <strong>fork</strong>. The common cause is a <strong>confounder</strong>. Coffee is a <strong>passenger</strong>. The passenger can look louder than the driver if you never seat the driver.</p>
+<p>Correlation hours·coffee = <strong>0.93</strong>. Of course coffee predicts the grade. It is a noisy copy of hours.</p>
+</section>
+<section class="leaf"><h2>Page 3 — Hold hours still</h2>
+<p>Put hours in the room. Coffee’s job is now: <em>among people with the same hours, does extra coffee move the grade?</em></p>
+<figure class="drawing"><img src="../../assets/ca-03-hold.svg" alt="ca-03-hold"></figure>
+
+<table>
+<thead>
+<tr>
+<th>model</th>
+<th style="text-align: right;">coffee <em>b</em></th>
+<th style="text-align: right;">hours <em>b</em></th>
+<th style="text-align: right;">R²</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>coffee only</td>
+<td style="text-align: right;"><strong>0.71</strong></td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">0.67</td>
+</tr>
+<tr>
+<td>hours only</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><strong>0.99</strong></td>
+<td style="text-align: right;">0.83</td>
+</tr>
+<tr>
+<td>both</td>
+<td style="text-align: right;"><strong>−0.15</strong></td>
+<td style="text-align: right;"><strong>1.16</strong></td>
+<td style="text-align: right;">0.83</td>
+</tr>
+</tbody>
+</table>
+<p>Coffee’s slope dies. Hours stays near 1 — the number we planted. R² does not improve when coffee sits down. The extra cup was leftover.</p>
+<p>This is not a new line. It is the old line, with the common cause <strong>held still</strong>. Lasso would fire coffee (<a class="wiki" href="../supervised%20learning/regression/03%20lasso.html">03 lasso</a>). Here we care <em>why</em> it should be fired.</p>
+</section>
+<section class="leaf"><h2>Page 4 — See is not do</h2>
+<p><strong>See coffee:</strong> look at people who already drink more. They studied more. Grades look higher. The fork is intact.</p>
+<p><strong>Do coffee:</strong> pour an extra cup. Hours stay put. The grade does not jump. You <strong>broke</strong> the arrow from hours to coffee. That is the mechanism.</p>
+<figure class="drawing"><img src="../../assets/ca-04-do.svg" alt="ca-04-do"></figure>
+
+<p>People write do(coffee) for that break. Ugly letters. Friendly job: <em>what if we set the lever ourselves?</em></p>
+<p>An experiment is do() in the world: random extra cups, hours free to be whatever they were. Then coffee’s <em>b</em> is a cause, or it isn’t. Seeing never did that job.</p>
+<p>A t-test on the see-line still answers leftover. It does not answer do().</p>
+</section>
+<section class="leaf"><h2>Page 5 — Mini recipe</h2>
+<ol>
+<li>Name the <strong>job</strong>. Guess <em>y</em>? A pattern is enough. <strong>Change</strong> <em>y</em>? You need a mechanism.</li>
+<li>Draw the <strong>fork</strong> (who sits behind both?). If you cannot name one, you are not done looking.</li>
+<li><strong>Hold</strong> the common cause still (put it in the line, or compare inside hours-bins).</li>
+<li>If the passenger’s <em>b</em> dies, it was riding. If it lives, maybe it drives — or another fork remains.</li>
+<li>Prefer <strong>do</strong> (experiment) when you can. See + hold is a sketch of do, not do itself.</li>
+<li>Causal impact, BSTS, NUTS: later rooms. They still need this sentence first.</li>
+</ol>
+<p>If you keep only one thing:</p>
+<blockquote>
+<p>pattern ≠ mechanism. a loud <em>b</em> can be a passenger.</p>
+</blockquote>
+</section>
+<section class="leaf"><h2>Page 6 — Coffee as passenger, in sklearn</h2>
+<p>Eighty students, house seed 7 — enough that coffee-only looks loud and then dies when hours is in the room. Grade depends on hours only. Coffee rides with hours.</p>
+<pre><code class="language-python">import numpy as np
+from sklearn.linear_model import LinearRegression
+
+rng = np.random.default_rng(7)
+n = 80
+hours = rng.uniform(1, 6, n)
+coffee = 0.4 + 1.3 * hours + rng.normal(0, 0.8, n)
+coffee = np.clip(coffee, 0, None)
+grade = 1.8 + 1.0 * hours + rng.normal(0, 0.7, n)
+
+print(&quot;corr hours·coffee&quot;, round(np.corrcoef(hours, coffee)[0, 1], 2))
+print(&quot;corr coffee·grade&quot;, round(np.corrcoef(coffee, grade)[0, 1], 2))
+print(&quot;corr hours·grade &quot;, round(np.corrcoef(hours, grade)[0, 1], 2))
+
+mc = LinearRegression().fit(coffee.reshape(-1, 1), grade)
+mh = LinearRegression().fit(hours.reshape(-1, 1), grade)
+mb = LinearRegression().fit(np.column_stack([hours, coffee]), grade)
+
+print(&quot;coffee-only  ŷ =&quot;, f&quot;{mc.intercept_:.2f} + {mc.coef_[0]:.2f} · coffee&quot;,
+      &quot;  R²&quot;, round(mc.score(coffee.reshape(-1, 1), grade), 2))
+print(&quot;hours-only   ŷ =&quot;, f&quot;{mh.intercept_:.2f} + {mh.coef_[0]:.2f} · hours&quot;,
+      &quot;  R²&quot;, round(mh.score(hours.reshape(-1, 1), grade), 2))
+print(&quot;both         hours&quot;, round(mb.coef_[0], 2), &quot;  coffee&quot;, round(mb.coef_[1], 2),
+      &quot;  R²&quot;, round(mb.score(np.column_stack([hours, coffee]), grade), 2))
+</code></pre>
+<pre><code>corr hours·coffee 0.93
+corr coffee·grade 0.82
+corr hours·grade  0.91
+coffee-only  ŷ = 1.79 + 0.71 · coffee   R² 0.67
+hours-only   ŷ = 1.78 + 0.99 · hours   R² 0.83
+both         hours 1.16   coffee -0.15   R² 0.83
+</code></pre>
+<p>Coffee-only: 0.71 and a proud R². Hours-only: <em>b</em> ≈ 1, as planted. Both: coffee flips sign and dies; hours stays the driver; R² does not thank the cup. A t-test on the first line would have printed a tiny <em>p</em>. Tiny <em>p</em>, still a passenger.</p>
+</section>
+<section class="leaf"><h2>Last page — cheat sheet</h2>
+<table>
+<thead>
+<tr>
+<th>word</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pattern</td>
+<td>the cloud / the <em>b</em> you saw</td>
+</tr>
+<tr>
+<td>mechanism</td>
+<td>what <em>y</em> does if you <strong>do</strong> the lever</td>
+</tr>
+<tr>
+<td>confounder</td>
+<td>common cause sitting behind both</td>
+</tr>
+<tr>
+<td>fork</td>
+<td>hours → coffee and hours → grade</td>
+</tr>
+<tr>
+<td>passenger</td>
+<td>loud <em>b</em>, no arrow of its own</td>
+</tr>
+<tr>
+<td>do(x)</td>
+<td>set the lever; break the incoming arrows</td>
+</tr>
+<tr>
+<td>hold still</td>
+<td>put the confounder in the room</td>
+</tr>
+</tbody>
+</table>
+<figure class="drawing"><img src="../../assets/ca-05-when.svg" alt="ca-05-when"></figure>
+
+<h3>Use / skip</h3>
+<p><strong>Reach for it when</strong> you want to <strong>change</strong> <em>y</em>, not just guess it; a common cause might be riding along; the loud <em>b</em> might be a passenger.</p>
+<p><strong>Skip it when</strong> ŷ was the only job (<a class="wiki" href="../supervised%20learning/regression/01%20linear%20regression.html">01 linear regression</a>); you already ran the experiment; you wanted BSTS / NUTS as the first file.</p>
+<p><strong>Pays you:</strong> the cause wing’s 01. A fork you can draw. See vs do. Why lasso firing coffee can be the <em>right</em> story, not only a haircut.</p>
+<p><strong>Costs you:</strong> holding hours still is not an experiment. A hidden fork remains hidden. <em>p</em> still only judges leftover. Causal impact without this sentence is a demo.</p>
+<p><em>Cause wing, 01. Pattern ≠ mechanism. The gap on a series: <a class="wiki" href="02%20causal%20impact.html">02 causal impact</a>. Time furniture: <a class="wiki" href="../time%20series/01%20lag%20trend%20season.html">01 lag trend season</a>. Chance sequel: <a class="wiki" href="../inference/02%20bootstrap.html">02 bootstrap</a>.</em></p></section>
+<p class="colophon">Flip it like a notebook. One page = one idea.</p>
+</div>
+</body>
+</html>

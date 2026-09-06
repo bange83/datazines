@@ -14,20 +14,24 @@
 <rect width="760" height="360" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
 <text x="380" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">same exam world. four classrooms.</text>
 <rect x="40" y="70" width="140" height="200" rx="10" fill="#b44a28" opacity="0.10" stroke="#b44a28" stroke-width="2"/>
-<text x="110" y="130" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="36" fill="#b44a28" text-anchor="middle">8</text>
-<text x="110" y="175" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="middle">the line</text>
+<text x="110" y="130" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#b44a28" text-anchor="middle">the line</text>
+<text x="110" y="175" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="middle">tiny table</text>
 <text x="110" y="210" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="middle">hours → grade</text>
+<text x="110" y="242" font-family="Georgia, Times New Roman, serif" font-size="12" fill="#7a6e5e" text-anchor="middle">n = 8</text>
 <rect x="220" y="70" width="140" height="200" rx="10" fill="#3d5f86" opacity="0.10" stroke="#3d5f86" stroke-width="2"/>
-<text x="290" y="130" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="36" fill="#3d5f86" text-anchor="middle">30</text>
-<text x="290" y="175" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#3d5f86" text-anchor="middle">graders</text>
-<text x="290" y="210" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="middle">twins, a tax</text>
+<text x="290" y="130" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#3d5f86" text-anchor="middle">twins</text>
+<text x="290" y="175" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#3d5f86" text-anchor="middle">a tax</text>
+<text x="290" y="210" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="middle">hours + minutes</text>
+<text x="290" y="242" font-family="Georgia, Times New Roman, serif" font-size="12" fill="#7a6e5e" text-anchor="middle">n = 30</text>
 <rect x="400" y="70" width="140" height="200" rx="10" fill="#4f6d55" opacity="0.10" stroke="#4f6d55" stroke-width="2"/>
 <text x="470" y="130" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#4f6d55" text-anchor="middle">pass / fail</text>
 <text x="470" y="175" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#4f6d55" text-anchor="middle">yes / no</text>
 <text x="470" y="210" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="middle">s-shaped curve</text>
+<text x="470" y="242" font-family="Georgia, Times New Roman, serif" font-size="12" fill="#7a6e5e" text-anchor="middle">n = 80</text>
 <rect x="580" y="70" width="140" height="200" rx="10" fill="#c4a35a" opacity="0.10" stroke="#c4a35a" stroke-width="2"/>
 <text x="650" y="130" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#c4a35a" text-anchor="middle">no y</text>
 <text x="650" y="175" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#c4a35a" text-anchor="middle">unlabeled</text>
 <text x="650" y="210" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e" text-anchor="middle">sausage, rooms</text>
+<text x="650" y="242" font-family="Georgia, Times New Roman, serif" font-size="12" fill="#7a6e5e" text-anchor="middle">n = 80</text>
 <text x="380" y="320" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">“same people” never means the wrong pile.</text>
 </svg>

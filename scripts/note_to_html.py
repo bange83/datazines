@@ -5,17 +5,23 @@ Prototype of the datazines.com zine. Drawings stay live SVG (never bitmaps).
 Math stays LaTeX; MathJax renders it in the browser.
 
     python3 scripts/note_to_html.py "supervised learning/regression/01 linear regression.md"
+    python3 scripts/note_to_html.py --all
 
-Writes html/<stem>.html. Images are ../assets/<file>.svg relative to that file.
+Writes html/<same folders as the note>.html. Images climb to vault assets/.
+Wikilinks become hrefs to other leaves. Writer maps (PATH, AGENTS, HANDOFF)
+stay unlinked spans.
 """
 
 from __future__ import annotations
 
 import argparse
 import html as html_lib
+import os
 import re
 import sys
+from functools import lru_cache
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -133,7 +139,13 @@ pre {
   margin: 10px 0 16px;
 }
 pre code { color: var(--ink); }
-.wiki { color: var(--blue); border-bottom: 1px dotted var(--blue); }
+a.wiki {
+  color: var(--blue);
+  border-bottom: 1px dotted var(--blue);
+  text-decoration: none;
+}
+a.wiki:hover { border-bottom-style: solid; }
+span.wiki { color: var(--blue); border-bottom: 1px dotted var(--blue); }
 .spine {
   font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
   color: var(--muted);
@@ -156,6 +168,17 @@ pre code { color: var(--ink); }
 """
 
 
+SKIP_STEMS = {
+    "AGENTS",
+    "PATH",
+    "HANDOFF",
+    "README",
+    "Copilot Feedback",
+}
+
+HTML_ROOT = ROOT / "html"
+
+
 def strip_yaml(text: str) -> str:
     if text.startswith("---"):
         end = text.find("\n---", 3)
@@ -164,13 +187,85 @@ def strip_yaml(text: str) -> str:
     return text
 
 
+def _aliases(raw: str) -> list[str]:
+    if not raw.startswith("---"):
+        return []
+    end = raw.find("\n---", 3)
+    if end == -1:
+        return []
+    block = raw[3:end]
+    names: list[str] = []
+    in_aliases = False
+    for line in block.splitlines():
+        if re.match(r"^aliases:\s*$", line):
+            in_aliases = True
+            continue
+        if in_aliases:
+            m = re.match(r"^\s+-\s+(.+)$", line)
+            if m:
+                names.append(m.group(1).strip().strip("'\""))
+                continue
+            in_aliases = False
+    return names
+
+
+def is_sketchbook(path: Path) -> bool:
+    if path.suffix != ".md":
+        return False
+    if any(part.startswith(".") for part in path.parts):
+        return False
+    if "html" in path.parts:
+        return False
+    if path.stem in SKIP_STEMS:
+        return False
+    return True
+
+
+def html_dest_for(note: Path) -> Path:
+    return (HTML_ROOT / note.relative_to(ROOT)).with_suffix(".html")
+
+
+def assets_href(dest: Path) -> str:
+    depth = len(dest.relative_to(HTML_ROOT).parts)
+    return "../" * depth + "assets/"
+
+
+@lru_cache(maxsize=1)
+def wiki_catalog() -> dict[str, Path]:
+    """Obsidian name / alias / stem → path under html/."""
+    cat: dict[str, Path] = {}
+    for path in ROOT.rglob("*.md"):
+        if not is_sketchbook(path):
+            continue
+        rel = html_dest_for(path).relative_to(HTML_ROOT)
+        keys = {path.stem, path.name}
+        keys.update(_aliases(path.read_text(encoding="utf-8")))
+        for k in keys:
+            cat[k] = rel
+            cat[k.lower()] = rel
+    return cat
+
+
+def wiki_href(target: str, dest: Path) -> str | None:
+    t = target.strip()
+    if t.endswith(".md"):
+        t = t[:-3]
+    cat = wiki_catalog()
+    rel = cat.get(t) or cat.get(t.lower())
+    if not rel:
+        return None
+    from_dir = dest.relative_to(HTML_ROOT).parent
+    href = Path(os.path.relpath(rel, from_dir if str(from_dir) != "." else "."))
+    return quote(href.as_posix(), safe="/.")
+
+
 def inline_md(s: str) -> str:
     s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
     s = re.sub(r"\*(.+?)\*", r"<em>\1</em>", s)
     return s.replace("\n", "<br>\n")
 
 
-def preprocess(md: str) -> str:
+def preprocess(md: str, dest: Path) -> str:
     fences: list[str] = []
 
     def stash(m: re.Match) -> str:
@@ -197,19 +292,29 @@ def preprocess(md: str) -> str:
         flags=re.M,
     )
 
-    # Wikilinks with a letter. Skip [[3]] inside later-unprotected text.
-    md = re.sub(
-        r"!?\[\[([^\]|#]*[A-Za-z][^\]|#]*)(?:\|[^\]]+)?\]\]",
-        r'<span class="wiki">\1</span>',
-        md,
-    )
+    def wiki(m: re.Match) -> str:
+        inner = m.group(1)
+        target, _, label = inner.partition("|")
+        target = target.split("#")[0].strip()
+        if not re.search(r"[A-Za-z]", target):
+            return m.group(0)
+        display = (label or target).strip()
+        href = wiki_href(target, dest)
+        text = html_lib.escape(display)
+        if href:
+            return f'<a class="wiki" href="{href}">{text}</a>'
+        return f'<span class="wiki">{text}</span>'
+
+    md = re.sub(r"!?\[\[([^\]]+)\]\]", wiki, md)
+
+    prefix = assets_href(dest)
 
     def img(m: re.Match) -> str:
         alt, src = m.group(1), m.group(2)
         name = Path(src).name
         return (
             f'\n<figure class="drawing">'
-            f'<img src="../assets/{name}" alt="{html_lib.escape(alt)}">'
+            f'<img src="{prefix}{html_lib.escape(name)}" alt="{html_lib.escape(alt)}">'
             f"</figure>\n"
         )
 
@@ -233,7 +338,7 @@ def to_leaves(inner: str) -> str:
 
 def convert(note: Path, dest: Path, spine: str) -> None:
     raw = strip_yaml(note.read_text(encoding="utf-8"))
-    md = preprocess(raw)
+    md = preprocess(raw, dest)
     engine = markdown.Markdown(
         extensions=["tables", "fenced_code", "sane_lists", "nl2br"],
         output_format="html",
@@ -273,21 +378,32 @@ window.MathJax = {{
     dest.write_text(doc, encoding="utf-8")
 
 
+def sketchbooks() -> list[Path]:
+    return sorted(p for p in ROOT.rglob("*.md") if is_sketchbook(p))
+
+
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("note", help="vault-relative path to a sketchbook .md")
+    p.add_argument("note", nargs="?", help="vault-relative path to a sketchbook .md")
+    p.add_argument("--all", action="store_true", help="convert every sketchbook")
     p.add_argument(
         "--spine",
         default="datazines · a sketchbook",
         help="tiny line above the hero leaf",
     )
     args = p.parse_args()
-    note = (ROOT / args.note).resolve()
-    if not note.is_file():
-        sys.exit(f"missing note: {note}")
-    dest = ROOT / "html" / f"{note.stem}.html"
-    convert(note, dest, args.spine)
-    print(f"wrote {dest.relative_to(ROOT)}")
+    if args.all:
+        notes = sketchbooks()
+    elif args.note:
+        notes = [(ROOT / args.note).resolve()]
+        if not notes[0].is_file():
+            sys.exit(f"missing note: {notes[0]}")
+    else:
+        sys.exit("pass a note path, or --all")
+    for note in notes:
+        dest = html_dest_for(note)
+        convert(note, dest, args.spine)
+        print(f"wrote {dest.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":
