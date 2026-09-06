@@ -90,6 +90,14 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | 01 | [[01 PCA]] | no y. turn the sausage. drop the thin axis |
 | 02 | [[02 k-means]] | no y. paint k rooms. you pick k |
 
+**Fundamentals (path page 4, now standing):**
+
+| # | note | idea in one breath |
+|--:|---|---|
+| 01 | [[01 train test validate]] | leftover on new people; if you tune, hide a third pile |
+| 02 | [[02 bias variance]] | jumpy knobs vs shy sit; you buy one with the other |
+| 03 | [[03 metrics]] | accuracy can clap for always-fail; precision / recall pick a wall |
+
 **Nets (path page 4, now standing):**
 
 | # | note | idea in one breath |
@@ -129,6 +137,7 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | `ts-` | time series |
 | `pc-` | PCA / unsupervised |
 | `km-` | k-means |
+| `fm-` | fundamentals / train-test |
 | `sb-` | this receipt |
 
 Hero of each note is `*-00-hero.svg`. Embed as ordinary markdown so GitHub can render it. Path is **relative to the note**:
@@ -139,7 +148,7 @@ Hero of each note is `*-00-hero.svg`. Embed as ordinary markdown so GitHub can r
 
 From a nested family note that is two folders down: `![lr-00-hero](../../assets/lr-00-hero.svg)`. Do not use `![[…]]` — GitHub prints that as text.
 
-Empty slots on the lower shelf are not decoration. The **walk** is [[PATH.md]]. Descent, distributions, softmax, a tiny net, embeddings, attention, one LLM sketchbook, a t-test, cause 01–02, bootstrap, time 01, PCA, and k-means are written. **Remaining rooms get written, short. Order not locked.** SVM, fundamentals (train/test, bias–variance, metrics), Bayes (road to PyMC), RL, MCMC, beta — they belong. Do not start a wing from the summit. Do not omit a topic because it is fancy. Do not shorten ridge / lasso / LARS unless asked.
+Empty slots on the lower shelf are not decoration. The **walk** is [[PATH.md]]. Descent, distributions, softmax, a tiny net, embeddings, attention, one LLM sketchbook, a t-test, cause 01–02, bootstrap, time 01, PCA, k-means, and fundamentals 01–03 (train/test, bias–variance, metrics) are written. **Remaining rooms get written, short. Order not locked.** SVM, Bayes (road to PyMC), RL, MCMC, beta — they belong. Do not start a wing from the summit. Do not omit a topic because it is fancy. Do not shorten ridge / lasso / LARS unless asked.
 
 ---
 
@@ -298,7 +307,7 @@ Classification, ensembles, distributions — same ritual:
 5. Open with hero + one sentence. Close with: mini recipe → **sklearn mini (story + numbers match)** → cheat sheet **with Use / skip** → sequel pointer.
 6. Come back here and put the new spines on the shelf (a line in the table on page 1 is enough). Do not rewrite the house rules unless the rules were wrong.
 
-**Next spine:** [[PATH.md]] — remaining rooms, short, **order not locked**. SVM, fundamentals, Bayes (not PyMC as 01), RL (not PPO as 01). Do not start a wing from the summit. Do not omit a topic because it is fancy.
+**Next spine:** [[PATH.md]] — remaining rooms, short, **order not locked**. SVM, Bayes (not PyMC as 01), RL (not PPO as 01). Do not start a wing from the summit. Do not omit a topic because it is fancy.
 
 **The site (later):** [datazines.com](https://datazines.com) is these zines in a browser. Notes stay markdown. HTML is a leaf, not a new personality. Recipe: [[html/README.md]]. Converter: `scripts/note_to_html.py`. Drawings stay **SVG**. Do not start the site from a blog theme.
 

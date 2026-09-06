@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" role="img" aria-label="four rooms: true no/yes vs guessed no/yes">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="420" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="420" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#7a6e5e" text-anchor="middle">two ways to be wrong.</text>
+<text x="455" y="78" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">guessed no</text>
+<text x="635" y="78" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">guessed yes</text>
+<text x="70" y="175" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="start">really fail</text>
+<text x="70" y="305" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="start">really pass</text>
+<rect x="360" y="100" width="170" height="120" rx="8" fill="#4f6d55" opacity="0.14" stroke="#4f6d55" stroke-width="2"/>
+<text x="445" y="150" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="28" fill="#4f6d55" text-anchor="middle">13</text>
+<text x="445" y="185" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#4f6d55" text-anchor="middle">true no</text>
+<rect x="550" y="100" width="170" height="120" rx="8" fill="#c4a35a" opacity="0.16" stroke="#c4a35a" stroke-width="2"/>
+<text x="635" y="150" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="28" fill="#c4a35a" text-anchor="middle">0</text>
+<text x="635" y="185" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#c4a35a" text-anchor="middle">false alarm</text>
+<rect x="360" y="240" width="170" height="120" rx="8" fill="#b44a28" opacity="0.14" stroke="#b44a28" stroke-width="2"/>
+<text x="445" y="290" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="28" fill="#b44a28" text-anchor="middle">6</text>
+<text x="445" y="325" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="middle">miss</text>
+<rect x="550" y="240" width="170" height="120" rx="8" fill="#3d5f86" opacity="0.14" stroke="#3d5f86" stroke-width="2"/>
+<text x="635" y="290" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="28" fill="#3d5f86" text-anchor="middle">5</text>
+<text x="635" y="325" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#3d5f86" text-anchor="middle">true yes</text>
+<text x="380" y="392" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">logistic, cut 0.5. never a false alarm. missed six passers.</text>
+</svg>

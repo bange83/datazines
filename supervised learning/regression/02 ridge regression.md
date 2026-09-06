@@ -177,7 +177,7 @@ A name for this, if you want one:
 
 Ridge buys lower variance with a little bias. For prediction, that deal is often excellent.
 
-You are not trying to be unbiased and heroic. You are trying not to flail.
+You are not trying to be unbiased and heroic. You are trying not to flail. The dartboard as its own notebook: [[02 bias variance]].
 
 ---
 
@@ -240,7 +240,7 @@ The curve of “error on new data” is usually a U:
 - λ too big → too shy → also bad
 - somewhere in the middle: **sweet spot**
 
-You do not need the formula. You need the habit: **tune on held-out pain, not on pride.**
+You do not need the formula. You need the habit: **tune on held-out pain, not on pride.** The ritual as its own notebook: [[01 train test validate]].
 
 ---
 

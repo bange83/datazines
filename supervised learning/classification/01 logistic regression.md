@@ -168,7 +168,7 @@ P(pass | 5 hours) = 0.98
 accuracy on these 80 = 0.838
 ```
 
-Three hours: still a coin with a lean (0.64). Five hours: almost sure (0.98). The S climbed. Accuracy 0.84 is on *these* people — pride, like R² without a split.
+Three hours: still a coin with a lean (0.64). Five hours: almost sure (0.98). The S climbed. Accuracy 0.84 is on *these* people — pride, like R² without a split. Pass is common here, so always-fail would look *worse*. When yes is rare, accuracy can clap for always-fail ([[03 metrics]]).
 
 `predict_proba` is the S. `predict` is the 0.5 cut. Do not copy this unscaled one-column fit onto hours *and* minutes. The inside is still a line; size of a knob starts to matter.
 

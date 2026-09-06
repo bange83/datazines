@@ -41,6 +41,7 @@ inference/             01–02  t-test, bootstrap (leftover replayed)
 causal/                01–02  confounding, causal impact (actual − would-have)
 time series/           01     lag, trend, season
 unsupervised/          01–02  PCA, k-means (no y; sausage, then rooms)
+fundamentals/            01–03  train / test; bias vs variance; metrics
 assets/                drawings (prefix per series: lr-, rr-, dt-, nn-, …)
 html/                  browser zines (prototype: linear 01). recipe in html/README.md
 scripts/note_to_html.py  markdown note → paper leaf (live SVG)
@@ -48,7 +49,7 @@ AGENTS.md              how to write the next note
 PATH.md                which shelf is next
 ```
 
-**Next brick:** remaining rooms, short. Order not locked. SVM, fundamentals, Bayes (road to PyMC), RL belong. Not PyMC / PPO as 01.
+**Next brick:** remaining rooms, short. Order not locked. SVM, Bayes (road to PyMC), RL belong. Not PyMC / PPO as 01.
 
 ## Viewing
 

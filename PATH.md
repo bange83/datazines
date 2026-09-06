@@ -61,8 +61,11 @@ Same pencils as always. Same “one idea per page.” New family = new folder at
 - [[02 causal impact]] — actual − would-have, after a start date
 - [[01 PCA]] — no y; turn the sausage; drop the thin axis
 - [[02 k-means]] — no y; paint k rooms; you pick k
+- [[01 train test validate]] — leftover on new people; if you tune, hide a third pile
+- [[02 bias variance]] — jumpy knobs vs shy sit; you buy one with the other
+- [[03 metrics]] — accuracy can clap for always-fail; precision / recall pick a wall
 
-You already own: score, leftover, tax, squash, impurity, vote vs chain, learning rate (as volume), a tiny net, a lookup table of points, a look, a next-token pile, a judge for a mean and a slope, see vs do, leftover replayed without a bell, a series with a holdout in time, a gap vs would-have, a cloud with no grade, rooms in that cloud. That is the furniture later wings reuse.
+You already own: score, leftover, tax, squash, impurity, vote vs chain, learning rate (as volume), a tiny net, a lookup table of points, a look, a next-token pile, a judge for a mean and a slope, see vs do, leftover replayed without a bell, a series with a holdout in time, a gap vs would-have, a cloud with no grade, rooms in that cloud, leftover on **new** people, jumpy vs shy, accuracy that can clap for always-fail. That is the furniture later wings reuse.
 
 **Order, not a ban.** SVM, kernels, MCMC, BSTS, another boosting dialect, fundamentals, Bayes, RL — they belong in the building. Write them **after** their 01, **short**. Do not start a wing from the summit. Do not fatten one brand into a second textbook. Ridge / lasso / LARS stay as written until someone asks to cut.
 
@@ -81,7 +84,7 @@ Write **left to right**. Inside a wing, 01 is the ordinary idea.
 | **5. Nets** | `neural nets/` | a tiny net | softmax; embeddings; attention; transformer / LLM (one sketchbook, not a career) |
 | **6. Time** | `time series/` | lag, trend, season | holdouts in time; simple forecast; *then* causal impact on a series |
 | **7. Unsupervised** | `unsupervised/` | “no y” | PCA as rotating the cloud; k-means; a page on embeddings you already have |
-| **8. Fundamentals** | `fundamentals/` | leftover on **new** people | train / test / validate; bias vs variance; metrics (RMSE, accuracy, precision / recall); significance already lives in [[01 t-test]] — don’t clone it as 01 |
+| **8. Fundamentals** | `fundamentals/` | leftover on **new** people | *01–03 standing* (train/test, bias–variance, metrics). Significance already lives in [[01 t-test]] |
 | **9. Bayes** | `bayes/` | a prior is a starting costume | beta; posterior; MCMC; **PyMC is the engine, not 01** |
 | **10. Act** | `rl/` | state, action, reward, next state | bandits; Q; policy gradient; not PPO / DQN as 01 |
 
@@ -93,7 +96,7 @@ Rooms on the map get written. Short. In the wing they belong to. **Which remaini
 
 ![pa-03-next](assets/pa-03-next.svg)
 
-**Written:** [[01 gradient descent]] · [[01 distributions]] · [[03 softmax]] · [[01 neural net]] · [[02 embeddings]] · [[03 attention]] · [[04 LLM]] · [[01 t-test]] · [[01 confounding]] · [[02 bootstrap]] · [[01 lag trend season]] · [[02 causal impact]] · [[01 PCA]] · [[02 k-means]]
+**Written:** [[01 gradient descent]] · [[01 distributions]] · [[03 softmax]] · [[01 neural net]] · [[02 embeddings]] · [[03 attention]] · [[04 LLM]] · [[01 t-test]] · [[01 confounding]] · [[02 bootstrap]] · [[01 lag trend season]] · [[02 causal impact]] · [[01 PCA]] · [[02 k-means]] · [[01 train test validate]] · [[02 bias variance]] · [[03 metrics]]
 
 No *y*. The sausage is rotated. The rooms are painted.
 
@@ -101,7 +104,6 @@ No *y*. The sausage is rotated. The rooms are painted.
 
 - SVM / margin (after logistic / LDA)
 - thicker chance: beta next to bell / coin / counts — still not a 40-curve zoo
-- fundamentals: train / test / validate; bias–variance; validation metrics
 - Bayes 01 (prior) → MCMC → PyMC as engine
 - RL 01 (the loop) — later bandits / Q / policy
 - BSTS as an engine for would-have, not as cause 01
@@ -169,9 +171,9 @@ If you keep only one thing:
 |---|---|
 | building | data-science encyclopedia, sketchbook voice |
 | LLM | one room, nets wing, after GD + softmax + a tiny net |
-| standing | supervised + GD + distributions + softmax + tiny net + embeddings + attention + LLM + t-test + cause + bootstrap + time + impact + PCA + **k-means** |
+| standing | supervised + GD + distributions + softmax + tiny net + embeddings + attention + LLM + t-test + cause + bootstrap + time + impact + PCA + k-means + train/test + bias–variance + **metrics** |
 | **next** | remaining rooms, **short** — order not locked |
-| named, not next | SVM · fundamentals (train/test, bias–variance, metrics) · Bayes (prior → MCMC → PyMC) · RL 01 (the loop) · beta · BSTS-as-engine |
+| named, not next | SVM · Bayes (prior → MCMC → PyMC) · RL 01 (the loop) · beta · BSTS-as-engine |
 | don’t | skip a topic; start PyMC / PPO / BSTS as 01; fatten one brand into a textbook; write notes in German |
 | style | [[AGENTS.md]] |
 

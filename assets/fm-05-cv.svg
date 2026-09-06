@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300" role="img" aria-label="three folds: hide a third of the trainers">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="300" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="300" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380" y="32" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#7a6e5e" text-anchor="middle">too few to split three ways? rotate the hide.</text>
+<rect x="100" y="55" width="140" height="36" rx="6" fill="#b44a28" opacity="0.22" stroke="#b44a28" stroke-width="1.6"/>
+<text x="170" y="79" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="middle">hide</text>
+<rect x="250" y="55" width="140" height="36" rx="6" fill="#4f6d55" opacity="0.18" stroke="#4f6d55" stroke-width="1.6"/>
+<text x="320" y="79" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#4f6d55" text-anchor="middle">fit</text>
+<rect x="400" y="55" width="140" height="36" rx="6" fill="#4f6d55" opacity="0.18" stroke="#4f6d55" stroke-width="1.6"/>
+<text x="470" y="79" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#4f6d55" text-anchor="middle">fit</text>
+<rect x="100" y="115" width="140" height="36" rx="6" fill="#4f6d55" opacity="0.18" stroke="#4f6d55" stroke-width="1.6"/>
+<text x="170" y="139" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#4f6d55" text-anchor="middle">fit</text>
+<rect x="250" y="115" width="140" height="36" rx="6" fill="#b44a28" opacity="0.22" stroke="#b44a28" stroke-width="1.6"/>
+<text x="320" y="139" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="middle">hide</text>
+<rect x="400" y="115" width="140" height="36" rx="6" fill="#4f6d55" opacity="0.18" stroke="#4f6d55" stroke-width="1.6"/>
+<text x="470" y="139" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#4f6d55" text-anchor="middle">fit</text>
+<rect x="100" y="175" width="140" height="36" rx="6" fill="#4f6d55" opacity="0.18" stroke="#4f6d55" stroke-width="1.6"/>
+<text x="170" y="199" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#4f6d55" text-anchor="middle">fit</text>
+<rect x="250" y="175" width="140" height="36" rx="6" fill="#4f6d55" opacity="0.18" stroke="#4f6d55" stroke-width="1.6"/>
+<text x="320" y="199" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#4f6d55" text-anchor="middle">fit</text>
+<rect x="400" y="175" width="140" height="36" rx="6" fill="#b44a28" opacity="0.22" stroke="#b44a28" stroke-width="1.6"/>
+<text x="470" y="199" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="middle">hide</text>
+<text x="70" y="79" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">1</text>
+<text x="70" y="139" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">2</text>
+<text x="70" y="199" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">3</text>
+<text x="380" y="248" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">on the 21 trainers. test 9 still sits in a drawer.</text>
+<text x="380" y="276" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">ridge page 11 already drew this. here it is the whole job.</text>
+</svg>
