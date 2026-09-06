@@ -7,91 +7,79 @@ aliases:
   - Session receipt
 ---
 
-# Handoff — 6 Sep 2026
+# Handoff — 6 Sep 2026 (evening)
 
 > [!abstract] In one sentence
-> The encyclopedia is **feature-frozen**. No new wings, no new rooms. Next: **fix, refine, then magazine leaves on datazines.com.**
+> Encyclopedia still **frozen**. Today: human door cleaned, press nests leaves and **clicks wikilinks**, every sketchbook converted. Next: **debug-read the HTML**, then a desk on datazines.com.
 
-Read [[AGENTS.md]] for *how*. Read [[PATH.md]] for *what exists*. A human’s door is [[00 how to read this]]. This file is only **what this stretch of work closed**, and what the next session is allowed to do.
+Read [[AGENTS.md]] for *how*. Read [[PATH.md]] for *what exists*. A human’s door is [[00 how to read this]]. This file is what closed today, and what the next session may do.
 
 Flip it like a notebook. One page = one idea. Done.
 
 ---
 
-## Page 1 — Freeze
+## Page 1 — Freeze (unchanged)
 
 **Do not write:** a new 01, a new family folder, BSTS, policy-as-04, k-NN, naive Bayes, A/B, F1/ROC, PyMC, PPO, tokenizer-as-wing, a second LLM.
 
-**Do:** bugfix drawings and numbers; tighten prose; keep sklearn/numpy stdout **run**, not guessed; convert notes to HTML zines; desk/index for [datazines.com](https://datazines.com).
+**Do:** bugfix drawings and numbers; tighten prose; stdout **run**, not guessed; HTML zines; desk for [datazines.com](https://datazines.com).
 
-Ridge / lasso / LARS: still do not shorten unless asked. Notes stay **English**. Chat language does not change that.
-
-The map still names deferred extras (BSTS, a policy page). They are **not** this freeze’s job.
+Ridge / lasso / LARS: do not shorten unless asked. Notes **English**. No emoji in the zines. One paper, whole site — not a palette per wing.
 
 ---
 
-## Page 2 — What landed (this stretch)
+## Page 2 — What closed today
 
-Enough that every PATH wing has an 01, plus the human door. Interview library, not a complete field.
+**Door ([[00 how to read this]]):** reader-only. No PATH / AGENTS / HANDOFF. “S” → **s-shaped / s-curve**. Four classrooms named by **job**, not two 80s:
 
-| note | idea |
-|---|---|
-| [[00 how to read this]] | library, not a ladder; leftover; four classrooms |
-| [[04 SVM]] | fattest street; only the curb holds the fence |
-| [[02 beta]] | coin’s cousin: bump on unknown *P* |
-| [[01 prior]] | start → data → posterior; add the yeses |
-| [[02 MCMC]] | cannot add? walk the height; the pile is the bump |
-| [[01 the loop]] | state, action, reward, next |
-| [[02 bandits]] | one room, many arms; try or cash; no next |
-| [[03 Q]] | from here, this act, points from now on |
+| class | *y* | *n* (side fact) |
+|---|---|---:|
+| **the line** | grade | 8 |
+| **twins** | grade + minutes | 30 |
+| **pass / fail** | yes / no | 80 |
+| **unlabeled** | none | 80 |
 
-Also standing from earlier on the same freeze (do not reopen as “missing 01”): fundamentals 01–03, k-means, nets 01–04, cause, time, inference.
+Do **not** bump one crowd to 100 to dodge the double 80. Headcounts live in the notebooks; the door leads with the job.
 
-**Reader zines** do not name PyMC / NUTS as 01. Writer maps (PATH, AGENTS) may still say “engine, not 01.”
+**Copilot review:** skip interview-trap boxes, glossary, classroom stamps. Two beats landed: ridge page 9 (λ = 0 vs huge λ); logistic page 4 (2h 1:1 → +1 hour ×3 odds → 75/25).
 
----
+**Press (`scripts/note_to_html.py`):**
 
-## Page 3 — Four classrooms (do not mix)
+- `html/` **mirrors the vault** (`html/supervised learning/regression/01 linear regression.html`).
+- Images climb to vault `assets/` (`../` × depth).
+- `[[01 logistic regression]]` → `<a href>` to that leaf. Aliases resolve. Writer maps stay spans.
+- `--all` converts every sketchbook. Skip PATH, AGENTS, HANDOFF, README, Copilot Feedback, hidden folders.
+- **37 leaves** written. Flat `html/01 linear regression.html` removed.
 
-| class | *y* | used by |
-|---|---|---|
-| **eight** | grade | the line, t-test, bootstrap, eight coins (beta / prior / MCMC) |
-| **thirty graders** | grade + twins | ridge → LARS, train/test, bias–variance |
-| **eighty pass/fail** | pass | logistic, LDA, SVM, tree, forest, metrics |
-| **eighty unlabeled** | none | PCA, k-means |
-
-“Same people” means **this classroom**. Thirty is not eighty. A grade is not a pass.
+Recipe: [[html/README.md]]. Debug-read from [[html/00 how to read this.html]].
 
 ---
 
-## Page 4 — Site (the actual next product)
+## Page 3 — Site (still the product)
 
-Vault = source. HTML = **leaf of paper** ([[html/README.md]]). Converter: `scripts/note_to_html.py`. **SVG, never PNG.** Not a blog theme.
+Vault = source. HTML = leaf. **SVG, never PNG.** Not a blog theme. One style, whole desk.
 
-**Standing in the browser:** only [[html/01 linear regression.html]].
+**Standing:** nested `html/` tree, links between converted zines, drawings if you open from a file URL that can still see `assets/` (or serve repo root).
 
-**First ship, small desk:**
+**Not yet:**
 
-1. Convert [[00 how to read this]] — homepage.
-2. Convert [[01 linear regression]], [[01 logistic regression]], [[01 train test validate]].
-3. Open in a browser: hero drawing, a formula, stdout fence, Use / skip.
-4. Index: 00 as the door; those three as the first shelves.
+- A homepage **index** of covers (00 is a zine, not a shelf of cards).
+- GitHub Pages wiring (`.nojekyll`, custom domain, web root so `/assets/` and nested html both resolve).
+- Watcher / “convert only what changed” — full `--all` is seconds; forgetting to convert is the real cost.
 
-Then more leaves. Do not wait for BSTS.
+**GitHub Pages:** good host for **HTML + assets**. github.com markdown is **not** the magazine (wikilinks won’t walk). Prefer Pages over Jekyll-from-md.
+
+**First ship, when the leaves look right:** 00 as door; linear 01, logistic 01, train/test 01 as the first walk; then the rest. Do not wait for BSTS.
 
 ---
 
-## Page 5 — Polish, not new rooms
+## Page 4 — Next session
 
-Fix when you see it:
-
-- Drawing vs caption (line must hit the intercept; bowls are dips; blobs match the table).
-- Printout vs page (run the snippet; paste **that** stdout).
-- “Same eighty” when the family moved to thirty (or the reverse).
-- PyMC / brand names in **reader** notes.
-- Wikilinks both ways on sequels.
-
-Optional later (v1.1, **after** freeze lifts): k-NN, naive Bayes, A/B as short sequels. Not now.
+1. Open HTML in a browser. Walk wikilinks from 00. Check a nested leaf (regression) for drawings.
+2. Fix converter bugs you actually see (broken href, wrong `../` count, MathJax). Do not restyle as a blog.
+3. Optional: tiny index generator (same paper CSS) — not a unique homepage personality.
+4. Pages: `.nojekyll`; decide web root (`html/` vs repo root) so assets and links both live.
+5. Still freeze. Still no new rooms.
 
 ---
 
@@ -100,20 +88,21 @@ Optional later (v1.1, **after** freeze lifts): k-NN, naive Bayes, A/B as short s
 | | |
 |---|---|
 | freeze | no new wings / rooms |
-| allowed | bugs, refine, HTML zines |
-| door | [[00 how to read this]] |
-| how | [[AGENTS.md]] |
-| map | [[PATH.md]] |
-| site recipe | [[html/README.md]] |
-| browser now | one leaf — linear 01 |
-| next product | magazine desk on datazines.com |
+| allowed | bugs, refine, HTML |
+| door | [[00 how to read this]] — job names, *n* as side fact |
+| press | `python3 scripts/note_to_html.py --all` |
+| leaves | `html/<vault folders>/<stem>.html` |
+| links | wiki → sibling leaves |
+| browser start | [[html/00 how to read this.html]] |
+| host | GitHub Pages for HTML, not for raw md as the zine |
+| next | debug-read → desk on datazines.com |
 
 ### Use / skip
 
 **Reach for this file** at the start of a session during the freeze.
 
-**Skip** opening PATH to pick “what 01 we write.” That list is frozen.
+**Skip** opening PATH to pick a new 01. Skip emoji. Skip a second palette.
 
 ---
 
-*Handoff 6 Sep 2026. Encyclopedia frozen. Next: paper in a browser.*
+*Handoff 6 Sep 2026, evening. Rooms frozen. Leaves nested. Next: read them in a browser.*
