@@ -195,6 +195,8 @@ The best allowed point is where an error-ring just kisses the circle.
 
 Bigger λ → smaller circle → smaller knobs.
 
+λ = 0: the circle is the whole page. You sit at ordinary’s point. λ huge: the circle is a dot at the origin. Knobs ≈ 0. The line is the plain average.
+
 Same idea as the tax. Just drawn as a fence.
 
 ---

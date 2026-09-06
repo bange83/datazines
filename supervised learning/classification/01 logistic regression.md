@@ -81,9 +81,11 @@ What *is* constant is a different count: **how many yeses per no.** People call 
 50/50: one yes per no. Odds **1 : 1**.
 75/25: three yeses per no. Odds **3 : 1**.
 
+Say 2 hours is 50/50 (odds 1 : 1). One extra hour, if *e^b* = 3: now 3 : 1. That is **75/25**. P only went 0.50 → 0.75. The pile of yeses tripled relative to nos. P did not triple.
+
 ![lg-05-odds](../../assets/lg-05-odds.svg)
 
-Odds got **×3**. P only went 0.50 → 0.75. Same factor on the odds, every time you add 1 to *x*. Not the same jump in P.
+Same factor on the odds, every time you add 1 to *x*. Not the same jump in P.
 
 That factor is *e^b*. The name can wait.
 
