@@ -51,7 +51,7 @@ Every evening two urges:
 - **Cash** — pull the arm that looks best so far.
 - **Try** — pull one you have barely met, in case it is secretly study.
 
-Always cash too soon and you never meet study. Always try and you waste nights on scroll. The leftover is the **sum of pulls**. The miss versus always-study (if you had known) is **regret**.
+Always cash too soon and you never meet study. Always try and you waste nights on scroll. The score is the **sum of pulls**. The miss versus always-study (if you had known) is **regret**.
 
 You cannot start by cashing study. You have not met it yet.
 

@@ -211,7 +211,7 @@ near coffee phone 0.96  noise 0.96  scroll 0.95
 
 One-hot: study and hours share **nothing**. Embed: **0.99**, and they sit at (4.46, 1.02) and (5.23, 1.77) — the huddle on page 3. Sleep is another neighborhood (cosine **−0.39** with study). Coffee’s neighbors are phone, noise, scroll — junk, as written.
 
-PCA on co-occurrence is a **sketch** of the table. Word2vec and an LLM walk the same idea with leftover. Dim 2 is so we can draw it. Do not ship 2-d as a language model.
+PCA on co-occurrence is a **sketch** of the table. Cosines on this page are in that **2-d drawing** — angles can warp. Word2vec and an LLM walk the same idea with leftover, in fatter dimensions. Dim 2 is so we can draw it. Do not ship 2-d as a language model.
 
 ---
 

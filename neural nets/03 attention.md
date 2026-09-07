@@ -18,7 +18,7 @@ aliases:
 
 Read [[02 embeddings]] first. Same exam notes. Same 2-d points. Softmax ([[03 softmax]]) is the sharing. The tiny net ([[01 neural net]]) still waits after the mix.
 
-This is 03 of the nets wing. A transformer is attention + a net, stacked. Not this file.
+This is 03 of the nets wing. A transformer is attention + a net, stacked. Not this file. This look is **all directions** — a postcard of mix. An LLM that predicts the next word must **look left** only (a mask). Positions are extra. Not this notebook.
 
 Flip it like a notebook. One page = one idea. Done.
 

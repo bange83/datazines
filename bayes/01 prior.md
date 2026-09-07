@@ -145,7 +145,7 @@ prior  Beta(2,8) sure-no     mean 0.200   5% 0.041   95% 0.429
 post   Beta(5,13)            mean 0.278   5% 0.124   95% 0.461
 ```
 
-Shrug → 0.40, wide. Sure-yes → 0.61 (truth was 0.6 — luck plus a loud start). Sure-no → 0.28. Ordinary 3/8 = 0.375 is the shrug posterior’s neighbor, with no shoulders. `ppf` is the bump, not a CI from a t-test.
+Shrug → 0.40, wide. Sure-yes → 0.61 (truth was 0.6 — luck plus a loud start). Sure-no → 0.28. Ordinary 3/8 = 0.375 is the shrug posterior’s neighbor, with no shoulders. `ppf` prints the **percentiles** of the bump (5% and 95%), not a t-test interval.
 
 ---
 

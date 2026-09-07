@@ -30,7 +30,7 @@ Flip it like a notebook. One page = one idea. Done.
 
 The posterior is also a height on knob-land: how much this *P* likes the coins, times the prior. If you only sit at the peak, you get a point. Bayes wanted a **bump** — mean *and* width.
 
-So you walk **around**, not only down. Visit high places often, low places rarely. The histogram of visits *is* the posterior.
+So you walk **around**, not only down. Visit high places often, low places rarely. After you drop the first stretch, the histogram of visits is a **sketch** of the posterior — if the walk mixed. Short chain, still a whisper.
 
 People call this **Markov chain Monte Carlo**. Ugly. Friendly job: *wander the bump; the pile is the answer.*
 
@@ -47,7 +47,7 @@ Stand at a *P*. Propose a neighbor (a small nudge).
 - **Higher** posterior? Keep it.
 - **Lower**? Keep it with chance = new height / old height. Sometimes go downhill. That is how you still visit the shoulders.
 
-If the neighbor is outside 0–1, stay. Repeat. Throw away the first stretch (you started at 0.5; that was a guess). The rest is the pile.
+If the neighbor is outside 0–1, stay. Repeat. Throw away the first stretch (you started at 0.5; that was a guess). The rest is the pile — **if** later steps still wander and do not stick in one pocket.
 
 Quiet nudge: you crawl, accept almost everything. Loud nudge: you jump, reject a lot. Interview stride here: **0.12**. Accept rate **0.77**. Not a moral.
 

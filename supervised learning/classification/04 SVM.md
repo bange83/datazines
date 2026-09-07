@@ -59,11 +59,11 @@ You do not need P(yes) to draw this. You need two clumps and a gap.
 
 Fit the fence. Most people sit deep in fail or deep in pass. They do not touch the street. **Move them a little and the fence does not move.**
 
-The people sitting **on the dashed curbs** hold the fence. Push one of those, the street tilts.
+The people who **hold** the fence are the support vectors. On a dream street they sit on the dashed curbs. With trespass allowed (our `C=1`), they can also sit **in** the gutter or on the wrong side. Push one of those, the street tilts.
 
-People call them **support vectors**. That is the whole name: the machine is those vectors. On our 56 trainers, a linear SVM keeps **12 fail + 12 pass = 24**. The other 32 are decoration.
+On our 56 trainers, a linear SVM keeps **12 fail + 12 pass = 24**. The other 32 are decoration — deep interior, silent.
 
-Logistic: every person tugs the S a little. SVM: the interior is silent.
+Logistic: every person tugs the S a little. SVM: only the holders vote.
 
 ---
 

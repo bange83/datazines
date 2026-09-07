@@ -12,7 +12,7 @@ aliases:
 # PCA — a sketchbook
 
 > [!abstract] In one sentence
-> No *y*. **Turn the cloud** so the first axis runs along the sausage. Drop the thin directions. Scale first, or the fattest *unit* wins.
+> No *y*. **Turn the cloud** so the first axis runs along the sausage. Drop the thin directions. Scale when units are a spelling difference, or the fattest *unit* wins.
 
 ![pc-00-hero](../assets/pc-00-hero.svg)
 
@@ -88,7 +88,7 @@ This is **not** a grade line. There is no ŷ. There is a thinner cloud that stil
 ## Page 5 — Mini recipe
 
 1. **No y.** If you have a grade to guess, go back to [[01 linear regression]].
-2. **Scale.** Always. Minutes will eat PC1 if you don’t.
+2. **Scale** when units are a spelling difference (hours vs minutes). Minutes will eat PC1 if you don’t. If the fat direction *is* the fact, leave it.
 3. **Rotate.** First axis = longest sausage.
 4. **Read the loadings.** Twins should share PC1. Their fight should be a thin PC.
 5. **Keep the fat bars.** Drop the 0.1%.
@@ -151,7 +151,7 @@ recon mse 1 PC 0.499
 recon mse 2 PC 0.239
 ```
 
-Unscaled: minutes **1.00**, story dead. Scaled: PC1 twins share 0.70 / 0.70, keep half the scatter. PC4 is hours minus minutes — **0.1%**. Reconstruct with 2 PCs: leftover² 0.239 on scaled columns. `StandardScaler` is not optional. `components_` are the directions; `explained_variance_ratio_` are the bars.
+Unscaled: minutes **1.00**, story dead — here the fat axis is a **unit**, not a fact. Scaled: PC1 twins share 0.70 / 0.70, keep half the scatter. PC4 is hours minus minutes — **0.1%**. Reconstruct with 2 PCs: leftover² 0.239 on scaled columns. `StandardScaler` when spelling differs. `components_` are the directions; `explained_variance_ratio_` are the bars.
 
 ---
 
@@ -162,7 +162,7 @@ Unscaled: minutes **1.00**, story dead. Scaled: PC1 twins share 0.70 / 0.70, kee
 | no y | unsupervised — a cloud, not a grade |
 | PC | a new axis, longest leftover first |
 | loading | how much each old lever sits on that PC |
-| scale | always, or the fat unit wins |
+| scale | when units are spelling; else the fat direction is the fact |
 | explained | share of scatter that PC keeps |
 
 **Also called:** sausage = first principal component · loading = how much a feature sits on that PC · lever = feature.

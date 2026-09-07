@@ -84,7 +84,7 @@ It copied the bigram table. Useful. Also blind.
 
 ![lm-04-lasttoken](../assets/lm-04-lasttoken.svg)
 
-*coffee study* wants **hours**. *exam study* wants **textbook**. Both end in `study`. Last-token sees only `study`, so it cannot split them. **Attention looks left.** That is why 03 sits under this room.
+*coffee study* wants **hours**. *exam study* wants **textbook**. Both end in `study`. Last-token sees only `study`, so it cannot split them. **Attention looks left** — a mask so the future cannot leak. The postcard in 03 looked all ways; next-token training cannot. That is why 03 sits under this room.
 
 ---
 
@@ -102,7 +102,7 @@ After `study`, P(hours):
 | 1 | **0.38** | as trained |
 | 2 | **0.18** | flatter, chatty |
 
-Use: **sample** from the slices. 0.5 repeats itself. 2 wanders. The scores did not change. You changed how brave the draw is — same politics as logistic’s 0.5 cut.
+Use: **sample** from the slices. 0.5 repeats itself. 2 wanders. The scores did not change. You changed how peaky the **pile** is before you draw. Logistic’s 0.5 cut is different: it keeps P and only changes the yes/no call.
 
 Tokenizer, context window, pretrain vs chat: extra pages when a project knocks. Not a second sketchbook.
 

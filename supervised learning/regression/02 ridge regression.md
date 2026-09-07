@@ -55,8 +55,10 @@ Ordinary least squares **must** chase that yank. Big misses cost a lot (they get
 On the old points it looks clever.
 Clever is not the same as true.
 
+Ridge is **not** the seatbelt for one wild *y*. It still squares leftover, so a yank still screams. Ridge’s job is **huge knobs**: few people, noisy *x*, or twins that fight. A single corner grade wants a check, or a method that does not square the miss — not λ.
+
 > [!tip] Margin note
-> Few points, noisy points, or two *x* that say almost the same thing: the ordinary line can go wild. Ridge is a seatbelt for that.
+> Few points, noisy *x*, or two *x* that say almost the same thing: the ordinary line can go wild. Ridge is a seatbelt for **that** — not for one weird grade.
 
 ---
 

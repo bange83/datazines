@@ -13,7 +13,7 @@ aliases:
 # Path — a library, not a ladder
 
 > [!abstract] In one sentence
-> This series is a **data-science encyclopedia** in sketchbooks. LLMs are **one room in the nets wing**, not the building. Walk wings in order so later rooms don’t go hollow.
+> This series is a **data-science encyclopedia** in sketchbooks. LLMs are **one room in the nets wing**, not the building. A **recommended route** so later rooms don’t go hollow — not a requirement to finish the building.
 
 ![pa-00-hero](assets/pa-00-hero.svg)
 
@@ -41,7 +41,7 @@ Same pencils as always. Same “one idea per page.” New family = new folder at
 
 ![pa-02-done](assets/pa-02-done.svg)
 
-**Supervised learning** (01–06 / 01–03 / 01–04 standing — do not fatten *those* notes; SVM still belongs, **short**):
+**Supervised learning** (regression 01–06, classification 01–04, ensembles 01–04 standing — do not fatten *those* notes):
 
 - Regression 01–06: line, tax, shortlist, mix, walk, glasses for *y*
 - Classification 01–04: S, blobs, **softmax**, SVM / margin

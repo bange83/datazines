@@ -24,11 +24,11 @@ Flip it like a notebook. One page = one idea. Done.
 
 ---
 
-## Page 1 — The campaign is a do() in time
+## Page 1 — The campaign has a start date
 
 Weeks 1–16: ordinary year. Trend up, break every fourth week.
 
-Week 17: extra office hours start. That is **do(campaign)**. Hours after that are mixed: what the year was going to do, plus whatever the extra hours did.
+Week 17: extra office hours start. Hours after that are mixed: what the year was going to do, plus whatever the extra hours did. This is **not** an experiment. Would-have has to carry the fork from [[01 confounding]]: no other shock at week 17, and the past still looks like the future without the campaign.
 
 The question is not “did post look higher than pre?” Pre is earlier in a climbing year. Of course post looks higher.
 
@@ -82,7 +82,7 @@ Would-have, same method: mean gap **+0.04**. Leftover. Not a campaign.
 
 If your start date is a passenger of the calendar, the counterfactual should shrug. If it shouts, you forgot season — or you picked the date after seeing the spike. That is still the fork.
 
-Bootstrap the pre leftover, 2000 bags ([[02 bootstrap]]): mean impact 0.51 to 0.82. Zero not in the pile. The fake start’s 0.04 would sit on zero. Interval, not a trophy *p*.
+Bootstrap the **pre** leftover, 2000 bags ([[02 bootstrap]]): mean gap 0.51 to 0.82. Zero not in *that* pile. This is leftover of the **would-have fit**, replayed — not a full causal interval (post rattles too; the fork is still an assumption). The fake start’s 0.04 would sit on zero. Sketch, not a trophy *p*.
 
 ---
 
@@ -165,7 +165,7 @@ Naive +1.78 steals the year. Gap vs would-have **+0.67** (planted 0.90 — lefto
 
 | word | meaning |
 |---|---|
-| start date | when do() begins |
+| start date | when the campaign begins |
 | would-have | series fitted on the past, projected |
 | impact | actual − would-have, after the start |
 | naive | post mean − pre mean (steals trend) |
@@ -179,9 +179,9 @@ Naive +1.78 steals the year. Gap vs would-have **+0.67** (planted 0.90 — lefto
 
 **Skip it when** ŷ for next week was the job ([[01 lag trend season]]); you already ran the experiment; you wanted BSTS / NUTS as the first file.
 
-**Pays you:** do() on a series without a second group. Naive called out. Season kept in the counterfactual so a break is not a campaign.
+**Pays you:** actual − would-have on one series. Naive called out. Season kept in the counterfactual so a break is not a campaign.
 
-**Costs you:** would-have is a guess (here 0.67 vs 0.90). A hidden fork in time remains hidden. Picking the start after seeing the spike is still coffee-only. BSTS later, same gap.
+**Costs you:** would-have is a guess (here 0.67 vs 0.90). A hidden fork in time remains hidden. Picking the start after seeing the spike is still coffee-only. The bootstrap here is leftover of the fit, not a full causal interval. BSTS later, same gap.
 
 ---
 

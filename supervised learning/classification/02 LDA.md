@@ -101,7 +101,7 @@ Name cheat:
 
 | | logistic | LDA |
 |---|---|---|
-| models | P(pass \| x) | the two clouds, then P(cloud \| x) |
+| models | P(pass \| x) | P(x \| class), then Bayes → P(class \| x) |
 | blobs | never drawn | the whole point |
 | boundary | a line (in score-land, an S) | a line, if shapes are shared |
 | extra assumption | linear score | Gaussian ovals, same shape |

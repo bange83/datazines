@@ -42,8 +42,10 @@ Then *P* itself is the unknown. It lives in **0–1**. A bell can spill below 0.
 
 People write Beta(α, β). Ugly. Friendly:
 
-- **α** — yes-ish mass (passers you are willing to imagine)
-- **β** — no-ish mass (failers you are willing to imagine)
+- **α** — yes-ish mass (passers you are willing to imagine — not a real count until you add data)
+- **β** — no-ish mass (failers you imagine)
+
+Beta(1, 1) is **flat**: I don’t know. It is not “I already saw one pass and one fail.” After you see tosses, you **add** them. Then the knobs start to look like counts.
 
 Mean = α / (α + β). Always in 0–1. Legal region, built in.
 

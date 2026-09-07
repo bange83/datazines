@@ -59,7 +59,7 @@ That miss wears costumes:
 | one room, many arms, no next | [[02 bandits]] |
 | from here, this act, points from now on | [[03 Q]] |
 
-Ridge taxes leftover. A t-test asks if leftover could have faked a number. A forest votes leftover away. Same verb. New costume.
+Ridge taxes **knobs**, not leftover. A t-test asks if leftover could have faked a number. A forest votes leftover away. Same verb. New costume.
 
 If you keep only one thing from the whole library:
 

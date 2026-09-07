@@ -62,4 +62,4 @@ Clone, then **Open folder as vault** in Obsidian. Note-to-note wikilinks (`[[01 
 
 Drawings use ordinary markdown images (`![](…svg)`), so they also render on GitHub.
 
-A browser leaf (same paper, live SVG): [`html/01 linear regression.html`](html/01%20linear%20regression.html). That layout is the seed of datazines.com.
+A browser leaf (same paper, live SVG): [`html/supervised learning/regression/01 linear regression.html`](html/supervised%20learning/regression/01%20linear%20regression.html). Door: [`html/00 how to read this.html`](html/00%20how%20to%20read%20this.html).

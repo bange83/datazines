@@ -149,6 +149,8 @@ mts = LinearRegression().fit(Xts[:20], y[:20])
 print("trend+season   holdout R²", round(mts.score(Xts[20:], y[20:]), 2),
       "  MAE", round(np.abs(mts.predict(Xts[20:]) - y[20:]).mean(), 2))
 
+# lag on the holdout uses the *previous actual* week — one-step-ahead
+# after each week arrives. Not a four-week forecast issued at week 20.
 Xf = np.column_stack([t, dummies, ylag])
 mf = LinearRegression().fit(Xf[:20], y[:20])
 print(" + lag         holdout R²", round(mf.score(Xf[20:], y[20:]), 2),
@@ -174,7 +176,7 @@ naive last-week MAE 0.89
 week type holdout [0, 1, 2, 3] (0=busy … 3=break)
 ```
 
-Shuffle looks kinder than the future (0.29 vs −0.28). Season turns the future honest (MAE 0.60 → 0.17) and catches week 24 (3.61 vs actual 3.72). Lag adds a hair. Copy-yesterday is the worst baseline on the page.
+Shuffle looks kinder than the future (0.29 vs −0.28). Season turns the future honest (MAE 0.60 → 0.17) and catches week 24 (3.61 vs actual 3.72). Lag adds a hair — **one-step-ahead** (each holdout week may use the previous actual). Not a four-week forecast frozen at week 20. Copy-yesterday is the worst baseline on the page.
 
 `t[:20]` is the past. `t[20:]` is later. `train_test_split` is the leak — printed so you can see it lie.
 

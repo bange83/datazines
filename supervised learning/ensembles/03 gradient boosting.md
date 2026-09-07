@@ -48,7 +48,7 @@ Same bricks (shallow trees). Different glue.
 
 You have met leftovers: *y − ŷ* on the grade line.
 
-Pass/fail is the same verb, **not** “tree 2 refits 0 or 1.” Tree 1 puts out a **score**. Squash to P(pass). Leftover = **y − P**. People call that the **gradient** of the loss. Hence the name.
+Pass/fail is the same verb, **not** “tree 2 refits 0 or 1.” Tree 1 puts out a **score**. Squash to P(pass). Leftover = **y − P**. That is the **downhill** of the loss (the negative gradient). Tree 2 walks that way. Hence the name.
 
 They failed (y = 0). Tree 1 still said score +0.5 → P ≈ 0.62. Leftover = 0 − 0.62 = **−0.62**. Tree 2 fits that pull toward fail — not a second binary label.
 

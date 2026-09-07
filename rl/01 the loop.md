@@ -13,7 +13,7 @@ aliases:
 # The loop — a sketchbook
 
 > [!abstract] In one sentence
-> You are in a **state**, you pick an **action**, the world pays a **reward** and lands you in a **next** state. Then again. Leftover is now a score you **chose**.
+> You are in a **state**, you pick an **action**, the world pays a **reward** and lands you in a **next** state. Then again. The score you collect is **reward**, not leftover.
 
 ![rl-00-hero](../assets/rl-00-hero.svg)
 
@@ -40,7 +40,7 @@ Four names:
 | **reward** | points this week (how the exam-life paid you) |
 | **next** | tired or fresh *after* that |
 
-People call the four-pack a **loop**. The policy is the rule: from this state, which action? The leftover is the **sum of rewards** you collect — not a miss on a grade.
+People call the four-pack a **loop**. The policy is the rule: from this state, which action? The **sum of rewards** is the score — not leftover (*y* − ŷ). Q later treats **target − Q** as the miss ([[03 Q]]).
 
 Cause asked what happens if you *do* the lever ([[01 confounding]]). RL *is* that do(), again and again, and the lever changes the next state.
 
@@ -201,7 +201,7 @@ Coin-flip **30.5**. Sensible **38.3**. Q’s greedy row is rest / study — the 
 
 ### Use / skip
 
-**Reach for it when** you **act**, the world **moves**, leftover is a **reward you chose**, and tonight vs later matters.
+**Reach for it when** you **act**, the world **moves**, the score is a **reward**, and tonight vs later matters.
 
 **Skip it when** one cloud and a line already work (supervised); you wanted P(yes) ([[01 logistic regression]]); you wanted a brand as 01.
 

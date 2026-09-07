@@ -127,9 +127,9 @@ Other lines, other *b* — just to feel the knob:
 
 The sentence to keep:
 
-> **b is the average effect of +1 on x.**
+> **b is the average change in ŷ when x grows by 1.**
 
-Not for *one* person. For the pattern in the cloud.
+Not for *one* person. For the pattern in the cloud. Not a cause — that is extra ([[01 confounding]]).
 
 ---
 
@@ -423,11 +423,11 @@ Same numbers as the sketchbook. `.score` is R² on *these* eight people — prid
 |---|---|
 | ŷ = a + b x | the line |
 | a | intercept (x = 0) |
-| b | slope, effect of +1 x |
+| b | slope: +1 x goes with +b on ŷ (pattern, not cause) |
 | ŷ | prediction (“y hat”) |
 | y | real value |
 | y − ŷ | residual / error |
-| R² | share of scatter explained on *these* people, 0 to 1 |
+| R² | share of scatter explained on *these* people (can go negative on new people) |
 
 **Also called** (say this in a room): leftover = residual · lever / *x* = feature · knob *b* = coefficient / weight · cloud = scatter.
 
@@ -441,7 +441,7 @@ It always goes through the centroid (x̄, ȳ).
 
 **Reach for it when** *y* is a real number, the cloud looks like a straight smear, and you want a sentence: “+1 on *x* goes with +b on *y*.”
 
-**Skip it when** *y* is yes/no ([[01 logistic regression]]); *y* is a count that cannot go negative ([[06 GLM]]); the cloud bends; one point yanks the line (try [[02 ridge regression]]); you have more levers than people.
+**Skip it when** *y* is yes/no ([[01 logistic regression]]); *y* is a count that cannot go negative ([[06 GLM]]); the cloud bends; one point yanks the line (check the cloud, or a method that does not square the miss — ridge is for huge knobs, not that yank); you have more levers than people.
 
 **Pays you:** simple, fast, knobs you can read. The starting machine.
 
