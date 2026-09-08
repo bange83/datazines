@@ -179,7 +179,13 @@ Ordinary hours *b* spans **nine points**. Ridge’s scaled hours *b* stays in a 
 | trade | shy vs jumpy — you buy one with the other |
 | redraw | new train/test hide, same thirty |
 
-**Also called:** jumpy = high variance · shy = high bias · hug the trainers = overfit.
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| jumpy | high variance |
+| shy | high bias |
+| hug the trainers | overfit |
 
 ![fm-13-when](../assets/fm-13-when.svg)
 

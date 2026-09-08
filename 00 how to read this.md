@@ -135,7 +135,13 @@ If you keep only one thing:
 | leftover | real − guess (the voice) |
 | pile | the line / twins / pass-fail / unlabeled |
 
-**Also called:** leftover = residual / error · 01 = first sketchbook of a family · zine = one note.
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| leftover | residual / error |
+| 01 | first sketchbook of a family |
+| zine | one note |
 
 ![in-05-when](assets/in-05-when.svg)
 

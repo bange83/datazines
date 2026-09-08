@@ -158,7 +158,14 @@ Nearby, not on the floor. The path wiggled. That is the point, not a bug. Quiet 
 | OLS | the exact bottom, when it exists |
 | SGD | walk on a sample, not the whole class |
 
-**Also called:** bowl = loss surface · knobs = parameters · rate = learning rate · leftover = residual / error.
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| bowl | loss surface |
+| knobs | parameters |
+| rate | learning rate |
+| leftover | residual / error |
 
 ### Use / skip
 

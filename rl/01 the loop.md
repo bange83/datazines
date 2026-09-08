@@ -195,7 +195,14 @@ Coin-flip **30.5**. Sensible **38.3**. Q’s greedy row is rest / study — the 
 | policy | state → action |
 | Q | table of “how good is this act from here” |
 
-**Also called:** loop = MDP step · Q = action value · 0.9 = discount · 0.2 try-at-random = ε-greedy.
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| loop | MDP step |
+| Q | action value |
+| 0.9 | discount |
+| 0.2 try-at-random | ε-greedy |
 
 ![rl-04-when](../assets/rl-04-when.svg)
 

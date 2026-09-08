@@ -223,7 +223,14 @@ Logistic 01 used a milder intercept (−3.2). Pass rate there was ~2/3, so accur
 | recall | of real yeses, how many we found |
 | dummy | always the majority (here: always fail) |
 
-**Also called:** miss = false negative · false alarm = false positive · four rooms = confusion matrix · dummy = baseline.
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| miss | false negative |
+| false alarm | false positive |
+| four rooms | confusion matrix |
+| dummy | baseline |
 
 ![fm-24-when](../assets/fm-24-when.svg)
 

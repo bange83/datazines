@@ -166,7 +166,14 @@ Random shares nights almost equally — Q already *sees* study (~1.97) and still
 | regret | oracle-best minus you |
 | UCB | mean + bonus for rarely pulled |
 
-**Also called:** bandit = one-state RL · arm = action · ε-greedy = sometimes random · UCB = upper confidence bound.
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| bandit | one-state RL |
+| arm | action |
+| ε-greedy | sometimes random |
+| UCB | upper confidence bound |
 
 ![bd-04-when](../assets/bd-04-when.svg)
 

@@ -188,7 +188,13 @@ Three hours: still a coin with a lean (0.64). Five hours: almost sure (0.98). Th
 | 0.5 | default cut, not sacred |
 | sigmoid / logit | names for the squash / its inverse |
 
-**Also called:** squash = sigmoid · score = logit · S = logistic curve.
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| squash | sigmoid |
+| score | logit |
+| S | logistic curve |
 
 ### Use / skip
 

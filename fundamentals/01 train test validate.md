@@ -259,7 +259,14 @@ Ridge’s printed run used α = 10 on purpose: twins share, test 0.748 vs ordina
 | leakage | test helped pick the knobs |
 | CV | rotate the validate hide on the trainers |
 
-**Also called:** train/test = holdout · validate = development set · CV = k-fold · peek = test-set tuning.
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| train/test | holdout |
+| validate | development set |
+| CV | k-fold |
+| peek | test-set tuning |
 
 ![fm-06-when](../assets/fm-06-when.svg)
 

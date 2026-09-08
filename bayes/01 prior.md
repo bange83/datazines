@@ -159,7 +159,14 @@ Shrug → 0.40, wide. Sure-yes → 0.61 (truth was 0.6 — luck plus a loud star
 | β in, coins, β out | add yeses — conjugate |
 | width | how unsure you still are |
 
-**Also called:** prior = starting costume · posterior = updated belief · likelihood = P(data \| P) · MLE = yes/n, no bump.
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| prior | starting costume |
+| posterior | updated belief |
+| likelihood | P(data \| P) |
+| MLE | yes/n, no bump |
 
 ![by-04-when](../assets/by-04-when.svg)
 

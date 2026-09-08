@@ -244,7 +244,14 @@ Sleep and naps: both still in the room — quieter, not fired. Lasso kept only n
 α = which tax you lean toward.
 λ = how loud.
 
-**Also called:** mix α = `l1_ratio` in sklearn · volume λ = `alpha` in sklearn. Not the same knob.
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| mix α | `l1_ratio` in sklearn |
+| volume λ | `alpha` in sklearn |
+
+Not the same knob.
 
 ### Use / skip
 

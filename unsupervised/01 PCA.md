@@ -165,7 +165,13 @@ Unscaled: minutes **1.00**, story dead — here the fat axis is a **unit**, not 
 | scale | when units are spelling; else the fat direction is the fact |
 | explained | share of scatter that PC keeps |
 
-**Also called:** sausage = first principal component · loading = how much a feature sits on that PC · lever = feature.
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| sausage | first principal component |
+| loading | how much a feature sits on that PC |
+| lever | feature |
 
 ![pc-05-when](../assets/pc-05-when.svg)
 

@@ -16,7 +16,7 @@
 <path d="M 47.00,310.00 L 103.33,310.39 Q 103.33,310.39 131.50,310.17 Q 159.67,309.95 187.83,310.37 Q 216.00,310.79 244.17,310.74 Q 272.33,310.68 300.50,310.24 Q 328.67,309.79 356.83,309.90 L 385.00,310.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <path d="M 374.0,304.0 L 385.0,310.0 L 374.0,316.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <path d="M 49.0,55.0 L 55.0,44.0 L 61.0,55.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<text x="393.0" y="316.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">hours</text>
+<text x="220.0" y="336.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="middle" font-style="normal" font-weight="normal">hours</text>
 <text x="47.0" y="34.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="end" font-style="normal" font-weight="normal">grade</text>
 <path d="M 73.29,260.86 L 108.15,244.03 Q 108.15,244.03 125.55,235.54 Q 142.95,227.06 160.43,218.73 Q 177.91,210.41 195.34,202.00 Q 212.78,193.59 230.07,184.88 Q 247.36,176.17 264.81,167.78 Q 282.25,159.38 299.80,151.21 Q 317.35,143.04 334.75,134.55 L 352.14,126.05" fill="none" stroke="#b44a28" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <ellipse cx="100.7" cy="247.6" rx="6.4" ry="6.2" transform="rotate(-4.5 100.7 247.6)" fill="#241c14" opacity="0.92"/>
@@ -40,7 +40,7 @@
 <path d="M 462.00,310.00 L 518.33,310.27 Q 518.33,310.27 546.50,310.15 Q 574.67,310.03 602.83,310.37 Q 631.00,310.71 659.17,310.62 Q 687.33,310.53 715.50,310.21 Q 743.67,309.90 771.83,309.95 L 800.00,310.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <path d="M 789.0,304.0 L 800.0,310.0 L 789.0,316.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <path d="M 464.0,55.0 L 470.0,44.0 L 476.0,55.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<text x="808.0" y="316.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">hours</text>
+<text x="635.0" y="336.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="middle" font-style="normal" font-weight="normal">hours</text>
 <text x="462.0" y="34.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="end" font-style="normal" font-weight="normal"></text>
 <path d="M 488.29,260.86 L 523.17,244.06 Q 523.17,244.06 540.64,235.73 Q 558.12,227.40 575.43,218.74 Q 592.75,210.08 610.27,201.85 Q 627.79,193.62 645.28,185.31 Q 662.76,176.99 680.17,168.53 Q 697.58,160.06 714.90,151.42 Q 732.22,142.77 749.68,134.41 L 767.14,126.05" fill="none" stroke="#b44a28" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="1" stroke-dasharray="6 5"/>
 <ellipse cx="529.4" cy="234.6" rx="5.4" ry="5.5" transform="rotate(-4.0 529.4 234.6)" fill="#3d5f86" opacity="0.92"/>

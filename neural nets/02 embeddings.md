@@ -226,7 +226,13 @@ PCA on co-occurrence is a **sketch** of the table. Cosines on this page are in t
 | lookup | token → row → the rest of the net |
 | dim | how fat the point is (2 here; hundreds later) |
 
-**Also called:** point / row = embedding vector · one-hot = dummy encoding · nearby = similar meaning.
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| point / row | embedding vector |
+| one-hot | dummy encoding |
+| nearby | similar meaning |
 
 ![em-06-when](../assets/em-06-when.svg)
 

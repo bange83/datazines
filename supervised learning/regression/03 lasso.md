@@ -278,7 +278,13 @@ sklearn’s `alpha` is λ — the **volume of the tax**, same knob as ridge. Lou
 Path = what happens as you turn λ.
 Dead zone = small knobs get eaten.
 
-**Also called:** tax |b| = L1 penalty · zero = the feature dropped · shortlist = sparse model.
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| tax |b| | L1 penalty |
+| zero | the feature dropped |
+| shortlist | sparse model |
 
 ### Use / skip
 

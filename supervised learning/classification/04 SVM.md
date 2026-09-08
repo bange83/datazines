@@ -183,7 +183,14 @@ Scale is in the pipeline. Unscaled, sleep’s units fight hours, same sin as uns
 | LinearSVC | the linear street, sklearn’s fast fence |
 | kernel | a later bend; not this file |
 
-**Also called:** street = margin · fence = decision boundary · curb-sitter = support vector · C = inverse of a tax.
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| street | margin |
+| fence | decision boundary |
+| curb-sitter | support vector |
+| C | inverse of a tax |
 
 ![sv-05-when](../../assets/sv-05-when.svg)
 

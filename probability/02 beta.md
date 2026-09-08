@@ -149,7 +149,13 @@ Three yes, five no. Flat start → mean **0.40**, still a wide stick (0.16 to 0.
 | Beta(1, 1) | flat — I don’t know |
 | add | yeses → α, nos → β |
 
-**Also called:** α, β = pseudo-counts · Beta(1,1) = uniform on 0–1 · add = conjugate update.
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| α, β | pseudo-counts |
+| Beta(1,1) | uniform on 0–1 |
+| add | conjugate update |
 
 ![bt-04-when](../assets/bt-04-when.svg)
 
