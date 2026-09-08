@@ -223,10 +223,14 @@ Log: score is log(mean). Exponentiate, never negative. Number of mistakes.</p>
 </section>
 <section class="leaf"><h2>Page 5 — Counts: a line that cannot go negative</h2>
 <p>Same students. Now <em>y</em> = <strong>how many mistakes</strong> on the exam. More hours → fewer mistakes. Never below 0.</p>
+<figure class="drawing"><img src="../../../assets/gm-04-counts.svg" alt="gm-04-counts"></figure>
+
 <p>A Poisson GLM with a log link:</p>
 <p>$$\log(\text{mean mistakes}) = a + b \cdot \text{hours}$$</p>
-<p><em>b</em> negative: extra hours <strong>multiply</strong> the mean by <em>e^b</em> (a number less than 1). Shrink, don’t subtract into the basement.</p>
-<p>Ordinary line on the same data: at 10 hours it predicts <strong>−4 mistakes</strong>. The GLM at 6 hours is still about 1. That is the glasses working.</p>
+<p>The straight line lives on the hidden <strong>log(mean)</strong> scale. The curve is what we see back in mistake-land:</p>
+<p>$$\text{mean mistakes} = e^{a + b \cdot \text{hours}}$$</p>
+<p>Here, <em>b</em> = −0.264. One extra hour multiplies the mean by $e^{-0.264} \approx 0.77$ — about <strong>23% fewer expected mistakes</strong>, wherever you start.</p>
+<p>On these data, the Poisson curve goes from 5.74 mistakes at 1 hour to 1.53 at 6 hours. The ordinary line looks similar nearby, but by 10 hours it predicts <strong>−2.08 mistakes</strong>. The Poisson curve stays above zero. That is the glasses working.</p>
 </section>
 <section class="leaf"><h2>Page 6 — What GLM is not</h2>
 <p>Not a tree. Not a neural net. The score is still a line. If hours help, then plateau, then hurt, a GLM will not discover that S-bend for you unless you feed it a bent <em>x</em>.</p>

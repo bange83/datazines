@@ -86,13 +86,19 @@ Wrong family: you can still get a number out. It will lie about uncertainty, and
 
 Same students. Now *y* = **how many mistakes** on the exam. More hours → fewer mistakes. Never below 0.
 
+![gm-04-counts](../../assets/gm-04-counts.svg)
+
 A Poisson GLM with a log link:
 
 $$\log(\text{mean mistakes}) = a + b \cdot \text{hours}$$
 
-*b* negative: extra hours **multiply** the mean by *e^b* (a number less than 1). Shrink, don’t subtract into the basement.
+The straight line lives on the hidden **log(mean)** scale. The curve is what we see back in mistake-land:
 
-Ordinary line on the same data: at 10 hours it predicts **−4 mistakes**. The GLM at 6 hours is still about 1. That is the glasses working.
+$$\text{mean mistakes} = e^{a + b \cdot \text{hours}}$$
+
+Here, *b* = −0.264. One extra hour multiplies the mean by $e^{-0.264} \approx 0.77$ — about **23% fewer expected mistakes**, wherever you start.
+
+On these data, the Poisson curve goes from 5.74 mistakes at 1 hour to 1.53 at 6 hours. The ordinary line looks similar nearby, but by 10 hours it predicts **−2.08 mistakes**. The Poisson curve stays above zero. That is the glasses working.
 
 ---
 
