@@ -558,7 +558,21 @@ Cause is on you: experiment, time, domain knowledge.</p>
 <p>Each <em>b</em> is still “+1 on that lever, on average.” The new phrase: <strong>holding the other lever still.</strong> Without it you misread <em>b</em>. (The eight people on page 1 have no sleep column. This page is the shape, not a fitted number.)</p>
 <p>A third lever is the same trick in a space you cannot draw. If two levers say almost the same thing — hours studied and minutes studied — they <strong>fight</strong>. One <em>b</em> goes huge, the other huge the other way. Net effect maybe fine; the story is garbage. The textbook name is <strong>multicollinearity</strong>. Ridge is the seatbelt (<a class="wiki" href="02%20ridge%20regression.html">02 ridge regression</a>).</p>
 </section>
-<section class="leaf"><h2>Page 14 — What the computer does inside (no panic)</h2>
+<section class="leaf"><h2>Page 14 — More than one x: scale</h2>
+<p>One <em>x</em>, one unit: skip. Hours in 1–6. Least squares does not care how you spell it. The line is the same.</p>
+<p><strong>Two or more levers:</strong> scale. Hours, minutes, sleep. Different spellings. The <em>guesses</em> stay the same if you only change units. The <strong>knobs</strong> do not. A tiny <em>b</em> on minutes can be a huge <em>b</em> on hours — same fact, different writing.</p>
+<figure class="drawing"><img src="../../../assets/lr-14-scale.svg" alt="lr-14-scale"></figure>
+
+<p>Recipe, before you read the <em>b</em>s:</p>
+<ol>
+<li>Subtract each <em>x</em>’s average.</li>
+<li>Divide by its spread.</li>
+<li><em>Then</em> fit.</li>
+</ol>
+<p>Now +1 on a knob is <strong>one typical step</strong> of that lever, not “one minute vs one hour.” You can compare <em>b</em>s. You still cannot infer cause.</p>
+<p>A later tax on size (<a class="wiki" href="02%20ridge%20regression.html">02 ridge regression</a>, <a class="wiki" href="03%20lasso.html">03 lasso</a>) <strong>needs</strong> this, or it taxes spelling. The eight people below have one <em>x</em>. That fit stays unscaled on purpose. The habit starts here.</p>
+</section>
+<section class="leaf"><h2>Page 15 — What the computer does inside (no panic)</h2>
 <p>You do not need to derive the formula. Just see the landscape.</p>
 <p>Think of <em>a</em> and <em>b</em> as coordinates on the floor. At every pair you measure the <strong>sum of squared errors</strong> from page 7. That pile is a height. The heights make a <strong>bowl</strong>.</p>
 <figure class="drawing"><img src="../../../assets/lr-14-schuessel.svg" alt="lr-14-schuessel"></figure>
@@ -567,11 +581,12 @@ Cause is on you: experiment, time, domain knowledge.</p>
 <p>The computer rolls downhill and stops. Done.</p>
 <p>For a straight line there is <strong>one</strong> clear dip. That is why simple linear regression is well-behaved: one answer, no magic. When there is no formula for the bottom, you <strong>walk</strong> the bowl: <a class="wiki" href="../../optimization/01%20gradient%20descent.html">01 gradient descent</a>.</p>
 </section>
-<section class="leaf"><h2>Page 15 — Mini recipe</h2>
+<section class="leaf"><h2>Page 16 — Mini recipe</h2>
 <ol>
 <li><strong>Question.</strong> What do I want to predict? That is y.</li>
 <li><strong>Lever.</strong> What do I have beforehand? That is x. (Or several x.)</li>
 <li><strong>Draw the points.</strong> Look at the cloud. Rising? Bent? Outliers?</li>
+<li><strong>More than one x?</strong> Scale first. Then the knobs speak one language.</li>
 <li><strong>Draw the line.</strong> Computer: least squares.</li>
 <li><strong>Read b.</strong> “+1 on x goes with +b on y.”</li>
 <li><strong>Look at residuals.</strong> Systematic misses? Then the line is too dumb.</li>
@@ -580,11 +595,11 @@ Cause is on you: experiment, time, domain knowledge.</p>
 </ol>
 <p>If you keep only one thing:</p>
 <blockquote>
-<p>cloud → line → ŷ = a + b x. leftover is vertical. pattern ≠ cause.</p>
+<p>cloud → line → ŷ = a + b x. leftover is vertical. more than one x: scale. pattern ≠ cause.</p>
 </blockquote>
 </section>
-<section class="leaf"><h2>Page 16 — Eight people, in sklearn</h2>
-<p>Same eight rows as page 1. No pipeline, no scaling. Just the line. One <em>x</em>, least squares: scale does not change the story. Ridge will tax <strong>size</strong>, so it will <strong>demand</strong> a scaler (<a class="wiki" href="02%20ridge%20regression.html">02 ridge regression</a>, page 10). Not tonight.</p>
+<section class="leaf"><h2>Page 17 — Eight people, in sklearn</h2>
+<p>Same eight rows as page 1. One <em>x</em>. Least squares. Scale would not change this story — page 14. Just the line.</p>
 <pre><code class="language-python">from sklearn.linear_model import LinearRegression
 import numpy as np
 
@@ -602,7 +617,7 @@ print(&quot;R² =&quot;, round(line.score(hours, grade), 3))
 4 hours → 5.75
 R² = 0.936
 </code></pre>
-<p>Same numbers as the sketchbook. <code>.score</code> is R² on <em>these</em> eight people — pride, not a test. Next person: different sketchbook, or at least a split. Do not copy this unscaled fit into lasso or elastic-net. Those taxes care how big the knobs are written.</p>
+<p>Same numbers as the sketchbook. <code>.score</code> is R² on <em>these</em> eight people — pride, not a test. Next person: a split (<a class="wiki" href="../../fundamentals/01%20train%20test%20validate.html">01 train test validate</a>). Two levers tomorrow: scale first, then fit.</p>
 </section>
 <section class="leaf"><h2>Last page — cheat sheet</h2>
 <table>
@@ -641,6 +656,10 @@ R² = 0.936
 <td>R²</td>
 <td>share of scatter explained on <em>these</em> people (can go negative on new people)</td>
 </tr>
+<tr>
+<td>scale</td>
+<td>more than one <em>x</em>: subtract average, divide by spread. then <em>b</em>s are comparable</td>
+</tr>
 </tbody>
 </table>
 <p><strong>Also called</strong> (in a room):</p>
@@ -678,7 +697,7 @@ It always goes through the centroid (x̄, ȳ).</p>
 <p><strong>Reach for it when</strong> <em>y</em> is a real number, the cloud looks like a straight smear, and you want a sentence: “+1 on <em>x</em> goes with +b on <em>y</em>.”</p>
 <p><strong>Skip it when</strong> <em>y</em> is yes/no (<a class="wiki" href="../classification/01%20logistic%20regression.html">01 logistic regression</a>); <em>y</em> is a count that cannot go negative (<a class="wiki" href="06%20GLM.html">06 GLM</a>); the cloud bends; one point yanks the line (check the cloud, or a method that does not square the miss — ridge is for huge knobs, not that yank); you have more levers than people.</p>
 <p><strong>Pays you:</strong> simple, fast, knobs you can read. The starting machine.</p>
-<p><strong>Costs you:</strong> no legal region for ŷ. Outliers scream. Twin <em>x</em> fight (multicollinearity). Cause is not in the formula. A later tax on size (<a class="wiki" href="02%20ridge%20regression.html">02 ridge regression</a>, <a class="wiki" href="03%20lasso.html">03 lasso</a>) needs <strong>scale</strong> first — this notebook did not.</p>
+<p><strong>Costs you:</strong> no legal region for ŷ. Outliers scream. Twin <em>x</em> fight (multicollinearity). Cause is not in the formula. More than one <em>x</em>: <strong>scale</strong>, or you read spelling. A later tax on size (<a class="wiki" href="02%20ridge%20regression.html">02 ridge regression</a>, <a class="wiki" href="03%20lasso.html">03 lasso</a>) needs that too.</p>
 <p><em>Sketched as a notebook, not a lecture. If the line goes feral: <a class="wiki" href="02%20ridge%20regression.html">02 ridge regression</a>. If </em>y<em> is yes/no: <a class="wiki" href="../classification/01%20logistic%20regression.html">01 logistic regression</a>.</em></p></section>
 <p class="colophon">Flip it like a notebook. One page = one idea.</p>
 </div>

@@ -355,7 +355,27 @@ A third lever is the same trick in a space you cannot draw. If two levers say al
 
 ---
 
-## Page 14 — What the computer does inside (no panic)
+## Page 14 — More than one x: scale
+
+One *x*, one unit: skip. Hours in 1–6. Least squares does not care how you spell it. The line is the same.
+
+**Two or more levers:** scale. Hours, minutes, sleep. Different spellings. The *guesses* stay the same if you only change units. The **knobs** do not. A tiny *b* on minutes can be a huge *b* on hours — same fact, different writing.
+
+![lr-14-scale](../../assets/lr-14-scale.svg)
+
+Recipe, before you read the *b*s:
+
+1. Subtract each *x*’s average.
+2. Divide by its spread.
+3. *Then* fit.
+
+Now +1 on a knob is **one typical step** of that lever, not “one minute vs one hour.” You can compare *b*s. You still cannot infer cause.
+
+A later tax on size ([[02 ridge regression]], [[03 lasso]]) **needs** this, or it taxes spelling. The eight people below have one *x*. That fit stays unscaled on purpose. The habit starts here.
+
+---
+
+## Page 15 — What the computer does inside (no panic)
 
 You do not need to derive the formula. Just see the landscape.
 
@@ -371,26 +391,27 @@ For a straight line there is **one** clear dip. That is why simple linear regres
 
 ---
 
-## Page 15 — Mini recipe
+## Page 16 — Mini recipe
 
 1. **Question.** What do I want to predict? That is y.
 2. **Lever.** What do I have beforehand? That is x. (Or several x.)
 3. **Draw the points.** Look at the cloud. Rising? Bent? Outliers?
-4. **Draw the line.** Computer: least squares.
-5. **Read b.** “+1 on x goes with +b on y.”
-6. **Look at residuals.** Systematic misses? Then the line is too dumb.
-7. **Treat R² as volume**, not as truth.
-8. **Think about cause separately.** Pattern ≠ mechanism.
+4. **More than one x?** Scale first. Then the knobs speak one language.
+5. **Draw the line.** Computer: least squares.
+6. **Read b.** “+1 on x goes with +b on y.”
+7. **Look at residuals.** Systematic misses? Then the line is too dumb.
+8. **Treat R² as volume**, not as truth.
+9. **Think about cause separately.** Pattern ≠ mechanism.
 
 If you keep only one thing:
 
-> cloud → line → ŷ = a + b x. leftover is vertical. pattern ≠ cause.
+> cloud → line → ŷ = a + b x. leftover is vertical. more than one x: scale. pattern ≠ cause.
 
 ---
 
-## Page 16 — Eight people, in sklearn
+## Page 17 — Eight people, in sklearn
 
-Same eight rows as page 1. No pipeline, no scaling. Just the line. One *x*, least squares: scale does not change the story. Ridge will tax **size**, so it will **demand** a scaler ([[02 ridge regression]], page 10). Not tonight.
+Same eight rows as page 1. One *x*. Least squares. Scale would not change this story — page 14. Just the line.
 
 ```python
 from sklearn.linear_model import LinearRegression
@@ -413,7 +434,7 @@ print("R² =", round(line.score(hours, grade), 3))
 R² = 0.936
 ```
 
-Same numbers as the sketchbook. `.score` is R² on *these* eight people — pride, not a test. Next person: different sketchbook, or at least a split. Do not copy this unscaled fit into lasso or elastic-net. Those taxes care how big the knobs are written.
+Same numbers as the sketchbook. `.score` is R² on *these* eight people — pride, not a test. Next person: a split ([[01 train test validate]]). Two levers tomorrow: scale first, then fit.
 
 ---
 
@@ -428,6 +449,7 @@ Same numbers as the sketchbook. `.score` is R² on *these* eight people — prid
 | y | real value |
 | y − ŷ | residual / error |
 | R² | share of scatter explained on *these* people (can go negative on new people) |
+| scale | more than one *x*: subtract average, divide by spread. then *b*s are comparable |
 
 **Also called** (in a room):
 
@@ -452,7 +474,7 @@ It always goes through the centroid (x̄, ȳ).
 
 **Pays you:** simple, fast, knobs you can read. The starting machine.
 
-**Costs you:** no legal region for ŷ. Outliers scream. Twin *x* fight (multicollinearity). Cause is not in the formula. A later tax on size ([[02 ridge regression]], [[03 lasso]]) needs **scale** first — this notebook did not.
+**Costs you:** no legal region for ŷ. Outliers scream. Twin *x* fight (multicollinearity). Cause is not in the formula. More than one *x*: **scale**, or you read spelling. A later tax on size ([[02 ridge regression]], [[03 lasso]]) needs that too.
 
 ---
 

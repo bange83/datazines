@@ -12,7 +12,7 @@ aliases:
 # Ridge regression — a sketchbook
 
 > [!abstract] In one sentence
-> Same line as before — but you **tax huge knobs**. The line gets a bit more boring, and a lot more trustworthy on new people.
+> Same line as before — but you **tax huge slopes**. Intercept *a* is free. Wild *b* is not. Calmer on new people.
 
 ![rr-00-hero](../../assets/rr-00-hero.svg)
 
@@ -55,7 +55,7 @@ Ordinary least squares **must** chase that yank. Big misses cost a lot (they get
 On the old points it looks clever.
 Clever is not the same as true.
 
-Ridge is **not** the seatbelt for one wild *y*. It still squares leftover, so a yank still screams. Ridge’s job is **huge knobs**: few people, noisy *x*, or twins that fight. A single corner grade wants a check, or a method that does not square the miss — not λ.
+Ridge is **not** the seatbelt for one wild *y*. It still squares leftover, so a yank still screams. Ridge’s job is **huge slopes**: few people, noisy *x*, or twins that fight. A single corner grade wants a check, or a method that does not square the miss — not λ.
 
 > [!tip] Margin note
 > Few points, noisy *x*, or two *x* that say almost the same thing: the ordinary line can go wild. Ridge is a seatbelt for **that** — not for one weird grade.
@@ -120,7 +120,7 @@ It changes **what “best” means**.
 **Ridge score:**
 
 > how wrong am I on the points
-> **+** λ × (how huge the knobs are)
+> **+** λ × (how huge the *slopes* are)
 
 That second piece is a **tax**. Big *b* costs extra, even if it helps a little on the old points.
 
@@ -275,14 +275,14 @@ If you want the film of knobs walking in: [[05 LARS]].
 1. **Start from the ordinary line.** Same ŷ = a + b x. Same cloud.
 2. **Ask:** will this line overreact? Few points? Noise? Twin *x*?
 3. **Scale the *x*.** Always, before ridge.
-4. **Add the tax.** Score = old error + λ × (size of knobs)².
+4. **Add the tax.** Score = old error + λ × (size of the *b*s)². Not *a*.
 5. **Pick λ** by hiding people and scoring the hidden ones.
 6. **Read the knobs smaller.** Direction often the same. Drama gone.
 7. **Judge on new points**, not on how tightly you hugged the old ones.
 
 If you keep only one thing:
 
-> ordinary line + a tax on huge knobs → a calmer line for the next person
+> ordinary line + a tax on huge *b* → a calmer line for the next person. *a* does not pay.
 
 ---
 
@@ -290,7 +290,7 @@ If you keep only one thing:
 
 Thirty students — few enough that the ordinary line can overreact. Grade from hours, sleep, tutor. **Minutes** is hours in another unit (a twin). Coffee and noise are junk.
 
-Ordinary least squares, unscaled: hours and minutes start a fight. Ridge, scaled, `alpha=10`: they share. Train R² dips (the tax). Test R² **rises** (the point).
+Both machines get the **same scaler**. Scale does not change ordinary’s guesses — only how you *read* the knobs. Then ridge adds the tax. The test-R² jump is that tax, not the spelling.
 
 ```python
 import numpy as np
@@ -314,36 +314,34 @@ X = np.column_stack([hours, minutes, sleep, naps, tutor, coffee, noise])
 names = ["hours", "minutes", "sleep", "naps", "tutor", "coffee", "noise"]
 Xtr, Xte, ytr, yte = train_test_split(X, grade, test_size=0.3, random_state=0)
 
-ols = LinearRegression().fit(Xtr, ytr)
+ols = make_pipeline(StandardScaler(), LinearRegression()).fit(Xtr, ytr)
 ridge = make_pipeline(StandardScaler(), Ridge(alpha=10)).fit(Xtr, ytr)
 
 print("mean grade (train)", round(ytr.mean(), 3))
 
-def show(title, coef, intercept, train, test):
+def show(title, model, step):
+    est = model.named_steps[step]
     print(title)
-    print(f"  intercept  {intercept:7.3f}")
-    for name, b in zip(names, coef):
+    print(f"  intercept  {est.intercept_:7.3f}")
+    for name, b in zip(names, est.coef_):
         print(f"  {name:10s} {b:7.3f}")
-    print(f"R² train {train:.3f}   R² test {test:.3f}\n")
+    print(f"R² train {model.score(Xtr, ytr):.3f}   R² test {model.score(Xte, yte):.3f}\n")
 
-show("ordinary (no scale, no tax)", ols.coef_, ols.intercept_,
-     ols.score(Xtr, ytr), ols.score(Xte, yte))
-show("ridge (scaled, alpha=10)", ridge.named_steps["ridge"].coef_,
-     ridge.named_steps["ridge"].intercept_,
-     ridge.score(Xtr, ytr), ridge.score(Xte, yte))
+show("ordinary (scaled, no tax)", ols, "linearregression")
+show("ridge (scaled, alpha=10)", ridge, "ridge")
 ```
 
 ```
 mean grade (train) 7.241
-ordinary (no scale, no tax)
-  intercept    1.475
-  hours        5.653
-  minutes     -0.079
-  sleep       -0.258
-  naps         0.555
-  tutor        0.775
-  coffee       0.112
-  noise        0.068
+ordinary (scaled, no tax)
+  intercept    7.241
+  hours        8.354
+  minutes     -6.970
+  sleep       -0.330
+  naps         0.675
+  tutor        0.376
+  coffee       0.137
+  noise        0.072
 R² train 0.955   R² test 0.626
 
 ridge (scaled, alpha=10)
@@ -358,11 +356,13 @@ ridge (scaled, alpha=10)
 R² train 0.907   R² test 0.748
 ```
 
-Read the ordinary pair: +5.65 hours and −0.079 minutes. Minutes live around 60–360, so that tiny *b* is huge in real life. Together they still add up to about **+0.92 grade per extra hour** — a cancellation, not a story. Train R² **0.955**, test **0.626**. Pride on the old 21, embarrassment on the new 9.
+Same spelling. Ordinary still **fights**: hours +8.35, minutes −6.97. Cancellation, not a story. Train R² **0.955**, test **0.626**. Pride on the old 21, embarrassment on the new 9.
 
-Ridge, after scaling: hours 0.56, minutes 0.56. Twins share. Train R² **0.907** — a bit worse (the tax). Test R² **0.748** — better on people it has not seen. That is the deal from page 3. Do not pick the method by train R².
+(Unscaled ordinary makes the *same* guesses. R² does not move. The tiny minutes *b* was just the fight written in minutes.)
 
-Ridge’s intercept **7.241** is not a tax on *a*. It is the **mean grade** on the trainers. After `StandardScaler`, every *x* is 0 at the average person, so ŷ at “all knobs typical” *is* ȳ. Ordinary’s 1.475 is “grade if hours, sleep, minutes were all **literally zero**” — a fantasy. Page 5 still holds: *a* does not pay. The number jumped because **zero moved**.
+Ridge, same scale: hours 0.56, minutes 0.56. Twins share. Train R² **0.907** — a bit worse (the tax). Test R² **0.748** — better on people it has not seen. That jump is λ, not the scaler. Do not pick the method by train R².
+
+Both intercepts **7.241** — the **mean grade** on the trainers. After `StandardScaler`, every *x* is 0 at the average person, so ŷ at “all knobs typical” *is* ȳ. Page 5: *a* does not pay. Zero moved.
 
 `alpha` here is λ. sklearn’s name, same volume knob.
 
@@ -374,7 +374,7 @@ Ridge’s intercept **7.241** is not a tax on *a*. It is the **mean grade** on t
 |---|---|
 | ŷ = a + b x | still the line |
 | ordinary | smallest sum of (residuals)² |
-| ridge | that, plus λ × (knobs)² |
+| ridge | that, plus λ × (*b*s)². intercept *a* does not pay |
 | λ | volume of the tax. 0 = ordinary |
 | shrink | knobs pulled toward 0, not deleted |
 | scale | make every *x* comparable first; then *a* is ȳ, not “all x = 0” |

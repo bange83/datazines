@@ -40,7 +40,7 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | # | note | idea in one breath |
 |--:|---|---|
 | 01 | [[01 linear regression]] | cloud → straight line → ŷ = a + b x |
-| 02 | [[02 ridge regression]] | tax huge knobs. calmer on new people |
+| 02 | [[02 ridge regression]] | tax huge *b*. *a* is free. calmer on new people |
 | 03 | [[03 lasso]] | tax \|b\|. some knobs snap to zero |
 | 04 | [[04 elastic-net]] | both taxes. junk dies, twins share |
 | 05 | [[05 LARS]] | not a tax. a walk. the film of who joins |
@@ -369,7 +369,7 @@ If you keep only one thing:
 | voice | smart 18, not lecture, not cutesy |
 | page | one idea, picture, then names |
 | numbers | match the drawing *and* the sklearn printout |
-| scale | OLS one *x*: skip. ridge / lasso / elastic-net: always. logistic: when units differ |
+| scale | OLS one *x*: skip. more than one *x*: always (even ordinary). ridge / lasso / elastic-net: always. logistic: when units differ |
 | seed | `7` unless you must change it |
 | end of every note | recipe → sklearn mini (same story, matching numbers, real stdout) → cheat sheet **with Use / skip** → next sibling |
 | sklearn mini | mandatory. family story, not iris. numbers agree with the pages |
