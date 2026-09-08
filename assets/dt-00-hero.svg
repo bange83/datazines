@@ -14,26 +14,26 @@
 <rect width="760" height="460" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
 <text x="380.0" y="42.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#7a6e5e" text-anchor="middle">ask a question. split. ask again.</text>
 <ellipse cx="380" cy="100" rx="78" ry="32" fill="#efe6d4" stroke="#c4a35a" stroke-width="2"/>
-<text x="380.0" y="107.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#c4a35a" text-anchor="middle">hours < 3.4?</text>
-<path d="M 320.00,128.00 L 290.11,140.03 Q 290.11,140.03 275.02,145.68 Q 259.93,151.33 245.03,157.46 Q 230.13,163.59 215.07,169.29 L 200.00,175.00" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<path d="M 440.00,128.00 L 470.14,139.40 Q 470.14,139.40 485.07,145.45 Q 500.00,151.51 515.07,157.20 Q 530.14,162.88 545.07,168.94 L 560.00,175.00" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<text x="230.0" y="155.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="start">no</text>
-<text x="520.0" y="155.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="start">yes</text>
-<ellipse cx="180" cy="210" rx="78" ry="32" fill="#efe6d4" stroke="#c4a35a" stroke-width="2"/>
-<text x="180.0" y="217.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#c4a35a" text-anchor="middle">sleep < 6?</text>
-<ellipse cx="580" cy="210" rx="78" ry="32" fill="#efe6d4" stroke="#c4a35a" stroke-width="2"/>
-<text x="580.0" y="217.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#c4a35a" text-anchor="middle">tutor?</text>
-<path d="M 140.00,240.00 L 127.72,255.19 Q 127.72,255.19 121.39,262.62 Q 115.06,270.05 108.69,277.45 Q 102.32,284.85 96.16,292.43 L 90.00,300.00" fill="none" stroke="#241c14" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<path d="M 220.00,240.00 L 232.43,255.06 Q 232.43,255.06 238.54,262.67 Q 244.66,270.29 251.06,277.66 Q 257.46,285.03 263.73,292.52 L 270.00,300.00" fill="none" stroke="#241c14" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<path d="M 540.00,240.00 L 530.27,255.18 Q 530.27,255.18 524.98,262.49 Q 519.70,269.80 514.91,277.44 Q 510.12,285.08 505.06,292.54 L 500.00,300.00" fill="none" stroke="#241c14" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<path d="M 620.00,240.00 L 632.60,254.91 Q 632.60,254.91 638.68,262.56 Q 644.76,270.20 651.22,277.53 Q 657.67,284.86 663.84,292.43 L 670.00,300.00" fill="none" stroke="#241c14" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<ellipse cx="80" cy="335" rx="78" ry="32" fill="#efe6d4" stroke="#b44a28" stroke-width="2"/>
-<text x="80.0" y="342.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="middle">fail</text>
-<ellipse cx="280" cy="335" rx="78" ry="32" fill="#efe6d4" stroke="#3d5f86" stroke-width="2"/>
+<text x="380.0" y="107.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#c4a35a" text-anchor="middle">hours &lt; 3.4?</text>
+<path d="M 320,128 L 220,175" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M 440,128 L 540,175" fill="none" stroke="#241c14" stroke-width="1.8" stroke-linecap="round"/>
+<text x="250.0" y="155.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle">no</text>
+<text x="510.0" y="155.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle">yes</text>
+<ellipse cx="200" cy="210" rx="78" ry="32" fill="#efe6d4" stroke="#c4a35a" stroke-width="2"/>
+<text x="200.0" y="217.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#c4a35a" text-anchor="middle">sleep &lt; 6?</text>
+<ellipse cx="560" cy="210" rx="78" ry="32" fill="#efe6d4" stroke="#c4a35a" stroke-width="2"/>
+<text x="560.0" y="217.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#c4a35a" text-anchor="middle">tutor?</text>
+<path d="M 160,240 L 130,300" fill="none" stroke="#241c14" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M 240,240 L 270,300" fill="none" stroke="#241c14" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M 520,240 L 490,300" fill="none" stroke="#241c14" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M 600,240 L 630,300" fill="none" stroke="#241c14" stroke-width="1.6" stroke-linecap="round"/>
+<ellipse cx="120" cy="335" rx="70" ry="32" fill="#efe6d4" stroke="#b44a28" stroke-width="2"/>
+<text x="120.0" y="342.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="middle">fail</text>
+<ellipse cx="280" cy="335" rx="70" ry="32" fill="#efe6d4" stroke="#3d5f86" stroke-width="2"/>
 <text x="280.0" y="342.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#3d5f86" text-anchor="middle">pass</text>
-<ellipse cx="490" cy="335" rx="78" ry="32" fill="#efe6d4" stroke="#b44a28" stroke-width="2"/>
-<text x="490.0" y="342.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="middle">fail</text>
-<ellipse cx="680" cy="335" rx="78" ry="32" fill="#efe6d4" stroke="#3d5f86" stroke-width="2"/>
-<text x="680.0" y="342.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#3d5f86" text-anchor="middle">pass</text>
+<ellipse cx="480" cy="335" rx="70" ry="32" fill="#efe6d4" stroke="#b44a28" stroke-width="2"/>
+<text x="480.0" y="342.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="middle">fail</text>
+<ellipse cx="640" cy="335" rx="70" ry="32" fill="#efe6d4" stroke="#3d5f86" stroke-width="2"/>
+<text x="640.0" y="342.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#3d5f86" text-anchor="middle">pass</text>
 <text x="380.0" y="430.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">each leaf is a guess. no S. no blob.</text>
 </svg>

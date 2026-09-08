@@ -16,8 +16,8 @@
 <path d="M 72.00,390.00 L 175.00,389.72 Q 175.00,389.72 226.50,389.57 Q 278.00,389.43 329.50,389.95 Q 381.00,390.47 432.50,390.19 Q 484.00,389.92 535.50,390.05 Q 587.00,390.18 638.50,390.09 L 690.00,390.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <path d="M 679.0,384.0 L 690.0,390.0 L 679.0,396.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <path d="M 74.0,55.0 L 80.0,44.0 L 86.0,55.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<text x="696.0" y="396.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal">hours studied</text>
-<text x="72.0" y="36.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="end" font-style="normal">P(pass)</text>
+<text x="385.0" y="442.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="middle" font-style="normal">hours studied</text>
+<text x="96.0" y="36.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start" font-style="normal">P(pass)</text>
 <path d="M 105.7,354.1 L 129.2,349.7 L 152.7,344.0 L 176.1,336.9 L 199.6,327.9 L 223.1,317.0 L 246.6,304.0 L 270.1,288.8 L 293.5,271.8 L 317.0,253.4 L 340.5,234.1 L 364.0,214.8 L 387.5,196.3 L 410.9,179.1 L 434.4,163.9 L 457.9,150.7 L 481.4,139.7 L 504.8,130.6 L 528.3,123.3 L 551.8,117.6 L 575.3,113.1 L 598.8,109.6 L 622.2,106.9 L 645.7,104.9" fill="none" stroke="#b44a28" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <ellipse cx="165.7" cy="368.4" rx="6.4" ry="6.6" transform="rotate(21.2 165.7 368.4)" fill="#241c14" opacity="0.92"/>
 <ellipse cx="200.0" cy="368.4" rx="6.4" ry="6.5" transform="rotate(4.4 200.0 368.4)" fill="#241c14" opacity="0.92"/>

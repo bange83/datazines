@@ -16,8 +16,8 @@
 <path d="M 72.00,390.00 L 175.00,390.10 Q 175.00,390.10 226.50,390.02 Q 278.00,389.95 329.50,389.94 Q 381.00,389.93 432.50,389.96 Q 484.00,389.99 535.50,389.89 Q 587.00,389.78 638.50,389.89 L 690.00,390.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <path d="M 679.0,384.0 L 690.0,390.0 L 679.0,396.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <path d="M 74.0,55.0 L 80.0,44.0 L 86.0,55.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<text x="696.0" y="396.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start">hours studied</text>
-<text x="72.0" y="36.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="end">sleep</text>
+<text x="385.0" y="442.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="middle">hours studied</text>
+<text x="96.0" y="36.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="start">sleep</text>
 <ellipse cx="265.4" cy="266.7" rx="6.3" ry="5.3" transform="rotate(-5.2 265.4 266.7)" fill="#b44a28" opacity="0.9"/>
 <ellipse cx="273.0" cy="274.2" rx="5.3" ry="6.0" transform="rotate(23.7 273.0 274.2)" fill="#b44a28" opacity="0.9"/>
 <ellipse cx="153.7" cy="246.5" rx="5.4" ry="6.2" transform="rotate(-10.0 153.7 246.5)" fill="#b44a28" opacity="0.9"/>

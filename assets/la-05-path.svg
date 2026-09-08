@@ -16,8 +16,8 @@
 <path d="M 72.00,370.00 L 175.00,369.90 Q 175.00,369.90 226.50,370.14 Q 278.00,370.37 329.50,370.01 Q 381.00,369.64 432.50,370.03 Q 484.00,370.42 535.50,370.30 Q 587.00,370.18 638.50,370.09 L 690.00,370.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <path d="M 679.0,364.0 L 690.0,370.0 L 679.0,376.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <path d="M 74.0,55.0 L 80.0,44.0 L 86.0,55.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<text x="698.0" y="376.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">more tax  →   (λ grows)</text>
-<text x="72.0" y="34.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="end" font-style="normal" font-weight="normal">knob b</text>
+<text x="385.0" y="430.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="middle" font-style="normal" font-weight="normal">more tax  →   (λ grows)</text>
+<text x="96.0" y="34.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">knob b</text>
 <path d="M 80.0,83.7 L 200.0,142.6 L 380.0,226.8 L 560.0,294.2 L 650.0,319.5" fill="none" stroke="#b44a28" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <text x="146.0" y="70.2" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="start" font-style="normal" font-weight="normal">hours</text>
 <path d="M 80.0,184.7 L 200.0,235.3 L 350.0,294.2 L 470.0,319.5" fill="none" stroke="#3d5f86" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
