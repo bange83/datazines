@@ -286,9 +286,9 @@ Sometimes a is just math and <strong>nonsense outside the data</strong> — nobo
 </table>
 <p>The sentence to keep:</p>
 <blockquote>
-<p><strong>b is the average effect of +1 on x.</strong></p>
+<p><strong>b is the average change in ŷ when x grows by 1.</strong></p>
 </blockquote>
-<p>Not for <em>one</em> person. For the pattern in the cloud.</p>
+<p>Not for <em>one</em> person. For the pattern in the cloud. Not a cause — that is extra (<a class="wiki" href="../../causal/01%20confounding.html">01 confounding</a>).</p>
 </section>
 <section class="leaf"><h2>Page 5 — Mini picture: touching the slope</h2>
 <p>Two points on the line:</p>
@@ -623,7 +623,7 @@ R² = 0.936
 </tr>
 <tr>
 <td>b</td>
-<td>slope, effect of +1 x</td>
+<td>slope: +1 x goes with +b on ŷ (pattern, not cause)</td>
 </tr>
 <tr>
 <td>ŷ</td>
@@ -639,18 +639,44 @@ R² = 0.936
 </tr>
 <tr>
 <td>R²</td>
-<td>share of scatter explained on <em>these</em> people, 0 to 1</td>
+<td>share of scatter explained on <em>these</em> people (can go negative on new people)</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Also called</strong> (say this in a room): leftover = residual · lever / <em>x</em> = feature · knob <em>b</em> = coefficient / weight · cloud = scatter.</p>
+<p><strong>Also called</strong> (in a room):</p>
+<table>
+<thead>
+<tr>
+<th>here</th>
+<th>there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>leftover</td>
+<td>residual</td>
+</tr>
+<tr>
+<td>lever / <em>x</em></td>
+<td>feature</td>
+</tr>
+<tr>
+<td>knob <em>b</em></td>
+<td>coefficient / weight</td>
+</tr>
+<tr>
+<td>cloud</td>
+<td>scatter</td>
+</tr>
+</tbody>
+</table>
 <p>Best line = smallest sum of (residuals)².<br>
 It always goes through the centroid (x̄, ȳ).</p>
 <p><strong>linear</strong> — effect the same size everywhere (no bend).<br>
 <strong>cause</strong> — extra. Not inside the formula.</p>
 <h3>Use / skip</h3>
 <p><strong>Reach for it when</strong> <em>y</em> is a real number, the cloud looks like a straight smear, and you want a sentence: “+1 on <em>x</em> goes with +b on <em>y</em>.”</p>
-<p><strong>Skip it when</strong> <em>y</em> is yes/no (<a class="wiki" href="../classification/01%20logistic%20regression.html">01 logistic regression</a>); <em>y</em> is a count that cannot go negative (<a class="wiki" href="06%20GLM.html">06 GLM</a>); the cloud bends; one point yanks the line (try <a class="wiki" href="02%20ridge%20regression.html">02 ridge regression</a>); you have more levers than people.</p>
+<p><strong>Skip it when</strong> <em>y</em> is yes/no (<a class="wiki" href="../classification/01%20logistic%20regression.html">01 logistic regression</a>); <em>y</em> is a count that cannot go negative (<a class="wiki" href="06%20GLM.html">06 GLM</a>); the cloud bends; one point yanks the line (check the cloud, or a method that does not square the miss — ridge is for huge knobs, not that yank); you have more levers than people.</p>
 <p><strong>Pays you:</strong> simple, fast, knobs you can read. The starting machine.</p>
 <p><strong>Costs you:</strong> no legal region for ŷ. Outliers scream. Twin <em>x</em> fight (multicollinearity). Cause is not in the formula. A later tax on size (<a class="wiki" href="02%20ridge%20regression.html">02 ridge regression</a>, <a class="wiki" href="03%20lasso.html">03 lasso</a>) needs <strong>scale</strong> first — this notebook did not.</p>
 <p><em>Sketched as a notebook, not a lecture. If the line goes feral: <a class="wiki" href="02%20ridge%20regression.html">02 ridge regression</a>. If </em>y<em> is yes/no: <a class="wiki" href="../classification/01%20logistic%20regression.html">01 logistic regression</a>.</em></p></section>

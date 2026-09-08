@@ -182,9 +182,9 @@ window.MathJax = {
 </section>
 <section class="leaf"><h2>Page 3 — Only the curb votes</h2>
 <p>Fit the fence. Most people sit deep in fail or deep in pass. They do not touch the street. <strong>Move them a little and the fence does not move.</strong></p>
-<p>The people sitting <strong>on the dashed curbs</strong> hold the fence. Push one of those, the street tilts.</p>
-<p>People call them <strong>support vectors</strong>. That is the whole name: the machine is those vectors. On our 56 trainers, a linear SVM keeps <strong>12 fail + 12 pass = 24</strong>. The other 32 are decoration.</p>
-<p>Logistic: every person tugs the S a little. SVM: the interior is silent.</p>
+<p>The people who <strong>hold</strong> the fence are the support vectors. On a dream street they sit on the dashed curbs. With trespass allowed (our <code>C=1</code>), they can also sit <strong>in</strong> the gutter or on the wrong side. Push one of those, the street tilts.</p>
+<p>On our 56 trainers, a linear SVM keeps <strong>12 fail + 12 pass = 24</strong>. The other 32 are decoration — deep interior, silent.</p>
+<p>Logistic: every person tugs the S a little. SVM: only the holders vote.</p>
 </section>
 <section class="leaf"><h2>Page 4 — C is how much trespass you allow</h2>
 <p>The street is a dream. Real clouds overlap. Someone will stand in the gutter.</p>
@@ -305,7 +305,33 @@ support vectors  fail, pass [12, 12]   of 56
 </tr>
 </tbody>
 </table>
-<p><strong>Also called:</strong> street = margin · fence = decision boundary · curb-sitter = support vector · C = inverse of a tax.</p>
+<p><strong>Also called</strong> (in a room):</p>
+<table>
+<thead>
+<tr>
+<th>here</th>
+<th>there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>street</td>
+<td>margin</td>
+</tr>
+<tr>
+<td>fence</td>
+<td>decision boundary</td>
+</tr>
+<tr>
+<td>curb-sitter</td>
+<td>support vector</td>
+</tr>
+<tr>
+<td>C</td>
+<td>inverse of a tax</td>
+</tr>
+</tbody>
+</table>
 <figure class="drawing"><img src="../../../assets/sv-05-when.svg" alt="sv-05-when"></figure>
 
 <h3>Use / skip</h3>

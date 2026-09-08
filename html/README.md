@@ -56,8 +56,9 @@ Each `## Page N` becomes a rounded **leaf**. Hero (h1 + abstract + drawing) is t
 
 1. Note is done by house rules (hero, pages, sklearn mini with real stdout, Use / skip).
 2. `python3 scripts/note_to_html.py "supervised learning/regression/01 linear regression.md"`  
-   Whole library: `python3 scripts/note_to_html.py --all`
-3. Opens as `html/<same folders as the note>.html` (e.g. `html/supervised learning/regression/01 linear regression.html`). Images climb to vault `assets/` (`../` × depth). Wikilinks are relative hrefs between leaves.
+   Whole library: `python3 scripts/note_to_html.py --all`  
+   `--all` also writes the desk: `html/index.html` (folder nav; zine in a borderless frame). Same paper. Open the file — no server.
+3. Opens as `html/<same folders as the note>.html` (e.g. `html/supervised learning/regression/01 linear regression.html`). Images climb to vault `assets/` (`../` × depth). Wikilinks are relative hrefs between leaves. Desk: open `html/index.html`.
 4. Open the file in a browser. Check: hero drawing, a formula, the sklearn fence, Use / skip.
 5. Do **not** rasterize SVGs. Do **not** inline a matplotlib PNG. Do **not** restyle because HTML “feels like a blog.”
 

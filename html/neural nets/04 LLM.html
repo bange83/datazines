@@ -202,7 +202,7 @@ window.MathJax = {
 <p>It copied the bigram table. Useful. Also blind.</p>
 <figure class="drawing"><img src="../../assets/lm-04-lasttoken.svg" alt="lm-04-lasttoken"></figure>
 
-<p><em>coffee study</em> wants <strong>hours</strong>. <em>exam study</em> wants <strong>textbook</strong>. Both end in <code>study</code>. Last-token sees only <code>study</code>, so it cannot split them. <strong>Attention looks left.</strong> That is why 03 sits under this room.</p>
+<p><em>coffee study</em> wants <strong>hours</strong>. <em>exam study</em> wants <strong>textbook</strong>. Both end in <code>study</code>. Last-token sees only <code>study</code>, so it cannot split them. <strong>Attention looks left</strong> — a mask so the future cannot leak. The postcard in 03 looked all ways; next-token training cannot. That is why 03 sits under this room.</p>
 </section>
 <section class="leaf"><h2>Page 5 — Temperature is volume on the slices</h2>
 <p>Same scores. Divide by a number <strong>before</strong> softmax.</p>
@@ -235,7 +235,7 @@ window.MathJax = {
 </tr>
 </tbody>
 </table>
-<p>Use: <strong>sample</strong> from the slices. 0.5 repeats itself. 2 wanders. The scores did not change. You changed how brave the draw is — same politics as logistic’s 0.5 cut.</p>
+<p>Use: <strong>sample</strong> from the slices. 0.5 repeats itself. 2 wanders. The scores did not change. You changed how peaky the <strong>pile</strong> is before you draw. Logistic’s 0.5 cut is different: it keeps P and only changes the yes/no call.</p>
 <p>Tokenizer, context window, pretrain vs chat: extra pages when a project knocks. Not a second sketchbook.</p>
 </section>
 <section class="leaf"><h2>Page 6 — Mini recipe</h2>
@@ -414,7 +414,29 @@ temp 2.0  P(hours)=0.18  maxP=0.18
 </tr>
 </tbody>
 </table>
-<p><strong>Also called:</strong> leftover = cross-entropy · look = attention · next token = next word / piece.</p>
+<p><strong>Also called</strong> (in a room):</p>
+<table>
+<thead>
+<tr>
+<th>here</th>
+<th>there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>leftover</td>
+<td>cross-entropy</td>
+</tr>
+<tr>
+<td>look</td>
+<td>attention</td>
+</tr>
+<tr>
+<td>next token</td>
+<td>next word / piece</td>
+</tr>
+</tbody>
+</table>
 <figure class="drawing"><img src="../../assets/lm-06-when.svg" alt="lm-06-when"></figure>
 
 <h3>Use / skip</h3>

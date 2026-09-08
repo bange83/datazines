@@ -334,7 +334,7 @@ near sleep  rest 0.99  tired 0.93  night 0.93
 near coffee phone 0.96  noise 0.96  scroll 0.95
 </code></pre>
 <p>One-hot: study and hours share <strong>nothing</strong>. Embed: <strong>0.99</strong>, and they sit at (4.46, 1.02) and (5.23, 1.77) — the huddle on page 3. Sleep is another neighborhood (cosine <strong>−0.39</strong> with study). Coffee’s neighbors are phone, noise, scroll — junk, as written.</p>
-<p>PCA on co-occurrence is a <strong>sketch</strong> of the table. Word2vec and an LLM walk the same idea with leftover. Dim 2 is so we can draw it. Do not ship 2-d as a language model.</p>
+<p>PCA on co-occurrence is a <strong>sketch</strong> of the table. Cosines on this page are in that <strong>2-d drawing</strong> — angles can warp. Word2vec and an LLM walk the same idea with leftover, in fatter dimensions. Dim 2 is so we can draw it. Do not ship 2-d as a language model.</p>
 </section>
 <section class="leaf"><h2>Last page — cheat sheet</h2>
 <table>
@@ -371,7 +371,29 @@ near coffee phone 0.96  noise 0.96  scroll 0.95
 </tr>
 </tbody>
 </table>
-<p><strong>Also called:</strong> point / row = embedding vector · one-hot = dummy encoding · nearby = similar meaning.</p>
+<p><strong>Also called</strong> (in a room):</p>
+<table>
+<thead>
+<tr>
+<th>here</th>
+<th>there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>point / row</td>
+<td>embedding vector</td>
+</tr>
+<tr>
+<td>one-hot</td>
+<td>dummy encoding</td>
+</tr>
+<tr>
+<td>nearby</td>
+<td>similar meaning</td>
+</tr>
+</tbody>
+</table>
 <figure class="drawing"><img src="../../assets/em-06-when.svg" alt="em-06-when"></figure>
 
 <h3>Use / skip</h3>

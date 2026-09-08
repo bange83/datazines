@@ -61,9 +61,10 @@ Vault = source. HTML = leaf. **SVG, never PNG.** Not a blog theme. One style, wh
 
 **Standing:** nested `html/` tree, links between converted zines, drawings if you open from a file URL that can still see `assets/` (or serve repo root).
 
+**Standing also:** desk `html/index.html` — folder nav, zine in a borderless frame. `file://` works. Same paper. Not a unique homepage personality.
+
 **Not yet:**
 
-- A homepage **index** of covers (00 is a zine, not a shelf of cards).
 - GitHub Pages wiring (`.nojekyll`, custom domain, web root so `/assets/` and nested html both resolve).
 - Watcher / “convert only what changed” — full `--all` is seconds; forgetting to convert is the real cost.
 

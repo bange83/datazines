@@ -165,7 +165,7 @@ window.MathJax = {
 <section class="leaf"><h2>Page 1 — GD sits. This walk piles.</h2>
 <p><a class="wiki" href="../optimization/01%20gradient%20descent.html">01 gradient descent</a> walks a bowl <strong>downhill</strong> and <strong>stops</strong> at a point: ŷ’s leftover² as small as it gets.</p>
 <p>The posterior is also a height on knob-land: how much this <em>P</em> likes the coins, times the prior. If you only sit at the peak, you get a point. Bayes wanted a <strong>bump</strong> — mean <em>and</em> width.</p>
-<p>So you walk <strong>around</strong>, not only down. Visit high places often, low places rarely. The histogram of visits <em>is</em> the posterior.</p>
+<p>So you walk <strong>around</strong>, not only down. Visit high places often, low places rarely. After you drop the first stretch, the histogram of visits is a <strong>sketch</strong> of the posterior — if the walk mixed. Short chain, still a whisper.</p>
 <p>People call this <strong>Markov chain Monte Carlo</strong>. Ugly. Friendly job: <em>wander the bump; the pile is the answer.</em></p>
 <p>On a coin we <em>can</em> add. We walk anyway so you can see the pile match. A slope with a prior usually cannot add. Then this walk is the method, not a demo.</p>
 </section>
@@ -177,7 +177,7 @@ window.MathJax = {
 <li><strong>Higher</strong> posterior? Keep it.</li>
 <li><strong>Lower</strong>? Keep it with chance = new height / old height. Sometimes go downhill. That is how you still visit the shoulders.</li>
 </ul>
-<p>If the neighbor is outside 0–1, stay. Repeat. Throw away the first stretch (you started at 0.5; that was a guess). The rest is the pile.</p>
+<p>If the neighbor is outside 0–1, stay. Repeat. Throw away the first stretch (you started at 0.5; that was a guess). The rest is the pile — <strong>if</strong> later steps still wander and do not stick in one pocket.</p>
 <p>Quiet nudge: you crawl, accept almost everything. Loud nudge: you jump, reject a lot. Interview stride here: <strong>0.12</strong>. Accept rate <strong>0.77</strong>. Not a moral.</p>
 <p>This flavor is <strong>Metropolis</strong>. Other walks exist. Same job.</p>
 </section>
@@ -307,7 +307,29 @@ first 8 [0.5, 0.467, 0.413, 0.42, 0.361, 0.42, 0.432, 0.429]
 </tr>
 </tbody>
 </table>
-<p><strong>Also called:</strong> MCMC = wander the posterior · burn-in = drop the first stretch · accept rate = how often you moved.</p>
+<p><strong>Also called</strong> (in a room):</p>
+<table>
+<thead>
+<tr>
+<th>here</th>
+<th>there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MCMC</td>
+<td>wander the posterior</td>
+</tr>
+<tr>
+<td>burn-in</td>
+<td>drop the first stretch</td>
+</tr>
+<tr>
+<td>accept rate</td>
+<td>how often you moved</td>
+</tr>
+</tbody>
+</table>
 <figure class="drawing"><img src="../../assets/mc-04-when.svg" alt="mc-04-when"></figure>
 
 <h3>Use / skip</h3>

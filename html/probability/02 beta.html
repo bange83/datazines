@@ -172,9 +172,10 @@ window.MathJax = {
 <section class="leaf"><h2>Page 2 — Two knobs, both counts of pretend tosses</h2>
 <p>People write Beta(α, β). Ugly. Friendly:</p>
 <ul>
-<li><strong>α</strong> — yes-ish mass (passers you are willing to imagine)</li>
-<li><strong>β</strong> — no-ish mass (failers you are willing to imagine)</li>
+<li><strong>α</strong> — yes-ish mass (passers you are willing to imagine — not a real count until you add data)</li>
+<li><strong>β</strong> — no-ish mass (failers you imagine)</li>
 </ul>
+<p>Beta(1, 1) is <strong>flat</strong>: I don’t know. It is not “I already saw one pass and one fail.” After you see tosses, you <strong>add</strong> them. Then the knobs start to look like counts.</p>
 <p>Mean = α / (α + β). Always in 0–1. Legal region, built in.</p>
 <figure class="drawing"><img src="../../assets/bt-02-knobs.svg" alt="bt-02-knobs"></figure>
 
@@ -303,7 +304,29 @@ after  Beta(2+yes, 2+no)
 </tr>
 </tbody>
 </table>
-<p><strong>Also called:</strong> α, β = pseudo-counts · Beta(1,1) = uniform on 0–1 · add = conjugate update.</p>
+<p><strong>Also called</strong> (in a room):</p>
+<table>
+<thead>
+<tr>
+<th>here</th>
+<th>there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>α, β</td>
+<td>pseudo-counts</td>
+</tr>
+<tr>
+<td>Beta(1,1)</td>
+<td>uniform on 0–1</td>
+</tr>
+<tr>
+<td>add</td>
+<td>conjugate update</td>
+</tr>
+</tbody>
+</table>
 <figure class="drawing"><img src="../../assets/bt-04-when.svg" alt="bt-04-when"></figure>
 
 <h3>Use / skip</h3>

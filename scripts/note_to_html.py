@@ -9,7 +9,8 @@ Math stays LaTeX; MathJax renders it in the browser.
 
 Writes html/<same folders as the note>.html. Images climb to vault assets/.
 Wikilinks become hrefs to other leaves. Writer maps (PATH, AGENTS, HANDOFF)
-stay unlinked spans.
+stay unlinked spans. --all also writes html/index.html (folder nav; zine in a
+borderless frame so file:// works — no server).
 """
 
 from __future__ import annotations
@@ -382,6 +383,216 @@ def sketchbooks() -> list[Path]:
     return sorted(p for p in ROOT.rglob("*.md") if is_sketchbook(p))
 
 
+SHELF_ORDER = [
+    "",
+    "supervised learning/regression",
+    "supervised learning/classification",
+    "supervised learning/ensembles",
+    "fundamentals",
+    "optimization",
+    "probability",
+    "neural nets",
+    "inference",
+    "causal",
+    "time series",
+    "unsupervised",
+    "bayes",
+    "rl",
+]
+
+
+INDEX_CSS = r"""
+:root {
+  --paper: #f4efe4;
+  --desk: #d9d0c0;
+  --ink: #241c14;
+  --rust: #b44a28;
+  --blue: #3d5f86;
+  --muted: #7a6e5e;
+  --grain: #efe8d8;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--desk); color: var(--ink); }
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+.mast {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 10px 22px 6px;
+}
+.mast .mark {
+  height: 52px;
+  width: auto;
+  display: block;
+}
+.desk {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  overflow: hidden;
+}
+nav {
+  width: 248px;
+  flex: 0 0 248px;
+  margin: 6px 0 18px 18px;
+  padding: 14px 16px 28px;
+  background: var(--paper);
+  border-radius: 18px;
+  box-shadow: 0 1px 0 rgba(36,28,20,.06), 0 10px 28px rgba(36,28,20,.08);
+  border: 1px solid rgba(36,28,20,.06);
+  overflow-y: auto;
+}
+nav h2 {
+  font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
+  font-size: 15px;
+  font-weight: normal;
+  color: var(--rust);
+  margin: 16px 0 4px;
+}
+nav h3 {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: normal;
+  margin: 8px 0 2px 4px;
+}
+nav a {
+  display: block;
+  color: var(--blue);
+  text-decoration: none;
+  padding: 4px 8px;
+  margin: 0 0 1px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+nav a:hover { background: var(--grain); }
+nav a.on { background: var(--grain); color: var(--rust); }
+.stage {
+  flex: 1;
+  min-width: 0;
+  margin: 18px 18px 18px 14px;
+  background: var(--desk);
+  border-radius: 18px;
+  overflow: hidden;
+}
+iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: var(--desk);
+}
+@media (max-width: 720px) {
+  .desk { flex-direction: column; overflow: auto; }
+  nav { width: auto; flex: 0 0 auto; margin: 0 12px; max-height: 32vh; }
+  .stage { margin: 12px; min-height: 50vh; }
+}
+"""
+
+
+def write_index(notes: list[Path]) -> Path:
+    """Folder nav + borderless frame. file:// works. No server."""
+    by_shelf: dict[str, list[Path]] = {}
+    for note in notes:
+        rel = html_dest_for(note).relative_to(HTML_ROOT)
+        shelf = str(rel.parent) if rel.parent != Path(".") else ""
+        by_shelf.setdefault(shelf, []).append(note)
+
+    extra = sorted(s for s in by_shelf if s not in SHELF_ORDER)
+    order = [s for s in SHELF_ORDER if s in by_shelf] + extra
+
+    chunks: list[str] = []
+    last_wing = None
+    for shelf in order:
+        if shelf == "":
+            chunks.append("<h2>front door</h2>")
+        else:
+            parts = Path(shelf).parts
+            wing = parts[0]
+            if wing != last_wing:
+                chunks.append(f"<h2>{html_lib.escape(wing)}</h2>")
+                last_wing = wing
+            if len(parts) > 1:
+                chunks.append(f"<h3>{html_lib.escape(parts[-1])}</h3>")
+        for note in by_shelf[shelf]:
+            rel = html_dest_for(note).relative_to(HTML_ROOT).as_posix()
+            href = quote(rel, safe="/")
+            label = note.stem
+            if label.startswith("00 "):
+                label = label[3:]
+            chunks.append(
+                f'<a href="{href}" data-src="{href}">{html_lib.escape(label)}</a>'
+            )
+
+    nav = "\n".join(chunks)
+    door = quote("00 how to read this.html", safe="/")
+    dest = HTML_ROOT / "index.html"
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_text(
+        f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>datazines</title>
+<style>{INDEX_CSS}</style>
+</head>
+<body>
+<header class="mast"><img class="mark" src="../assets/in-06-mark.svg" alt="datazines"></header>
+<div class="desk">
+<nav>{nav}</nav>
+<div class="stage">
+<iframe id="leaf" title="zine" src="{door}"></iframe>
+</div>
+</div>
+<script>
+const frame = document.getElementById("leaf");
+const links = [...document.querySelectorAll("nav a[data-src]")];
+const root = new URL(".", location.href);
+function mark(src) {{
+  const want = decodeURIComponent(src.replace(/^\\.\\//, ""));
+  links.forEach(a => {{
+    a.classList.toggle("on", decodeURIComponent(a.dataset.src) === want);
+  }});
+}}
+function openLeaf(src, push) {{
+  frame.src = src;
+  mark(src);
+  if (push) history.replaceState(null, "", "#" + encodeURIComponent(src));
+}}
+links.forEach(a => {{
+  a.addEventListener("click", e => {{
+    e.preventDefault();
+    openLeaf(a.dataset.src, true);
+  }});
+}});
+frame.addEventListener("load", () => {{
+  try {{
+    let rel = decodeURIComponent(frame.contentWindow.location.pathname.replace(root.pathname, ""));
+    if (rel.startsWith("/")) rel = rel.slice(1);
+    if (rel) {{
+      mark(rel);
+      history.replaceState(null, "", "#" + encodeURIComponent(rel));
+    }}
+  }} catch (err) {{}}
+}});
+const start = location.hash ? decodeURIComponent(location.hash.slice(1)) : "{door}";
+openLeaf(start, false);
+</script>
+</body>
+</html>
+""",
+        encoding="utf-8",
+    )
+    return dest
+
+
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("note", nargs="?", help="vault-relative path to a sketchbook .md")
@@ -404,6 +615,9 @@ def main() -> None:
         dest = html_dest_for(note)
         convert(note, dest, args.spine)
         print(f"wrote {dest.relative_to(ROOT)}")
+    if args.all:
+        idx = write_index(notes)
+        print(f"wrote {idx.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

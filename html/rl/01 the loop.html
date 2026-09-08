@@ -154,7 +154,7 @@ window.MathJax = {
 <div class="book">
 <p class="spine">datazines · a sketchbook</p>
 <section class="leaf hero-leaf"><h1>The loop — a sketchbook</h1>
-<aside class="callout callout-abstract"><strong>In one sentence.</strong> You are in a <strong>state</strong>, you pick an <strong>action</strong>, the world pays a <strong>reward</strong> and lands you in a <strong>next</strong> state. Then again. Leftover is now a score you <strong>chose</strong>.</aside>
+<aside class="callout callout-abstract"><strong>In one sentence.</strong> You are in a <strong>state</strong>, you pick an <strong>action</strong>, the world pays a <strong>reward</strong> and lands you in a <strong>next</strong> state. Then again. The score you collect is <strong>reward</strong>, not leftover.</aside>
 
 <figure class="drawing"><img src="../../assets/rl-00-hero.svg" alt="rl-00-hero"></figure>
 
@@ -192,7 +192,7 @@ window.MathJax = {
 </tr>
 </tbody>
 </table>
-<p>People call the four-pack a <strong>loop</strong>. The policy is the rule: from this state, which action? The leftover is the <strong>sum of rewards</strong> you collect — not a miss on a grade.</p>
+<p>People call the four-pack a <strong>loop</strong>. The policy is the rule: from this state, which action? The <strong>sum of rewards</strong> is the score — not leftover (<em>y</em> − ŷ). Q later treats <strong>target − Q</strong> as the miss (<a class="wiki" href="03%20Q.html">03 Q</a>).</p>
 <p>Cause asked what happens if you <em>do</em> the lever (<a class="wiki" href="../causal/01%20confounding.html">01 confounding</a>). RL <em>is</em> that do(), again and again, and the lever changes the next state.</p>
 </section>
 <section class="leaf"><h2>Page 2 — Two policies, same world</h2>
@@ -371,11 +371,37 @@ greedy ['rest', 'study']
 </tr>
 </tbody>
 </table>
-<p><strong>Also called:</strong> loop = MDP step · Q = action value · 0.9 = discount · 0.2 try-at-random = ε-greedy.</p>
+<p><strong>Also called</strong> (in a room):</p>
+<table>
+<thead>
+<tr>
+<th>here</th>
+<th>there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>loop</td>
+<td>MDP step</td>
+</tr>
+<tr>
+<td>Q</td>
+<td>action value</td>
+</tr>
+<tr>
+<td>0.9</td>
+<td>discount</td>
+</tr>
+<tr>
+<td>0.2 try-at-random</td>
+<td>ε-greedy</td>
+</tr>
+</tbody>
+</table>
 <figure class="drawing"><img src="../../assets/rl-04-when.svg" alt="rl-04-when"></figure>
 
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> you <strong>act</strong>, the world <strong>moves</strong>, leftover is a <strong>reward you chose</strong>, and tonight vs later matters.</p>
+<p><strong>Reach for it when</strong> you <strong>act</strong>, the world <strong>moves</strong>, the score is a <strong>reward</strong>, and tonight vs later matters.</p>
 <p><strong>Skip it when</strong> one cloud and a line already work (supervised); you wanted P(yes) (<a class="wiki" href="../supervised%20learning/classification/01%20logistic%20regression.html">01 logistic regression</a>); you wanted a brand as 01.</p>
 <p><strong>Pays you:</strong> the four names. A policy you can read. A table that can find it.</p>
 <p><strong>Costs you:</strong> a world-model (or a lot of weeks). Random tries hurt now to learn. Not a grade line. Not a sampler.</p>

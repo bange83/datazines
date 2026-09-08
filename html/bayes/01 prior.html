@@ -298,7 +298,7 @@ post   Beta(11,7)            mean 0.611   5% 0.420   95% 0.788
 prior  Beta(2,8) sure-no     mean 0.200   5% 0.041   95% 0.429
 post   Beta(5,13)            mean 0.278   5% 0.124   95% 0.461
 </code></pre>
-<p>Shrug → 0.40, wide. Sure-yes → 0.61 (truth was 0.6 — luck plus a loud start). Sure-no → 0.28. Ordinary 3/8 = 0.375 is the shrug posterior’s neighbor, with no shoulders. <code>ppf</code> is the bump, not a CI from a t-test.</p>
+<p>Shrug → 0.40, wide. Sure-yes → 0.61 (truth was 0.6 — luck plus a loud start). Sure-no → 0.28. Ordinary 3/8 = 0.375 is the shrug posterior’s neighbor, with no shoulders. <code>ppf</code> prints the <strong>percentiles</strong> of the bump (5% and 95%), not a t-test interval.</p>
 </section>
 <section class="leaf"><h2>Last page — cheat sheet</h2>
 <table>
@@ -331,7 +331,33 @@ post   Beta(5,13)            mean 0.278   5% 0.124   95% 0.461
 </tr>
 </tbody>
 </table>
-<p><strong>Also called:</strong> prior = starting costume · posterior = updated belief · likelihood = P(data | P) · MLE = yes/n, no bump.</p>
+<p><strong>Also called</strong> (in a room):</p>
+<table>
+<thead>
+<tr>
+<th>here</th>
+<th>there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>prior</td>
+<td>starting costume</td>
+</tr>
+<tr>
+<td>posterior</td>
+<td>updated belief</td>
+</tr>
+<tr>
+<td>likelihood</td>
+<td>P(data | P)</td>
+</tr>
+<tr>
+<td>MLE</td>
+<td>yes/n, no bump</td>
+</tr>
+</tbody>
+</table>
 <figure class="drawing"><img src="../../assets/by-04-when.svg" alt="by-04-when"></figure>
 
 <h3>Use / skip</h3>

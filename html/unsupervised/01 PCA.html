@@ -154,7 +154,7 @@ window.MathJax = {
 <div class="book">
 <p class="spine">datazines · a sketchbook</p>
 <section class="leaf hero-leaf"><h1>PCA — a sketchbook</h1>
-<aside class="callout callout-abstract"><strong>In one sentence.</strong> No <em>y</em>. <strong>Turn the cloud</strong> so the first axis runs along the sausage. Drop the thin directions. Scale first, or the fattest <em>unit</em> wins.</aside>
+<aside class="callout callout-abstract"><strong>In one sentence.</strong> No <em>y</em>. <strong>Turn the cloud</strong> so the first axis runs along the sausage. Drop the thin directions. Scale when units are a spelling difference, or the fattest <em>unit</em> wins.</aside>
 
 <figure class="drawing"><img src="../../assets/pc-00-hero.svg" alt="pc-00-hero"></figure>
 
@@ -241,7 +241,7 @@ window.MathJax = {
 <section class="leaf"><h2>Page 5 — Mini recipe</h2>
 <ol>
 <li><strong>No y.</strong> If you have a grade to guess, go back to <a class="wiki" href="../supervised%20learning/regression/01%20linear%20regression.html">01 linear regression</a>.</li>
-<li><strong>Scale.</strong> Always. Minutes will eat PC1 if you don’t.</li>
+<li><strong>Scale</strong> when units are a spelling difference (hours vs minutes). Minutes will eat PC1 if you don’t. If the fat direction <em>is</em> the fact, leave it.</li>
 <li><strong>Rotate.</strong> First axis = longest sausage.</li>
 <li><strong>Read the loadings.</strong> Twins should share PC1. Their fight should be a thin PC.</li>
 <li><strong>Keep the fat bars.</strong> Drop the 0.1%.</li>
@@ -297,7 +297,7 @@ PC4 {'hours': -0.707, 'minutes': 0.707, 'sleep': -0.001, 'coffee': -0.002}
 recon mse 1 PC 0.499
 recon mse 2 PC 0.239
 </code></pre>
-<p>Unscaled: minutes <strong>1.00</strong>, story dead. Scaled: PC1 twins share 0.70 / 0.70, keep half the scatter. PC4 is hours minus minutes — <strong>0.1%</strong>. Reconstruct with 2 PCs: leftover² 0.239 on scaled columns. <code>StandardScaler</code> is not optional. <code>components_</code> are the directions; <code>explained_variance_ratio_</code> are the bars.</p>
+<p>Unscaled: minutes <strong>1.00</strong>, story dead — here the fat axis is a <strong>unit</strong>, not a fact. Scaled: PC1 twins share 0.70 / 0.70, keep half the scatter. PC4 is hours minus minutes — <strong>0.1%</strong>. Reconstruct with 2 PCs: leftover² 0.239 on scaled columns. <code>StandardScaler</code> when spelling differs. <code>components_</code> are the directions; <code>explained_variance_ratio_</code> are the bars.</p>
 </section>
 <section class="leaf"><h2>Last page — cheat sheet</h2>
 <table>
@@ -322,7 +322,7 @@ recon mse 2 PC 0.239
 </tr>
 <tr>
 <td>scale</td>
-<td>always, or the fat unit wins</td>
+<td>when units are spelling; else the fat direction is the fact</td>
 </tr>
 <tr>
 <td>explained</td>
@@ -330,7 +330,29 @@ recon mse 2 PC 0.239
 </tr>
 </tbody>
 </table>
-<p><strong>Also called:</strong> sausage = first principal component · loading = how much a feature sits on that PC · lever = feature.</p>
+<p><strong>Also called</strong> (in a room):</p>
+<table>
+<thead>
+<tr>
+<th>here</th>
+<th>there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sausage</td>
+<td>first principal component</td>
+</tr>
+<tr>
+<td>loading</td>
+<td>how much a feature sits on that PC</td>
+</tr>
+<tr>
+<td>lever</td>
+<td>feature</td>
+</tr>
+</tbody>
+</table>
 <figure class="drawing"><img src="../../assets/pc-05-when.svg" alt="pc-05-when"></figure>
 
 <h3>Use / skip</h3>

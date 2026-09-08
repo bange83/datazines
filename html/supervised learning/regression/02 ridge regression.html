@@ -182,7 +182,8 @@ window.MathJax = {
 <p>Ordinary least squares <strong>must</strong> chase that yank. Big misses cost a lot (they get squared). So the line leans hard, just to shave a little error off one point.</p>
 <p>On the old points it looks clever.<br>
 Clever is not the same as true.</p>
-<aside class="callout callout-tip"><strong>Margin.</strong> Few points, noisy points, or two <em>x</em> that say almost the same thing: the ordinary line can go wild. Ridge is a seatbelt for that.</aside>
+<p>Ridge is <strong>not</strong> the seatbelt for one wild <em>y</em>. It still squares leftover, so a yank still screams. Ridge’s job is <strong>huge knobs</strong>: few people, noisy <em>x</em>, or twins that fight. A single corner grade wants a check, or a method that does not square the miss — not λ.</p>
+<aside class="callout callout-tip"><strong>Margin.</strong> Few points, noisy <em>x</em>, or two <em>x</em> that say almost the same thing: the ordinary line can go wild. Ridge is a seatbelt for <strong>that</strong> — not for one weird grade.</aside>
 
 </section>
 <section class="leaf"><h2>Page 3 — Old points are a trap</h2>
@@ -506,7 +507,29 @@ R² train 0.907   R² test 0.748
 </tr>
 </tbody>
 </table>
-<p><strong>Also called:</strong> tax = L2 penalty / regularization · knobs = weights · λ = <code>alpha</code> in sklearn.</p>
+<p><strong>Also called</strong> (in a room):</p>
+<table>
+<thead>
+<tr>
+<th>here</th>
+<th>there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tax</td>
+<td>L2 penalty / regularization</td>
+</tr>
+<tr>
+<td>knobs</td>
+<td>weights</td>
+</tr>
+<tr>
+<td>λ</td>
+<td><code>alpha</code> in sklearn</td>
+</tr>
+</tbody>
+</table>
 <p>Ridge does <strong>not</strong> fix a bent cloud. If the truth curves, you still need a different shape.</p>
 <p>Ridge <strong>does</strong> fix a drama queen of a straight line.</p>
 <h3>Use / skip</h3>

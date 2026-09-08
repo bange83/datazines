@@ -162,9 +162,9 @@ window.MathJax = {
 <p>This is 02 of the cause wing. One series, one start date, a counterfactual. Not an A/B. Not NUTS.</p>
 <p>Flip it like a notebook. One page = one idea. Done.</p>
 </section>
-<section class="leaf"><h2>Page 1 — The campaign is a do() in time</h2>
+<section class="leaf"><h2>Page 1 — The campaign has a start date</h2>
 <p>Weeks 1–16: ordinary year. Trend up, break every fourth week.</p>
-<p>Week 17: extra office hours start. That is <strong>do(campaign)</strong>. Hours after that are mixed: what the year was going to do, plus whatever the extra hours did.</p>
+<p>Week 17: extra office hours start. Hours after that are mixed: what the year was going to do, plus whatever the extra hours did. This is <strong>not</strong> an experiment. Would-have has to carry the fork from <a class="wiki" href="01%20confounding.html">01 confounding</a>: no other shock at week 17, and the past still looks like the future without the campaign.</p>
 <p>The question is not “did post look higher than pre?” Pre is earlier in a climbing year. Of course post looks higher.</p>
 <p>The question is:</p>
 <blockquote>
@@ -234,7 +234,7 @@ window.MathJax = {
 <figure class="drawing"><img src="../../assets/ci-04-fake.svg" alt="ci-04-fake"></figure>
 
 <p>If your start date is a passenger of the calendar, the counterfactual should shrug. If it shouts, you forgot season — or you picked the date after seeing the spike. That is still the fork.</p>
-<p>Bootstrap the pre leftover, 2000 bags (<a class="wiki" href="../inference/02%20bootstrap.html">02 bootstrap</a>): mean impact 0.51 to 0.82. Zero not in the pile. The fake start’s 0.04 would sit on zero. Interval, not a trophy <em>p</em>.</p>
+<p>Bootstrap the <strong>pre</strong> leftover, 2000 bags (<a class="wiki" href="../inference/02%20bootstrap.html">02 bootstrap</a>): mean gap 0.51 to 0.82. Zero not in <em>that</em> pile. This is leftover of the <strong>would-have fit</strong>, replayed — not a full causal interval (post rattles too; the fork is still an assumption). The fake start’s 0.04 would sit on zero. Sketch, not a trophy <em>p</em>.</p>
 </section>
 <section class="leaf"><h2>Page 5 — Mini recipe</h2>
 <ol>
@@ -313,7 +313,7 @@ boot 95% mean impact [0.51 0.82]   se 0.08
 <tbody>
 <tr>
 <td>start date</td>
-<td>when do() begins</td>
+<td>when the campaign begins</td>
 </tr>
 <tr>
 <td>would-have</td>
@@ -338,8 +338,8 @@ boot 95% mean impact [0.51 0.82]   se 0.08
 <h3>Use / skip</h3>
 <p><strong>Reach for it when</strong> you have <strong>one series and a start date</strong>, you can name would-have (trend + season), and you already own the fork.</p>
 <p><strong>Skip it when</strong> ŷ for next week was the job (<a class="wiki" href="../time%20series/01%20lag%20trend%20season.html">01 lag trend season</a>); you already ran the experiment; you wanted BSTS / NUTS as the first file.</p>
-<p><strong>Pays you:</strong> do() on a series without a second group. Naive called out. Season kept in the counterfactual so a break is not a campaign.</p>
-<p><strong>Costs you:</strong> would-have is a guess (here 0.67 vs 0.90). A hidden fork in time remains hidden. Picking the start after seeing the spike is still coffee-only. BSTS later, same gap.</p>
+<p><strong>Pays you:</strong> actual − would-have on one series. Naive called out. Season kept in the counterfactual so a break is not a campaign.</p>
+<p><strong>Costs you:</strong> would-have is a guess (here 0.67 vs 0.90). A hidden fork in time remains hidden. Picking the start after seeing the spike is still coffee-only. The bootstrap here is leftover of the fit, not a full causal interval. BSTS later, same gap.</p>
 <p><em>Cause 02. Actual − would-have. Time 01 was the dashed line. Next empty 01: no-y.</em></p></section>
 <p class="colophon">Flip it like a notebook. One page = one idea.</p>
 </div>
