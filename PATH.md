@@ -49,7 +49,7 @@ Same pencils as always. Same “one idea per page.” New family = new folder at
 
 **Also standing (path page 4, done):**
 
-- [[00 how to read this]] — front door: leftover, four classrooms, pick a 01
+- [[00 how to read this]] — front door: folders are shelves, read 01
 - [[01 gradient descent]] — walk the bowl
 - [[01 distributions]] — bell, coin, counts
 - [[02 beta]] — coin’s cousin: a bump on unknown P

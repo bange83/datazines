@@ -19,7 +19,7 @@ House style lives in [`AGENTS.md`](AGENTS.md). The map of shelves lives in [`PAT
 
 ## How to read
 
-Start at the front door: [`00 how to read this.md`](00%20how%20to%20read%20this.md) — leftover, four classrooms, pick a 01.
+Start at the front door: [`00 how to read this.md`](00%20how%20to%20read%20this.md) — folders are shelves, read 01.
 
 Then:
 
@@ -31,7 +31,7 @@ This is a **library**, not a ladder. File sort is reading order *inside a family
 ## Layout
 
 ```
-00 how to read this.md  front door (leftover, four classrooms)
+00 how to read this.md  front door (folders are shelves; leftover is the voice)
 supervised learning/
   regression/          01–06  line, tax, shortlist, mix, walk, glasses for y
   classification/      01–04  S, blobs, softmax, SVM

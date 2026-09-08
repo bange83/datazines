@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="760" height="400" role="img" aria-label="a library of sketchbooks; leftover is the thread">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="760" height="400" role="img" aria-label="folders are the shelves">
 <defs>
   <filter id="grain" x="0" y="0" width="100%" height="100%">
     <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
@@ -12,16 +12,17 @@
 </defs>
 <rect width="760" height="400" rx="18" ry="18" fill="#f4efe4"/>
 <rect width="760" height="400" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
-<text x="380" y="40" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#7a6e5e" text-anchor="middle">not a ladder. a library.</text>
-<rect x="80" y="90" width="140" height="180" rx="8" fill="#b44a28" opacity="0.12" stroke="#b44a28" stroke-width="2"/>
-<text x="150" y="185" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#b44a28" text-anchor="middle">line</text>
-<rect x="250" y="90" width="140" height="180" rx="8" fill="#3d5f86" opacity="0.12" stroke="#3d5f86" stroke-width="2"/>
-<text x="320" y="185" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#3d5f86" text-anchor="middle">s-shaped</text>
-<rect x="420" y="90" width="140" height="180" rx="8" fill="#4f6d55" opacity="0.12" stroke="#4f6d55" stroke-width="2"/>
-<text x="490" y="185" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#4f6d55" text-anchor="middle">walk</text>
-<rect x="590" y="90" width="90" height="180" rx="8" fill="none" stroke="#7a6e5e" stroke-width="1.8" stroke-dasharray="6 5"/>
-<text x="635" y="185" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="28" fill="#7a6e5e" text-anchor="middle">…</text>
-<path d="M 70,280 L 690,280" fill="none" stroke="#241c14" stroke-width="2.2"/>
-<text x="380" y="330" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="middle">one verb in every room: leftover.</text>
-<text x="380" y="362" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">picture. one sentence. real numbers.</text>
+<text x="380" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">the library is folders. open one. read 01.</text>
+<rect x="70" y="80" width="110" height="200" rx="8" fill="#b44a28" opacity="0.12" stroke="#b44a28" stroke-width="2"/>
+<text x="125" y="185" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="middle">supervised</text>
+<rect x="200" y="80" width="110" height="200" rx="8" fill="#3d5f86" opacity="0.12" stroke="#3d5f86" stroke-width="2"/>
+<text x="255" y="185" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#3d5f86" text-anchor="middle">fundamentals</text>
+<rect x="330" y="80" width="110" height="200" rx="8" fill="#4f6d55" opacity="0.12" stroke="#4f6d55" stroke-width="2"/>
+<text x="385" y="185" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#4f6d55" text-anchor="middle">nets</text>
+<rect x="460" y="80" width="110" height="200" rx="8" fill="#c4a35a" opacity="0.12" stroke="#c4a35a" stroke-width="2"/>
+<text x="515" y="185" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#c4a35a" text-anchor="middle">bayes</text>
+<rect x="590" y="80" width="110" height="200" rx="8" fill="#7a6e5e" opacity="0.12" stroke="#7a6e5e" stroke-width="2"/>
+<text x="645" y="185" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">…</text>
+<path d="M 50,290 L 710,290" fill="none" stroke="#241c14" stroke-width="2.2"/>
+<text x="380" y="340" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">same paper in every folder.</text>
 </svg>

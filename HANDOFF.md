@@ -30,7 +30,7 @@ Ridge / lasso / LARS: do not shorten unless asked. Notes **English**. No emoji i
 
 ## Page 2 — What closed today
 
-**Door ([[00 how to read this]]):** reader-only. No PATH / AGENTS / HANDOFF. “S” → **s-shaped / s-curve**. Four classrooms named by **job**, not two 80s:
+**Door ([[00 how to read this]]):** reader-only. No PATH / AGENTS / HANDOFF. Shelves = **folders**. Leftover is the voice, not the map. Four piles named by **job**, not two 80s:
 
 | class | *y* | *n* (side fact) |
 |---|---|---:|
@@ -89,7 +89,7 @@ Vault = source. HTML = leaf. **SVG, never PNG.** Not a blog theme. One style, wh
 |---|---|
 | freeze | no new wings / rooms |
 | allowed | bugs, refine, HTML |
-| door | [[00 how to read this]] — job names, *n* as side fact |
+| door | [[00 how to read this]] — folders are shelves; leftover is the voice |
 | press | `python3 scripts/note_to_html.py --all` |
 | leaves | `html/<vault folders>/<stem>.html` |
 | links | wiki → sibling leaves |

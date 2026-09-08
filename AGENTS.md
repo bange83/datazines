@@ -21,7 +21,7 @@ This file is two things at once:
 1. A **receipt** for what landed (which notes, which prefixes).
 2. The **house rules** for the next agent (or you, on a later night) who adds a topic.
 
-**What a human reads first:** [[00 how to read this]] — leftover, four classrooms, pick a 01. Not this file.
+**What a human reads first:** [[00 how to read this]] — folders are shelves, read 01. Not this file.
 
 **Freeze (6 Sep 2026):** no new wings, no new rooms. Bugfix and refine only. Then HTML zines → [datazines.com](https://datazines.com). Receipt: [[HANDOFF.md]]. Map of what exists: [[PATH.md]].
 

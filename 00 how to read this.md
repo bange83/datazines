@@ -12,11 +12,11 @@ aliases:
 # How to read this — a sketchbook
 
 > [!abstract] In one sentence
-> A **library** of short notebooks, not a ladder. Picture, one sentence, real numbers. The verb in every room is **leftover**.
+> Folders are **shelves**. Open a folder, read **01**. Picture, one sentence, real numbers. Same paper everywhere.
 
 ![in-00-hero](assets/in-00-hero.svg)
 
-This is the front door. You are a reader. Start here, then pick a 01.
+This is the front door. You are a reader. Start here, then pick a folder.
 
 Job-interview version. Derivations live elsewhere.
 
@@ -36,89 +36,92 @@ The site is those zines in a browser. Same pencils.
 
 ---
 
-## Page 2 — The verb is leftover
+## Page 2 — The shelves are folders
 
-You have a cloud of people. You draw a machine (a line, an s-shaped curve, a tree). Almost nobody sits on it.
+The library **is** the folder list.  Those are ideas *inside* a folder.
+
+| folder                 | what is in it                           |
+| ---------------------- | --------------------------------------- |
+| `supervised learning/` | regression, classification, ensembles   |
+| `fundamentals/`        | train / test, bias vs variance, metrics |
+| `optimization/`        | gradient descent                        |
+| `probability/`         | distributions, beta                     |
+| `neural nets/`         | tiny net → embeddings → attention → LLM |
+| `inference/`           | t-test, bootstrap                       |
+| `causal/`              | confounding, causal impact              |
+| `time series/`         | lag, trend, season                      |
+| `unsupervised/`        | PCA, k-means                            |
+| `bayes/`               | prior, MCMC                             |
+| `rl/`                  | the loop, bandits, Q                    |
+
+Inside a folder, **file sort is reading order.** `01` is the ordinary idea. `02` is a sequel — shorter.
+
+You do **not** have to finish `supervised learning/` before you open `unsupervised/`. You **do** read `01` before `02` in the same family.
+
+---
+
+## Page 3 — How to walk
+
+![in-04-walk](assets/in-04-walk.svg)
+
+1. **Pick a folder.**
+2. **Read 01.** Then the numbered sequels if you want them.
+3. **Use / skip** on the last page of that note. Honest: when this method pays you, what it costs, what to open instead.
+
+Lost? Three honest starts:
+
+- a number: [[01 linear regression]] (`supervised learning/regression/`)
+- leftover on new people: [[01 train test validate]] (`fundamentals/`)
+- yes / no: [[01 logistic regression]] (`supervised learning/classification/`)
+
+An LLM lives in `neural nets/`, after a tiny net. Not the whole library.
+
+---
+
+## Page 4 — Leftover (the thread, not the map)
+
+You have a cloud of people. You draw a machine. Almost nobody sits on it.
 
 The **gap** — real minus guess — is leftover.
 
 ![in-02-leftover](assets/in-02-leftover.svg)
 
-That miss wears costumes:
+Notes reuse that miss: a grade miss, a miss on **new** people, a surprise of the next word, actual − would-have. Ridge taxes **knobs**, not leftover. A t-test asks if leftover could have faked a number.
 
-| costume | notebook |
-|---|---|
-| vertical miss on a grade | [[01 linear regression]] |
-| miss on **new** people | [[01 train test validate]] |
-| jumpy vs shy | [[02 bias variance]] |
-| a shape leftovers are allowed | [[01 distributions]] |
-| surprise of the true next word | [[04 LLM]] |
-| actual − would-have | [[02 causal impact]] |
-| a starting bump, then data | [[01 prior]] |
-| a reward you chose, then next week | [[01 the loop]] |
-| one room, many arms, no next | [[02 bandits]] |
-| from here, this act, points from now on | [[03 Q]] |
-
-Ridge taxes **knobs**, not leftover. A t-test asks if leftover could have faked a number. A forest votes leftover away. Same verb. New costume.
-
-If you keep only one thing from the whole library:
-
-> leftover. then a machine. then leftover on people the machine has not seen.
+That is why the voice feels like one notebook. It is **not** how you navigate. Folders are.
 
 ---
 
-## Page 3 — Four classrooms
+## Page 5 — Same exam world, different piles
 
-Same exam *world*: hours, sleep, tutor, coffee. **Not** the same pile of people.
+Hours, sleep, tutor, coffee — one story. **Not** one pile of people.
 
 ![in-03-rooms](assets/in-03-rooms.svg)
 
-| class | *y* | used by | *n* (side fact) |
-|---|---|---|---:|
-| **the line** | grade | tiny table — t-test, bootstrap | 8 |
-| **twins** | grade + minutes | a tax — ridge → lasso → LARS, train/test, bias–variance | 30 |
-| **pass / fail** | yes / no | s-shaped curve — logistic, LDA, tree, forest, metrics | 80 |
-| **unlabeled** | none | sausage, rooms — PCA, k-means | 80 |
+When a note says “same people,” it means **this pile**, not the whole vault.
 
-Name the class by the **job**, not the headcount. Two crowds can both be 80. **Pass / fail** is a yes/no pile. **Unlabeled** has no *y*. When a note says “same people,” it means **this classroom**, not the whole vault. A grade is not a pass. No *y* is not a grade.
+| pile | *y* | *n* (side fact) | typical folder |
+|---|---|---:|---|
+| **the line** | grade | 8 | regression 01, inference |
+| **twins** | grade + minutes | 30 | ridge → LARS, fundamentals 01–02 |
+| **pass / fail** | yes / no | 80 | classification, ensembles, metrics |
+| **unlabeled** | none | 80 | unsupervised |
 
----
-
-## Page 4 — How to walk a site
-
-This is a **library**. You do not have to finish the building.
-
-![in-04-walk](assets/in-04-walk.svg)
-
-1. **Pick a shelf.** Line, s-shaped curve, tree, walk, chance, cause, time, no *y*.
-2. **Read 01** of that family. Sequels are a tax, a camera, a haircut — shorter.
-3. **Use / skip** on the last page is the door. Honest: when this method pays you, what it costs, what to open instead.
-
-You **can** open logistic without finishing ridge. You **can** open PCA without a grade.
-
-You **cannot** open the many-class curve without the s-shaped one. You **cannot** open an LLM without a net, a look, leftover as surprise. Those 01s are stairs, not decoration.
-
-Lost? Three honest starts:
-
-- a number: [[01 linear regression]]
-- leftover on new people: [[01 train test validate]]
-- yes / no: [[01 logistic regression]]
-
-An LLM is **one room** in the nets wing. Not the building.
+A grade is not a pass. No *y* is not a grade. Two crowds can both be 80.
 
 ---
 
-## Page 5 — Mini recipe
+## Page 6 — Mini recipe
 
 1. This file is the **door**.
-2. Open **01 of a family**, not a random sequel.
+2. Open a **folder**, then **01**.
 3. Picture, then the name. Cheat sheet last.
-4. “Same people” → check the classroom (the line / twins / pass-fail / unlabeled).
+4. “Same people” → which pile (page 5).
 5. If you wanted a derivation, you are in the wrong building. Leave by Use / skip.
 
 If you keep only one thing:
 
-> library, not a ladder. leftover is the thread. start at 01.
+> folders are shelves. read 01. leftover is the voice, not the map.
 
 ---
 
@@ -126,25 +129,26 @@ If you keep only one thing:
 
 | word | meaning |
 |---|---|
-| leftover | real − guess (many costumes) |
-| 01 | the ordinary idea of a family |
+| folder | a shelf (`supervised learning/`, `fundamentals/`, …) |
+| 01 | first note in that family; sort order is reading order |
 | Use / skip | when to reach for it, when not |
-| classroom | the line / twins / pass-fail / unlabeled |
+| leftover | real − guess (the voice) |
+| pile | the line / twins / pass-fail / unlabeled |
 
-**Also called:** leftover = residual / error · 01 = the first sketchbook of a wing · zine = one note.
+**Also called:** leftover = residual / error · 01 = first sketchbook of a family · zine = one note.
 
 ![in-05-when](assets/in-05-when.svg)
 
 ### Use / skip
 
-**Reach for it when** you just walked in, you mixed the classrooms, or you are lost between shelves.
+**Reach for it when** you just walked in, you mixed the piles, or you are lost between folders.
 
 **Skip it when** you wanted a textbook; you wanted a chapter list as 01.
 
-**Pays you:** the verb, the four piles, three honest starts. Permission not to read in folder order.
+**Pays you:** the folder map, three honest starts. Permission not to finish one shelf before another.
 
-**Costs you:** no sklearn page — this is a map, not a fit. No derivation. No “read everything before logistic.”
+**Costs you:** no sklearn page — this is a map, not a fit. No derivation.
 
 ---
 
-*Front door. First machine: [[01 linear regression]]. Leftover on new people: [[01 train test validate]]. Yes/no: [[01 logistic regression]].*
+*Front door. First folder: `supervised learning/regression/` — [[01 linear regression]].*
