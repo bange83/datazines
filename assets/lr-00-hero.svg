@@ -20,7 +20,7 @@
 <path d="M 72.00,390.00 L 178.33,389.68 Q 178.33,389.68 231.50,389.51 Q 284.67,389.35 337.83,389.94 Q 391.00,390.54 444.17,390.22 Q 497.33,389.91 550.50,390.06 Q 603.67,390.21 656.83,390.10 L 710.00,390.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <path d="M 699.0,384.0 L 710.0,390.0 L 699.0,396.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <path d="M 74.0,55.0 L 80.0,44.0 L 86.0,55.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<text x="718.0" y="396.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">hours studied</text>
+<text x="395.0" y="442.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="middle" font-style="normal" font-weight="normal">hours studied</text>
 <text x="72.0" y="34.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="end" font-style="normal" font-weight="normal">grade</text>
 <path d="M 168.6,390.0 L 168.6,397.0" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
 <text x="168.6" y="414.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">1</text>
@@ -59,5 +59,5 @@
 <ellipse cx="524.1" cy="162.2" rx="2.2" ry="1.7" fill="#f7f2ea" opacity="0.35"/>
 <ellipse cx="611.4" cy="87.8" rx="7.7" ry="7.6" transform="rotate(20.7 611.4 87.8)" fill="#241c14" opacity="0.92"/>
 <ellipse cx="612.6" cy="86.7" rx="2.1" ry="1.7" fill="#f7f2ea" opacity="0.35"/>
-<text x="553.9" y="99.8" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#b44a28" text-anchor="start" font-style="normal" font-weight="normal">the line</text>
+<text x="300.0" y="95.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#b44a28" text-anchor="start" font-style="normal" font-weight="normal">the line</text>
 </svg>

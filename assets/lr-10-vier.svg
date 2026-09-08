@@ -20,7 +20,7 @@
 <path d="M 82.00,380.00 L 178.33,380.02 Q 178.33,380.02 226.50,379.89 Q 274.67,379.76 322.83,379.68 Q 371.00,379.60 419.17,380.11 Q 467.33,380.63 515.50,380.51 Q 563.67,380.40 611.83,380.20 L 660.00,380.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <path d="M 649.0,374.0 L 660.0,380.0 L 649.0,386.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <path d="M 84.0,55.0 L 90.0,44.0 L 96.0,55.0" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<text x="668.0" y="386.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="start" font-style="normal" font-weight="normal">hours studied</text>
+<text x="375.0" y="432.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="middle" font-style="normal" font-weight="normal">hours studied</text>
 <text x="82.0" y="34.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#241c14" text-anchor="end" font-style="normal" font-weight="normal">grade</text>
 <path d="M 202.0,380.0 L 202.0,387.0" fill="none" stroke="#241c14" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
 <text x="202.0" y="404.0" font-family="Georgia, Times New Roman, serif" font-size="13" fill="#7a6e5e" text-anchor="middle" font-style="normal" font-weight="normal">1</text>
@@ -51,5 +51,6 @@
 <ellipse cx="371.2" cy="193.3" rx="1.7" ry="1.2" fill="#f7f2ea" opacity="0.35"/>
 <path d="M 356.00,194.38 L 365.33,194.39 Q 365.33,194.39 370.00,194.43 Q 374.67,194.47 379.33,194.42 L 384.00,194.38" fill="none" stroke="#b44a28" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <path d="M 370.00,180.38 L 370.02,189.71 Q 370.02,189.71 370.01,194.38 Q 370.01,199.04 370.01,203.71 L 370.00,208.38" fill="none" stroke="#b44a28" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<text x="386.0" y="182.4" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="start" font-style="normal" font-weight="normal">centroid  (2.5, 4.5)</text>
+<path d="M 384.0,208.0 L 430.0,248.0" fill="none" stroke="#b44a28" stroke-width="1.4" stroke-linecap="round"/>
+<text x="434.0" y="258.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#b44a28" text-anchor="start" font-style="normal" font-weight="normal">centroid  (2.5, 4.5)</text>
 </svg>
