@@ -36,7 +36,7 @@ Same *y*: pass / fail.
 Same levers: hours, sleep.
 Different object: **the two clouds**, not the S.
 
-You did not miss this as a foundation. You missed a twin. Logistic can live without it. This notebook is the twin.
+Logistic can live without this picture. This notebook starts from it.
 
 ---
 
@@ -59,7 +59,7 @@ Sleep barely moves. Hours does the separating. The picture is already a story: *
 
 ## Page 3 — A new student is a question
 
-Someone walks in: 3 hours, 7 of sleep. Not in the old cloud.
+Someone walks in: 3 hours of studying, 7 of sleep. Not in the old cloud.
 
 ![ld-03-ask](../../assets/ld-03-ask.svg)
 
@@ -77,9 +77,11 @@ If the two blobs have the **same sausage shape**, the set of points equally clos
 
 ## Page 4 — Shared shape → line. Own shape → curve.
 
-**LDA** (linear): one shared oval for both classes. Boundary = a line.
+You still see **two** blobs. Fail, and pass. Two rooms. Two centers.
 
-**QDA** (quadratic): each class gets its own oval — failers maybe tall and thin, passers wide. Boundary **bends**.
+**LDA** (linear): both rooms use the **same sausage shape**. Only the center moves. Then the fence between them is a **line**.
+
+**QDA** (quadratic): each room gets **its own** oval — failers maybe round, passers a flat sausage. Still two ovals. The fence still sits **between** them. It just **bends**.
 
 ![ld-04-shared](../../assets/ld-04-shared.svg)
 
