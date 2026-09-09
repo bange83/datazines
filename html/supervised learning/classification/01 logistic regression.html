@@ -259,7 +259,9 @@ P(pass | 3 hours) = 0.64
 P(pass | 5 hours) = 0.98
 accuracy on these 80 = 0.838
 </code></pre>
-<p>Three hours: still a coin with a lean (0.64). Five hours: almost sure (0.98). The S climbed. Accuracy 0.84 is on <em>these</em> people — pride, like R² without a split. Pass is common here, so always-fail would look <em>worse</em>. When yes is rare, accuracy can clap for always-fail (<a class="wiki" href="../../fundamentals/03%20metrics.html">03 metrics</a>).</p>
+<p>Three hours: P = 0.64. That's about <strong>1.8 yeses per no</strong>. <em>b</em> = 1.62 means <em>e</em>^b ≈ 5, so each extra hour <strong>×5 on the odds</strong>, not on P (page 4). Two extra hours: ×25. 1.8 × 25 ≈ <strong>45 yeses per no</strong> — that's P ≈ 0.98. Same number the machine printed.</p>
+<p><em>a</em> = −4.29 is the score at <strong>0 hours</strong> — log-odds if nobody studied. Hours here run 1–6. Math, not a student.</p>
+<p>Accuracy 0.84 is on <em>these</em> people — pride, like R² without a split. Pass is common here, so always-fail would look <em>worse</em>. When yes is rare, accuracy can clap for always-fail (<a class="wiki" href="../../fundamentals/03%20metrics.html">03 metrics</a>).</p>
 <p><code>predict_proba</code> is the S. <code>predict</code> is the 0.5 cut. Do not copy this unscaled one-column fit onto hours <em>and</em> minutes. The inside is still a line; size of a knob starts to matter.</p>
 </section>
 <section class="leaf"><h2>Last page — cheat sheet</h2>
