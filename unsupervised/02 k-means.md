@@ -18,7 +18,7 @@ aliases:
 
 Read [[01 PCA]] first. Same exam world: hours and sleep. **Still no grade.** PCA asked which way the cloud is long. This notebook asks whether the cloud has **rooms**.
 
-This is 02 of the unsupervised wing. LDA already drew two blobs *because* of pass/fail. Here nobody told us who passed. We still want names for clumps.
+LDA drew two blobs *because* of pass/fail. Here nobody told us who passed. We still want names for clumps.
 
 Flip it like a notebook. One page = one idea. Done.
 
@@ -26,7 +26,7 @@ Flip it like a notebook. One page = one idea. Done.
 
 ## Page 1 — There is still no grade
 
-Eighty students, house seed 7. Hours and sleep. **No grade.** Three styles planted on purpose — not ridge’s thirty graders, and not the pass/fail class.
+Eighty students, house seed 7. Hours and sleep. **No grade.** Three styles planted on purpose.
 
 Three study styles, planted on purpose:
 

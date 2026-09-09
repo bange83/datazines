@@ -18,7 +18,7 @@ aliases:
 
 Read [[01 prior]] and [[01 gradient descent]] first. Same eight coins, house seed 7, 3 yes / 5 no. Prior still adds: Beta(4, 6), mean **0.40**. This notebook **pretends we cannot add**, walks anyway, and checks the pile against that bump.
 
-This is 02 of Bayes. A walk, not a catalog of samplers.
+A walk, not a catalog of samplers.
 
 Flip it like a notebook. One page = one idea. Done.
 
@@ -167,7 +167,7 @@ Start at 0.5, wander. Mean **0.39** vs add **0.40**. Shoulders 0.17–0.65 vs 0.
 
 **Reach for it when** you **cannot add** (no beta-out), you still want a **bump**, and you can score a guess.
 
-**Skip it when** coin + beta still adds ([[01 prior]]); you wanted the **dip** ([[01 gradient descent]]); you wanted a catalog of samplers as 01.
+**Skip it when** coin + beta still adds ([[01 prior]]); you wanted the **dip** ([[01 gradient descent]]); you wanted a catalog of samplers.
 
 **Pays you:** a posterior without a named bump. Same coins, a pile that matches the add — so you trust the walk when add is gone.
 

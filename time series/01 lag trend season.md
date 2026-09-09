@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 linear regression]] first. Same exam world, new object: **weekly hours** over 24 weeks. Cause ([[01 confounding]]) still waits: a campaign in week 20 is later. This notebook is the furniture that campaign would sit on.
 
-This is 01 of the time wing. Forecasts, holdouts in time, *then* causal impact. Not BSTS.
-
 Flip it like a notebook. One page = one idea. Done.
 
 ---

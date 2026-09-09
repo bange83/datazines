@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 neural net]] first. Same exam world. The levers changed species: not hours as a number — **words** in the students’ notes. Softmax ([[03 softmax]]) still waits at the last layer.
 
-This is 02 of the nets wing. Attention is the next room. Not this file.
-
 Flip it like a notebook. One page = one idea. Done.
 
 ---

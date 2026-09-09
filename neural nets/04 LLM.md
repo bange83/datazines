@@ -19,8 +19,6 @@ aliases:
 
 Read [[01 neural net]], [[02 embeddings]], [[03 attention]], and [[03 softmax]] first. Same exam notes. The job changed: not P(pass) — **P(the next word)**.
 
-This is 04 of the nets wing. One room. Not a career.
-
 Flip it like a notebook. One page = one idea. Done.
 
 ---

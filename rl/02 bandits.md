@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 the loop]] first. Same exam *world*: an evening, not a cloud of eighty people. The loop had tired / fresh — the act changed **next week**. A bandit has **no next**. You are always in the same room. Only the lever you pull tonight changes.
 
-This is 02 of the act wing. A camera on “no next-state,” not a second textbook. Not a brand.
-
 Flip it like a notebook. One page = one idea. Done.
 
 ---
@@ -181,7 +179,7 @@ Random shares nights almost equally — Q already *sees* study (~1.97) and still
 
 **Reach for it when** there is **one room**, many arms, the pull does **not** change the room, and try vs cash is the whole job.
 
-**Skip it when** tired vs fresh matters ([[01 the loop]]); you have a frozen pile of people (supervised); you wanted a brand as 01.
+**Skip it when** tired vs fresh matters ([[01 the loop]]); you have a frozen pile of people (supervised).
 
 **Pays you:** the try/cash sentence. A rule that finds study without knowing it. Counts you can screenshot.
 
@@ -189,4 +187,4 @@ Random shares nights almost equally — Q already *sees* study (~1.97) and still
 
 ---
 
-*Act 02. No next. Try or cash. Next: [[03 Q]] — the loop’s table, named. Not a brand.*
+*No next. Try or cash. Next: [[03 Q]] — the loop’s table, named.*

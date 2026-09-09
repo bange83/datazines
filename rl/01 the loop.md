@@ -19,7 +19,7 @@ aliases:
 
 Read [[01 linear regression]] and [[01 gradient descent]] first. Same exam *world*: study vs rest. Not a cloud of eighty people. A **week**, then the next week. Supervised guessed a grade from hours. This notebook **picks** rest or study, then sees what the week did.
 
-This is 01 of the act wing. Bandits are [[02 bandits]] — no next-state. The table, named: [[03 Q]]. Not a brand as 01.
+Bandits ([[02 bandits]]) have no next-state. The table, named: [[03 Q]].
 
 Flip it like a notebook. One page = one idea. Done.
 
@@ -94,7 +94,7 @@ The 0.9 is **later is a bit less than now**. Tomorrow’s 3 is not worth a 3 tod
 
 Greedy: rest when tired, study when fresh. The table found the policy from page 2.
 
-Not a net. Not a brand. A table you can screenshot.
+A table you can screenshot.
 
 ---
 
@@ -210,7 +210,7 @@ Coin-flip **30.5**. Sensible **38.3**. Q’s greedy row is rest / study — the 
 
 **Reach for it when** you **act**, the world **moves**, the score is a **reward**, and tonight vs later matters.
 
-**Skip it when** one cloud and a line already work (supervised); you wanted P(yes) ([[01 logistic regression]]); you wanted a brand as 01.
+**Skip it when** one cloud and a line already work (supervised); you wanted P(yes) ([[01 logistic regression]]).
 
 **Pays you:** the four names. A policy you can read. A table that can find it.
 
@@ -218,4 +218,4 @@ Coin-flip **30.5**. Sensible **38.3**. Q’s greedy row is rest / study — the 
 
 ---
 
-*Act 01. The loop. Next: [[02 bandits]] — no next-state. The table, named: [[03 Q]].*
+*The loop. Next: [[02 bandits]] — no next-state. The table, named: [[03 Q]].*

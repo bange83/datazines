@@ -235,7 +235,9 @@ Length: roughly 8–16 pages. Dense, not encyclopedic. If you need a second topi
 
 **Language: English.** The series started in German and moved. Stay put. Chat may be German; the notes are not.
 
-**Reader:** smart 18-year-old. No stats course. Not a child. This is the **job-interview version**: picture, one sentence, real numbers. Not a textbook. Whoever wants the derivation goes somewhere else.
+**Reader:** smart 18-year-old. Some interest in data and computers. No stats course. Not a child. This is the **job-interview version**: picture, one sentence, real numbers. Not a textbook. Whoever wants the derivation goes somewhere else.
+
+A stranger must get every sentence. **Never** put chat with the prompter in a notebook: freeze talk, “not tonight,” “this is 04,” “not ridge’s thirty,” “not a brand as 01,” “later door, not this file.” Those belong in [[HANDOFF.md]] or the chat. The note is for someone who just walked in.
 
 Sit between lecture and baby talk:
 
@@ -251,6 +253,7 @@ Sit between lecture and baby talk:
 - Hedge every sentence. Pick a verb.
 - Be cute for a whole page. One wink is enough.
 - Dump a textbook definition and then “explain it simply.” Start simple. Name it later.
+- Write to the person who prompted you. No freeze, no headcount fight, no “we already covered this.” A sequel line is enough: `Read [[01 …]] first.`
 
 ---
 

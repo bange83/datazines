@@ -19,8 +19,6 @@ aliases:
 
 Read [[01 logistic regression]] and [[01 gradient descent]] first. Same exam world: hours, sleep, tutor, *y* = did they pass? Softmax ([[03 softmax]]) is waiting at the last layer if you ever have more rooms.
 
-This is 01 of the nets wing. Embeddings, attention, an LLM — later rooms. This notebook is the brick they all sit on.
-
 Flip it like a notebook. One page = one idea. Done.
 
 ---

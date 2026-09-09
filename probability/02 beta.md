@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 distributions]] first. Bell, coin, counts. This is the coin’s **cousin**, not a fourth zoo animal. Logistic already used a coin for *one* pass/fail. Beta is what you wear when **P(pass) is the thing you don’t know yet**.
 
-This is 02 of chance. Bayes 01 will put a prior on this bump.
-
 Flip it like a notebook. One page = one idea. Done.
 
 ---
@@ -80,7 +78,7 @@ Start Beta(2, 2) instead (mild “about half”). Same eight: Beta(5, 7), mean *
 
 People call this **conjugate**: beta in, coin data, beta out. Fancy. Job: *add the yeses to α, the nos to β.*
 
-Bayes 01 is this move, named. Not tonight.
+[[01 prior]] names this move.
 
 ---
 

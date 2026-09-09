@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 linear regression]] and [[06 GLM]]. GLM already picked glasses for *y*. This notebook names the **shapes** those glasses assumed — without a 40-curve catalog.
 
-This is 01 of the chance wing. t-tests, CIs, “is this real?” come after. Softmax needs a coin that can have many faces.
-
 Flip it like a notebook. One page = one idea. Done.
 
 ---

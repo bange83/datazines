@@ -17,9 +17,7 @@ aliases:
 
 ![fm-00-hero](../assets/fm-00-hero.svg)
 
-Read [[01 linear regression]] and [[02 ridge regression]] first — especially ridge page 3 (old points are a trap) and page 11 (the folds). Same **thirty graders**, seed 7, same twins and junk. Not the eighty pass/fail class. Not unlabeled.
-
-This is 01 of fundamentals. Bias vs variance is [[02 bias variance]] (ridge already drew the dartboard). Metrics later. Significance lives in [[01 t-test]] — don’t clone it.
+Read [[01 linear regression]] and [[02 ridge regression]] first — especially ridge page 3 (old points are a trap) and page 11 (the folds). Same **thirty graders**, same twins and junk.
 
 Flip it like a notebook. One page = one idea. Done.
 

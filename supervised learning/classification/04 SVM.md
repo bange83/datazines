@@ -17,9 +17,7 @@ aliases:
 
 ![sv-00-hero](../../assets/sv-00-hero.svg)
 
-Read [[01 logistic regression]] and [[02 LDA]] first. Same exam. Same hours and sleep. Same **eighty** pass/fail students, seed 7 — not ridge’s thirty graders. Logistic wanted **P(yes)**. LDA drew two blobs. This notebook wants a **fence**, and the widest gutter it can get.
-
-This is 04 of classification. Short. A kernel (RBF) is a later door, not 01.
+Read [[01 logistic regression]] and [[02 LDA]] first. Same exam. Same hours and sleep. Logistic wanted **P(yes)**. LDA drew two blobs. This notebook wants a **fence**, and the widest gutter it can get.
 
 Flip it like a notebook. One page = one idea. Done.
 
@@ -94,7 +92,7 @@ On this exam they almost agree. New student: 3 hours, 7 sleep. Logistic P(pass) 
 
 LDA still owns the two-blob story. SVM does not need ovals. It needs a gutter.
 
-A **kernel** (RBF) bends the street without drawing a QDA oval. Later door. Not this file. On these eighty people, RBF tied logistic on test — no miracle curve today.
+A **kernel** (RBF) can bend the street without drawing a QDA oval. On these eighty people, RBF tied logistic on test — no miracle curve today.
 
 ---
 
@@ -181,7 +179,7 @@ Scale is in the pipeline. Unscaled, sleep’s units fight hours, same sin as uns
 | support vector | a person on the curb; they hold the fence |
 | C | how loudly you punish a trespass (loud = hug) |
 | LinearSVC | the linear street, sklearn’s fast fence |
-| kernel | a later bend; not this file |
+| kernel | a bend of the street without a new oval |
 
 **Also called** (in a room):
 
@@ -198,7 +196,7 @@ Scale is in the pipeline. Unscaled, sleep’s units fight hours, same sin as uns
 
 **Reach for it when** you want a **fence**, not a probability; two clumps with a gutter; you will **scale**, then pick C.
 
-**Skip it when** you wanted P(yes) ([[01 logistic regression]]); two blobs you already drew ([[02 LDA]]); questions and rectangles ([[01 decision tree]]); an RBF cartoon as 01.
+**Skip it when** you wanted P(yes) ([[01 logistic regression]]); two blobs you already drew ([[02 LDA]]); questions and rectangles ([[01 decision tree]]).
 
 **Pays you:** a picture of the gutter. A shortlist of people who actually hold the line. Often ties logistic on a straight smear.
 

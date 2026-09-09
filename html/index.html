@@ -19,25 +19,37 @@ html, body { margin: 0; height: 100%; background: var(--desk); color: var(--ink)
 body {
   font-family: Georgia, "Times New Roman", serif;
   display: flex;
+  flex-direction: column;
   height: 100%;
+  overflow: hidden;
+}
+.mast {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 10px 22px 6px;
+}
+.mast .mark {
+  height: 52px;
+  width: auto;
+  display: block;
+}
+.desk {
+  flex: 1;
+  min-height: 0;
+  display: flex;
   overflow: hidden;
 }
 nav {
   width: 248px;
   flex: 0 0 248px;
-  margin: 18px 0 18px 18px;
-  padding: 18px 16px 28px;
+  margin: 6px 0 18px 18px;
+  padding: 14px 16px 28px;
   background: var(--paper);
   border-radius: 18px;
   box-shadow: 0 1px 0 rgba(36,28,20,.06), 0 10px 28px rgba(36,28,20,.08);
   border: 1px solid rgba(36,28,20,.06);
   overflow-y: auto;
-}
-nav .mark {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 0 14px;
 }
 nav h2 {
   font-family: "Bradley Hand", "Apple Chancery", "Segoe Script", "Comic Sans MS", cursive;
@@ -80,15 +92,16 @@ iframe {
   background: var(--desk);
 }
 @media (max-width: 720px) {
-  body { flex-direction: column; overflow: auto; }
-  nav { width: auto; flex: 0 0 auto; margin: 12px 12px 0; max-height: 36vh; }
-  .stage { margin: 12px; min-height: 60vh; }
+  .desk { flex-direction: column; overflow: auto; }
+  nav { width: auto; flex: 0 0 auto; margin: 0 12px; max-height: 32vh; }
+  .stage { margin: 12px; min-height: 50vh; }
 }
 </style>
 </head>
 <body>
-<nav><img class="mark" src="../assets/in-06-mark.svg" alt="datazines">
-<h2>front door</h2>
+<header class="mast"><img class="mark" src="../assets/in-06-mark.svg" alt="datazines"></header>
+<div class="desk">
+<nav><h2>front door</h2>
 <a href="00%20how%20to%20read%20this.html" data-src="00%20how%20to%20read%20this.html">how to read this</a>
 <h2>supervised learning</h2>
 <h3>regression</h3>
@@ -142,6 +155,7 @@ iframe {
 <a href="rl/03%20Q.html" data-src="rl/03%20Q.html">03 Q</a></nav>
 <div class="stage">
 <iframe id="leaf" title="zine" src="00%20how%20to%20read%20this.html"></iframe>
+</div>
 </div>
 <script>
 const frame = document.getElementById("leaf");

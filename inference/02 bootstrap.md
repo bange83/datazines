@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 t-test]] first. Same eight grades. Same line ŷ = 1.75 + 1 · hours. Forests already **bagged** people ([[02 random forest]]). This notebook uses that redraw as a **judge**, not as a choir.
 
-This is 02 of the inference wing. MCMC is a later walk when the pile is a posterior. Not this file.
-
 Flip it like a notebook. One page = one idea. Done.
 
 ---

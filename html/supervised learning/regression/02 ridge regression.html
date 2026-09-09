@@ -154,7 +154,7 @@ window.MathJax = {
 <div class="book">
 <p class="spine">datazines · a sketchbook</p>
 <section class="leaf hero-leaf"><h1>Ridge regression — a sketchbook</h1>
-<aside class="callout callout-abstract"><strong>In one sentence.</strong> Same line as before — but you <strong>tax huge knobs</strong>. The line gets a bit more boring, and a lot more trustworthy on new people.</aside>
+<aside class="callout callout-abstract"><strong>In one sentence.</strong> Same line as before — but you <strong>tax huge slopes</strong>. Intercept <em>a</em> is free. Wild <em>b</em> is not. Calmer on new people.</aside>
 
 <figure class="drawing"><img src="../../../assets/rr-00-hero.svg" alt="rr-00-hero"></figure>
 
@@ -182,7 +182,7 @@ window.MathJax = {
 <p>Ordinary least squares <strong>must</strong> chase that yank. Big misses cost a lot (they get squared). So the line leans hard, just to shave a little error off one point.</p>
 <p>On the old points it looks clever.<br>
 Clever is not the same as true.</p>
-<p>Ridge is <strong>not</strong> the seatbelt for one wild <em>y</em>. It still squares leftover, so a yank still screams. Ridge’s job is <strong>huge knobs</strong>: few people, noisy <em>x</em>, or twins that fight. A single corner grade wants a check, or a method that does not square the miss — not λ.</p>
+<p>Ridge is <strong>not</strong> the seatbelt for one wild <em>y</em>. It still squares leftover, so a yank still screams. Ridge’s job is <strong>huge slopes</strong>: few people, noisy <em>x</em>, or twins that fight. A single corner grade wants a check, or a method that does not square the miss — not λ.</p>
 <aside class="callout callout-tip"><strong>Margin.</strong> Few points, noisy <em>x</em>, or two <em>x</em> that say almost the same thing: the ordinary line can go wild. Ridge is a seatbelt for <strong>that</strong> — not for one weird grade.</aside>
 
 </section>
@@ -238,7 +238,7 @@ The line memorized noise and called it a pattern.</p>
 <p><strong>Ridge score:</strong></p>
 <blockquote>
 <p>how wrong am I on the points<br>
-<strong>+</strong> λ × (how huge the knobs are)</p>
+<strong>+</strong> λ × (how huge the <em>slopes</em> are)</p>
 </blockquote>
 <p>That second piece is a <strong>tax</strong>. Big <em>b</em> costs extra, even if it helps a little on the old points.</p>
 <p>So the computer still rolls downhill. The bowl just got a new slope: “don’t wander far from zero.”</p>
@@ -384,19 +384,19 @@ If you want the film of knobs walking in: <a class="wiki" href="05%20LARS.html">
 <li><strong>Start from the ordinary line.</strong> Same ŷ = a + b x. Same cloud.</li>
 <li><strong>Ask:</strong> will this line overreact? Few points? Noise? Twin <em>x</em>?</li>
 <li><strong>Scale the <em>x</em>.</strong> Always, before ridge.</li>
-<li><strong>Add the tax.</strong> Score = old error + λ × (size of knobs)².</li>
+<li><strong>Add the tax.</strong> Score = old error + λ × (size of the <em>b</em>s)². Not <em>a</em>.</li>
 <li><strong>Pick λ</strong> by hiding people and scoring the hidden ones.</li>
 <li><strong>Read the knobs smaller.</strong> Direction often the same. Drama gone.</li>
 <li><strong>Judge on new points</strong>, not on how tightly you hugged the old ones.</li>
 </ol>
 <p>If you keep only one thing:</p>
 <blockquote>
-<p>ordinary line + a tax on huge knobs → a calmer line for the next person</p>
+<p>ordinary line + a tax on huge <em>b</em> → a calmer line for the next person. <em>a</em> does not pay.</p>
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 14 — Twins, in sklearn</h2>
 <p>Thirty students — few enough that the ordinary line can overreact. Grade from hours, sleep, tutor. <strong>Minutes</strong> is hours in another unit (a twin). Coffee and noise are junk.</p>
-<p>Ordinary least squares, unscaled: hours and minutes start a fight. Ridge, scaled, <code>alpha=10</code>: they share. Train R² dips (the tax). Test R² <strong>rises</strong> (the point).</p>
+<p>Both machines get the <strong>same scaler</strong>. Scale does not change ordinary’s guesses — only how you <em>read</em> the knobs. Then ridge adds the tax. The test-R² jump is that tax, not the spelling.</p>
 <pre><code class="language-python">import numpy as np
 from sklearn.linear_model import LinearRegression, Ridge
 from sklearn.model_selection import train_test_split
@@ -418,34 +418,32 @@ X = np.column_stack([hours, minutes, sleep, naps, tutor, coffee, noise])
 names = [&quot;hours&quot;, &quot;minutes&quot;, &quot;sleep&quot;, &quot;naps&quot;, &quot;tutor&quot;, &quot;coffee&quot;, &quot;noise&quot;]
 Xtr, Xte, ytr, yte = train_test_split(X, grade, test_size=0.3, random_state=0)
 
-ols = LinearRegression().fit(Xtr, ytr)
+ols = make_pipeline(StandardScaler(), LinearRegression()).fit(Xtr, ytr)
 ridge = make_pipeline(StandardScaler(), Ridge(alpha=10)).fit(Xtr, ytr)
 
 print(&quot;mean grade (train)&quot;, round(ytr.mean(), 3))
 
-def show(title, coef, intercept, train, test):
+def show(title, model, step):
+    est = model.named_steps[step]
     print(title)
-    print(f&quot;  intercept  {intercept:7.3f}&quot;)
-    for name, b in zip(names, coef):
+    print(f&quot;  intercept  {est.intercept_:7.3f}&quot;)
+    for name, b in zip(names, est.coef_):
         print(f&quot;  {name:10s} {b:7.3f}&quot;)
-    print(f&quot;R² train {train:.3f}   R² test {test:.3f}\n&quot;)
+    print(f&quot;R² train {model.score(Xtr, ytr):.3f}   R² test {model.score(Xte, yte):.3f}\n&quot;)
 
-show(&quot;ordinary (no scale, no tax)&quot;, ols.coef_, ols.intercept_,
-     ols.score(Xtr, ytr), ols.score(Xte, yte))
-show(&quot;ridge (scaled, alpha=10)&quot;, ridge.named_steps[&quot;ridge&quot;].coef_,
-     ridge.named_steps[&quot;ridge&quot;].intercept_,
-     ridge.score(Xtr, ytr), ridge.score(Xte, yte))
+show(&quot;ordinary (scaled, no tax)&quot;, ols, &quot;linearregression&quot;)
+show(&quot;ridge (scaled, alpha=10)&quot;, ridge, &quot;ridge&quot;)
 </code></pre>
 <pre><code>mean grade (train) 7.241
-ordinary (no scale, no tax)
-  intercept    1.475
-  hours        5.653
-  minutes     -0.079
-  sleep       -0.258
-  naps         0.555
-  tutor        0.775
-  coffee       0.112
-  noise        0.068
+ordinary (scaled, no tax)
+  intercept    7.241
+  hours        8.354
+  minutes     -6.970
+  sleep       -0.330
+  naps         0.675
+  tutor        0.376
+  coffee       0.137
+  noise        0.072
 R² train 0.955   R² test 0.626
 
 ridge (scaled, alpha=10)
@@ -459,9 +457,10 @@ ridge (scaled, alpha=10)
   noise        0.094
 R² train 0.907   R² test 0.748
 </code></pre>
-<p>Read the ordinary pair: +5.65 hours and −0.079 minutes. Minutes live around 60–360, so that tiny <em>b</em> is huge in real life. Together they still add up to about <strong>+0.92 grade per extra hour</strong> — a cancellation, not a story. Train R² <strong>0.955</strong>, test <strong>0.626</strong>. Pride on the old 21, embarrassment on the new 9.</p>
-<p>Ridge, after scaling: hours 0.56, minutes 0.56. Twins share. Train R² <strong>0.907</strong> — a bit worse (the tax). Test R² <strong>0.748</strong> — better on people it has not seen. That is the deal from page 3. Do not pick the method by train R².</p>
-<p>Ridge’s intercept <strong>7.241</strong> is not a tax on <em>a</em>. It is the <strong>mean grade</strong> on the trainers. After <code>StandardScaler</code>, every <em>x</em> is 0 at the average person, so ŷ at “all knobs typical” <em>is</em> ȳ. Ordinary’s 1.475 is “grade if hours, sleep, minutes were all <strong>literally zero</strong>” — a fantasy. Page 5 still holds: <em>a</em> does not pay. The number jumped because <strong>zero moved</strong>.</p>
+<p>Same spelling. Ordinary still <strong>fights</strong>: hours +8.35, minutes −6.97. Cancellation, not a story. Train R² <strong>0.955</strong>, test <strong>0.626</strong>. Pride on the old 21, embarrassment on the new 9.</p>
+<p>(Unscaled ordinary makes the <em>same</em> guesses. R² does not move. The tiny minutes <em>b</em> was just the fight written in minutes.)</p>
+<p>Ridge, same scale: hours 0.56, minutes 0.56. Twins share. Train R² <strong>0.907</strong> — a bit worse (the tax). Test R² <strong>0.748</strong> — better on people it has not seen. That jump is λ, not the scaler. Do not pick the method by train R².</p>
+<p>Both intercepts <strong>7.241</strong> — the <strong>mean grade</strong> on the trainers. After <code>StandardScaler</code>, every <em>x</em> is 0 at the average person, so ŷ at “all knobs typical” <em>is</em> ȳ. Page 5: <em>a</em> does not pay. Zero moved.</p>
 <p><code>alpha</code> here is λ. sklearn’s name, same volume knob.</p>
 </section>
 <section class="leaf"><h2>Last page — cheat sheet</h2>
@@ -483,7 +482,7 @@ R² train 0.907   R² test 0.748
 </tr>
 <tr>
 <td>ridge</td>
-<td>that, plus λ × (knobs)²</td>
+<td>that, plus λ × (<em>b</em>s)². intercept <em>a</em> does not pay</td>
 </tr>
 <tr>
 <td>λ</td>

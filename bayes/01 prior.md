@@ -19,7 +19,7 @@ aliases:
 
 Read [[02 beta]] first. Same eight coins, house seed 7, true *P* = 0.6. Beta was the bump. This notebook is the **move**: start → see → bump after.
 
-This is 01 of the Bayes wing. When you cannot add, [[02 MCMC]] walks the height.
+When you cannot add, [[02 MCMC]] walks the height.
 
 Flip it like a notebook. One page = one idea. Done.
 

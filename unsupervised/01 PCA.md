@@ -18,7 +18,7 @@ aliases:
 
 Read [[01 linear regression]] and [[02 ridge regression]] first — especially twins. Same exam world: hours, minutes (hours×60 plus leftover), sleep, coffee. **No grade.** LDA drew two blobs *because* of pass/fail. This notebook draws **one** cloud and asks which way it is long.
 
-This is 01 of the unsupervised wing. Rooms are [[02 k-means]]. Embeddings already used PCA as a camera ([[02 embeddings]]); here PCA *is* the machine.
+Rooms are [[02 k-means]]. Here PCA *is* the machine, not a camera.
 
 Flip it like a notebook. One page = one idea. Done.
 

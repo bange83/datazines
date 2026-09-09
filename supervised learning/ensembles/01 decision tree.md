@@ -18,7 +18,7 @@ aliases:
 
 Read [[01 logistic regression]] first. Same pass/fail exam. Logistic drew an S. LDA drew two ovals. A tree draws **rectangles** with questions on the doors.
 
-This is 01 of the ensembles shelf: one tree. A forest is many of these, later.
+One tree. A forest is many of these ([[02 random forest]]).
 
 Flip it like a notebook. One page = one idea. Done.
 

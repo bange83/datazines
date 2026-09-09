@@ -16,9 +16,7 @@ aliases:
 
 ![ci-00-hero](../assets/ci-00-hero.svg)
 
-Read [[01 confounding]] and [[01 lag trend season]] first. Same exam world: 24 weeks of hours. Week 17 they add extra office hours — a **campaign**. The fork still applies. BSTS is an engine for would-have. Not this file.
-
-This is 02 of the cause wing. One series, one start date, a counterfactual. Not an A/B. Not NUTS.
+Read [[01 confounding]] and [[01 lag trend season]] first. Same exam world: 24 weeks of hours. Week 17 they add extra office hours — a **campaign**. The fork still applies. One series, one start date, a would-have.
 
 Flip it like a notebook. One page = one idea. Done.
 

@@ -17,7 +17,7 @@ aliases:
 
 Read [[01 linear regression]] first, especially the bowl on page 14. Same eight people. Same line ŷ = a + b · hours. Different verb: **walk** to a and b instead of jumping to the bottom.
 
-This is 01 of the optimization wing. Logistic, a tiny net, an LLM — they all **walk**. Boosting hunts leftover with a tree; this hunts leftover by moving knobs. Same verb.
+Logistic, a tiny net, an LLM — they all **walk**. Boosting hunts leftover with a tree; this hunts leftover by moving knobs.
 
 Flip it like a notebook. One page = one idea. Done.
 

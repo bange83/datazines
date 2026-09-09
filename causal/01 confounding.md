@@ -19,8 +19,6 @@ aliases:
 
 Read [[01 linear regression]] and [[01 t-test]] first. Same exam world. Hours still make the grade. Coffee is back — as junk that **rides with hours**. The t-test can call coffee “real.” It cannot tell you coffee *did* it.
 
-This is 01 of the cause wing. Experiments, DAGs as sequels, causal impact after a little time. Not MCMC. Not BSTS.
-
 Flip it like a notebook. One page = one idea. Done.
 
 ---

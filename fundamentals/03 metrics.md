@@ -17,9 +17,7 @@ aliases:
 
 ![fm-20-hero](../assets/fm-20-hero.svg)
 
-Read [[01 train test validate]] and [[01 logistic regression]] first. Exam *hours*, house seed 7, **eighty** students — the pass/fail class, not ridge’s thirty graders. A harder exam than logistic 01, so yes is rarer. R² / leftover² still live on the grade shelf. Not a p-value ([[01 t-test]]). Not F1 / ROC as 01.
-
-This is 03 of fundamentals. Short.
+Read [[01 train test validate]] and [[01 logistic regression]] first. Same pass/fail exam, a harder paper, so yes is rarer. R² still lives on the grade shelf. This notebook is **precision and recall**, not a p-value ([[01 t-test]]).
 
 Flip it like a notebook. One page = one idea. Done.
 
@@ -238,12 +236,12 @@ Logistic 01 used a milder intercept (−3.2). Pass rate there was ~2/3, so accur
 
 **Reach for it when** yes is **rare** or costly to miss, accuracy clapped for always-fail, or you will **pick a cut** on purpose.
 
-**Skip it when** *y* is a grade (use leftover² / R²); you wanted a *p* ([[01 t-test]]); you wanted a 12-curve ROC as 01.
+**Skip it when** *y* is a grade (use leftover² / R²); you wanted a *p* ([[01 t-test]]); you wanted a 12-curve ROC.
 
 **Pays you:** two questions instead of one clap. A dummy to beat. The cut as politics, not magic.
 
-**Costs you:** two numbers, not one. A thin test pile (11 passers) rattles. F1 / ROC exist; they are sequels, not this file.
+**Costs you:** two numbers, not one. A thin test pile (11 passers) rattles. F1 / ROC exist; they are sequels.
 
 ---
 
-*Fundamentals 03. Accuracy can clap for always-fail. Remaining rooms, short: SVM, Bayes 01, RL 01. Not a p-value.*
+*Accuracy can clap for always-fail. Precision / recall pick a wall.*
