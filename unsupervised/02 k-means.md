@@ -191,7 +191,6 @@ k=3 is the elbow and the silhouette peak. Sizes **28 / 28 / 24** — the plant, 
 | center | centroid |
 | leftover² | inertia |
 
-![km-05-when](../assets/km-05-when.svg)
 
 ### Use / skip
 

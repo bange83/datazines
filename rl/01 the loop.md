@@ -204,7 +204,6 @@ Coin-flip **30.5**. Sensible **38.3**. Q’s greedy row is rest / study — the 
 | 0.9 | discount |
 | 0.2 try-at-random | ε-greedy |
 
-![rl-04-when](../assets/rl-04-when.svg)
 
 ### Use / skip
 

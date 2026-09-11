@@ -191,7 +191,6 @@ Logistic never leaves 0.39. The net is a hill: 0.01 at 1.5 hours, **0.86 at 3.5*
 | knobs | weights |
 | squash | activation |
 
-![nn-06-when](../assets/nn-06-when.svg)
 
 ### Use / skip
 

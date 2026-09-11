@@ -157,7 +157,6 @@ First bag is a loud class (mean 6.50) — leftover, one replay. Across 2000, slo
 | percentile interval | 2.5% and 97.5% of the pile |
 | with replacement | some people twice, some never |
 
-![bs-05-when](../assets/bs-05-when.svg)
 
 ### Use / skip
 

@@ -232,7 +232,6 @@ PCA on co-occurrence is a **sketch** of the table. Cosines on this page are in t
 | one-hot | dummy encoding |
 | nearby | similar meaning |
 
-![em-06-when](../assets/em-06-when.svg)
 
 ### Use / skip
 

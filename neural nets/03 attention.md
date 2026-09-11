@@ -214,7 +214,6 @@ This is **self-attention** with one head and no extra Q/K/V floors. An LLM walks
 | mix | weighted average of values |
 | bag | mean pooling |
 
-![at-06-when](../assets/at-06-when.svg)
 
 ### Use / skip
 

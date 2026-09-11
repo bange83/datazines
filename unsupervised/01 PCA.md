@@ -173,7 +173,6 @@ Unscaled: minutes **1.00**, story dead — here the fat axis is a **unit**, not 
 | loading | how much a feature sits on that PC |
 | lever | feature |
 
-![pc-05-when](../assets/pc-05-when.svg)
 
 ### Use / skip
 

@@ -178,7 +178,6 @@ Mean vs 5: leftover shrugs (p = 0.71; 5 sits in 3.72–6.78). Slope vs 0: leftov
 | p | tail: leftover this loud or louder |
 | CI | boring numbers leftover still fits |
 
-![tt-06-when](../assets/tt-06-when.svg)
 
 ### Use / skip
 

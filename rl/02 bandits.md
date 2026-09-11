@@ -173,7 +173,6 @@ Random shares nights almost equally — Q already *sees* study (~1.97) and still
 | ε-greedy | sometimes random |
 | UCB | upper confidence bound |
 
-![bd-04-when](../assets/bd-04-when.svg)
 
 ### Use / skip
 

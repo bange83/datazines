@@ -276,7 +276,6 @@ A real LLM is this walk with a look and a stack, on a much bigger note pile. The
 | look | attention |
 | next token | next word / piece |
 
-![lm-06-when](../assets/lm-06-when.svg)
 
 ### Use / skip
 
