@@ -236,7 +236,7 @@ Score +3 → near 1.</p>
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 8 — Hours → pass, in sklearn</h2>
-<p>Exam world, house seed 7: hours, sleep, tutor. <strong>Eighty</strong> students — a crowd, not the thirty on the ridge page. <em>y</em> is pass/fail, not a grade. One lever, no scaler — the S is the lesson, not a fight between hours and minutes. Mixed units: scale first (<a class="wiki" href="../regression/02%20ridge%20regression.html">02 ridge regression</a>, page 10).</p>
+<p>Exam world: hours, sleep, tutor. <strong>Eighty</strong> students — a crowd, not the thirty on the ridge page. <em>y</em> is pass/fail, not a grade. One lever, no scaler — the S is the lesson, not a fight between hours and minutes. Mixed units: scale first (<a class="wiki" href="../regression/02%20ridge%20regression.html">02 ridge regression</a>, page 10).</p>
 <pre><code class="language-python">import numpy as np
 from sklearn.linear_model import LogisticRegression
 
@@ -327,8 +327,19 @@ accuracy on these 80 = 0.838
 </tbody>
 </table>
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> <em>y</em> is yes/no (or a fraction of yeses), you want a <strong>probability</strong>, and a linear score inside is honest enough.</p>
-<p><strong>Skip it when</strong> <em>y</em> is a free number (that is <a class="wiki" href="../regression/01%20linear%20regression.html">01 linear regression</a>); the yes/no cloud is a blob no S can cut (<a class="wiki" href="../ensembles/01%20decision%20tree.html">01 decision tree</a>); the story is two ovals (<a class="wiki" href="02%20LDA.html">02 LDA</a>); you need a guaranteed 0 or 1 with no “maybe.”</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li><em>y</em> is yes/no (or a fraction of yeses)</li>
+<li>you want a <strong>probability</strong></li>
+<li>a linear score inside is honest enough</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li><em>y</em> is a free number (that is <a class="wiki" href="../regression/01%20linear%20regression.html">01 linear regression</a>)</li>
+<li>the yes/no cloud is a blob no S can cut (<a class="wiki" href="../ensembles/01%20decision%20tree.html">01 decision tree</a>)</li>
+<li>the story is two ovals (<a class="wiki" href="02%20LDA.html">02 LDA</a>)</li>
+<li>you need a guaranteed 0 or 1 with no “maybe.”</li>
+</ul>
 <p><strong>Pays you:</strong> output stays in 0–1. Knobs stay readable. Fast, stable, a good first classifier.</p>
 <p><strong>Costs you:</strong> still linear on the inside. A threshold is extra politics. Rare events and tangled <em>x</em> need extra care (or a sequel with a tax). Levers in different units: <strong>scale</strong>, like ridge. This page did not.</p>
 <p><em>First spine on the classification shelf. Twin that draws the clouds: <a class="wiki" href="02%20LDA.html">02 LDA</a>. Many rooms, share 1: <a class="wiki" href="03%20softmax.html">03 softmax</a>. A fence, not an S: <a class="wiki" href="04%20SVM.html">04 SVM</a>. A boundary made of questions: <a class="wiki" href="../ensembles/01%20decision%20tree.html">01 decision tree</a>. If </em>y<em> is a count: <a class="wiki" href="../regression/06%20GLM.html">06 GLM</a>.</em></p></section>

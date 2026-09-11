@@ -187,7 +187,7 @@ window.MathJax = {
 <p>One deep tree still sits in the forest as a member. It just does not get to decide alone. Ridge called that tree’s hug <strong>overfitting</strong> and taxed the knobs. Here the members may still memorize. The <strong>vote</strong> is what you ship. Overfit of one learner is not overfit of the choir.</p>
 </section>
 <section class="leaf"><h2>Page 4 — Same pass/fail class</h2>
-<p>House seed 7. Train 56 / test 24. Deep tree vs forest:</p>
+<p>Train 56 / test 24. Deep tree vs forest:</p>
 <table>
 <thead>
 <tr>
@@ -243,7 +243,7 @@ Fifty and a hundred: test <strong>0.79</strong>, same as the honest stump, witho
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 6 — The vote, in sklearn</h2>
-<p>Same pass/fail class as the tree notebook — eighty students, house seed 7.</p>
+<p>Same pass/fail class as the tree notebook — eighty students.</p>
 <pre><code class="language-python">import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier, export_text
@@ -317,8 +317,18 @@ tree 1 first cut:
 </tbody>
 </table>
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> one tree is jumpy; you want a strong default on tables with mixes; you do <strong>not</strong> need to read every rule.</p>
-<p><strong>Skip it when</strong> you must explain every cut (<a class="wiki" href="01%20decision%20tree.html">01 decision tree</a> is the sentence); a line or logistic already fits; tiny <em>n</em> and you were going to grow huge trees anyway.</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li>one tree is jumpy</li>
+<li>you want a strong default on tables with mixes</li>
+<li>you do <strong>not</strong> need to read every rule</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li>you must explain every cut (<a class="wiki" href="01%20decision%20tree.html">01 decision tree</a> is the sentence)</li>
+<li>a line or logistic already fits</li>
+<li>tiny <em>n</em> and you were going to grow huge trees anyway</li>
+</ul>
 <p><strong>Pays you:</strong> the usual first ensemble. Better test than one deep tree. Importances that let sleep speak. Few knobs. Jumpy members + a vote — overfitting of <em>one</em> tree is not the forest’s score.</p>
 <p><strong>Costs you:</strong> the flowchart is gone. Train can still look perfect on small <em>n</em>. Not a cause machine. Sequential leftovers (boosting) are a different religion: <a class="wiki" href="03%20gradient%20boosting.html">03 gradient boosting</a>.</p>
 <p><em>The choir. Next, trees in a line that hunt leftovers: <a class="wiki" href="03%20gradient%20boosting.html">03 gradient boosting</a>.</em></p></section>

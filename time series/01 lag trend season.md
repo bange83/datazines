@@ -12,11 +12,11 @@ aliases:
 # Lag, trend, season — a sketchbook
 
 > [!abstract] In one sentence
-> A series is not a bag of people. **Yesterday is a lever.** A slow climb is **trend**. A calendar dip is **season**. Hold out the **future**, not a shuffle.
+> The dots have an **order**. Last week can help guess this week (**lag**). A slow climb is **trend**. A repeating calendar dip is **season**. Train on the **past**; test on **later**.
 
 ![ts-00-hero](../assets/ts-00-hero.svg)
 
-Read [[01 linear regression]] first. Same exam world. Not eight people in a cloud — **one class, 24 weeks**. Each week: how many hours they studied, **on average**. Cause ([[01 confounding]]) still waits: extra office hours in week 17 is later. This notebook is the furniture that campaign would sit on.
+One class, 24 weeks. Each week: **average hours studied**. Not eight people in a cloud. Extra office hours in week 17 is later ([[02 causal impact]]). This notebook is the furniture that campaign sits on.
 
 Flip it like a notebook. One page = one idea. Done.
 
@@ -87,7 +87,7 @@ Lag on top: MAE **0.16**. A hair. Season already did the work.
 
 ## Page 5 — Mini recipe
 
-1. The dots have an **order**. If they are people, go back to [[01 linear regression]].
+1. The dots have an **order**. If they are people with no week attached, that is a cloud ([[01 linear regression]]).
 2. Hold out the **end**. Never shuffle.
 3. Draw **trend**, then **season** (the calendar you can name), then **lag**.
 4. Keep a piece only if the **future** got better.
@@ -191,9 +191,17 @@ Shuffle looks kinder than the future (0.29 vs −0.28). Season turns the future 
 
 ### Use / skip
 
-**Reach for it when** the dots have an **order** (weeks, days), a beat you can name (break week, Monday), and you will test on **later**.
+**Reach for it when**
 
-**Skip it when** the dots are **people** ([[01 linear regression]]); you already shuffled the weeks; you wanted the campaign gap ([[02 causal impact]]) before trend and season.
+- the dots have an **order** (weeks, days)
+- a beat you can name (break week, Monday)
+- you will test on **later**
+
+**Skip it when**
+
+- the dots are **people** ([[01 linear regression]])
+- you already shuffled the weeks
+- you wanted the campaign gap ([[02 causal impact]]) before trend and season
 
 **Pays you:** season catches the break. The honest split for a forecast.
 

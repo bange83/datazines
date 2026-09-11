@@ -288,9 +288,19 @@ Deep tree from the old page, for the tax lesson: `max_depth=8` → 11 leaves, tr
 
 ### Use / skip
 
-**Reach for it when** you want **rules you can read**; *x* mix (hours low **and** sleep high); a first look before a forest; *y* is a class *or* a number.
+**Reach for it when**
 
-**Skip it when** one deep tree on tiny data (it will memorize); you need a smooth S ([[01 logistic regression]]); the truth is two ovals ([[02 LDA]]); you already know you want 500 trees — still *read this*, then grow a forest. Don’t start at XGBoost.
+- you want **rules you can read**
+- *x* mix (hours low **and** sleep high)
+- a first look before a forest
+- *y* is a class *or* a number
+
+**Skip it when**
+
+- one deep tree on tiny data (it will memorize)
+- you need a smooth S ([[01 logistic regression]])
+- the truth is two ovals ([[02 LDA]])
+- you already know you want 500 trees — still *read this*, then grow a forest. Don’t start at XGBoost
 
 **Pays you:** no scaling drama. Mixes for free. A sentence. The atom of bagging and boosting. A **reason** for feature order (gain), not a vibe.
 

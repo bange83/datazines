@@ -190,9 +190,14 @@ AdaBoost luckiest on this split. Hist ≈ forest territory. GB hungrier on train
 
 ### Use / skip
 
-**Reach for this note when** someone names a brand and you need the dialect in one page.
+**Reach for it when**
 
-**Skip extra sheets.** You do not need a 12-page AdaBoost and a 12-page XGBoost until you are tuning one of them for real. Then a *project* note, not a sequel religion.
+- someone names a brand and you need the dialect in one page
+
+**Skip it when**
+
+- you wanted a 12-page AdaBoost and a 12-page XGBoost
+- you are not tuning one of them for real yet
 
 **Pays you:** a map. Ada vs leftover vs engine.
 

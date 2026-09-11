@@ -237,7 +237,7 @@ Looks like a round blob: no linear trend. A line would be nonsense.</aside>
 It says: “Roughly, <strong>on average</strong>.”</p>
 <p>Someone with 4 hours:</p>
 <blockquote>
-<p>line at <em>x</em> = 4  →  ŷ ≈ 5.8</p>
+<p>line at <em>x</em> = 4 → ŷ ≈ 5.8</p>
 </blockquote>
 <p>The hat on the y (<strong>ŷ</strong>, “y hat”) means: <strong>prediction</strong>, not the real grade.</p>
 <p>Real grade next to it: 6.<br>
@@ -694,8 +694,20 @@ It always goes through the centroid (x̄, ȳ).</p>
 <p><strong>linear</strong> — effect the same size everywhere (no bend).<br>
 <strong>cause</strong> — extra. Not inside the formula.</p>
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> <em>y</em> is a real number, the cloud looks like a straight smear, and you want a sentence: “+1 on <em>x</em> goes with +b on <em>y</em>.”</p>
-<p><strong>Skip it when</strong> <em>y</em> is yes/no (<a class="wiki" href="../classification/01%20logistic%20regression.html">01 logistic regression</a>); <em>y</em> is a count that cannot go negative (<a class="wiki" href="06%20GLM.html">06 GLM</a>); the cloud bends; one point yanks the line (check the cloud, or a method that does not square the miss — ridge is for huge knobs, not that yank); you have more levers than people.</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li><em>y</em> is a real number</li>
+<li>the cloud looks like a straight smear</li>
+<li>you want a sentence: “+1 on <em>x</em> goes with +b on <em>y</em>.”</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li><em>y</em> is yes/no (<a class="wiki" href="../classification/01%20logistic%20regression.html">01 logistic regression</a>)</li>
+<li><em>y</em> is a count that cannot go negative (<a class="wiki" href="06%20GLM.html">06 GLM</a>)</li>
+<li>the cloud bends</li>
+<li>one point yanks the line (check the cloud, or a method that does not square the miss — ridge is for huge knobs, not that yank)</li>
+<li>you have more levers than people</li>
+</ul>
 <p><strong>Pays you:</strong> simple, fast, knobs you can read. The starting machine.</p>
 <p><strong>Costs you:</strong> no legal region for ŷ. Outliers scream. Twin <em>x</em> fight (multicollinearity). Cause is not in the formula. More than one <em>x</em>: <strong>scale</strong>, or you read spelling. A later tax on size (<a class="wiki" href="02%20ridge%20regression.html">02 ridge regression</a>, <a class="wiki" href="03%20lasso.html">03 lasso</a>) needs that too.</p>
 <p><em>Sketched as a notebook, not a lecture. If the line goes feral: <a class="wiki" href="02%20ridge%20regression.html">02 ridge regression</a>. If </em>y<em> is yes/no: <a class="wiki" href="../classification/01%20logistic%20regression.html">01 logistic regression</a>.</em></p></section>

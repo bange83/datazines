@@ -165,9 +165,17 @@ Start at 0.5, wander. Mean **0.39** vs add **0.40**. Shoulders 0.17–0.65 vs 0.
 
 ### Use / skip
 
-**Reach for it when** you **cannot add** (no beta-out), you still want a **bump**, and you can score a guess.
+**Reach for it when**
 
-**Skip it when** coin + beta still adds ([[01 prior]]); you wanted the **dip** ([[01 gradient descent]]); you wanted a catalog of samplers.
+- you **cannot add** (no beta-out)
+- you still want a **bump**
+- you can score a guess
+
+**Skip it when**
+
+- coin + beta still adds ([[01 prior]])
+- you wanted the **dip** ([[01 gradient descent]])
+- you wanted a catalog of samplers
 
 **Pays you:** a posterior without a named bump. Same coins, a pile that matches the add — so you trust the walk when add is gone.
 

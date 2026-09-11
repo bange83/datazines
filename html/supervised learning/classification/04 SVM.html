@@ -220,7 +220,7 @@ window.MathJax = {
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 7 — A street, in sklearn</h2>
-<p>Same eighty as logistic / LDA. Hours and sleep, pass/fail. House seed 7. Split 70/30, <code>random_state=0</code>. Linear SVM vs logistic. Count who holds the fence.</p>
+<p>Same eighty as logistic / LDA. Hours and sleep, pass/fail. Split 70/30, <code>random_state=0</code>. Linear SVM vs logistic. Count who holds the fence.</p>
 <pre><code class="language-python">import numpy as np
 from sklearn.svm import LinearSVC, SVC
 from sklearn.linear_model import LogisticRegression
@@ -334,8 +334,18 @@ support vectors  fail, pass [12, 12]   of 56
 <figure class="drawing"><img src="../../../assets/sv-05-when.svg" alt="sv-05-when"></figure>
 
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> you want a <strong>fence</strong>, not a probability; two clumps with a gutter; you will <strong>scale</strong>, then pick C.</p>
-<p><strong>Skip it when</strong> you wanted P(yes) (<a class="wiki" href="01%20logistic%20regression.html">01 logistic regression</a>); two blobs you already drew (<a class="wiki" href="02%20LDA.html">02 LDA</a>); questions and rectangles (<a class="wiki" href="../ensembles/01%20decision%20tree.html">01 decision tree</a>).</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li>you want a <strong>fence</strong>, not a probability</li>
+<li>two clumps with a gutter</li>
+<li>you will <strong>scale</strong>, then pick C</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li>you wanted P(yes) (<a class="wiki" href="01%20logistic%20regression.html">01 logistic regression</a>)</li>
+<li>two blobs you already drew (<a class="wiki" href="02%20LDA.html">02 LDA</a>)</li>
+<li>questions and rectangles (<a class="wiki" href="../ensembles/01%20decision%20tree.html">01 decision tree</a>)</li>
+</ul>
 <p><strong>Pays you:</strong> a picture of the gutter. A shortlist of people who actually hold the line. Often ties logistic on a straight smear.</p>
 <p><strong>Costs you:</strong> no P(yes) unless you glue one on. C to pick. Scale, always. A kernel is extra religion — not a first file.</p>
 <p><em>Classification 04. A fence, not an S. Next: the coin’s cousin — beta — then a prior.</em></p></section>

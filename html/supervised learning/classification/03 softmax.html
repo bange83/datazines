@@ -171,7 +171,7 @@ window.MathJax = {
 <section class="leaf"><h2>Page 2 — Scores in, slices out</h2>
 <p>Example scores: fail −1.2, pass +0.8, honors +0.1.</p>
 <p>Exponentiate (so nothing is negative), then divide by the total:</p>
-<p>P = [0.08, 0.61, 0.30]  —  pass takes the pile.</p>
+<p>P = [0.08, 0.61, 0.30] — pass takes the pile.</p>
 <figure class="drawing"><img src="../../../assets/sm-00-hero.svg" alt="sm-00-hero"></figure>
 
 <p>Each class still has a <strong>linear score</strong> inside (a + b · hours), like logistic. Softmax is only the <strong>sharing</strong>.</p>
@@ -199,7 +199,7 @@ window.MathJax = {
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 5 — Fail / pass / honors, in sklearn</h2>
-<p>Eighty students, house seed 7. Same exam <em>hours</em>. <em>y</em> has three rooms, driven by hours. <code>LogisticRegression</code> with 3 classes <strong>is</strong> softmax (multinomial).</p>
+<p>Eighty students. Same exam <em>hours</em>. <em>y</em> has three rooms, driven by hours. <code>LogisticRegression</code> with 3 classes <strong>is</strong> softmax (multinomial).</p>
 <pre><code class="language-python">import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
@@ -284,8 +284,17 @@ P | 5h [0.006 0.311 0.683]
 </tbody>
 </table>
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> <em>y</em> has 3+ exclusive rooms; last layer of a net; you want P(room), not one S.</p>
-<p><strong>Skip it when</strong> yes/no only (<a class="wiki" href="01%20logistic%20regression.html">01 logistic regression</a>); labels can overlap (multi-label is another machine).</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li><em>y</em> has 3+ exclusive rooms</li>
+<li>last layer of a net</li>
+<li>you want P(room), not one S</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li>yes/no only (<a class="wiki" href="01%20logistic%20regression.html">01 logistic regression</a>)</li>
+<li>labels can overlap (multi-label is another machine)</li>
+</ul>
 <p><strong>Pays you:</strong> the many-class S. The LLM one-liner without a transformer cartoon.</p>
 <p><strong>Costs you:</strong> still linear scores inside (until a net). Argmax hides uncertainty. Three-way accuracy looks “low” even when the pile is honest.</p>
 <p><em>Classification 03. Descent: <a class="wiki" href="../../optimization/01%20gradient%20descent.html">01 gradient descent</a>. Costumes: <a class="wiki" href="../../probability/01%20distributions.html">01 distributions</a>. The hidden floor: <a class="wiki" href="../../neural%20nets/01%20neural%20net.html">01 neural net</a>.</em></p></section>

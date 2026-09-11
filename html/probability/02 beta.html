@@ -214,7 +214,7 @@ window.MathJax = {
 </section>
 <section class="leaf"><h2>Page 3 — See tosses, add them</h2>
 <p>Start Beta(1, 1). Flat.</p>
-<p>See <strong>3 pass, 5 fail</strong> (eight coins, house seed 7).</p>
+<p>See <strong>3 pass, 5 fail</strong> (eight coins).</p>
 <p>Add them: α ← 1 + 3, β ← 1 + 5. Now <strong>Beta(4, 6)</strong>. Mean <strong>0.40</strong>.</p>
 <figure class="drawing"><img src="../../assets/bt-03-update.svg" alt="bt-03-update"></figure>
 
@@ -237,7 +237,7 @@ window.MathJax = {
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 5 — Eight coins, in scipy</h2>
-<p>House seed 7. True P = 0.6. Eight tosses. Flat start, then the add. No sklearn estimator — the bump <em>is</em> the lesson.</p>
+<p>True P = 0.6. Eight tosses. Flat start, then the add. No sklearn estimator — the bump <em>is</em> the lesson.</p>
 <pre><code class="language-python">import numpy as np
 from scipy.stats import beta
 
@@ -329,8 +329,18 @@ after  Beta(2+yes, 2+no)
 <figure class="drawing"><img src="../../assets/bt-04-when.svg" alt="bt-04-when"></figure>
 
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> <em>P</em> itself is unknown, the thing lives in <strong>0–1</strong>, and you will add yeses and nos. Road to a prior: <a class="wiki" href="../bayes/01%20prior.html">01 prior</a>.</p>
-<p><strong>Skip it when</strong> one toss is enough (the coin); leftover is a grade (bell); <em>y</em> is a count (Poisson).</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li><em>P</em> itself is unknown</li>
+<li>the thing lives in <strong>0–1</strong></li>
+<li>you will add yeses and nos. Road to a prior: <a class="wiki" href="../bayes/01%20prior.html">01 prior</a></li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li>one toss is enough (the coin)</li>
+<li>leftover is a grade (bell)</li>
+<li><em>y</em> is a count (Poisson)</li>
+</ul>
 <p><strong>Pays you:</strong> a legal bump for a rate. A start you can write in two numbers. The move Bayes will name.</p>
 <p><strong>Costs you:</strong> eight tosses are a whisper. α, β are not “data” until you say they are a guess. Not a sampler. Not a fourth zoo.</p>
 <p><em>Chance 02. Coin’s cousin. Next: <a class="wiki" href="../bayes/01%20prior.html">01 prior</a> — this bump, named.</em></p></section>

@@ -208,9 +208,17 @@ Coin-flip **30.5**. Sensible **38.3**. Q’s greedy row is rest / study — the 
 
 ### Use / skip
 
-**Reach for it when** you **act**, the world **moves**, the score is a **reward**, and tonight vs later matters.
+**Reach for it when**
 
-**Skip it when** one cloud and a line already work (supervised); you wanted P(yes) ([[01 logistic regression]]).
+- you **act**
+- the world **moves**
+- the score is a **reward**
+- tonight vs later matters
+
+**Skip it when**
+
+- one cloud and a line already work (supervised)
+- you wanted P(yes) ([[01 logistic regression]])
 
 **Pays you:** the four names. A policy you can read. A table that can find it.
 

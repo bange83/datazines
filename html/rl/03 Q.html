@@ -167,7 +167,7 @@ window.MathJax = {
 <p>I am <strong>this</strong> (tired or fresh). I do <strong>that</strong> (rest or study). Then I always pick the bigger cell in the next row. How many points do I expect, from now on?</p>
 </blockquote>
 <p>That number is <strong>Q</strong>. Ugly letter. Friendly job: <em>how good is this act from here.</em></p>
-<p>After 400 weeks (house seed 7, from 01):</p>
+<p>After 400 weeks (from 01):</p>
 <table>
 <thead>
 <tr>
@@ -253,7 +253,7 @@ window.MathJax = {
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 5 — The same 400 weeks, in numpy</h2>
-<p>Same world and seed as <a class="wiki" href="01%20the%20loop.html">01 the loop</a>. Only print Q. House seed 7.</p>
+<p>Same world as <a class="wiki" href="01%20the%20loop.html">01 the loop</a>. Only print Q.</p>
 <pre><code class="language-python">import numpy as np
 
 rng = np.random.default_rng(7)
@@ -354,8 +354,17 @@ target example: tired rest, r=0.86, next=fresh → 18.9
 <figure class="drawing"><img src="../../assets/ql-04-when.svg" alt="ql-04-when"></figure>
 
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> you already have the <strong>loop</strong>, you want a <strong>table</strong> not a brand, and greedy on the row is enough policy.</p>
-<p><strong>Skip it when</strong> there is no next (<a class="wiki" href="02%20bandits.html">02 bandits</a> — that Q is a mean); a frozen pile of people (supervised).</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li>you already have the <strong>loop</strong></li>
+<li>you want a <strong>table</strong> not a brand</li>
+<li>greedy on the row is enough policy</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li>there is no next (<a class="wiki" href="02%20bandits.html">02 bandits</a> — that Q is a mean)</li>
+<li>a frozen pile of people (supervised)</li>
+</ul>
 <p><strong>Pays you:</strong> four readable cells. A policy without inventing one. The same leftover-as-target as 01, named.</p>
 <p><strong>Costs you:</strong> a small world (two states). Random tries. Not a grade. Not a sampler.</p>
 <p><em>The table, named. Next: leftover as a score you chose, then a walk.</em></p></section>

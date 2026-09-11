@@ -258,7 +258,7 @@ window.MathJax = {
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 7 — Week-17 office hours, in sklearn</h2>
-<p>Same 24-week beat as <a class="wiki" href="../time%20series/01%20lag%20trend%20season.html">01 lag trend season</a>. House seed 7. Campaign at week 17, planted <strong>+0.90</strong>. Trend + season on the past. Last-four fake start has <strong>no</strong> lift.</p>
+<p>Same 24-week beat as <a class="wiki" href="../time%20series/01%20lag%20trend%20season.html">01 lag trend season</a>. Campaign at week 17, planted <strong>+0.90</strong>. Trend + season on the past. Last-four fake start has <strong>no</strong> lift.</p>
 <pre><code class="language-python">import numpy as np
 from sklearn.linear_model import LinearRegression
 
@@ -347,8 +347,18 @@ boot 95% mean impact [0.51 0.82]   se 0.08
 <figure class="drawing"><img src="../../assets/ci-05-when.svg" alt="ci-05-when"></figure>
 
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> you have <strong>one series and a start date</strong>, you can name would-have (trend + season), and you already own the fork.</p>
-<p><strong>Skip it when</strong> ŷ for next week was the job (<a class="wiki" href="../time%20series/01%20lag%20trend%20season.html">01 lag trend season</a>); you already ran the experiment; you wanted a posterior on every week before you owned the fork.</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li>you have <strong>one series and a start date</strong></li>
+<li>you can name would-have (trend + season)</li>
+<li>you already own the fork</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li>ŷ for next week was the job (<a class="wiki" href="../time%20series/01%20lag%20trend%20season.html">01 lag trend season</a>)</li>
+<li>you already ran the experiment</li>
+<li>you wanted a posterior on every week before you owned the fork</li>
+</ul>
 <p><strong>Pays you:</strong> actual − would-have on one series. Naive called out. Season kept in the counterfactual so a break is not a campaign.</p>
 <p><strong>Costs you:</strong> would-have is a guess (here 0.67 vs 0.90). A hidden fork in time remains hidden. Picking the start after seeing the spike is still coffee-only. The bootstrap here is leftover of the fit, not a full causal interval. A bump on would-have (<a class="wiki" href="../bayes/02%20MCMC.html">02 MCMC</a>) is louder, not a different gap.</p>
 <p><em>Actual − would-have. Time 01 was the dashed line. A bump on that line: <a class="wiki" href="../bayes/02%20MCMC.html">02 MCMC</a>.</em></p></section>

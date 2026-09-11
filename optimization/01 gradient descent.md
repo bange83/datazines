@@ -169,9 +169,14 @@ Nearby, not on the floor. The path wiggled. That is the point, not a bug. Quiet 
 
 ### Use / skip
 
-**Reach for it when** there is no closed-form bottom (nets, deep anything). When you want to *see* training as walking.
+**Reach for it when**
 
-**Skip it when** one line and OLS already solved it; you only needed a and b once.
+- there is no closed-form bottom (nets, deep anything). When you want to *see* training as walking
+
+**Skip it when**
+
+- one line and OLS already solved it
+- you only needed a and b once
 
 **Pays you:** the verb of modern ML. Logistic, nets, LLMs — they walk this. Same rate-knob as boosting.
 

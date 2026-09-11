@@ -13,11 +13,11 @@ aliases:
 # Train / test / validate — a sketchbook
 
 > [!abstract] In one sentence
-> Score leftover on **people the line has not seen**. Pride on the old cloud is not a test. If you pick λ, hide a **third** pile so the test stays honest.
+> Fit on some people. Score leftover on people the machine has **not seen**. Scoring the same pile you fitted is **pride**, not a test. If you also **tune a knob**, hide a third pile so the test stays honest.
 
 ![fm-00-hero](../assets/fm-00-hero.svg)
 
-Read [[01 linear regression]] and [[02 ridge regression]] first — especially ridge page 3 (old points are a trap) and page 11 (the folds). Same **thirty graders**, same twins and junk.
+Any machine. A line, a tree, a tax. The ritual is the same. The numbers below are one class of thirty — grades from hours, sleep, tutor — so you can see the gap.
 
 Flip it like a notebook. One page = one idea. Done.
 
@@ -25,43 +25,43 @@ Flip it like a notebook. One page = one idea. Done.
 
 ## Page 1 — The job is the next person
 
-Thirty students. Grade from hours, sleep, tutor. Minutes is a twin. Coffee and noise are junk.
-
-You can fit a line on **all thirty** and print R². Linear 01 did that on eight people. It is a volume knob for *these* people.
+You can fit on **everyone** and print a score. It will look grown-up. It used every leftover twice: once to draw the machine, once to clap for it.
 
 The job is not “look smart on the people you already asked.”
 
 The job is: **guess well for the next person.**
 
-That is this notebook. Not a new model. A ritual for leftover.
+Hide some. Fit on the rest. Score the hidden ones. That is **train** vs **test**. Not a new machine. A ritual for leftover.
+
+The pages below use thirty graders so the numbers are real. Same ritual for a tree, a net, a tax.
 
 ---
 
 ## Page 2 — Pride is not a test
 
-Fit ordinary least squares on all thirty. Score all thirty.
+Fit a line on all thirty. Score all thirty.
 
 ![fm-02-pride](../assets/fm-02-pride.svg)
 
-R² **0.921**. Looks grown-up. It used every leftover twice: once to draw the line, once to grade it.
+R² **0.921**. Pride.
 
-Hide 9 people. Fit on 21. Score the 9.
+Hide 9. Fit on 21. Score the 9.
 
-| pile | people | ordinary R² |
+| pile | people | R² |
 |---|---:|---:|
 | all 30 (pride) | 30 | **0.921** |
 | train | 21 | **0.955** |
 | test | 9 | **0.626** |
 
-The line hugged the 21 (0.955). The 9 had not voted. **0.626.** That gap *is* the lesson from ridge page 3. This page names it: **train** vs **test**.
+The machine hugged the trainers (0.955). The 9 had not voted. **0.626.** That gap is the lesson. 21 and 9 are this split, not a law.
 
-sklearn’s `train_test_split(..., test_size=0.3, random_state=0)` is that hide. Same split as the ridge page. Same numbers.
+sklearn’s `train_test_split` is that hide.
 
 ---
 
 ## Page 3 — Do not peek
 
-Ridge needs a λ. Temptation: try a few λ, keep the one where **test** R² is biggest.
+If you **tune a knob** — how loud a tax, how deep a tree — temptation: try a few, keep the one where **test** looks best. The tables use a tax’s volume (sklearn `alpha`). Same sin for any knob.
 
 ![fm-03-peek](../assets/fm-03-peek.svg)
 
@@ -72,9 +72,9 @@ Ridge needs a λ. Temptation: try a few λ, keep the one where **test** R² is b
 | **10** | 0.907 | **0.748** |
 | 30 | 0.780 | 0.672 |
 
-Picked **10**. Report 0.748. Looks like ridge won.
+Picked **10**. Report 0.748. Looks like the tax won.
 
-The 9 already chose λ. That number is not a test. People call this **leakage**. Same sin as shuffling weeks into a “test” set ([[01 lag trend season]]). The future voted on the knobs.
+The 9 already chose the knob. That number is not a test. People call this **leakage**. Same sin as shuffling weeks into a “test” set ([[01 lag trend season]]). The future voted on the knobs.
 
 ---
 
@@ -82,14 +82,14 @@ The 9 already chose λ. That number is not a test. People call this **leakage**.
 
 Hide the 9 and **do not touch them** until the end.
 
-From the 21, hide 7 more. Fit on 14. Pick λ on the 7. Then refit the winner on all 21. **Then** score the 9. Once.
+From the 21, hide 7 more. Fit on 14. Pick the knob on the 7. Then refit the winner on all 21. **Then** score the 9. Once.
 
 ![fm-04-piles](../assets/fm-04-piles.svg)
 
 | pile | people | job |
 |---|---:|---|
 | **fit** | 14 | draw the line |
-| **validate** | 7 | pick λ |
+| **validate** | 7 | pick the knob |
 | **test** | 9 | report. once. |
 
 On the 7, α = **1** wins (val R² 0.736). α = 10, the peek’s darling, is 0.647 on this hide.
@@ -106,7 +106,7 @@ Too few to split three ways? Keep the 9 in a drawer. On the 21, hide a third, fi
 
 ![fm-05-cv](../assets/fm-05-cv.svg)
 
-That ritual is **cross-validation**. Ridge page 11 already drew the folds. Here it is the whole job, not a volume-knob aside.
+That ritual is **cross-validation**. Here it is the whole job, not an aside.
 
 3-fold CV on the 21 (test still untouched):
 
@@ -129,7 +129,7 @@ Time is a different hide: **last weeks**, not a shuffle ([[01 lag trend season]]
 
 1. **Hide people** before you fit. That pile is test. Do not look.
 2. **Fit** on the rest. Score both piles. Train high, test low → you hugged the old cloud.
-3. **If you pick a knob** (λ, depth, k): you need a **third** pile, or rotate the hide on the trainers (CV).
+3. **If you pick a knob** (volume, depth, k): you need a **third** pile, or rotate the hide on the trainers (CV).
 4. **Refit** the winner on all trainers. Score test **once**.
 5. **Time:** last weeks are the test. Not a random 30%.
 6. **Do not** call R² on the trainers a result. That is pride.
@@ -142,7 +142,7 @@ If you keep only one thing:
 
 ## Page 7 — Thirty graders, in sklearn
 
-Same thirty as [[02 ridge regression]]. Same split (`random_state=0`). Ordinary hugs. Peek vs three piles vs CV.
+Thirty graders. Same split as the tables above. Ordinary hugs. Peek vs three piles vs CV.
 
 ```python
 import numpy as np
@@ -240,9 +240,7 @@ picked on CV: 1
 refit on 21, R² test 0.706
 ```
 
-Pride 0.921. Train 0.955, test 0.626 — ordinary hugged. Peek picked α = 10 and would have reported 0.748. Three piles and CV both pick **1**, then report **0.706** on the 9. sklearn’s `alpha` is λ. `KFold` is the rotate. The test array is not an argument to `KFold`.
-
-Ridge’s printed run used α = 10 on purpose: twins share, test 0.748 vs ordinary 0.626. That was a **demo of the tax**, not a claim that 10 was chosen honestly. This notebook is the ritual that would choose.
+Pride 0.921. Train 0.955, test 0.626 — ordinary hugged. Peek picked α = 10 and would have reported 0.748. Three piles and CV both pick **1**, then report **0.706** on the 9. sklearn’s `alpha` is the volume knob. `KFold` is the rotate. The test array is not an argument to `KFold`.
 
 ---
 
@@ -252,7 +250,7 @@ Ridge’s printed run used α = 10 on purpose: twins share, test 0.748 vs ordina
 |---|---|
 | train | people you fit on |
 | test | people you score once, at the end |
-| validate | people you use to pick λ / depth / k |
+| validate | people you use to pick the knob |
 | pride | score on the people you fit |
 | leakage | test helped pick the knobs |
 | CV | rotate the validate hide on the trainers |
@@ -266,18 +264,24 @@ Ridge’s printed run used α = 10 on purpose: twins share, test 0.748 vs ordina
 | CV | k-fold |
 | peek | test-set tuning |
 
-![fm-06-when](../assets/fm-06-when.svg)
-
 ### Use / skip
 
-**Reach for it when** you will **report a number**, or pick λ / depth / k, and the job is the **next person**.
+**Reach for it when**
 
-**Skip it when** eight people and one line is a demo ([[01 linear regression]] page 16 is pride on purpose); you already peeked; the “new people” are **later in time** — then last weeks, not a shuffle ([[01 lag trend season]]).
+- you will **report a number**
+- you will pick a knob
+- the job is the **next person**
 
-**Pays you:** leftover that means something. A λ you can defend. The sentence from ridge page 3, as a habit.
+**Skip it when**
 
-**Costs you:** fewer people to fit. A thin validate pile rattles (0.259 on one fold). CV is slower. Not a model — a ritual for leftover.
+- eight people and one line is a demo (pride on purpose)
+- you already peeked
+- the “new people” are **later in time** — last weeks, not a shuffle ([[01 lag trend season]])
+
+**Pays you:** leftover that means something. A knob you can defend.
+
+**Costs you:** fewer people to fit. A thin validate pile rattles. CV is slower. Not a model — a ritual for leftover.
 
 ---
 
-*Fundamentals 01. Leftover on new people. Next: [[02 bias variance]] — ridge’s dartboard, as its own notebook. Metrics after that. Not a p-value (that is [[01 t-test]]).*
+*Leftover on new people. Next: [[02 bias variance]] — jumpy vs shy. Metrics after that.*

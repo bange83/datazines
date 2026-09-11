@@ -236,9 +236,17 @@ PCA on co-occurrence is a **sketch** of the table. Cosines on this page are in t
 
 ### Use / skip
 
-**Reach for it when** the levers are **words / tokens**, nearby should mean similar, and a later floor will look the row up.
+**Reach for it when**
 
-**Skip it when** hours and sleep already are numbers ([[01 neural net]] / [[01 logistic regression]]); you needed a **shortlist** of columns ([[03 lasso]]); you wanted attention as the first file.
+- the levers are **words / tokens**
+- nearby should mean similar
+- a later floor will look the row up
+
+**Skip it when**
+
+- hours and sleep already are numbers ([[01 neural net]] / [[01 logistic regression]])
+- you needed a **shortlist** of columns ([[03 lasso]])
+- you wanted attention as the first file
 
 **Pays you:** words become knobs a net can score. Neighborhoods. The first floor of an LLM without a transformer cartoon.
 

@@ -134,9 +134,17 @@ Mean 0: OLS. Std ~0.46: the bell’s spread, guessed from eight dots. Two leftov
 
 ### Use / skip
 
-**Reach for it when** you care how *y* rattles, not only ŷ; before tests; before softmax; when GLM asked “which family?”
+**Reach for it when**
 
-**Skip it when** you only wanted a line and a cheat sheet of *b*; when someone hands you a zoo of named curves with no *y* in sight.
+- you care how *y* rattles, not only ŷ
+- before tests
+- before softmax
+- when GLM asked “which family?”
+
+**Skip it when**
+
+- you only wanted a line and a cheat sheet of *b*
+- when someone hands you a zoo of named curves with no *y* in sight
 
 **Pays you:** the chance wing’s 01. Unlocks t-tests, CIs, “legal region” for ŷ. Three costumes cover most of this encyclopedia.
 

@@ -163,7 +163,7 @@ window.MathJax = {
 <p>Flip it like a notebook. One page = one idea. Done.</p>
 </section>
 <section class="leaf"><h2>Page 1 — There is no grade</h2>
-<p>Eighty students, house seed 7. Unlabeled cloud: hours, minutes, sleep, coffee. <strong>No grade.</strong> Not the thirty graders on the ridge page, and not a pass/fail class.</p>
+<p>Eighty students. Unlabeled cloud: hours, minutes, sleep, coffee. <strong>No grade.</strong> Not the thirty graders on the ridge page, and not a pass/fail class.</p>
 <p>Nobody asked who passed. Nobody asked ŷ.</p>
 <p>The cloud still has a shape. Hours and minutes are almost the same fact (corr <strong>0.997</strong>). Sleep is its own direction (corr with hours <strong>0.061</strong>). Coffee rattles.</p>
 <p>The job: <strong>name the long ways</strong> of that cloud, then maybe throw the short ones away.</p>
@@ -253,7 +253,7 @@ window.MathJax = {
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 6 — Hours and minutes, in sklearn</h2>
-<p>Same unlabeled cloud — eighty students, four levers, no grade. House seed 7.</p>
+<p>Same unlabeled cloud — eighty students, four levers, no grade.</p>
 <pre><code class="language-python">import numpy as np
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
@@ -356,8 +356,18 @@ recon mse 2 PC 0.239
 <figure class="drawing"><img src="../../assets/pc-05-when.svg" alt="pc-05-when"></figure>
 
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> you have <strong>many levers and no y</strong>, a sausage / twins, and you will <strong>scale</strong> first.</p>
-<p><strong>Skip it when</strong> you already have a grade to guess (<a class="wiki" href="../supervised%20learning/regression/01%20linear%20regression.html">01 linear regression</a>); you wanted <strong>rooms</strong> (<a class="wiki" href="02%20k-means.html">02 k-means</a>); you were going to skip the scaler and let minutes be PC1.</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li>you have <strong>many levers and no y</strong></li>
+<li>a sausage / twins</li>
+<li>you will <strong>scale</strong> first</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li>you already have a grade to guess (<a class="wiki" href="../supervised%20learning/regression/01%20linear%20regression.html">01 linear regression</a>)</li>
+<li>you wanted <strong>rooms</strong> (<a class="wiki" href="02%20k-means.html">02 k-means</a>)</li>
+<li>you were going to skip the scaler and let minutes be PC1</li>
+</ul>
 <p><strong>Pays you:</strong> a thinner cloud that still looks like the people. Twins share one axis. The fight is a bar you can drop.</p>
 <p><strong>Costs you:</strong> no ŷ. PC1 is not a cause. Unscaled PCA is a ruler, not a rotation. <a class="wiki" href="02%20k-means.html">02 k-means</a> is a different question (blobs, not axes).</p>
 <p><em>Unsupervised 01. No grade. Next: <a class="wiki" href="02%20k-means.html">02 k-means</a> — rooms in the cloud, still no y.</em></p></section>

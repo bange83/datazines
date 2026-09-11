@@ -186,9 +186,17 @@ Naive +1.78 steals the year. Gap vs would-have **+0.67** (planted 0.90 — lefto
 
 ### Use / skip
 
-**Reach for it when** you have **one series and a start date**, you can name would-have (trend + season), and you already own the fork.
+**Reach for it when**
 
-**Skip it when** ŷ for next week was the job ([[01 lag trend season]]); you already ran the experiment; you wanted a posterior on every week before you owned the fork.
+- you have **one series and a start date**
+- you can name would-have (trend + season)
+- you already own the fork
+
+**Skip it when**
+
+- ŷ for next week was the job ([[01 lag trend season]])
+- you already ran the experiment
+- you wanted a posterior on every week before you owned the fork
 
 **Pays you:** actual − would-have on one series. Naive called out. Season kept in the counterfactual so a break is not a campaign.
 

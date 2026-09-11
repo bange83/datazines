@@ -158,7 +158,7 @@ window.MathJax = {
 
 <figure class="drawing"><img src="../../assets/by-00-hero.svg" alt="by-00-hero"></figure>
 
-<p>Read <a class="wiki" href="../probability/02%20beta.html">02 beta</a> first. Same eight coins, house seed 7, true <em>P</em> = 0.6. Beta was the bump. This notebook is the <strong>move</strong>: start → see → bump after.</p>
+<p>Read <a class="wiki" href="../probability/02%20beta.html">02 beta</a> first. Same eight coins, true <em>P</em> = 0.6. Beta was the bump. This notebook is the <strong>move</strong>: start → see → bump after.</p>
 <p>When you cannot add, <a class="wiki" href="02%20MCMC.html">02 MCMC</a> walks the height.</p>
 <p>Flip it like a notebook. One page = one idea. Done.</p>
 </section>
@@ -264,7 +264,7 @@ window.MathJax = {
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 6 — Eight coins, in scipy</h2>
-<p>Same tosses as <a class="wiki" href="../probability/02%20beta.html">02 beta</a>. House seed 7. True <em>P</em> = 0.6. Four starts, four posteriors.</p>
+<p>Same tosses as <a class="wiki" href="../probability/02%20beta.html">02 beta</a>. True <em>P</em> = 0.6. Four starts, four posteriors.</p>
 <pre><code class="language-python">import numpy as np
 from scipy.stats import beta
 
@@ -361,8 +361,18 @@ post   Beta(5,13)            mean 0.278   5% 0.124   95% 0.461
 <figure class="drawing"><img src="../../assets/by-04-when.svg" alt="by-04-when"></figure>
 
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> the unknown is a <strong>rate</strong>, the pile is <strong>small</strong>, and you can defend a starting bump.</p>
-<p><strong>Skip it when</strong> one line and plenty of people already work; you wanted a <em>p</em> (<a class="wiki" href="../inference/01%20t-test.html">01 t-test</a>); you cannot write the prior down.</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li>the unknown is a <strong>rate</strong></li>
+<li>the pile is <strong>small</strong></li>
+<li>you can defend a starting bump</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li>one line and plenty of people already work</li>
+<li>you wanted a <em>p</em> (<a class="wiki" href="../inference/01%20t-test.html">01 t-test</a>)</li>
+<li>you cannot write the prior down</li>
+</ul>
 <p><strong>Pays you:</strong> a bump, not a fake point. The start is visible. Same coins as beta, named.</p>
 <p><strong>Costs you:</strong> the prior is a choice. Eight tosses leave a wide stick. Not a sampler. Not a slope with ten knobs (that walk is later).</p>
 <p><em>Bayes 01. A starting bump. Next: <a class="wiki" href="02%20MCMC.html">02 MCMC</a> — walk the height when you cannot add.</em></p></section>

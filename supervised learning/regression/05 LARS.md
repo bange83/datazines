@@ -271,9 +271,15 @@ LARS = *how you walk through the answers.*
 
 ### Use / skip
 
-**Reach for it when** you want the **film**: who joins, in what order, how knobs grow. Lots of *x*, you care about the path, not one still. Lasso’s solution happens to look like this walk.
+**Reach for it when**
 
-**Skip it when** you only need one fitted line (ordinary / ridge / lasso with a chosen λ is enough); you thought LARS was a smarter shape (it is not); the leftover is bent.
+- you want the **film**: who joins, in what order, how knobs grow. Lots of *x*, you care about the path, not one still. Lasso’s solution happens to look like this walk
+
+**Skip it when**
+
+- you only need one fitted line (ordinary / ridge / lasso with a chosen λ is enough)
+- you thought LARS was a smarter shape (it is not)
+- the leftover is bent
 
 **Pays you:** a ranking of entry. A fast path. A camera for the lasso film.
 

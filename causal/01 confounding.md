@@ -162,9 +162,16 @@ Coffee-only: 0.71 and a proud R². Hours-only: *b* ≈ 1, as planted. Both: coff
 
 ### Use / skip
 
-**Reach for it when** you want to **change** *y*, not just guess it; a common cause might be riding along; the loud *b* might be a passenger.
+**Reach for it when**
 
-**Skip it when** ŷ was the only job ([[01 linear regression]]); you already ran the experiment.
+- you want to **change** *y*, not just guess it
+- a common cause might be riding along
+- the loud *b* might be a passenger
+
+**Skip it when**
+
+- ŷ was the only job ([[01 linear regression]])
+- you already ran the experiment
 
 **Pays you:** the cause wing’s 01. A fork you can draw. See vs do. Why lasso firing coffee can be the *right* story, not only a haircut.
 

@@ -286,7 +286,7 @@ window.MathJax = {
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 7 — A harder exam, in sklearn</h2>
-<p>Same levers as logistic. Harder intercept so pass is rarer (<strong>26 / 80</strong>). House seed 7. Split 70/30, <code>random_state=0</code>. Dummy vs logistic vs three cuts.</p>
+<p>Same levers as logistic. Harder intercept so pass is rarer (<strong>26 / 80</strong>). Split 70/30, <code>random_state=0</code>. Dummy vs logistic vs three cuts.</p>
 <pre><code class="language-python">import numpy as np
 from sklearn.dummy import DummyClassifier
 from sklearn.linear_model import LogisticRegression
@@ -425,13 +425,21 @@ cuts on the same 24
 </tr>
 </tbody>
 </table>
-<figure class="drawing"><img src="../../assets/fm-24-when.svg" alt="fm-24-when"></figure>
-
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> yes is <strong>rare</strong> or costly to miss, accuracy clapped for always-fail, or you will <strong>pick a cut</strong> on purpose.</p>
-<p><strong>Skip it when</strong> <em>y</em> is a grade (use leftover² / R²); you wanted a <em>p</em> (<a class="wiki" href="../inference/01%20t-test.html">01 t-test</a>); you wanted a 12-curve ROC.</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li>yes is <strong>rare</strong>, or costly to miss</li>
+<li>accuracy clapped for always-fail</li>
+<li>you will <strong>pick a cut</strong> on purpose</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li><em>y</em> is a grade (use leftover² / R²)</li>
+<li>you wanted a <em>p</em> (<a class="wiki" href="../inference/01%20t-test.html">01 t-test</a>)</li>
+<li>you wanted a 12-curve ROC</li>
+</ul>
 <p><strong>Pays you:</strong> two questions instead of one clap. A dummy to beat. The cut as politics, not magic.</p>
-<p><strong>Costs you:</strong> two numbers, not one. A thin test pile (11 passers) rattles. F1 / ROC exist; they are sequels.</p>
+<p><strong>Costs you:</strong> two numbers, not one. A thin test pile rattles. F1 / ROC exist; they are sequels.</p>
 <p><em>Accuracy can clap for always-fail. Precision / recall pick a wall.</em></p></section>
 <p class="colophon">Flip it like a notebook. One page = one idea.</p>
 </div>

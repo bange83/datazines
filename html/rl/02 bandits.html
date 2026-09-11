@@ -201,7 +201,7 @@ window.MathJax = {
 <p>You cannot start by cashing study. You have not met it yet.</p>
 </section>
 <section class="leaf"><h2>Page 3 — Eighty evenings</h2>
-<p>House seed 7. True means 1.0 / 2.0 / 0.4, leftover 0.6. One pull of each first, then a rule.</p>
+<p>True means 1.0 / 2.0 / 0.4, leftover 0.6. One pull of each first, then a rule.</p>
 <figure class="drawing"><img src="../../assets/bd-03-counts.svg" alt="bd-03-counts"></figure>
 
 <table>
@@ -249,7 +249,7 @@ window.MathJax = {
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 5 — Eighty evenings, in numpy</h2>
-<p>Three arms. True means hidden. House seed 7. Random vs ε-greedy vs UCB. First three pulls: one of each.</p>
+<p>Three arms. True means hidden. Random vs ε-greedy vs UCB. First three pulls: one of each.</p>
 <pre><code class="language-python">import numpy as np
 
 mu = np.array([1.0, 2.0, 0.4])  # rest, study, scroll
@@ -368,8 +368,18 @@ UCB last 12 [1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1]
 <figure class="drawing"><img src="../../assets/bd-04-when.svg" alt="bd-04-when"></figure>
 
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> there is <strong>one room</strong>, many arms, the pull does <strong>not</strong> change the room, and try vs cash is the whole job.</p>
-<p><strong>Skip it when</strong> tired vs fresh matters (<a class="wiki" href="01%20the%20loop.html">01 the loop</a>); you have a frozen pile of people (supervised).</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li>there is <strong>one room</strong></li>
+<li>many arms</li>
+<li>the pull does <strong>not</strong> change the room</li>
+<li>try vs cash is the whole job</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li>tired vs fresh matters (<a class="wiki" href="01%20the%20loop.html">01 the loop</a>)</li>
+<li>you have a frozen pile of people (supervised)</li>
+</ul>
 <p><strong>Pays you:</strong> the try/cash sentence. A rule that finds study without knowing it. Counts you can screenshot.</p>
 <p><strong>Costs you:</strong> no next-state (if the room <em>does</em> change, this notebook lies). Random tries cost nights. Regret is a writer’s stick, not a live number.</p>
 <p><em>No next. Try or cash. Next: <a class="wiki" href="03%20Q.html">03 Q</a> — the loop’s table, named.</em></p></section>

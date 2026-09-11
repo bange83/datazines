@@ -196,7 +196,7 @@ window.MathJax = {
 </section>
 <section class="leaf"><h2>Page 4 — Last token is a cheap LLM — and it lies</h2>
 <p>A tiny model: look up the <strong>last</strong> word only, then softmax. No look. No stack.</p>
-<p>On these 27 notes, 58 next-word pairs, dim 4, house seed 7, 400 quiet steps:</p>
+<p>On these 27 notes, 58 next-word pairs, dim 4, 400 quiet steps:</p>
 <p>P(hours | study) = <strong>0.38</strong> — same as counting. P(noise | coffee) = <strong>0.47</strong>, near the count 0.50. Cross-entropy 2.84 → <strong>1.27</strong> (random would sit near ln 17 ≈ 2.83).</p>
 <p>It copied the bigram table. Useful. Also blind.</p>
 <figure class="drawing"><img src="../../assets/lm-04-lasttoken.svg" alt="lm-04-lasttoken"></figure>
@@ -253,7 +253,7 @@ window.MathJax = {
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 7 — Next word after <em>study</em>, in numpy</h2>
-<p>Same 27 notes as <a class="wiki" href="02%20embeddings.html">02 embeddings</a>. Last-token model (the cheap LLM). Dim 4. House seed 7. No sklearn estimator — the walk <em>is</em> the lesson.</p>
+<p>Same 27 notes as <a class="wiki" href="02%20embeddings.html">02 embeddings</a>. Last-token model (the cheap LLM). Dim 4. No sklearn estimator — the walk <em>is</em> the lesson.</p>
 <pre><code class="language-python">import numpy as np
 from collections import Counter, defaultdict
 
@@ -439,8 +439,18 @@ temp 2.0  P(hours)=0.18  maxP=0.18
 <figure class="drawing"><img src="../../assets/lm-06-when.svg" alt="lm-06-when"></figure>
 
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> the job is <strong>P(next token)</strong>, you already own 01–03, and you need a picture of the pile — not a career.</p>
-<p><strong>Skip it when</strong> hours already is a number (<a class="wiki" href="01%20neural%20net.html">01 neural net</a>); a bag or last-token was enough; you wanted twelve heads as the first file.</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li>the job is <strong>P(next token)</strong></li>
+<li>you already own 01–03</li>
+<li>you need a picture of the pile — not a career</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li>hours already is a number (<a class="wiki" href="01%20neural%20net.html">01 neural net</a>)</li>
+<li>a bag or last-token was enough</li>
+<li>you wanted twelve heads as the first file</li>
+</ul>
 <p><strong>Pays you:</strong> the LLM one-liner without a transformer cartoon. Train = leftover. Use = sample. Stack = more of the same.</p>
 <p><strong>Costs you:</strong> last-token copies bigrams and goes blind. Real stacks are expensive. Sampling is not truth. Pattern of next words, not a mind.</p>
 <p><em>Nets wing, 04. One room. Chance wing still waiting: <code>inference/01 t-test</code> after <a class="wiki" href="../probability/01%20distributions.html">01 distributions</a>.</em></p></section>

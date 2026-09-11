@@ -253,7 +253,7 @@ step 200  a=1.500  b=1.059  mse=0.1990
 step 400  a=1.706  b=1.010  mse=0.1879
 </code></pre>
 <p>Walk, don’t jump: 400 quiet steps land next to 1.75 + 1·hours. MSE almost the OLS floor (0.1875). A loud rate (0.2) explodes — do not paste that into production.</p>
-<p><strong>SGD</strong> = one person per step, not all eight. Same downhill, noisier path. Nets need that. Same eight people, same rate, shuffle each pass (house seed 7):</p>
+<p><strong>SGD</strong> = one person per step, not all eight. Same downhill, noisier path. Nets need that. Same eight people, same rate, shuffle each pass:</p>
 <pre><code class="language-python">rng = np.random.default_rng(7)
 a, b, rate = 0.0, 0.0, 0.05
 for epoch in range(50):
@@ -330,8 +330,15 @@ print(f&quot;SGD 400 one-person steps  a={a:.3f}  b={b:.3f}  mse={((a + b * hour
 </tbody>
 </table>
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> there is no closed-form bottom (nets, deep anything). When you want to <em>see</em> training as walking.</p>
-<p><strong>Skip it when</strong> one line and OLS already solved it; you only needed a and b once.</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li>there is no closed-form bottom (nets, deep anything). When you want to <em>see</em> training as walking</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li>one line and OLS already solved it</li>
+<li>you only needed a and b once</li>
+</ul>
 <p><strong>Pays you:</strong> the verb of modern ML. Logistic, nets, LLMs — they walk this. Same rate-knob as boosting.</p>
 <p><strong>Costs you:</strong> knobs to tune. Can bounce or crawl. A smaller dip can trap the walk (the line’s bowl does not). Not a new <em>model</em> — a way to <strong>fit</strong> one.</p>
 <p><em>Walk wing, 01. Chance wing next door: <a class="wiki" href="../probability/01%20distributions.html">01 distributions</a>. Softmax after that. The leftover walking backward: <a class="wiki" href="../neural%20nets/01%20neural%20net.html">01 neural net</a>.</em></p></section>

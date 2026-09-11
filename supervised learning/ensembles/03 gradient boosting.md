@@ -169,9 +169,17 @@ On this small test set the **forest wins**. That does **not** mean boosting is w
 
 ### Use / skip
 
-**Reach for it when** tables with mixes, leftover errors that a forest already almost got; you will **tune** rate and depth; you outgrew one default forest.
+**Reach for it when**
 
-**Skip it when** you need an answer tonight with no knobs ([[02 random forest]]); tiny *n* and a loud rate (you will memorize); a line or logistic already fits.
+- tables with mixes, leftover errors that a forest already almost got
+- you will **tune** rate and depth
+- you outgrew one default forest
+
+**Skip it when**
+
+- you need an answer tonight with no knobs ([[02 random forest]])
+- tiny *n* and a loud rate (you will memorize)
+- a line or logistic already fits
 
 **Pays you:** often the strongest tabular model once *n* is real. Fine leftover-hunting. Same bricks as the tree notebook.
 

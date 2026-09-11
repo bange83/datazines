@@ -163,7 +163,7 @@ window.MathJax = {
 <p>Flip it like a notebook. One page = one idea. Done.</p>
 </section>
 <section class="leaf"><h2>Page 1 — There is still no grade</h2>
-<p>Eighty students, house seed 7. Hours and sleep. <strong>No grade.</strong> Three styles planted on purpose.</p>
+<p>Eighty students. Hours and sleep. <strong>No grade.</strong> Three styles planted on purpose.</p>
 <p>Three study styles, planted on purpose:</p>
 <table>
 <thead>
@@ -292,7 +292,7 @@ window.MathJax = {
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 6 — Three study styles, in sklearn</h2>
-<p>Same unlabeled cloud as page 1 — eighty students, hours and sleep, no grade. Three styles planted. House seed 7.</p>
+<p>Same unlabeled cloud as page 1 — eighty students, hours and sleep, no grade. Three styles planted.</p>
 <pre><code class="language-python">import numpy as np
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
@@ -400,8 +400,18 @@ new 3h, 7s → room 2
 <figure class="drawing"><img src="../../assets/km-05-when.svg" alt="km-05-when"></figure>
 
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> you have <strong>no y</strong>, the cloud looks like <strong>round-ish blobs</strong>, and you will <strong>scale</strong>, then pick <em>k</em> with an elbow.</p>
-<p><strong>Skip it when</strong> you already have pass/fail (<a class="wiki" href="../supervised%20learning/classification/01%20logistic%20regression.html">01 logistic regression</a>, <a class="wiki" href="../supervised%20learning/classification/02%20LDA.html">02 LDA</a>); you wanted <strong>axes</strong> (<a class="wiki" href="01%20PCA.html">01 PCA</a>); you were going to treat <em>k</em> as a discovered truth.</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li>you have <strong>no y</strong></li>
+<li>the cloud looks like <strong>round-ish blobs</strong></li>
+<li>you will <strong>scale</strong>, then pick <em>k</em> with an elbow</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li>you already have pass/fail (<a class="wiki" href="../supervised%20learning/classification/01%20logistic%20regression.html">01 logistic regression</a>, <a class="wiki" href="../supervised%20learning/classification/02%20LDA.html">02 LDA</a>)</li>
+<li>you wanted <strong>axes</strong> (<a class="wiki" href="01%20PCA.html">01 PCA</a>)</li>
+<li>you were going to treat <em>k</em> as a discovered truth</li>
+</ul>
 <p><strong>Pays you:</strong> names for clumps, a center you can read in English, a room for a new person.</p>
 <p><strong>Costs you:</strong> you pick <em>k</em>. It will always paint <em>k</em> rooms, even if the cloud is one sausage. A room is not a cause. Unscaled minutes still eat the ruler.</p>
 <p><em>Unsupervised 02. No grade. Rooms, not axes. Remaining rooms, short: SVM after the S; MCMC after the walk.</em></p></section>

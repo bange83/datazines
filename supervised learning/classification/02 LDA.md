@@ -201,11 +201,24 @@ On this split, LDA, QDA, and logistic **tie on the test set**. QDA is a hair wor
 
 ### Use / skip
 
-**Reach for LDA when** classes look like ovals of **one** shape, you have modest *n*, maybe several *x*, and a straight boundary is enough. Often a cousin of logistic, with a blob story.
+**Reach for LDA when**
 
-**Reach for QDA when** the ovals clearly differ and you want a **first curve** without kernels or trees. Still Gaussian.
+- classes look like ovals of **one** shape
+- you have modest *n*, maybe several *x*
+- a straight boundary is enough
 
-**Skip both when** the clouds are bananas, not ovals; one class has 8 people and 40 *x* (QDA will melt); you only wanted P(yes) and a line (stay with [[01 logistic regression]]); mixes and thresholds matter more than ovals ([[01 decision tree]]).
+**Reach for QDA when**
+
+- the ovals clearly differ
+- you want a **first curve** without kernels or trees
+- you still believe Gaussians
+
+**Skip both when**
+
+- the clouds are bananas, not ovals
+- one class has 8 people and 40 *x* (QDA will melt)
+- you only wanted P(yes) and a line ([[01 logistic regression]])
+- mixes and thresholds matter more than ovals ([[01 decision tree]])
 
 **Pays you:** a picture of two clouds. LDA is stable. QDA is the cheapest bent boundary in the house.
 

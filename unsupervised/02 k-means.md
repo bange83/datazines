@@ -195,9 +195,17 @@ k=3 is the elbow and the silhouette peak. Sizes **28 / 28 / 24** — the plant, 
 
 ### Use / skip
 
-**Reach for it when** you have **no y**, the cloud looks like **round-ish blobs**, and you will **scale**, then pick *k* with an elbow.
+**Reach for it when**
 
-**Skip it when** you already have pass/fail ([[01 logistic regression]], [[02 LDA]]); you wanted **axes** ([[01 PCA]]); you were going to treat *k* as a discovered truth.
+- you have **no y**
+- the cloud looks like **round-ish blobs**
+- you will **scale**, then pick *k* with an elbow
+
+**Skip it when**
+
+- you already have pass/fail ([[01 logistic regression]], [[02 LDA]])
+- you wanted **axes** ([[01 PCA]])
+- you were going to treat *k* as a discovered truth
 
 **Pays you:** names for clumps, a center you can read in English, a room for a new person.
 

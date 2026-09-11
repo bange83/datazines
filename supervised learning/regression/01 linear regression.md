@@ -468,9 +468,19 @@ It always goes through the centroid (x̄, ȳ).
 
 ### Use / skip
 
-**Reach for it when** *y* is a real number, the cloud looks like a straight smear, and you want a sentence: “+1 on *x* goes with +b on *y*.”
+**Reach for it when**
 
-**Skip it when** *y* is yes/no ([[01 logistic regression]]); *y* is a count that cannot go negative ([[06 GLM]]); the cloud bends; one point yanks the line (check the cloud, or a method that does not square the miss — ridge is for huge knobs, not that yank); you have more levers than people.
+- *y* is a real number
+- the cloud looks like a straight smear
+- you want a sentence: “+1 on *x* goes with +b on *y*.”
+
+**Skip it when**
+
+- *y* is yes/no ([[01 logistic regression]])
+- *y* is a count that cannot go negative ([[06 GLM]])
+- the cloud bends
+- one point yanks the line (check the cloud, or a method that does not square the miss — ridge is for huge knobs, not that yank)
+- you have more levers than people
 
 **Pays you:** simple, fast, knobs you can read. The starting machine.
 

@@ -230,17 +230,23 @@ Logistic 01 used a milder intercept (−3.2). Pass rate there was ~2/3, so accur
 | four rooms | confusion matrix |
 | dummy | baseline |
 
-![fm-24-when](../assets/fm-24-when.svg)
-
 ### Use / skip
 
-**Reach for it when** yes is **rare** or costly to miss, accuracy clapped for always-fail, or you will **pick a cut** on purpose.
+**Reach for it when**
 
-**Skip it when** *y* is a grade (use leftover² / R²); you wanted a *p* ([[01 t-test]]); you wanted a 12-curve ROC.
+- yes is **rare**, or costly to miss
+- accuracy clapped for always-fail
+- you will **pick a cut** on purpose
+
+**Skip it when**
+
+- *y* is a grade (use leftover² / R²)
+- you wanted a *p* ([[01 t-test]])
+- you wanted a 12-curve ROC
 
 **Pays you:** two questions instead of one clap. A dummy to beat. The cut as politics, not magic.
 
-**Costs you:** two numbers, not one. A thin test pile (11 passers) rattles. F1 / ROC exist; they are sequels.
+**Costs you:** two numbers, not one. A thin test pile rattles. F1 / ROC exist; they are sequels.
 
 ---
 

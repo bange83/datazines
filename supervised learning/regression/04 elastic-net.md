@@ -255,9 +255,15 @@ Not the same knob.
 
 ### Use / skip
 
-**Reach for it when** the spreadsheet is wide: more levers than people, **packs of twins**, plus junk. You want junk to die and cousins to come in together.
+**Reach for it when**
 
-**Skip it when** one honest *x* already does the job; every *x* is a real separate thing (ridge is enough); you want the shortest possible sentence and you do not mind a random twin dying (lasso).
+- the spreadsheet is wide: more levers than people, **packs of twins**, plus junk. You want junk to die and cousins to come in together
+
+**Skip it when**
+
+- one honest *x* already does the job
+- every *x* is a real separate thing (ridge is enough)
+- you want the shortest possible sentence and you do not mind a random twin dying (lasso)
 
 **Pays you:** both gifts. Kill junk, keep packs. Default once the sheet gets wide.
 

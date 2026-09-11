@@ -158,8 +158,7 @@ window.MathJax = {
 
 <figure class="drawing"><img src="../../assets/fm-10-hero.svg" alt="fm-10-hero"></figure>
 
-<p>Read <a class="wiki" href="01%20train%20test%20validate.html">01 train test validate</a> first. Same <strong>thirty graders</strong>, seed 7, same twins. Ridge already drew this dartboard (page 8). This notebook <em>is</em> that picture: leftover on new people, named.</p>
-<p>Not a second ridge. Not a p-value (<a class="wiki" href="../inference/01%20t-test.html">01 t-test</a>). Metrics: <a class="wiki" href="03%20metrics.html">03 metrics</a>.</p>
+<p>Read <a class="wiki" href="01%20train%20test%20validate.html">01 train test validate</a> first. Same <strong>thirty graders</strong>. This notebook names the gap: jumpy vs shy.</p>
 <p>Flip it like a notebook. One page = one idea. Done.</p>
 </section>
 <section class="leaf"><h2>Page 1 — The gap has a name</h2>
@@ -170,24 +169,24 @@ window.MathJax = {
 <li>or the line is <strong>systematically shy</strong> (off-center on every 21)</li>
 </ul>
 <p>People call the jump <strong>variance</strong>. The shy sit <strong>bias</strong>.</p>
-<p>Ridge’s dartboard: ordinary darts fly everywhere, on average near the bullseye. Ridge’s darts cluster, a bit off-center. Same trade. This page puts numbers on it.</p>
+<p>A wild machine: darts fly everywhere, on average near the bullseye. A calmer one: darts cluster, a bit off-center. Same trade. This page puts numbers on it. The calm machine in the tables is a tax on huge slopes (<a class="wiki" href="../supervised%20learning/regression/02%20ridge%20regression.html">02 ridge regression</a>) — a worked example, not homework.</p>
 </section>
 <section class="leaf"><h2>Page 2 — Variance is the jump</h2>
 <p>Redraw the 21 / 9 split <strong>forty</strong> times. Same thirty people. Different hide. Fit ordinary. Read hours <em>b</em>.</p>
 <figure class="drawing"><img src="../../assets/fm-11-jump.svg" alt="fm-11-jump"></figure>
 
 <p>Ordinary hours <em>b</em>: mean <strong>4.76</strong>, sd <strong>1.77</strong>, from <strong>0.33</strong> to <strong>9.51</strong>.</p>
-<p>That is not a slope. That is a fight with minutes, a new winner every redraw. Net effect still ≈ 0.93 grade per extra hour — a cancellation, as ridge said. The <em>story</em> jumps. That jump is variance.</p>
-<p>Ridge, scaled, α = 10: hours <em>b</em> mean <strong>0.54</strong>, sd <strong>0.04</strong>, from <strong>0.46</strong> to <strong>0.62</strong>.</p>
+<p>That is not a slope. That is a fight with minutes, a new winner every redraw. Net effect still ≈ 0.93 grade per extra hour — a cancellation. The <em>story</em> jumps. That jump is variance.</p>
+<p>A tax (scaled, α = 10): hours <em>b</em> mean <strong>0.54</strong>, sd <strong>0.04</strong>, from <strong>0.46</strong> to <strong>0.62</strong>.</p>
 <p>Different units (scaled). Same lesson: <strong>the pile is tight.</strong> Redraw the 21, get almost the same knob.</p>
 <p>Hours-only, no twins: <em>b</em> mean <strong>0.96</strong>, sd <strong>0.05</strong>. Calm. One honest <em>x</em> did not need a tax.</p>
 </section>
 <section class="leaf"><h2>Page 3 — Bias is the shy sit</h2>
-<p>Ridge’s pile is not on the ordinary mean. It is <strong>smaller on purpose</strong>. The tax pulls knobs toward zero. Every redraw, a little shy.</p>
+<p>The calm pile is not on the ordinary mean. It is <strong>smaller on purpose</strong>. The tax pulls knobs toward zero. Every redraw, a little shy.</p>
 <p>That systematic miss is <strong>bias</strong>. Not a moral. A choice: sit off-center so you do not fly.</p>
 <p>Hours-only is the other shy: it never sees sleep or tutor. Calm knobs, a bit simple. Test R² mean <strong>0.70</strong> — less than ordinary’s mean <strong>0.79</strong>, and ordinary’s <em>worst</em> redraw is <strong>0.54</strong>.</p>
-<p>Ordinary: better <em>on average</em>, uglier <em>on a bad hide</em>. Ridge: a bit worse on average (test mean <strong>0.77</strong>), less of a disaster (worst <strong>0.60</strong>).</p>
-<p>You are not trying to be unbiased and heroic. You are trying not to flail (<a class="wiki" href="../supervised%20learning/regression/02%20ridge%20regression.html">02 ridge regression</a>, page 8).</p>
+<p>Ordinary: better <em>on average</em>, uglier <em>on a bad hide</em>. The tax: a bit worse on average (test mean <strong>0.77</strong>), less of a disaster (worst <strong>0.60</strong>).</p>
+<p>You are not trying to be unbiased and heroic. You are trying not to flail.</p>
 </section>
 <section class="leaf"><h2>Page 4 — You buy one with the other</h2>
 <figure class="drawing"><img src="../../assets/fm-12-three.svg" alt="fm-12-three"></figure>
@@ -215,7 +214,7 @@ window.MathJax = {
 <td>wild knobs</td>
 </tr>
 <tr>
-<td>ridge</td>
+<td>tax (calm)</td>
 <td>a bit high (shy)</td>
 <td><strong>low</strong></td>
 <td>tight pile</td>
@@ -239,7 +238,7 @@ window.MathJax = {
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 6 — Forty hides, in sklearn</h2>
-<p>Same thirty as <a class="wiki" href="01%20train%20test%20validate.html">01 train test validate</a> and ridge. 40 different 21 / 9 splits (<code>random_state=0…39</code>). Ordinary hours <em>b</em> vs ridge hours <em>b</em> (scaled, α = 10). House seed 7 for the people.</p>
+<p>Same thirty as <a class="wiki" href="01%20train%20test%20validate.html">01 train test validate</a>. 40 different 21 / 9 splits. Ordinary hours <em>b</em> vs a tax on huge slopes (scaled, α = 10). </p>
 <pre><code class="language-python">import numpy as np
 from sklearn.linear_model import LinearRegression, Ridge
 from sklearn.model_selection import train_test_split
@@ -295,8 +294,8 @@ ridge test R²         mean  0.772   sd 0.083   min  0.601   max  0.941
 hours-only b          mean  0.958   sd 0.052   min  0.864   max  1.102
 hours-only test R²    mean  0.698   sd 0.156   min  0.304   max  0.914
 </code></pre>
-<p>Ordinary hours <em>b</em> spans <strong>nine points</strong>. Ridge’s scaled hours <em>b</em> stays in a <strong>0.16</strong> window. Test R²: ordinary mean a hair higher, worst hide uglier (0.54 vs 0.60). Hours-only <em>b</em> is calm (0.96, planted 0.9) and loses on test because sleep and tutor never got a knob.</p>
-<p><code>alpha=10</code> is the ridge demo, not the honest pick from 01. The dartboard does not care. sd is the jump. mean vs planted is the sit.</p>
+<p>Ordinary hours <em>b</em> spans <strong>nine points</strong>. The tax’s scaled hours <em>b</em> stays in a <strong>0.16</strong> window. Test R²: ordinary mean a hair higher, worst hide uglier (0.54 vs 0.60). Hours-only <em>b</em> is calm (0.96, planted 0.9) and loses on test because sleep and tutor never got a knob.</p>
+<p><code>alpha=10</code> is one loud tax, not an honest pick from <a class="wiki" href="01%20train%20test%20validate.html">01 train test validate</a>. The dartboard does not care. sd is the jump. mean vs planted is the sit.</p>
 </section>
 <section class="leaf"><h2>Last page — cheat sheet</h2>
 <table>
@@ -348,13 +347,21 @@ hours-only test R²    mean  0.698   sd 0.156   min  0.304   max  0.914
 </tr>
 </tbody>
 </table>
-<figure class="drawing"><img src="../../assets/fm-13-when.svg" alt="fm-13-when"></figure>
-
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> train is high and test is low, or knobs <strong>jump</strong> if you redraw, and you are choosing shy vs jumpy.</p>
-<p><strong>Skip it when</strong> one honest <em>x</em> and plenty of people (hours-only was already calm); you wanted a <em>p</em> (<a class="wiki" href="../inference/01%20t-test.html">01 t-test</a>); you wanted precision / recall (metrics, next).</p>
-<p><strong>Pays you:</strong> a name for the gap on <a class="wiki" href="01%20train%20test%20validate.html">01 train test validate</a>. The dartboard from ridge, as a habit.</p>
-<p><strong>Costs you:</strong> bias and variance are not two numbers you read off one fit. You need redraws, or a story (twins, a tax, a stump). Not a third pile — that was 01.</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li>train is high and test is low</li>
+<li>knobs <strong>jump</strong> if you redraw</li>
+<li>you are choosing shy vs jumpy</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li>one honest <em>x</em> and plenty of people (hours-only was already calm)</li>
+<li>you wanted a <em>p</em> (<a class="wiki" href="../inference/01%20t-test.html">01 t-test</a>)</li>
+<li>you wanted precision / recall (<a class="wiki" href="03%20metrics.html">03 metrics</a>)</li>
+</ul>
+<p><strong>Pays you:</strong> a name for the gap on <a class="wiki" href="01%20train%20test%20validate.html">01 train test validate</a>. Jumpy vs shy, as a habit.</p>
+<p><strong>Costs you:</strong> not two numbers off one fit. You need redraws, or a story (twins, a tax, a stump).</p>
 <p><em>Fundamentals 02. Jumpy vs shy. Next: <a class="wiki" href="03%20metrics.html">03 metrics</a> — when accuracy lies. Not a p-value.</em></p></section>
 <p class="colophon">Flip it like a notebook. One page = one idea.</p>
 </div>

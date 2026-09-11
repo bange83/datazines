@@ -239,7 +239,7 @@ Else guess <strong>pass</strong>.</p>
 <p>Try every lever, every possible cut. Score = how much the <strong>weighted average Gini of the two new rooms</strong> drops. That drop is <strong>information gain</strong> (entropy) or <strong>Gini gain</strong>. Biggest bite wins. That <em>x</em> goes first.</p>
 <figure class="drawing"><img src="../../../assets/dt-08-gain.svg" alt="dt-08-gain"></figure>
 
-<p>On this exam (seed 7, train split):</p>
+<p>On this exam (train split):</p>
 <table>
 <thead>
 <tr>
@@ -276,7 +276,7 @@ Else guess <strong>pass</strong>.</p>
 </table>
 <p>Hours wins by a mile. Tutor is noise for a first cut. That is why the stump says:</p>
 <blockquote>
-<p>hours ≤ 3.21 → fail<br>
+<p>hours ≤ 3.21 → fail <br>
 hours &gt; 3.21 → pass</p>
 </blockquote>
 <p>Not because hours is “more important in the universe.” Because <strong>this cut cleaned the room hardest.</strong></p>
@@ -297,7 +297,7 @@ hours &gt; 3.21 → pass</p>
 <tbody>
 <tr>
 <td>sleep</td>
-<td style="text-align: right;"><strong>0.137</strong>  ← wins</td>
+<td style="text-align: right;"><strong>0.137</strong> ← wins</td>
 </tr>
 <tr>
 <td>hours</td>
@@ -325,7 +325,7 @@ hours &gt; 3.21 → pass</p>
 <p><strong>Depth “until perfect”</strong> — a room for every oddball. Train accuracy 1.0. The next person is not those oddballs.</p>
 <figure class="drawing"><img src="../../../assets/dt-03-overfit.svg" alt="dt-03-overfit"></figure>
 
-<p>On this pass/fail class (eighty students, seed 7):</p>
+<p>On this pass/fail class (eighty students):</p>
 <table>
 <thead>
 <tr>
@@ -374,7 +374,7 @@ hours &gt; 3.21 → pass</p>
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 9 — Gains, in sklearn</h2>
-<p>Same pass/fail class as logistic / LDA — eighty students, house seed 7. Not the thirty graders on the ridge page. The snippet prints the stump (Gini), the entropy stump, and depth 2 — so you can see first vs second.</p>
+<p>Same pass/fail class as logistic / LDA — eighty students. Not the thirty graders on the ridge page. The snippet prints the stump (Gini), the entropy stump, and depth 2 — so you can see first vs second.</p>
 <pre><code class="language-python">import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier, export_text
@@ -512,8 +512,20 @@ Depth 2: sleep is allowed to speak <strong>only after</strong> hours put you in 
 </tbody>
 </table>
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> you want <strong>rules you can read</strong>; <em>x</em> mix (hours low <strong>and</strong> sleep high); a first look before a forest; <em>y</em> is a class <em>or</em> a number.</p>
-<p><strong>Skip it when</strong> one deep tree on tiny data (it will memorize); you need a smooth S (<a class="wiki" href="../classification/01%20logistic%20regression.html">01 logistic regression</a>); the truth is two ovals (<a class="wiki" href="../classification/02%20LDA.html">02 LDA</a>); you already know you want 500 trees — still <em>read this</em>, then grow a forest. Don’t start at XGBoost.</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li>you want <strong>rules you can read</strong></li>
+<li><em>x</em> mix (hours low <strong>and</strong> sleep high)</li>
+<li>a first look before a forest</li>
+<li><em>y</em> is a class <em>or</em> a number</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li>one deep tree on tiny data (it will memorize)</li>
+<li>you need a smooth S (<a class="wiki" href="../classification/01%20logistic%20regression.html">01 logistic regression</a>)</li>
+<li>the truth is two ovals (<a class="wiki" href="../classification/02%20LDA.html">02 LDA</a>)</li>
+<li>you already know you want 500 trees — still <em>read this</em>, then grow a forest. Don’t start at XGBoost</li>
+</ul>
 <p><strong>Pays you:</strong> no scaling drama. Mixes for free. A sentence. The atom of bagging and boosting. A <strong>reason</strong> for feature order (gain), not a vibe.</p>
 <p><strong>Costs you:</strong> jagged boundary. Unstable: a new sample, a different first cut. Depth is a loaded knob. One tree is rarely the final model — it is the <strong>brick</strong>.</p>
 <p><em>Brick for the ensemble wall. Next, many trees vote: <a class="wiki" href="02%20random%20forest.html">02 random forest</a>. Then leftover-trees: <a class="wiki" href="03%20gradient%20boosting.html">03 gradient boosting</a>. LDA if you still want ovals: <a class="wiki" href="../classification/02%20LDA.html">02 LDA</a>.</em></p></section>

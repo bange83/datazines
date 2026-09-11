@@ -288,9 +288,15 @@ Dead zone = small knobs get eaten.
 
 ### Use / skip
 
-**Reach for it when** you have many *x* and want a **sentence**, not a committee. Most levers are probably junk. A shortlist is the point.
+**Reach for it when**
 
-**Skip it when** twins should share (ridge or [[04 elastic-net]] — lasso fires one at random); you need every real lever kept, just quieter ([[02 ridge regression]]); the cloud is bent.
+- you have many *x* and want a **sentence**, not a committee. Most levers are probably junk. A shortlist is the point
+
+**Skip it when**
+
+- twins should share (ridge or [[04 elastic-net]] — lasso fires one at random)
+- you need every real lever kept, just quieter ([[02 ridge regression]])
+- the cloud is bent
 
 **Pays you:** zeros. Columns you can drop. A readable model.
 

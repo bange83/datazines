@@ -280,9 +280,17 @@ A real LLM is this walk with a look and a stack, on a much bigger note pile. The
 
 ### Use / skip
 
-**Reach for it when** the job is **P(next token)**, you already own 01–03, and you need a picture of the pile — not a career.
+**Reach for it when**
 
-**Skip it when** hours already is a number ([[01 neural net]]); a bag or last-token was enough; you wanted twelve heads as the first file.
+- the job is **P(next token)**
+- you already own 01–03
+- you need a picture of the pile — not a career
+
+**Skip it when**
+
+- hours already is a number ([[01 neural net]])
+- a bag or last-token was enough
+- you wanted twelve heads as the first file
 
 **Pays you:** the LLM one-liner without a transformer cartoon. Train = leftover. Use = sample. Stack = more of the same.
 

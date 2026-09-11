@@ -177,9 +177,17 @@ Random shares nights almost equally — Q already *sees* study (~1.97) and still
 
 ### Use / skip
 
-**Reach for it when** there is **one room**, many arms, the pull does **not** change the room, and try vs cash is the whole job.
+**Reach for it when**
 
-**Skip it when** tired vs fresh matters ([[01 the loop]]); you have a frozen pile of people (supervised).
+- there is **one room**
+- many arms
+- the pull does **not** change the room
+- try vs cash is the whole job
+
+**Skip it when**
+
+- tired vs fresh matters ([[01 the loop]])
+- you have a frozen pile of people (supervised)
 
 **Pays you:** the try/cash sentence. A rule that finds study without knowing it. Counts you can screenshot.
 

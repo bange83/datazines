@@ -172,9 +172,17 @@ Shrug → 0.40, wide. Sure-yes → 0.61 (truth was 0.6 — luck plus a loud star
 
 ### Use / skip
 
-**Reach for it when** the unknown is a **rate**, the pile is **small**, and you can defend a starting bump.
+**Reach for it when**
 
-**Skip it when** one line and plenty of people already work; you wanted a *p* ([[01 t-test]]); you cannot write the prior down.
+- the unknown is a **rate**
+- the pile is **small**
+- you can defend a starting bump
+
+**Skip it when**
+
+- one line and plenty of people already work
+- you wanted a *p* ([[01 t-test]])
+- you cannot write the prior down
 
 **Pays you:** a bump, not a fake point. The start is visible. Same coins as beta, named.
 

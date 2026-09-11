@@ -194,9 +194,17 @@ Scale is in the pipeline. Unscaled, sleep’s units fight hours, same sin as uns
 
 ### Use / skip
 
-**Reach for it when** you want a **fence**, not a probability; two clumps with a gutter; you will **scale**, then pick C.
+**Reach for it when**
 
-**Skip it when** you wanted P(yes) ([[01 logistic regression]]); two blobs you already drew ([[02 LDA]]); questions and rectangles ([[01 decision tree]]).
+- you want a **fence**, not a probability
+- two clumps with a gutter
+- you will **scale**, then pick C
+
+**Skip it when**
+
+- you wanted P(yes) ([[01 logistic regression]])
+- two blobs you already drew ([[02 LDA]])
+- questions and rectangles ([[01 decision tree]])
 
 **Pays you:** a picture of the gutter. A shortlist of people who actually hold the line. Often ties logistic on a straight smear.
 

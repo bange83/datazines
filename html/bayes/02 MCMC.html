@@ -158,7 +158,7 @@ window.MathJax = {
 
 <figure class="drawing"><img src="../../assets/mc-00-hero.svg" alt="mc-00-hero"></figure>
 
-<p>Read <a class="wiki" href="01%20prior.html">01 prior</a> and <a class="wiki" href="../optimization/01%20gradient%20descent.html">01 gradient descent</a> first. Same eight coins, house seed 7, 3 yes / 5 no. Prior still adds: Beta(4, 6), mean <strong>0.40</strong>. This notebook <strong>pretends we cannot add</strong>, walks anyway, and checks the pile against that bump.</p>
+<p>Read <a class="wiki" href="01%20prior.html">01 prior</a> and <a class="wiki" href="../optimization/01%20gradient%20descent.html">01 gradient descent</a> first. Same eight coins, 3 yes / 5 no. Prior still adds: Beta(4, 6), mean <strong>0.40</strong>. This notebook <strong>pretends we cannot add</strong>, walks anyway, and checks the pile against that bump.</p>
 <p>A walk, not a catalog of samplers.</p>
 <p>Flip it like a notebook. One page = one idea. Done.</p>
 </section>
@@ -228,7 +228,7 @@ window.MathJax = {
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 5 — Eight coins, walking, in numpy</h2>
-<p>Same 3 yes, 5 no. Flat prior. Metropolis on <em>P</em>. House seed 7. No extra library.</p>
+<p>Same 3 yes, 5 no. Flat prior. Metropolis on <em>P</em>. No extra library.</p>
 <pre><code class="language-python">import numpy as np
 
 yes, no = 3, 5
@@ -333,8 +333,18 @@ first 8 [0.5, 0.467, 0.413, 0.42, 0.361, 0.42, 0.432, 0.429]
 <figure class="drawing"><img src="../../assets/mc-04-when.svg" alt="mc-04-when"></figure>
 
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> you <strong>cannot add</strong> (no beta-out), you still want a <strong>bump</strong>, and you can score a guess.</p>
-<p><strong>Skip it when</strong> coin + beta still adds (<a class="wiki" href="01%20prior.html">01 prior</a>); you wanted the <strong>dip</strong> (<a class="wiki" href="../optimization/01%20gradient%20descent.html">01 gradient descent</a>); you wanted a catalog of samplers.</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li>you <strong>cannot add</strong> (no beta-out)</li>
+<li>you still want a <strong>bump</strong></li>
+<li>you can score a guess</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li>coin + beta still adds (<a class="wiki" href="01%20prior.html">01 prior</a>)</li>
+<li>you wanted the <strong>dip</strong> (<a class="wiki" href="../optimization/01%20gradient%20descent.html">01 gradient descent</a>)</li>
+<li>you wanted a catalog of samplers</li>
+</ul>
 <p><strong>Pays you:</strong> a posterior without a named bump. Same coins, a pile that matches the add — so you trust the walk when add is gone.</p>
 <p><strong>Costs you:</strong> many steps. A nudge to pick. The first stretch is a lie. Not a point estimate. Not a library.</p>
 <p><em>Bayes 02. Walk the height. Next: <a class="wiki" href="../rl/01%20the%20loop.html">01 the loop</a> — state, action, reward, next. Not a sampler catalog.</em></p></section>

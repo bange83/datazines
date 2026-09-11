@@ -232,7 +232,7 @@ window.MathJax = {
 <p>Q(state, act) ← Q + 0.3 × [reward + 0.9 × best Q(next) − Q]</p>
 </blockquote>
 <p>The 0.9 is <strong>later is a bit less than now</strong>. Tomorrow’s 3 is not worth a 3 today. Same volume habit as descent; the leftover is a <strong>target</strong>, not a downhill slope on a bowl.</p>
-<p>400 weeks, 20% random tries so you still sample the dull act. House seed 7.</p>
+<p>400 weeks, 20% random tries so you still sample the dull act.</p>
 <figure class="drawing"><img src="../../assets/rl-03-Q.svg" alt="rl-03-Q"></figure>
 
 <table>
@@ -274,7 +274,7 @@ window.MathJax = {
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 5 — Twenty weeks, in numpy</h2>
-<p>Exam loop. Two states, two acts. House seed 7 for the random policy and for Q. Sensible policy uses seed 8 so the world-rattle is a fresh draw, not the same twenty weeks.</p>
+<p>Exam loop. Two states, two acts. Random policy and Q share one world. Sensible policy gets a fresh draw of the weeks.</p>
 <pre><code class="language-python">import numpy as np
 
 rng = np.random.default_rng(7)
@@ -401,8 +401,18 @@ greedy ['rest', 'study']
 <figure class="drawing"><img src="../../assets/rl-04-when.svg" alt="rl-04-when"></figure>
 
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> you <strong>act</strong>, the world <strong>moves</strong>, the score is a <strong>reward</strong>, and tonight vs later matters.</p>
-<p><strong>Skip it when</strong> one cloud and a line already work (supervised); you wanted P(yes) (<a class="wiki" href="../supervised%20learning/classification/01%20logistic%20regression.html">01 logistic regression</a>).</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li>you <strong>act</strong></li>
+<li>the world <strong>moves</strong></li>
+<li>the score is a <strong>reward</strong></li>
+<li>tonight vs later matters</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li>one cloud and a line already work (supervised)</li>
+<li>you wanted P(yes) (<a class="wiki" href="../supervised%20learning/classification/01%20logistic%20regression.html">01 logistic regression</a>)</li>
+</ul>
 <p><strong>Pays you:</strong> the four names. A policy you can read. A table that can find it.</p>
 <p><strong>Costs you:</strong> a world-model (or a lot of weeks). Random tries hurt now to learn. Not a grade line. Not a sampler.</p>
 <p><em>The loop. Next: <a class="wiki" href="02%20bandits.html">02 bandits</a> — no next-state. The table, named: <a class="wiki" href="03%20Q.html">03 Q</a>.</em></p></section>

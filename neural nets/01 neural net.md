@@ -195,9 +195,18 @@ Logistic never leaves 0.39. The net is a hill: 0.01 at 1.5 hours, **0.86 at 3.5*
 
 ### Use / skip
 
-**Reach for it when** a line or one S cannot bend (a hill, a dip, “middle is different”), you still want a **probability**, and you have enough people for the extra knobs.
+**Reach for it when**
 
-**Skip it when** one honest line already fits ([[01 linear regression]] / [[01 logistic regression]]); you needed a **shortlist**, not a bend ([[03 lasso]]); the story is questions and rectangles ([[01 decision tree]]); you wanted attention / an LLM as the first file.
+- a line or one S cannot bend (a hill, a dip, “middle is different”)
+- you still want a **probability**
+- you have enough people for the extra knobs
+
+**Skip it when**
+
+- one honest line already fits ([[01 linear regression]] / [[01 logistic regression]])
+- you needed a **shortlist**, not a bend ([[03 lasso]])
+- the story is questions and rectangles ([[01 decision tree]])
+- you wanted attention / an LLM as the first file
 
 **Pays you:** the first machine that can draw a hill without you carving the feature. The verb of every later net. Backprop is just leftover + descent.
 

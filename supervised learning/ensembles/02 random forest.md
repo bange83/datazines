@@ -159,9 +159,17 @@ Deep tree memorizes (test 0.71). Forest’s vote lands at **0.79**. Tree 0 opene
 
 ### Use / skip
 
-**Reach for it when** one tree is jumpy; you want a strong default on tables with mixes; you do **not** need to read every rule.
+**Reach for it when**
 
-**Skip it when** you must explain every cut ([[01 decision tree]] is the sentence); a line or logistic already fits; tiny *n* and you were going to grow huge trees anyway.
+- one tree is jumpy
+- you want a strong default on tables with mixes
+- you do **not** need to read every rule
+
+**Skip it when**
+
+- you must explain every cut ([[01 decision tree]] is the sentence)
+- a line or logistic already fits
+- tiny *n* and you were going to grow huge trees anyway
 
 **Pays you:** the usual first ensemble. Better test than one deep tree. Importances that let sleep speak. Few knobs. Jumpy members + a vote — overfitting of *one* tree is not the forest’s score.
 

@@ -395,9 +395,15 @@ Ridge **does** fix a drama queen of a straight line.
 
 ### Use / skip
 
-**Reach for it when** the ordinary line overreacts: few points, noisy points, or twin *x* that should **share**. You care more about the next person than about hugging the old cloud.
+**Reach for it when**
 
-**Skip it when** you want a **shortlist** (that is [[03 lasso]]); one honest *x* and plenty of points (ordinary line is enough); the cloud is bent (wrong shape, not wrong tax).
+- the ordinary line overreacts: few points, noisy points, or twin *x* that should **share**. You care more about the next person than about hugging the old cloud
+
+**Skip it when**
+
+- you want a **shortlist** (that is [[03 lasso]])
+- one honest *x* and plenty of points (ordinary line is enough)
+- the cloud is bent (wrong shape, not wrong tax)
 
 **Pays you:** calmer knobs. Twins share. Prediction on new people usually less embarrassed.
 

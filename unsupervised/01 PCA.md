@@ -177,9 +177,17 @@ Unscaled: minutes **1.00**, story dead — here the fat axis is a **unit**, not 
 
 ### Use / skip
 
-**Reach for it when** you have **many levers and no y**, a sausage / twins, and you will **scale** first.
+**Reach for it when**
 
-**Skip it when** you already have a grade to guess ([[01 linear regression]]); you wanted **rooms** ([[02 k-means]]); you were going to skip the scaler and let minutes be PC1.
+- you have **many levers and no y**
+- a sausage / twins
+- you will **scale** first
+
+**Skip it when**
+
+- you already have a grade to guess ([[01 linear regression]])
+- you wanted **rooms** ([[02 k-means]])
+- you were going to skip the scaler and let minutes be PC1
 
 **Pays you:** a thinner cloud that still looks like the people. Twins share one axis. The fight is a bar you can drop.
 

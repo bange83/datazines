@@ -253,7 +253,7 @@ Log: score is log(mean). Exponentiate, never negative. Number of mistakes.</p>
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 8 — Mistakes, in sklearn</h2>
-<p>Same <strong>thirty</strong> students as ridge, house seed 7. Same hours, sleep, tutor. <em>y</em> is not a grade — it is a Poisson count of mistakes. PoissonRegressor uses a <strong>log link</strong>. LinearRegression is the identity-link cousin — and it will go negative if you ask it far enough.</p>
+<p>Same <strong>thirty</strong> students as ridge. Same hours, sleep, tutor. <em>y</em> is not a grade — it is a Poisson count of mistakes. PoissonRegressor uses a <strong>log link</strong>. LinearRegression is the identity-link cousin — and it will go negative if you ask it far enough.</p>
 <pre><code class="language-python">import numpy as np
 from sklearn.linear_model import LinearRegression, PoissonRegressor
 
@@ -323,8 +323,18 @@ Ordinary line: still fine at 6 hours, then <strong>−2</strong> at 10. The glas
 </tbody>
 </table>
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> <em>y</em> is a count, a yes/no, a fraction, or anything with a <strong>legal region</strong> (can’t be negative, can’t exceed 1), and you still want readable knobs.</p>
-<p><strong>Skip it when</strong> a plain number and a straight cloud already fit (<a class="wiki" href="01%20linear%20regression.html">01 linear regression</a>); you guessed the family because it sounded grown-up; the score itself should bend (trees, later shelves).</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li><em>y</em> is a count, a yes/no, or a fraction</li>
+<li><em>y</em> has a <strong>legal region</strong> (can’t be negative, can’t exceed 1)</li>
+<li>you still want readable knobs</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li>a plain number and a straight cloud already fit (<a class="wiki" href="01%20linear%20regression.html">01 linear regression</a>)</li>
+<li>you guessed the family because it sounded grown-up</li>
+<li>the score itself should bend (trees, later shelves)</li>
+</ul>
 <p><strong>Pays you:</strong> one story for line, logistic, and counts. ŷ stays legal. <em>b</em> still has a sentence.</p>
 <p><strong>Costs you:</strong> you must choose glasses. Wrong family → smug, wrong uncertainty. Still linear inside.</p>
 <p><em>Family portrait of the linear score. Costumes named: <a class="wiki" href="../../probability/01%20distributions.html">01 distributions</a>. Classification 01 is the yes/no outfit. Regression 01 is the grade outfit.</em></p></section>

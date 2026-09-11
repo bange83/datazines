@@ -116,9 +116,16 @@ Do not start the site from a WordPress theme or a PDF. Start from this leaf.
 
 ### Use / skip
 
-**Reach for this** when a note should be readable in a browser as a zine, or when we add the next HTML leaf toward the site.
+**Reach for it when**
 
-**Skip** turning one pretty HTML file into a unique layout. Skip bitmaps “so the PDF works.” Skip building the whole site before the next leaf is asked for.
+- a note should be readable in a browser as a zine
+- we add the next HTML leaf toward the site
+
+**Skip it when**
+
+- you would turn one pretty HTML file into a unique layout
+- you would rasterize “so the PDF works”
+- you would build the whole site before the next leaf is asked for
 
 ---
 

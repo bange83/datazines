@@ -137,9 +137,16 @@ Hours up: fail’s *b* negative, honors positive. At 2 hours the pile is mixed; 
 
 ### Use / skip
 
-**Reach for it when** *y* has 3+ exclusive rooms; last layer of a net; you want P(room), not one S.
+**Reach for it when**
 
-**Skip it when** yes/no only ([[01 logistic regression]]); labels can overlap (multi-label is another machine).
+- *y* has 3+ exclusive rooms
+- last layer of a net
+- you want P(room), not one S
+
+**Skip it when**
+
+- yes/no only ([[01 logistic regression]])
+- labels can overlap (multi-label is another machine)
 
 **Pays you:** the many-class S. The LLM one-liner without a transformer cartoon.
 

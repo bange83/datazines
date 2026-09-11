@@ -147,9 +147,16 @@ If you keep only one thing:
 
 ### Use / skip
 
-**Reach for it when** you just walked in, you mixed the piles, or you are lost between folders.
+**Reach for it when**
 
-**Skip it when** you wanted a textbook; you wanted a chapter list as 01.
+- you just walked in
+- you mixed the piles
+- you are lost between folders
+
+**Skip it when**
+
+- you wanted a textbook
+- you wanted a chapter list as 01
 
 **Pays you:** the folder map, three honest starts. Permission not to finish one shelf before another.
 

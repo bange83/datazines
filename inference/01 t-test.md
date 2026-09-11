@@ -182,9 +182,17 @@ Mean vs 5: leftover shrugs (p = 0.71; 5 sits in 3.72–6.78). Slope vs 0: leftov
 
 ### Use / skip
 
-**Reach for it when** you ask whether a **mean or slope** could be leftover, you guessed a **bell** for *y*, and you want a **range**, not a trophy *p*.
+**Reach for it when**
 
-**Skip it when** you only needed ŷ ([[01 linear regression]]); *y* is a coin or a count ([[01 logistic regression]] / [[06 GLM]] — different tests); you wanted *p* as a moral verdict.
+- you ask whether a **mean or slope** could be leftover
+- you guessed a **bell** for *y*
+- you want a **range**, not a trophy *p*
+
+**Skip it when**
+
+- you only needed ŷ ([[01 linear regression]])
+- *y* is a coin or a count ([[01 logistic regression]] / [[06 GLM]] — different tests)
+- you wanted *p* as a moral verdict
 
 **Pays you:** the chance wing’s first test. Same leftover as the line, now used as a judge. Interval and *t* are twins.
 

@@ -154,32 +154,32 @@ window.MathJax = {
 <div class="book">
 <p class="spine">datazines · a sketchbook</p>
 <section class="leaf hero-leaf"><h1>Train / test / validate — a sketchbook</h1>
-<aside class="callout callout-abstract"><strong>In one sentence.</strong> Score leftover on <strong>people the line has not seen</strong>. Pride on the old cloud is not a test. If you pick λ, hide a <strong>third</strong> pile so the test stays honest.</aside>
+<aside class="callout callout-abstract"><strong>In one sentence.</strong> Fit on some people. Score leftover on people the machine has <strong>not seen</strong>. Scoring the same pile you fitted is <strong>pride</strong>, not a test. If you also <strong>tune a knob</strong>, hide a third pile so the test stays honest.</aside>
 
 <figure class="drawing"><img src="../../assets/fm-00-hero.svg" alt="fm-00-hero"></figure>
 
-<p>Read <a class="wiki" href="../supervised%20learning/regression/01%20linear%20regression.html">01 linear regression</a> and <a class="wiki" href="../supervised%20learning/regression/02%20ridge%20regression.html">02 ridge regression</a> first — especially ridge page 3 (old points are a trap) and page 11 (the folds). Same <strong>thirty graders</strong>, same twins and junk.</p>
+<p>Any machine. A line, a tree, a tax. The ritual is the same. The numbers below are one class of thirty — grades from hours, sleep, tutor — so you can see the gap.</p>
 <p>Flip it like a notebook. One page = one idea. Done.</p>
 </section>
 <section class="leaf"><h2>Page 1 — The job is the next person</h2>
-<p>Thirty students. Grade from hours, sleep, tutor. Minutes is a twin. Coffee and noise are junk. House seed 7.</p>
-<p>You can fit a line on <strong>all thirty</strong> and print R². Linear 01 did that on eight people. It is a volume knob for <em>these</em> people.</p>
+<p>You can fit on <strong>everyone</strong> and print a score. It will look grown-up. It used every leftover twice: once to draw the machine, once to clap for it.</p>
 <p>The job is not “look smart on the people you already asked.”</p>
 <p>The job is: <strong>guess well for the next person.</strong></p>
-<p>That is this notebook. Not a new model. A ritual for leftover.</p>
+<p>Hide some. Fit on the rest. Score the hidden ones. That is <strong>train</strong> vs <strong>test</strong>. Not a new machine. A ritual for leftover.</p>
+<p>The pages below use thirty graders so the numbers are real. Same ritual for a tree, a net, a tax.</p>
 </section>
 <section class="leaf"><h2>Page 2 — Pride is not a test</h2>
-<p>Fit ordinary least squares on all thirty. Score all thirty.</p>
+<p>Fit a line on all thirty. Score all thirty.</p>
 <figure class="drawing"><img src="../../assets/fm-02-pride.svg" alt="fm-02-pride"></figure>
 
-<p>R² <strong>0.921</strong>. Looks grown-up. It used every leftover twice: once to draw the line, once to grade it.</p>
-<p>Hide 9 people. Fit on 21. Score the 9.</p>
+<p>R² <strong>0.921</strong>. Pride.</p>
+<p>Hide 9. Fit on 21. Score the 9.</p>
 <table>
 <thead>
 <tr>
 <th>pile</th>
 <th style="text-align: right;">people</th>
-<th style="text-align: right;">ordinary R²</th>
+<th style="text-align: right;">R²</th>
 </tr>
 </thead>
 <tbody>
@@ -200,11 +200,11 @@ window.MathJax = {
 </tr>
 </tbody>
 </table>
-<p>The line hugged the 21 (0.955). The 9 had not voted. <strong>0.626.</strong> That gap <em>is</em> the lesson from ridge page 3. This page names it: <strong>train</strong> vs <strong>test</strong>.</p>
-<p>sklearn’s <code>train_test_split(..., test_size=0.3, random_state=0)</code> is that hide. Same split as the ridge page. Same numbers.</p>
+<p>The machine hugged the trainers (0.955). The 9 had not voted. <strong>0.626.</strong> That gap is the lesson. 21 and 9 are this split, not a law.</p>
+<p>sklearn’s <code>train_test_split</code> is that hide.</p>
 </section>
 <section class="leaf"><h2>Page 3 — Do not peek</h2>
-<p>Ridge needs a λ. Temptation: try a few λ, keep the one where <strong>test</strong> R² is biggest.</p>
+<p>If you <strong>tune a knob</strong> — how loud a tax, how deep a tree — temptation: try a few, keep the one where <strong>test</strong> looks best. The tables use a tax’s volume (sklearn <code>alpha</code>). Same sin for any knob.</p>
 <figure class="drawing"><img src="../../assets/fm-03-peek.svg" alt="fm-03-peek"></figure>
 
 <table>
@@ -238,12 +238,12 @@ window.MathJax = {
 </tr>
 </tbody>
 </table>
-<p>Picked <strong>10</strong>. Report 0.748. Looks like ridge won.</p>
-<p>The 9 already chose λ. That number is not a test. People call this <strong>leakage</strong>. Same sin as shuffling weeks into a “test” set (<a class="wiki" href="../time%20series/01%20lag%20trend%20season.html">01 lag trend season</a>). The future voted on the knobs.</p>
+<p>Picked <strong>10</strong>. Report 0.748. Looks like the tax won.</p>
+<p>The 9 already chose the knob. That number is not a test. People call this <strong>leakage</strong>. Same sin as shuffling weeks into a “test” set (<a class="wiki" href="../time%20series/01%20lag%20trend%20season.html">01 lag trend season</a>). The future voted on the knobs.</p>
 </section>
 <section class="leaf"><h2>Page 4 — Three piles</h2>
 <p>Hide the 9 and <strong>do not touch them</strong> until the end.</p>
-<p>From the 21, hide 7 more. Fit on 14. Pick λ on the 7. Then refit the winner on all 21. <strong>Then</strong> score the 9. Once.</p>
+<p>From the 21, hide 7 more. Fit on 14. Pick the knob on the 7. Then refit the winner on all 21. <strong>Then</strong> score the 9. Once.</p>
 <figure class="drawing"><img src="../../assets/fm-04-piles.svg" alt="fm-04-piles"></figure>
 
 <table>
@@ -263,7 +263,7 @@ window.MathJax = {
 <tr>
 <td><strong>validate</strong></td>
 <td style="text-align: right;">7</td>
-<td>pick λ</td>
+<td>pick the knob</td>
 </tr>
 <tr>
 <td><strong>test</strong></td>
@@ -280,7 +280,7 @@ window.MathJax = {
 <p>Too few to split three ways? Keep the 9 in a drawer. On the 21, hide a third, fit the rest, score the hide. Rotate. Average the pain.</p>
 <figure class="drawing"><img src="../../assets/fm-05-cv.svg" alt="fm-05-cv"></figure>
 
-<p>That ritual is <strong>cross-validation</strong>. Ridge page 11 already drew the folds. Here it is the whole job, not a volume-knob aside.</p>
+<p>That ritual is <strong>cross-validation</strong>. Here it is the whole job, not an aside.</p>
 <p>3-fold CV on the 21 (test still untouched):</p>
 <table>
 <thead>
@@ -321,7 +321,7 @@ window.MathJax = {
 <ol>
 <li><strong>Hide people</strong> before you fit. That pile is test. Do not look.</li>
 <li><strong>Fit</strong> on the rest. Score both piles. Train high, test low → you hugged the old cloud.</li>
-<li><strong>If you pick a knob</strong> (λ, depth, k): you need a <strong>third</strong> pile, or rotate the hide on the trainers (CV).</li>
+<li><strong>If you pick a knob</strong> (volume, depth, k): you need a <strong>third</strong> pile, or rotate the hide on the trainers (CV).</li>
 <li><strong>Refit</strong> the winner on all trainers. Score test <strong>once</strong>.</li>
 <li><strong>Time:</strong> last weeks are the test. Not a random 30%.</li>
 <li><strong>Do not</strong> call R² on the trainers a result. That is pride.</li>
@@ -332,7 +332,7 @@ window.MathJax = {
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 7 — Thirty graders, in sklearn</h2>
-<p>Same thirty as <a class="wiki" href="../supervised%20learning/regression/02%20ridge%20regression.html">02 ridge regression</a>. Same split (<code>random_state=0</code>). Ordinary hugs. Peek vs three piles vs CV. House seed 7.</p>
+<p>Thirty graders. Same split as the tables above. Ordinary hugs. Peek vs three piles vs CV.</p>
 <pre><code class="language-python">import numpy as np
 from sklearn.linear_model import LinearRegression, Ridge
 from sklearn.model_selection import train_test_split, KFold
@@ -425,8 +425,7 @@ refit on 21, R² test 0.706
 picked on CV: 1
 refit on 21, R² test 0.706
 </code></pre>
-<p>Pride 0.921. Train 0.955, test 0.626 — ordinary hugged. Peek picked α = 10 and would have reported 0.748. Three piles and CV both pick <strong>1</strong>, then report <strong>0.706</strong> on the 9. sklearn’s <code>alpha</code> is λ. <code>KFold</code> is the rotate. The test array is not an argument to <code>KFold</code>.</p>
-<p>Ridge’s printed run used α = 10 on purpose: twins share, test 0.748 vs ordinary 0.626. That was a <strong>demo of the tax</strong>, not a claim that 10 was chosen honestly. This notebook is the ritual that would choose.</p>
+<p>Pride 0.921. Train 0.955, test 0.626 — ordinary hugged. Peek picked α = 10 and would have reported 0.748. Three piles and CV both pick <strong>1</strong>, then report <strong>0.706</strong> on the 9. sklearn’s <code>alpha</code> is the volume knob. <code>KFold</code> is the rotate. The test array is not an argument to <code>KFold</code>.</p>
 </section>
 <section class="leaf"><h2>Last page — cheat sheet</h2>
 <table>
@@ -447,7 +446,7 @@ refit on 21, R² test 0.706
 </tr>
 <tr>
 <td>validate</td>
-<td>people you use to pick λ / depth / k</td>
+<td>people you use to pick the knob</td>
 </tr>
 <tr>
 <td>pride</td>
@@ -490,14 +489,22 @@ refit on 21, R² test 0.706
 </tr>
 </tbody>
 </table>
-<figure class="drawing"><img src="../../assets/fm-06-when.svg" alt="fm-06-when"></figure>
-
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> you will <strong>report a number</strong>, or pick λ / depth / k, and the job is the <strong>next person</strong>.</p>
-<p><strong>Skip it when</strong> eight people and one line is a demo (<a class="wiki" href="../supervised%20learning/regression/01%20linear%20regression.html">01 linear regression</a> page 16 is pride on purpose); you already peeked; the “new people” are <strong>later in time</strong> — then last weeks, not a shuffle (<a class="wiki" href="../time%20series/01%20lag%20trend%20season.html">01 lag trend season</a>).</p>
-<p><strong>Pays you:</strong> leftover that means something. A λ you can defend. The sentence from ridge page 3, as a habit.</p>
-<p><strong>Costs you:</strong> fewer people to fit. A thin validate pile rattles (0.259 on one fold). CV is slower. Not a model — a ritual for leftover.</p>
-<p><em>Fundamentals 01. Leftover on new people. Next: <a class="wiki" href="02%20bias%20variance.html">02 bias variance</a> — ridge’s dartboard, as its own notebook. Metrics after that. Not a p-value (that is <a class="wiki" href="../inference/01%20t-test.html">01 t-test</a>).</em></p></section>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li>you will <strong>report a number</strong></li>
+<li>you will pick a knob</li>
+<li>the job is the <strong>next person</strong></li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li>eight people and one line is a demo (pride on purpose)</li>
+<li>you already peeked</li>
+<li>the “new people” are <strong>later in time</strong> — last weeks, not a shuffle (<a class="wiki" href="../time%20series/01%20lag%20trend%20season.html">01 lag trend season</a>)</li>
+</ul>
+<p><strong>Pays you:</strong> leftover that means something. A knob you can defend.</p>
+<p><strong>Costs you:</strong> fewer people to fit. A thin validate pile rattles. CV is slower. Not a model — a ritual for leftover.</p>
+<p><em>Leftover on new people. Next: <a class="wiki" href="02%20bias%20variance.html">02 bias variance</a> — jumpy vs shy. Metrics after that.</em></p></section>
 <p class="colophon">Flip it like a notebook. One page = one idea.</p>
 </div>
 </body>

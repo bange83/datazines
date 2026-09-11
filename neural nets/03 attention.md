@@ -218,9 +218,17 @@ This is **self-attention** with one head and no extra Q/K/V floors. An LLM walks
 
 ### Use / skip
 
-**Reach for it when** a bag would smear the wrong neighbor, **who matters depends on the asker**, and tokens already have points.
+**Reach for it when**
 
-**Skip it when** hours already is one number ([[01 neural net]]); a mean of the note was enough; you wanted a transformer as the first file.
+- a bag would smear the wrong neighbor
+- **who matters depends on the asker**
+- tokens already have points
+
+**Skip it when**
+
+- hours already is one number ([[01 neural net]])
+- a mean of the note was enough
+- you wanted a transformer as the first file
 
 **Pays you:** a look that can refuse. The brick inside every transformer. Softmax you already own, pointed at *other tokens*.
 

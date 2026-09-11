@@ -186,9 +186,17 @@ Ordinary line: still fine at 6 hours, then **−2** at 10. The glasses were the 
 
 ### Use / skip
 
-**Reach for it when** *y* is a count, a yes/no, a fraction, or anything with a **legal region** (can’t be negative, can’t exceed 1), and you still want readable knobs.
+**Reach for it when**
 
-**Skip it when** a plain number and a straight cloud already fit ([[01 linear regression]]); you guessed the family because it sounded grown-up; the score itself should bend (trees, later shelves).
+- *y* is a count, a yes/no, or a fraction
+- *y* has a **legal region** (can’t be negative, can’t exceed 1)
+- you still want readable knobs
+
+**Skip it when**
+
+- a plain number and a straight cloud already fit ([[01 linear regression]])
+- you guessed the family because it sounded grown-up
+- the score itself should bend (trees, later shelves)
 
 **Pays you:** one story for line, logistic, and counts. ŷ stays legal. *b* still has a sentence.
 

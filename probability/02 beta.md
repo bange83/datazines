@@ -159,9 +159,17 @@ Three yes, five no. Flat start → mean **0.40**, still a wide stick (0.16 to 0.
 
 ### Use / skip
 
-**Reach for it when** *P* itself is unknown, the thing lives in **0–1**, and you will add yeses and nos. Road to a prior: [[01 prior]].
+**Reach for it when**
 
-**Skip it when** one toss is enough (the coin); leftover is a grade (bell); *y* is a count (Poisson).
+- *P* itself is unknown
+- the thing lives in **0–1**
+- you will add yeses and nos. Road to a prior: [[01 prior]]
+
+**Skip it when**
+
+- one toss is enough (the coin)
+- leftover is a grade (bell)
+- *y* is a count (Poisson)
 
 **Pays you:** a legal bump for a rate. A start you can write in two numbers. The move Bayes will name.
 

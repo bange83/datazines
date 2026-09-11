@@ -202,9 +202,18 @@ Accuracy 0.84 is on *these* people — pride, like R² without a split. Pass is 
 
 ### Use / skip
 
-**Reach for it when** *y* is yes/no (or a fraction of yeses), you want a **probability**, and a linear score inside is honest enough.
+**Reach for it when**
 
-**Skip it when** *y* is a free number (that is [[01 linear regression]]); the yes/no cloud is a blob no S can cut ([[01 decision tree]]); the story is two ovals ([[02 LDA]]); you need a guaranteed 0 or 1 with no “maybe.”
+- *y* is yes/no (or a fraction of yeses)
+- you want a **probability**
+- a linear score inside is honest enough
+
+**Skip it when**
+
+- *y* is a free number (that is [[01 linear regression]])
+- the yes/no cloud is a blob no S can cut ([[01 decision tree]])
+- the story is two ovals ([[02 LDA]])
+- you need a guaranteed 0 or 1 with no “maybe.”
 
 **Pays you:** output stays in 0–1. Knobs stay readable. Fast, stable, a good first classifier.
 

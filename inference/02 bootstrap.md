@@ -161,9 +161,17 @@ First bag is a loud class (mean 6.50) — leftover, one replay. Across 2000, slo
 
 ### Use / skip
 
-**Reach for it when** se has no tidy formula, you do not want to swear a **bell**, and you already have the dots.
+**Reach for it when**
 
-**Skip it when** a t-interval already fits ([[01 t-test]]); the sample is one person; you wanted MCMC / NUTS as the first file.
+- se has no tidy formula
+- you do not want to swear a **bell**
+- you already have the dots
+
+**Skip it when**
+
+- a t-interval already fits ([[01 t-test]])
+- the sample is one person
+- you wanted MCMC / NUTS as the first file
 
 **Pays you:** leftover without a costume. Same redraw forests used to disagree. An interval for ugly knobs (median, a ratio, a vote).
 

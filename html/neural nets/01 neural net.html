@@ -167,7 +167,7 @@ window.MathJax = {
 <p>Same people. Same three knobs. The <strong>shape</strong> of <em>y</em> changed. A single tilted S cannot draw a hill.</p>
 </section>
 <section class="leaf"><h2>Page 2 — Logistic shrugs</h2>
-<p>Fit logistic anyway. Hours, sleep, tutor in. Scale them (the tax from ridge still applies — size of a knob is not a moral). House seed 7.</p>
+<p>Fit logistic anyway. Hours, sleep, tutor in. Scale them (the tax from ridge still applies — size of a knob is not a moral).</p>
 <p>It prints a flat <strong>P ≈ 0.39</strong> at every hours, sleep held at 6.5, no tutor. Train 0.57, test 0.60. Barely better than guessing the majority (fail).</p>
 <figure class="drawing"><img src="../../assets/nn-02-hill.svg" alt="nn-02-hill"></figure>
 
@@ -215,7 +215,7 @@ window.MathJax = {
 </blockquote>
 </section>
 <section class="leaf"><h2>Page 7 — Hill vs shrug, in sklearn</h2>
-<p>Same 160 students. Pass is a hill on hours. Logistic vs a net with <strong>3 hidden units</strong>. House seed 7. <code>lbfgs</code> is a quiet walker for a tiny net — not SGD yet.</p>
+<p>Same 160 students. Pass is a hill on hours. Logistic vs a net with <strong>3 hidden units</strong>. <code>lbfgs</code> is a quiet walker for a tiny net — not SGD yet.</p>
 <pre><code class="language-python">import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn.neural_network import MLPClassifier
@@ -330,8 +330,19 @@ P | 5.5h   log 0.39   net 0.05
 <figure class="drawing"><img src="../../assets/nn-06-when.svg" alt="nn-06-when"></figure>
 
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> a line or one S cannot bend (a hill, a dip, “middle is different”), you still want a <strong>probability</strong>, and you have enough people for the extra knobs.</p>
-<p><strong>Skip it when</strong> one honest line already fits (<a class="wiki" href="../supervised%20learning/regression/01%20linear%20regression.html">01 linear regression</a> / <a class="wiki" href="../supervised%20learning/classification/01%20logistic%20regression.html">01 logistic regression</a>); you needed a <strong>shortlist</strong>, not a bend (<a class="wiki" href="../supervised%20learning/regression/03%20lasso.html">03 lasso</a>); the story is questions and rectangles (<a class="wiki" href="../supervised%20learning/ensembles/01%20decision%20tree.html">01 decision tree</a>); you wanted attention / an LLM as the first file.</p>
+<p><strong>Reach for it when</strong></p>
+<ul>
+<li>a line or one S cannot bend (a hill, a dip, “middle is different”)</li>
+<li>you still want a <strong>probability</strong></li>
+<li>you have enough people for the extra knobs</li>
+</ul>
+<p><strong>Skip it when</strong></p>
+<ul>
+<li>one honest line already fits (<a class="wiki" href="../supervised%20learning/regression/01%20linear%20regression.html">01 linear regression</a> / <a class="wiki" href="../supervised%20learning/classification/01%20logistic%20regression.html">01 logistic regression</a>)</li>
+<li>you needed a <strong>shortlist</strong>, not a bend (<a class="wiki" href="../supervised%20learning/regression/03%20lasso.html">03 lasso</a>)</li>
+<li>the story is questions and rectangles (<a class="wiki" href="../supervised%20learning/ensembles/01%20decision%20tree.html">01 decision tree</a>)</li>
+<li>you wanted attention / an LLM as the first file</li>
+</ul>
 <p><strong>Pays you:</strong> the first machine that can draw a hill without you carving the feature. The verb of every later net. Backprop is just leftover + descent.</p>
 <p><strong>Costs you:</strong> knobs multiply. Scale matters. A loud rate or a fat hidden layer memorizes. The <em>b</em>s are no longer “+1 hour → this.” Readable floors come later (embeddings).</p>
 <p><em>Nets wing, 01. Same leftover, walking backward. Next room: <a class="wiki" href="02%20embeddings.html">02 embeddings</a> — a word is a point.</em></p></section>
