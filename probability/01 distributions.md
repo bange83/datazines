@@ -30,6 +30,8 @@ Eight grades. Line ŷ = 1.75 + 1 · hours. Leftovers:
 
 Mean **exactly 0** (OLS). Spread about 0.46. They look like a small **bell** around zero — not a coin, not a count.
 
+![ds-01-line](../assets/ds-01-line.svg)
+
 A **distribution** says: *if I drew another leftover, where would it like to land?* The curve is the rule. The eight numbers are **one sample** from that rule.
 
 ![ds-03-sample](../assets/ds-03-sample.svg)

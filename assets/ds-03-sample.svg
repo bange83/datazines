@@ -15,7 +15,7 @@
 <text x="380.0" y="40.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#7a6e5e" text-anchor="middle">one draw vs the shape it came from</text>
 <path d="M 80.00,278.00 L 79.75,233.20 Q 79.75,233.20 79.96,210.80 Q 80.17,188.40 79.84,166.00 Q 79.51,143.60 79.77,121.20 Q 80.03,98.80 80.01,76.40 L 80.00,54.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <path d="M 72.00,270.00 L 195.60,270.01 Q 195.60,270.01 257.40,269.74 Q 319.20,269.47 381.00,269.70 Q 442.80,269.92 504.60,269.81 Q 566.40,269.70 628.20,269.85 L 690.00,270.00" fill="none" stroke="#241c14" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
-<text x="694.0" y="276.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">leftover grade</text>
+<text x="385.0" y="300.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">leftover grade</text>
 <path d="M 105.7,250.0 L 129.6,248.8 L 153.4,246.3 L 177.3,241.6 L 201.1,233.6 L 225.0,221.2 L 248.8,203.6 L 272.7,181.2 L 296.5,155.9 L 320.4,131.0 L 344.2,110.9 L 368.1,99.7 L 391.9,99.7 L 415.8,110.9 L 439.6,131.0 L 463.5,155.9 L 487.3,181.2 L 511.2,203.6 L 535.0,221.2 L 558.9,233.6 L 582.7,241.6 L 606.6,246.3 L 630.4,248.8 L 654.3,250.0" fill="none" stroke="#7a6e5e" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
 <ellipse cx="260.0" cy="243.3" rx="6.4" ry="7.0" transform="rotate(-18.8 260.0 243.3)" fill="#b44a28" opacity="0.9"/>
 <ellipse cx="328.6" cy="243.3" rx="6.1" ry="6.7" transform="rotate(22.4 328.6 243.3)" fill="#b44a28" opacity="0.9"/>
@@ -23,5 +23,5 @@
 <ellipse cx="405.7" cy="243.3" rx="5.8" ry="7.1" transform="rotate(-10.5 405.7 243.3)" fill="#b44a28" opacity="0.9"/>
 <ellipse cx="448.6" cy="243.3" rx="5.9" ry="5.9" transform="rotate(-9.6 448.6 243.3)" fill="#b44a28" opacity="0.9"/>
 <ellipse cx="517.1" cy="243.3" rx="7.0" ry="6.0" transform="rotate(4.1 517.1 243.3)" fill="#b44a28" opacity="0.9"/>
-<text x="380.0" y="310.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">dots are people. the curve is the rule that spat them out.</text>
+<text x="380.0" y="328.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">dots are people. the curve is the rule that spat them out.</text>
 </svg>
