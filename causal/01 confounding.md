@@ -158,7 +158,6 @@ Coffee-only: 0.71 and a proud R². Hours-only: *b* ≈ 1, as planted. Both: coff
 | do(x) | set the lever; break the incoming arrows |
 | hold still | put the confounder in the room |
 
-![ca-05-when](../assets/ca-05-when.svg)
 
 ### Use / skip
 

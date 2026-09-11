@@ -161,7 +161,6 @@ Start at 0.5, wander. Mean **0.39** vs add **0.40**. Shoulders 0.17–0.65 vs 0.
 | burn-in | drop the first stretch |
 | accept rate | how often you moved |
 
-![mc-04-when](../assets/mc-04-when.svg)
 
 ### Use / skip
 

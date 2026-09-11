@@ -182,7 +182,6 @@ Naive +1.78 steals the year. Gap vs would-have **+0.67** (planted 0.90 — lefto
 | fake start | same method on a quiet date; should shrug |
 | BSTS | would-have as a bump (prior + walk), not one line |
 
-![ci-05-when](../assets/ci-05-when.svg)
 
 ### Use / skip
 

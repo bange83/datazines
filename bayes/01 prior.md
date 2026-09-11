@@ -168,7 +168,6 @@ Shrug → 0.40, wide. Sure-yes → 0.61 (truth was 0.6 — luck plus a loud star
 | likelihood | P(data \| P) |
 | MLE | yes/n, no bump |
 
-![by-04-when](../assets/by-04-when.svg)
 
 ### Use / skip
 
