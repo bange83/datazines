@@ -197,7 +197,7 @@ Shuffle looks kinder than the future (0.29 vs −0.28). Season turns the future 
 
 **Reach for it when** yesterday is a lever, a calendar repeats, and you will hold out the **future**.
 
-**Skip it when** the dots are people, not weeks ([[01 linear regression]]); a shuffle already leaked; you wanted BSTS as the first file.
+**Skip it when** the dots are people, not weeks ([[01 linear regression]]); a shuffle already leaked; you wanted a campaign ([[02 causal impact]]) before you owned trend and season.
 
 **Pays you:** the time wing’s 01. A season that catches the break. The honest split for every later forecast and for causal impact.
 

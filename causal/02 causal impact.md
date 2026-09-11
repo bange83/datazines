@@ -84,14 +84,26 @@ Bootstrap the **pre** leftover, 2000 bags ([[02 bootstrap]]): mean gap 0.51 to 0
 
 ---
 
-## Page 5 — Mini recipe
+## Page 5 — Would-have can be a bump
+
+The dashed line is **one** guess. A fatter would-have is a **bump** on every future week: start somewhere ([[01 prior]]), walk the height ([[02 MCMC]]). Then the gap is a pile, not a point.
+
+People call that engine **BSTS** — Bayesian structural time series. Same furniture as time 01 (trend, season, lag), with a posterior instead of one least-squares line. Same sentence:
+
+> impact = actual − would-have.
+
+The fork does not go away because the dashed line got shoulders. This notebook keeps the line + leftover replay. The bump is the same job, louder.
+
+---
+
+## Page 6 — Mini recipe
 
 1. One **series**, one **start date**. People, not weeks? Go back to 01.
 2. Fit **would-have** on the **past** only (trend + season, as in time 01).
 3. Impact = actual − would-have, **after** the start.
 4. Do **not** subtract pre-mean from post-mean. That steals the climb.
 5. Fake the start on a quiet stretch. If that “impact” is loud, your would-have is a passenger.
-6. BSTS / NUTS: later engine for a fatter would-have. Same gap. Same fork.
+6. Want a bump on would-have, not one dashed line? That walk is [[02 MCMC]]. Same gap. Same fork.
 
 If you keep only one thing:
 
@@ -99,7 +111,7 @@ If you keep only one thing:
 
 ---
 
-## Page 6 — Week-17 office hours, in sklearn
+## Page 7 — Week-17 office hours, in sklearn
 
 Same 24-week beat as [[01 lag trend season]]. House seed 7. Campaign at week 17, planted **+0.90**. Trend + season on the past. Last-four fake start has **no** lift.
 
@@ -168,6 +180,7 @@ Naive +1.78 steals the year. Gap vs would-have **+0.67** (planted 0.90 — lefto
 | impact | actual − would-have, after the start |
 | naive | post mean − pre mean (steals trend) |
 | fake start | same method on a quiet date; should shrug |
+| BSTS | would-have as a bump (prior + walk), not one line |
 
 ![ci-05-when](../assets/ci-05-when.svg)
 
@@ -175,12 +188,12 @@ Naive +1.78 steals the year. Gap vs would-have **+0.67** (planted 0.90 — lefto
 
 **Reach for it when** you have **one series and a start date**, you can name would-have (trend + season), and you already own the fork.
 
-**Skip it when** ŷ for next week was the job ([[01 lag trend season]]); you already ran the experiment; you wanted BSTS / NUTS as the first file.
+**Skip it when** ŷ for next week was the job ([[01 lag trend season]]); you already ran the experiment; you wanted a posterior on every week before you owned the fork.
 
 **Pays you:** actual − would-have on one series. Naive called out. Season kept in the counterfactual so a break is not a campaign.
 
-**Costs you:** would-have is a guess (here 0.67 vs 0.90). A hidden fork in time remains hidden. Picking the start after seeing the spike is still coffee-only. The bootstrap here is leftover of the fit, not a full causal interval. BSTS later, same gap.
+**Costs you:** would-have is a guess (here 0.67 vs 0.90). A hidden fork in time remains hidden. Picking the start after seeing the spike is still coffee-only. The bootstrap here is leftover of the fit, not a full causal interval. A bump on would-have ([[02 MCMC]]) is louder, not a different gap.
 
 ---
 
-*Cause 02. Actual − would-have. Time 01 was the dashed line. Next empty 01: no-y.*
+*Actual − would-have. Time 01 was the dashed line. A bump on that line: [[02 MCMC]].*

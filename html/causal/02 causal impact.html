@@ -235,21 +235,29 @@ window.MathJax = {
 <p>If your start date is a passenger of the calendar, the counterfactual should shrug. If it shouts, you forgot season — or you picked the date after seeing the spike. That is still the fork.</p>
 <p>Bootstrap the <strong>pre</strong> leftover, 2000 bags (<a class="wiki" href="../inference/02%20bootstrap.html">02 bootstrap</a>): mean gap 0.51 to 0.82. Zero not in <em>that</em> pile. This is leftover of the <strong>would-have fit</strong>, replayed — not a full causal interval (post rattles too; the fork is still an assumption). The fake start’s 0.04 would sit on zero. Sketch, not a trophy <em>p</em>.</p>
 </section>
-<section class="leaf"><h2>Page 5 — Mini recipe</h2>
+<section class="leaf"><h2>Page 5 — Would-have can be a bump</h2>
+<p>The dashed line is <strong>one</strong> guess. A fatter would-have is a <strong>bump</strong> on every future week: start somewhere (<a class="wiki" href="../bayes/01%20prior.html">01 prior</a>), walk the height (<a class="wiki" href="../bayes/02%20MCMC.html">02 MCMC</a>). Then the gap is a pile, not a point.</p>
+<p>People call that engine <strong>BSTS</strong> — Bayesian structural time series. Same furniture as time 01 (trend, season, lag), with a posterior instead of one least-squares line. Same sentence:</p>
+<blockquote>
+<p>impact = actual − would-have.</p>
+</blockquote>
+<p>The fork does not go away because the dashed line got shoulders. This notebook keeps the line + leftover replay. The bump is the same job, louder.</p>
+</section>
+<section class="leaf"><h2>Page 6 — Mini recipe</h2>
 <ol>
 <li>One <strong>series</strong>, one <strong>start date</strong>. People, not weeks? Go back to 01.</li>
 <li>Fit <strong>would-have</strong> on the <strong>past</strong> only (trend + season, as in time 01).</li>
 <li>Impact = actual − would-have, <strong>after</strong> the start.</li>
 <li>Do <strong>not</strong> subtract pre-mean from post-mean. That steals the climb.</li>
 <li>Fake the start on a quiet stretch. If that “impact” is loud, your would-have is a passenger.</li>
-<li>BSTS / NUTS: later engine for a fatter would-have. Same gap. Same fork.</li>
+<li>Want a bump on would-have, not one dashed line? That walk is <a class="wiki" href="../bayes/02%20MCMC.html">02 MCMC</a>. Same gap. Same fork.</li>
 </ol>
 <p>If you keep only one thing:</p>
 <blockquote>
 <p>impact = actual − would-have. would-have never saw the campaign.</p>
 </blockquote>
 </section>
-<section class="leaf"><h2>Page 6 — Week-17 office hours, in sklearn</h2>
+<section class="leaf"><h2>Page 7 — Week-17 office hours, in sklearn</h2>
 <p>Same 24-week beat as <a class="wiki" href="../time%20series/01%20lag%20trend%20season.html">01 lag trend season</a>. House seed 7. Campaign at week 17, planted <strong>+0.90</strong>. Trend + season on the past. Last-four fake start has <strong>no</strong> lift.</p>
 <pre><code class="language-python">import numpy as np
 from sklearn.linear_model import LinearRegression
@@ -330,16 +338,20 @@ boot 95% mean impact [0.51 0.82]   se 0.08
 <td>fake start</td>
 <td>same method on a quiet date; should shrug</td>
 </tr>
+<tr>
+<td>BSTS</td>
+<td>would-have as a bump (prior + walk), not one line</td>
+</tr>
 </tbody>
 </table>
 <figure class="drawing"><img src="../../assets/ci-05-when.svg" alt="ci-05-when"></figure>
 
 <h3>Use / skip</h3>
 <p><strong>Reach for it when</strong> you have <strong>one series and a start date</strong>, you can name would-have (trend + season), and you already own the fork.</p>
-<p><strong>Skip it when</strong> ŷ for next week was the job (<a class="wiki" href="../time%20series/01%20lag%20trend%20season.html">01 lag trend season</a>); you already ran the experiment; you wanted BSTS / NUTS as the first file.</p>
+<p><strong>Skip it when</strong> ŷ for next week was the job (<a class="wiki" href="../time%20series/01%20lag%20trend%20season.html">01 lag trend season</a>); you already ran the experiment; you wanted a posterior on every week before you owned the fork.</p>
 <p><strong>Pays you:</strong> actual − would-have on one series. Naive called out. Season kept in the counterfactual so a break is not a campaign.</p>
-<p><strong>Costs you:</strong> would-have is a guess (here 0.67 vs 0.90). A hidden fork in time remains hidden. Picking the start after seeing the spike is still coffee-only. The bootstrap here is leftover of the fit, not a full causal interval. BSTS later, same gap.</p>
-<p><em>Cause 02. Actual − would-have. Time 01 was the dashed line. Next empty 01: no-y.</em></p></section>
+<p><strong>Costs you:</strong> would-have is a guess (here 0.67 vs 0.90). A hidden fork in time remains hidden. Picking the start after seeing the spike is still coffee-only. The bootstrap here is leftover of the fit, not a full causal interval. A bump on would-have (<a class="wiki" href="../bayes/02%20MCMC.html">02 MCMC</a>) is louder, not a different gap.</p>
+<p><em>Actual − would-have. Time 01 was the dashed line. A bump on that line: <a class="wiki" href="../bayes/02%20MCMC.html">02 MCMC</a>.</em></p></section>
 <p class="colophon">Flip it like a notebook. One page = one idea.</p>
 </div>
 </body>
