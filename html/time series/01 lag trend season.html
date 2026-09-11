@@ -158,19 +158,14 @@ window.MathJax = {
 
 <figure class="drawing"><img src="../../assets/ts-00-hero.svg" alt="ts-00-hero"></figure>
 
-<p>Read <a class="wiki" href="../supervised%20learning/regression/01%20linear%20regression.html">01 linear regression</a> first. Same exam world, new object: <strong>weekly hours</strong> over 24 weeks. Cause (<a class="wiki" href="../causal/01%20confounding.html">01 confounding</a>) still waits: a campaign in week 20 is later. This notebook is the furniture that campaign would sit on.</p>
+<p>Read <a class="wiki" href="../supervised%20learning/regression/01%20linear%20regression.html">01 linear regression</a> first. Same exam world. Not eight people in a cloud — <strong>one class, 24 weeks</strong>. Each week: how many hours they studied, <strong>on average</strong>. Cause (<a class="wiki" href="../causal/01%20confounding.html">01 confounding</a>) still waits: extra office hours in week 17 is later. This notebook is the furniture that campaign would sit on.</p>
 <p>Flip it like a notebook. One page = one idea. Done.</p>
 </section>
 <section class="leaf"><h2>Page 1 — Hours, every week</h2>
-<p>Twenty-four weeks. Hours studied, class average.</p>
-<p>The cloud is gone. The dots have an <strong>order</strong>. Week 4 is after week 3. You cannot shuffle them and pretend they are eight people.</p>
-<p>Look: a slow climb (the year gets harder). Every <strong>fourth</strong> week a dip — break week. Last week still smells a little like this week.</p>
-<p>Those three names are the whole 01:</p>
-<ul>
-<li><strong>trend</strong> — the slow climb</li>
-<li><strong>season</strong> — the calendar (here: a 4-week beat)</li>
-<li><strong>lag</strong> — yesterday’s leftover as a lever</li>
-</ul>
+<p>One class. Each week: <strong>average hours studied</strong> — the whole room, not person 3.</p>
+<p>The cloud is gone. Week 4 is after week 3. You cannot shuffle them.</p>
+<p>The year we planted (tidy on purpose): a slow climb as the term gets harder (<strong>trend</strong>). Every <strong>fourth</strong> week a break — no classes, hours dip (<strong>season</strong>). Last week still smells a little like this week (<strong>lag</strong>).</p>
+<p>A real calendar is messier. Name the beat you can name.</p>
 </section>
 <section class="leaf"><h2>Page 2 — Shuffle leaks the future</h2>
 <p>Fit a line on week-number only. Two tests.</p>
@@ -364,11 +359,11 @@ week type holdout [0, 1, 2, 3] (0=busy … 3=break)
 <figure class="drawing"><img src="../../assets/ts-05-when.svg" alt="ts-05-when"></figure>
 
 <h3>Use / skip</h3>
-<p><strong>Reach for it when</strong> yesterday is a lever, a calendar repeats, and you will hold out the <strong>future</strong>.</p>
-<p><strong>Skip it when</strong> the dots are people, not weeks (<a class="wiki" href="../supervised%20learning/regression/01%20linear%20regression.html">01 linear regression</a>); a shuffle already leaked; you wanted a campaign (<a class="wiki" href="../causal/02%20causal%20impact.html">02 causal impact</a>) before you owned trend and season.</p>
-<p><strong>Pays you:</strong> the time wing’s 01. A season that catches the break. The honest split for every later forecast and for causal impact.</p>
-<p><strong>Costs you:</strong> lag after season can be a passenger. Four-week dummies assume the calendar you named. A campaign still needs <a class="wiki" href="../causal/01%20confounding.html">01 confounding</a> — this 01 only says what the series was <em>going</em> to do.</p>
-<p><em>Time wing, 01. Yesterday is a lever. The gap after a start date: <a class="wiki" href="../causal/02%20causal%20impact.html">02 causal impact</a>.</em></p></section>
+<p><strong>Reach for it when</strong> the dots have an <strong>order</strong> (weeks, days), a beat you can name (break week, Monday), and you will test on <strong>later</strong>.</p>
+<p><strong>Skip it when</strong> the dots are <strong>people</strong> (<a class="wiki" href="../supervised%20learning/regression/01%20linear%20regression.html">01 linear regression</a>); you already shuffled the weeks; you wanted the campaign gap (<a class="wiki" href="../causal/02%20causal%20impact.html">02 causal impact</a>) before trend and season.</p>
+<p><strong>Pays you:</strong> season catches the break. The honest split for a forecast.</p>
+<p><strong>Costs you:</strong> lag after season can be a passenger. You named the calendar. A campaign still needs the fork (<a class="wiki" href="../causal/01%20confounding.html">01 confounding</a>).</p>
+<p><em>Yesterday is a lever. The gap after a start date: <a class="wiki" href="../causal/02%20causal%20impact.html">02 causal impact</a>.</em></p></section>
 <p class="colophon">Flip it like a notebook. One page = one idea.</p>
 </div>
 </body>

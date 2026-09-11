@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" width="760" height="340" role="img" aria-label="shuffled split leaks the future">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img" aria-label="shuffle mixes later weeks into train; last four stay later">
 <defs>
   <filter id="grain" x="0" y="0" width="100%" height="100%">
     <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
@@ -10,18 +10,73 @@
     <feBlend in="SourceGraphic" mode="multiply"/>
   </filter>
 </defs>
-<rect width="760" height="340" rx="18" ry="18" fill="#f4efe4"/>
-<rect width="760" height="340" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
-<path d="M 40,55 L 360,55 L 360,295 L 40,295 Z" fill="#3d5f86" stroke="#3d5f86" stroke-width="1.8" opacity="0.07"/>
-<text x="200.0" y="95.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#3d5f86" text-anchor="middle">shuffle</text>
-<text x="200.0" y="140.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">weeks mixed</text>
-<text x="200.0" y="176.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">future sits in train</text>
-<text x="200.0" y="212.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#3d5f86" text-anchor="middle">holdout R² 0.29</text>
-<text x="200.0" y="250.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">looks fine. is a leak.</text>
-<path d="M 400,55 L 720,55 L 720,295 L 400,295 Z" fill="#b44a28" stroke="#b44a28" stroke-width="1.8" opacity="0.07"/>
-<text x="560.0" y="95.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#b44a28" text-anchor="middle">last four weeks</text>
-<text x="560.0" y="140.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">train on 1–20</text>
-<text x="560.0" y="176.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">test on 21–24</text>
-<text x="560.0" y="212.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="middle">holdout R² −0.28</text>
-<text x="560.0" y="250.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">the honest future.</text>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+
+<text x="380" y="32" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">24 weeks in order. rust = test. gold = a future week sitting in train.</text>
+
+<text x="36" y="68" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#3d5f86">shuffle</text>
+<path d="M 36,100 L 724,100" fill="none" stroke="#241c14" stroke-width="1.6" stroke-linecap="round"/>
+<ellipse cx="36.0" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="65.9" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="95.8" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="125.7" cy="100" rx="5.0" ry="5.3" fill="#b44a28" opacity="0.92"/>
+<ellipse cx="155.7" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="185.6" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="215.5" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="245.4" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="275.3" cy="100" rx="5.0" ry="5.3" fill="#b44a28" opacity="0.92"/>
+<ellipse cx="305.2" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="335.1" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="365.0" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="395.0" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="424.9" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="454.8" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="484.7" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="514.6" cy="100" rx="5.0" ry="5.3" fill="#b44a28" opacity="0.92"/>
+<ellipse cx="544.5" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="574.4" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="604.3" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="634.3" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="664.2" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="694.1" cy="100" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="724.0" cy="100" rx="5.4" ry="5.7" fill="#c4a35a" opacity="0.92"/>
+<text x="36" y="132" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e">week 24 (a break) mixed into train. holdout R² 0.29 — a leak.</text>
+
+<text x="36" y="188" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#b44a28">last four</text>
+<path d="M 36,220 L 724,220" fill="none" stroke="#241c14" stroke-width="1.6" stroke-linecap="round"/>
+<ellipse cx="36.0" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="65.9" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="95.8" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="125.7" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="155.7" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="185.6" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="215.5" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="245.4" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="275.3" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="305.2" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="335.1" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="365.0" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="395.0" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="424.9" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="454.8" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="484.7" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="514.6" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="544.5" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="574.4" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="604.3" cy="220" rx="5.0" ry="5.3" fill="#3d5f86" opacity="0.92"/>
+<ellipse cx="634.3" cy="220" rx="5.0" ry="5.3" fill="#b44a28" opacity="0.92"/>
+<ellipse cx="664.2" cy="220" rx="5.0" ry="5.3" fill="#b44a28" opacity="0.92"/>
+<ellipse cx="694.1" cy="220" rx="5.0" ry="5.3" fill="#b44a28" opacity="0.92"/>
+<ellipse cx="724.0" cy="220" rx="5.0" ry="5.3" fill="#b44a28" opacity="0.92"/>
+<path d="M 620,204 L 620,236" fill="none" stroke="#b44a28" stroke-width="1.4" stroke-dasharray="4 3"/>
+<text x="36" y="252" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#7a6e5e">train 1–20. test 21–24. holdout R² −0.28 — the honest future.</text>
+
+<ellipse cx="36" cy="304" rx="5" ry="5.2" fill="#3d5f86"/>
+<text x="50" y="309" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#3d5f86">train</text>
+<ellipse cx="140" cy="304" rx="5" ry="5.2" fill="#b44a28"/>
+<text x="154" y="309" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28">test</text>
+<ellipse cx="244" cy="304" rx="5.4" ry="5.6" fill="#c4a35a"/>
+<text x="260" y="309" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#c4a35a">future leaked into train</text>
+<text x="380" y="340" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">train on the past. test on later.</text>
 </svg>

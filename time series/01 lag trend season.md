@@ -16,7 +16,7 @@ aliases:
 
 ![ts-00-hero](../assets/ts-00-hero.svg)
 
-Read [[01 linear regression]] first. Same exam world, new object: **weekly hours** over 24 weeks. Cause ([[01 confounding]]) still waits: a campaign in week 20 is later. This notebook is the furniture that campaign would sit on.
+Read [[01 linear regression]] first. Same exam world. Not eight people in a cloud — **one class, 24 weeks**. Each week: how many hours they studied, **on average**. Cause ([[01 confounding]]) still waits: extra office hours in week 17 is later. This notebook is the furniture that campaign would sit on.
 
 Flip it like a notebook. One page = one idea. Done.
 
@@ -24,17 +24,13 @@ Flip it like a notebook. One page = one idea. Done.
 
 ## Page 1 — Hours, every week
 
-Twenty-four weeks. Hours studied, class average.
+One class. Each week: **average hours studied** — the whole room, not person 3.
 
-The cloud is gone. The dots have an **order**. Week 4 is after week 3. You cannot shuffle them and pretend they are eight people.
+The cloud is gone. Week 4 is after week 3. You cannot shuffle them.
 
-Look: a slow climb (the year gets harder). Every **fourth** week a dip — break week. Last week still smells a little like this week.
+The year we planted (tidy on purpose): a slow climb as the term gets harder (**trend**). Every **fourth** week a break — no classes, hours dip (**season**). Last week still smells a little like this week (**lag**).
 
-Those three names are the whole 01:
-
-- **trend** — the slow climb
-- **season** — the calendar (here: a 4-week beat)
-- **lag** — yesterday’s leftover as a lever
+A real calendar is messier. Name the beat you can name.
 
 ---
 
@@ -195,14 +191,14 @@ Shuffle looks kinder than the future (0.29 vs −0.28). Season turns the future 
 
 ### Use / skip
 
-**Reach for it when** yesterday is a lever, a calendar repeats, and you will hold out the **future**.
+**Reach for it when** the dots have an **order** (weeks, days), a beat you can name (break week, Monday), and you will test on **later**.
 
-**Skip it when** the dots are people, not weeks ([[01 linear regression]]); a shuffle already leaked; you wanted a campaign ([[02 causal impact]]) before you owned trend and season.
+**Skip it when** the dots are **people** ([[01 linear regression]]); you already shuffled the weeks; you wanted the campaign gap ([[02 causal impact]]) before trend and season.
 
-**Pays you:** the time wing’s 01. A season that catches the break. The honest split for every later forecast and for causal impact.
+**Pays you:** season catches the break. The honest split for a forecast.
 
-**Costs you:** lag after season can be a passenger. Four-week dummies assume the calendar you named. A campaign still needs [[01 confounding]] — this 01 only says what the series was *going* to do.
+**Costs you:** lag after season can be a passenger. You named the calendar. A campaign still needs the fork ([[01 confounding]]).
 
 ---
 
-*Time wing, 01. Yesterday is a lever. The gap after a start date: [[02 causal impact]].*
+*Yesterday is a lever. The gap after a start date: [[02 causal impact]].*
