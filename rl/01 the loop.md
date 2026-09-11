@@ -83,7 +83,7 @@ Nudge (quiet, like a learning rate):
 
 The 0.9 is **later is a bit less than now**. Tomorrow’s 3 is not worth a 3 today. Same volume habit as descent; the leftover is a **target**, not a downhill slope on a bowl.
 
-400 weeks, 20% random tries so you still sample the dull act. House seed 7.
+400 weeks, 20% random tries so you still sample the dull act.
 
 ![rl-03-Q](../assets/rl-03-Q.svg)
 
@@ -115,7 +115,7 @@ If you keep only one thing:
 
 ## Page 5 — Twenty weeks, in numpy
 
-Exam loop. Two states, two acts. House seed 7 for the random policy and for Q. Sensible policy uses seed 8 so the world-rattle is a fresh draw, not the same twenty weeks.
+Exam loop. Two states, two acts. Random policy and Q share one world. Sensible policy gets a fresh draw of the weeks.
 
 ```python
 import numpy as np

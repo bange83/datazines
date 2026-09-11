@@ -17,7 +17,7 @@ aliases:
 
 ![by-00-hero](../assets/by-00-hero.svg)
 
-Read [[02 beta]] first. Same eight coins, house seed 7, true *P* = 0.6. Beta was the bump. This notebook is the **move**: start → see → bump after.
+Read [[02 beta]] first. Same eight coins, true *P* = 0.6. Beta was the bump. This notebook is the **move**: start → see → bump after.
 
 When you cannot add, [[02 MCMC]] walks the height.
 
@@ -106,7 +106,7 @@ If you keep only one thing:
 
 ## Page 6 — Eight coins, in scipy
 
-Same tosses as [[02 beta]]. House seed 7. True *P* = 0.6. Four starts, four posteriors.
+Same tosses as [[02 beta]]. True *P* = 0.6. Four starts, four posteriors.
 
 ```python
 import numpy as np

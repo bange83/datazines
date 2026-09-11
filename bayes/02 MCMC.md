@@ -16,7 +16,7 @@ aliases:
 
 ![mc-00-hero](../assets/mc-00-hero.svg)
 
-Read [[01 prior]] and [[01 gradient descent]] first. Same eight coins, house seed 7, 3 yes / 5 no. Prior still adds: Beta(4, 6), mean **0.40**. This notebook **pretends we cannot add**, walks anyway, and checks the pile against that bump.
+Read [[01 prior]] and [[01 gradient descent]] first. Same eight coins, 3 yes / 5 no. Prior still adds: Beta(4, 6), mean **0.40**. This notebook **pretends we cannot add**, walks anyway, and checks the pile against that bump.
 
 A walk, not a catalog of samplers.
 
@@ -91,7 +91,7 @@ If you keep only one thing:
 
 ## Page 5 — Eight coins, walking, in numpy
 
-Same 3 yes, 5 no. Flat prior. Metropolis on *P*. House seed 7. No extra library.
+Same 3 yes, 5 no. Flat prior. Metropolis on *P*. No extra library.
 
 ```python
 import numpy as np

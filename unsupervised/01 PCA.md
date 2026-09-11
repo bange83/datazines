@@ -26,7 +26,7 @@ Flip it like a notebook. One page = one idea. Done.
 
 ## Page 1 — There is no grade
 
-Eighty students, house seed 7. Unlabeled cloud: hours, minutes, sleep, coffee. **No grade.** Not the thirty graders on the ridge page, and not a pass/fail class.
+Eighty students. Unlabeled cloud: hours, minutes, sleep, coffee. **No grade.** Not the thirty graders on the ridge page, and not a pass/fail class.
 
 Nobody asked who passed. Nobody asked ŷ.
 
@@ -102,7 +102,7 @@ If you keep only one thing:
 
 ## Page 6 — Hours and minutes, in sklearn
 
-Same unlabeled cloud — eighty students, four levers, no grade. House seed 7.
+Same unlabeled cloud — eighty students, four levers, no grade.
 
 ```python
 import numpy as np

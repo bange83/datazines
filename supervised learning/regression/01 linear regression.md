@@ -81,7 +81,7 @@ It says: “Roughly, **on average**.”
 
 Someone with 4 hours:
 
-> line at *x* = 4  →  ŷ ≈ 5.8
+> line at *x* = 4 → ŷ ≈ 5.8
 
 The hat on the y (**ŷ**, “y hat”) means: **prediction**, not the real grade.
 

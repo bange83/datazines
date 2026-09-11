@@ -102,7 +102,7 @@ If you keep only one thing:
 
 ## Page 6 — 24 weeks, in sklearn
 
-House seed 7. Last four weeks held out. Trend vs season vs a shuffled cheat.
+Last four weeks held out. Trend vs season vs a shuffled cheat.
 
 ```python
 import numpy as np

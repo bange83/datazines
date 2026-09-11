@@ -109,7 +109,7 @@ If you keep only one thing:
 
 ## Page 6 — Coffee study hours, in numpy
 
-Same 27 notes, same 2-d table as [[02 embeddings]]. One sentence. House seed 7 lives in the PCA. No sklearn estimator — the look *is* the lesson.
+Same 27 notes, same 2-d table as [[02 embeddings]]. One sentence. No sklearn estimator — the look *is* the lesson.
 
 ```python
 import numpy as np

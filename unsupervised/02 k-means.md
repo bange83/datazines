@@ -26,7 +26,7 @@ Flip it like a notebook. One page = one idea. Done.
 
 ## Page 1 — There is still no grade
 
-Eighty students, house seed 7. Hours and sleep. **No grade.** Three styles planted on purpose.
+Eighty students. Hours and sleep. **No grade.** Three styles planted on purpose.
 
 Three study styles, planted on purpose:
 
@@ -118,7 +118,7 @@ If you keep only one thing:
 
 ## Page 6 — Three study styles, in sklearn
 
-Same unlabeled cloud as page 1 — eighty students, hours and sleep, no grade. Three styles planted. House seed 7.
+Same unlabeled cloud as page 1 — eighty students, hours and sleep, no grade. Three styles planted.
 
 ```python
 import numpy as np

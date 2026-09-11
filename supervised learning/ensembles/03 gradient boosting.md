@@ -76,7 +76,7 @@ Depth of each tree is usually **small** (stumps or depth 2–3). The *chain* sup
 
 ## Page 4 — Same pass/fail class, honestly
 
-House seed 7. The forest lifted test from 0.71 → 0.79. Boosting on this **tiny** exam is easy to spoil:
+The forest lifted test from 0.71 → 0.79. Boosting on this **tiny** exam is easy to spoil:
 
 | model | knobs | train | test |
 |---|---|---:|---:|
@@ -112,7 +112,7 @@ If you keep only one thing:
 
 ## Page 6 — The chain, in sklearn
 
-Same pass/fail class as the forest notebook — eighty students, house seed 7. `GradientBoostingClassifier` is the plain sklearn chain (not XGBoost). Depth 2 trees.
+Same pass/fail class as the forest notebook — eighty students. `GradientBoostingClassifier` is the plain sklearn chain (not XGBoost). Depth 2 trees.
 
 ```python
 import numpy as np

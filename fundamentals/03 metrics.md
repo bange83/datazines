@@ -124,7 +124,7 @@ If you keep only one thing:
 
 ## Page 7 — A harder exam, in sklearn
 
-Same levers as logistic. Harder intercept so pass is rarer (**26 / 80**). House seed 7. Split 70/30, `random_state=0`. Dummy vs logistic vs three cuts.
+Same levers as logistic. Harder intercept so pass is rarer (**26 / 80**). Split 70/30, `random_state=0`. Dummy vs logistic vs three cuts.
 
 ```python
 import numpy as np

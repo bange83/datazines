@@ -113,7 +113,7 @@ If you keep only one thing:
 
 ## Page 7 — A street, in sklearn
 
-Same eighty as logistic / LDA. Hours and sleep, pass/fail. House seed 7. Split 70/30, `random_state=0`. Linear SVM vs logistic. Count who holds the fence.
+Same eighty as logistic / LDA. Hours and sleep, pass/fail. Split 70/30, `random_state=0`. Linear SVM vs logistic. Count who holds the fence.
 
 ```python
 import numpy as np

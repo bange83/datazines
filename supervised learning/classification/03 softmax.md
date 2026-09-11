@@ -40,7 +40,7 @@ Example scores: fail −1.2, pass +0.8, honors +0.1.
 
 Exponentiate (so nothing is negative), then divide by the total:
 
-P = [0.08, 0.61, 0.30]  —  pass takes the pile.
+P = [0.08, 0.61, 0.30] — pass takes the pile.
 
 ![sm-00-hero](../../assets/sm-00-hero.svg)
 
@@ -79,7 +79,7 @@ If you keep only one thing:
 
 ## Page 5 — Fail / pass / honors, in sklearn
 
-Eighty students, house seed 7. Same exam *hours*. *y* has three rooms, driven by hours. `LogisticRegression` with 3 classes **is** softmax (multinomial).
+Eighty students. Same exam *hours*. *y* has three rooms, driven by hours. `LogisticRegression` with 3 classes **is** softmax (multinomial).
 
 ```python
 import numpy as np

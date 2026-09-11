@@ -267,7 +267,7 @@ Sit between lecture and baby talk:
 - Picture before formula.
 - Keep **one running story** across a family. Regression’s story is grades: hours, sleep, tutor, plus twins (minutes) and junk (coffee, noise). Classification should pick *its* story and not abandon it mid-shelf.
 - Scale *x* when a method taxes size. Say so out loud. OLS with one honest *x*: optional. Ridge / lasso / elastic-net: **required**. Logistic (and any linear score): scale when levers are in different units.
-- End every note with a **sklearn mini** that uses the family’s story and whose printed numbers agree with the pages. Seed it. `np.random.default_rng(7)` is the house seed unless you have a reason.
+- End every note with a **sklearn mini** that uses the family’s story and whose printed numbers agree with the pages. Seed it. `np.random.default_rng(7)` is the house seed unless you have a reason. **Do not mention the seed in the prose.** It lives in the snippet. The reader does not care.
 - Number files in a family: `01 …`, `02 …`. Reading order = sort order.
 - Point sequels at numbered paths: `[[01 linear regression]]`, not the old bare name — but keep the old name as an alias.
 

@@ -46,7 +46,7 @@ Imagine the scatter: hours vs sleep. Failers clump left. Passers clump right. Ea
 
 ![ld-02-blobs](../../assets/ld-02-blobs.svg)
 
-On this pass/fail class (eighty students, seed 7, same recipe as logistic), the fitted centers are roughly:
+On this pass/fail class (eighty students, same recipe as logistic), the fitted centers are roughly:
 
 | | hours | sleep |
 |---|---:|---:|
@@ -137,7 +137,7 @@ If you keep only one thing:
 
 ## Page 7 — Two blobs, in sklearn
 
-Same pass/fail class as logistic — eighty students, not the thirty graders on the ridge page. *y* = pass. Features = hours, sleep. House seed 7. Split 70/30.
+Same pass/fail class as logistic — eighty students, not the thirty graders on the ridge page. *y* = pass. Features = hours, sleep. Split 70/30.
 
 ```python
 import numpy as np

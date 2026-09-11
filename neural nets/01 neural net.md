@@ -35,7 +35,7 @@ Same people. Same three knobs. The **shape** of *y* changed. A single tilted S c
 
 ## Page 2 — Logistic shrugs
 
-Fit logistic anyway. Hours, sleep, tutor in. Scale them (the tax from ridge still applies — size of a knob is not a moral). House seed 7.
+Fit logistic anyway. Hours, sleep, tutor in. Scale them (the tax from ridge still applies — size of a knob is not a moral).
 
 It prints a flat **P ≈ 0.39** at every hours, sleep held at 6.5, no tutor. Train 0.57, test 0.60. Barely better than guessing the majority (fail).
 
@@ -110,7 +110,7 @@ If you keep only one thing:
 
 ## Page 7 — Hill vs shrug, in sklearn
 
-Same 160 students. Pass is a hill on hours. Logistic vs a net with **3 hidden units**. House seed 7. `lbfgs` is a quiet walker for a tiny net — not SGD yet.
+Same 160 students. Pass is a hill on hours. Logistic vs a net with **3 hidden units**. `lbfgs` is a quiet walker for a tiny net — not SGD yet.
 
 ```python
 import numpy as np

@@ -19,7 +19,7 @@ aliases:
 
 House style lives in [[AGENTS.md]]. A human’s front door is [[00 how to read this]] — not this file.
 
-**Freeze (6 Sep 2026):** this file is a **map of what exists**, not a prompt to write the next 01. No new rooms. Polish + HTML zines: [[HANDOFF.md]].
+**Freeze (6 Sep 2026):** this file is a **map of what exists**, and the **parking lot** for ideas until the freeze lifts. No new rooms tonight. Polish + HTML zines: [[HANDOFF.md]].
 
 Flip it like a notebook. One page = one idea. Done.
 
@@ -89,10 +89,10 @@ Write **left to right**. Inside a wing, 01 is the ordinary idea.
 |---|---|---|---|
 | **1. Supervised** | `supervised learning/…` | line, S, tree | *standing* (SVM 04 now on the S-shelf) |
 | **2. Chance** | `probability/` then `inference/` | a distribution is a shape for leftovers | Gaussian, Bernoulli, Poisson; **beta standing**; sampling; SE; CI; t-test / p-value; bootstrap |
-| **3. Cause** | `causal/` | pattern ≠ mechanism (already a page) | confounding, DAGs, experiments vs obs; difference-in-differences / causal impact; BSTS as an *engine*, not as 01 |
+| **3. Cause** | `causal/` | pattern ≠ mechanism (already a page) | *01–02 standing* (confounding, causal impact). DAGs / experiments later. BSTS lives under **time**, as the fat would-have — not a cause 01. |
 | **4. Walk** | `optimization/` | gradient descent | step size; local minima; SGD; MCMC (walk a *posterior*); Bayesian optimization as “search the knobs when the bowl is expensive” |
 | **5. Nets** | `neural nets/` | a tiny net | softmax; embeddings; attention; transformer / LLM (one sketchbook, not a career) |
-| **6. Time** | `time series/` | lag, trend, season | holdouts in time; simple forecast; *then* causal impact on a series |
+| **6. Time** | `time series/` | lag, trend, season | *01 standing*. Holdouts in time (already a page). **Parked:** ARIMA / ARIMAX (lag as a named leftover model); BSTS (would-have as a bump — engine for [[02 causal impact]], after [[02 MCMC]]). Not as 01. |
 | **7. Unsupervised** | `unsupervised/` | “no y” | PCA as rotating the cloud; k-means; a page on embeddings you already have |
 | **8. Fundamentals** | `fundamentals/` | leftover on **new** people | *01–03 standing* (train/test, bias–variance, metrics). Significance already lives in [[01 t-test]] |
 | **9. Bayes** | `bayes/` | a prior is a starting costume | *01–02 standing* (prior, MCMC). A library that walks is an engine, not 03 |
@@ -110,7 +110,7 @@ Rooms on the map get written. Short. In the wing they belong to. **Which remaini
 
 No *y*. The sausage is rotated. The rooms are painted. The loop has a table.
 
-**Freeze:** do not write BSTS, a policy page, k-NN, or any new 01 until the freeze lifts. Next work is **fix / refine / HTML leaves** — [[HANDOFF.md]]. Ridge / lasso / LARS: do not shorten unless asked.
+**Freeze:** do not write any new 01 until the freeze lifts. Park ideas on this page (time row, cheat sheet). Next work is **fix / refine / HTML leaves** — [[HANDOFF.md]]. Ridge / lasso / LARS: do not shorten unless asked.
 
 ---
 
@@ -145,7 +145,10 @@ When someone says “we also need…” — they are usually **already on the ma
 | reinforcement learning | RL, after leftover as *reward* makes sense — 01 is the loop |
 | causal impact | causal, after chance + a little time |
 | A/B test | inference + cause (experiment) |
-| forecast | time series |
+| forecast | time series ([[01 lag trend season]]) |
+| ARIMA / ARIMAX | time, after lag/trend/season — leftover with a named memory. Not 01 |
+| BSTS, CausalImpact engine | time sequel + [[02 MCMC]]; same gap as [[02 causal impact]]. Not 01 |
+| BEST (Bayesian estimation vs t) | inference sequel, after [[01 t-test]] + [[01 prior]]. Not PyMC as 01 |
 | “why did the model do that?” | start: *b*, Gini gain, importances; later: a small explainability page — not SHAP as 01 |
 
 Do not start a wing from the summit. Causal impact without confounding is a demo. Bayesian opt without GD is a slogan. LLM without softmax is a box cartoon. PyMC without a prior is a library tour. PPO without the loop is a brand.
@@ -175,7 +178,7 @@ If you keep only one thing:
 | LLM | one room, nets wing, after GD + softmax + a tiny net |
 | standing | supervised + GD + distributions + softmax + tiny net + embeddings + attention + LLM + t-test + cause + bootstrap + time + impact + PCA + k-means + train/test + bias–variance + **metrics** |
 | **next** | **freeze** — polish + HTML zines ([[HANDOFF.md]]) |
-| deferred | BSTS-as-engine · policy as an RL page — not until freeze lifts |
+| deferred | **time:** ARIMA/X · BSTS (would-have bump) · **inference:** BEST · **RL:** policy page · k-NN · naive Bayes · A/B — not until freeze lifts |
 | don’t | new wings; start PyMC / PPO / BSTS as 01; fatten one brand; write notes in German |
 | style | [[AGENTS.md]] |
 

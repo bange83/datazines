@@ -66,7 +66,7 @@ Not a 40-curve catalog. These four are the interview.
 
 Start Beta(1, 1). Flat.
 
-See **3 pass, 5 fail** (eight coins, house seed 7).
+See **3 pass, 5 fail** (eight coins).
 
 Add them: α ← 1 + 3, β ← 1 + 5. Now **Beta(4, 6)**. Mean **0.40**.
 
@@ -98,7 +98,7 @@ If you keep only one thing:
 
 ## Page 5 — Eight coins, in scipy
 
-House seed 7. True P = 0.6. Eight tosses. Flat start, then the add. No sklearn estimator — the bump *is* the lesson.
+True P = 0.6. Eight tosses. Flat start, then the add. No sklearn estimator — the bump *is* the lesson.
 
 ```python
 import numpy as np

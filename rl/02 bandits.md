@@ -57,7 +57,7 @@ You cannot start by cashing study. You have not met it yet.
 
 ## Page 3 — Eighty evenings
 
-House seed 7. True means 1.0 / 2.0 / 0.4, leftover 0.6. One pull of each first, then a rule.
+True means 1.0 / 2.0 / 0.4, leftover 0.6. One pull of each first, then a rule.
 
 ![bd-03-counts](../assets/bd-03-counts.svg)
 
@@ -92,7 +92,7 @@ If you keep only one thing:
 
 ## Page 5 — Eighty evenings, in numpy
 
-Three arms. True means hidden. House seed 7. Random vs ε-greedy vs UCB. First three pulls: one of each.
+Three arms. True means hidden. Random vs ε-greedy vs UCB. First three pulls: one of each.
 
 ```python
 import numpy as np

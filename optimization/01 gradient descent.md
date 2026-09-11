@@ -126,7 +126,7 @@ step 400  a=1.706  b=1.010  mse=0.1879
 
 Walk, don’t jump: 400 quiet steps land next to 1.75 + 1·hours. MSE almost the OLS floor (0.1875). A loud rate (0.2) explodes — do not paste that into production.
 
-**SGD** = one person per step, not all eight. Same downhill, noisier path. Nets need that. Same eight people, same rate, shuffle each pass (house seed 7):
+**SGD** = one person per step, not all eight. Same downhill, noisier path. Nets need that. Same eight people, same rate, shuffle each pass:
 
 ```python
 rng = np.random.default_rng(7)

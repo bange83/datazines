@@ -74,7 +74,7 @@ XGBoost is gradient boosting with: second-order leftover (a bit more precise), p
 
 ## Page 4 — Same pass/fail class, no brand worship
 
-House seed 7. Stumps in a chain (AdaBoost) vs leftover-trees (GB) vs sklearn’s histogram engine (`HistGradientBoosting` — the closest thing here without installing XGBoost):
+Stumps in a chain (AdaBoost) vs leftover-trees (GB) vs sklearn’s histogram engine (`HistGradientBoosting` — the closest thing here without installing XGBoost):
 
 | | train | test |
 |---|---:|---:|
@@ -91,22 +91,22 @@ Install XGBoost later if you want the engine. Do not expect it to rewrite this t
 
 ## Page 5 — Pros / cons, one glance
 
-**AdaBoost**  
-Pays you: simple story (loud mistakes). Stumps you can still almost read. Few knobs.  
-Costs you: noisy labels get *louder* (the opposite of what you want). Weaker on messy probabilities. Old, not the default anymore.  
-Reach for it: teaching the chain; a tiny, clean yes/no.  
+**AdaBoost** 
+Pays you: simple story (loud mistakes). Stumps you can still almost read. Few knobs. 
+Costs you: noisy labels get *louder* (the opposite of what you want). Weaker on messy probabilities. Old, not the default anymore. 
+Reach for it: teaching the chain; a tiny, clean yes/no. 
 Skip it: labels are dirty; you already live in XGBoost-land.
 
-**Gradient boosting (sklearn GBM)**  
-Pays you: the leftover picture you already have. Fine on medium tables. One library.  
-Costs you: slower than the C++ engines. Easy to overfit if the rate is loud.  
-Reach for it: learning; datasets that fit in RAM; you don’t want another install.  
+**Gradient boosting (sklearn GBM)** 
+Pays you: the leftover picture you already have. Fine on medium tables. One library. 
+Costs you: slower than the C++ engines. Easy to overfit if the rate is loud. 
+Reach for it: learning; datasets that fit in RAM; you don’t want another install. 
 Skip it: millions of rows (use an engine).
 
-**XGBoost / LightGBM / CatBoost**  
-Pays you: speed, extra taxes, missing values, (CatBoost) categories. Often the production default for tables.  
-Costs you: more knobs, more ways to fool yourself. Not a new idea — 03 in a faster coat. LightGBM can over-grow if you don’t cap depth/leaves.  
-Reach for it: real tables, once you can explain leftover + learning rate.  
+**XGBoost / LightGBM / CatBoost** 
+Pays you: speed, extra taxes, missing values, (CatBoost) categories. Often the production default for tables. 
+Costs you: more knobs, more ways to fool yourself. Not a new idea — 03 in a faster coat. LightGBM can over-grow if you don’t cap depth/leaves. 
+Reach for it: real tables, once you can explain leftover + learning rate. 
 Skip it: you cannot yet draw the chain on paper.
 
 ---
@@ -127,7 +127,7 @@ If you keep only one thing:
 
 ## Page 7 — Three dialects, in sklearn
 
-Same pass/fail class as the boosting notebook — eighty students, house seed 7. No XGBoost install required: `HistGradientBoostingClassifier` is sklearn’s histogram engine (LightGBM-adjacent). AdaBoost uses **stumps**.
+Same pass/fail class as the boosting notebook — eighty students. No XGBoost install required: `HistGradientBoostingClassifier` is sklearn’s histogram engine (LightGBM-adjacent). AdaBoost uses **stumps**.
 
 ```python
 import numpy as np

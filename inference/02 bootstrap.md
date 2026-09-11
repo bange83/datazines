@@ -40,9 +40,9 @@ The spread of those fake worlds is leftover, replayed. Same verb as bagging. Dif
 
 ## Page 2 — One bag is a new class
 
-House seed 7. First redraw of the eight:
+First redraw of the eight:
 
-hours `6, 5, 5, 6, 4, 5, 5, 2`  
+hours `6, 5, 5, 6, 4, 5, 5, 2` 
 grades `8, 7, 7, 8, 6, 6, 6, 4`
 
 5h showed up four times. 1h and 3h never came. Mean of this bag = **6.50**. Slope = **0.96**.
@@ -99,7 +99,7 @@ If you keep only one thing:
 
 ## Page 6 — Eight grades, redrawn, in numpy
 
-Same table as [[01 t-test]]. 2000 bags. House seed 7. `LinearRegression` only to refit *b*. The loop *is* the lesson.
+Same table as [[01 t-test]]. 2000 bags. `LinearRegression` only to refit *b*. The loop *is* the lesson.
 
 ```python
 import numpy as np

@@ -16,7 +16,7 @@ aliases:
 
 ![fm-10-hero](../assets/fm-10-hero.svg)
 
-Read [[01 train test validate]] first. Same **thirty graders**, seed 7, same twins. Ridge already drew this dartboard (page 8). This notebook *is* that picture: leftover on new people, named.
+Read [[01 train test validate]] first. Same **thirty graders**, same twins. Ridge already drew this dartboard (page 8). This notebook *is* that picture: leftover on new people, named.
 
 Not a second ridge. Not a p-value ([[01 t-test]]). Metrics: [[03 metrics]].
 
@@ -103,7 +103,7 @@ If you keep only one thing:
 
 ## Page 6 — Forty hides, in sklearn
 
-Same thirty as [[01 train test validate]] and ridge. 40 different 21 / 9 splits (`random_state=0…39`). Ordinary hours *b* vs ridge hours *b* (scaled, α = 10). House seed 7 for the people.
+Same thirty as [[01 train test validate]] and ridge. 40 different 21 / 9 splits (`random_state=0…39`). Ordinary hours *b* vs ridge hours *b* (scaled, α = 10). 
 
 ```python
 import numpy as np

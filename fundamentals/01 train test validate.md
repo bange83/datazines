@@ -25,7 +25,7 @@ Flip it like a notebook. One page = one idea. Done.
 
 ## Page 1 — The job is the next person
 
-Thirty students. Grade from hours, sleep, tutor. Minutes is a twin. Coffee and noise are junk. House seed 7.
+Thirty students. Grade from hours, sleep, tutor. Minutes is a twin. Coffee and noise are junk.
 
 You can fit a line on **all thirty** and print R². Linear 01 did that on eight people. It is a volume knob for *these* people.
 
@@ -142,7 +142,7 @@ If you keep only one thing:
 
 ## Page 7 — Thirty graders, in sklearn
 
-Same thirty as [[02 ridge regression]]. Same split (`random_state=0`). Ordinary hugs. Peek vs three piles vs CV. House seed 7.
+Same thirty as [[02 ridge regression]]. Same split (`random_state=0`). Ordinary hugs. Peek vs three piles vs CV.
 
 ```python
 import numpy as np

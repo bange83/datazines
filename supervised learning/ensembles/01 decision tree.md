@@ -104,7 +104,7 @@ Try every lever, every possible cut. Score = how much the **weighted average Gin
 
 ![dt-08-gain](../../assets/dt-08-gain.svg)
 
-On this exam (seed 7, train split):
+On this exam (train split):
 
 | lever | best cut | Gini gain | entropy gain | what the rooms look like |
 |---|---|---:|---:|---|
@@ -114,7 +114,7 @@ On this exam (seed 7, train split):
 
 Hours wins by a mile. Tutor is noise for a first cut. That is why the stump says:
 
-> hours ≤ 3.21 → fail  
+> hours ≤ 3.21 → fail 
 > hours > 3.21 → pass
 
 Not because hours is “more important in the universe.” Because **this cut cleaned the room hardest.**
@@ -133,7 +133,7 @@ The tree does **not** rank features globally and then use 2nd place next. It wal
 
 | lever | Gini gain in *this* room |
 |---|---:|
-| sleep | **0.137**  ← wins |
+| sleep | **0.137** ← wins |
 | hours | 0.089 |
 | tutor | 0.024 |
 
@@ -161,7 +161,7 @@ Order, then:
 
 ![dt-03-overfit](../../assets/dt-03-overfit.svg)
 
-On this pass/fail class (eighty students, seed 7):
+On this pass/fail class (eighty students):
 
 | tree | train acc | test acc | leaves |
 |---|---:|---:|---:|
@@ -191,7 +191,7 @@ If you keep only one thing:
 
 ## Page 9 — Gains, in sklearn
 
-Same pass/fail class as logistic / LDA — eighty students, house seed 7. Not the thirty graders on the ridge page. The snippet prints the stump (Gini), the entropy stump, and depth 2 — so you can see first vs second.
+Same pass/fail class as logistic / LDA — eighty students. Not the thirty graders on the ridge page. The snippet prints the stump (Gini), the entropy stump, and depth 2 — so you can see first vs second.
 
 ```python
 import numpy as np

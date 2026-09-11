@@ -74,7 +74,7 @@ Depth is extra floors, not extra magic. Extra knobs need extra notes, or they me
 
 A tiny model: look up the **last** word only, then softmax. No look. No stack.
 
-On these 27 notes, 58 next-word pairs, dim 4, house seed 7, 400 quiet steps:
+On these 27 notes, 58 next-word pairs, dim 4, 400 quiet steps:
 
 P(hours | study) = **0.38** — same as counting. P(noise | coffee) = **0.47**, near the count 0.50. Cross-entropy 2.84 → **1.27** (random would sit near ln 17 ≈ 2.83).
 
@@ -124,7 +124,7 @@ If you keep only one thing:
 
 ## Page 7 — Next word after *study*, in numpy
 
-Same 27 notes as [[02 embeddings]]. Last-token model (the cheap LLM). Dim 4. House seed 7. No sklearn estimator — the walk *is* the lesson.
+Same 27 notes as [[02 embeddings]]. Last-token model (the cheap LLM). Dim 4. No sklearn estimator — the walk *is* the lesson.
 
 ```python
 import numpy as np
