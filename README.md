@@ -15,7 +15,7 @@ Each note is a short notebook, not a textbook chapter:
 - a tiny sklearn (or numpy) example with **real** printed numbers
 - a cheat sheet that says when to use the method and when to skip it
 
-House style lives in [`AGENTS.md`](AGENTS.md). The map of shelves lives in [`PATH.md`](PATH.md). **Freeze:** no new rooms — [`HANDOFF.md`](HANDOFF.md). The product is **[datazines.com](https://datazines.com)**: these sketchbooks as magazine leaves. HTML recipe: [`html/README.md`](html/README.md).
+House style lives in [`AGENTS.md`](AGENTS.md). The map of shelves lives in [`PATH.md`](PATH.md). **Freeze:** no new rooms. The product is **[datazines.com](https://datazines.com)**. Publishing: [`PUBLISH.md`](PUBLISH.md).
 
 ## How to read
 
@@ -47,14 +47,13 @@ fundamentals/            01–03  train / test; bias vs variance; metrics
 bayes/                 01–02  prior; MCMC (walk the height)
 rl/                    01–03  the loop; bandits; Q (the table)
 assets/                drawings (prefix per series: lr-, rr-, dt-, nn-, …)
-html/                  browser zines (prototype: linear 01). recipe in html/README.md
-scripts/note_to_html.py  markdown note → paper leaf (live SVG)
+scripts/note_to_html.py  old press (do not commit html/). Site: PUBLISH.md
 AGENTS.md              how a note is shaped (freeze: no new rooms)
 PATH.md                map of what exists
-HANDOFF.md             freeze receipt; polish → site
+PUBLISH.md             Quartz + GitHub Pages; markdown stays source
 ```
 
-**Freeze:** no new wings. Next: fix, refine, then magazine leaves on datazines.com. [`HANDOFF.md`](HANDOFF.md).
+**Freeze:** no new wings. Next: fix, refine, then magazine leaves on datazines.com. [`PUBLISH.md`](PUBLISH.md).
 
 ## Viewing
 
@@ -62,4 +61,4 @@ Clone, then **Open folder as vault** in Obsidian. Note-to-note wikilinks (`[[01 
 
 Drawings use ordinary markdown images (`![](…svg)`), so they also render on GitHub.
 
-A browser leaf (same paper, live SVG): [`html/supervised learning/regression/01 linear regression.html`](html/supervised%20learning/regression/01%20linear%20regression.html). Door: [`html/00 how to read this.html`](html/00%20how%20to%20read%20this.html).
+The magazine is GitHub Pages, not raw GitHub markdown (wikilinks won’t walk). Plan: [`PUBLISH.md`](PUBLISH.md).

@@ -23,7 +23,7 @@ This file is two things at once:
 
 **What a human reads first:** [[00 how to read this]] — folders are shelves, read 01. Not this file.
 
-**Freeze (6 Sep 2026):** no new wings, no new rooms. Bugfix and refine only. Then HTML zines → [datazines.com](https://datazines.com). Receipt: [[HANDOFF.md]]. Map of what exists: [[PATH.md]].
+**Freeze (6 Sep 2026):** no new wings, no new rooms. Bugfix and refine only. Then magazine leaves → [datazines.com](https://datazines.com). Site: [[PUBLISH.md]]. Map of what exists: [[PATH.md]].
 
 Read this file for *how*. During the freeze, do not copy the “add a shelf” ritual. Fix the shelves that stand.
 
@@ -175,7 +175,7 @@ Hero of each note is `*-00-hero.svg`. Embed as ordinary markdown so GitHub can r
 
 From a nested family note that is two folders down: `![lr-00-hero](../../assets/lr-00-hero.svg)`. Do not use `![[…]]` — GitHub prints that as text.
 
-The encyclopedia **stands**. Descent, distributions, softmax, a tiny net, embeddings, attention, one LLM sketchbook, a t-test, cause 01–02, bootstrap, time 01, PCA, k-means, fundamentals 01–03, SVM, beta, Bayes 01–02, and RL 01–03 (loop, bandits, Q) are written. **Freeze:** no new rooms. Polish numbers and drawings. Then magazine leaves ([[html/README.md]]). Do not shorten ridge / lasso / LARS unless asked. Session receipt: [[HANDOFF.md]].
+The encyclopedia **stands**. Descent, distributions, softmax, a tiny net, embeddings, attention, one LLM sketchbook, a t-test, cause 01–02, bootstrap, time 01, PCA, k-means, fundamentals 01–03, SVM, beta, Bayes 01–02, and RL 01–03 (loop, bandits, Q) are written. **Freeze:** no new rooms. Polish numbers and drawings. Then magazine leaves ([[PUBLISH.md]]). Do not shorten ridge / lasso / LARS unless asked.
 
 ---
 
@@ -237,7 +237,7 @@ Length: roughly 8–16 pages. Dense, not encyclopedic. If you need a second topi
 
 **Reader:** smart 18-year-old. Some interest in data and computers. No stats course. Not a child. This is the **job-interview version**: picture, one sentence, real numbers. Not a textbook. Whoever wants the derivation goes somewhere else.
 
-A stranger must get every sentence. **Never** put chat with the prompter in a notebook: freeze talk, “not tonight,” “this is 04,” “not ridge’s thirty,” “not a brand as 01,” “later door, not this file.” Those belong in [[HANDOFF.md]] or the chat. The note is for someone who just walked in.
+A stranger must get every sentence. **Never** put chat with the prompter in a notebook: freeze talk, “not tonight,” “this is 04,” “not ridge’s thirty,” “not a brand as 01,” “later door, not this file.” Those belong in [[PUBLISH.md]], [[PATH.md]], or the chat. The note is for someone who just walked in.
 
 Sit between lecture and baby talk:
 
@@ -339,7 +339,7 @@ Classification, ensembles, distributions — same ritual:
 
 **Freeze.** Do not run this page’s ritual until the freeze lifts. No new family folder. No new 01.
 
-**The site (now the product):** [datazines.com](https://datazines.com) is these zines in a browser. Notes stay markdown. HTML is a leaf, not a new personality. Recipe: [[html/README.md]]. Converter: `scripts/note_to_html.py`. Drawings stay **SVG**. Do not start the site from a blog theme. First desk: 00 + linear 01 + logistic 01 + train/test 01. Details: [[HANDOFF.md]].
+**The site (now the product):** [datazines.com](https://datazines.com) is these zines in a browser. Notes stay markdown. Quartz builds leaves; GitHub Pages hosts them. Do not commit `html/`. Drawings stay **SVG**. Do not start the site from a blog theme. First desk: 00 + linear 01 + logistic 01 + train/test 01. Details: [[PUBLISH.md]].
 
 If a topic does not fit the notebook voice, it does not belong in this series yet.
 
@@ -349,10 +349,10 @@ If a topic does not fit the notebook voice, it does not belong in this series ye
 
 **During the freeze:**
 
-1. Open [[HANDOFF.md]]. Then this file for *how* a note is shaped.
+1. Open this file for *how* a note is shaped. Site to-do: [[PUBLISH.md]].
 2. **Do not** add a wing or a room. Fix a lie: drawing vs caption, printout vs page, mixed classrooms, a brand name in a reader zine.
 3. Run the snippet. Paste **that** stdout.
-4. Convert a note with `scripts/note_to_html.py` when asked. Live SVG. Recipe: [[html/README.md]].
+4. Do **not** write `html/` into the vault. Publishing is Quartz + Pages ([[PUBLISH.md]]).
 5. English. Match the voice. Do not “improve” it.
 6. Do not shorten ridge / lasso / LARS unless asked.
 
@@ -377,9 +377,8 @@ If you keep only one thing:
 | end of every note | recipe → sklearn mini (same story, matching numbers, real stdout) → cheat sheet **with Use / skip** → next sibling |
 | sklearn mini | mandatory. family story, not iris. numbers agree with the pages |
 | Use / skip | on every cheat sheet: when to use, when not, pays / costs |
-| HTML zine | `scripts/note_to_html.py` → `html/<stem>.html`. live SVG. recipe: [[html/README.md]] |
-| site | datazines.com — magazine leaves, same pencils, not a blog |
-| freeze | no new wings / rooms. bugs + refine + HTML only. [[HANDOFF.md]] |
+| site | datazines.com — Quartz + GitHub Pages. markdown stays source. [[PUBLISH.md]] |
+| freeze | no new wings / rooms. bugs + refine + publish spike. [[PUBLISH.md]] |
 | this file | receipt + rules. update the freeze rarely; do not reopen the map |
 
 ---

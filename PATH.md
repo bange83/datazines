@@ -19,7 +19,7 @@ aliases:
 
 House style lives in [[AGENTS.md]]. A human’s front door is [[00 how to read this]] — not this file.
 
-**Freeze (6 Sep 2026):** this file is a **map of what exists**, and the **parking lot** for ideas until the freeze lifts. No new rooms tonight. Polish + HTML zines: [[HANDOFF.md]].
+**Freeze (6 Sep 2026):** this file is a **map of what exists**, and the **parking lot** for ideas until the freeze lifts. No new rooms tonight. Site: [[PUBLISH.md]].
 
 Flip it like a notebook. One page = one idea. Done.
 
@@ -110,7 +110,7 @@ Rooms on the map get written. Short. In the wing they belong to. **Which remaini
 
 No *y*. The sausage is rotated. The rooms are painted. The loop has a table.
 
-**Freeze:** do not write any new 01 until the freeze lifts. Park ideas on this page (time row, cheat sheet). Next work is **fix / refine / HTML leaves** — [[HANDOFF.md]]. Ridge / lasso / LARS: do not shorten unless asked.
+**Freeze:** do not write any new 01 until the freeze lifts. Park ideas on this page (time row, cheat sheet). Next work is **fix / refine**, then the desk: [[PUBLISH.md]]. Ridge / lasso / LARS: do not shorten unless asked.
 
 ---
 
@@ -157,7 +157,7 @@ Do not start a wing from the summit. Causal impact without confounding is a demo
 
 ## Page 7 — How to walk (for future sessions)
 
-1. Open [[HANDOFF.md]]. During the freeze, this file is a map, not a to-do.
+1. Open [[PUBLISH.md]] for the site. During the freeze, this file is a map, not a to-do.
 2. Do not start a new 01. Sequels that already exist stay short. Do not shorten ridge / lasso / LARS unless asked.
 3. Same story when the wing allows it (exam / grades) until the idea *needs* a new story (tokens, time, reward).
 4. Update the shelf table in [[AGENTS.md]] when a note lands. Update **page 2 of this file** when a wing’s 01 exists.
@@ -177,7 +177,7 @@ If you keep only one thing:
 | building | data-science encyclopedia, sketchbook voice |
 | LLM | one room, nets wing, after GD + softmax + a tiny net |
 | standing | supervised + GD + distributions + softmax + tiny net + embeddings + attention + LLM + t-test + cause + bootstrap + time + impact + PCA + k-means + train/test + bias–variance + **metrics** |
-| **next** | **freeze** — polish + HTML zines ([[HANDOFF.md]]) |
+| **next** | **freeze** — polish notes, then [[PUBLISH.md]] |
 | deferred | **time:** ARIMA/X · BSTS (would-have bump) · **inference:** BEST · **RL:** policy page · k-NN · naive Bayes · A/B — not until freeze lifts |
 | don’t | new wings; start PyMC / PPO / BSTS as 01; fatten one brand; write notes in German |
 | style | [[AGENTS.md]] |
@@ -186,8 +186,8 @@ If you keep only one thing:
 
 **Reach for this file** to see what exists.
 
-**Skip** using it as “write the next 01.” That is frozen. [[HANDOFF.md]].
+**Skip** using it as “write the next 01.” That is frozen. Site: [[PUBLISH.md]].
 
 ---
 
-*Map for the library. House rules stay in AGENTS. Freeze: [[HANDOFF.md]].*
+*Map for the library. House rules stay in AGENTS. Site: [[PUBLISH.md]].*
