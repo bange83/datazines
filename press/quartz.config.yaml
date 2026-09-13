@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: null
   locale: en-US
-  baseUrl: datazines.com
+  baseUrl: bange83.github.io/datazines
   ignorePatterns:
     - private
     - templates
