@@ -143,7 +143,6 @@ If you keep only one thing:
 | 01 | first sketchbook of a family |
 | zine | one note |
 
-![in-05-when](assets/in-05-when.svg)
 
 ### Use / skip
 

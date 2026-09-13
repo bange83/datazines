@@ -54,6 +54,7 @@ jobs:
           npx quartz plugin install
           npx quartz build
           python3 fix-asset-paths.py
+          cp -f public/00-how-to-read-this.html public/index.html
           touch public/.nojekyll
 
       - name: Upload Pages artifact
