@@ -1,0 +1,801 @@
+@use "./variables.scss" as *;
+
+// datazines — balanced sketchbook (Caveat + Inter, organic paper on a desk)
+// Font files live in the vault (`assets/fonts/`). Absolute URLs so nested
+// pages still find them. No Google Fonts request.
+
+@font-face {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/caveat-600.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/caveat-700.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/inter-400.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/inter-500.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/inter-600.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-400.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-600.ttf") format("truetype");
+}
+
+:root,
+:root[saved-theme="dark"] {
+  --desk: #e8e3d8;
+  --paper: #fdfbf7;
+  --grain: #f3ebd9;
+  --ink: #2d2b2a;
+  --muted: #6e6862;
+  --rust: #c85a32;
+  --blue: #2b6cb0;
+  --sage: #4f6d55;
+  --gold: #c4a35a;
+  --pencil: rgba(45, 43, 42, 0.35);
+  --hand: "Caveat", "Bradley Hand", sans-serif;
+
+  --light: var(--desk);
+  --lightgray: var(--grain);
+  --gray: var(--muted);
+  --darkgray: var(--ink);
+  --dark: var(--ink);
+  --secondary: var(--blue);
+  --tertiary: var(--rust);
+  --highlight: transparent;
+  --textHighlight: rgba(200, 90, 50, 0.28);
+  --headerFont: var(--hand);
+  --titleFont: var(--hand);
+  --bodyFont: "Inter", system-ui, sans-serif;
+  --codeFont: Menlo, "IBM Plex Mono", ui-monospace, monospace;
+}
+
+@mixin sketch-panel {
+  background: var(--paper);
+  border-radius: 20px 8px 18px 10px / 10px 18px 8px 20px;
+  border: 2px solid var(--pencil);
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.04);
+}
+
+html {
+  background: var(--desk);
+}
+
+html,
+body {
+  background: var(--desk) !important;
+  color: var(--ink);
+  font-family: var(--bodyFont);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+#quartz-body {
+  column-gap: 1.5rem !important;
+  row-gap: 1.5rem !important;
+  align-items: start;
+  grid-template-columns: minmax(0, 1fr) 250px !important;
+  grid-template-rows: auto auto auto !important;
+  grid-template-areas:
+    "grid-sidebar-left grid-sidebar-left"
+    "grid-center grid-sidebar-right"
+    "grid-footer grid-footer" !important;
+
+  @media all and ($mobile) {
+    grid-template-columns: auto !important;
+    grid-template-rows: auto auto auto auto !important;
+    grid-template-areas:
+      "grid-sidebar-left"
+      "grid-center"
+      "grid-sidebar-right"
+      "grid-footer" !important;
+  }
+}
+
+#quartz-body .sidebar {
+  background: transparent;
+  height: auto !important;
+  max-height: none;
+  position: relative;
+  top: auto;
+  padding: 0 !important;
+  gap: 0;
+}
+
+#quartz-body .sidebar.left {
+  @include sketch-panel;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem 1.35rem !important;
+  overflow: visible;
+  grid-area: grid-sidebar-left !important;
+}
+
+#quartz-body .sidebar.right {
+  position: sticky;
+  top: 1.5rem;
+  overflow: visible;
+  grid-area: grid-sidebar-right !important;
+  min-width: 0;
+  max-width: 250px;
+  width: 250px;
+}
+
+.page-title {
+  margin: 0;
+  line-height: 1;
+  flex: 1 1 auto;
+}
+
+.page-title a {
+  display: inline;
+  overflow: visible;
+  text-indent: 0;
+  width: auto;
+  height: auto;
+  background: none;
+  font-family: var(--hand);
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--rust);
+  line-height: 1;
+  text-decoration: none;
+}
+
+.page-title a::after {
+  content: "one idea per page";
+  display: inline;
+  font-family: var(--bodyFont);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--muted);
+  margin-left: 8px;
+  line-height: 1;
+}
+
+.sidebar.left .mobile-only {
+  display: none !important;
+}
+
+.sidebar.left .flex-component,
+.search {
+  width: auto;
+  flex: 0 0 auto;
+}
+
+.search-button {
+  width: 200px;
+  justify-content: flex-start;
+  gap: 0.4rem;
+  padding: 0.45rem 0.8rem;
+  background: var(--grain);
+  border: 2px solid var(--pencil);
+  border-radius: 8px;
+  color: var(--muted);
+  font-family: var(--bodyFont);
+  font-size: 0.875rem;
+  box-shadow: none;
+}
+
+.search-button svg {
+  width: 14px;
+  height: 14px;
+  opacity: 0.55;
+}
+
+.search-button p {
+  font-size: 0;
+  margin: 0;
+}
+
+.search-button p::after {
+  content: "Search zines...";
+  font-size: 0.875rem;
+  font-family: var(--bodyFont);
+  color: var(--muted);
+}
+
+.explorer {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  flex: 1 0 100%;
+  min-height: 0;
+  overflow: visible;
+  font-family: var(--hand);
+}
+
+.explorer .title-button.desktop-explorer,
+.explorer button.mobile-explorer,
+.explorer h1,
+.explorer h2 {
+  display: none !important;
+}
+
+.explorer .explorer-content,
+.explorer .explorer-content[aria-expanded="false"] {
+  display: block !important;
+  max-height: none !important;
+  overflow: visible !important;
+  height: auto !important;
+}
+
+.explorer .folder-icon,
+.explorer .collapse-icon,
+.explorer svg.folder-icon,
+.explorer .fold,
+.explorer .overflow-end {
+  display: none !important;
+}
+
+.explorer-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0.35rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  border-bottom: 2px dashed var(--pencil);
+  overflow-x: auto;
+}
+
+.explorer-ul > li {
+  display: contents;
+}
+
+.explorer-ul > li > a.nav-file-title {
+  display: none !important;
+}
+
+.explorer-ul > li > .folder-container {
+  order: 1;
+  font-family: var(--hand);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--grain);
+  border: 1.5px solid var(--pencil);
+  border-radius: 8px 8px 0 0;
+  padding: 0.3rem 0.8rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.explorer button.folder-button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.explorer-ul > li.is-active-shelf > .folder-container {
+  background: var(--paper);
+  color: var(--blue);
+  font-weight: 700;
+  border-bottom-color: var(--paper);
+  margin-bottom: -2px;
+}
+
+.explorer .folder-outer {
+  display: none !important;
+}
+
+.explorer a:hover,
+.explorer button.folder-button:hover {
+  color: var(--rust);
+  background: none;
+}
+
+.explorer-ul > li > .folder-container:hover {
+  color: var(--rust);
+}
+
+.family-nav,
+.sub-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+  padding-top: 0.55rem;
+  font-family: var(--hand);
+}
+
+.family-nav[hidden],
+.sub-nav[hidden] {
+  display: none;
+}
+
+.family-tab {
+  font-family: var(--hand);
+  font-size: 1.18rem;
+  font-weight: 600;
+  padding: 0.12rem 0.75rem;
+  background: var(--paper);
+  border: 1.5px solid var(--pencil);
+  border-radius: 14px;
+  color: var(--muted);
+  text-decoration: none;
+  line-height: 1.3;
+}
+
+.family-tab.is-current {
+  color: var(--blue);
+  background: #d4e0eb;
+  border-color: var(--blue);
+  font-weight: 700;
+}
+
+.sub-chip {
+  background: #e6dfd1;
+  padding: 0.1rem 0.6rem;
+  border-radius: 12px;
+  border: 1px solid var(--pencil);
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 600;
+  font-family: var(--hand);
+  font-size: 1.15rem;
+}
+
+.sub-chip.is-current {
+  background: #d4e0eb;
+  border-color: var(--blue);
+}
+
+.toc {
+  @include sketch-panel;
+  padding: 1.5rem;
+}
+
+.toc-header {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 0 0.75rem;
+  cursor: default;
+  pointer-events: none;
+}
+
+.toc-header h3,
+.toc h3 {
+  font-family: var(--hand);
+  font-weight: 700;
+  font-size: 1.45rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.toc-header svg,
+.toc .fold {
+  display: none;
+}
+
+.toc a,
+.toc-content a {
+  font-family: var(--bodyFont);
+  font-size: 0.9rem;
+  color: var(--muted);
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  line-height: 1.35;
+}
+
+.toc-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.toc a:hover {
+  color: var(--rust);
+  background: none;
+}
+
+.toc a.active {
+  color: var(--blue);
+  font-family: var(--hand);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.center {
+  grid-area: grid-center !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  width: auto !important;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+.page-header,
+.note-properties,
+details.note-properties {
+  display: none !important;
+}
+
+.center > hr {
+  display: none;
+}
+
+article {
+  max-width: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+}
+
+article h1,
+article h2,
+article h3,
+h1,
+h2,
+th {
+  font-family: var(--hand) !important;
+  font-weight: 700;
+  color: var(--rust);
+  line-height: 1.1;
+}
+
+article h1 {
+  font-size: 2.6rem;
+  margin: 0 0 0.75rem;
+}
+
+article h2 {
+  font-size: 2.1rem;
+  margin: 0 0 0.5rem;
+}
+
+article h3 {
+  font-size: 1.4rem;
+  color: var(--blue);
+  margin: 1.1rem 0 0.4rem;
+}
+
+article h1 a[role="anchor"],
+article h2 a[role="anchor"],
+article h3 a[role="anchor"],
+article h4 a[role="anchor"] {
+  display: none !important;
+}
+
+.leaf {
+  @include sketch-panel;
+  padding: 1.75rem 1.85rem 1.9rem;
+  margin: 0 0 1.75rem;
+}
+
+.hero-leaf {
+  padding-top: 1.6rem;
+}
+
+article:not(:has(> .leaf)) {
+  @include sketch-panel;
+  padding: 1.75rem 1.85rem 1.9rem;
+}
+
+article > hr {
+  display: none;
+}
+
+article p {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+article img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto 1.1rem;
+}
+
+article a.internal,
+article a.external {
+  color: var(--blue);
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  border-bottom: 1px dotted var(--blue);
+  text-decoration: none;
+}
+
+article a.internal:hover,
+article a.external:hover {
+  border-bottom-style: solid;
+}
+
+article a.internal.tag-link {
+  border-bottom: none;
+  color: var(--muted);
+  font-size: 0.85em;
+}
+
+article strong {
+  font-weight: 600;
+}
+
+article mark,
+.highlight {
+  background: linear-gradient(
+    105deg,
+    rgba(200, 90, 50, 0.18) 0%,
+    rgba(200, 90, 50, 0.3) 100%
+  );
+  padding: 0.1em 0.4em;
+  border-radius: 8px 2px 10px 3px / 4px 10px 3px 8px;
+  color: inherit;
+}
+
+blockquote:not(.callout) {
+  margin: 0.75rem 0 1rem;
+  padding: 0.25rem 0 0.25rem 1rem;
+  border-left: 4px solid var(--rust);
+  color: var(--muted);
+  font-style: italic;
+}
+
+.callout {
+  background: var(--grain) !important;
+  border-radius: 6px 14px 12px 4px / 12px 4px 6px 14px !important;
+  border: 1px solid var(--pencil) !important;
+  border-left: 4px solid var(--rust) !important;
+  padding: 1.1rem !important;
+  margin: 0 0 1rem;
+}
+
+.callout[data-callout="tip"] {
+  border-left-color: var(--gold) !important;
+}
+
+.callout[data-callout="note"],
+.callout[data-callout="info"] {
+  border-left-color: var(--blue) !important;
+}
+
+.callout-icon {
+  display: none;
+}
+
+.callout-title {
+  color: var(--blue);
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.callout-title-inner,
+.callout-title-inner p {
+  margin: 0;
+  font-family: var(--hand);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.callout-content p:last-child {
+  margin-bottom: 0;
+}
+
+.callout strong {
+  color: inherit;
+  font-weight: 600;
+}
+
+.table-container {
+  margin: 0.75rem 0 1.1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+th,
+td {
+  border: 1.5px solid var(--pencil);
+  padding: 0.4rem 0.65rem;
+  vertical-align: top;
+}
+
+th {
+  background: var(--grain);
+  color: var(--rust);
+  font-weight: 700;
+  font-family: var(--hand);
+  font-size: 1.15rem;
+}
+
+code {
+  font-family: var(--codeFont);
+  font-size: 0.86em;
+  color: var(--sage);
+  background: none;
+}
+
+pre {
+  font-family: var(--codeFont);
+  font-size: 0.82rem;
+  line-height: 1.4;
+  background: var(--grain) !important;
+  border: 1.5px solid var(--pencil);
+  border-radius: 12px 6px 14px 8px / 8px 14px 6px 12px;
+  padding: 0.9rem 1rem;
+  overflow-x: auto;
+  margin: 0.6rem 0 1rem;
+}
+
+pre code {
+  color: var(--ink);
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-style: normal;
+  padding: 0.5rem 0 0;
+  grid-column: 1 / -1;
+}
+
+footer p {
+  display: none;
+}
+
+footer::before {
+  content: "Flip it like a notebook. One page = one idea.";
+  display: block;
+  font-family: var(--hand);
+  font-size: 1.2rem;
+  margin-bottom: 0.45rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--bodyFont);
+  font-size: 0.82rem;
+}
+
+footer a {
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--pencil);
+}
+
+footer a:hover {
+  color: var(--rust);
+  border-bottom-style: solid;
+}
+
+.graph,
+.backlinks,
+.darkmode,
+.reader-mode,
+button.darkmode,
+button.global-graph-icon {
+  display: none !important;
+}
+
+@media all and ($mobile) {
+  .page {
+    padding: 1.25rem 0.85rem 2rem;
+  }
+
+  article h1 {
+    font-size: 2.1rem;
+  }
+
+  article h2 {
+    font-size: 1.7rem;
+  }
+
+  .leaf,
+  article:not(:has(> .leaf)) {
+    padding: 1.25rem 1.15rem 1.4rem;
+  }
+
+  #quartz-body .sidebar.left {
+    padding: 1.15rem !important;
+  }
+
+  .page-title a::after {
+    display: block;
+    margin-left: 0;
+    margin-top: 4px;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+
+  .sidebar.left .flex-component,
+  .search {
+    width: 100%;
+  }
+}
+
+@media print {
+  html,
+  body {
+    background: white !important;
+  }
+
+  .sidebar,
+  footer,
+  .search {
+    display: none !important;
+  }
+
+  .leaf {
+    box-shadow: none;
+    break-after: page;
+    margin: 0;
+    border-radius: 0;
+  }
+}
