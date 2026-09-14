@@ -20,8 +20,6 @@ Read [[01 linear regression]] and [[02 ridge regression]] first — especially t
 
 Rooms are [[02 k-means]]. Here PCA *is* the machine, not a camera.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — There is no grade

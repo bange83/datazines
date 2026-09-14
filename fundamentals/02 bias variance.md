@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 train test validate]] first. Same **thirty graders**. This notebook names the gap: jumpy vs shy.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The gap has a name

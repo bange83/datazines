@@ -18,8 +18,6 @@ aliases:
 
 One class, 24 weeks. Each week: **average hours studied**. Not eight people in a cloud. Extra office hours in week 17 is later ([[02 causal impact]]). This notebook is the furniture that campaign sits on.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — Hours, every week

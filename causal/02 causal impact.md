@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 confounding]] and [[01 lag trend season]] first. Same exam world: 24 weeks of hours. Week 17 they add extra office hours — a **campaign**. The fork still applies. One series, one start date, a would-have.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The campaign has a start date

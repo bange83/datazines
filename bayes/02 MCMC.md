@@ -20,8 +20,6 @@ Read [[01 prior]] and [[01 gradient descent]] first. Same eight coins, 3 yes / 5
 
 A walk, not a catalog of samplers.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — GD sits. This walk piles.

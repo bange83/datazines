@@ -19,8 +19,6 @@ Read [[01 linear regression]] first, especially the bowl on page 14. Same eight 
 
 Logistic, a tiny net, an LLM — they all **walk**. Boosting hunts leftover with a tree; this hunts leftover by moving knobs.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The bowl you already drew

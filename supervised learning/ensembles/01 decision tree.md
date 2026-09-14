@@ -20,8 +20,6 @@ Read [[01 logistic regression]] first. Same pass/fail exam. Logistic drew an S. 
 
 One tree. A forest is many of these ([[02 random forest]]).
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — A different kind of sentence

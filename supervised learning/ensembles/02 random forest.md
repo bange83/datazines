@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 decision tree]] first. Same pass/fail exam. Same hours, sleep, tutor. One deep tree hit train **1.0** and test **0.71**. This notebook is what you do with that gap.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — One tree is jumpy

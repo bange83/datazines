@@ -21,8 +21,6 @@ Read [[03 gradient boosting]] first. That notebook is the religion. This one is 
 
 No extra AdaBoost sheet. No extra XGBoost sheet. This is the “what’s the difference” note.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — You do not need three religions

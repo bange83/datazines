@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="760" height="400" role="img" aria-label="folders are the shelves">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="760" height="400" role="img" aria-label="a question leads to a picture, numbers, and a next idea">
 <defs>
   <filter id="grain" x="0" y="0" width="100%" height="100%">
     <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
@@ -12,17 +12,27 @@
 </defs>
 <rect width="760" height="400" rx="18" ry="18" fill="#f4efe4"/>
 <rect width="760" height="400" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
-<text x="380" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">the library is folders. open one. read 01.</text>
-<rect x="70" y="80" width="110" height="200" rx="8" fill="#b44a28" opacity="0.12" stroke="#b44a28" stroke-width="2"/>
-<text x="125" y="185" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="middle">supervised</text>
-<rect x="200" y="80" width="110" height="200" rx="8" fill="#3d5f86" opacity="0.12" stroke="#3d5f86" stroke-width="2"/>
-<text x="255" y="185" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#3d5f86" text-anchor="middle">fundamentals</text>
-<rect x="330" y="80" width="110" height="200" rx="8" fill="#4f6d55" opacity="0.12" stroke="#4f6d55" stroke-width="2"/>
-<text x="385" y="185" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#4f6d55" text-anchor="middle">nets</text>
-<rect x="460" y="80" width="110" height="200" rx="8" fill="#c4a35a" opacity="0.12" stroke="#c4a35a" stroke-width="2"/>
-<text x="515" y="185" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#c4a35a" text-anchor="middle">bayes</text>
-<rect x="590" y="80" width="110" height="200" rx="8" fill="#7a6e5e" opacity="0.12" stroke="#7a6e5e" stroke-width="2"/>
-<text x="645" y="185" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">…</text>
-<path d="M 50,290 L 710,290" fill="none" stroke="#241c14" stroke-width="2.2"/>
-<text x="380" y="340" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">same paper in every folder.</text>
+<text x="380" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">start with the question that brought you here.</text>
+<rect x="55" y="92" width="145" height="150" rx="18" fill="#b44a28" opacity="0.12" stroke="#b44a28" stroke-width="2"/>
+<text x="127" y="145" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#b44a28" text-anchor="middle">question</text>
+<text x="127" y="185" font-family="Georgia, serif" font-size="15" fill="#241c14" text-anchor="middle">what is the</text>
+<text x="127" y="207" font-family="Georgia, serif" font-size="15" fill="#241c14" text-anchor="middle">model doing?</text>
+<path d="M 207,167 C 222,167 224,167 239,167" fill="none" stroke="#241c14" stroke-width="2.2"/>
+<path d="M 233,160 L 242,167 L 233,174" fill="none" stroke="#241c14" stroke-width="2.2"/>
+<rect x="250" y="92" width="145" height="150" rx="18" fill="#3d5f86" opacity="0.12" stroke="#3d5f86" stroke-width="2"/>
+<text x="322" y="145" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#3d5f86" text-anchor="middle">picture</text>
+<path d="M 278,208 L 302,179 L 322,195 L 343,166 L 370,208" fill="none" stroke="#3d5f86" stroke-width="3"/>
+<path d="M 402,167 C 417,167 419,167 434,167" fill="none" stroke="#241c14" stroke-width="2.2"/>
+<path d="M 428,160 L 437,167 L 428,174" fill="none" stroke="#241c14" stroke-width="2.2"/>
+<rect x="445" y="92" width="145" height="150" rx="18" fill="#4f6d55" opacity="0.12" stroke="#4f6d55" stroke-width="2"/>
+<text x="517" y="145" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#4f6d55" text-anchor="middle">numbers</text>
+<text x="517" y="185" font-family="Georgia, serif" font-size="15" fill="#241c14" text-anchor="middle">real, run,</text>
+<text x="517" y="207" font-family="Georgia, serif" font-size="15" fill="#241c14" text-anchor="middle">not guessed</text>
+<path d="M 597,167 C 612,167 614,167 629,167" fill="none" stroke="#241c14" stroke-width="2.2"/>
+<path d="M 623,160 L 632,167 L 623,174" fill="none" stroke="#241c14" stroke-width="2.2"/>
+<rect x="640" y="92" width="65" height="150" rx="18" fill="#c4a35a" opacity="0.16" stroke="#c4a35a" stroke-width="2"/>
+<text x="672" y="145" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#8b6b21" text-anchor="middle">next</text>
+<text x="672" y="191" font-family="Georgia, serif" font-size="16" fill="#241c14" text-anchor="middle">→</text>
+<path d="M 50,280 L 710,280" fill="none" stroke="#241c14" stroke-width="2.2"/>
+<text x="380" y="330" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">one idea per page. leave with one idea you can explain.</text>
 </svg>

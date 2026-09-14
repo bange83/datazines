@@ -20,8 +20,6 @@ Read [[01 PCA]] first. Same exam world: hours and sleep. **Still no grade.** PCA
 
 LDA drew two blobs *because* of pass/fail. Here nobody told us who passed. We still want names for clumps.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — There is still no grade

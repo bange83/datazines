@@ -19,8 +19,6 @@ aliases:
 
 Read [[01 linear regression]] and [[03 lasso]] first. LARS is how you *travel* across models. Lasso is one of the destinations.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — Taxes vs walks

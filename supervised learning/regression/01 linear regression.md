@@ -16,8 +16,6 @@ aliases:
 
 ![lr-00-hero](../../assets/lr-00-hero.svg)
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The problem

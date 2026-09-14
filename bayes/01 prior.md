@@ -21,8 +21,6 @@ Read [[02 beta]] first. Same eight coins, true *P* = 0.6. Beta was the bump. Thi
 
 When you cannot add, [[02 MCMC]] walks the height.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — You already added the yeses

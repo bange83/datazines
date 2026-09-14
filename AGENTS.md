@@ -190,7 +190,7 @@ Every sketchbook, in this order:
 3. **One-sentence abstract** in a callout. If you cannot say it in one sentence, you do not have a sketchbook yet. You have a chapter.
 4. **Hero drawing.** First thing the eye hits.
 5. **Sequel line**, if this is not 01. `Read [[01 …]] first. This is the sibling / sequel / camera.`
-6. **`Flip it like a notebook. One page = one idea. Done.`** Keep that line. It is the contract with the reader.
+6. **Notebook motto.** The site footer supplies “Flip it like a notebook. One page = one idea.” Do not repeat it inside every note.
 7. **Pages.** `## Page N — short name`. Horizontal rules between them.
 8. **Mini recipe** near the end. Numbered. Hands, not theory.
 9. **sklearn mini — mandatory, last working page before the cheat sheet.** Same family story. Printed numbers must match the pages. Run it. Paste the stdout. Do not invent the printout. (Full rules: page 6.) Exception: [[00 how to read this]] is a **map**, not a fit — no sklearn page.

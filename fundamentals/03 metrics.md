@@ -19,8 +19,6 @@ aliases:
 
 Read [[01 train test validate]] and [[01 logistic regression]] first. Same pass/fail exam, a harder paper, so yes is rarer. R² still lives on the grade shelf. This notebook is **precision and recall**, not a p-value ([[01 t-test]]).
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — A grade leftover is still a leftover

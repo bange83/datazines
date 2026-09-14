@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 the loop]] first. Same exam *world*: an evening, not a cloud of eighty people. The loop had tired / fresh — the act changed **next week**. A bandit has **no next**. You are always in the same room. Only the lever you pull tonight changes.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The next state went away

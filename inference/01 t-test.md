@@ -19,8 +19,6 @@ aliases:
 
 Read [[01 distributions]] first, and the eight grades on [[01 linear regression]]. Same people. Same line ŷ = 1.75 + 1 · hours. The new question is not ŷ. It is **is this real?**
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — Two questions, one class

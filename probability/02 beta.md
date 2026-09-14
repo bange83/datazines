@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 distributions]] first. Bell, coin, counts. This is the coin’s **cousin**, not a fourth zoo animal. Logistic already used a coin for *one* pass/fail. Beta is what you wear when **P(pass) is the thing you don’t know yet**.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The coin assumed you knew P

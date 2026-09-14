@@ -21,8 +21,6 @@ Read [[01 decision tree]] and [[02 random forest]] first. Same exam. Forest: man
 
 XGBoost / LightGBM / CatBoost are fast, taxed versions of this idea. The religion is here. The brand names are engines. Dialects in one page: [[04 boosting flavors]].
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — Choir vs chain

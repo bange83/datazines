@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 linear regression]] and [[06 GLM]]. GLM already picked glasses for *y*. This notebook names the **shapes** those glasses assumed — without a 40-curve catalog.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The leftover had a costume

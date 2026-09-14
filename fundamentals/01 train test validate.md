@@ -19,8 +19,6 @@ aliases:
 
 Any machine. A line, a tree, a tax. The ritual is the same. The numbers below are one class of thirty — grades from hours, sleep, tutor — so you can see the gap.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The job is the next person

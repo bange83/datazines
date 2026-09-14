@@ -21,8 +21,6 @@ House style lives in [[AGENTS.md]]. A human’s front door is [[00 how to read t
 
 **Freeze (6 Sep 2026):** this file is a **map of what exists**, and the **parking lot** for ideas until the freeze lifts. No new rooms tonight. Site: [[PUBLISH.md]].
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — Two jobs, one voice

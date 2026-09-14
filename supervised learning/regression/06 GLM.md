@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 linear regression]] and [[01 logistic regression]]. Those two are not strangers. They are the same machine in two outfits. This note is the family portrait.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — y is not always a grade

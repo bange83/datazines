@@ -20,8 +20,6 @@ Read [[02 embeddings]] first. Same exam notes. Same 2-d points. Softmax ([[03 so
 
 This look is **all directions** — a postcard of mix. An LLM that predicts the next word must **look left** only (a mask). Positions are extra.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — A bag cannot refuse

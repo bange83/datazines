@@ -9,158 +9,117 @@ aliases:
   - Introduction
 ---
 
-# How to read this — a sketchbook
+# Datazines — a sketchbook for data science
 
 > [!abstract] In one sentence
-> Folders are **shelves**. Open a folder, read **01**. Picture, one sentence, real numbers. Same paper everywhere.
+> Short, visual guides to data science: one idea, one picture, and one honest example at a time.
 
 ![in-00-hero](assets/in-00-hero.svg)
 
-This is the front door. You are a reader. Start here, then pick a folder.
+Data science has a lot of names. This is the part you can hold in your head.
 
-Job-interview version. Derivations live elsewhere.
-
-Flip it like a notebook. One page = one idea. Done.
+No course registration. No required route. Start with the question that brought you here.
 
 ---
 
-## Page 1 — What this is
+## Start with a question
 
-Each note is a **zine**: paper, ink, one idea per page.
+### “What does a model learn from a number?”
 
-A picture before a formula. A cheat sheet that says when to reach for the method and when to skip it. Numbers that were **run**, not guessed.
+Start with [[01 linear regression]]. A cloud of exam results becomes a line. The line makes a guess; the leftover shows where it missed.
 
-It is not a textbook. It is not a blog. It is the version you would sketch on a whiteboard if someone asked “what *is* ridge?” and you had four minutes.
+### “Will it work on someone new?”
 
-The site is those zines in a browser. Same pencils.
+Open [[01 train test validate]]. A model can look clever on the people it has already seen. This is how you check the leftover on new people.
 
----
+### “Is the answer yes or no?”
 
-## Page 2 — The shelves are folders
+Read [[01 logistic regression]]. The line stays inside, but the answer comes out as a probability: pass or fail, spam or not spam.
 
-The library **is** the folder list.  Those are ideas *inside* a folder.
+### “How do models learn?”
 
-| folder                 | what is in it                           |
-| ---------------------- | --------------------------------------- |
-| `supervised learning/` | regression, classification, ensembles   |
-| `fundamentals/`        | train / test, bias vs variance, metrics |
-| `optimization/`        | gradient descent                        |
-| `probability/`         | distributions, beta                     |
-| `neural nets/`         | tiny net → embeddings → attention → LLM |
-| `inference/`           | t-test, bootstrap                       |
-| `causal/`              | confounding, causal impact              |
-| `time series/`         | lag, trend, season                      |
-| `unsupervised/`        | PCA, k-means                            |
-| `bayes/`               | prior, MCMC                             |
-| `rl/`                  | the loop, bandits, Q                    |
+Take [[01 gradient descent]]. Picture a bowl, take a step downhill, and change the knobs a little at a time.
 
-Inside a folder, **file sort is reading order.** `01` is the ordinary idea. `02` is a sequel — shorter.
+### “How do LLMs work?”
 
-You do **not** have to finish `supervised learning/` before you open `unsupervised/`. You **do** read `01` before `02` in the same family.
+Follow the short staircase: [[01 neural net]] → [[02 embeddings]] → [[03 attention]] → [[04 LLM]]. The last stop is next-token prediction, not magic.
 
 ---
 
-## Page 3 — How to walk
+## What is inside
 
-![in-04-walk](assets/in-04-walk.svg)
+**Predict** — lines, probabilities, trees, forests, and margins.
+Start with [[01 linear regression]] or [[01 logistic regression]].
 
-1. **Pick a folder.**
-2. **Read 01.** Then the numbered sequels if you want them.
-3. **Use / skip** on the last page of that note. Honest: when this method pays you, what it costs, what to open instead.
+**Learn** — gradient descent, a tiny neural net, embeddings, attention, and LLMs.
+Start with [[01 gradient descent]] or [[01 neural net]].
 
-Lost? Three honest starts:
+**Check** — train/test splits, bias and variance, metrics, t-tests, and bootstrap.
+Start with [[01 train test validate]].
 
-- a number: [[01 linear regression]] (`supervised learning/regression/`)
-- leftover on new people: [[01 train test validate]] (`fundamentals/`)
-- yes / no: [[01 logistic regression]] (`supervised learning/classification/`)
+**See the world differently** — distributions, causes, time, PCA, and clusters.
+Start with [[01 distributions]], [[01 confounding]], [[01 lag trend season]], or [[01 PCA]].
 
-An LLM lives in `neural nets/`, after a tiny net. Not the whole library.
-
----
-
-## Page 4 — Leftover (the thread, not the map)
-
-You have a cloud of people. You draw a machine. Almost nobody sits on it.
-
-The **gap** — real minus guess — is leftover.
-
-![in-02-leftover](assets/in-02-leftover.svg)
-
-Notes reuse that miss: a grade miss, a miss on **new** people, a surprise of the next word, actual − would-have. Ridge taxes **knobs**, not leftover. A t-test asks if leftover could have faked a number.
-
-That is why the voice feels like one notebook. It is **not** how you navigate. Folders are.
+**Choose and act** — priors, MCMC, rewards, bandits, and Q values.
+Start with [[01 prior]] or [[01 the loop]].
 
 ---
 
-## Page 5 — Same exam world, different piles
+## How to read a zine
 
-Hours, sleep, tutor, coffee — one story. **Not** one pile of people.
+Every zine is a small notebook:
 
-![in-03-rooms](assets/in-03-rooms.svg)
+1. A picture comes before the formula.
+2. The idea gets one plain-English sentence.
+3. Real numbers keep the story honest.
+4. The last page says when to use the method — and when to skip it.
 
-When a note says “same people,” it means **this pile**, not the whole vault.
+Read the first note in a sequence before its numbered sequels. The first note builds the picture; later notes change one thing: a tax, a walk, a camera, or a different kind of outcome.
 
-| pile | *y* | *n* (side fact) | typical folder |
-|---|---|---:|---|
-| **the line** | grade | 8 | regression 01, inference |
-| **twins** | grade + minutes | 30 | ridge → LARS, fundamentals 01–02 |
-| **pass / fail** | yes / no | 80 | classification, ensembles, metrics |
-| **unlabeled** | none | 80 | unsupervised |
-
-A grade is not a pass. No *y* is not a grade. Two crowds can both be 80.
+You do not need to finish one subject before trying another. Follow your curiosity, then come back when a word starts to feel familiar.
 
 ---
 
-## Page 6 — Mini recipe
+## The thread running through it
 
-1. This file is the **door**.
-2. Open a **folder**, then **01**.
-3. Picture, then the name. Cheat sheet last.
-4. “Same people” → which pile (page 5).
-5. If you wanted a derivation, you are in the wrong building. Leave by Use / skip.
+Most of these notes ask one quiet question:
 
-If you keep only one thing:
+> **How wrong was the guess?**
 
-> folders are shelves. read 01. leftover is the voice, not the map.
+The difference between what happened and what the model expected is the **leftover**. It can be a missed grade, a wrong prediction on a new person, a surprising next word, or the gap between what happened and what would have happened without an intervention.
+
+The methods differ in what they do with that miss. They fit a line, tax its knobs, split the crowd, walk downhill, redraw the people, or ask whether the pattern might have another cause.
 
 ---
 
-## Last page — cheat sheet
+## If you want a gentle first walk
 
-| word | meaning |
+1. [[01 linear regression]] — make a guess from a number.
+2. [[01 train test validate]] — ask whether the guess travels.
+3. [[01 logistic regression]] — turn a score into yes / no.
+4. [[01 gradient descent]] — see how a model changes its knobs.
+5. [[01 neural net]] — stack the same move a few times.
+
+Then go wherever the next question points.
+
+---
+
+## Cheat sheet
+
+| if you want to… | open… |
 |---|---|
-| folder | a shelf (`supervised learning/`, `fundamentals/`, …) |
-| 01 | first note in that family; sort order is reading order |
-| Use / skip | when to reach for it, when not |
-| leftover | real − guess (the voice) |
-| pile | the line / twins / pass-fail / unlabeled |
-
-**Also called** (in a room):
-
-| here | there |
-|---|---|
-| leftover | residual / error |
-| 01 | first sketchbook of a family |
-| zine | one note |
-
+| predict a number | [[01 linear regression]] |
+| predict a yes / no | [[01 logistic regression]] |
+| test a model on new people | [[01 train test validate]] |
+| understand a leftover | [[01 distributions]] |
+| learn how models change | [[01 gradient descent]] |
+| understand an LLM | [[01 neural net]] → [[04 LLM]] |
+| ask whether a pattern is a cause | [[01 confounding]] |
 
 ### Use / skip
 
-**Reach for it when**
+**Reach for this page** when you are new, unsure where to begin, or want the shortest route to a useful picture.
 
-- you just walked in
-- you mixed the piles
-- you are lost between folders
+**Skip it** once you know the question. Open the relevant zine and start drawing.
 
-**Skip it when**
-
-- you wanted a textbook
-- you wanted a chapter list as 01
-
-**Pays you:** the folder map, three honest starts. Permission not to finish one shelf before another.
-
-**Costs you:** no sklearn page — this is a map, not a fit. No derivation.
-
----
-
-*Front door. First folder: `supervised learning/regression/` — [[01 linear regression]].*
+*Pick a question. Open a sketchbook. Leave with one idea you can explain.*

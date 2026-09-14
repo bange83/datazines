@@ -21,8 +21,6 @@ Read [[01 linear regression]] and [[01 gradient descent]] first. Same exam *worl
 
 Bandits ([[02 bandits]]) have no next-state. The table, named: [[03 Q]].
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The machine changed jobs

@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 logistic regression]] and [[01 distributions]]. Coin with two faces → coin with many faces. Same exam world: now fail / pass / **honors**.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — Two rooms were easy

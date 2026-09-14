@@ -15,8 +15,6 @@ aliases:
 
 Read [[AGENTS.md]] for *how a note is shaped*. Read [[PATH.md]] for *what exists*. A human’s door is [[00 how to read this]]. This file is how the library becomes [datazines.com](https://datazines.com).
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — Decisions (do not reopen)

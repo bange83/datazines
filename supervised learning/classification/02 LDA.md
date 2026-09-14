@@ -20,8 +20,6 @@ aliases:
 
 Read [[01 logistic regression]] first. Same exam. Same hours and sleep. Different religion: logistic never drew the clouds. LDA **starts** with the clouds.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — You already classify. You modeled P(yes).

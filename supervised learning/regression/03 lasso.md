@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 linear regression]] then [[02 ridge regression]]. This is the sibling ridge almost introduced: the one that **fires people**.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — Ridge kept everyone

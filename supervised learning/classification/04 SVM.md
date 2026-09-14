@@ -19,8 +19,6 @@ aliases:
 
 Read [[01 logistic regression]] and [[02 LDA]] first. Same exam. Same hours and sleep. Logistic wanted **P(yes)**. LDA drew two blobs. This notebook wants a **fence**, and the widest gutter it can get.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — A cut is not enough

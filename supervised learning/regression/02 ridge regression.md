@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 linear regression]] first. This is the sequel: what to do when that line goes feral.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The line you already know

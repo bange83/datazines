@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 linear regression]] first. Same hours-and-grades world. Only now *y* is not a grade. *y* is **did they pass?**
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — Yes or no

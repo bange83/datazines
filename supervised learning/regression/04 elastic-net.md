@@ -18,8 +18,6 @@ aliases:
 
 Read [[03 lasso]] and [[02 ridge regression]] first. Elastic net is the compromise kid.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — Two good personalities, two bad habits
