@@ -61,6 +61,7 @@ Same pencils as always. Same “one idea per page.” New family = new folder at
 - [[02 bootstrap]] — redraw the people; the pile is leftover
 - [[01 lag trend season]] — yesterday is a lever; the calendar repeats
 - [[02 causal impact]] — actual − would-have, after a start date
+- [[03 control series]] — an unaffected series can narrow the would-have HDI; BSTS keeps the uncertainty
 - [[01 PCA]] — no y; turn the sausage; drop the thin axis
 - [[02 k-means]] — no y; paint k rooms; you pick k
 - [[01 train test validate]] — leftover on new people; if you tune, hide a third pile
@@ -87,7 +88,7 @@ Write **left to right**. Inside a wing, 01 is the ordinary idea.
 |---|---|---|---|
 | **1. Supervised** | `supervised learning/…` | line, S, tree | *standing* (SVM 04 now on the S-shelf) |
 | **2. Chance** | `probability/` then `inference/` | a distribution is a shape for leftovers | Gaussian, Bernoulli, Poisson; **beta standing**; sampling; SE; CI; t-test / p-value; bootstrap |
-| **3. Cause** | `causal/` | pattern ≠ mechanism (already a page) | *01–02 standing* (confounding, causal impact). DAGs / experiments later. BSTS lives under **time**, as the fat would-have — not a cause 01. |
+| **3. Cause** | `causal/` | pattern ≠ mechanism (already a page) | *01–03 standing* (confounding, causal impact, control series). DAGs / experiments later. BSTS lives here as the uncertain would-have — not a cause 01. |
 | **4. Walk** | `optimization/` | gradient descent | step size; local minima; SGD; MCMC (walk a *posterior*); Bayesian optimization as “search the knobs when the bowl is expensive” |
 | **5. Nets** | `neural nets/` | a tiny net | softmax; embeddings; attention; transformer / LLM (one sketchbook, not a career) |
 | **6. Time** | `time series/` | lag, trend, season | *01 standing*. Holdouts in time (already a page). Candidate sequels: ARIMA / ARIMAX (lag as a named leftover model); BSTS (would-have as a bump — engine for [[02 causal impact]], after [[02 MCMC]]). Not as 01. |

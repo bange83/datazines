@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img" aria-label="a good control narrows the posterior predictive band around the would-have">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.07"/></feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380" y="34" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">the same would-have, with less wandering</text>
+<path d="M 60,290 L 700,290" fill="none" stroke="#241c14" stroke-width="1.7"/>
+<path d="M 70,300 L 70,62" fill="none" stroke="#241c14" stroke-width="1.7"/>
+<path d="M 365,65 L 365,290" fill="none" stroke="#b44a28" stroke-width="1.6" stroke-dasharray="7 6" opacity="0.8"/>
+<text x="365" y="54" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#b44a28" text-anchor="middle">campaign</text>
+<path d="M 365,170 L 410,142 L 455,150 L 500,177 L 545,120 L 590,130 L 635,145 L 680,110 L 680,190 L 635,205 L 590,188 L 545,205 L 500,230 L 455,212 L 410,220 L 365,206 Z" fill="#3d5f86" opacity="0.13"/>
+<path d="M 365,185 L 410,160 L 455,168 L 500,195 L 545,143 L 590,153 L 635,167 L 680,140" fill="none" stroke="#3d5f86" stroke-width="2.4" stroke-dasharray="7 6"/>
+<path d="M 365,185 L 410,175 L 455,182 L 500,202 L 545,165 L 590,172 L 635,182 L 680,158" fill="none" stroke="#4f6d55" stroke-width="2.4" stroke-dasharray="7 6"/>
+<path d="M 365,185 L 410,154 L 455,160 L 500,190 L 545,136 L 590,146 L 635,160 L 680,132" fill="none" stroke="#4f6d55" stroke-width="2.4" stroke-dasharray="7 6"/>
+<path d="M 365,185 L 410,164 L 455,171 L 500,198 L 545,150 L 590,158 L 635,171 L 680,145" fill="none" stroke="#3d5f86" stroke-width="2.4" stroke-dasharray="7 6" opacity="0.75"/>
+<path d="M 365,185 L 410,160 L 455,167 L 500,195 L 545,143 L 590,152 L 635,166 L 680,139" fill="none" stroke="#3d5f86" stroke-width="2.4" stroke-dasharray="7 6"/>
+<path d="M 365,185 L 410,175 L 455,182 L 500,202 L 545,165 L 590,172 L 635,182 L 680,158" fill="none" stroke="#4f6d55" stroke-width="2.4" stroke-dasharray="7 6" opacity="0.75"/>
+<path d="M 365,185 L 410,168 L 455,175 L 500,198 L 545,153 L 590,162 L 635,174 L 680,148" fill="none" stroke="#4f6d55" stroke-width="2.4" stroke-dasharray="7 6"/>
+<text x="155" y="110" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#3d5f86" text-anchor="middle">wide without a control</text>
+<text x="560" y="260" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#4f6d55" text-anchor="middle">narrower with a good control</text>
+<text x="380" y="330" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">HDI = where the posterior pile is densest</text>
+</svg>

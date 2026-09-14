@@ -90,7 +90,7 @@ People call that engine **BSTS** — Bayesian structural time series. Same furni
 
 > impact = actual − would-have.
 
-The fork does not go away because the dashed line got shoulders. This notebook keeps the line + leftover replay. The bump is the same job, louder.
+The fork does not go away because the dashed line got shoulders. This notebook keeps the line + leftover replay. The bump is the same job, louder. A good control can make that bump narrower: [[03 control series]].
 
 ---
 

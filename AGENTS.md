@@ -86,6 +86,7 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 |--:|---|---|
 | 01 | [[01 confounding]] | pattern ≠ mechanism; a loud *b* can be a passenger |
 | 02 | [[02 causal impact]] | actual − would-have, after a start date |
+| 03 | [[03 control series]] | control narrows the would-have HDI; BSTS keeps the uncertainty |
 
 **Unsupervised (path page 4, now standing):**
 

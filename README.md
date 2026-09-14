@@ -40,7 +40,7 @@ optimization/          01     gradient descent
 probability/           01–02  distributions, beta (coin’s cousin)
 neural nets/           01–04  tiny net, embeddings, attention, one LLM
 inference/             01–02  t-test, bootstrap (leftover replayed)
-causal/                01–02  confounding, causal impact (actual − would-have)
+causal/                01–03  confounding, causal impact, control series (HDI)
 time series/           01     lag, trend, season
 unsupervised/          01–02  PCA, k-means (no y; sausage, then rooms)
 fundamentals/            01–03  train / test; bias vs variance; metrics
