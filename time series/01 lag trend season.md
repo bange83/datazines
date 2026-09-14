@@ -16,7 +16,7 @@ aliases:
 
 ![ts-00-hero](../assets/ts-00-hero.svg)
 
-One class, 24 weeks. Each week: **average hours studied**. Not eight people in a cloud. Extra office hours in week 17 is later ([[02 causal impact]]). This notebook is the furniture that campaign sits on.
+One class, 24 weeks. Each week: **average hours studied**. Not eight people in a cloud. Extra office hours in week 17 is later ([[02 causal impact]]). This notebook is the furniture that campaign sits on; ordinary next-week forecasting starts at [[02 forecasting]].
 
 ---
 
@@ -207,4 +207,4 @@ Shuffle looks kinder than the future (0.29 vs −0.28). Season turns the future 
 
 ---
 
-*Yesterday is a lever. The gap after a start date: [[02 causal impact]].*
+*Yesterday is a lever. The gap after a start date: [[02 causal impact]]. Next: [[02 forecasting]].*

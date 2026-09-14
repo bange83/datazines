@@ -61,7 +61,11 @@ Same pencils as always. Same “one idea per page.” New family = new folder at
 - [[02 bootstrap]] — redraw the people; the pile is leftover
 - [[03 ANOVA]] — three piles; F compares between wobble with within wobble
 - [[04 multiple comparisons]] — Bonferroni and Tukey guard many looks
+- [[05 confidence intervals]] — a range, not a trophy; CI ≠ prediction interval ≠ HDI
 - [[01 lag trend season]] — yesterday is a lever; the calendar repeats
+- [[02 forecasting]] — future path; horizon and holdout stay honest
+- [[03 ARIMA]] — memory in the leftover; difference, echo, mistake
+- [[04 ARIMAX]] — ARIMA plus an outside lever known in the future
 - [[02 causal impact]] — actual − would-have, after a start date
 - [[03 control series]] — an unaffected series can narrow the would-have HDI; BSTS keeps the uncertainty
 - [[01 PCA]] — no y; turn the sausage; drop the thin axis
@@ -89,11 +93,11 @@ Write **left to right**. Inside a wing, 01 is the ordinary idea.
 | wing | folder (suggested) | 01 is | later rooms (not all at once) |
 |---|---|---|---|
 | **1. Supervised** | `supervised learning/…` | line, S, tree | *standing* (SVM 04 now on the S-shelf) |
-| **2. Chance** | `probability/` then `inference/` | a distribution is a shape for leftovers | Gaussian, Bernoulli, Poisson; **beta standing**; sampling; SE; CI; t-test / p-value; bootstrap; ANOVA; multiple comparisons |
+| **2. Chance** | `probability/` then `inference/` | a distribution is a shape for leftovers | Gaussian, Bernoulli, Poisson; **beta standing**; sampling; SE; CI; t-test / p-value; bootstrap; ANOVA; multiple comparisons; CI vs HDI |
 | **3. Cause** | `causal/` | pattern ≠ mechanism (already a page) | *01–03 standing* (confounding, causal impact, control series). DAGs / experiments later. BSTS lives here as the uncertain would-have — not a cause 01. |
 | **4. Walk** | `optimization/` | gradient descent | step size; local minima; SGD; MCMC (walk a *posterior*); Bayesian optimization as “search the knobs when the bowl is expensive” |
 | **5. Nets** | `neural nets/` | a tiny net | softmax; embeddings; attention; transformer / LLM (one sketchbook, not a career) |
-| **6. Time** | `time series/` | lag, trend, season | *01 standing*. Holdouts in time (already a page). Candidate sequels: ARIMA / ARIMAX (lag as a named leftover model); BSTS (would-have as a bump — engine for [[02 causal impact]], after [[02 MCMC]]). Not as 01. |
+| **6. Time** | `time series/` | lag, trend, season | *01–04 standing*: forecasting, ARIMA, ARIMAX. Later: richer seasonality, state-space models, BSTS (would-have as a bump — engine for [[02 causal impact]], after [[02 MCMC]]). |
 | **7. Unsupervised** | `unsupervised/` | “no y” | PCA as rotating the cloud; k-means; a page on embeddings you already have |
 | **8. Fundamentals** | `fundamentals/` | leftover on **new** people | *01–03 standing* (train/test, bias–variance, metrics). Significance already lives in [[01 t-test]] |
 | **9. Bayes** | `bayes/` | a prior is a starting costume | *01–02 standing* (prior, MCMC). A library that walks is an engine, not 03 |
@@ -107,15 +111,15 @@ Rooms on the map get written. Short. In the wing they belong to. **Which remaini
 
 ![pa-03-next](assets/pa-03-next.svg)
 
-**Written:** [[00 how to read this]] · [[01 gradient descent]] · [[01 distributions]] · [[02 beta]] · [[03 softmax]] · [[01 neural net]] · [[02 embeddings]] · [[03 attention]] · [[04 LLM]] · [[01 t-test]] · [[02 bootstrap]] · [[03 ANOVA]] · [[04 multiple comparisons]] · [[01 confounding]] · [[02 causal impact]] · [[03 control series]] · [[01 lag trend season]] · [[01 PCA]] · [[02 k-means]] · [[01 train test validate]] · [[02 bias variance]] · [[03 metrics]] · [[04 SVM]] · [[01 prior]] · [[02 MCMC]] · [[01 the loop]] · [[02 bandits]] · [[03 Q]]
+**Written:** [[00 how to read this]] · [[01 gradient descent]] · [[01 distributions]] · [[02 beta]] · [[03 softmax]] · [[01 neural net]] · [[02 embeddings]] · [[03 attention]] · [[04 LLM]] · [[01 t-test]] · [[02 bootstrap]] · [[03 ANOVA]] · [[04 multiple comparisons]] · [[05 confidence intervals]] · [[01 confounding]] · [[02 causal impact]] · [[03 control series]] · [[01 lag trend season]] · [[02 forecasting]] · [[03 ARIMA]] · [[04 ARIMAX]] · [[01 PCA]] · [[02 k-means]] · [[01 train test validate]] · [[02 bias variance]] · [[03 metrics]] · [[04 SVM]] · [[01 prior]] · [[02 MCMC]] · [[01 the loop]] · [[02 bandits]] · [[03 Q]]
 
 No *y*. The sausage is rotated. The rooms are painted. The loop has a table.
 
 The next work should happen in this order:
 
 1. **Make the first walk excellent.** Treat [[00 how to read this]] → [[01 linear regression]] → [[01 logistic regression]] → [[01 train test validate]] as the product’s front path. Check links, SVGs, math, mobile layout, page titles, and the first sentence on a real phone. [[PUBLISH.md]] is the desk for this work.
-2. **Fill the highest-value gaps.** A confidence interval / A–B test would complete the “is this real?” route after [[04 multiple comparisons]]. A forecast sequel would give [[01 lag trend season]] a useful next step. An explainability note would connect tree and ensemble predictions to the question “why this answer?”
-3. **Add side doors only when they earn their place.** Tokenizer and context window after [[04 LLM]]; ARIMA after time; BSTS after [[02 causal impact]] and [[02 MCMC]]; policy after [[03 Q]]; k-nearest neighbours or naive Bayes after the existing classification notes.
+2. **Fill the highest-value gaps.** An A–B test would complete the “is this real?” route after [[05 confidence intervals]]. An explainability note would connect tree and ensemble predictions to the question “why this answer?”
+3. **Add side doors only when they earn their place.** Tokenizer and context window after [[04 LLM]]; richer state-space time models after [[04 ARIMAX]]; BSTS after [[02 causal impact]] and [[02 MCMC]]; policy after [[03 Q]]; k-nearest neighbours or naive Bayes after the existing classification notes.
 
 Choose the next note by the gap it closes for a reader. Do not write a brand-name note merely because the brand is famous. Keep every sequel shorter than its 01, and do not shorten ridge / lasso / LARS unless asked.
 
@@ -152,8 +156,8 @@ When someone says “we also need…” — they are usually **already on the ma
 | reinforcement learning | RL, after leftover as *reward* makes sense — 01 is the loop |
 | causal impact | causal, after chance + a little time |
 | A/B test | inference + cause (experiment) |
-| forecast | time series ([[01 lag trend season]]) |
-| ARIMA / ARIMAX | time, after lag/trend/season — leftover with a named memory. Not 01 |
+| forecast | time series ([[02 forecasting]]) |
+| ARIMA / ARIMAX | time, after lag/trend/season — leftover with a named memory and, for X, a future-known lever |
 | BSTS, CausalImpact engine | time sequel + [[02 MCMC]]; same gap as [[02 causal impact]]. Not 01 |
 | BEST (Bayesian estimation vs t) | inference sequel, after [[01 t-test]] + [[01 prior]]. Not PyMC as 01 |
 | “why did the model do that?” | start: *b*, Gini gain, importances; later: a small explainability page — not SHAP as 01 |
@@ -183,9 +187,9 @@ If you keep only one thing:
 |---|---|
 | building | data-science encyclopedia, sketchbook voice |
 | LLM | one room, nets wing, after GD + softmax + a tiny net |
-| standing | supervised + GD + distributions + softmax + tiny net + embeddings + attention + LLM + t-test + bootstrap + ANOVA + multiple comparisons + cause + control series + time + impact + PCA + k-means + train/test + bias–variance + **metrics** |
-| **next** | the first walk: 00 · linear 01 · logistic 01 · train/test 01; then fill the highest-value gaps |
-| candidate rooms | **inference:** confidence intervals / A–B · **time:** forecast / ARIMA/X · **cause:** experiments / DAGs · **nets:** tokenizer / context · **RL:** policy · **classification:** k-NN / naive Bayes |
+| standing | supervised + GD + distributions + softmax + tiny net + embeddings + attention + LLM + t-test + bootstrap + ANOVA + multiple comparisons + CI / HDI + cause + control series + time + forecast + ARIMA/X + impact + PCA + k-means + train/test + bias–variance + **metrics** |
+| **next** | make the first walk excellent; then fill the next reader gap |
+| candidate rooms | **cause:** experiments / DAGs · **time:** richer state-space · **nets:** tokenizer / context · **RL:** policy · **classification:** k-NN / naive Bayes |
 | don’t | start PyMC / PPO / BSTS as 01; fatten one brand; write notes in German |
 | style | [[AGENTS.md]] |
 

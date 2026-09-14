@@ -16,7 +16,7 @@ aliases:
 
 ![ci-00-hero](../assets/ci-00-hero.svg)
 
-Read [[01 confounding]] and [[01 lag trend season]] first. Same exam world: 24 weeks of hours. Week 17 they add extra office hours — a **campaign**. The fork still applies. One series, one start date, a would-have.
+Read [[01 confounding]], [[01 lag trend season]], and [[02 forecasting]] first. An ordinary forecast asks what comes next. This note asks for the missing **no-campaign** path: 24 weeks of hours, with extra office hours starting in week 17. The fork still applies.
 
 ---
 
@@ -32,7 +32,7 @@ The question is:
 
 > after week 17, how much higher than **the weeks we would have had**?
 
-Would-have is a series. Fit it on the past. Project it through the campaign. The **gap** is the impact.
+Would-have is a series. Fit it on the past. Project it through the campaign. The **gap** is the impact. This looks like forecasting, but the target is special: not the most likely future, the future **without the intervention**.
 
 ---
 
@@ -64,7 +64,7 @@ Fit the time-01 line **only on weeks 1–16**: week-number plus the 4-week dummi
 
 Mean gap **+0.67**. Planted was +0.90. Short past, leftover, a sketch — not a scandal. Week 24 is still a **break**. Season was in the counterfactual. Naive would have called the rebound the campaign.
 
-People call this **causal impact**. Ugly product name. Friendly job: *gap vs a series that never saw the campaign.*
+People call this **causal impact**. Ugly product name. Friendly job: *gap vs a series that never saw the campaign.* Ordinary forecasting is the neighbour; this is a counterfactual forecast.
 
 ---
 
@@ -86,7 +86,7 @@ Bootstrap the **pre** leftover, 2000 bags ([[02 bootstrap]]): mean gap 0.51 to 0
 
 The dashed line is **one** guess. A fatter would-have is a **bump** on every future week: start somewhere ([[01 prior]]), walk the height ([[02 MCMC]]). Then the gap is a pile, not a point.
 
-People call that engine **BSTS** — Bayesian structural time series. Same furniture as time 01 (trend, season, lag), with a posterior instead of one least-squares line. Same sentence:
+People call that engine **BSTS** — Bayesian structural time series. Same neighbourhood as ARIMA / ARIMAX ([[03 ARIMA]] / [[04 ARIMAX]]): trend, season, memory, and sometimes outside series. But the job here is the no-campaign counterfactual, not simply next-week accuracy. It carries a posterior instead of one least-squares line. Same sentence:
 
 > impact = actual − would-have.
 

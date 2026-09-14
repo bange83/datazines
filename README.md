@@ -15,7 +15,7 @@ Each note is a short notebook, not a textbook chapter:
 - a tiny sklearn (or numpy) example with **real** printed numbers
 - a cheat sheet that says when to use the method and when to skip it
 
-House style lives in [`AGENTS.md`](AGENTS.md). The map of shelves lives in [`PATH.md`](PATH.md). **Freeze:** no new rooms. The product is **[datazines.com](https://datazines.com)**. Publishing: [`PUBLISH.md`](PUBLISH.md).
+House style lives in [`AGENTS.md`](AGENTS.md). The map of shelves lives in [`PATH.md`](PATH.md). The current receipt covers inference 01–05, cause 01–03, and time 01–04. The product is **[datazines.com](https://datazines.com)**. Publishing: [`PUBLISH.md`](PUBLISH.md).
 
 ## How to read
 
@@ -39,21 +39,21 @@ supervised learning/
 optimization/          01     gradient descent
 probability/           01–02  distributions, beta (coin’s cousin)
 neural nets/           01–04  tiny net, embeddings, attention, one LLM
-inference/             01–04  t-test, bootstrap, ANOVA, multiple comparisons
+inference/             01–05  t-test, bootstrap, ANOVA, multiple comparisons, confidence intervals
 causal/                01–03  confounding, causal impact, control series (HDI)
-time series/           01     lag, trend, season
+time series/           01–04  lag, trend, season; forecasting; ARIMA; ARIMAX
 unsupervised/          01–02  PCA, k-means (no y; sausage, then rooms)
 fundamentals/            01–03  train / test; bias vs variance; metrics
 bayes/                 01–02  prior; MCMC (walk the height)
 rl/                    01–03  the loop; bandits; Q (the table)
 assets/                drawings (prefix per series: lr-, rr-, dt-, nn-, …)
 scripts/note_to_html.py  old press (do not commit html/). Site: PUBLISH.md
-AGENTS.md              how a note is shaped (freeze: no new rooms)
+AGENTS.md              how a note is shaped and the current receipt
 PATH.md                map of what exists
 PUBLISH.md             Quartz + GitHub Pages; markdown stays source
 ```
 
-**Freeze:** no new wings. Next: fix, refine, then magazine leaves on datazines.com. [`PUBLISH.md`](PUBLISH.md).
+**Next:** fix, refine, publish, then add the next reader-useful room on the map. [`PUBLISH.md`](PUBLISH.md).
 
 ## Viewing
 

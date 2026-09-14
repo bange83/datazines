@@ -14,9 +14,11 @@ aliases:
 > [!abstract] In one sentence
 > A t-test compares two means; **ANOVA** compares three or more by asking whether the groups sit farther apart than people wobble inside them.
 
-![in-06-anova](../assets/in-06-anova.svg)
+![iv-06-anova](../assets/iv-06-anova.svg)
 
 Read [[01 t-test]] first. Same exam world, new question: three study routines — solo, buddy, tutor. Which piles of grades are genuinely apart, and which gaps are just leftover wobble?
+
+**ANOVA** means **analysis of variance**. The name sounds backwards because the test uses variation to answer a question about means: are the group means separated by more than ordinary within-group noise?
 
 ---
 
@@ -53,7 +55,7 @@ $$F = \frac{27.75 / 2}{14.88 / 21} = \textbf{19.59}$$
 
 Large *F* means the pile centres are far apart relative to the inside rattle.
 
-![in-07-between-within](../assets/in-07-between-within.svg)
+![iv-07-between-within](../assets/iv-07-between-within.svg)
 
 ---
 

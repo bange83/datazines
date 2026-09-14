@@ -17,7 +17,7 @@ aliases:
 > [!abstract] In one sentence
 > If you ask enough questions, leftover eventually says **yes** by accident; Bonferroni and Tukey HSD help keep the family’s false alarms under control.
 
-![in-08-many-looks](../assets/in-08-many-looks.svg)
+![iv-08-many-looks](../assets/iv-08-many-looks.svg)
 
 Read [[03 ANOVA]] first. ANOVA told us that at least one of three routines differs. Now we want to ask **which pairs** without pretending the first raw *p* was the only look.
 
@@ -71,7 +71,7 @@ Or multiply each raw *p* by three and compare with 0.05. The three adjusted valu
 
 Bonferroni works for any small list of planned questions. It is easy to explain. It can be conservative: it may miss a real difference when the family gets large.
 
-![in-09-bonferroni](../assets/in-09-bonferroni.svg)
+![iv-09-bonferroni](../assets/iv-09-bonferroni.svg)
 
 ---
 
@@ -201,4 +201,4 @@ The raw values look more impressive because they paid no family fee. Bonferroni 
 
 ---
 
-*Inference 04. ANOVA found the smoke. Bonferroni and Tukey check the rooms without crying wolf. Next: another question, not another fishing trip.*
+*Inference 04. ANOVA found the smoke. Bonferroni and Tukey check the rooms without crying wolf. Next: [[05 confidence intervals]] — name the range’s promise.*
