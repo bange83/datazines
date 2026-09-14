@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: null
   locale: en-US
-  baseUrl: bange83.github.io/datazines
+  baseUrl: datazines.com
   ignorePatterns:
     - private
     - templates
@@ -138,7 +138,7 @@ plugins:
   - source: "@quartz-community/og-image"
     enabled: false
   - source: "@quartz-community/cname"
-    enabled: false
+    enabled: true
   - source: "@quartz-community/canvas-page"
     enabled: false
   - source: "@quartz-community/content-page"
