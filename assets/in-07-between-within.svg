@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300" role="img" aria-label="ANOVA divides between variation by within variation">
+<defs><filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.07"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter></defs>
+<rect width="760" height="300" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="300" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380" y="38" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#7a6e5e" text-anchor="middle">F asks which wobble is louder.</text>
+<rect x="55" y="80" width="270" height="150" rx="14" fill="#c4a35a" opacity="0.14" stroke="#c4a35a" stroke-width="2"/>
+<text x="190" y="125" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="21" fill="#8b6b21" text-anchor="middle">between</text>
+<text x="190" y="165" font-family="Georgia, serif" font-size="20" fill="#241c14" text-anchor="middle">27.75 / 2</text>
+<text x="190" y="200" font-family="Georgia, serif" font-size="15" fill="#7a6e5e" text-anchor="middle">group means vs grand mean</text>
+<text x="380" y="170" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="28" fill="#241c14" text-anchor="middle">÷</text>
+<rect x="435" y="80" width="270" height="150" rx="14" fill="#3d5f86" opacity="0.12" stroke="#3d5f86" stroke-width="2"/>
+<text x="570" y="125" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="21" fill="#3d5f86" text-anchor="middle">within</text>
+<text x="570" y="165" font-family="Georgia, serif" font-size="20" fill="#241c14" text-anchor="middle">14.88 / 21</text>
+<text x="570" y="200" font-family="Georgia, serif" font-size="15" fill="#7a6e5e" text-anchor="middle">student wobble in each pile</text>
+<text x="380" y="270" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="19" fill="#b44a28" text-anchor="middle">F = 19.59  →  a loud smoke alarm</text>
+</svg>

@@ -59,6 +59,8 @@ Same pencils as always. Same “one idea per page.” New family = new folder at
 - [[01 t-test]] — could leftover have faked this number?
 - [[01 confounding]] — pattern ≠ mechanism; a loud *b* can be a passenger
 - [[02 bootstrap]] — redraw the people; the pile is leftover
+- [[03 ANOVA]] — three piles; F compares between wobble with within wobble
+- [[04 multiple comparisons]] — Bonferroni and Tukey guard many looks
 - [[01 lag trend season]] — yesterday is a lever; the calendar repeats
 - [[02 causal impact]] — actual − would-have, after a start date
 - [[03 control series]] — an unaffected series can narrow the would-have HDI; BSTS keeps the uncertainty
@@ -87,7 +89,7 @@ Write **left to right**. Inside a wing, 01 is the ordinary idea.
 | wing | folder (suggested) | 01 is | later rooms (not all at once) |
 |---|---|---|---|
 | **1. Supervised** | `supervised learning/…` | line, S, tree | *standing* (SVM 04 now on the S-shelf) |
-| **2. Chance** | `probability/` then `inference/` | a distribution is a shape for leftovers | Gaussian, Bernoulli, Poisson; **beta standing**; sampling; SE; CI; t-test / p-value; bootstrap |
+| **2. Chance** | `probability/` then `inference/` | a distribution is a shape for leftovers | Gaussian, Bernoulli, Poisson; **beta standing**; sampling; SE; CI; t-test / p-value; bootstrap; ANOVA; multiple comparisons |
 | **3. Cause** | `causal/` | pattern ≠ mechanism (already a page) | *01–03 standing* (confounding, causal impact, control series). DAGs / experiments later. BSTS lives here as the uncertain would-have — not a cause 01. |
 | **4. Walk** | `optimization/` | gradient descent | step size; local minima; SGD; MCMC (walk a *posterior*); Bayesian optimization as “search the knobs when the bowl is expensive” |
 | **5. Nets** | `neural nets/` | a tiny net | softmax; embeddings; attention; transformer / LLM (one sketchbook, not a career) |
@@ -105,14 +107,14 @@ Rooms on the map get written. Short. In the wing they belong to. **Which remaini
 
 ![pa-03-next](assets/pa-03-next.svg)
 
-**Written:** [[00 how to read this]] · [[01 gradient descent]] · [[01 distributions]] · [[02 beta]] · [[03 softmax]] · [[01 neural net]] · [[02 embeddings]] · [[03 attention]] · [[04 LLM]] · [[01 t-test]] · [[01 confounding]] · [[02 bootstrap]] · [[01 lag trend season]] · [[02 causal impact]] · [[01 PCA]] · [[02 k-means]] · [[01 train test validate]] · [[02 bias variance]] · [[03 metrics]] · [[04 SVM]] · [[01 prior]] · [[02 MCMC]] · [[01 the loop]] · [[02 bandits]] · [[03 Q]]
+**Written:** [[00 how to read this]] · [[01 gradient descent]] · [[01 distributions]] · [[02 beta]] · [[03 softmax]] · [[01 neural net]] · [[02 embeddings]] · [[03 attention]] · [[04 LLM]] · [[01 t-test]] · [[02 bootstrap]] · [[03 ANOVA]] · [[04 multiple comparisons]] · [[01 confounding]] · [[02 causal impact]] · [[03 control series]] · [[01 lag trend season]] · [[01 PCA]] · [[02 k-means]] · [[01 train test validate]] · [[02 bias variance]] · [[03 metrics]] · [[04 SVM]] · [[01 prior]] · [[02 MCMC]] · [[01 the loop]] · [[02 bandits]] · [[03 Q]]
 
 No *y*. The sausage is rotated. The rooms are painted. The loop has a table.
 
 The next work should happen in this order:
 
 1. **Make the first walk excellent.** Treat [[00 how to read this]] → [[01 linear regression]] → [[01 logistic regression]] → [[01 train test validate]] as the product’s front path. Check links, SVGs, math, mobile layout, page titles, and the first sentence on a real phone. [[PUBLISH.md]] is the desk for this work.
-2. **Fill the highest-value gaps.** A confidence interval / A–B test would complete the “is this real?” route after [[01 t-test]]. A forecast sequel would give [[01 lag trend season]] a useful next step. An explainability note would connect tree and ensemble predictions to the question “why this answer?”
+2. **Fill the highest-value gaps.** A confidence interval / A–B test would complete the “is this real?” route after [[04 multiple comparisons]]. A forecast sequel would give [[01 lag trend season]] a useful next step. An explainability note would connect tree and ensemble predictions to the question “why this answer?”
 3. **Add side doors only when they earn their place.** Tokenizer and context window after [[04 LLM]]; ARIMA after time; BSTS after [[02 causal impact]] and [[02 MCMC]]; policy after [[03 Q]]; k-nearest neighbours or naive Bayes after the existing classification notes.
 
 Choose the next note by the gap it closes for a reader. Do not write a brand-name note merely because the brand is famous. Keep every sequel shorter than its 01, and do not shorten ridge / lasso / LARS unless asked.
@@ -181,7 +183,7 @@ If you keep only one thing:
 |---|---|
 | building | data-science encyclopedia, sketchbook voice |
 | LLM | one room, nets wing, after GD + softmax + a tiny net |
-| standing | supervised + GD + distributions + softmax + tiny net + embeddings + attention + LLM + t-test + cause + bootstrap + time + impact + PCA + k-means + train/test + bias–variance + **metrics** |
+| standing | supervised + GD + distributions + softmax + tiny net + embeddings + attention + LLM + t-test + bootstrap + ANOVA + multiple comparisons + cause + control series + time + impact + PCA + k-means + train/test + bias–variance + **metrics** |
 | **next** | the first walk: 00 · linear 01 · logistic 01 · train/test 01; then fill the highest-value gaps |
 | candidate rooms | **inference:** confidence intervals / A–B · **time:** forecast / ARIMA/X · **cause:** experiments / DAGs · **nets:** tokenizer / context · **RL:** policy · **classification:** k-NN / naive Bayes |
 | don’t | start PyMC / PPO / BSTS as 01; fatten one brand; write notes in German |

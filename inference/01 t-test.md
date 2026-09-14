@@ -197,4 +197,4 @@ Mean vs 5: leftover shrugs (p = 0.71; 5 sits in 3.72–6.78). Slope vs 0: leftov
 
 ---
 
-*Inference 01. Same eight grades, now with a judge. The pile without a bell: [[02 bootstrap]]. The fork: [[01 confounding]]. Chance costume still: [[01 distributions]].*
+*Inference 01. Same eight grades, now with a judge. The pile without a bell: [[02 bootstrap]]. Three piles next: [[03 ANOVA]]. The fork: [[01 confounding]]. Chance costume still: [[01 distributions]].*

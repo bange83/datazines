@@ -73,6 +73,8 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | 02 | [[02 beta]] | coin’s cousin: a bump on unknown P |
 | 01 | [[01 t-test]] | could leftover have faked this number? |
 | 02 | [[02 bootstrap]] | redraw the people; the pile is leftover |
+| 03 | [[03 ANOVA]] | between-group wobble vs within-group wobble |
+| 04 | [[04 multiple comparisons]] | many looks; Bonferroni / Tukey guard the family |
 
 **Time (path page 4, now standing):**
 

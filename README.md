@@ -39,7 +39,7 @@ supervised learning/
 optimization/          01     gradient descent
 probability/           01–02  distributions, beta (coin’s cousin)
 neural nets/           01–04  tiny net, embeddings, attention, one LLM
-inference/             01–02  t-test, bootstrap (leftover replayed)
+inference/             01–04  t-test, bootstrap, ANOVA, multiple comparisons
 causal/                01–03  confounding, causal impact, control series (HDI)
 time series/           01     lag, trend, season
 unsupervised/          01–02  PCA, k-means (no y; sausage, then rooms)

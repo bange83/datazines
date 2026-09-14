@@ -176,4 +176,4 @@ First bag is a loud class (mean 6.50) — leftover, one replay. Across 2000, slo
 
 ---
 
-*Inference 02. Same leftover, replayed. Forests bagged to vote; here the bag judges. Next empty 01: a little time.*
+*Inference 02. Same leftover, replayed. Forests bagged to vote; here the bag judges. Next: [[03 ANOVA]] — three piles, one F.*
