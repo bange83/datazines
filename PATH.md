@@ -19,7 +19,7 @@ aliases:
 
 House style lives in [[AGENTS.md]]. A human’s front door is [[00 how to read this]] — not this file.
 
-**Freeze (6 Sep 2026):** this file is a **map of what exists**, and the **parking lot** for ideas until the freeze lifts. No new rooms tonight. Site: [[PUBLISH.md]].
+This file is a **map of what exists** and a short list of sensible next steps. It is not a syllabus and it is not a gate. Site: [[PUBLISH.md]].
 
 ---
 
@@ -45,9 +45,9 @@ Same pencils as always. Same “one idea per page.” New family = new folder at
 - Classification 01–04: S, blobs, **softmax**, SVM / margin
 - Ensembles 01–04: tree, choir, leftover-chain, boosting dialects
 
-**Also standing (path page 4, done):**
+**Also standing:**
 
-- [[00 how to read this]] — front door: folders are shelves, read 01
+- [[00 how to read this]] — front door: start with a question, leave with one idea
 - [[01 gradient descent]] — walk the bowl
 - [[01 distributions]] — bell, coin, counts
 - [[02 beta]] — coin’s cousin: a bump on unknown P
@@ -90,17 +90,17 @@ Write **left to right**. Inside a wing, 01 is the ordinary idea.
 | **3. Cause** | `causal/` | pattern ≠ mechanism (already a page) | *01–02 standing* (confounding, causal impact). DAGs / experiments later. BSTS lives under **time**, as the fat would-have — not a cause 01. |
 | **4. Walk** | `optimization/` | gradient descent | step size; local minima; SGD; MCMC (walk a *posterior*); Bayesian optimization as “search the knobs when the bowl is expensive” |
 | **5. Nets** | `neural nets/` | a tiny net | softmax; embeddings; attention; transformer / LLM (one sketchbook, not a career) |
-| **6. Time** | `time series/` | lag, trend, season | *01 standing*. Holdouts in time (already a page). **Parked:** ARIMA / ARIMAX (lag as a named leftover model); BSTS (would-have as a bump — engine for [[02 causal impact]], after [[02 MCMC]]). Not as 01. |
+| **6. Time** | `time series/` | lag, trend, season | *01 standing*. Holdouts in time (already a page). Candidate sequels: ARIMA / ARIMAX (lag as a named leftover model); BSTS (would-have as a bump — engine for [[02 causal impact]], after [[02 MCMC]]). Not as 01. |
 | **7. Unsupervised** | `unsupervised/` | “no y” | PCA as rotating the cloud; k-means; a page on embeddings you already have |
 | **8. Fundamentals** | `fundamentals/` | leftover on **new** people | *01–03 standing* (train/test, bias–variance, metrics). Significance already lives in [[01 t-test]] |
 | **9. Bayes** | `bayes/` | a prior is a starting costume | *01–02 standing* (prior, MCMC). A library that walks is an engine, not 03 |
 | **10. Act** | `rl/` | state, action, reward, next state | *01–03 standing* (loop, bandits, Q). Policy later. Not a brand as 04 |
 
-Rooms on the map get written. Short. In the wing they belong to. **Which remaining room is next is not locked** — pick one when a session starts. Do not omit a wing because it is fancy. Do not start Bayes from PyMC or RL from PPO.
+Rooms on the map get written. Short. In the wing they belong to. **Which remaining room is next is not locked** — choose it by reader value, not novelty. Do not omit a wing because it is fancy. Do not start Bayes from PyMC or RL from PPO.
 
 ---
 
-## Page 4 — The rooms stand. Freeze.
+## Page 4 — What comes next
 
 ![pa-03-next](assets/pa-03-next.svg)
 
@@ -108,7 +108,13 @@ Rooms on the map get written. Short. In the wing they belong to. **Which remaini
 
 No *y*. The sausage is rotated. The rooms are painted. The loop has a table.
 
-**Freeze:** do not write any new 01 until the freeze lifts. Park ideas on this page (time row, cheat sheet). Next work is **fix / refine**, then the desk: [[PUBLISH.md]]. Ridge / lasso / LARS: do not shorten unless asked.
+The next work should happen in this order:
+
+1. **Make the first walk excellent.** Treat [[00 how to read this]] → [[01 linear regression]] → [[01 logistic regression]] → [[01 train test validate]] as the product’s front path. Check links, SVGs, math, mobile layout, page titles, and the first sentence on a real phone. [[PUBLISH.md]] is the desk for this work.
+2. **Fill the highest-value gaps.** A confidence interval / A–B test would complete the “is this real?” route after [[01 t-test]]. A forecast sequel would give [[01 lag trend season]] a useful next step. An explainability note would connect tree and ensemble predictions to the question “why this answer?”
+3. **Add side doors only when they earn their place.** Tokenizer and context window after [[04 LLM]]; ARIMA after time; BSTS after [[02 causal impact]] and [[02 MCMC]]; policy after [[03 Q]]; k-nearest neighbours or naive Bayes after the existing classification notes.
+
+Choose the next note by the gap it closes for a reader. Do not write a brand-name note merely because the brand is famous. Keep every sequel shorter than its 01, and do not shorten ridge / lasso / LARS unless asked.
 
 ---
 
@@ -155,8 +161,8 @@ Do not start a wing from the summit. Causal impact without confounding is a demo
 
 ## Page 7 — How to walk (for future sessions)
 
-1. Open [[PUBLISH.md]] for the site. During the freeze, this file is a map, not a to-do.
-2. Do not start a new 01. Sequels that already exist stay short. Do not shorten ridge / lasso / LARS unless asked.
+1. Open [[PUBLISH.md]] for the site, and use the first walk on page 4 as the acceptance test.
+2. Before writing a new room, ask which reader question it answers. Sequels that already exist stay short. Do not shorten ridge / lasso / LARS unless asked.
 3. Same story when the wing allows it (exam / grades) until the idea *needs* a new story (tokens, time, reward).
 4. Update the shelf table in [[AGENTS.md]] when a note lands. Update **page 2 of this file** when a wing’s 01 exists.
 5. If a topic is shiny (SVM, MCMC, PyMC, PPO): ask “which wing, which 01 does it need?” If the 01 is missing, write that first. Then write the topic **short**. Do not leave it off the shelf because it is fancy.
@@ -164,7 +170,7 @@ Do not start a wing from the summit. Causal impact without confounding is a demo
 
 If you keep only one thing:
 
-> encyclopedia stands. freeze the rooms. next: paper in a browser.
+> Make the first walk excellent. Then add the next room that removes a real blank spot.
 
 ---
 
@@ -175,16 +181,16 @@ If you keep only one thing:
 | building | data-science encyclopedia, sketchbook voice |
 | LLM | one room, nets wing, after GD + softmax + a tiny net |
 | standing | supervised + GD + distributions + softmax + tiny net + embeddings + attention + LLM + t-test + cause + bootstrap + time + impact + PCA + k-means + train/test + bias–variance + **metrics** |
-| **next** | **freeze** — polish notes, then [[PUBLISH.md]] |
-| deferred | **time:** ARIMA/X · BSTS (would-have bump) · **inference:** BEST · **RL:** policy page · k-NN · naive Bayes · A/B — not until freeze lifts |
-| don’t | new wings; start PyMC / PPO / BSTS as 01; fatten one brand; write notes in German |
+| **next** | the first walk: 00 · linear 01 · logistic 01 · train/test 01; then fill the highest-value gaps |
+| candidate rooms | **inference:** confidence intervals / A–B · **time:** forecast / ARIMA/X · **cause:** experiments / DAGs · **nets:** tokenizer / context · **RL:** policy · **classification:** k-NN / naive Bayes |
+| don’t | start PyMC / PPO / BSTS as 01; fatten one brand; write notes in German |
 | style | [[AGENTS.md]] |
 
 ### Use / skip
 
 **Reach for this file** to see what exists.
 
-**Skip** using it as “write the next 01.” That is frozen. Site: [[PUBLISH.md]].
+**Skip** treating it as a required course or a promise that every candidate room will be written. Use the first walk and the reader’s next question. Site: [[PUBLISH.md]].
 
 ---
 

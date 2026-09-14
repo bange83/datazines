@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 300" width="860" height="300" role="img" aria-label="PCA is written; next is k-means">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 300" width="860" height="300" role="img" aria-label="make the first walk excellent, then fill the useful gaps">
 <defs>
   <filter id="grain" x="0" y="0" width="100%" height="100%">
     <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
@@ -12,17 +12,17 @@
 </defs>
 <rect width="860" height="300" rx="18" ry="18" fill="#f4efe4"/>
 <rect width="860" height="300" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
-<text x="430.0" y="42.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#7a6e5e" text-anchor="middle">PCA is standing. next is rooms in the cloud.</text>
+<text x="430.0" y="42.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#7a6e5e" text-anchor="middle">make the first walk excellent. then fill the gaps.</text>
 <path d="M 90.0,80 L 290.0,80 L 290.0,230 L 90.0,230 Z" fill="#4f6d55" stroke="#4f6d55" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="0.1"/>
-<text x="190.0" y="120.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#4f6d55" text-anchor="middle">done</text>
-<text x="190.0" y="160.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="middle">PCA</text>
-<text x="190.0" y="195.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle">turn the sausage</text>
+<text x="190.0" y="120.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#4f6d55" text-anchor="middle">first walk</text>
+<text x="190.0" y="160.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="middle">00 → 01 → 01</text>
+<text x="190.0" y="195.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle">links, paper, phone</text>
 <path d="M 330.0,80 L 530.0,80 L 530.0,230 L 330.0,230 Z" fill="#b44a28" stroke="#b44a28" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="0.1"/>
-<text x="430.0" y="120.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#b44a28" text-anchor="middle">next</text>
-<text x="430.0" y="160.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="middle">k-means</text>
-<text x="430.0" y="195.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle">rooms, still no y</text>
+<text x="430.0" y="120.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#b44a28" text-anchor="middle">useful gaps</text>
+<text x="430.0" y="160.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="middle">intervals · forecast</text>
+<text x="430.0" y="195.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle">answer a reader’s question</text>
 <path d="M 570.0,80 L 770.0,80 L 770.0,230 L 570.0,230 Z" fill="#7a6e5e" stroke="#7a6e5e" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" opacity="0.08"/>
-<text x="670.0" y="120.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#7a6e5e" text-anchor="middle">later</text>
-<text x="670.0" y="160.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="middle">SVM</text>
-<text x="670.0" y="195.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle">side door</text>
+<text x="670.0" y="120.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#7a6e5e" text-anchor="middle">side doors</text>
+<text x="670.0" y="160.0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#241c14" text-anchor="middle">LLM · cause · act</text>
+<text x="670.0" y="195.0" font-family="Georgia, Times New Roman, serif" font-size="14" fill="#7a6e5e" text-anchor="middle">only when they earn it</text>
 </svg>
