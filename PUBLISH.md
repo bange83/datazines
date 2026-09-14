@@ -81,7 +81,7 @@ A **branch**, not a rewrite of the encyclopedia. Prove four things on **one nest
 
 Stop when that walk works. Do not theme the whole library yet.
 
-**Spike status (13 Sep 2026):** **walk works.** Press lives *beside* the vault, not inside it:
+**Spike status (13 Sep 2026):** **walk works.** Press lives *beside* the vault, not inside it. The Pages workflow also creates clean extensionless routes (`name/index.html`) after Quartz emits `name.html`, so links such as `/time-series/02-forecasting` resolve on GitHub Pages:
 
 ```
 /Volumes/Samsung990/git/quartz-press   Quartz 5 clone (content/ → symlink to this vault)
