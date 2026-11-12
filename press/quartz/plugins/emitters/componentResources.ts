@@ -209,6 +209,11 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
     }
 
     function styleTopNav(tries = 0) {
+      const titleLink = document.querySelector(".page-title a");
+      if (titleLink && !titleLink.querySelector("img.site-logo")) {
+        titleLink.innerHTML = '<img src="/assets/zini/zini-logo.png" alt="datazines.com — one idea per page" class="site-logo" />';
+      }
+
       const explorer = document.querySelector(".explorer");
       const ul = explorer && explorer.querySelector(".explorer-ul");
       const top = ul
@@ -222,6 +227,12 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
         if (tries < 40) setTimeout(() => styleTopNav(tries + 1), 50);
         return;
       }
+      ul.querySelectorAll(":scope > li").forEach((li) => {
+        const name = folderName(li).toLowerCase();
+        if (name === "assets" || name === "impressum" || name === "datenschutz") {
+          li.style.setProperty("display", "none", "important");
+        }
+      });
       explorer.classList.add("is-top-nav");
       retargetFolderTabs(ul);
       const path = location.pathname;

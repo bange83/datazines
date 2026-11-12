@@ -166,33 +166,44 @@ body {
 .page-title {
   margin: 0;
   line-height: 1;
-  flex: 1 1 auto;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 .page-title a {
-  display: inline;
-  overflow: visible;
-  text-indent: 0;
-  width: auto;
-  height: auto;
-  background: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  line-height: 1;
   font-family: var(--hand);
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: var(--rust);
-  line-height: 1;
-  text-decoration: none;
 }
 
 .page-title a::after {
-  content: "one idea per page";
-  display: inline;
-  font-family: var(--bodyFont);
-  font-size: 0.85rem;
-  font-weight: 400;
-  color: var(--muted);
-  margin-left: 8px;
-  line-height: 1;
+  display: none !important;
+}
+
+.page-title img.site-logo {
+  height: 56px;
+  width: auto;
+  max-width: 280px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.15s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+@media all and ($mobile) {
+  .page-title img.site-logo {
+    height: 44px;
+    max-width: 220px;
+  }
 }
 
 .sidebar.left .mobile-only {
