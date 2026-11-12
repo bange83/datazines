@@ -614,6 +614,29 @@ blockquote:not(.callout) {
   border-left-color: var(--blue) !important;
 }
 
+/* "In one sentence" abstract callout with Zini */
+.callout[data-callout="abstract"],
+.callout[data-callout="zini-sentence"],
+.callout[data-callout="zini-one-sentence"] {
+  position: relative;
+  border-left: 4px solid var(--rust) !important;
+  padding-left: 4.8rem !important;
+  min-height: 4.2rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0.8rem;
+    top: 0.8rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    background-image: url("/assets/zini/zini-one-sentence.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
 /* Zini mascot callouts */
 .callout[data-callout^="zini"] {
   position: relative;

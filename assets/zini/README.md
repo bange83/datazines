@@ -12,6 +12,7 @@ All extracted transparent PNGs live in `assets/zini/`:
 
 | Pose | File | Best used for |
 |---|---|---|
+| **One Sentence** | `zini-one-sentence.png` | "In one sentence" callouts, essential summary |
 | **Idea** | `zini-idea.png` | Aha-moments, key intuition, clever tricks |
 | **Celebrate** | `zini-celebrate.png` | Breakthroughs, success, model convergence |
 | **Explain** | `zini-explain.png` | Walkthroughs, board explanations, front door |
