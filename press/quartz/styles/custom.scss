@@ -187,9 +187,9 @@ body {
 }
 
 .page-title img.site-logo {
-  height: 56px;
+  height: 98px;
   width: auto;
-  max-width: 280px;
+  max-width: 360px;
   object-fit: contain;
   display: block;
   transition: transform 0.15s ease;
@@ -201,8 +201,8 @@ body {
 
 @media all and ($mobile) {
   .page-title img.site-logo {
-    height: 44px;
-    max-width: 220px;
+    height: 64px;
+    max-width: 260px;
   }
 }
 
@@ -255,8 +255,10 @@ body {
   padding: 0;
   margin: 0;
   flex: 1 0 100%;
+  width: 100%;
+  max-width: 100%;
   min-height: 0;
-  overflow: visible;
+  overflow: hidden;
   font-family: var(--hand);
 }
 
@@ -271,7 +273,8 @@ body {
 .explorer .explorer-content[aria-expanded="false"] {
   display: block !important;
   max-height: none !important;
-  overflow: visible !important;
+  overflow: hidden !important;
+  width: 100%;
   height: auto !important;
 }
 
@@ -285,13 +288,23 @@ body {
 
 .explorer-ul {
   list-style: none;
-  margin: 0;
-  padding: 0 0 0.35rem;
+  margin: 0.75rem 0 0;
+  padding: 0.35rem 0;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  border-bottom: 2px dashed var(--pencil);
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  gap: 0.15rem;
+  align-items: center;
+  border-top: 1.5px solid var(--pencil);
+  border-bottom: 1.5px solid var(--pencil);
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .explorer-ul > li {
@@ -305,17 +318,18 @@ body {
 .explorer-ul > li > .folder-container {
   order: 1;
   font-family: var(--hand);
-  font-size: 1.25rem;
+  font-size: 1.08rem;
   font-weight: 600;
   color: var(--muted);
-  background: var(--grain);
-  border: 1.5px solid var(--pencil);
-  border-radius: 8px 8px 0 0;
-  padding: 0.3rem 0.8rem;
-  line-height: 1.2;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  padding: 0.2rem 0.45rem;
+  line-height: 1.25;
   white-space: nowrap;
   text-decoration: none;
   box-shadow: none;
+  transition: all 0.15s ease;
 }
 
 .explorer button.folder-button {
@@ -328,11 +342,11 @@ body {
 }
 
 .explorer-ul > li.is-active-shelf > .folder-container {
-  background: var(--paper);
+  background: rgba(61, 95, 134, 0.12);
   color: var(--blue);
   font-weight: 700;
-  border-bottom-color: var(--paper);
-  margin-bottom: -2px;
+  border-bottom: 2.5px solid var(--blue);
+  border-radius: 4px 4px 0 0;
 }
 
 .explorer .folder-outer {
@@ -340,23 +354,26 @@ body {
 }
 
 .explorer a:hover,
-.explorer button.folder-button:hover {
-  color: var(--rust);
-  background: none;
-}
-
+.explorer button.folder-button:hover,
 .explorer-ul > li > .folder-container:hover {
   color: var(--rust);
+  background: rgba(180, 74, 40, 0.05);
 }
 
 .family-nav,
 .sub-nav {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  gap: 0.35rem;
   align-items: center;
-  padding-top: 0.55rem;
+  padding-top: 0.45rem;
   font-family: var(--hand);
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .family-nav[hidden],
@@ -366,15 +383,16 @@ body {
 
 .family-tab {
   font-family: var(--hand);
-  font-size: 1.18rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  padding: 0.12rem 0.75rem;
+  padding: 0.1rem 0.65rem;
   background: var(--paper);
-  border: 1.5px solid var(--pencil);
-  border-radius: 14px;
+  border: 1px solid var(--pencil);
+  border-radius: 12px;
   color: var(--muted);
   text-decoration: none;
-  line-height: 1.3;
+  line-height: 1.25;
+  white-space: nowrap;
 }
 
 .family-tab.is-current {
@@ -385,7 +403,7 @@ body {
 }
 
 .sub-chip {
-  background: #e6dfd1;
+  background: var(--paper);
   padding: 0.1rem 0.6rem;
   border-radius: 12px;
   border: 1px solid var(--pencil);
@@ -394,6 +412,7 @@ body {
   font-weight: 600;
   font-family: var(--hand);
   font-size: 1.15rem;
+  white-space: nowrap;
 }
 
 .sub-chip.is-current {

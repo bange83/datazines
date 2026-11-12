@@ -11,6 +11,13 @@ if [ ! -d "$QUARTZ_DIR/node_modules" ]; then
 fi
 
 echo "🎨 Syncing press files into Quartz..."
+rm -f "$QUARTZ_DIR/quartz.config.yaml" \
+      "$QUARTZ_DIR/quartz/styles/custom.scss" \
+      "$QUARTZ_DIR/quartz/styles/variables.scss" \
+      "$QUARTZ_DIR/quartz/components/Head.tsx" \
+      "$QUARTZ_DIR/quartz/plugins/emitters/componentResources.ts" \
+      "$QUARTZ_DIR/fix-asset-paths.py"
+
 cp "$REPO_ROOT/press/quartz.config.yaml" "$QUARTZ_DIR/quartz.config.yaml"
 cp "$REPO_ROOT/press/quartz/styles/custom.scss" "$QUARTZ_DIR/quartz/styles/custom.scss"
 cp "$REPO_ROOT/press/quartz/styles/variables.scss" "$QUARTZ_DIR/quartz/styles/variables.scss"
