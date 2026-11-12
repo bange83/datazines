@@ -130,73 +130,7 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
         }
       }
       push();
-      if (leaves.length) {
-        article.replaceChildren(...leaves);
-
-        if (leaves.length > 1 && !article.querySelector(".zine-pager")) {
-          const pager = document.createElement("nav");
-          pager.className = "zine-pager";
-          const label = document.createElement("span");
-          label.className = "zine-pager-label";
-          label.textContent = "Pages";
-          pager.appendChild(label);
-
-          const pageLeaves = leaves.slice(1);
-          const chips = [];
-          pageLeaves.forEach((leaf) => {
-            const h2 = leaf.querySelector("h2");
-            if (!h2) return;
-            const text = h2.textContent.trim();
-            let shortLabel = text;
-            const pageMatch = text.match(/Page\s+(\d+)/i);
-            if (/cheat\s*sheet/i.test(text)) {
-              shortLabel = "Cheat sheet";
-            } else if (/recipe/i.test(text)) {
-              shortLabel = "Recipe";
-            } else if (/in\s+(sklearn|scipy|numpy|python)/i.test(text)) {
-              const m = text.match(/in\s+(sklearn|scipy|numpy|python)/i);
-              shortLabel = m ? m[1] : "Code";
-            } else if (pageMatch) {
-              shortLabel = "Page " + pageMatch[1];
-            } else if (text.length > 16) {
-              shortLabel = text.slice(0, 14) + "…";
-            }
-
-            const chip = document.createElement("a");
-            chip.className = "zine-page-chip";
-            chip.href = "#" + (h2.id || "");
-            chip.textContent = shortLabel;
-            chip.title = text;
-            chip.addEventListener("click", (e) => {
-              e.preventDefault();
-              h2.scrollIntoView({ behavior: "smooth", block: "start" });
-              history.pushState(null, "", "#" + (h2.id || ""));
-            });
-            pager.appendChild(chip);
-            chips.push({ chip, leaf });
-          });
-
-          if (chips.length > 0) {
-            leaves[0].appendChild(pager);
-
-            if ("IntersectionObserver" in window) {
-              const observer = new IntersectionObserver(
-                (entries) => {
-                  entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                      chips.forEach((c) =>
-                        c.chip.classList.toggle("is-active", c.leaf === entry.target),
-                      );
-                    }
-                  });
-                },
-                { rootMargin: "-10% 0px -70% 0px", threshold: 0 },
-              );
-              chips.forEach((c) => observer.observe(c.leaf));
-            }
-          }
-        }
-      }
+      if (leaves.length) article.replaceChildren(...leaves);
     }
 
     function samePath(href, path) {
