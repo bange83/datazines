@@ -10,7 +10,7 @@ if [ ! -d "$QUARTZ_DIR/node_modules" ]; then
   cd "$QUARTZ_DIR" && npm ci
 fi
 
-echo "🎨 Syncing press files into Quartz..."
+echo "🎨 Copying press files into Quartz..."
 rm -f "$QUARTZ_DIR/quartz.config.yaml" \
       "$QUARTZ_DIR/quartz/styles/custom.scss" \
       "$QUARTZ_DIR/quartz/styles/variables.scss" \

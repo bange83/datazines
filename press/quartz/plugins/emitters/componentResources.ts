@@ -211,7 +211,10 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
     function styleTopNav(tries = 0) {
       const titleLink = document.querySelector(".page-title a");
       if (titleLink && !titleLink.querySelector("img.site-logo")) {
-        titleLink.innerHTML = '<img src="/assets/zini/zini-logo.png" alt="datazines.com — one idea per page" class="site-logo" />';
+        titleLink.innerHTML =
+          '<div class="logo-wrapper">' +
+          '<img src="/assets/zini/zini-logo.png" alt="datazines.com" class="site-logo" />' +
+          '</div>';
       }
 
       const explorer = document.querySelector(".explorer");
@@ -242,43 +245,130 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
       const activeShelf = top.find((li) => li.querySelector("a.is-current"));
       top.forEach((li) => li.classList.toggle("is-active-shelf", li === activeShelf));
 
-      const families = ensureRow(explorer, "family-nav");
-      const chips = ensureRow(explorer, "sub-nav");
       const content = explorer.querySelector(".explorer-content");
-      if (content) {
-        content.after(families);
-        families.after(chips);
-      }
-      families.replaceChildren();
-      chips.replaceChildren();
+      if (content) content.style.setProperty("display", "none", "important");
 
-      if (!activeShelf) {
-        families.hidden = true;
-        chips.hidden = true;
-        return;
+      let magNav = explorer.querySelector(".magazine-nav");
+      if (!magNav) {
+        magNav = document.createElement("div");
+        magNav.className = "magazine-nav";
+        explorer.appendChild(magNav);
       }
+      magNav.replaceChildren();
 
-      const subfolders = directSubfolders(activeShelf);
-      if (subfolders.length) {
-        families.hidden = false;
-        let activeFamily = subfolders.find((sub) => sub.querySelector("a.is-current")) || subfolders[0];
-        subfolders.forEach((sub) => {
-          const dest = first01Link(sub);
-          const a = document.createElement("a");
-          a.className = "family-tab" + (sub === activeFamily ? " is-current" : "");
-          a.href = dest ? dest.getAttribute("href") : "#";
-          a.textContent = folderName(sub);
-          families.append(a);
-        });
-        const familyFiles = directFiles(activeFamily);
-        chips.hidden = familyFiles.length === 0;
-        familyFiles.forEach((a) => chips.append(chipFrom(a)));
-      } else {
-        families.hidden = true;
-        const files = directFiles(activeShelf);
-        chips.hidden = files.length === 0;
-        files.forEach((a) => chips.append(chipFrom(a)));
+      const bar = document.createElement("div");
+      bar.className = "mag-nav-bar";
+
+      const toggle = document.createElement("button");
+      toggle.type = "button";
+      toggle.className = "newspaper-toggle";
+      toggle.innerHTML =
+        '<span class="np-emoji">🗞️</span><span class="np-title">Zeitung aufschlagen</span><span class="np-arrow">▾</span>';
+      bar.appendChild(toggle);
+
+      if (activeShelf) {
+        const divider = document.createElement("span");
+        divider.className = "mag-divider";
+        divider.textContent = "|";
+        bar.appendChild(divider);
+
+        const currentBadge = document.createElement("div");
+        currentBadge.className = "current-shelf-badge";
+        const currentName = folderName(activeShelf);
+        currentBadge.innerHTML =
+          '<span class="current-icon">📰</span><span class="current-name">' +
+          currentName +
+          "</span>";
+        bar.appendChild(currentBadge);
+
+        const subfolders = directSubfolders(activeShelf);
+        if (subfolders.length) {
+          const famContainer = document.createElement("div");
+          famContainer.className = "family-nav";
+          let activeFamily =
+            subfolders.find((sub) => sub.querySelector("a.is-current")) || subfolders[0];
+          subfolders.forEach((sub) => {
+            const dest = first01Link(sub);
+            const a = document.createElement("a");
+            a.className = "family-tab" + (sub === activeFamily ? " is-current" : "");
+            a.href = dest ? dest.getAttribute("href") : "#";
+            a.textContent = folderName(sub);
+            famContainer.append(a);
+          });
+          bar.appendChild(famContainer);
+
+          const familyFiles = directFiles(activeFamily);
+          if (familyFiles.length) {
+            const subContainer = document.createElement("div");
+            subContainer.className = "sub-nav";
+            familyFiles.forEach((a) => subContainer.append(chipFrom(a)));
+            bar.appendChild(subContainer);
+          }
+        } else {
+          const files = directFiles(activeShelf);
+          if (files.length) {
+            const subContainer = document.createElement("div");
+            subContainer.className = "sub-nav";
+            files.forEach((a) => subContainer.append(chipFrom(a)));
+            bar.appendChild(subContainer);
+          }
+        }
       }
+      magNav.appendChild(bar);
+
+      const countFiles = (li) => {
+        let count = directFiles(li).length;
+        for (const sub of directSubfolders(li)) {
+          count += directFiles(sub).length;
+        }
+        return count;
+      };
+
+      const drawer = document.createElement("div");
+      drawer.className = "newspaper-drawer";
+      drawer.hidden = true;
+
+      const drawerHeader = document.createElement("div");
+      drawerHeader.className = "drawer-header";
+      drawerHeader.innerHTML =
+        '<span class="drawer-headline">📰 Zeitung aufgeschlagen — Alle Rubriken</span>';
+      drawer.appendChild(drawerHeader);
+
+      const grid = document.createElement("div");
+      grid.className = "drawer-grid";
+      top.forEach((li) => {
+        const name = folderName(li);
+        const dest = first01Link(li);
+        const isCurrent = li === activeShelf;
+        const count = countFiles(li);
+        const a = document.createElement("a");
+        a.className = "drawer-shelf-item" + (isCurrent ? " is-current" : "");
+        a.href = dest ? dest.getAttribute("href") : "#";
+        a.innerHTML =
+          '<span class="shelf-emoji">' +
+          (isCurrent ? "📰" : "🗞️") +
+          '</span><div class="shelf-info">' +
+          '<span class="shelf-title">' +
+          name +
+          "</span>" +
+          (count > 0 ? '<span class="shelf-count">' + count + " Hefte</span>" : "") +
+          "</div>";
+        grid.appendChild(a);
+      });
+      drawer.appendChild(grid);
+      magNav.appendChild(drawer);
+
+      toggle.addEventListener("click", () => {
+        const isOpen = !drawer.hidden;
+        drawer.hidden = isOpen;
+        toggle.classList.toggle("is-open", !isOpen);
+        const emoji = toggle.querySelector(".np-emoji");
+        const title = toggle.querySelector(".np-title");
+        const arrow = toggle.querySelector(".np-arrow");
+        if (emoji) emoji.textContent = !isOpen ? "📰" : "🗞️";
+        if (title) title.textContent = !isOpen ? "Zeitung zusammenfalten" : "Zeitung aufschlagen";
+        if (arrow) arrow.textContent = !isOpen ? "▴" : "▾";
+      });
     }
 
     document.addEventListener("nav", wrapSketchbookLeaves);
