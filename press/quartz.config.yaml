@@ -23,6 +23,7 @@ configuration:
     - quartz-press
     - press
     - .github
+    - .quartz
   theme:
     fontOrigin: local
     cdnCaching: false
