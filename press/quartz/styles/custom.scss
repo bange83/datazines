@@ -614,6 +614,80 @@ blockquote:not(.callout) {
   border-left-color: var(--blue) !important;
 }
 
+/* Zini mascot callouts */
+.callout[data-callout^="zini"] {
+  position: relative;
+  border-left: 4px solid var(--blue) !important;
+  padding-left: 4.8rem !important;
+  min-height: 4.2rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0.8rem;
+    top: 0.8rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.callout[data-callout="zini"],
+.callout[data-callout="zini-idea"] {
+  &::before {
+    background-image: url("/assets/zini/zini-idea.png");
+  }
+}
+
+.callout[data-callout="zini-celebrate"] {
+  &::before {
+    background-image: url("/assets/zini/zini-celebrate.png");
+  }
+}
+
+.callout[data-callout="zini-explain"] {
+  &::before {
+    background-image: url("/assets/zini/zini-explain.png");
+  }
+}
+
+.callout[data-callout="zini-inspect"] {
+  &::before {
+    background-image: url("/assets/zini/zini-inspect.png");
+  }
+}
+
+.callout[data-callout="zini-working"] {
+  &::before {
+    background-image: url("/assets/zini/zini-working.png");
+  }
+}
+
+.callout[data-callout="zini-confused"],
+.callout[data-callout="zini-question"] {
+  &::before {
+    background-image: url("/assets/zini/zini-confused.png");
+  }
+}
+
+/* Floating Zini illustrations in markdown */
+img[alt*="zini-right"],
+img[alt*="zini-float"] {
+  float: right;
+  max-width: 140px;
+  height: auto;
+  margin: 0.5rem 0 1rem 1.5rem;
+}
+
+img[alt*="zini-left"] {
+  float: left;
+  max-width: 140px;
+  height: auto;
+  margin: 0.5rem 1.5rem 1rem 0;
+}
+
 .callout-icon {
   display: none;
 }
