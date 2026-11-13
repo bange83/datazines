@@ -40,6 +40,11 @@ Wrong on purpose. Average out the drama.
 
 ![rf-02-bag](../../assets/rf-02-bag.svg)
 
+> [!tip] The free test set: Out-of-Bag (OOB)
+> When you redraw 56 people with replacement, math says about **63.2%** of people make it into the bag (some picked twice or three times).
+> That leaves about **36.8%** (roughly 1 in 3) completely unpicked: **out-of-bag**.
+> For every student, you can ask the trees that *never saw them* to vote on them. Average that across everyone, and you get a built-in, uncheated validation score (`oob_score=True`) without needing a separate test split.
+
 **Random levers at each cut.** Even in one bag, the tree is not allowed to always pick hours. At every split it is handed a **shortlist** (often √p of the features). Sleep might win this cut only because hours was muted.
 
 ![rf-03-mtry](../../assets/rf-03-mtry.svg)
@@ -59,6 +64,8 @@ A new student walks in. Each tree casts fail or pass. Majority wins. (Or average
 You cannot read 100 flowcharts aloud. You **traded a sentence for a stabler call**. That is the cost, same family as ridge: less drama, less story.
 
 One deep tree still sits in the forest as a member. It just does not get to decide alone. Ridge called that tree’s hug **overfitting** and taxed the knobs. Here the members may still memorize. The **vote** is what you ship. Overfit of one learner is not overfit of the choir.
+
+Unlike boosting (where adding too many trees eventually memorizes noise), **a random forest cannot overfit by adding more trees**. By the law of large numbers, averaging more independent trees only stabilizes the vote. 500 trees is as safe as 100 — it just costs more compute.
 
 ---
 
@@ -152,8 +159,9 @@ Deep tree memorizes (test 0.71). Forest’s vote lands at **0.79**. Tree 0 opene
 | word | meaning |
 |---|---|
 | bag / bootstrap | redraw people with replacement |
+| out-of-bag (OOB) | the ~36.8% unpicked people; free validation |
 | max_features | how many levers may speak at a cut |
-| n_estimators | how many trees vote |
+| n_estimators | how many trees vote (more trees cannot overfit) |
 | vote | majority class (or mean P) |
 | importance | total impurity drop, averaged across trees |
 

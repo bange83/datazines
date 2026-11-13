@@ -149,6 +149,10 @@ Order, then:
 
 `feature_importances_` on a depth-2 tree: hours 0.80, sleep 0.20, tutor 0.00. That is **total Gini drop credited to each lever**, not a mystical ranking.
 
+> [!note] The Gini importance trap (MDI bias)
+> Gini drop (in a room: **MDI**) has a known bias: levers with **many continuous values** (hours, sleep) get dozens of candidate cuts. They get dozens of chances to stumble on a lucky drop in mix.
+> A binary lever (tutor: 0 or 1) has exactly one cut (0.5). That puts it at a statistical disadvantage. If you need a fairer scoreboard on wide tables, check **permutation importance** instead of trusting Gini drops alone.
+
 ---
 
 ## Page 7 — Depth is the volume knob
@@ -285,6 +289,7 @@ Deep tree from the old page, for the tax lesson: `max_depth=8` → 11 leaves, tr
 | room | node |
 | cut | split |
 | leftover mix | impurity |
+| Gini drop importance | MDI (mean decrease in impurity; favors continuous x) |
 
 ### Use / skip
 

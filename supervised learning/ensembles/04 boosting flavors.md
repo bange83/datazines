@@ -66,7 +66,12 @@ People do not change weight. The *target* of the next tree changes.
 | gradient boosting | **leftover** of the sum | depth 2–3 | sum, shrunk |
 | XGBoost / LightGBM / CatBoost | leftover **+ taxes** | depth 2–8, fast | sum, shrunk, regularized |
 
-XGBoost is gradient boosting with: second-order leftover (a bit more precise), penalties on tree size (ridge-ish), column samples (forest-ish), missing-value tricks, and a C++ engine. LightGBM: leaf-wise growth, histograms, speed on huge tables. CatBoost: categories without you inventing dummy columns.
+XGBoost is gradient boosting with extra engineering:
+- **Second-order leftovers:** Plain GB only looks at the slope (1st derivative: which way is downhill?). XGBoost also checks the **curvature of the bowl** (2nd derivative / Hessian). Knowing both lets it calculate the exact best leaf value in one step (Newton's method).
+- **Taxes on trees:** Ridge-like L2 penalties on leaf values, so branches stay humble.
+- **Subsampling & missing values:** Random features at each cut (forest-ish), automatic paths for missing values, and a fast C++ engine.
+
+LightGBM: leaf-wise growth, histograms for speed on huge tables. CatBoost: ordered categories without you inventing dummy columns.
 
 **Same religion as 03.** Different garage.
 
@@ -187,6 +192,14 @@ AdaBoost luckiest on this split. Hist ≈ forest territory. GB hungrier on train
 | XGBoost | leftover + taxes | small/medium trees | default engine |
 | LightGBM | leftover + taxes | leaf-wise, histograms | huge tables |
 | CatBoost | leftover + taxes | ordered categories | messy categoricals |
+
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| heavy people | sample weights |
+| second-order leftover | Hessian / 2nd derivative (Newton boosting) |
+| gym membership | leaf regularization + histogram binning |
 
 ### Use / skip
 

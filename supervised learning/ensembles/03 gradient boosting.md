@@ -70,6 +70,10 @@ Then **shrink** that tree before adding it. If you add it at full volume, tree 2
 
 Rule of thumb: **smaller rate, more trees.** You buy the same fit in smaller bites. Ridge energy: a tax on drama, paid in steps.
 
+> [!important] Forest vs Boosting: can more trees overfit?
+> In a **random forest**, adding more trees *cannot* overfit (averaging more voters only calms the variance).
+> In **boosting**, adding too many trees *will* eventually overfit. Each new tree hunts whatever leftover is left — until it starts fitting pure noise. Tuning when to stop (`n_estimators` / early stopping) is mandatory.
+
 Depth of each tree is usually **small** (stumps or depth 2–3). The *chain* supplies the complexity, not one deep monster.
 
 ---
