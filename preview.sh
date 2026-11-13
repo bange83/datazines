@@ -11,6 +11,9 @@ if [ ! -d "$QUARTZ_DIR/node_modules" ]; then
 fi
 
 echo "🎨 Copying press files into Quartz..."
+rm -rf "$QUARTZ_DIR/quartz/.quartz-cache" \
+       "$QUARTZ_DIR/public"
+
 rm -f "$QUARTZ_DIR/quartz.config.yaml" \
       "$QUARTZ_DIR/quartz/styles/custom.scss" \
       "$QUARTZ_DIR/quartz/styles/variables.scss" \

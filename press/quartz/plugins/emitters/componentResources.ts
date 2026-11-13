@@ -256,7 +256,7 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
       }
       nytNav.replaceChildren();
 
-      // Row 1: Clean editorial section links (NYTimes style)
+      // Row 1: Clean editorial top-level section links (NYTimes style)
       const sectionsRow = document.createElement("div");
       sectionsRow.className = "nyt-sections-row";
       top.forEach((li, idx) => {
@@ -277,70 +277,84 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
       });
       nytNav.appendChild(sectionsRow);
 
-      // Row 2: Active section issues / zines (if inside a rubric)
+      // Row 2 (Optional): ONLY if active top shelf has subcategories (e.g. Supervised Learning -> Regression, Classification, Ensembles)
+      let activeSubfamily = null;
       if (activeShelf) {
-        const issuesRow = document.createElement("div");
-        issuesRow.className = "nyt-issues-row";
-
         const subfolders = directSubfolders(activeShelf);
         if (subfolders.length) {
-          let activeFamily =
+          const subcatRow = document.createElement("div");
+          subcatRow.className = "nyt-subcat-row";
+          activeSubfamily =
             subfolders.find((sub) => sub.querySelector("a.is-current")) || subfolders[0];
+
           subfolders.forEach((sub, sidx) => {
             if (sidx > 0) {
               const sep = document.createElement("span");
               sep.className = "nyt-sep";
               sep.textContent = "·";
-              issuesRow.appendChild(sep);
+              subcatRow.appendChild(sep);
             }
             const dest = first01Link(sub);
             const a = document.createElement("a");
-            a.className = "nyt-family-link" + (sub === activeFamily ? " is-active" : "");
+            a.className = "nyt-subcat-link" + (sub === activeSubfamily ? " is-active" : "");
             a.href = dest ? dest.getAttribute("href") : "#";
             a.textContent = folderName(sub);
-            issuesRow.appendChild(a);
+            subcatRow.appendChild(a);
           });
-
-          const familyFiles = directFiles(activeFamily);
-          if (familyFiles.length) {
-            const sepLine = document.createElement("span");
-            sepLine.className = "nyt-pipe";
-            sepLine.textContent = "|";
-            issuesRow.appendChild(sepLine);
-
-            familyFiles.forEach((fileA, fidx) => {
-              if (fidx > 0) {
-                const sep = document.createElement("span");
-                sep.className = "nyt-sep";
-                sep.textContent = "·";
-                issuesRow.appendChild(sep);
-              }
-              const a = document.createElement("a");
-              a.className =
-                "nyt-issue-link" + (fileA.classList.contains("is-current") ? " is-active" : "");
-              a.href = fileA.getAttribute("href") || "#";
-              a.textContent = (fileA.textContent || "").trim();
-              issuesRow.appendChild(a);
-            });
-          }
-        } else {
-          const files = directFiles(activeShelf);
-          files.forEach((fileA, fidx) => {
-            if (fidx > 0) {
-              const sep = document.createElement("span");
-              sep.className = "nyt-sep";
-              sep.textContent = "·";
-              issuesRow.appendChild(sep);
-            }
-            const a = document.createElement("a");
-            a.className =
-              "nyt-issue-link" + (fileA.classList.contains("is-current") ? " is-active" : "");
-            a.href = fileA.getAttribute("href") || "#";
-            a.textContent = (fileA.textContent || "").trim();
-            issuesRow.appendChild(a);
-          });
+          nytNav.appendChild(subcatRow);
         }
-        nytNav.appendChild(issuesRow);
+      }
+
+      // Local Navigation (Content-Bereich): Kapitelauswahl für das spezifische Heft
+      const heroLeaf =
+        document.querySelector("article section.leaf.hero-leaf") ||
+        document.querySelector("article section.leaf") ||
+        document.querySelector("article .markdown-preview-view") ||
+        document.querySelector("article");
+
+      const existingChapterNav = document.querySelector(".zine-chapter-nav");
+      if (existingChapterNav) existingChapterNav.remove();
+
+      let activeFiles = [];
+      let chapterCategoryName = "";
+
+      if (activeShelf) {
+        if (activeSubfamily) {
+          activeFiles = directFiles(activeSubfamily);
+          chapterCategoryName = folderName(activeSubfamily);
+        } else {
+          activeFiles = directFiles(activeShelf);
+          chapterCategoryName = folderName(activeShelf);
+        }
+      }
+
+      if (heroLeaf && activeFiles.length > 0) {
+        const chapterNav = document.createElement("nav");
+        chapterNav.className = "zine-chapter-nav";
+
+        const badge = document.createElement("div");
+        badge.className = "chapter-nav-header";
+        badge.innerHTML =
+          '<span class="chapter-nav-label">Heft · ' +
+          chapterCategoryName +
+          '</span><span class="chapter-nav-count">' +
+          activeFiles.length +
+          ' Kapitel</span>';
+        chapterNav.appendChild(badge);
+
+        const chipsContainer = document.createElement("div");
+        chipsContainer.className = "chapter-chips-row";
+        activeFiles.forEach((fileA) => {
+          const a = document.createElement("a");
+          const isCurrent = fileA.classList.contains("is-current");
+          a.className = "chapter-chip" + (isCurrent ? " is-current" : "");
+          a.href = fileA.getAttribute("href") || "#";
+          a.textContent = (fileA.textContent || "").trim();
+          chipsContainer.appendChild(a);
+        });
+        chapterNav.appendChild(chipsContainer);
+
+        heroLeaf.prepend(chapterNav);
       }
     }
 
@@ -745,9 +759,9 @@ export const ComponentResources: QuartzEmitterPlugin = () => {
 
       ctx.extractedInlineResources = extractedInlineResources
 
-      const cssHash = useHashing ? hashContent(cssContent) : null
-      const prescriptHash = useHashing ? hashContent(prescript) : null
-      const postscriptHash = useHashing ? hashContent(postscript) : null
+      const cssHash = hashContent(cssContent)
+      const prescriptHash = hashContent(prescript)
+      const postscriptHash = hashContent(postscript)
 
       const cssSlug = cssHash ? `index-${cssHash}` : "index"
       const prescriptSlug = prescriptHash ? `prescript-${prescriptHash}` : "prescript"
