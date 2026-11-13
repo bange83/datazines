@@ -99,6 +99,8 @@ If you keep only one thing:
 
 ## Page 6 — Forty hides, in sklearn
 
+![zini-right](../assets/zini/zini-coding.png)
+
 Same thirty as [[01 train test validate]]. 40 different 21 / 9 splits. Ordinary hours *b* vs a tax on huge slopes (scaled, α = 10). 
 
 ```python

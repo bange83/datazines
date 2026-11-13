@@ -100,6 +100,8 @@ If you keep only one thing:
 
 ## Page 6 — Hours and minutes, in sklearn
 
+![zini-right](../assets/zini/zini-coding.png)
+
 Same unlabeled cloud — eighty students, four levers, no grade.
 
 ```python

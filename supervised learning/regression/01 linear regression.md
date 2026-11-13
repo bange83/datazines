@@ -409,6 +409,8 @@ If you keep only one thing:
 
 ## Page 17 — Eight people, in sklearn
 
+![zini-right](../../assets/zini/zini-coding.png)
+
 Same eight rows as page 1. One *x*. Least squares. Scale would not change this story — page 14. Just the line.
 
 ```python

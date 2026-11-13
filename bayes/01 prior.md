@@ -104,6 +104,8 @@ If you keep only one thing:
 
 ## Page 6 — Eight coins, in scipy
 
+![zini-right](../assets/zini/zini-coding.png)
+
 Same tosses as [[02 beta]]. True *P* = 0.6. Four starts, four posteriors.
 
 ```python

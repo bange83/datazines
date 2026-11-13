@@ -140,6 +140,8 @@ If you keep only one thing:
 
 ## Page 7 — Thirty graders, in sklearn
 
+![zini-right](../assets/zini/zini-coding.png)
+
 Thirty graders. Same split as the tables above. Ordinary hugs. Peek vs three piles vs CV.
 
 ```python

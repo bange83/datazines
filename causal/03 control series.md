@@ -116,6 +116,8 @@ If you keep only one thing:
 
 ## Page 7 — A control narrows the band, in numpy
 
+![zini-right](../assets/zini/zini-coding.png)
+
 This is a small Bayesian linear model, not a full BSTS package. It uses the same office-hours story to show the one lever that matters here: a related control can make the posterior predictive HDI narrower.
 
 ```python

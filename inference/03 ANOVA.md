@@ -120,6 +120,8 @@ If you keep only one thing:
 
 ## Page 7 — Three routines, in scipy
 
+![zini-right](../assets/zini/zini-coding.png)
+
 Same three grade piles as page 1. The run prints the overall F, then the pairwise questions so you can see why the follow-up needs a correction.
 
 ```python

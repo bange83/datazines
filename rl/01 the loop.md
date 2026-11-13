@@ -113,6 +113,8 @@ If you keep only one thing:
 
 ## Page 5 — Twenty weeks, in numpy
 
+![zini-right](../assets/zini/zini-coding.png)
+
 Exam loop. Two states, two acts. Random policy and Q share one world. Sensible policy gets a fresh draw of the weeks.
 
 ```python

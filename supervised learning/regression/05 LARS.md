@@ -181,6 +181,8 @@ If you keep only one thing:
 
 ## Page 10 — The walk, in sklearn
 
+![zini-right](../../assets/zini/zini-coding.png)
+
 Same **thirty** students as ridge and lasso. Scale, then `Lars(n_nonzero_coefs=3)`: stop after three joins, before junk walks in. `active_` is the order. `coef_path_` is the film.
 
 ```python

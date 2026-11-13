@@ -129,6 +129,8 @@ If you keep only one thing:
 
 ## Page 8 — Mistakes, in sklearn
 
+![zini-right](../../assets/zini/zini-coding.png)
+
 Same **thirty** students as ridge. Same hours, sleep, tutor. *y* is not a grade — it is a Poisson count of mistakes. PoissonRegressor uses a **log link**. LinearRegression is the identity-link cousin — and it will go negative if you ask it far enough.
 
 ```python

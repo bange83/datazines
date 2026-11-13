@@ -116,6 +116,8 @@ If you keep only one thing:
 
 ## Page 6 — Three study styles, in sklearn
 
+![zini-right](../assets/zini/zini-coding.png)
+
 Same unlabeled cloud as page 1 — eighty students, hours and sleep, no grade. Three styles planted.
 
 ```python

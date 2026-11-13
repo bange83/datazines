@@ -98,6 +98,8 @@ If you keep only one thing:
 
 ## Page 6 — Known office hours, in numpy
 
+![zini-right](../assets/zini/zini-coding.png)
+
 The outside X is a planned number of office-hours slots. It is known for the future. The target also keeps an AR echo. We compare an AR-style model without X to one with X.
 
 ```python

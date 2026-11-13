@@ -110,6 +110,8 @@ If you keep only one thing:
 
 ## Page 6 — The chain, in sklearn
 
+![zini-right](../../assets/zini/zini-coding.png)
+
 Same pass/fail class as the forest notebook — eighty students. `GradientBoostingClassifier` is the plain sklearn chain (not XGBoost). Depth 2 trees.
 
 ```python

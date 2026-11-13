@@ -90,6 +90,8 @@ If you keep only one thing:
 
 ## Page 6 — Echo after trend and season, in numpy
 
+![zini-right](../assets/zini/zini-coding.png)
+
 This tiny run fits trend + season on the past, estimates one AR coefficient in the leftover, and recursively carries that echo through the four-week holdout.
 
 ```python

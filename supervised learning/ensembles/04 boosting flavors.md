@@ -125,6 +125,8 @@ If you keep only one thing:
 
 ## Page 7 — Three dialects, in sklearn
 
+![zini-right](../../assets/zini/zini-coding.png)
+
 Same pass/fail class as the boosting notebook — eighty students. No XGBoost install required: `HistGradientBoostingClassifier` is sklearn’s histogram engine (LightGBM-adjacent). AdaBoost uses **stumps**.
 
 ```python

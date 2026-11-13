@@ -111,6 +111,8 @@ If you keep only one thing:
 
 ## Page 7 — A street, in sklearn
 
+![zini-right](../../assets/zini/zini-coding.png)
+
 Same eighty as logistic / LDA. Hours and sleep, pass/fail. Split 70/30, `random_state=0`. Linear SVM vs logistic. Count who holds the fence.
 
 ```python

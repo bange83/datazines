@@ -118,6 +118,8 @@ If you keep only one thing:
 
 ## Page 7 — Eight grades, in scipy
 
+![zini-right](../assets/zini/zini-coding.png)
+
 Same table as linear regression. Mean vs 5, slope vs 0, and the two groups. No extra story.
 
 ```python

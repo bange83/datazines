@@ -95,6 +95,8 @@ If you keep only one thing:
 
 ## Page 6 — The vote, in sklearn
 
+![zini-right](../../assets/zini/zini-coding.png)
+
 Same pass/fail class as the tree notebook — eighty students.
 
 ```python

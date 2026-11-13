@@ -166,6 +166,8 @@ If you keep only one thing:
 
 ## Page 9 — Packs, in sklearn
 
+![zini-right](../../assets/zini/zini-coding.png)
+
 Same **thirty** students as ridge and lasso. Same grade recipe. Elastic net, scaled, `alpha=0.40`, `l1_ratio=0.5` (half V, half U). Mix still half and half; λ a bit louder so junk actually dies on this small class.
 
 ```python

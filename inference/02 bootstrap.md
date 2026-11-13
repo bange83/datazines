@@ -97,6 +97,8 @@ If you keep only one thing:
 
 ## Page 6 — Eight grades, redrawn, in numpy
 
+![zini-right](../assets/zini/zini-coding.png)
+
 Same table as [[01 t-test]]. 2000 bags. `LinearRegression` only to refit *b*. The loop *is* the lesson.
 
 ```python
