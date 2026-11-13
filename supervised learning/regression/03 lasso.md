@@ -258,7 +258,7 @@ Hours stayed. Minutes **0**. Same fact, two names — lasso picked a favorite. R
 
 Sleep fired. Naps kept. Cousins, same talent show. Page 4’s cartoon kept sleep; this sample kept the cousin. The gift is the **zero**, not which twin won.
 
-Train R² **0.898** (ridge was 0.907 — the shortlist costs a little pride). Test **0.794** (ordinary 0.626, ridge 0.748). A sentence, and still better on new people.
+Train R² **0.898** (ridge was 0.907 — the shortlist costs a little pride). Test **0.794** (ordinary 0.626, ridge 0.748). A sentence, and still better on new people (9 test people means noisy scores; tune with `LassoCV` on bigger data).
 
 sklearn’s `alpha` is λ — the **volume of the tax**, same knob as ridge. Louder tax, more zeros, shorter sentence. (Elastic net will add a *second* knob, the mix. Not this notebook.)
 

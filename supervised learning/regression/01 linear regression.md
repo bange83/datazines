@@ -131,6 +131,10 @@ The sentence to keep:
 
 Not for *one* person. For the pattern in the cloud. Not a cause — that is extra ([[01 confounding]]).
 
+> [!note] Is b real or luck?
+> Here b = 1 on 8 people. In a room, people ask: *is b statistically significant?*
+> Any b from a sample has wobble (**standard error**). 8 people is a tiny boat. A second sample of 8 might say b = 0.6. To test whether leftover alone could have faked a non-zero b: [[01 t-test]].
+
 ---
 
 ## Page 5 — Mini picture: touching the slope
@@ -359,11 +363,17 @@ A third lever is the same trick in a space you cannot draw. If two levers say al
 
 One *x*, one unit: skip. Hours in 1–6. Least squares does not care how you spell it. The line is the same.
 
-**Two or more levers:** scale. Hours, minutes, sleep. Different spellings. The *guesses* stay the same if you only change units. The **knobs** do not. A tiny *b* on minutes can be a huge *b* on hours — same fact, different writing.
+**Two or more levers:** scale. Hours, minutes, sleep. Different spellings.
+
+Mathematically, for ordinary least squares, scaling does **not** change the guesses ŷ or R² at all. The line is identical. So why scale?
+
+1. **Reading the knobs:** A tiny *b* on minutes can be a huge *b* on hours — same fact, different units. Standardizing turns knobs into “typical steps” so you can compare their size.
+2. **Walking the bowl (numerics):** If you find the line by walking ([[01 gradient descent]]), mismatched units stretch the bowl into a steep, narrow ravine. The walk bounces back and forth across the walls instead of rolling downhill. Scaling rounds the bowl so the walk converges fast.
+3. **The next notebooks:** A later tax on size ([[02 ridge regression]], [[03 lasso]]) **punishes big numbers**. Without scaling, it taxes the unit of measurement, not the importance of the lever.
 
 ![lr-14-scale](../../assets/lr-14-scale.svg)
 
-Recipe, before you read the *b*s:
+Recipe:
 
 1. Subtract each *x*’s average.
 2. Divide by its spread.
@@ -371,7 +381,7 @@ Recipe, before you read the *b*s:
 
 Now +1 on a knob is **one typical step** of that lever, not “one minute vs one hour.” You can compare *b*s. You still cannot infer cause.
 
-A later tax on size ([[02 ridge regression]], [[03 lasso]]) **needs** this, or it taxes spelling. The eight people below have one *x*. That fit stays unscaled on purpose. The habit starts here.
+The eight people on page 17 have one *x*. That fit stays unscaled on purpose. The habit starts here.
 
 ---
 
@@ -387,7 +397,7 @@ The best line is the **bottom** of the bowl — leftover² as small as it can ge
 
 The computer rolls downhill and stops. Done.
 
-For a straight line there is **one** clear dip. That is why simple linear regression is well-behaved: one answer, no magic. When there is no formula for the bottom, you **walk** the bowl: [[01 gradient descent]].
+For a straight line there is **one** clear dip. That is why simple linear regression is well-behaved: one answer, no magic. Scaling keeps the dip round rather than a stretched canyon. When there is no formula for the bottom, you **walk** the bowl: [[01 gradient descent]].
 
 ---
 
@@ -458,6 +468,8 @@ Same numbers as the sketchbook. `.score` is R² on *these* eight people — prid
 | leftover | residual |
 | lever / *x* | feature |
 | knob *b* | coefficient / weight |
+| scaled knob | standardized coefficient (beta weight) |
+| knob wobble | standard error / uncertainty |
 | cloud | scatter |
 
 Best line = smallest sum of (residuals)².

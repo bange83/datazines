@@ -76,7 +76,10 @@ The link is not decoration. It is the promise that ŷ will not wander into a non
 
 **Binomial** — each person is a coin with probability *p*. Pass/fail. Logistic.
 
-**Poisson** — *y* is a count. Mean = variance, roughly. Mistakes, emails, accidents.
+**Poisson** — *y* is a count. Mean = variance, strictly. Mistakes, emails, accidents.
+
+> [!tip] Margin note: overdispersion
+> Poisson forces the spread to match the average. Real counts often rattle much wider (**overdispersion**). When counts spread wild, you reach for **negative binomial** glasses. Same log link, calmer uncertainty.
 
 Wrong family: you can still get a number out. It will lie about uncertainty, and sometimes about the mean too. Pick the family by looking at *y*, not by looking at a menu of functions.
 
@@ -183,6 +186,17 @@ Ordinary line: still fine at 6 hours, then **−2** at 10. The glasses were the 
 | identity + Gaussian | linear regression |
 | logit + binomial | logistic |
 | log + Poisson | counts |
+| log + Negative Binomial | counts with wild spread (overdispersion) |
+
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| score | linear predictor ($\eta$) |
+| glasses / translation | link function ($g$) |
+| rattle | exponential dispersion family |
+| spread > mean | overdispersion |
+| fit quality | deviance / D² |
 
 ### Use / skip
 
