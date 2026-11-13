@@ -90,6 +90,7 @@ rng = np.random.default_rng(7)
 n = 80
 hours = rng.uniform(1, 6, n)
 logits = np.stack([2.0 - 0.9 * hours, 0.2 + 0.1 * hours, -2.5 + 0.85 * hours], axis=1)
+# subtract max so exp() cannot overflow to infinity (the standard trick)
 ex = np.exp(logits - logits.max(1, keepdims=True))
 p = ex / ex.sum(1, keepdims=True)
 y = np.array([rng.choice(3, p=pp) for pp in p])  # 0 fail, 1 pass, 2 honors

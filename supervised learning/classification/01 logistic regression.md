@@ -111,7 +111,31 @@ Accuracy on old people can look great and still be a bad cut for the next person
 
 ---
 
-## Page 6 — Still a line on the inside
+## Page 6 — Finding the knobs: log-loss (surprise)
+
+Ordinary regression had a bowl of squared errors. Roll downhill, find the bottom.
+
+Why not square the error on probabilities? (e.g. real pass = 1, guess P = 0.8). You could. But squaring is too gentle on **smug overconfidence**.
+
+Logistic uses a different score: **log-loss** (in a room: **binary cross-entropy**).
+
+Think of it as a **surprise penalty**:
+
+- Real student **passes** ($y = 1$):
+  - You guessed **P = 0.99**: You basically knew it. Surprise $-\log(0.99) \approx 0.01$. Almost zero pain.
+  - You guessed **P = 0.50**: Clueless coin flip. Surprise $-\log(0.50) \approx 0.69$. A solid slap on the wrist.
+  - You guessed **P = 0.01**: You were 99% confident they would *fail* — and they passed. Arrogant miss! Surprise $-\log(0.01) \approx 4.6$.
+  - You guessed **P = 0.00001**: The pain shoots toward infinity.
+
+The penalty curve is a cliff against confident wrongness:
+
+$$\text{cost} = -\log(P) \quad \text{if pass}, \qquad -\log(1 - P) \quad \text{if fail}$$
+
+The computer tilts the S until the average surprise is as low as possible. It rolls downhill on surprise.
+
+---
+
+## Page 7 — Still a line on the inside (and why sklearn taxes b)
 
 Logistic is **not** a free-form curve that wiggles wherever it wants.
 
@@ -121,28 +145,35 @@ If the yes-dots and no-dots are a mixed blob that no tilted S can separate, logi
 
 Logistic = **linear score + squash**. Remember which part is the line.
 
+> [!note] Separation and sklearn’s secret brake
+> What if passers and failers do not overlap at all? (Every student with 3+ hours passes, everyone below fails).
+> The S wants to become a sheer, vertical cliff. To make the cliff vertical, $b$ must climb to **infinity** ($\infty$).
+> That is called **perfect separation**. Unregulated math goes wild.
+> That is why sklearn’s `LogisticRegression()` quietly turns on an **L2 tax** by default (`C=1.0`, same as ridge). It acts as a brake so $b$ stays finite. If you want pure, unpenalized logistic regression in sklearn, you must explicitly write `penalty=None`.
+
 If two levers are written in different units — hours and minutes — the *b*s are not comparable until you **scale**, same as ridge. One *x* (this notebook): skip it.
 
 ---
 
-## Page 7 — Mini recipe
+## Page 8 — Mini recipe
 
 1. **y is yes/no — or a share of yeses in 0–1.** If y is a free grade, go back to [[01 linear regression]].
 2. **Same levers.** Hours, sleep, tutor. Score = a + b’s.
 3. **Squash** to P(yes).
-4. **Read b** as “how the S climbs,” not as “+b probability.”
-5. **Pick a cut** if you need a call. 0.5 is a habit, not a truth.
-6. **Judge on new people**, and on the probabilities, not only on yes/no hits.
+4. **Log-loss bowl:** Computer minimizes surprise, not squared misses.
+5. **Read b** as “how the S climbs,” not as “+b probability.”
+6. **Pick a cut** if you need a call. 0.5 is a habit, not a truth.
+7. **Judge on new people**, and on the probabilities, not only on yes/no hits.
 
 If you keep only one thing:
 
-> line on the inside, S on the outside, output is P(yes).
+> line on the inside, S on the outside, output is P(yes). roll downhill on surprise.
 
 ---
 
-## Page 8 — Hours → pass, in sklearn
+## Page 9 — Hours → pass, in sklearn
 
-Exam world: hours, sleep, tutor. **Eighty** students — a crowd, not the thirty on the ridge page. *y* is pass/fail, not a grade. One lever, no scaler — the S is the lesson, not a fight between hours and minutes. Mixed units: scale first ([[02 ridge regression]], page 10).
+Exam world: hours, sleep, tutor. **Eighty** students — a crowd, not the thirty on the ridge page. *y* is pass/fail, not a grade. One lever, no scaler — the S is the lesson, not a fight between hours and minutes. (sklearn fits with a gentle L2 brake `C=1.0` by default so $b$ does not explode if classes separate). Mixed units: scale first ([[02 ridge regression]], page 10).
 
 ```python
 import numpy as np
@@ -199,6 +230,8 @@ Accuracy 0.84 is on *these* people — pride, like R² without a split. Pass is 
 | squash | sigmoid |
 | score | logit |
 | S | logistic curve |
+| surprise penalty | log-loss / binary cross-entropy |
+| cliff runaway | perfect separation (why sklearn adds L2 penalty) |
 
 ### Use / skip
 

@@ -65,6 +65,12 @@ The lasso tax is a **V**. A sharp corner at zero. Sitting at 0 is cheap, and lea
 
 Same λ idea: louder tax → more death.
 
+> [!note] Why L1 and L2? Why not power 3 or 4?
+> People call the power the **L-norm**:
+> - **Power 1 (L1, Lasso):** sharp spike at zero. Snaps weak knobs to zero. The haircut tool.
+> - **Power 2 (L2, Ridge):** smooth bowl. Drags everyone down together without killing anyone.
+> - **Power 3, 4 and higher:** Hysterically punishes giant knobs, but barely taxes knobs smaller than 1 at all ($0.1^4 = 0.0001$). Small noise gets a free pass to wander wildly near zero. L1 and L2 are the only two real screwdrivers in the toolbox.
+
 ---
 
 ## Page 3 — Why a diamond kills

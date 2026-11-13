@@ -61,7 +61,16 @@ The people who **hold** the fence are the support vectors. On a dream street the
 
 On our 56 trainers, a linear SVM keeps **12 fail + 12 pass = 24**. The other 32 are decoration — deep interior, silent.
 
-Logistic: every person tugs the S a little. SVM: only the holders vote.
+Why does the interior stay silent? The error curve is a **hinge** (like an open door hinge):
+
+- **Safely on your side (behind the curb):** cost = 0. Zero pull. Whether a student is 1 foot or 100 miles deep in pass territory, cost is still zero.
+- **Inside the street or on the wrong side:** the hinge bends open. Cost climbs **linearly** with every step into the gutter:
+
+$$\text{cost} = \max(0, \; 1 - \text{margin distance})$$
+
+Logistic and SVM have completely different physics because of this:
+- **Logistic:** every point feels a tiny surprise; everyone pulls the line.
+- **SVM:** anyone behind the curb generates zero cost. Only people touching or crossing the hinge exert force on the fence.
 
 ---
 
@@ -188,6 +197,7 @@ Scale is in the pipeline. Unscaled, sleep’s units fight hours, same sin as uns
 | street | margin |
 | fence | decision boundary |
 | curb-sitter | support vector |
+| door hinge | hinge loss ($\max(0, 1 - \dots)$) |
 | C | inverse of a tax |
 
 ![sv-05-when](../../assets/sv-05-when.svg)
