@@ -56,6 +56,11 @@ $$y_t = \text{trend} + \text{season} + b x_t + \phi e_{t-1} + \text{new shock}$$
 
 The **b x** part is the outside lever. The **φ e** part is the old miss echoing.
 
+> [!note] In software: Regression with ARIMA errors
+> When libraries (like R's `Arima(y, xreg=X)` or Python's `statsmodels.SARIMAX`) say "ARIMAX", they almost always fit **Regression with ARIMA errors**:
+> $$y_t = \text{linear fit on } X_t + \eta_t, \quad \text{where } \eta_t \text{ follows an ARIMA model}$$
+> That way, $b$ keeps its simple, interpretable meaning: a 1-unit shift in $X$ lifts $y$ by $b$ units, while ARIMA cleans up the leftover autocorrelations.
+
 ARIMAX asks two questions at once:
 
 - does X explain the series after time furniture is present?
@@ -150,7 +155,7 @@ print("estimated X coefficient", round(x_beta, 2), "  planned future X", x[cut:]
 ```
 actual [4.82 5.57 4.47 3.32]
 ARIMA-style [5.17 5.58 5.05 3.23] MAE 0.26
-ARIMAX [5.01 5.5 4.56 3.21] MAE 0.12
+ARIMAX [5.01 5.5  4.56 3.21] MAE 0.12
 estimated X coefficient 0.74   planned future X [0, 1, 0, 0]
 ```
 
@@ -164,10 +169,19 @@ The known schedule helps ARIMAX beat the no-X version. Change the future X scena
 |---|---|
 | X | outside predictor |
 | ARIMAX | ARIMA plus outside predictors |
-| dynamic regression | another name for regression with time-memory leftovers |
+| dynamic regression | regression with time-memory leftovers |
 | future X | known, scheduled, or forecast separately |
 | coefficient | predictive lever, not automatically causal effect |
 | scenario | the future X path you assumed |
+
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| X | exogenous regressor (`xreg` / `exog`) |
+| dynamic regression | regression with ARMA errors |
+| predictor available in advance | leading indicator |
+| assumed future X | scenario forecast / what-if analysis |
 
 ### Use / skip
 
