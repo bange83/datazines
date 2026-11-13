@@ -78,8 +78,9 @@ The link is not decoration. It is the promise that ŷ will not wander into a non
 
 **Poisson** — *y* is a count. Mean = variance, strictly. Mistakes, emails, accidents.
 
-> [!tip] Margin note: overdispersion
-> Poisson forces the spread to match the average. Real counts often rattle much wider (**overdispersion**). When counts spread wild, you reach for **negative binomial** glasses. Same log link, calmer uncertainty.
+> [!tip] Margin note: overdispersion & negative binomial
+> Poisson forces the spread to match the average. Real counts often rattle much wider (**overdispersion**) because people clump or have good and bad days.
+> **Negative binomial** is simply **Poisson with a trembling rate**: each person has their own rate that wobbles around the average. It adds a second knob for that extra wobble: $\text{variance} = \mu + \alpha \mu^2$. If wobble $\alpha = 0$, you are back to plain Poisson. Same log link, calmer uncertainty.
 
 Wrong family: you can still get a number out. It will lie about uncertainty, and sometimes about the mean too. Pick the family by looking at *y*, not by looking at a menu of functions.
 
