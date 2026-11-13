@@ -88,6 +88,11 @@ One-hot said study · hours = **0**. The cloud says they are almost the same arr
 
 Nearest to `study`: textbook, tutor, hours. Nearest to `sleep`: rest, tired, night. Pattern, not a definition of “study.”
 
+> [!tip] Meaning as arrows: vector math
+> Because words become directions in space, concepts can be added and subtracted:
+> $$\vec{v}_{\text{king}} - \vec{v}_{\text{man}} + \vec{v}_{\text{woman}} \approx \vec{v}_{\text{queen}}$$
+> In our student notes, moving from `study` toward `sleep` travels along an axis of recovery; moving toward `coffee` travels along distraction. Similar conceptual shifts trace parallel arrows across the cloud.
+
 ---
 
 ## Page 5 — The first floor is a lookup
@@ -228,10 +233,11 @@ PCA on co-occurrence is a **sketch** of the table. Cosines on this page are in t
 
 | here | there |
 |---|---|
-| point / row | embedding vector |
-| one-hot | dummy encoding |
-| nearby | similar meaning |
-
+| point / row | embedding vector (dense representation) |
+| one-hot | sparse categorical dummy |
+| cloud of words | latent semantic space |
+| trained vectors | Word2Vec / GloVe |
+| subwords | BPE (Byte-Pair Encoding) tokens |
 
 ### Use / skip
 

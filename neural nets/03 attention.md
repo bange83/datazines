@@ -56,6 +56,11 @@ Study’s slices: 0.00 coffee, 0.05 itself, **0.95 hours**. Hours mostly listens
 
 People call the slices **attention weights**. Rooms = the other tokens, not fail / pass / honors.
 
+> [!tip] Why divide by $\sqrt{\text{dim}}$?
+> In large models where points have hundreds of dimensions, dot products grow huge.
+> Huge numbers push softmax into extreme saturation, where slopes flatten out and gradients vanish.
+> Dividing by $\sqrt{\text{dim}}$ keeps the variance of the dot products near 1 — keeping softmax responsive so backprop stays alive.
+
 ---
 
 ## Page 3 — Mix is a weighted average
@@ -210,10 +215,11 @@ This is **self-attention** with one head and no extra Q/K/V floors. An LLM walks
 
 | here | there |
 |---|---|
-| look | attention scores |
-| mix | weighted average of values |
-| bag | mean pooling |
-
+| look | scaled dot-product attention scores |
+| mix | weighted contextual representation |
+| bag | mean pooling (unweighted bag-of-words) |
+| looking left only | causal / autoregressive attention mask |
+| many looks in parallel | multi-head attention (MHA) |
 
 ### Use / skip
 

@@ -75,6 +75,10 @@ A dead unit is a unit whose score stayed negative. It contributes nothing this p
 
 You do not pick the hinges by hand. Descent walks the knobs until the hill appears — or doesn’t.
 
+> [!tip] The universal bender & why ReLU won
+> - **The theorem:** With enough hinges on that middle floor, a net can bend itself to approximate *any* smooth non-linear curve in the universe (Universal Approximation).
+> - **Why ReLU won:** S-curves flatten at the extremes; in deep floors, their slope becomes nearly zero and backprop dies (vanishing gradient). ReLU’s slope is an honest 1 for positive scores — the signal flows without fading.
+
 ---
 
 ## Page 5 — Leftover walks home
@@ -188,9 +192,10 @@ Logistic never leaves 0.39. The net is a hill: 0.01 at 1.5 hours, **0.86 at 3.5*
 | here | there |
 |---|---|
 | leftover walking home | backpropagation |
-| knobs | weights |
-| squash | activation |
-
+| knobs | weights and biases |
+| squash | activation function |
+| one hidden floor | universal approximator (Cybenko theorem) |
+| dying S-curve | vanishing gradient problem |
 
 ### Use / skip
 

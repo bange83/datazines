@@ -66,6 +66,12 @@ Two is a stack. Ninety-six is a career. This notebook stops at the idea.
 
 Depth is extra floors, not extra magic. Extra knobs need extra notes, or they memorize *coffee study hours* and shrug on a new sentence.
 
+> [!tip] Why deep stacks do not die: skip connections
+> When you stack many blocks, signals and gradients tend to dissolve into noise.
+> Transformers add an open bypass around each look and net floor:
+> $$\text{output} = \text{input} + \text{Floor}(\text{input})$$
+> This **residual connection** lets the raw word signal pass through untouched, while each floor only learns the small leftover adjustment.
+
 ---
 
 ## Page 4 — Last token is a cheap LLM — and it lies
@@ -99,6 +105,10 @@ After `study`, P(hours):
 | 2 | **0.18** | flatter, chatty |
 
 Use: **sample** from the slices. 0.5 repeats itself. 2 wanders. The scores did not change. You changed how peaky the **pile** is before you draw. Logistic’s 0.5 cut is different: it keeps P and only changes the yes/no call.
+
+> [!tip] Plausible is not true: Top-p and hallucination
+> - **Top-p (Nucleus sampling):** Temperature reshapes the pile, but a crazy 0.001% tail word can still get rolled by luck. In practice, models cut the tail: only tokens making up the top 90% of mass (Top-$p = 0.9$) are allowed to play.
+> - **Likelihood $\neq$ Fact:** An LLM optimizes text continuity, not honesty. A fluent, confident falsehood can have a high $P(\text{next token})$.
 
 Tokenizer, context window, pretrain vs chat: extra pages when a project knocks. Not a second sketchbook.
 
@@ -272,10 +282,12 @@ A real LLM is this walk with a look and a stack, on a much bigger note pile. The
 
 | here | there |
 |---|---|
-| leftover | cross-entropy |
-| look | attention |
-| next token | next word / piece |
-
+| next token | autoregressive next-token prediction |
+| leftover | cross-entropy loss |
+| scores before softmax | logits |
+| block bypass | residual / skip connection |
+| cutting the tail | Top-p (nucleus) / Top-k sampling |
+| plausible but false | hallucination |
 
 ### Use / skip
 
