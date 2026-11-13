@@ -16,9 +16,7 @@ aliases:
 
 ![ci-00-hero](../assets/ci-00-hero.svg)
 
-Read [[01 confounding]] and [[01 lag trend season]] first. Same exam world: 24 weeks of hours. Week 17 they add extra office hours — a **campaign**. The fork still applies. One series, one start date, a would-have.
-
-Flip it like a notebook. One page = one idea. Done.
+Read [[01 confounding]], [[01 lag trend season]], and [[02 forecasting]] first. An ordinary forecast asks what comes next. This note asks for the missing **no-campaign** path: 24 weeks of hours, with extra office hours starting in week 17. The fork still applies.
 
 ---
 
@@ -34,7 +32,7 @@ The question is:
 
 > after week 17, how much higher than **the weeks we would have had**?
 
-Would-have is a series. Fit it on the past. Project it through the campaign. The **gap** is the impact.
+Would-have is a series. Fit it on the past. Project it through the campaign. The **gap** is the impact. This looks like forecasting, but the target is special: not the most likely future, the future **without the intervention**.
 
 ---
 
@@ -66,7 +64,12 @@ Fit the time-01 line **only on weeks 1–16**: week-number plus the 4-week dummi
 
 Mean gap **+0.67**. Planted was +0.90. Short past, leftover, a sketch — not a scandal. Week 24 is still a **break**. Season was in the counterfactual. Naive would have called the rebound the campaign.
 
-People call this **causal impact**. Ugly product name. Friendly job: *gap vs a series that never saw the campaign.*
+People call this **causal impact**. Ugly product name. Friendly job: *gap vs a series that never saw the campaign.* Ordinary forecasting is the neighbour; this is a counterfactual forecast.
+
+> [!note] The one-series trap: simultaneous shocks
+> Projecting would-have from weeks 1–16 assumes **no other outside shock hit in week 17**.
+> If a campus-wide exam changed or a flu outbreak hit right when office hours started, would-have will blame the campaign for the flu.
+> To protect against outside shocks, you bring in an untouched twin from another classroom: a **control series** ([[03 control series]]).
 
 ---
 
@@ -88,11 +91,11 @@ Bootstrap the **pre** leftover, 2000 bags ([[02 bootstrap]]): mean gap 0.51 to 0
 
 The dashed line is **one** guess. A fatter would-have is a **bump** on every future week: start somewhere ([[01 prior]]), walk the height ([[02 MCMC]]). Then the gap is a pile, not a point.
 
-People call that engine **BSTS** — Bayesian structural time series. Same furniture as time 01 (trend, season, lag), with a posterior instead of one least-squares line. Same sentence:
+People call that engine **BSTS** — Bayesian structural time series. Same neighbourhood as ARIMA / ARIMAX ([[03 ARIMA]] / [[04 ARIMAX]]): trend, season, memory, and sometimes outside series. But the job here is the no-campaign counterfactual, not simply next-week accuracy. It carries a posterior instead of one least-squares line. Same sentence:
 
 > impact = actual − would-have.
 
-The fork does not go away because the dashed line got shoulders. This notebook keeps the line + leftover replay. The bump is the same job, louder.
+The fork does not go away because the dashed line got shoulders. This notebook keeps the line + leftover replay. The bump is the same job, louder. A good control can make that bump narrower: [[03 control series]].
 
 ---
 
@@ -114,6 +117,8 @@ If you keep only one thing:
 ## Page 7 — Week-17 office hours, in sklearn
 
 Same 24-week beat as [[01 lag trend season]]. Campaign at week 17, planted **+0.90**. Trend + season on the past. Last-four fake start has **no** lift.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np
@@ -182,8 +187,18 @@ Naive +1.78 steals the year. Gap vs would-have **+0.67** (planted 0.90 — lefto
 | fake start | same method on a quiet date; should shrug |
 | BSTS | would-have as a bump (prior + walk), not one line |
 
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| would-have | counterfactual |
+| fake start | in-time placebo test |
+| gap | treatment effect |
+| untouched twin | control series / synthetic control ([[03 control series]]) |
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

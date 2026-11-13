@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 linear regression]] and [[01 logistic regression]]. Those two are not strangers. They are the same machine in two outfits. This note is the family portrait.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — y is not always a grade
@@ -137,6 +135,8 @@ If you keep only one thing:
 
 Same **thirty** students as ridge. Same hours, sleep, tutor. *y* is not a grade — it is a Poisson count of mistakes. PoissonRegressor uses a **log link**. LinearRegression is the identity-link cousin — and it will go negative if you ask it far enough.
 
+![zini-code](../../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.linear_model import LinearRegression, PoissonRegressor
@@ -200,6 +200,8 @@ Ordinary line: still fine at 6 hours, then **−2** at 10. The glasses were the 
 | fit quality | deviance / D² |
 
 ### Use / skip
+
+![zini-right](../../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

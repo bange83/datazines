@@ -20,8 +20,6 @@ Read [[01 PCA]] first. Same exam world: hours and sleep. **Still no grade.** PCA
 
 LDA drew two blobs *because* of pass/fail. Here nobody told us who passed. We still want names for clumps.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — There is still no grade
@@ -120,6 +118,8 @@ If you keep only one thing:
 
 Same unlabeled cloud as page 1 — eighty students, hours and sleep, no grade. Three styles planted.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.cluster import KMeans
@@ -193,6 +193,8 @@ k=3 is the elbow and the silhouette peak. Sizes **28 / 28 / 24** — the plant, 
 
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

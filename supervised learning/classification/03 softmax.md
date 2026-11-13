@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 logistic regression]] and [[01 distributions]]. Coin with two faces → coin with many faces. Same exam world: now fail / pass / **honors**.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — Two rooms were easy
@@ -81,6 +79,8 @@ If you keep only one thing:
 
 Eighty students. Same exam *hours*. *y* has three rooms, driven by hours. `LogisticRegression` with 3 classes **is** softmax (multinomial).
 
+![zini-code](../../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.linear_model import LogisticRegression
@@ -137,6 +137,8 @@ Hours up: fail’s *b* negative, honors positive. At 2 hours the pile is mixed; 
 | leftover | cross-entropy |
 
 ### Use / skip
+
+![zini-right](../../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

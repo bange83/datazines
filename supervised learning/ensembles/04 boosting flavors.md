@@ -21,8 +21,6 @@ Read [[03 gradient boosting]] first. That notebook is the religion. This one is 
 
 No extra AdaBoost sheet. No extra XGBoost sheet. This is the “what’s the difference” note.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — You do not need three religions
@@ -134,6 +132,8 @@ If you keep only one thing:
 
 Same pass/fail class as the boosting notebook — eighty students. No XGBoost install required: `HistGradientBoostingClassifier` is sklearn’s histogram engine (LightGBM-adjacent). AdaBoost uses **stumps**.
 
+![zini-code](../../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -202,6 +202,8 @@ AdaBoost luckiest on this split. Hist ≈ forest territory. GB hungrier on train
 | gym membership | leaf regularization + histogram binning |
 
 ### Use / skip
+
+![zini-right](../../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

@@ -19,8 +19,6 @@ aliases:
 
 Read [[01 distributions]] first, and the eight grades on [[01 linear regression]]. Same people. Same line ŷ = 1.75 + 1 · hours. The new question is not ŷ. It is **is this real?**
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — Two questions, one class
@@ -122,6 +120,8 @@ If you keep only one thing:
 
 Same table as linear regression. Mean vs 5, slope vs 0, and the two groups. No extra story.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from scipy import stats
@@ -181,6 +181,8 @@ Mean vs 5: leftover shrugs (p = 0.71; 5 sits in 3.72–6.78). Slope vs 0: leftov
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - you ask whether a **mean or slope** could be leftover
@@ -199,4 +201,4 @@ Mean vs 5: leftover shrugs (p = 0.71; 5 sits in 3.72–6.78). Slope vs 0: leftov
 
 ---
 
-*Inference 01. Same eight grades, now with a judge. The pile without a bell: [[02 bootstrap]]. The fork: [[01 confounding]]. Chance costume still: [[01 distributions]].*
+*Inference 01. Same eight grades, now with a judge. The pile without a bell: [[02 bootstrap]]. Three piles next: [[03 ANOVA]]. The fork: [[01 confounding]]. Chance costume still: [[01 distributions]].*

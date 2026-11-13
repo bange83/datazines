@@ -19,8 +19,6 @@ aliases:
 
 Read [[01 linear regression]] and [[03 lasso]] first. LARS is how you *travel* across models. Lasso is one of the destinations.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — Taxes vs walks
@@ -185,6 +183,8 @@ If you keep only one thing:
 
 Same **thirty** students as ridge and lasso. Scale, then `Lars(n_nonzero_coefs=3)`: stop after three joins, before junk walks in. `active_` is the order. `coef_path_` is the film.
 
+![zini-code](../../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.linear_model import Lars
@@ -270,6 +270,8 @@ Ridge / lasso / elastic net = *what you score.*
 LARS = *how you walk through the answers.*
 
 ### Use / skip
+
+![zini-right](../../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

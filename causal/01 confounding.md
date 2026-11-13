@@ -19,8 +19,6 @@ aliases:
 
 Read [[01 linear regression]] and [[01 t-test]] first. Same exam world. Hours still make the grade. Coffee is back — as junk that **rides with hours**. The t-test can call coffee “real.” It cannot tell you coffee *did* it.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The coffee line looks great
@@ -69,6 +67,13 @@ Coffee’s slope dies. Hours stays near 1 — the number we planted. R² does no
 
 This is not a new line. It is the old line, with the common cause **held still**. Lasso would fire coffee ([[03 lasso]]). Here we care *why* it should be fired.
 
+> [!caution] The control trap: Colliders
+> You might think: *“Then I should control for every variable in my spreadsheet!”*
+> Do **not** do that.
+> If a variable sits behind both ($X \leftarrow Z \to Y$), that is a **fork** (confounder): hold it still.
+> But if two things *cause* the same outcome ($X \to C \leftarrow Y$), that variable is a **collider**.
+> If you hold a collider $C$ still, you **invent** a fake correlation between $X$ and $Y$ out of thin air (collider bias / Berkson's trap). Hold common causes still. Leave common effects alone.
+
 ---
 
 ## Page 4 — See is not do
@@ -105,6 +110,8 @@ If you keep only one thing:
 ## Page 6 — Coffee as passenger, in sklearn
 
 Eighty students — enough that coffee-only looks loud and then dies when hours is in the room. Grade depends on hours only. Coffee rides with hours.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np
@@ -158,8 +165,18 @@ Coffee-only: 0.71 and a proud R². Hours-only: *b* ≈ 1, as planted. Both: coff
 | do(x) | set the lever; break the incoming arrows |
 | hold still | put the confounder in the room |
 
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| fork | confounder (common cause) |
+| do(x) | interventional distribution |
+| passenger b | omitted variable bias |
+| common effect | collider (never control for this) |
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

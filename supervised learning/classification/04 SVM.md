@@ -19,8 +19,6 @@ aliases:
 
 Read [[01 logistic regression]] and [[02 LDA]] first. Same exam. Same hours and sleep. Logistic wanted **P(yes)**. LDA drew two blobs. This notebook wants a **fence**, and the widest gutter it can get.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — A cut is not enough
@@ -124,6 +122,8 @@ If you keep only one thing:
 
 Same eighty as logistic / LDA. Hours and sleep, pass/fail. Split 70/30, `random_state=0`. Linear SVM vs logistic. Count who holds the fence.
 
+![zini-code](../../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.svm import LinearSVC, SVC
@@ -203,6 +203,8 @@ Scale is in the pipeline. Unscaled, sleep’s units fight hours, same sin as uns
 ![sv-05-when](../../assets/sv-05-when.svg)
 
 ### Use / skip
+
+![zini-right](../../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

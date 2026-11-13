@@ -16,8 +16,6 @@ aliases:
 
 ![lr-00-hero](../../assets/lr-00-hero.svg)
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The problem
@@ -423,6 +421,8 @@ If you keep only one thing:
 
 Same eight rows as page 1. One *x*. Least squares. Scale would not change this story — page 14. Just the line.
 
+![zini-code](../../assets/zini/zini-coding.png)
+
 ```python
 from sklearn.linear_model import LinearRegression
 import numpy as np
@@ -479,6 +479,8 @@ It always goes through the centroid (x̄, ȳ).
 **cause** — extra. Not inside the formula.
 
 ### Use / skip
+
+![zini-right](../../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

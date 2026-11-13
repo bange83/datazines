@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 distributions]] first. Bell, coin, counts. This is the coin’s **cousin**, not a fourth zoo animal. Logistic already used a coin for *one* pass/fail. Beta is what you wear when **P(pass) is the thing you don’t know yet**.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The coin assumed you knew P
@@ -100,6 +98,8 @@ If you keep only one thing:
 
 True P = 0.6. Eight tosses. Flat start, then the add. No sklearn estimator — the bump *is* the lesson.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from scipy.stats import beta
@@ -157,6 +157,8 @@ Three yes, five no. Flat start → mean **0.40**, still a wide stick (0.16 to 0.
 
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

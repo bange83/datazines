@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" width="860" height="400" role="img" aria-label="a forecast path leaves the past and enters later weeks">
+<defs><filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.07"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter></defs>
+<rect width="860" height="400" rx="18" ry="18" fill="#f4efe4"/><rect width="860" height="400" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="430" y="38" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#7a6e5e" text-anchor="middle">train on the past. walk into later.</text>
+<path d="M 70,320 L 790,320" stroke="#241c14" stroke-width="1.8"/><path d="M 80,330 L 80,70" stroke="#241c14" stroke-width="1.8"/>
+<path d="M 90,246 L 140,258 L 190,236 L 240,270 L 290,208 L 340,220 L 390,190 L 440,224 L 490,168 L 540,181" fill="none" stroke="#241c14" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 540,181 L 590,155 L 640,176 L 690,136 L 740,178" fill="none" stroke="#b44a28" stroke-width="2.8" stroke-dasharray="8 6" stroke-linecap="round"/>
+<path d="M 540,181 L 590,130 L 640,142 L 690,108 L 740,135 L 740,215 L 690,164 L 640,210 L 590,180 L 540,210 Z" fill="#b44a28" opacity="0.12"/>
+<path d="M 540,181 L 590,155 L 640,176 L 690,136 L 740,178" fill="none" stroke="#b44a28" stroke-width="2.8" stroke-dasharray="8 6" stroke-linecap="round"/>
+<path d="M 540,70 L 540,320" stroke="#3d5f86" stroke-width="1.8" stroke-dasharray="7 6"/>
+<text x="540" y="62" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#3d5f86" text-anchor="middle">forecast origin</text>
+<text x="300" y="355" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#241c14" text-anchor="middle">observed past</text>
+<text x="650" y="355" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#b44a28" text-anchor="middle">later: prediction + band</text>
+<text x="430" y="385" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">one-step skill is not four-step skill.</text>
+</svg>

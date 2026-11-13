@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 neural net]] first. Same exam world. The levers changed species: not hours as a number — **words** in the students’ notes. Softmax ([[03 softmax]]) still waits at the last layer.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — Hours was already a number
@@ -124,6 +122,8 @@ If you keep only one thing:
 ## Page 7 — Notes → points, in sklearn
 
 Twenty-seven exam notes. Count co-occurrence, two dimensions. The printout is the cloud on page 3.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np
@@ -234,6 +234,8 @@ PCA on co-occurrence is a **sketch** of the table. Cosines on this page are in t
 
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

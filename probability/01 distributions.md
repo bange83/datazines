@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 linear regression]] and [[06 GLM]]. GLM already picked glasses for *y*. This notebook names the **shapes** those glasses assumed — without a 40-curve catalog.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The leftover had a costume
@@ -100,6 +98,8 @@ If you keep only one thing:
 
 Same eight people. No extra library.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.linear_model import LinearRegression
@@ -135,6 +135,8 @@ Mean 0: OLS. Std ~0.46: the bell’s spread, guessed from eight dots. Two leftov
 | P(1−P) | spread of the **coin** (no extra σ) |
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

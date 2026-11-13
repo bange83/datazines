@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 linear regression]] first. Same hours-and-grades world. Only now *y* is not a grade. *y* is **did they pass?**
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — Yes or no
@@ -175,6 +173,8 @@ If you keep only one thing:
 
 Exam world: hours, sleep, tutor. **Eighty** students — a crowd, not the thirty on the ridge page. *y* is pass/fail, not a grade. One lever, no scaler — the S is the lesson, not a fight between hours and minutes. (sklearn fits with a gentle L2 brake `C=1.0` by default so $b$ does not explode if classes separate). Mixed units: scale first ([[02 ridge regression]], page 10).
 
+![zini-code](../../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.linear_model import LogisticRegression
@@ -234,6 +234,8 @@ Accuracy 0.84 is on *these* people — pride, like R² without a split. Pass is 
 | cliff runaway | perfect separation (why sklearn adds L2 penalty) |
 
 ### Use / skip
+
+![zini-right](../../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

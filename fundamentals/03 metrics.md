@@ -19,8 +19,6 @@ aliases:
 
 Read [[01 train test validate]] and [[01 logistic regression]] first. Same pass/fail exam, a harder paper, so yes is rarer. R² still lives on the grade shelf. This notebook is **precision and recall**, not a p-value ([[01 t-test]]).
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — A grade leftover is still a leftover
@@ -125,6 +123,8 @@ If you keep only one thing:
 ## Page 7 — A harder exam, in sklearn
 
 Same levers as logistic. Harder intercept so pass is rarer (**26 / 80**). Split 70/30, `random_state=0`. Dummy vs logistic vs three cuts.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np
@@ -231,6 +231,8 @@ Logistic 01 used a milder intercept (−3.2). Pass rate there was ~2/3, so accur
 | dummy | baseline |
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

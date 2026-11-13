@@ -20,8 +20,6 @@ aliases:
 
 Read [[01 logistic regression]] first. Same exam. Same hours and sleep. Different religion: logistic never drew the clouds. LDA **starts** with the clouds.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — You already classify. You modeled P(yes).
@@ -139,6 +137,8 @@ If you keep only one thing:
 
 Same pass/fail class as logistic — eighty students, not the thirty graders on the ridge page. *y* = pass. Features = hours, sleep. Split 70/30.
 
+![zini-code](../../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.discriminant_analysis import (
@@ -200,6 +200,8 @@ On this split, LDA, QDA, and logistic **tie on the test set**. QDA is a hair wor
 | logistic | S, no blobs |
 
 ### Use / skip
+
+![zini-right](../../assets/zini/zini-decision.png)
 
 **Reach for LDA when**
 

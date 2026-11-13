@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 390" width="860" height="390" role="img" aria-label="three grade piles, with within-group wobble and between-group distance">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.07"/></feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="860" height="390" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="860" height="390" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="430" y="36" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#7a6e5e" text-anchor="middle">three piles. compare between wobble with within wobble.</text>
+<path d="M 70,315 L 790,315" fill="none" stroke="#241c14" stroke-width="1.8"/>
+<path d="M 90,275 L 270,275" fill="none" stroke="#3d5f86" stroke-width="4" stroke-linecap="round"/>
+<path d="M 340,218 L 520,218" fill="none" stroke="#b44a28" stroke-width="4" stroke-linecap="round"/>
+<path d="M 610,140 L 790,140" fill="none" stroke="#4f6d55" stroke-width="4" stroke-linecap="round"/>
+<g fill="#3d5f86"><circle cx="110" cy="260" r="8"/><circle cx="140" cy="285" r="8"/><circle cx="175" cy="270" r="8"/><circle cx="205" cy="290" r="8"/><circle cx="235" cy="263" r="8"/></g>
+<g fill="#b44a28"><circle cx="375" cy="205" r="8"/><circle cx="405" cy="230" r="8"/><circle cx="445" cy="212" r="8"/><circle cx="475" cy="222" r="8"/><circle cx="505" cy="202" r="8"/></g>
+<g fill="#4f6d55"><circle cx="645" cy="125" r="8"/><circle cx="675" cy="150" r="8"/><circle cx="715" cy="132" r="8"/><circle cx="745" cy="145" r="8"/><circle cx="775" cy="115" r="8"/></g>
+<path d="M 270,275 L 340,218" fill="none" stroke="#c4a35a" stroke-width="2.2" stroke-dasharray="6 5"/>
+<path d="M 520,218 L 610,140" fill="none" stroke="#c4a35a" stroke-width="2.2" stroke-dasharray="6 5"/>
+<text x="180" y="345" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#3d5f86" text-anchor="middle">solo · mean 4.88</text>
+<text x="430" y="345" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="middle">buddy · mean 6.00</text>
+<text x="700" y="345" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#4f6d55" text-anchor="middle">tutor · mean 7.50</text>
+<text x="430" y="85" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#c4a35a" text-anchor="middle">between</text>
+<text x="150" y="180" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">within</text>
+</svg>

@@ -21,8 +21,6 @@ Read [[01 linear regression]] and [[01 gradient descent]] first. Same exam *worl
 
 Bandits ([[02 bandits]]) have no next-state. The table, named: [[03 Q]].
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The machine changed jobs
@@ -117,6 +115,8 @@ If you keep only one thing:
 
 Exam loop. Two states, two acts. Random policy and Q share one world. Sensible policy gets a fresh draw of the weeks.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 
@@ -206,6 +206,8 @@ Coin-flip **30.5**. Sensible **38.3**. Q’s greedy row is rest / study — the 
 
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

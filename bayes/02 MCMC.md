@@ -20,8 +20,6 @@ Read [[01 prior]] and [[01 gradient descent]] first. Same eight coins, 3 yes / 5
 
 A walk, not a catalog of samplers.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — GD sits. This walk piles.
@@ -93,6 +91,8 @@ If you keep only one thing:
 
 Same 3 yes, 5 no. Flat prior. Metropolis on *P*. No extra library.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 
@@ -163,6 +163,8 @@ Start at 0.5, wander. Mean **0.39** vs add **0.40**. Shoulders 0.17–0.65 vs 0.
 
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

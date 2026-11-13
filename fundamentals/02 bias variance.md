@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 train test validate]] first. Same **thirty graders**. This notebook names the gap: jumpy vs shy.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The gap has a name
@@ -102,6 +100,8 @@ If you keep only one thing:
 ## Page 6 — Forty hides, in sklearn
 
 Same thirty as [[01 train test validate]]. 40 different 21 / 9 splits. Ordinary hours *b* vs a tax on huge slopes (scaled, α = 10). 
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np
@@ -186,6 +186,8 @@ Ordinary hours *b* spans **nine points**. The tax’s scaled hours *b* stays in 
 | hug the trainers | overfit |
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

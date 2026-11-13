@@ -19,8 +19,6 @@ Read [[01 linear regression]] first, especially the bowl on page 14. Same eight 
 
 Logistic, a tiny net, an LLM — they all **walk**. Boosting hunts leftover with a tree; this hunts leftover by moving knobs.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The bowl you already drew
@@ -91,6 +89,8 @@ If you keep only one thing:
 ## Page 5 — Eight people, walking, in numpy
 
 Same table as linear regression. Start at a = 0, b = 0. Rate 0.05. No sklearn estimator — the walk *is* the lesson.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np
@@ -168,6 +168,8 @@ Nearby, not on the floor. The path wiggled. That is the point, not a bug. Quiet 
 | leftover | residual / error |
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

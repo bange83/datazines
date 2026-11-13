@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 linear regression]] first. This is the sequel: what to do when that line goes feral.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The line you already know
@@ -292,6 +290,8 @@ Thirty students — few enough that the ordinary line can overreact. Grade from 
 
 Both machines get the **same scaler**. Scale does not change ordinary’s guesses — only how you *read* the knobs. Then ridge adds the tax. The test-R² jump is that tax, not the spelling.
 
+![zini-code](../../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.linear_model import LinearRegression, Ridge
@@ -394,6 +394,8 @@ Ridge does **not** fix a bent cloud. If the truth curves, you still need a diffe
 Ridge **does** fix a drama queen of a straight line.
 
 ### Use / skip
+
+![zini-right](../../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

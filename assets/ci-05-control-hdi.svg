@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" width="860" height="430" role="img" aria-label="a related control series narrows the uncertainty around the counterfactual">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.07"/></feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="860" height="430" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="860" height="430" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="430" y="38" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#7a6e5e" text-anchor="middle">the control gives the missing twin a handhold</text>
+<path d="M 75,340 L 785,340" fill="none" stroke="#241c14" stroke-width="1.8"/>
+<path d="M 75,350 L 75,70" fill="none" stroke="#241c14" stroke-width="1.8"/>
+<path d="M 555,72 L 555,340" fill="none" stroke="#b44a28" stroke-width="1.7" stroke-dasharray="7 6" opacity="0.8"/>
+<text x="555" y="62" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="middle">intervention</text>
+<path d="M 80,258 L 125,268 L 170,275 L 215,310 L 260,240 L 305,250 L 350,256 L 395,294 L 440,220 L 485,230 L 530,235 L 555,280" fill="none" stroke="#3d5f86" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 80,250 L 125,260 L 170,267 L 215,302 L 260,232 L 305,242 L 350,248 L 395,286 L 440,212 L 485,222 L 530,227 L 555,272" fill="none" stroke="#b44a28" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 555,272 L 600,236 L 645,244 L 690,270 L 735,205 L 780,219" fill="none" stroke="#3d5f86" stroke-width="2.2" stroke-dasharray="7 6" opacity="0.55"/>
+<path d="M 555,248 L 600,215 L 645,224 L 690,250 L 735,177 L 780,193 L 780,245 L 735,229 L 690,286 L 645,264 L 600,257 L 555,296 Z" fill="#3d5f86" opacity="0.16"/>
+<path d="M 555,236 L 600,225 L 645,230 L 690,260 L 735,195 L 780,208 L 780,223 L 735,209 L 690,275 L 645,248 L 600,243 L 555,284 Z" fill="#4f6d55" opacity="0.2"/>
+<path d="M 555,240 L 600,230 L 645,236 L 690,265 L 735,190 L 780,204" fill="none" stroke="#3d5f86" stroke-width="2.6" stroke-dasharray="7 6" opacity="0.9"/>
+<path d="M 555,197 L 600,177 L 645,184 L 690,215 L 735,140 L 780,158" fill="none" stroke="#b44a28" stroke-width="3" stroke-linecap="round"/>
+<ellipse cx="735" cy="140" rx="6" ry="6" transform="rotate(5 735 140)" fill="#b44a28"/>
+<text x="145" y="125" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#4f6d55" text-anchor="middle">together before</text>
+<text x="665" y="115" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#3d5f86" text-anchor="middle">narrower HDI</text>
+<text x="665" y="328" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#7a6e5e" text-anchor="middle">control-informed would-have</text>
+<text x="430" y="395" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#241c14" text-anchor="middle">same outside world → less wandering → a narrower band</text>
+</svg>

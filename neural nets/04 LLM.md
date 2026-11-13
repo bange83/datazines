@@ -19,8 +19,6 @@ aliases:
 
 Read [[01 neural net]], [[02 embeddings]], [[03 attention]], and [[03 softmax]] first. Same exam notes. The job changed: not P(pass) — **P(the next word)**.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The job is the next word
@@ -125,6 +123,8 @@ If you keep only one thing:
 ## Page 7 — Next word after *study*, in numpy
 
 Same 27 notes as [[02 embeddings]]. Last-token model (the cheap LLM). Dim 4. No sklearn estimator — the walk *is* the lesson.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np
@@ -278,6 +278,8 @@ A real LLM is this walk with a look and a stack, on a much bigger note pile. The
 
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

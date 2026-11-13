@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 390" width="860" height="390" role="img" aria-label="ARIMAX combines series memory with a known outside predictor">
+<defs><filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.07"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter></defs>
+<rect width="860" height="390" rx="18" ry="18" fill="#f4efe4"/><rect width="860" height="390" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="430" y="38" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#7a6e5e" text-anchor="middle">memory inside + a lever outside</text>
+<rect x="65" y="85" width="220" height="190" rx="16" fill="#b44a28" opacity="0.1" stroke="#b44a28" stroke-width="2"/>
+<text x="175" y="130" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#b44a28" text-anchor="middle">target y</text>
+<path d="M 100,225 L 140,205 L 180,230 L 220,165 L 260,185" fill="none" stroke="#b44a28" stroke-width="3"/>
+<path d="M 325,180 L 515,180" stroke="#241c14" stroke-width="2.4"/><path d="M 500,170 L 520,180 L 500,190" fill="none" stroke="#241c14" stroke-width="2.4"/>
+<text x="420" y="155" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">ARIMA memory</text>
+<rect x="575" y="85" width="220" height="190" rx="16" fill="#3d5f86" opacity="0.1" stroke="#3d5f86" stroke-width="2"/>
+<text x="685" y="130" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#3d5f86" text-anchor="middle">outside X</text>
+<path d="M 610,225 L 650,180 L 690,220 L 730,155 L 770,190" fill="none" stroke="#3d5f86" stroke-width="3"/>
+<text x="430" y="330" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="19" fill="#4f6d55" text-anchor="middle">future X must be known, scheduled, or forecast too.</text>
+</svg>

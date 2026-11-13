@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 t-test]] first. Same eight grades. Same line ŷ = 1.75 + 1 · hours. Forests already **bagged** people ([[02 random forest]]). This notebook uses that redraw as a **judge**, not as a choir.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The t-test borrowed a costume
@@ -101,6 +99,8 @@ If you keep only one thing:
 
 Same table as [[01 t-test]]. 2000 bags. `LinearRegression` only to refit *b*. The loop *is* the lesson.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.linear_model import LinearRegression
@@ -160,6 +160,8 @@ First bag is a loud class (mean 6.50) — leftover, one replay. Across 2000, slo
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - se has no tidy formula
@@ -178,4 +180,4 @@ First bag is a loud class (mean 6.50) — leftover, one replay. Across 2000, slo
 
 ---
 
-*Inference 02. Same leftover, replayed. Forests bagged to vote; here the bag judges. Next empty 01: a little time.*
+*Inference 02. Same leftover, replayed. Forests bagged to vote; here the bag judges. Next: [[03 ANOVA]] — three piles, one F.*

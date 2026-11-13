@@ -18,8 +18,6 @@ aliases:
 
 Read [[03 lasso]] and [[02 ridge regression]] first. Elastic net is the compromise kid.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — Two good personalities, two bad habits
@@ -170,6 +168,8 @@ If you keep only one thing:
 
 Same **thirty** students as ridge and lasso. Same grade recipe. Elastic net, scaled, `alpha=0.40`, `l1_ratio=0.5` (half V, half U). Mix still half and half; λ a bit louder so junk actually dies on this small class.
 
+![zini-code](../../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.linear_model import ElasticNet
@@ -254,6 +254,8 @@ Sleep and naps: both still in the room — quieter, not fired. Lasso kept only n
 Not the same knob.
 
 ### Use / skip
+
+![zini-right](../../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

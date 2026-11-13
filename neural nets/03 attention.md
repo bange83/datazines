@@ -20,8 +20,6 @@ Read [[02 embeddings]] first. Same exam notes. Same 2-d points. Softmax ([[03 so
 
 This look is **all directions** — a postcard of mix. An LLM that predicts the next word must **look left** only (a mask). Positions are extra.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — A bag cannot refuse
@@ -110,6 +108,8 @@ If you keep only one thing:
 ## Page 6 — Coffee study hours, in numpy
 
 Same 27 notes, same 2-d table as [[02 embeddings]]. One sentence. No sklearn estimator — the look *is* the lesson.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np
@@ -216,6 +216,8 @@ This is **self-attention** with one head and no extra Q/K/V floors. An LLM walks
 
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

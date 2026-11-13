@@ -20,8 +20,6 @@ Read [[01 logistic regression]] first. Same pass/fail exam. Logistic drew an S. 
 
 One tree. A forest is many of these ([[02 random forest]]).
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — A different kind of sentence
@@ -197,6 +195,8 @@ If you keep only one thing:
 
 Same pass/fail class as logistic / LDA — eighty students. Not the thirty graders on the ridge page. The snippet prints the stump (Gini), the entropy stump, and depth 2 — so you can see first vs second.
 
+![zini-code](../../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -292,6 +292,8 @@ Deep tree from the old page, for the tax lesson: `max_depth=8` → 11 leaves, tr
 | Gini drop importance | MDI (mean decrease in impurity; favors continuous x) |
 
 ### Use / skip
+
+![zini-right](../../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

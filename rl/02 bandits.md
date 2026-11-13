@@ -18,8 +18,6 @@ aliases:
 
 Read [[01 the loop]] first. Same exam *world*: an evening, not a cloud of eighty people. The loop had tired / fresh — the act changed **next week**. A bandit has **no next**. You are always in the same room. Only the lever you pull tonight changes.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — The next state went away
@@ -93,6 +91,8 @@ If you keep only one thing:
 ## Page 5 — Eighty evenings, in numpy
 
 Three arms. True means hidden. Random vs ε-greedy vs UCB. First three pulls: one of each.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np
@@ -175,6 +175,8 @@ Random shares nights almost equally — Q already *sees* study (~1.97) and still
 
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

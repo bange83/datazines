@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 370" width="860" height="370" role="img" aria-label="three pairwise looks create three chances for a false alarm">
+<defs><filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.07"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter></defs>
+<rect width="860" height="370" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="860" height="370" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="430" y="38" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="20" fill="#7a6e5e" text-anchor="middle">three pairs. three doors for a false alarm.</text>
+<g stroke="#241c14" stroke-width="2" fill="none"><path d="M 140,120 L 430,265 L 720,120"/><path d="M 140,120 L 720,120"/></g>
+<g fill="#3d5f86" stroke="#241c14" stroke-width="2"><circle cx="140" cy="120" r="30"/><circle cx="430" cy="265" r="30"/><circle cx="720" cy="120" r="30"/></g>
+<text x="140" y="127" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="19" fill="#f4efe4" text-anchor="middle">solo</text>
+<text x="430" y="272" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="19" fill="#f4efe4" text-anchor="middle">buddy</text>
+<text x="720" y="127" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="19" fill="#f4efe4" text-anchor="middle">tutor</text>
+<text x="285" y="170" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="middle">look 1</text>
+<text x="575" y="170" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="middle">look 2</text>
+<text x="430" y="116" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="middle">look 3</text>
+<text x="430" y="330" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">one family-wide α keeps the curiosity honest.</text>
+</svg>

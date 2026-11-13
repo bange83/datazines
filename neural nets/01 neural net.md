@@ -19,8 +19,6 @@ aliases:
 
 Read [[01 logistic regression]] and [[01 gradient descent]] first. Same exam world: hours, sleep, tutor, *y* = did they pass? Softmax ([[03 softmax]]) is waiting at the last layer if you ever have more rooms.
 
-Flip it like a notebook. One page = one idea. Done.
-
 ---
 
 ## Page 1 — Hours that help, then hurt
@@ -112,6 +110,8 @@ If you keep only one thing:
 
 Same 160 students. Pass is a hill on hours. Logistic vs a net with **3 hidden units**. `lbfgs` is a quiet walker for a tiny net — not SGD yet.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.linear_model import LogisticRegression
@@ -193,6 +193,8 @@ Logistic never leaves 0.39. The net is a hill: 0.01 at 1.5 hours, **0.86 at 3.5*
 
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

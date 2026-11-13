@@ -23,9 +23,9 @@ This file is two things at once:
 
 **What a human reads first:** [[00 how to read this]] — folders are shelves, read 01. Not this file.
 
-**Freeze (6 Sep 2026):** no new wings, no new rooms. Bugfix and refine only. Then magazine leaves → [datazines.com](https://datazines.com). Site: [[PUBLISH.md]]. Map of what exists: [[PATH.md]].
+**Receipt update (14 Sep 2026):** inference now runs through confidence intervals; time now runs through forecasting, ARIMA, and ARIMAX; cause includes control series and HDI. Site: [[PUBLISH.md]]. Map of what exists: [[PATH.md]].
 
-Read this file for *how*. During the freeze, do not copy the “add a shelf” ritual. Fix the shelves that stand.
+Read this file for *how*. Add a room only when it closes a real reader gap. Fix the shelves that stand.
 
 Flip it like a notebook. One page = one idea. Done.
 
@@ -73,12 +73,18 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | 02 | [[02 beta]] | coin’s cousin: a bump on unknown P |
 | 01 | [[01 t-test]] | could leftover have faked this number? |
 | 02 | [[02 bootstrap]] | redraw the people; the pile is leftover |
+| 03 | [[03 ANOVA]] | between-group wobble vs within-group wobble |
+| 04 | [[04 multiple comparisons]] | many looks; Bonferroni / Tukey guard the family |
+| 05 | [[05 confidence intervals]] | a range, not a trophy; CI ≠ prediction interval ≠ HDI |
 
 **Time (path page 4, now standing):**
 
 | # | note | idea in one breath |
 |--:|---|---|
 | 01 | [[01 lag trend season]] | yesterday is a lever; the calendar repeats |
+| 02 | [[02 forecasting]] | future path; horizon and holdout stay honest |
+| 03 | [[03 ARIMA]] | memory in the leftover; difference, echo, mistake |
+| 04 | [[04 ARIMAX]] | ARIMA plus an outside lever known in the future |
 
 **Cause (path page 4, now standing):**
 
@@ -86,6 +92,7 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 |--:|---|---|
 | 01 | [[01 confounding]] | pattern ≠ mechanism; a loud *b* can be a passenger |
 | 02 | [[02 causal impact]] | actual − would-have, after a start date |
+| 03 | [[03 control series]] | control narrows the would-have HDI; BSTS keeps the uncertainty |
 
 **Unsupervised (path page 4, now standing):**
 
@@ -154,14 +161,15 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | `lm-` | LLM / next token |
 | `tt-` | t-test / inference |
 | `bs-` | bootstrap / resample |
+| `in-` | intro / how to read |
+| `iv-` | inference / ANOVA / intervals |
 | `ca-` | cause / confounding |
 | `ci-` | causal impact |
-| `ts-` | time series |
+| `ts-` | time series / forecasting / ARIMA / ARIMAX |
 | `pc-` | PCA / unsupervised |
 | `km-` | k-means |
 | `db-` | DBSCAN / density |
 | `fm-` | fundamentals / train-test |
-| `in-` | intro / how to read |
 | `by-` | Bayes / prior |
 | `mc-` | MCMC / Metropolis |
 | `rl-` | RL / the loop |
@@ -177,7 +185,7 @@ Hero of each note is `*-00-hero.svg`. Embed as ordinary markdown so GitHub can r
 
 From a nested family note that is two folders down: `![lr-00-hero](../../assets/lr-00-hero.svg)`. Do not use `![[…]]` — GitHub prints that as text.
 
-The encyclopedia **stands**. Descent, distributions, softmax, a tiny net, embeddings, attention, one LLM sketchbook, a t-test, cause 01–02, bootstrap, time 01, PCA, k-means, fundamentals 01–03, SVM, beta, Bayes 01–02, and RL 01–03 (loop, bandits, Q) are written. **Freeze:** no new rooms. Polish numbers and drawings. Then magazine leaves ([[PUBLISH.md]]). Do not shorten ridge / lasso / LARS unless asked.
+The encyclopedia now includes: descent, distributions, softmax, a tiny net, embeddings, attention, one LLM sketchbook; inference 01–05 (t-test, bootstrap, ANOVA, multiple comparisons, confidence intervals); cause 01–03 (confounding, causal impact, control series); time 01–04 (lag / trend / season, forecasting, ARIMA, ARIMAX); PCA, k-means, fundamentals 01–03, SVM, beta, Bayes 01–02, and RL 01–03 (loop, bandits, Q). Next work is polish, publishing, and the next reader gap. Do not shorten ridge / lasso / LARS unless asked.
 
 ---
 
@@ -192,7 +200,7 @@ Every sketchbook, in this order:
 3. **One-sentence abstract** in a callout. If you cannot say it in one sentence, you do not have a sketchbook yet. You have a chapter.
 4. **Hero drawing.** First thing the eye hits.
 5. **Sequel line**, if this is not 01. `Read [[01 …]] first. This is the sibling / sequel / camera.`
-6. **`Flip it like a notebook. One page = one idea. Done.`** Keep that line. It is the contract with the reader.
+6. **Notebook motto.** The site footer supplies “Flip it like a notebook. One page = one idea.” Do not repeat it inside every note.
 7. **Pages.** `## Page N — short name`. Horizontal rules between them.
 8. **Mini recipe** near the end. Numbered. Hands, not theory.
 9. **sklearn mini — mandatory, last working page before the cheat sheet.** Same family story. Printed numbers must match the pages. Run it. Paste the stdout. Do not invent the printout. (Full rules: page 6.) Exception: [[00 how to read this]] is a **map**, not a fit — no sklearn page.
@@ -228,6 +236,12 @@ Length: roughly 8–16 pages. Dense, not encyclopedic. If you need a second topi
 **Honesty:** if the text says ŷ = 1.75 + 1·x, the drawing uses that line. If sklearn prints `hours 0.000`, the caption does not pretend hours survived.
 
 **How to make one:** a small Python script that writes SVG (see the throwaway generators from today). Keep the script if you want; the **SVG in `assets/` is the artefact**. Do not check in a matplotlib PNG and call it a sketch.
+
+**Mascot (Zini):** Zini is the friendly blue monster companion with glasses. Transparent mascot assets live in `assets/zini/` (full guide: [`assets/zini/README.md`](assets/zini/README.md)). Use **sparingly** at predictable landmarks:
+- **Header:** Zini sitting with a pencil / drawing (`zini-logo-drawing.png`).
+- **Abstract opener:** `> [!abstract] In one sentence` callouts are automatically badged with Zini via CSS.
+- **Section companions (planned):** Cooking Zini for *Mini recipe*, Coding Zini for *sklearn mini*, and Decision Zini for the *Use / Skip* cheat sheet.
+- **Rule:** Technical diagrams (curves, trees, vectors, planes) **must remain SVGs**. Zini never replaces the math or the chart.
 
 ---
 
@@ -339,7 +353,7 @@ Classification, ensembles, distributions — same ritual:
 5. Open with hero + one sentence. Close with: mini recipe → **sklearn mini (story + numbers match)** → cheat sheet **with Use / skip** → sequel pointer.
 6. Come back here and put the new spines on the shelf (a line in the table on page 1 is enough). Do not rewrite the house rules unless the rules were wrong.
 
-**Freeze.** Do not run this page’s ritual until the freeze lifts. No new family folder. No new 01.
+Use this ritual for a new family or sequel only when the note answers a real reader question. The encyclopedia is broad enough now that a short, useful sequel is better than a new wing.
 
 **The site (now the product):** [datazines.com](https://datazines.com) is these zines in a browser. Notes stay markdown. Quartz builds leaves; GitHub Pages hosts them. Do not commit `html/`. Drawings stay **SVG**. Do not start the site from a blog theme. First desk: 00 + linear 01 + logistic 01 + train/test 01. Details: [[PUBLISH.md]].
 
@@ -349,10 +363,10 @@ If a topic does not fit the notebook voice, it does not belong in this series ye
 
 ## Page 8 — Mini recipe for the next agent
 
-**During the freeze:**
+**For the next agent:**
 
 1. Open this file for *how* a note is shaped. Site to-do: [[PUBLISH.md]].
-2. **Do not** add a wing or a room. Fix a lie: drawing vs caption, printout vs page, mixed classrooms, a brand name in a reader zine.
+2. Add a room only to fix a real blank spot. Otherwise fix a lie: drawing vs caption, printout vs page, mixed classrooms, a brand name in a reader zine.
 3. Run the snippet. Paste **that** stdout.
 4. Do **not** write `html/` into the vault. Publishing is Quartz + Pages ([[PUBLISH.md]]).
 5. English. Match the voice. Do not “improve” it.
@@ -360,7 +374,7 @@ If a topic does not fit the notebook voice, it does not belong in this series ye
 
 If you keep only one thing:
 
-> freeze the rooms. fix the paper. then the desk of the web.
+> keep the rooms understandable. fix the paper. then the desk of the web.
 
 ---
 
@@ -380,8 +394,8 @@ If you keep only one thing:
 | sklearn mini | mandatory. family story, not iris. numbers agree with the pages |
 | Use / skip | on every cheat sheet: when to use, when not, pays / costs |
 | site | datazines.com — Quartz + GitHub Pages. markdown stays source. [[PUBLISH.md]] |
-| freeze | no new wings / rooms. bugs + refine + publish spike. [[PUBLISH.md]] |
-| this file | receipt + rules. update the freeze rarely; do not reopen the map |
+| current receipt | inference 01–05; cause 01–03; time 01–04; publish and refine next |
+| this file | receipt + rules; update it when a real note lands |
 
 ---
 
