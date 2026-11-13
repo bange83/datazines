@@ -213,7 +213,7 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
       if (titleLink && !titleLink.querySelector("img.site-logo")) {
         titleLink.innerHTML =
           '<div class="logo-wrapper">' +
-          '<img src="/assets/zini/zini-logo.png" alt="datazines.com — one idea per page" class="site-logo" />' +
+          '<img src="/assets/zini/zini-logo-drawing.png" alt="datazines.com — One page = one idea" class="site-logo" />' +
           '</div>';
       }
 

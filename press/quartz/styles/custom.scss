@@ -168,13 +168,13 @@ body {
   line-height: 1;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .page-title a {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-decoration: none;
   line-height: 1;
@@ -190,14 +190,14 @@ body {
 
 .logo-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .page-title img.site-logo {
-  height: 84px;
+  height: 115px;
   width: auto;
-  max-width: 440px;
+  max-width: 480px;
   object-fit: contain;
   display: block;
   transition: transform 0.15s ease;
@@ -209,8 +209,8 @@ body {
 
 @media all and ($mobile) {
   .page-title img.site-logo {
-    height: 60px;
-    max-width: 290px;
+    height: 72px;
+    max-width: 320px;
   }
 }
 
@@ -1041,12 +1041,12 @@ button.global-graph-icon {
     width: 100%;
     margin-bottom: 0.35rem;
     display: flex !important;
-    justify-content: center !important;
+    justify-content: flex-start !important;
   }
 
   .page-title img.site-logo {
-    height: 60px;
-    max-width: 300px;
+    height: 68px;
+    max-width: 320px;
   }
 
   .sidebar.left .flex-component,
