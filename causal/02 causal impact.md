@@ -113,6 +113,8 @@ If you keep only one thing:
 
 Same 24-week beat as [[01 lag trend season]]. Campaign at week 17, planted **+0.90**. Trend + season on the past. Last-four fake start has **no** lift.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.linear_model import LinearRegression
@@ -182,6 +184,8 @@ Naive +1.78 steals the year. Gap vs would-have **+0.67** (planted 0.90 — lefto
 
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

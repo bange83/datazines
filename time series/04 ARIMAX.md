@@ -100,6 +100,8 @@ If you keep only one thing:
 
 The outside X is a planned number of office-hours slots. It is known for the future. The target also keeps an AR echo. We compare an AR-style model without X to one with X.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 
@@ -168,6 +170,8 @@ The known schedule helps ARIMAX beat the no-X version. Change the future X scena
 | scenario | the future X path you assumed |
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

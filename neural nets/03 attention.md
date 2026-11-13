@@ -109,6 +109,8 @@ If you keep only one thing:
 
 Same 27 notes, same 2-d table as [[02 embeddings]]. One sentence. No sklearn estimator — the look *is* the lesson.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
@@ -214,6 +216,8 @@ This is **self-attention** with one head and no extra Q/K/V floors. An LLM walks
 
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

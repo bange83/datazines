@@ -142,6 +142,8 @@ If you keep only one thing:
 
 Thirty graders. Same split as the tables above. Ordinary hugs. Peek vs three piles vs CV.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.linear_model import LinearRegression, Ridge
@@ -263,6 +265,8 @@ Pride 0.921. Train 0.955, test 0.626 — ordinary hugged. Peek picked α = 10 an
 | peek | test-set tuning |
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

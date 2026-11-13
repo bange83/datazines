@@ -200,6 +200,8 @@ If you keep only one thing:
 
 Same **thirty** students as the ridge page. Same grade recipe: hours, sleep, tutor, leftover 0.55. Minutes is the twin. Coffee and noise are junk. Lasso, scaled, `alpha=0.18`. Watch who leaves.
 
+![zini-code](../../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.linear_model import Lasso
@@ -285,6 +287,8 @@ Dead zone = small knobs get eaten.
 | shortlist | sparse model |
 
 ### Use / skip
+
+![zini-right](../../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

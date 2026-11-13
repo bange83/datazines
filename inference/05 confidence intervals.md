@@ -159,6 +159,8 @@ If you keep only one thing:
 
 The code prints a mean CI, a new-student prediction interval, and the Bayesian Beta HDI. The HDI is a posterior interval; it is not a confidence interval.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from scipy import stats
@@ -215,6 +217,8 @@ The mean CI is narrower than the prediction interval because a mean averages awa
 | simultaneous interval | family-wide protection for many comparisons |
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

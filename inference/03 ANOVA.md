@@ -122,6 +122,8 @@ If you keep only one thing:
 
 Same three grade piles as page 1. The run prints the overall F, then the pairwise questions so you can see why the follow-up needs a correction.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from scipy import stats
@@ -177,6 +179,8 @@ The overall test is loud. Every raw pairwise *p* is also small here, but those a
 | follow-up | planned contrast, Tukey, or another correction |
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

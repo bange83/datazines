@@ -128,6 +128,8 @@ If you keep only one thing:
 
 Same three piles. The run prints raw pairwise *p* values, Bonferroni values, and Tukey HSD values.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from scipy import stats
@@ -182,6 +184,8 @@ The raw values look more impressive because they paid no family fee. Bonferroni 
 | raw p | each test pretending it was alone |
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

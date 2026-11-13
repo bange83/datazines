@@ -97,6 +97,8 @@ If you keep only one thing:
 
 Same pass/fail class as the tree notebook — eighty students.
 
+![zini-code](../../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -156,6 +158,8 @@ Deep tree memorizes (test 0.71). Forest’s vote lands at **0.79**. Tree 0 opene
 | importance | total impurity drop, averaged across trees |
 
 ### Use / skip
+
+![zini-right](../../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

@@ -123,6 +123,8 @@ If you keep only one thing:
 
 Twenty-seven exam notes. Count co-occurrence, two dimensions. The printout is the cloud on page 3.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
@@ -232,6 +234,8 @@ PCA on co-occurrence is a **sketch** of the table. Cosines on this page are in t
 
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

@@ -235,6 +235,12 @@ Length: roughly 8–16 pages. Dense, not encyclopedic. If you need a second topi
 
 **How to make one:** a small Python script that writes SVG (see the throwaway generators from today). Keep the script if you want; the **SVG in `assets/` is the artefact**. Do not check in a matplotlib PNG and call it a sketch.
 
+**Mascot (Zini):** Zini is the friendly blue monster companion with glasses. Transparent mascot assets live in `assets/zini/` (full guide: [`assets/zini/README.md`](assets/zini/README.md)). Use **sparingly** at predictable landmarks:
+- **Header:** Zini sitting with a pencil / drawing (`zini-logo-drawing.png`).
+- **Abstract opener:** `> [!abstract] In one sentence` callouts are automatically badged with Zini via CSS.
+- **Section companions (planned):** Cooking Zini for *Mini recipe*, Coding Zini for *sklearn mini*, and Decision Zini for the *Use / Skip* cheat sheet.
+- **Rule:** Technical diagrams (curves, trees, vectors, planes) **must remain SVGs**. Zini never replaces the math or the chart.
+
 ---
 
 ## Page 4 — Voice

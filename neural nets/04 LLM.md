@@ -124,6 +124,8 @@ If you keep only one thing:
 
 Same 27 notes as [[02 embeddings]]. Last-token model (the cheap LLM). Dim 4. No sklearn estimator — the walk *is* the lesson.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from collections import Counter, defaultdict
@@ -276,6 +278,8 @@ A real LLM is this walk with a look and a stack, on a much bigger note pile. The
 
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

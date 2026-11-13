@@ -118,6 +118,8 @@ If you keep only one thing:
 
 Same unlabeled cloud as page 1 — eighty students, hours and sleep, no grade. Three styles planted.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.cluster import KMeans
@@ -191,6 +193,8 @@ k=3 is the elbow and the silhouette peak. Sizes **28 / 28 / 24** — the plant, 
 
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

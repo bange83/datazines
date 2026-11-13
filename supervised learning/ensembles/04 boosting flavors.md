@@ -127,6 +127,8 @@ If you keep only one thing:
 
 Same pass/fail class as the boosting notebook — eighty students. No XGBoost install required: `HistGradientBoostingClassifier` is sklearn’s histogram engine (LightGBM-adjacent). AdaBoost uses **stumps**.
 
+![zini-code](../../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -187,6 +189,8 @@ AdaBoost luckiest on this split. Hist ≈ forest territory. GB hungrier on train
 | CatBoost | leftover + taxes | ordered categories | messy categoricals |
 
 ### Use / skip
+
+![zini-right](../../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

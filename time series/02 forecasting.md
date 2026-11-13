@@ -97,6 +97,8 @@ If you keep only one thing:
 
 Same planted series as [[01 lag trend season]]. The model learns trend + season on weeks 1–20, then recursively predicts the four later weeks. The naive forecast copies the last observed week.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 
@@ -157,6 +159,8 @@ The seasonal forecast beats copying the last week. Week 24 is a break, so the mo
 | prediction interval | plausible range for a future observation |
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

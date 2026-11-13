@@ -191,6 +191,8 @@ If you keep only one thing:
 
 Same pass/fail class as logistic / LDA — eighty students. Not the thirty graders on the ridge page. The snippet prints the stump (Gini), the entropy stump, and depth 2 — so you can see first vs second.
 
+![zini-code](../../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -285,6 +287,8 @@ Deep tree from the old page, for the tax lesson: `max_depth=8` → 11 leaves, tr
 | leftover mix | impurity |
 
 ### Use / skip
+
+![zini-right](../../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

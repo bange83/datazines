@@ -124,6 +124,8 @@ If you keep only one thing:
 
 Same levers as logistic. Harder intercept so pass is rarer (**26 / 80**). Split 70/30, `random_state=0`. Dummy vs logistic vs three cuts.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.dummy import DummyClassifier
@@ -229,6 +231,8 @@ Logistic 01 used a milder intercept (−3.2). Pass rate there was ~2/3, so accur
 | dummy | baseline |
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

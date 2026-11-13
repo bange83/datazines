@@ -102,6 +102,8 @@ If you keep only one thing:
 
 Last four weeks held out. Trend vs season vs a shuffled cheat.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.linear_model import LinearRegression
@@ -188,6 +190,8 @@ Shuffle looks kinder than the future (0.29 vs −0.28). Season turns the future 
 ![ts-05-when](../assets/ts-05-when.svg)
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

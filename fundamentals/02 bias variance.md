@@ -101,6 +101,8 @@ If you keep only one thing:
 
 Same thirty as [[01 train test validate]]. 40 different 21 / 9 splits. Ordinary hours *b* vs a tax on huge slopes (scaled, α = 10). 
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.linear_model import LinearRegression, Ridge
@@ -184,6 +186,8 @@ Ordinary hours *b* spans **nine points**. The tax’s scaled hours *b* stays in 
 | hug the trainers | overfit |
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

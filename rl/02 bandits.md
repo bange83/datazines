@@ -92,6 +92,8 @@ If you keep only one thing:
 
 Three arms. True means hidden. Random vs ε-greedy vs UCB. First three pulls: one of each.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 
@@ -173,6 +175,8 @@ Random shares nights almost equally — Q already *sees* study (~1.97) and still
 
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

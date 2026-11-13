@@ -99,6 +99,8 @@ If you keep only one thing:
 
 Same table as [[01 t-test]]. 2000 bags. `LinearRegression` only to refit *b*. The loop *is* the lesson.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.linear_model import LinearRegression
@@ -157,6 +159,8 @@ First bag is a loud class (mean 6.50) — leftover, one replay. Across 2000, slo
 
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

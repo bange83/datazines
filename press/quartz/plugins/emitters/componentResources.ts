@@ -209,19 +209,33 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
     }
 
     function styleTopNav(tries = 0) {
+      const titleLink = document.querySelector(".page-title a");
+      if (titleLink && !titleLink.querySelector("img.site-logo")) {
+        titleLink.innerHTML =
+          '<div class="logo-wrapper">' +
+          '<img src="/assets/zini/zini-logo-drawing.png" alt="datazines.com — One page = one idea" class="site-logo" />' +
+          '</div>';
+      }
+
       const explorer = document.querySelector(".explorer");
       const ul = explorer && explorer.querySelector(".explorer-ul");
       const top = ul
         ? childLis(ul).filter((li) => {
             if (!li.querySelector(":scope > .folder-container")) return false;
             const name = folderName(li).toLowerCase();
-            return name !== "impressum" && name !== "datenschutz";
+            return name !== "impressum" && name !== "datenschutz" && name !== "assets";
           })
         : [];
       if (!explorer || top.length === 0) {
         if (tries < 40) setTimeout(() => styleTopNav(tries + 1), 50);
         return;
       }
+      ul.querySelectorAll(":scope > li").forEach((li) => {
+        const name = folderName(li).toLowerCase();
+        if (name === "assets" || name === "impressum" || name === "datenschutz") {
+          li.style.setProperty("display", "none", "important");
+        }
+      });
       explorer.classList.add("is-top-nav");
       retargetFolderTabs(ul);
       const path = location.pathname;
@@ -231,42 +245,120 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
       const activeShelf = top.find((li) => li.querySelector("a.is-current"));
       top.forEach((li) => li.classList.toggle("is-active-shelf", li === activeShelf));
 
-      const families = ensureRow(explorer, "family-nav");
-      const chips = ensureRow(explorer, "sub-nav");
       const content = explorer.querySelector(".explorer-content");
-      if (content) {
-        content.after(families);
-        families.after(chips);
-      }
-      families.replaceChildren();
-      chips.replaceChildren();
+      if (content) content.style.setProperty("display", "none", "important");
 
-      if (!activeShelf) {
-        families.hidden = true;
-        chips.hidden = true;
-        return;
+      let nytNav = explorer.querySelector(".nytimes-nav");
+      if (!nytNav) {
+        nytNav = document.createElement("nav");
+        nytNav.className = "nytimes-nav";
+        explorer.appendChild(nytNav);
+      }
+      nytNav.replaceChildren();
+
+      // Row 1: Clean editorial top-level section links (NYTimes style)
+      const sectionsRow = document.createElement("div");
+      sectionsRow.className = "nyt-sections-row";
+      top.forEach((li, idx) => {
+        if (idx > 0) {
+          const sep = document.createElement("span");
+          sep.className = "nyt-sep";
+          sep.textContent = "·";
+          sectionsRow.appendChild(sep);
+        }
+        const name = folderName(li);
+        const dest = first01Link(li);
+        const isCurrent = li === activeShelf;
+        const a = document.createElement("a");
+        a.className = "nyt-section-link" + (isCurrent ? " is-active" : "");
+        a.href = dest ? dest.getAttribute("href") : "#";
+        a.textContent = name;
+        sectionsRow.appendChild(a);
+      });
+      nytNav.appendChild(sectionsRow);
+
+      // Row 2 (Optional): ONLY if active top shelf has subcategories (e.g. Supervised Learning -> Regression, Classification, Ensembles)
+      let activeSubfamily = null;
+      if (activeShelf) {
+        const subfolders = directSubfolders(activeShelf);
+        if (subfolders.length) {
+          const subcatRow = document.createElement("div");
+          subcatRow.className = "nyt-subcat-row";
+          activeSubfamily =
+            subfolders.find((sub) => sub.querySelector("a.is-current")) || subfolders[0];
+
+          subfolders.forEach((sub, sidx) => {
+            if (sidx > 0) {
+              const sep = document.createElement("span");
+              sep.className = "nyt-sep";
+              sep.textContent = "·";
+              subcatRow.appendChild(sep);
+            }
+            const dest = first01Link(sub);
+            const a = document.createElement("a");
+            a.className = "nyt-subcat-link" + (sub === activeSubfamily ? " is-active" : "");
+            a.href = dest ? dest.getAttribute("href") : "#";
+            a.textContent = folderName(sub);
+            subcatRow.appendChild(a);
+          });
+          nytNav.appendChild(subcatRow);
+        }
       }
 
-      const subfolders = directSubfolders(activeShelf);
-      if (subfolders.length) {
-        families.hidden = false;
-        let activeFamily = subfolders.find((sub) => sub.querySelector("a.is-current")) || subfolders[0];
-        subfolders.forEach((sub) => {
-          const dest = first01Link(sub);
+      // Local Navigation (Content-Bereich): Kapitelauswahl für das spezifische Heft
+      const heroLeaf =
+        document.querySelector("article section.leaf.hero-leaf") ||
+        document.querySelector("article section.leaf") ||
+        document.querySelector("article .markdown-preview-view") ||
+        document.querySelector("article");
+
+      const existingChapterNav = document.querySelector(".zine-chapter-nav");
+      if (existingChapterNav) existingChapterNav.remove();
+
+      let activeFiles = [];
+      let chapterCategoryName = "";
+
+      if (activeShelf) {
+        if (activeSubfamily) {
+          activeFiles = directFiles(activeSubfamily);
+          chapterCategoryName = folderName(activeSubfamily);
+        } else {
+          activeFiles = directFiles(activeShelf);
+          chapterCategoryName = folderName(activeShelf);
+        }
+      }
+
+      if (heroLeaf && activeFiles.length > 0) {
+        const chapterNav = document.createElement("nav");
+        chapterNav.className = "zine-chapter-nav";
+
+        const badge = document.createElement("div");
+        badge.className = "chapter-nav-header";
+        const catTitle =
+          chapterCategoryName.charAt(0).toUpperCase() + chapterCategoryName.slice(1);
+        const countText =
+          activeFiles.length === 1 ? "1 chapter" : activeFiles.length + " chapters";
+        badge.innerHTML =
+          '<span class="chapter-nav-label">' +
+          catTitle +
+          '</span><span class="chapter-nav-count">' +
+          countText +
+          '</span>';
+        chapterNav.appendChild(badge);
+
+        const chipsContainer = document.createElement("div");
+        chipsContainer.className = "chapter-chips-row";
+        activeFiles.forEach((fileA) => {
           const a = document.createElement("a");
-          a.className = "family-tab" + (sub === activeFamily ? " is-current" : "");
-          a.href = dest ? dest.getAttribute("href") : "#";
-          a.textContent = folderName(sub);
-          families.append(a);
+          const isCurrent = fileA.classList.contains("is-current");
+          a.className = "chapter-chip" + (isCurrent ? " is-current" : "");
+          a.href = fileA.getAttribute("href") || "#";
+          a.textContent = (fileA.textContent || "").trim();
+          chipsContainer.appendChild(a);
         });
-        const familyFiles = directFiles(activeFamily);
-        chips.hidden = familyFiles.length === 0;
-        familyFiles.forEach((a) => chips.append(chipFrom(a)));
-      } else {
-        families.hidden = true;
-        const files = directFiles(activeShelf);
-        chips.hidden = files.length === 0;
-        files.forEach((a) => chips.append(chipFrom(a)));
+        chapterNav.appendChild(chipsContainer);
+
+        heroLeaf.prepend(chapterNav);
       }
     }
 
@@ -671,9 +763,9 @@ export const ComponentResources: QuartzEmitterPlugin = () => {
 
       ctx.extractedInlineResources = extractedInlineResources
 
-      const cssHash = useHashing ? hashContent(cssContent) : null
-      const prescriptHash = useHashing ? hashContent(prescript) : null
-      const postscriptHash = useHashing ? hashContent(postscript) : null
+      const cssHash = hashContent(cssContent)
+      const prescriptHash = hashContent(prescript)
+      const postscriptHash = hashContent(postscript)
 
       const cssSlug = cssHash ? `index-${cssHash}` : "index"
       const prescriptSlug = prescriptHash ? `prescript-${prescriptHash}` : "prescript"

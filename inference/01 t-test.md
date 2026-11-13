@@ -120,6 +120,8 @@ If you keep only one thing:
 
 Same table as linear regression. Mean vs 5, slope vs 0, and the two groups. No extra story.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from scipy import stats
@@ -178,6 +180,8 @@ Mean vs 5: leftover shrugs (p = 0.71; 5 sits in 3.72–6.78). Slope vs 0: leftov
 
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

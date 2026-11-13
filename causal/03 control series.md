@@ -118,6 +118,8 @@ If you keep only one thing:
 
 This is a small Bayesian linear model, not a full BSTS package. It uses the same office-hours story to show the one lever that matters here: a related control can make the posterior predictive HDI narrower.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 
@@ -196,6 +198,8 @@ The control makes this toy band **0.23 hours narrower**. That is a prediction im
 | BSTS | Bayesian structural time series: controls + trend / season + uncertainty |
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

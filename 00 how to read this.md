@@ -118,6 +118,8 @@ Then go wherever the next question points.
 
 ### Use / skip
 
+![zini-right](assets/zini/zini-decision.png)
+
 **Reach for this page** when you are new, unsure where to begin, or want the shortest route to a useful picture.
 
 **Skip it** once you know the question. Open the relevant zine and start drawing.

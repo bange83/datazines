@@ -131,6 +131,8 @@ If you keep only one thing:
 
 Same **thirty** students as ridge. Same hours, sleep, tutor. *y* is not a grade — it is a Poisson count of mistakes. PoissonRegressor uses a **log link**. LinearRegression is the identity-link cousin — and it will go negative if you ask it far enough.
 
+![zini-code](../../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.linear_model import LinearRegression, PoissonRegressor
@@ -183,6 +185,8 @@ Ordinary line: still fine at 6 hours, then **−2** at 10. The glasses were the 
 | log + Poisson | counts |
 
 ### Use / skip
+
+![zini-right](../../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

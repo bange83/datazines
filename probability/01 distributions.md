@@ -98,6 +98,8 @@ If you keep only one thing:
 
 Same eight people. No extra library.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.linear_model import LinearRegression
@@ -133,6 +135,8 @@ Mean 0: OLS. Std ~0.46: the bell’s spread, guessed from eight dots. Two leftov
 | P(1−P) | spread of the **coin** (no extra σ) |
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

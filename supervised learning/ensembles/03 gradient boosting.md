@@ -112,6 +112,8 @@ If you keep only one thing:
 
 Same pass/fail class as the forest notebook — eighty students. `GradientBoostingClassifier` is the plain sklearn chain (not XGBoost). Depth 2 trees.
 
+![zini-code](../../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -166,6 +168,8 @@ On this small test set the **forest wins**. That does **not** mean boosting is w
 | XGBoost etc. | engines for this religion |
 
 ### Use / skip
+
+![zini-right](../../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

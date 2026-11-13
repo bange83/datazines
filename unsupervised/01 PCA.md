@@ -102,6 +102,8 @@ If you keep only one thing:
 
 Same unlabeled cloud — eighty students, four levers, no grade.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.decomposition import PCA
@@ -173,6 +175,8 @@ Unscaled: minutes **1.00**, story dead — here the fat axis is a **unit**, not 
 
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

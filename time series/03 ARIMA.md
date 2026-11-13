@@ -92,6 +92,8 @@ If you keep only one thing:
 
 This tiny run fits trend + season on the past, estimates one AR coefficient in the leftover, and recursively carries that echo through the four-week holdout.
 
+![zini-code](../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 
@@ -152,6 +154,8 @@ The old leftover echo helps a little here. It fades each step. This is an ARIMA-
 | order | how many lags / differences / errors you keep |
 
 ### Use / skip
+
+![zini-right](../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

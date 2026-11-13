@@ -142,6 +142,8 @@ If you keep only one thing:
 
 Exam world: hours, sleep, tutor. **Eighty** students — a crowd, not the thirty on the ridge page. *y* is pass/fail, not a grade. One lever, no scaler — the S is the lesson, not a fight between hours and minutes. Mixed units: scale first ([[02 ridge regression]], page 10).
 
+![zini-code](../../assets/zini/zini-coding.png)
+
 ```python
 import numpy as np
 from sklearn.linear_model import LogisticRegression
@@ -199,6 +201,8 @@ Accuracy 0.84 is on *these* people — pride, like R² without a split. Pass is 
 | S | logistic curve |
 
 ### Use / skip
+
+![zini-right](../../assets/zini/zini-decision.png)
 
 **Reach for it when**
 

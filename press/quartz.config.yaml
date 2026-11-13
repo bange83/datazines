@@ -4,6 +4,7 @@ configuration:
   pageTitleSuffix: ""
   enableSPA: false
   enablePopovers: false
+  prefetch: "off"
   analytics:
     provider: null
   locale: en-US
@@ -23,6 +24,7 @@ configuration:
     - quartz-press
     - press
     - .github
+    - .quartz
   theme:
     fontOrigin: local
     cdnCaching: false
@@ -85,7 +87,7 @@ plugins:
     enabled: true
     order: 40
   - source: "@quartz-community/table-of-contents"
-    enabled: true
+    enabled: false
     order: 50
     layout:
       position: right
