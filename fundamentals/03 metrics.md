@@ -122,9 +122,9 @@ If you keep only one thing:
 
 ## Page 7 — A harder exam, in sklearn
 
-![zini-right](../assets/zini/zini-coding.png)
-
 Same levers as logistic. Harder intercept so pass is rarer (**26 / 80**). Split 70/30, `random_state=0`. Dummy vs logistic vs three cuts.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

@@ -122,9 +122,9 @@ If you keep only one thing:
 
 ## Page 7 — Next word after *study*, in numpy
 
-![zini-right](../assets/zini/zini-coding.png)
-
 Same 27 notes as [[02 embeddings]]. Last-token model (the cheap LLM). Dim 4. No sklearn estimator — the walk *is* the lesson.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

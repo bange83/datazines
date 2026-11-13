@@ -135,9 +135,9 @@ If you keep only one thing:
 
 ## Page 7 — Two blobs, in sklearn
 
-![zini-right](../../assets/zini/zini-coding.png)
-
 Same pass/fail class as logistic — eighty students, not the thirty graders on the ridge page. *y* = pass. Features = hours, sleep. Split 70/30.
+
+![zini-code](../../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

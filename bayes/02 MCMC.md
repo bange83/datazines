@@ -89,9 +89,9 @@ If you keep only one thing:
 
 ## Page 5 — Eight coins, walking, in numpy
 
-![zini-right](../assets/zini/zini-coding.png)
-
 Same 3 yes, 5 no. Flat prior. Metropolis on *P*. No extra library.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

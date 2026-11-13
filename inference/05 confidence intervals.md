@@ -157,9 +157,9 @@ If you keep only one thing:
 
 ## Page 9 — Same grades, several ranges, in scipy
 
-![zini-right](../assets/zini/zini-coding.png)
-
 The code prints a mean CI, a new-student prediction interval, and the Bayesian Beta HDI. The HDI is a posterior interval; it is not a confidence interval.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

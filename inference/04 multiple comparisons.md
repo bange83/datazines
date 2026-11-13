@@ -126,9 +126,9 @@ If you keep only one thing:
 
 ## Page 7 — Three routines, protected, in scipy
 
-![zini-right](../assets/zini/zini-coding.png)
-
 Same three piles. The run prints raw pairwise *p* values, Bonferroni values, and Tukey HSD values.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

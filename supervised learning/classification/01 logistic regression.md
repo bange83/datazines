@@ -140,9 +140,9 @@ If you keep only one thing:
 
 ## Page 8 — Hours → pass, in sklearn
 
-![zini-right](../../assets/zini/zini-coding.png)
-
 Exam world: hours, sleep, tutor. **Eighty** students — a crowd, not the thirty on the ridge page. *y* is pass/fail, not a grade. One lever, no scaler — the S is the lesson, not a fight between hours and minutes. Mixed units: scale first ([[02 ridge regression]], page 10).
+
+![zini-code](../../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

@@ -77,9 +77,9 @@ If you keep only one thing:
 
 ## Page 5 — Fail / pass / honors, in sklearn
 
-![zini-right](../../assets/zini/zini-coding.png)
-
 Eighty students. Same exam *hours*. *y* has three rooms, driven by hours. `LogisticRegression` with 3 classes **is** softmax (multinomial).
+
+![zini-code](../../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

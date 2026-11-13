@@ -111,9 +111,9 @@ If you keep only one thing:
 
 ## Page 7 — Week-17 office hours, in sklearn
 
-![zini-right](../assets/zini/zini-coding.png)
-
 Same 24-week beat as [[01 lag trend season]]. Campaign at week 17, planted **+0.90**. Trend + season on the past. Last-four fake start has **no** lift.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

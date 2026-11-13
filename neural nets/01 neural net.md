@@ -108,9 +108,9 @@ If you keep only one thing:
 
 ## Page 7 — Hill vs shrug, in sklearn
 
-![zini-right](../assets/zini/zini-coding.png)
-
 Same 160 students. Pass is a hill on hours. Logistic vs a net with **3 hidden units**. `lbfgs` is a quiet walker for a tiny net — not SGD yet.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

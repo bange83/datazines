@@ -95,9 +95,9 @@ If you keep only one thing:
 
 ## Page 6 — Four weeks ahead, in numpy
 
-![zini-right](../assets/zini/zini-coding.png)
-
 Same planted series as [[01 lag trend season]]. The model learns trend + season on weeks 1–20, then recursively predicts the four later weeks. The naive forecast copies the last observed week.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

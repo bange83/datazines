@@ -96,9 +96,9 @@ If you keep only one thing:
 
 ## Page 5 — Eight leftovers, in numpy
 
-![zini-right](../assets/zini/zini-coding.png)
-
 Same eight people. No extra library.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

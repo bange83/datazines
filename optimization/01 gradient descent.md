@@ -88,9 +88,9 @@ If you keep only one thing:
 
 ## Page 5 — Eight people, walking, in numpy
 
-![zini-right](../assets/zini/zini-coding.png)
-
 Same table as linear regression. Start at a = 0, b = 0. Rate 0.05. No sklearn estimator — the walk *is* the lesson.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

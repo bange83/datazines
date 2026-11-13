@@ -96,9 +96,9 @@ If you keep only one thing:
 
 ## Page 5 — Eight coins, in scipy
 
-![zini-right](../assets/zini/zini-coding.png)
-
 True P = 0.6. Eight tosses. Flat start, then the add. No sklearn estimator — the bump *is* the lesson.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

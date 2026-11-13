@@ -107,9 +107,9 @@ If you keep only one thing:
 
 ## Page 6 — Coffee study hours, in numpy
 
-![zini-right](../assets/zini/zini-coding.png)
-
 Same 27 notes, same 2-d table as [[02 embeddings]]. One sentence. No sklearn estimator — the look *is* the lesson.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

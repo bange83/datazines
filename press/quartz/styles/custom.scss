@@ -909,6 +909,35 @@ img[alt*="zini-float"] {
   margin: 0.5rem 0 1rem 1.5rem;
 }
 
+/* Zini placed inside the top-right of Python code block */
+p:has(> img[alt*="zini-code"]) {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
+  position: relative;
+  z-index: 10;
+  pointer-events: none;
+}
+
+img[alt*="zini-code"] {
+  position: absolute;
+  top: 0.6rem;
+  right: 2.8rem;
+  width: 95px;
+  height: auto;
+  pointer-events: none;
+  filter: drop-shadow(0 2px 5px rgba(36, 28, 20, 0.12));
+}
+
+@media all and ($mobile) {
+  img[alt*="zini-code"] {
+    width: 65px;
+    right: 2.2rem;
+    top: 0.4rem;
+    opacity: 0.8;
+  }
+}
+
 img[alt*="zini-left"] {
   float: left;
   max-width: 140px;

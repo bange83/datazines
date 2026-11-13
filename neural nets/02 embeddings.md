@@ -121,9 +121,9 @@ If you keep only one thing:
 
 ## Page 7 — Notes → points, in sklearn
 
-![zini-right](../assets/zini/zini-coding.png)
-
 Twenty-seven exam notes. Count co-occurrence, two dimensions. The printout is the cloud on page 3.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

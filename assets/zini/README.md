@@ -38,8 +38,9 @@ All transparent PNGs live in `assets/zini/`:
 | Landmark | File | Purpose |
 |---|---|---|
 | **Mini recipe** | `zini-recipe.png` | Cooking Zini with chef hat, apron, and mixing bowl for `## Page N — Mini recipe` |
-| **Sklearn mini** | `zini-coding.png` | Coding Zini at wooden desk with laptop, pencils, and doodles for `## Page N — ..., in sklearn` |
+| **Sklearn mini** | `zini-coding.png` | Coding Zini at wooden desk with laptop for `## Page N — ..., in sklearn` (anchored inside top-right of code block via `![zini-code]`) |
 | **Use / Skip** | `zini-decision.png` | Decision Zini pointing at "USE ✓" / "SKIP ✗" signpost for the cheat sheet |
+| **Edge Peeker** | `zini-peek.png` | Peeking Zini gripping a horizontal ledge/card border (for special panels or highlights) |
 
 ---
 

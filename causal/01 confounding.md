@@ -102,9 +102,9 @@ If you keep only one thing:
 
 ## Page 6 — Coffee as passenger, in sklearn
 
-![zini-right](../assets/zini/zini-coding.png)
-
 Eighty students — enough that coffee-only looks loud and then dies when hours is in the room. Grade depends on hours only. Coffee rides with hours.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

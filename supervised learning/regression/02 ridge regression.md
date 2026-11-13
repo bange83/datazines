@@ -286,11 +286,11 @@ If you keep only one thing:
 
 ## Page 14 — Twins, in sklearn
 
-![zini-right](../../assets/zini/zini-coding.png)
-
 Thirty students — few enough that the ordinary line can overreact. Grade from hours, sleep, tutor. **Minutes** is hours in another unit (a twin). Coffee and noise are junk.
 
 Both machines get the **same scaler**. Scale does not change ordinary’s guesses — only how you *read* the knobs. Then ridge adds the tax. The test-R² jump is that tax, not the spelling.
+
+![zini-code](../../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

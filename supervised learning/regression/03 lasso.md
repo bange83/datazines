@@ -198,9 +198,9 @@ If you keep only one thing:
 
 ## Page 11 — Shortlist, in sklearn
 
-![zini-right](../../assets/zini/zini-coding.png)
-
 Same **thirty** students as the ridge page. Same grade recipe: hours, sleep, tutor, leftover 0.55. Minutes is the twin. Coffee and noise are junk. Lasso, scaled, `alpha=0.18`. Watch who leaves.
+
+![zini-code](../../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

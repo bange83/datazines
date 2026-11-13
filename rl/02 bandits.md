@@ -90,9 +90,9 @@ If you keep only one thing:
 
 ## Page 5 — Eighty evenings, in numpy
 
-![zini-right](../assets/zini/zini-coding.png)
-
 Three arms. True means hidden. Random vs ε-greedy vs UCB. First three pulls: one of each.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

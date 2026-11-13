@@ -189,9 +189,9 @@ If you keep only one thing:
 
 ## Page 9 — Gains, in sklearn
 
-![zini-right](../../assets/zini/zini-coding.png)
-
 Same pass/fail class as logistic / LDA — eighty students. Not the thirty graders on the ridge page. The snippet prints the stump (Gini), the entropy stump, and depth 2 — so you can see first vs second.
+
+![zini-code](../../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np

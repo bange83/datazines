@@ -100,9 +100,9 @@ If you keep only one thing:
 
 ## Page 6 — 24 weeks, in sklearn
 
-![zini-right](../assets/zini/zini-coding.png)
-
 Last four weeks held out. Trend vs season vs a shuffled cheat.
+
+![zini-code](../assets/zini/zini-coding.png)
 
 ```python
 import numpy as np
