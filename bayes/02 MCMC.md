@@ -51,6 +51,12 @@ Quiet nudge: you crawl, accept almost everything. Loud nudge: you jump, reject a
 
 This flavor is **Metropolis**. Other walks exist. Same job.
 
+> [!tip] The impossible denominator cancels out
+> In Bayes' formula, dividing by the total evidence $P(\text{data}) = \int P(\text{data} \mid P) P(P) \, dP$ requires an impossible high-dimensional integral when you have many knobs.
+> But look at Metropolis’s acceptance test:
+> $$\text{ratio} = \frac{\text{new posterior}}{\text{old posterior}} = \frac{\text{new height} \,/\, P(\text{data})}{\text{old height} \,/\, P(\text{data})} = \frac{\text{new height}}{\text{old height}}$$
+> The impossible denominator cancels out completely! You never need to solve the integral — you only need to compare relative heights.
+
 ---
 
 ## Page 3 — The pile matches the add
@@ -157,10 +163,13 @@ Start at 0.5, wander. Mean **0.39** vs add **0.40**. Shoulders 0.17–0.65 vs 0.
 
 | here | there |
 |---|---|
-| MCMC | wander the posterior |
-| burn-in | drop the first stretch |
-| accept rate | how often you moved |
-
+| MCMC | Markov chain Monte Carlo (sample the posterior) |
+| burn-in | warm-up / drop initial iterations |
+| accept rate | proposal acceptance ratio (target ~0.23–0.50 in high-D) |
+| hairy caterpillar | trace plot (diagnosing healthy mixing) |
+| chain convergence | Gelman–Rubin statistic ($\hat{R} \approx 1.0$) |
+| effective sample size | ESS (accounting for autocorrelation between steps) |
+| denominator | evidence / marginal likelihood (cancels out) |
 
 ### Use / skip
 

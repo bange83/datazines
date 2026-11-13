@@ -76,6 +76,12 @@ Start Beta(2, 2) instead (mild “about half”). Same eight: Beta(5, 7), mean *
 
 People call this **conjugate**: beta in, coin data, beta out. Fancy. Job: *add the yeses to α, the nos to β.*
 
+> [!tip] Mean vs peak: where does the hill crest?
+> The **mean** of $\text{Beta}(4, 6)$ is $4 / 10 = \mathbf{0.40}$.
+> But the **highest point of the bump** (the mode) sits at:
+> $$\text{Mode} = \frac{\alpha - 1}{\alpha + \beta - 2} = \frac{4 - 1}{10 - 2} = \frac{3}{8} = \mathbf{0.375}$$
+> Notice: the peak is the raw data ($3/8$). The mean ($0.40$) includes the gentle tug of the starting shrug.
+
 [[01 prior]] names this move.
 
 ---
@@ -152,8 +158,9 @@ Three yes, five no. Flat start → mean **0.40**, still a wide stick (0.16 to 0.
 | here | there |
 |---|---|
 | α, β | pseudo-counts |
-| Beta(1,1) | uniform on 0–1 |
+| Beta(1,1) | uniform prior on [0, 1] |
 | add | conjugate update |
+| peak of the bump | mode / Maximum A Posteriori (MAP) |
 
 
 ### Use / skip

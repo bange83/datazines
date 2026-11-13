@@ -63,6 +63,10 @@ For **counts**, mean and spread travel together (Poisson: variance ≈ mean). A 
 
 The line’s *b* does not know this. Tests later *do*. The three shapes are the hero drawing — bell, two bars, a pile of 0,1,2,…
 
+> [!tip] Height vs probability: mass vs density
+> For coins or counts, each bar's height is an honest probability ($P(Y=2) = 0.35$). People call this **probability mass** (PMF).
+> For continuous numbers (the bell), the height is a **probability density** (PDF) — it can even go above 1! The chance of hitting an *exact* continuous number like 5.25000… is zero; only the **area under the curve** is a probability.
+
 ---
 
 ## Page 3 — Why this wing exists
@@ -133,6 +137,15 @@ Mean 0: OLS. Std ~0.46: the bell’s spread, guessed from eight dots. Two leftov
 | mean | center |
 | std / σ | spread of the **bell** |
 | P(1−P) | spread of the **coin** (no extra σ) |
+
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| bar height for discrete | probability mass function (PMF) |
+| curve height for continuous | probability density function (PDF) |
+| bell curve | normal distribution $\mathcal{N}(\mu, \sigma^2)$ |
+| center / spread | location and scale parameters |
 
 ### Use / skip
 
