@@ -4,6 +4,7 @@ configuration:
   pageTitleSuffix: ""
   enableSPA: false
   enablePopovers: false
+  prefetch: "off"
   analytics:
     provider: null
   locale: en-US
