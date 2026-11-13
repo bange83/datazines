@@ -62,3 +62,13 @@ Clone, then **Open folder as vault** in Obsidian. Note-to-note wikilinks (`[[01 
 Drawings use ordinary markdown images (`![](…svg)`), so they also render on GitHub.
 
 The magazine is GitHub Pages, not raw GitHub markdown (wikilinks won’t walk). Plan: [`PUBLISH.md`](PUBLISH.md).
+
+### Local web preview
+
+To test the HTML magazine locally (e.g. on a feature branch):
+
+```bash
+./preview.sh 8085
+```
+
+Then open `http://localhost:8085` in your browser. Full details and workflow in [`PUBLISH.md`](PUBLISH.md).

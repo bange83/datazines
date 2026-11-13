@@ -98,7 +98,31 @@ Node 22 is needed (`~/.local/node` on this machine). `npx quartz create` was ski
 
 Also: OG-image plugin **off**. Writer maps ignored (37 sketchbooks emitted). SPA / popovers / graph / darkmode / reader-mode / breadcrumbs **off**. YAML parsed with the properties panel hidden. Look: Caveat titles, Inter body, organic paper, **top-bar shelves** + content / TOC. Overlays live in `press/` and are copied onto a Quartz 5 clone at build. Nested SVG paths still need `fix-asset-paths.py`. Door: post-build copy of `00-how-to-read-this.html` → `index.html`.
 
-Local preview: `export PATH="$HOME/.local/node/bin:$PATH"` then `cd /Volumes/Samsung990/git/quartz-press && npx quartz build && python3 fix-asset-paths.py && npx quartz build --serve` then open `/`.
+### Local preview & feature branch testing (`preview.sh`)
+
+To test any feature branch, new notes, or design tweaks locally before pushing or merging to `main`:
+
+1. **Prerequisites:** Node 20+ (Node 22 recommended).
+2. **Switch to your branch:**
+   ```bash
+   git checkout <branch-name>
+   ```
+3. **Start local preview server:**
+   ```bash
+   ./preview.sh [port]   # defaults to port 8085 if omitted
+   ```
+   `preview.sh` automatically:
+   - Sets up `.quartz/` and installs dependencies if needed (`npm ci`).
+   - Copies press templates, styles, and patches from `press/` (`press/quartz.config.yaml`, `press/quartz/styles/custom.scss`, `press/patches/page-title-index.js`, etc.).
+   - Symlinks vault content into `.quartz/content/` (excluding writer maps and build artifacts).
+   - Starts Quartz livereload server at `http://localhost:8085`.
+4. **Open in your browser:**
+   ```
+   http://localhost:8085
+   ```
+   - **Live editing:** Changes to markdown files (`*.md`) or assets (`assets/*.svg`) are picked up automatically by Quartz.
+   - **Press styles/scripts:** If modifying files in `press/` (`custom.scss`, `componentResources.ts`, patches), either re-run `./preview.sh` or copy the file into `.quartz/` for immediate livereload.
+   - Stop the server with `Ctrl+C`.
 
 ---
 
@@ -164,6 +188,7 @@ Do **not** start a new 01. Publishing is freeze-legal.
 |---|---|
 | source | markdown + SVG |
 | press | Quartz |
+| local preview | `./preview.sh [port]` (default 8085) |
 | host | GitHub Pages (Actions) |
 | door | [[00 how to read this]] |
 | first walk | 00 · linear 01 · logistic 01 · train/test 01 |
