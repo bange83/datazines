@@ -204,6 +204,8 @@ k=3 is the elbow and the silhouette peak. Sizes **28 / 28 / 24** — the plant, 
 
 - you already have pass/fail ([[01 logistic regression]], [[02 LDA]])
 - you wanted **axes** ([[01 PCA]])
+- the clusters are curved, crescents, or weird ribbons ([[03 DBSCAN]])
+- you have lone outliers you want ignored as noise ([[03 DBSCAN]])
 - you were going to treat *k* as a discovered truth
 
 **Pays you:** names for clumps, a center you can read in English, a room for a new person.
@@ -212,4 +214,4 @@ k=3 is the elbow and the silhouette peak. Sizes **28 / 28 / 24** — the plant, 
 
 ---
 
-*Unsupervised 02. No grade. Rooms, not axes. Remaining rooms, short: SVM after the S; MCMC after the walk.*
+*Unsupervised 02. No grade. Round rooms, not axes. Organic shapes and noise: [[03 DBSCAN]].*

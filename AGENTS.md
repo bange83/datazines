@@ -93,6 +93,7 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 |--:|---|---|
 | 01 | [[01 PCA]] | no y. turn the sausage. drop the thin axis |
 | 02 | [[02 k-means]] | no y. paint k rooms. you pick k |
+| 03 | [[03 DBSCAN]] | no y, no k. cluster by density; lone dots are noise (-1) |
 
 **Act (path page 4, now standing):**
 
@@ -158,6 +159,7 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | `ts-` | time series |
 | `pc-` | PCA / unsupervised |
 | `km-` | k-means |
+| `db-` | DBSCAN / density |
 | `fm-` | fundamentals / train-test |
 | `in-` | intro / how to read |
 | `by-` | Bayes / prior |

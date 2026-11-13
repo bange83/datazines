@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img" aria-label="Core, border, and noise points in DBSCAN">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="360" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+
+<text x="380" y="38" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">two knobs: reach (eps) and min_samples (4)</text>
+
+<!-- 1. Core Point -->
+<g transform="translate(60, 40)">
+  <circle cx="100" cy="140" r="65" fill="#b44a28" opacity="0.08" stroke="#b44a28" stroke-width="1.8" stroke-dasharray="4,4"/>
+  <!-- reach arrow -->
+  <line x1="100" y1="140" x2="165" y2="140" stroke="#b44a28" stroke-width="1.6"/>
+  <text x="132" y="132" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="middle">eps</text>
+  <!-- core dot -->
+  <circle cx="100" cy="140" r="7" fill="#b44a28"/>
+  <!-- neighbors -->
+  <circle cx="80" cy="110" r="5.5" fill="#b44a28"/>
+  <circle cx="130" cy="120" r="5.5" fill="#b44a28"/>
+  <circle cx="90" cy="180" r="5.5" fill="#b44a28"/>
+  <circle cx="140" cy="165" r="5.5" fill="#b44a28"/>
+  <text x="100" y="235" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="middle">1. Core point</text>
+  <text x="100" y="260" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="13" fill="#7a6e5e" text-anchor="middle">at least 4 friends inside</text>
+</g>
+
+<!-- 2. Border Point -->
+<g transform="translate(300, 40)">
+  <circle cx="100" cy="140" r="65" fill="#3d5f86" opacity="0.08" stroke="#3d5f86" stroke-width="1.8" stroke-dasharray="4,4"/>
+  <!-- border dot -->
+  <circle cx="100" cy="140" r="6.5" fill="#3d5f86"/>
+  <!-- only 1 friend inside -->
+  <circle cx="135" cy="130" r="5.5" fill="#b44a28"/>
+  <text x="100" y="235" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#3d5f86" text-anchor="middle">2. Border point</text>
+  <text x="100" y="260" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="13" fill="#7a6e5e" text-anchor="middle">fewer than 4, but reaches a core</text>
+</g>
+
+<!-- 3. Noise Point -->
+<g transform="translate(540, 40)">
+  <circle cx="100" cy="140" r="65" fill="#241c14" opacity="0.05" stroke="#7a6e5e" stroke-width="1.4" stroke-dasharray="4,4"/>
+  <!-- noise dot -->
+  <circle cx="100" cy="140" r="6" fill="#241c14"/>
+  <text x="100" y="235" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="middle">3. Noise point (-1)</text>
+  <text x="100" y="260" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="13" fill="#7a6e5e" text-anchor="middle">alone in the woods</text>
+</g>
+</svg>

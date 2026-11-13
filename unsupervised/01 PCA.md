@@ -171,6 +171,8 @@ Unscaled: minutes **1.00**, story dead — here the fat axis is a **unit**, not 
 |---|---|
 | sausage | first principal component |
 | loading | how much a feature sits on that PC |
+| rotation engine | SVD (singular value decomposition) |
+| scatter kept | eigenvalues |
 | lever | feature |
 
 
@@ -185,7 +187,8 @@ Unscaled: minutes **1.00**, story dead — here the fat axis is a **unit**, not 
 **Skip it when**
 
 - you already have a grade to guess ([[01 linear regression]])
-- you wanted **rooms** ([[02 k-means]])
+- you wanted **rooms** ([[02 k-means]], [[03 DBSCAN]])
+- the cloud is bent like a Swiss roll (PCA only rotates straight axes; cannot unroll curves — use UMAP)
 - you were going to skip the scaler and let minutes be PC1
 
 **Pays you:** a thinner cloud that still looks like the people. Twins share one axis. The fight is a bar you can drop.

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" width="760" height="320" role="img" aria-label="k-means cuts spheres vs DBSCAN flows along density">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="320" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="320" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<path d="M 40,50 L 360,50 L 360,270 L 40,270 Z" fill="#b44a28" stroke="#b44a28" stroke-width="1.8" opacity="0.08"/>
+<path d="M 400,50 L 720,50 L 720,270 L 400,270 Z" fill="#3d5f86" stroke="#3d5f86" stroke-width="1.8" opacity="0.08"/>
+<text x="200" y="88" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#b44a28" text-anchor="middle">k-means</text>
+<text x="560" y="88" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="22" fill="#3d5f86" text-anchor="middle">DBSCAN</text>
+<text x="70" y="130" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">·  you pick k in advance</text>
+<text x="70" y="165" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">·  cuts round spheres</text>
+<text x="70" y="200" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">·  forces outliers into a room</text>
+<text x="70" y="235" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">·  slices bananas in half</text>
+<text x="430" y="130" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">·  finds k on its own</text>
+<text x="430" y="165" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">·  flows along any shape</text>
+<text x="430" y="200" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">·  flags outliers as noise (-1)</text>
+<text x="430" y="235" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#241c14" text-anchor="start">·  two knobs: reach &amp; crowd</text>
+</svg>
