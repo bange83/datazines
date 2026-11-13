@@ -879,6 +879,27 @@ blockquote:not(.callout) {
   }
 }
 
+.callout[data-callout="zini-recipe"],
+.callout[data-callout="zini-cook"] {
+  &::before {
+    background-image: url("/assets/zini/zini-recipe.png");
+  }
+}
+
+.callout[data-callout="zini-coding"],
+.callout[data-callout="zini-code"] {
+  &::before {
+    background-image: url("/assets/zini/zini-coding.png");
+  }
+}
+
+.callout[data-callout="zini-decision"],
+.callout[data-callout="zini-choice"] {
+  &::before {
+    background-image: url("/assets/zini/zini-decision.png");
+  }
+}
+
 /* Floating Zini illustrations in markdown */
 img[alt*="zini-right"],
 img[alt*="zini-float"] {

@@ -34,12 +34,12 @@ All transparent PNGs live in `assets/zini/`:
 | **Celebrate / Solved** | `zini-celebrate.png` | `> [!zini-celebrate]` convergence, victories |
 | **Confused / Pitfall** | `zini-confused.png` | `> [!zini-confused]` traps, data leakage |
 
-### Target Editorial Landmarks (Planned / In Development):
-| Landmark | Concept | Purpose |
+### Editorial Landmarks (Structural Companions):
+| Landmark | File | Purpose |
 |---|---|---|
-| **Mini recipe** | **Cooking Zini** (`zini-recipe.png`) | Standing with a chef hat or spoon / recipe book at the `## Page N — Mini recipe` section |
-| **Sklearn mini** | **Coding Zini** (`zini-coding.png`) | Huddled over a laptop or terminal typing code at the `## Page N — ..., in sklearn` section |
-| **Use / Skip** | **Decision Zini** (`zini-decision.png`) | Pointing at a two-way signpost (Reach / Skip) or thumbs-up / thumbs-down at the cheat sheet |
+| **Mini recipe** | `zini-recipe.png` | Cooking Zini with chef hat, apron, and mixing bowl for `## Page N — Mini recipe` |
+| **Sklearn mini** | `zini-coding.png` | Coding Zini at wooden desk with laptop, pencils, and doodles for `## Page N — ..., in sklearn` |
+| **Use / Skip** | `zini-decision.png` | Decision Zini pointing at "USE ✓" / "SKIP ✗" signpost for the cheat sheet |
 
 ---
 
