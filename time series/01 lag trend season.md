@@ -30,6 +30,8 @@ The cloud is gone. Week 4 is after week 3. You cannot shuffle them.
 
 The year we planted (tidy on purpose): a slow climb as the term gets harder (**trend**). Every **fourth** week a break — no classes, hours dip (**season**). Last week still smells a little like this week (**lag**).
 
+If yesterday’s leftover echoes into today, leftovers are linked (**autocorrelation**). The independent-coin assumption of classic lines is broken.
+
 A real calendar is messier. Name the beat you can name.
 
 ---
@@ -48,7 +50,7 @@ The shuffle put a future break into train. That is cheating. Time’s rule:
 
 > train on the past. test on **later**.
 
-People call this a **holdout in time**. Same humility as R² on new people. The new people are next month.
+People call this a **holdout in time**. Same humility as R² on new people. The new people are next month. (In real work, do not rely on just one 4-week window: roll the split forward across time with `TimeSeriesSplit`).
 
 ---
 
@@ -59,6 +61,10 @@ People call this a **holdout in time**. Same humility as R² on new people. The 
 **Trend.** ŷ = a + b · week. Here b ≈ 0.05 hours per week. Real, small. Alone it cannot see the dip.
 
 **Season.** A dummy for week-type (busy / mid / late / break). The break is about **−1.4** hours. That is the gift.
+
+> [!tip] Multiplicative seasons: when swings grow
+> Here the calendar dip is a fixed −1.4 hours (**additive**).
+> On sales or web traffic, holiday spikes often grow as the overall business grows (+30% instead of +100 units). That is **multiplicative**. The classic trick: fit $\log(y)$ so percentage swings turn back into straight additions.
 
 **Lag.** Last week’s hours as an extra *x*. After season is in, lag’s *b* is **0.06** — quiet. Yesterday was mostly the calendar repeating, not a leftover echo.
 
@@ -186,6 +192,16 @@ Shuffle looks kinder than the future (0.29 vs −0.28). Season turns the future 
 | lag | yesterday as *x* |
 | holdout in time | train past, test later |
 | leak | shuffle that puts the future in train |
+
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| yesterday's echo | autocorrelation |
+| future in train | data leakage / lookahead bias |
+| holdout in time | walk-forward validation (TimeSeriesSplit) |
+| growing calendar swing | multiplicative seasonality (log transform) |
+| two trends fake a correlation | spurious regression |
 
 ![ts-05-when](../assets/ts-05-when.svg)
 
