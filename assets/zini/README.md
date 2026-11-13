@@ -1,54 +1,76 @@
 # Zini — The Datazines Mascot
 
-Meet **Zini**, the friendly, fluffy blue monster with rectangular glasses who guides readers through the world of Data Science.
+Meet **Zini**, the friendly, fluffy blue monster with rectangular glasses who guides readers through the data science sketchbooks.
 
-![Zini Poses](../../assets/zini/zini-explain.png)
+![Zini Logo](../../assets/zini/zini-logo-drawing.png)
 
 ---
 
-## 1. Available Poses
+## 1. Role & Golden Rule: Sparingly
 
-All extracted transparent PNGs live in `assets/zini/`:
+Zini is a warm, recurring companion — not visual noise:
+- **Core diagrams stay SVG:** Every statistical or algorithmic diagram (slopes, trees, distributions, residual vectors) is a hand-drawn SVG. Zini never replaces the math or the chart.
+- **Structural landmarks:** Zini appears at predictable structural places to orient the reader across the encyclopedia:
+  1. **Site Header / Logo:** Zini sitting with a pencil, drawing on a notepad (`zini-logo-drawing.png`).
+  2. **Page Opener ("In one sentence"):** Zini explaining the core intuition (`> [!abstract]` callout automatically decorated via CSS).
+  3. **Mini recipe:** A hands-on guide helper (cooking / recipe theme).
+  4. **Code mini (sklearn):** A focused coding helper (laptop / terminal theme).
+  5. **Cheat Sheet (Use / Skip):** A decision helper (signpost / recommendations).
 
-| Pose | File | Best used for |
+---
+
+## 2. Available & Planned Assets
+
+All transparent PNGs live in `assets/zini/`:
+
+### Core / Existing:
+| Pose | File | Where it belongs |
 |---|---|---|
-| **One Sentence** | `zini-one-sentence.png` | "In one sentence" callouts, essential summary |
-| **Idea** | `zini-idea.png` | Aha-moments, key intuition, clever tricks |
-| **Celebrate** | `zini-celebrate.png` | Breakthroughs, success, model convergence |
-| **Explain** | `zini-explain.png` | Walkthroughs, board explanations, front door |
-| **Inspect** | `zini-inspect.png` | Residual analysis, diagnostics, checking data |
-| **Working** | `zini-working.png` | Code snippets, sklearn fitting, number crunching |
-| **Confused** | `zini-confused.png` | Pitfalls, questions, data leaks, 404 pages |
+| **Header Logo** | `zini-logo-drawing.png` | Site title & brand header |
+| **One Sentence** | `zini-one-sentence.png` | `> [!abstract]` or `> [!zini-sentence]` callouts |
+| **Idea / Intuition** | `zini-idea.png` | `> [!zini-idea]` key aha-moments |
+| **Inspect / Diagnostics** | `zini-inspect.png` | `> [!zini-inspect]` residual checks, data sanity |
+| **Working** | `zini-working.png` | `> [!zini-working]` process / iterative steps |
+| **Celebrate / Solved** | `zini-celebrate.png` | `> [!zini-celebrate]` convergence, victories |
+| **Confused / Pitfall** | `zini-confused.png` | `> [!zini-confused]` traps, data leakage |
+
+### Target Editorial Landmarks (Planned / In Development):
+| Landmark | Concept | Purpose |
+|---|---|---|
+| **Mini recipe** | **Cooking Zini** (`zini-recipe.png`) | Standing with a chef hat or spoon / recipe book at the `## Page N — Mini recipe` section |
+| **Sklearn mini** | **Coding Zini** (`zini-coding.png`) | Huddled over a laptop or terminal typing code at the `## Page N — ..., in sklearn` section |
+| **Use / Skip** | **Decision Zini** (`zini-decision.png`) | Pointing at a two-way signpost (Reach / Skip) or thumbs-up / thumbs-down at the cheat sheet |
 
 ---
 
-## 2. Usage in Markdown
+## 3. How to Use in Markdown
 
-### A. Custom Callouts (Quartz & Web)
-You can call upon Zini directly in any markdown note:
+### A. Automatic Callout Styling (Quartz)
+The standard sketchbook abstract callout automatically receives Zini without extra syntax:
 
 ```markdown
-> [!zini-idea] Zini's intuition
-> If you cannot explain the slope in one sentence, you don't know your levers yet.
+> [!abstract] In one sentence
+> Same knobs as the line — a + b x — then you squash the score into a number between 0 and 1.
+```
 
-> [!zini-explain] The Board
-> Look at the line: points above are positive residuals, points below are negative.
+For explicit thematic callouts:
+```markdown
+> [!zini-idea] Intuition
+> If you cannot explain the slope in one sentence, you don't know your levers yet.
 
 > [!zini-confused] Watch out!
 > Never let test data touch the scaler before fitting. That's a data leak!
-
-> [!zini-celebrate] Solved!
-> Leftovers collapsed to zero without blowing up variance.
 ```
 
-### B. Inline / Floating Images
-To float Zini alongside paragraphs in Quartz:
+### B. Structural Floats & Section Companions
+To float Zini alongside section headers or paragraphs:
 
 ```markdown
 ![zini-right](assets/zini/zini-inspect.png)
 ```
-or from nested folders:
+or from nested subfolders (e.g. `supervised learning/regression/`):
 ```markdown
 ![zini-right](../../assets/zini/zini-inspect.png)
 ```
-*(Use `zini-right` or `zini-left` in the alt text to float Zini to the side).*
+
+Use `zini-right` or `zini-left` in the alt text to trigger CSS float styling.
