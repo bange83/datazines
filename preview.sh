@@ -25,8 +25,12 @@ cp "$REPO_ROOT/press/quartz.config.yaml" "$QUARTZ_DIR/quartz.config.yaml"
 cp "$REPO_ROOT/press/quartz/styles/custom.scss" "$QUARTZ_DIR/quartz/styles/custom.scss"
 cp "$REPO_ROOT/press/quartz/styles/variables.scss" "$QUARTZ_DIR/quartz/styles/variables.scss"
 cp "$REPO_ROOT/press/quartz/components/Head.tsx" "$QUARTZ_DIR/quartz/components/Head.tsx"
-cp "$REPO_ROOT/press/quartz/plugins/emitters/componentResources.ts" "$QUARTZ_DIR/quartz/plugins/emitters/componentResources.ts"
+cp "$REPO_ROOT/press/plugins/emitters/componentResources.ts" "$QUARTZ_DIR/quartz/plugins/emitters/componentResources.ts" 2>/dev/null || cp "$REPO_ROOT/press/quartz/plugins/emitters/componentResources.ts" "$QUARTZ_DIR/quartz/plugins/emitters/componentResources.ts"
 cp "$REPO_ROOT/press/fix-asset-paths.py" "$QUARTZ_DIR/fix-asset-paths.py"
+if [ -f "$REPO_ROOT/press/patches/page-title-index.js" ]; then
+  cp "$REPO_ROOT/press/patches/page-title-index.js" "$QUARTZ_DIR/node_modules/@quartz-community/page-title/dist/index.js"
+  cp "$REPO_ROOT/press/patches/page-title-index.js" "$QUARTZ_DIR/node_modules/@quartz-community/page-title/dist/components/index.js"
+fi
 
 rm -rf "$QUARTZ_DIR/content"
 mkdir -p "$QUARTZ_DIR/content"
