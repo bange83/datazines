@@ -334,12 +334,16 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
 
         const badge = document.createElement("div");
         badge.className = "chapter-nav-header";
+        const catTitle =
+          chapterCategoryName.charAt(0).toUpperCase() + chapterCategoryName.slice(1);
+        const countText =
+          activeFiles.length === 1 ? "1 chapter" : activeFiles.length + " chapters";
         badge.innerHTML =
-          '<span class="chapter-nav-label">Heft · ' +
-          chapterCategoryName +
+          '<span class="chapter-nav-label">' +
+          catTitle +
           '</span><span class="chapter-nav-count">' +
-          activeFiles.length +
-          ' Kapitel</span>';
+          countText +
+          '</span>';
         chapterNav.appendChild(badge);
 
         const chipsContainer = document.createElement("div");
