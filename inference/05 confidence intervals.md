@@ -216,6 +216,15 @@ The mean CI is narrower than the prediction interval because a mean averages awa
 | HDI | shortest interval containing the densest posterior mass |
 | simultaneous interval | family-wide protection for many comparisons |
 
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| wobble ruler | margin of error ($z^* \times se$ or $t^* \times se$) |
+| repeated promise | frequentist coverage property |
+| bump interval | credible interval / Highest Posterior Density (HPD) |
+| new-person interval | prediction interval (forecast uncertainty) |
+
 ### Use / skip
 
 ![zini-right](../assets/zini/zini-decision.png)

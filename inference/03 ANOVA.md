@@ -150,8 +150,9 @@ for name_a, name_b, a, b in zip(
     [buddy, tutor, tutor],
 ):
     t, raw_p = stats.ttest_ind(a, b, equal_var=True)
-    print(name_a, "vs", name_b, "raw p", f"{raw_p:.6f}",
-          "Bonferroni p", f"{min(raw_p * 3, 1):.6f}")
+    fmt = "{:.6f}" if raw_p < 0.001 else "{:.4f}"
+    print(name_a, "vs", name_b, "raw p", fmt.format(raw_p),
+          "Bonferroni p", fmt.format(min(raw_p * 3, 1)))
 ```
 
 ```
@@ -177,6 +178,16 @@ The overall test is loud. Every raw pairwise *p* is also small here, but those a
 | null | all group means are equal |
 | result | at least one mean differs; not which one |
 | follow-up | planned contrast, Tukey, or another correction |
+
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| three piles | one-way ANOVA |
+| smoke alarm | omnibus test |
+| between variation | treatment sum of squares / between MS |
+| within variation | error sum of squares / within MS |
+| two-group ANOVA | $F = t^2$ |
 
 ### Use / skip
 

@@ -99,6 +99,10 @@ Light vs heavy study (hours ≤ 3 vs ≥ 4): means 3.75 vs 6.75, **t = 4.43**, p
 
 If the two piles have **different spread**, do not pretend they share σ. People call the fix **Welch**. Same *t* idea, a messier df. Ranks instead of a bell (Mann–Whitney) is a later camera — this notebook stays on the costume you guessed.
 
+> [!tip] Same students before and after?
+> If you test the **exact same eight students** before and after a tutor, do not run a two-sample test. Subtract each student’s before from their after ($d = \text{after} - \text{before}$).
+> That is a **paired t-test** — which is literally just Question A (a one-sample t-test) asking if the mean difference differs from zero. It cancels out each student’s personal baseline noise.
+
 ---
 
 ## Page 6 — Mini recipe
@@ -178,6 +182,16 @@ Mean vs 5: leftover shrugs (p = 0.71; 5 sits in 3.72–6.78). Slope vs 0: leftov
 | p | tail: leftover this loud or louder |
 | CI | boring numbers leftover still fits |
 
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| boring story | null hypothesis ($H_0$) |
+| what we suspect | alternative hypothesis ($H_1$) |
+| Question A | one-sample t-test |
+| light vs heavy | independent two-sample t-test |
+| before and after | paired t-test (within-subject difference) |
+| Welch | Satterthwaite unequal variances t-test |
 
 ### Use / skip
 
