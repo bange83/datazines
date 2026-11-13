@@ -189,6 +189,8 @@ Shuffle looks kinder than the future (0.29 vs −0.28). Season turns the future 
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - the dots have an **order** (weeks, days)

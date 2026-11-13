@@ -156,6 +156,8 @@ Three yes, five no. Flat start → mean **0.40**, still a wide stick (0.16 to 0.
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - *P* itself is unknown

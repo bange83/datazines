@@ -277,6 +277,8 @@ A real LLM is this walk with a look and a stack, on a much bigger note pile. The
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - the job is **P(next token)**

@@ -286,6 +286,8 @@ Dead zone = small knobs get eaten.
 
 ### Use / skip
 
+![zini-right](../../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - you have many *x* and want a **sentence**, not a committee. Most levers are probably junk. A shortlist is the point

@@ -178,6 +178,8 @@ The overall test is loud. Every raw pairwise *p* is also small here, but those a
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - you have **three or more means** to compare

@@ -135,6 +135,8 @@ Hours up: fail’s *b* negative, honors positive. At 2 hours the pile is mixed; 
 
 ### Use / skip
 
+![zini-right](../../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - *y* has 3+ exclusive rooms

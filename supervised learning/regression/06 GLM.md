@@ -184,6 +184,8 @@ Ordinary line: still fine at 6 hours, then **−2** at 10. The glasses were the 
 
 ### Use / skip
 
+![zini-right](../../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - *y* is a count, a yes/no, or a fraction

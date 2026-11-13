@@ -269,6 +269,8 @@ LARS = *how you walk through the answers.*
 
 ### Use / skip
 
+![zini-right](../../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - you want the **film**: who joins, in what order, how knobs grow. Lots of *x*, you care about the path, not one still. Lasso’s solution happens to look like this walk

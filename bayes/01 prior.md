@@ -169,6 +169,8 @@ Shrug → 0.40, wide. Sure-yes → 0.61 (truth was 0.6 — luck plus a loud star
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - the unknown is a **rate**

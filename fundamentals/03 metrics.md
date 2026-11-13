@@ -230,6 +230,8 @@ Logistic 01 used a milder intercept (−3.2). Pass rate there was ~2/3, so accur
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - yes is **rare**, or costly to miss

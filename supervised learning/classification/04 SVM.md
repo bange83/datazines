@@ -192,6 +192,8 @@ Scale is in the pipeline. Unscaled, sleep’s units fight hours, same sin as uns
 
 ### Use / skip
 
+![zini-right](../../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - you want a **fence**, not a probability

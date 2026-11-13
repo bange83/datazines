@@ -158,6 +158,8 @@ First bag is a loud class (mean 6.50) — leftover, one replay. Across 2000, slo
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - se has no tidy formula

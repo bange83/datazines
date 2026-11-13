@@ -233,6 +233,8 @@ PCA on co-occurrence is a **sketch** of the table. Cosines on this page are in t
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - the levers are **words / tokens**

@@ -158,6 +158,8 @@ The seasonal forecast beats copying the last week. Week 24 is a break, so the mo
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - the next values matter

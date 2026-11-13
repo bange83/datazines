@@ -167,6 +167,8 @@ Nearby, not on the floor. The path wiggled. That is the point, not a bug. Quiet 
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - there is no closed-form bottom (nets, deep anything). When you want to *see* training as walking

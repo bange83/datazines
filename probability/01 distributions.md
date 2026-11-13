@@ -134,6 +134,8 @@ Mean 0: OLS. Std ~0.46: the bell’s spread, guessed from eight dots. Two leftov
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - you care how *y* rattles, not only ŷ

@@ -215,6 +215,8 @@ This is **self-attention** with one head and no extra Q/K/V floors. An LLM walks
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - a bag would smear the wrong neighbor

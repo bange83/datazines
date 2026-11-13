@@ -153,6 +153,8 @@ The old leftover echo helps a little here. It fades each step. This is an ARIMA-
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - leftover still has memory after trend and season

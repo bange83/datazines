@@ -264,6 +264,8 @@ Pride 0.921. Train 0.955, test 0.626 — ordinary hugged. Peek picked α = 10 an
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - you will **report a number**

@@ -197,6 +197,8 @@ The control makes this toy band **0.23 hours narrower**. That is a prediction im
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - you have a plausible unaffected series

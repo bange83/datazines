@@ -393,6 +393,8 @@ Ridge **does** fix a drama queen of a straight line.
 
 ### Use / skip
 
+![zini-right](../../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - the ordinary line overreacts: few points, noisy points, or twin *x* that should **share**. You care more about the next person than about hugging the old cloud

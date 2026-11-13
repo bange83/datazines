@@ -200,6 +200,8 @@ Accuracy 0.84 is on *these* people — pride, like R² without a split. Pass is 
 
 ### Use / skip
 
+![zini-right](../../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - *y* is yes/no (or a fraction of yeses)

@@ -216,6 +216,8 @@ The mean CI is narrower than the prediction interval because a mean averages awa
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - a point estimate without its width would mislead

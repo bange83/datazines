@@ -188,6 +188,8 @@ AdaBoost luckiest on this split. Hist ≈ forest territory. GB hungrier on train
 
 ### Use / skip
 
+![zini-right](../../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - someone names a brand and you need the dialect in one page

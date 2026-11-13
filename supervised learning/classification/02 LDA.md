@@ -199,6 +199,8 @@ On this split, LDA, QDA, and logistic **tie on the test set**. QDA is a hair wor
 
 ### Use / skip
 
+![zini-right](../../assets/zini/zini-decision.png)
+
 **Reach for LDA when**
 
 - classes look like ovals of **one** shape

@@ -174,6 +174,8 @@ Random shares nights almost equally — Q already *sees* study (~1.97) and still
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - there is **one room**

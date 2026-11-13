@@ -185,6 +185,8 @@ Ordinary hours *b* spans **nine points**. The tax’s scaled hours *b* stays in 
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - train is high and test is low

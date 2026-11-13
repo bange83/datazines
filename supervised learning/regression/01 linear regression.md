@@ -466,6 +466,8 @@ It always goes through the centroid (x̄, ȳ).
 
 ### Use / skip
 
+![zini-right](../../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - *y* is a real number

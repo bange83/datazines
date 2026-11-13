@@ -192,6 +192,8 @@ Logistic never leaves 0.39. The net is a hill: 0.01 at 1.5 hours, **0.86 at 3.5*
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - a line or one S cannot bend (a hill, a dip, “middle is different”)

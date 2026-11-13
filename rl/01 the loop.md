@@ -205,6 +205,8 @@ Coin-flip **30.5**. Sensible **38.3**. Q’s greedy row is rest / study — the 
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - you **act**

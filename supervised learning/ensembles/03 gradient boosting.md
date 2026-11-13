@@ -167,6 +167,8 @@ On this small test set the **forest wins**. That does **not** mean boosting is w
 
 ### Use / skip
 
+![zini-right](../../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - tables with mixes, leftover errors that a forest already almost got

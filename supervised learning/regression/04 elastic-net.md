@@ -253,6 +253,8 @@ Not the same knob.
 
 ### Use / skip
 
+![zini-right](../../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - the spreadsheet is wide: more levers than people, **packs of twins**, plus junk. You want junk to die and cousins to come in together

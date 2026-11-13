@@ -286,6 +286,8 @@ Deep tree from the old page, for the tax lesson: `max_depth=8` → 11 leaves, tr
 
 ### Use / skip
 
+![zini-right](../../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - you want **rules you can read**

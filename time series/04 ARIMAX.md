@@ -169,6 +169,8 @@ The known schedule helps ARIMAX beat the no-X version. Change the future X scena
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - an outside input is genuinely available in the future

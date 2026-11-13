@@ -174,6 +174,8 @@ Unscaled: minutes **1.00**, story dead — here the fat axis is a **unit**, not 
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - you have **many levers and no y**

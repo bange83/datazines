@@ -157,6 +157,8 @@ Deep tree memorizes (test 0.71). Forest’s vote lands at **0.79**. Tree 0 opene
 
 ### Use / skip
 
+![zini-right](../../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - one tree is jumpy

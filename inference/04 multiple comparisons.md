@@ -183,6 +183,8 @@ The raw values look more impressive because they paid no family fee. Bonferroni 
 
 ### Use / skip
 
+![zini-right](../assets/zini/zini-decision.png)
+
 **Reach for it when**
 
 - ANOVA sent you to specific pairs
