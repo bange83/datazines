@@ -73,7 +73,11 @@ Same pencils as always. Same “one idea per page.” New family = new folder at
 - [[01 train test validate]] — leftover on new people; if you tune, hide a third pile
 - [[02 bias variance]] — jumpy knobs vs shy sit; you buy one with the other
 - [[03 metrics]] — accuracy can clap for always-fail; precision / recall pick a wall
+- [[04 curves]] — ROC scans the crowd; PR watches rare prizes
+- [[05 dirty data]] — MCAR / MAR / MNAR; imputation traps; pipeline kills leakage
 - [[04 SVM]] — fattest street; fence in the middle; only the curb holds it
+- [[05 knn]] — no formula; count the nearest votes; high D void
+- [[06 AB testing]] — two doors; coin breaks the passenger; power and the peeking trap
 - [[01 prior]] — a starting bump; data slides it; posterior is the bump after
 - [[02 MCMC]] — cannot add? walk the height; the pile is the bump
 - [[01 the loop]] — state, action, reward, next; leftover is a score you chose

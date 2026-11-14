@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" role="img" aria-label="Dirty data: handling holes, strings, and leakage">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="420" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="420" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380" y="38" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">raw data arrives broken: holes, words, and traps. clean inside the pipeline.</text>
+
+<!-- Left: Raw dirty table -->
+<g transform="translate(60, 70)">
+  <rect width="250" height="280" fill="#f4efe4" stroke="#b44a28" stroke-width="2" rx="8" ry="8"/>
+  <text x="125" y="30" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="middle">Raw Table (broken)</text>
+  
+  <!-- Table header -->
+  <line x1="10" y1="50" x2="240" y2="50" stroke="#241c14" stroke-width="1.5"/>
+  <text x="30" y="45" font-family="Georgia" font-size="13" fill="#241c14">hours</text>
+  <text x="110" y="45" font-family="Georgia" font-size="13" fill="#241c14">sleep</text>
+  <text x="190" y="45" font-family="Georgia" font-size="13" fill="#241c14">dorm</text>
+
+  <!-- Row 1 -->
+  <text x="35" y="80" font-family="Georgia" font-size="13" fill="#241c14">3.5</text>
+  <text x="110" y="80" font-family="Georgia" font-size="13" fill="#241c14">7.2</text>
+  <text x="180" y="80" font-family="Georgia" font-size="13" fill="#241c14">"North"</text>
+
+  <!-- Row 2 (NaN hole) -->
+  <text x="35" y="120" font-family="Georgia" font-size="13" fill="#241c14">5.1</text>
+  <rect x="95" y="103" width="45" height="22" fill="#b44a28" opacity="0.2" rx="4" ry="4"/>
+  <text x="115" y="120" font-family="Georgia" font-size="13" fill="#b44a28" font-weight="bold">NaN</text>
+  <text x="180" y="120" font-family="Georgia" font-size="13" fill="#241c14">"South"</text>
+
+  <!-- Row 3 -->
+  <text x="35" y="160" font-family="Georgia" font-size="13" fill="#241c14">2.0</text>
+  <text x="110" y="160" font-family="Georgia" font-size="13" fill="#241c14">5.8</text>
+  <text x="180" y="160" font-family="Georgia" font-size="13" fill="#241c14">"East"</text>
+
+  <!-- Row 4 (NaN hole) -->
+  <text x="35" y="200" font-family="Georgia" font-size="13" fill="#241c14">4.2</text>
+  <rect x="95" y="183" width="45" height="22" fill="#b44a28" opacity="0.2" rx="4" ry="4"/>
+  <text x="115" y="200" font-family="Georgia" font-size="13" fill="#b44a28" font-weight="bold">NaN</text>
+  <text x="180" y="200" font-family="Georgia" font-size="13" fill="#241c14">"North"</text>
+  
+  <text x="125" y="250" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="middle">crashes sklearn out of the box!</text>
+</g>
+
+<!-- Arrow in middle -->
+<g transform="translate(330, 190)">
+  <path d="M 0,20 L 70,20" stroke="#241c14" stroke-width="2.5"/>
+  <polygon points="80,20 68,13 68,27" fill="#241c14"/>
+  <text x="40" y="0" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#4f6d55" text-anchor="middle">Pipeline</text>
+  <text x="40" y="45" font-family="Georgia" font-size="12" fill="#7a6e5e" text-anchor="middle">fit on train only</text>
+</g>
+
+<!-- Right: Cleaned numerical matrix -->
+<g transform="translate(440, 70)">
+  <rect width="260" height="280" fill="#f4efe4" stroke="#4f6d55" stroke-width="2" rx="8" ry="8"/>
+  <text x="130" y="30" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#4f6d55" text-anchor="middle">Feature Matrix (clean)</text>
+  
+  <!-- Header -->
+  <line x1="10" y1="50" x2="250" y2="50" stroke="#241c14" stroke-width="1.5"/>
+  <text x="25" y="45" font-family="Georgia" font-size="11" fill="#241c14">hours</text>
+  <text x="75" y="45" font-family="Georgia" font-size="11" fill="#241c14">sleep</text>
+  <text x="125" y="45" font-family="Georgia" font-size="11" fill="#4f6d55">is_miss</text>
+  <text x="180" y="45" font-family="Georgia" font-size="11" fill="#241c14">d_South</text>
+  <text x="225" y="45" font-family="Georgia" font-size="11" fill="#241c14">d_East</text>
+
+  <!-- Row 1 -->
+  <text x="25" y="80" font-family="Georgia" font-size="12" fill="#241c14">+0.2</text>
+  <text x="75" y="80" font-family="Georgia" font-size="12" fill="#241c14">+0.8</text>
+  <text x="140" y="80" font-family="Georgia" font-size="12" fill="#7a6e5e">0</text>
+  <text x="195" y="80" font-family="Georgia" font-size="12" fill="#7a6e5e">0</text>
+  <text x="235" y="80" font-family="Georgia" font-size="12" fill="#7a6e5e">0</text>
+
+  <!-- Row 2 -->
+  <text x="25" y="120" font-family="Georgia" font-size="12" fill="#241c14">+1.3</text>
+  <text x="75" y="120" font-family="Georgia" font-size="12" fill="#4f6d55">0.0 (med)</text>
+  <text x="140" y="120" font-family="Georgia" font-size="12" fill="#b44a28" font-weight="bold">1</text>
+  <text x="195" y="120" font-family="Georgia" font-size="12" fill="#3d5f86" font-weight="bold">1</text>
+  <text x="235" y="120" font-family="Georgia" font-size="12" fill="#7a6e5e">0</text>
+
+  <text x="130" y="250" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#4f6d55" text-anchor="middle">numbers only, zero leakage!</text>
+</g>
+</svg>

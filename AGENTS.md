@@ -54,6 +54,7 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | 02 | [[02 LDA]] | two blobs; shared shape → line; QDA bends |
 | 03 | [[03 softmax]] | many rooms share P=1; LLM last layer |
 | 04 | [[04 SVM]] | fattest street; fence in the middle; only the curb holds it |
+| 05 | [[05 knn]] | no weights; count k closest peers; high-D void |
 
 **Ensembles** (starts with one brick):
 
@@ -76,6 +77,7 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | 03 | [[03 ANOVA]] | between-group wobble vs within-group wobble |
 | 04 | [[04 multiple comparisons]] | many looks; Bonferroni / Tukey guard the family |
 | 05 | [[05 confidence intervals]] | a range, not a trophy; CI ≠ prediction interval ≠ HDI |
+| 06 | [[06 AB testing]] | coin kills confounders; power and peeking trap |
 
 **Time (path page 4, now standing):**
 
@@ -124,6 +126,8 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | 01 | [[01 train test validate]] | leftover on new people; if you tune, hide a third pile |
 | 02 | [[02 bias variance]] | jumpy knobs vs shy sit; you buy one with the other |
 | 03 | [[03 metrics]] | accuracy can clap for always-fail; precision / recall pick a wall |
+| 04 | [[04 curves]] | ROC scans the crowd; PR watches rare prizes |
+| 05 | [[05 dirty data]] | MCAR/MAR/MNAR; imputation traps; pipeline kills leakage |
 
 **Nets (path page 4, now standing):**
 
@@ -161,6 +165,10 @@ Vault root. Notes live under `supervised learning/`, `optimization/`, `probabili
 | `lm-` | LLM / next token |
 | `tt-` | t-test / inference |
 | `bs-` | bootstrap / resample |
+| `ab-` | A/B testing / power / peeking |
+| `cr-` | curves / ROC / PR-AUC |
+| `dd-` | dirty data / imputation / encoding |
+| `kn-` | k-NN / nearest neighbors / curse |
 | `in-` | intro / how to read |
 | `iv-` | inference / ANOVA / intervals |
 | `ca-` | cause / confounding |

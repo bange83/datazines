@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" role="img" aria-label="ROC vs PR Curves: scanning every threshold">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="420" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="420" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380" y="38" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">sweep every cut. ROC ranks the crowd; PR watches rare prizes.</text>
+
+<!-- Left panel: ROC -->
+<g transform="translate(60, 60)">
+  <rect width="280" height="280" fill="#f4efe4" stroke="#241c14" stroke-width="1.5" rx="6" ry="6"/>
+  <path d="M 0,280 L 280,0" stroke="#7a6e5e" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <!-- Shaded AUC -->
+  <path d="M 0,280 Q 20,40 280,0 L 280,280 Z" fill="#3d5f86" opacity="0.15"/>
+  <!-- ROC Curve -->
+  <path d="M 0,280 Q 20,40 280,0" fill="none" stroke="#3d5f86" stroke-width="2.5"/>
+  <text x="140" y="305" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#241c14" text-anchor="middle">False Positive Rate (FPR)</text>
+  <text x="-15" y="140" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#241c14" text-anchor="middle" transform="rotate(-90 -15 140)">True Positive Rate (Recall)</text>
+  <text x="140" y="25" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#3d5f86" text-anchor="middle">ROC Curve (AUC = 0.84)</text>
+  <text x="210" y="190" font-family="Georgia" font-size="13" fill="#7a6e5e">coin toss (0.50)</text>
+</g>
+
+<!-- Right panel: PR -->
+<g transform="translate(420, 60)">
+  <rect width="280" height="280" fill="#f4efe4" stroke="#241c14" stroke-width="1.5" rx="6" ry="6"/>
+  <!-- Baseline PR (horizontal line at base rate 0.08) -->
+  <path d="M 0,257 L 280,257" stroke="#7a6e5e" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="210" y="250" font-family="Georgia" font-size="12" fill="#7a6e5e">base rate (0.08)</text>
+  <!-- Shaded PR-AUC -->
+  <path d="M 0,60 Q 60,60 120,130 T 280,240 L 280,280 L 0,280 Z" fill="#b44a28" opacity="0.15"/>
+  <!-- PR Curve -->
+  <path d="M 0,60 Q 60,60 120,130 T 280,240" fill="none" stroke="#b44a28" stroke-width="2.5"/>
+  <text x="140" y="305" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#241c14" text-anchor="middle">Recall</text>
+  <text x="-15" y="140" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#241c14" text-anchor="middle" transform="rotate(-90 -15 140)">Precision</text>
+  <text x="140" y="25" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#b44a28" text-anchor="middle">PR Curve (AUC = 0.40)</text>
+  <text x="150" y="90" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="13" fill="#b44a28">honest when yes is rare!</text>
+</g>
+</svg>

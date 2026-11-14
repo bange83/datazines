@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" role="img" aria-label="A/B Testing: Split, treat, and measure without peeking">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="420" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="420" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380" y="38" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">two doors. one lever. decide the sample size before you peek.</text>
+
+<!-- Central split -->
+<ellipse cx="140" cy="210" rx="45" ry="35" fill="#f4efe4" stroke="#241c14" stroke-width="2"/>
+<text x="140" y="205" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="17" fill="#241c14" text-anchor="middle">incoming</text>
+<text x="140" y="225" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="15" fill="#7a6e5e" text-anchor="middle">students</text>
+
+<!-- Split arrows -->
+<path d="M 185,195 Q 260,140 330,130" fill="none" stroke="#241c14" stroke-width="2" stroke-dasharray="4,4"/>
+<polygon points="330,130 318,124 322,135" fill="#241c14"/>
+<text x="245" y="145" font-family="Georgia" font-size="13" fill="#7a6e5e">50% coin</text>
+
+<path d="M 185,225 Q 260,280 330,290" fill="none" stroke="#241c14" stroke-width="2" stroke-dasharray="4,4"/>
+<polygon points="330,290 322,285 318,296" fill="#241c14"/>
+<text x="245" y="285" font-family="Georgia" font-size="13" fill="#7a6e5e">50% coin</text>
+
+<!-- Group A -->
+<rect x="340" y="90" width="180" height="80" rx="10" ry="10" fill="#f4efe4" stroke="#3d5f86" stroke-width="2"/>
+<text x="430" y="118" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#3d5f86" text-anchor="middle">Control A (standard)</text>
+<text x="430" y="145" font-family="Georgia" font-size="16" fill="#241c14" text-anchor="middle">pA = 20.8%  (N=500)</text>
+
+<!-- Group B -->
+<rect x="340" y="250" width="180" height="80" rx="10" ry="10" fill="#f4efe4" stroke="#b44a28" stroke-width="2"/>
+<text x="430" y="278" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="middle">Treatment B (reminder)</text>
+<text x="430" y="305" font-family="Georgia" font-size="16" fill="#241c14" text-anchor="middle">pB = 24.2%  (N=500)</text>
+
+<!-- Compare bracket -->
+<path d="M 530,130 L 570,130 L 570,210 L 600,210" fill="none" stroke="#241c14" stroke-width="1.8"/>
+<path d="M 530,290 L 570,290 L 570,210" fill="none" stroke="#241c14" stroke-width="1.8"/>
+
+<!-- Result box -->
+<rect x="610" y="150" width="130" height="120" rx="8" ry="8" fill="#f4efe4" stroke="#4f6d55" stroke-width="2"/>
+<text x="675" y="180" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#4f6d55" text-anchor="middle">Verdict</text>
+<text x="675" y="208" font-family="Georgia" font-size="14" fill="#241c14" text-anchor="middle">diff: +3.4%</text>
+<text x="675" y="232" font-family="Georgia" font-size="14" fill="#b44a28" text-anchor="middle">p = 0.198</text>
+<text x="675" y="255" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="13" fill="#7a6e5e" text-anchor="middle">not enough power!</text>
+</svg>
