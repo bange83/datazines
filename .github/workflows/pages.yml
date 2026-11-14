@@ -60,6 +60,7 @@ jobs:
           mkdir -p public/static
           cp -r ../vault/press/static/* public/static/ 2>/dev/null || true
           cp -f ../vault/press/robots.txt public/robots.txt 2>/dev/null || true
+          cp -f ../vault/press/googlec0465cc007c1bd70.html public/googlec0465cc007c1bd70.html 2>/dev/null || true
           echo "datazines.com" > public/CNAME
           touch public/.nojekyll
 
