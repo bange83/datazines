@@ -10,32 +10,54 @@ export default (() => {
     cfg,
     fileData,
     externalResources,
-    ctx,
   }: QuartzComponentProps) => {
-    const titleSuffix = cfg.pageTitleSuffix ?? ""
+    const isHome = fileData.slug === "index" || fileData.slug === "00-how-to-read-this"
     const fileTitle =
       (typeof fileData.frontmatter?.title === "string" && fileData.frontmatter.title.trim()) ||
       fileData.frontmatter?.title ||
       fileData.slug?.split("/").pop()?.replace(/-/g, " ") ||
       i18n(cfg.locale).propertyDefaults.title
-    const title = String(fileTitle) + titleSuffix
-    const description =
+
+    let title: string
+    if (isHome) {
+      title = "datazines — a sketchbook for data science"
+    } else {
+      const base = String(fileTitle).trim()
+      title = base.toLowerCase().includes("datazines") ? base : `${base} · datazines`
+    }
+
+    let description =
       fileData.frontmatter?.socialDescription ??
       fileData.frontmatter?.description ??
       unescapeHTML(fileData.description?.trim() ?? i18n(cfg.locale).propertyDefaults.description)
 
+    if (description) {
+      description = description
+        .replace(/^>*\s*\[![^\]]+\](?:[^\n]*\n)?/i, "")
+        .replace(/^>+\s*/gm, "")
+        .replace(/\*\*(.*?)\*\*/g, "$1")
+        .replace(/\*(.*?)\*/g, "$1")
+        .replace(/`([^`]+)`/g, "$1")
+        .replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (_m, _p1, p2) => p2 || _p1)
+        .trim()
+    }
+    if (!description || description === i18n(cfg.locale).propertyDefaults.description) {
+      description = "Short, visual guides to data science: one idea, one picture, and one honest example at a time."
+    }
+
     const { css, js, additionalHead } = externalResources
 
-    const url = new URL(`https://${cfg.baseUrl ?? "example.com"}`)
+    const url = new URL(`https://${cfg.baseUrl ?? "datazines.com"}`)
     const path = url.pathname as FullSlug
     const baseDir = fileData.slug === "404" ? path : pathToRoot(fileData.slug!)
     const iconPath = joinSegments(baseDir, "static/icon.png")
 
-    // Url of current page
-    const socialUrl =
-      fileData.slug === "404" ? url.toString() : joinSegments(url.toString(), fileData.slug!)
+    // Canonical & Social URLs
+    const canonicalUrl = isHome
+      ? `https://${cfg.baseUrl}/`
+      : (fileData.slug === "404" ? url.toString() : joinSegments(url.toString(), fileData.slug!))
+    const socialUrl = canonicalUrl
 
-    const usesCustomOgImage = ctx.cfg.plugins.emitters.some((e) => e.name === "CustomOgImages")
     const ogImageDefaultPath = `https://${cfg.baseUrl}/static/og-image.png`
 
     const coreStylesheet = css[0]?.content
@@ -43,13 +65,33 @@ export default (() => {
       (r) => r.loadTime === "beforeDOMReady" && r.contentType === "external",
     )
 
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": isHome ? "WebSite" : "TechArticle",
+      "name": title,
+      "headline": title,
+      "description": description,
+      "url": canonicalUrl,
+      "image": ogImageDefaultPath,
+      "publisher": {
+        "@type": "Organization",
+        "name": "datazines",
+        "url": `https://${cfg.baseUrl}`,
+        "logo": {
+          "@type": "ImageObject",
+          "url": `https://${cfg.baseUrl}/static/icon.png`
+        }
+      },
+      "inLanguage": "en-US"
+    }
+
     return (
       <head>
         <title>{title}</title>
         <meta charSet="utf-8" />
-        <meta httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-        <meta httpEquiv="Pragma" content="no-cache" />
-        <meta httpEquiv="Expires" content="0" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <link rel="canonical" href={canonicalUrl} />
+
         {coreStylesheet && <link rel="preload" href={coreStylesheet} as="style" />}
         {coreScript && coreScript.contentType === "external" && (
           <link rel="preload" href={coreScript.src} as="script" />
@@ -76,17 +118,13 @@ export default (() => {
         <meta property="og:description" content={description} />
         <meta property="og:image:alt" content={description} />
 
-        {!usesCustomOgImage && (
-          <>
-            <meta property="og:image" content={ogImageDefaultPath} />
-            <meta property="og:image:url" content={ogImageDefaultPath} />
-            <meta name="twitter:image" content={ogImageDefaultPath} />
-            <meta
-              property="og:image:type"
-              content={`image/${getFileExtension(ogImageDefaultPath) ?? "png"}`}
-            />
-          </>
-        )}
+        <meta property="og:image" content={ogImageDefaultPath} />
+        <meta property="og:image:url" content={ogImageDefaultPath} />
+        <meta name="twitter:image" content={ogImageDefaultPath} />
+        <meta
+          property="og:image:type"
+          content={`image/${getFileExtension(ogImageDefaultPath) ?? "png"}`}
+        />
 
         {cfg.baseUrl && (
           <>
@@ -99,6 +137,11 @@ export default (() => {
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         {js
