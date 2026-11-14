@@ -44,6 +44,8 @@ jobs:
           cp vault/press/quartz/components/Head.tsx quartz/quartz/components/Head.tsx
           cp vault/press/quartz/plugins/emitters/componentResources.ts quartz/quartz/plugins/emitters/componentResources.ts
           cp vault/press/fix-asset-paths.py quartz/fix-asset-paths.py
+          mkdir -p quartz/quartz/static
+          cp -r vault/press/static/* quartz/quartz/static/ 2>/dev/null || true
           rm -rf quartz/content
           ln -s "$GITHUB_WORKSPACE/vault" quartz/content
 
@@ -55,6 +57,10 @@ jobs:
           npx quartz build
           python3 fix-asset-paths.py
           cp -f public/00-how-to-read-this.html public/index.html
+          mkdir -p public/static
+          cp -r ../vault/press/static/* public/static/ 2>/dev/null || true
+          cp -f ../vault/press/robots.txt public/robots.txt 2>/dev/null || true
+          echo "datazines.com" > public/CNAME
           touch public/.nojekyll
 
       - name: Upload Pages artifact
