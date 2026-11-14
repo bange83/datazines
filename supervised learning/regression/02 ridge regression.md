@@ -356,7 +356,7 @@ ridge (scaled, alpha=10)
 R² train 0.907   R² test 0.748
 ```
 
-Same spelling. Ordinary still **fights**: hours +8.35, minutes −6.97. Cancellation, not a story. Train R² **0.955**, test **0.626**. Pride on the old 21, embarrassment on the new 9.
+Same spelling. Ordinary still **fights**: hours +8.35, minutes −6.97. Cancellation, not a story. Train R² **0.955**, test **0.626**. Pride on the old 21, embarrassment on the new 9. (With only 9 test students, test R² wobbles easily on lucky or unlucky draws — real work uses bigger samples or cross-validation, [[01 train test validate]]).
 
 (Unscaled ordinary makes the *same* guesses. R² does not move. The tiny minutes *b* was just the fight written in minutes.)
 

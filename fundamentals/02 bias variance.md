@@ -79,6 +79,11 @@ You are not trying to be unbiased and heroic. You are trying not to flail.
 
 There is no free dart in the bullseye every time. A deep tree hugs (variance). A stump is shy (bias). A forest votes the hug away ([[02 random forest]]). Same dartboard, different machine.
 
+> [!note] The third piece: the noise floor
+> Every error on new people decomposes into three parts:
+> $$\text{Total Error} = \text{Bias}^2 + \text{Variance} + \text{Noise Floor } (\sigma^2)$$
+> Even if bias were zero and variance were zero, you cannot beat the noise floor: students have bad mornings, toothaches, or lucky guesses. That wobble belongs to life, not the model.
+
 [[01 train test validate]] is how you *see* leftover on new people. This notebook is *which leftover you bought*.
 
 ---
@@ -184,6 +189,9 @@ Ordinary hours *b* spans **nine points**. The tax’s scaled hours *b* stays in 
 | jumpy | high variance |
 | shy | high bias |
 | hug the trainers | overfit |
+| too simple | underfit |
+| noise floor | irreducible error ($\sigma^2$) |
+| sweet spot | minimum of the bias-variance curve |
 
 ### Use / skip
 

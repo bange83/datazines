@@ -42,6 +42,10 @@ People call the four-pack a **loop**. The policy is the rule: from this state, w
 
 Cause asked what happens if you *do* the lever ([[01 confounding]]). RL *is* that do(), again and again, and the lever changes the next state.
 
+> [!tip] The Markov promise & delayed rewards
+> - **The Markov property:** The world only cares where you are *now* and what you do *now*. You do not need to carry a diary of your past — the current state holds everything needed to step forward.
+> - **Credit assignment:** You rest on Monday and study on Tuesday, but the exam points arrive on Friday. The discount factor ($\gamma = 0.9$) trickles that future reward back to the quiet choices that made it possible.
+
 ---
 
 ## Page 2 — Two policies, same world
@@ -199,11 +203,12 @@ Coin-flip **30.5**. Sensible **38.3**. Q’s greedy row is rest / study — the 
 
 | here | there |
 |---|---|
-| loop | MDP step |
-| Q | action value |
-| 0.9 | discount |
-| 0.2 try-at-random | ε-greedy |
-
+| loop | Markov Decision Process (MDP) |
+| current state holds all | Markov property |
+| connecting future to past | credit assignment problem |
+| Q | action value ($Q(s, a)$) |
+| later discount 0.9 | discount factor ($\gamma$) |
+| try at random 0.2 | $\epsilon$-greedy exploration |
 
 ### Use / skip
 

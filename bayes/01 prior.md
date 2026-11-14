@@ -76,6 +76,12 @@ Truth was 0.6. A sure-yes start still ends near 0.61. A sure-no start ends at 0.
 
 More tosses, the start matters less. That is the deal, not a scandal.
 
+> [!tip] The prior is a tax: Ridge and Lasso in disguise
+> If the unknown is a regression slope *b*, a prior centered at zero says: *“I expect knobs to stay small unless the evidence screams.”*
+> - A **bell prior** around 0 ($\mathcal{N}(0, \sigma^2)$) pulls big knobs down smoothly — that is mathematically identical to the **Ridge tax ($L_2$)** from [[02 ridge regression]]!
+> - A **sharp tent prior** (Laplace) snaps junk knobs to exact zero — that is **Lasso ($L_1$)** from [[03 lasso]]!
+> A prior is simply a regularization tax given a statistical personality.
+
 ---
 
 ## Page 4 — Not a sampler
@@ -167,7 +173,8 @@ Shrug → 0.40, wide. Sure-yes → 0.61 (truth was 0.6 — luck plus a loud star
 | posterior | updated belief |
 | likelihood | P(data \| P) |
 | MLE | yes/n, no bump |
-
+| prior on regression slopes | regularization tax (Gaussian = Ridge, Laplace = Lasso) |
+| shrug prior | flat / uninformative / diffuse prior |
 
 ### Use / skip
 

@@ -71,6 +71,12 @@ Or multiply each raw *p* by three and compare with 0.05. The three adjusted valu
 
 Bonferroni works for any small list of planned questions. It is easy to explain. It can be conservative: it may miss a real difference when the family gets large.
 
+> [!tip] Testing 100 things at once: FDR
+> If you test 100 genes, features, or A/B variants at once, Bonferroni ($\alpha / 100 = 0.0005$) becomes paralyzing — it kills almost every real finding.
+> In modern data science, people often control the **False Discovery Rate (FDR)** instead:
+> *“Out of all the differences we claim, at most 5% are allowed to be false alarms.”*
+> That is the **Benjamini–Hochberg** (BH) method. It keeps discovery alive at scale.
+
 ![iv-09-bonferroni](../assets/iv-09-bonferroni.svg)
 
 ---
@@ -148,7 +154,8 @@ for i in range(3):
 
 print("pair                         raw p   Bonferroni p")
 for a, b, p in raw:
-    print(f"{a:>5} vs {b:<6}          {p:.6f}       {min(3 * p, 1):.6f}")
+    fmt = "{:.6f}" if p < 0.001 else "{:.4f}"
+    print(f"{a:>5} vs {b:<6}          {fmt.format(p)}       {fmt.format(min(3 * p, 1))}")
 
 tukey = stats.tukey_hsd(*groups)
 print("Tukey p")
@@ -165,7 +172,7 @@ buddy vs tutor           0.0032       0.0096
 Tukey p
 solo vs buddy 0.036372
 solo vs tutor 0.000010
-buddy vs tutor 0.004988
+buddy vs tutor 0.004989
 ```
 
 The raw values look more impressive because they paid no family fee. Bonferroni and Tukey both keep all three pairs below 0.05 here, but the methods answer slightly different questions.
@@ -179,9 +186,19 @@ The raw values look more impressive because they paid no family fee. Bonferroni 
 | family | all tests you are treating as one question set |
 | α | allowed family error budget |
 | FWER | chance of one or more false alarms in the family |
+| FDR | share of false alarms among all declared discoveries |
 | Bonferroni | divide α by the number of tests; general-purpose |
 | Tukey HSD | all-pairs guard after ANOVA |
 | raw p | each test pretending it was alone |
+
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| many looks | multiple hypothesis testing |
+| fishing until one clicks | p-hacking / data dredging |
+| scale guard | Benjamini–Hochberg (FDR control) |
+| all-pairs | studentized range distribution ($q$) |
 
 ### Use / skip
 

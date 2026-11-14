@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" role="img" aria-label="Curse of dimensionality: empty space and distance collapse">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="420" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="420" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380" y="38" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">the curse of dimensionality: as features multiply, space becomes a desolate void.</text>
+
+<!-- 1D Line -->
+<g transform="translate(60, 100)">
+  <rect width="170" height="220" rx="8" ry="8" fill="#f4efe4" stroke="#4f6d55" stroke-width="1.8"/>
+  <text x="85" y="30" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#4f6d55" text-anchor="middle">1 Dimension (10 pts)</text>
+  <line x1="20" y1="110" x2="150" y2="110" stroke="#241c14" stroke-width="2"/>
+  <circle cx="30" cy="110" r="5" fill="#b44a28"/>
+  <circle cx="45" cy="110" r="5" fill="#3d5f86"/>
+  <circle cx="60" cy="110" r="5" fill="#b44a28"/>
+  <circle cx="75" cy="110" r="5" fill="#3d5f86"/>
+  <circle cx="90" cy="110" r="5" fill="#b44a28"/>
+  <circle cx="105" cy="110" r="5" fill="#3d5f86"/>
+  <circle cx="120" cy="110" r="5" fill="#b44a28"/>
+  <circle cx="140" cy="110" r="5" fill="#3d5f86"/>
+  <text x="85" y="160" font-family="Georgia" font-size="13" fill="#241c14" text-anchor="middle">Dense neighbors!</text>
+  <text x="85" y="185" font-family="Georgia" font-size="12" fill="#7a6e5e" text-anchor="middle">avg dist ≈ 0.1</text>
+</g>
+
+<!-- 2D Square -->
+<g transform="translate(290, 100)">
+  <rect width="170" height="220" rx="8" ry="8" fill="#f4efe4" stroke="#3d5f86" stroke-width="1.8"/>
+  <text x="85" y="30" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#3d5f86" text-anchor="middle">2 Dimensions (100 pts)</text>
+  <rect x="30" y="60" width="110" height="100" fill="none" stroke="#241c14" stroke-width="1.5"/>
+  <circle cx="45" cy="80" r="4" fill="#b44a28"/>
+  <circle cx="90" cy="120" r="4" fill="#3d5f86"/>
+  <circle cx="125" cy="75" r="4" fill="#b44a28"/>
+  <circle cx="70" cy="140" r="4" fill="#3d5f86"/>
+  <circle cx="120" cy="135" r="4" fill="#b44a28"/>
+  <text x="85" y="185" font-family="Georgia" font-size="13" fill="#241c14" text-anchor="middle">Need 10² = 100 pts</text>
+</g>
+
+<!-- High D Void -->
+<g transform="translate(520, 100)">
+  <rect width="180" height="220" rx="8" ry="8" fill="#f4efe4" stroke="#b44a28" stroke-width="1.8"/>
+  <text x="90" y="30" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="16" fill="#b44a28" text-anchor="middle">30 Dimensions</text>
+  <text x="90" y="65" font-family="Georgia" font-size="13" fill="#b44a28" text-anchor="middle">Need 10³⁰ points!</text>
+  <text x="90" y="105" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="13" fill="#241c14" text-anchor="middle">Space is empty void.</text>
+  <rect x="15" y="125" width="150" height="75" rx="6" ry="6" fill="#b44a28" opacity="0.15"/>
+  <text x="90" y="145" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="13" fill="#b44a28" text-anchor="middle">Distance Collapse:</text>
+  <text x="90" y="165" font-family="Georgia" font-size="11" fill="#241c14" text-anchor="middle">min_dist / max_dist → 1.0</text>
+  <text x="90" y="185" font-family="Georgia" font-size="11" fill="#241c14" text-anchor="middle">Everyone is equally far!</text>
+</g>
+</svg>

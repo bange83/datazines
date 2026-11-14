@@ -44,6 +44,11 @@ On a 1-D hill: steep → big step. Flat (near the bottom) → tiny step. You do 
 
 With two knobs (a and b) the slope is a pair of numbers: “nudge a this way, b that way.” Same idea. The leftover *y − ŷ* tells you the direction — boosting hunted leftovers by planting a tree; here you hunt them by **moving knobs**.
 
+> [!tip] The ravine trap: why we scale
+> If one lever is in hours ($1 \dots 6$) and another in minutes ($60 \dots 360$), the bowl gets squashed into a steep, narrow canyon.
+> The gradient bounces violently between the steep canyon walls while barely creeping along the floor.
+> **Scaling your levers** turns the canyon back into a round bowl, so steps point directly downhill.
+
 ---
 
 ## Page 3 — Learning rate is the volume
@@ -119,7 +124,7 @@ OLS  a, b, mse 1.75 1.0 0.1875
 step   1  a=0.263  b=1.056  mse=1.8619
 step  10  a=0.436  b=1.310  mse=0.5043
 step  50  a=0.823  b=1.219  mse=0.3451
-step 100  a=1.151  b=1.142  mse=0.2534
+step 100  a=1.151  b=1.141  mse=0.2534
 step 200  a=1.500  b=1.059  mse=0.1990
 step 400  a=1.706  b=1.010  mse=0.1879
 ```
@@ -143,7 +148,7 @@ print(f"SGD 400 one-person steps  a={a:.3f}  b={b:.3f}  mse={((a + b * hours - g
 SGD 400 one-person steps  a=1.625  b=1.122  mse=0.3206
 ```
 
-Nearby, not on the floor. The path wiggled. That is the point, not a bug. Quiet the rate or average a handful (a mini-batch) if the wiggle is too loud.
+Nearby, not on the floor. The path wiggled. That is the point, not a bug. In real projects, people use **mini-batch GD** (averaging 32 or 64 people at a time) to get the best of both worlds: smooth enough to descend fast, noisy enough to escape small dips.
 
 ---
 
@@ -157,15 +162,18 @@ Nearby, not on the floor. The path wiggled. That is the point, not a bug. Quiet 
 | learning rate | stride length |
 | OLS | the exact bottom, when it exists |
 | SGD | walk on a sample, not the whole class |
+| mini-batch | walk on a small handful (e.g. 32 or 64) |
 
 **Also called** (in a room):
 
 | here | there |
 |---|---|
-| bowl | loss surface |
-| knobs | parameters |
-| rate | learning rate |
+| bowl | loss surface (convex vs non-convex) |
+| knobs | parameters / weights |
+| rate | learning rate ($\eta$ / $\alpha$) |
 | leftover | residual / error |
+| narrow canyon | unscaled features / ill-conditioned curvature |
+| ball with momentum | Momentum / Adam optimizer |
 
 ### Use / skip
 

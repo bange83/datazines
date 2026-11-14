@@ -89,6 +89,11 @@ When they disagree, believe the pile if you do not trust the bell. Believe neith
 5. Interval = 2.5% and 97.5% of the pile. se ≈ the pile’s sd.
 6. If a t-interval already fits and the bell is honest, you replayed leftover for sport.
 
+> [!caution] When bootstrap breaks down
+> - **Extremes ($\max$ / $\min$):** A bootstrap sample can never exceed the highest person you actually saw. It cannot estimate extremes.
+> - **Time order:** If the dots are weeks ([[01 lag trend season]]), shuffling them with replacement destroys the time memory. Time series need a *block bootstrap*.
+> - **Tiny samples:** If you only have four people, there are only 35 distinct bootstrap bags. The pile stays jagged.
+
 If you keep only one thing:
 
 > redraw the people. the pile is leftover. percentiles are the interval.
@@ -157,6 +162,14 @@ First bag is a loud class (mean 6.50) — leftover, one replay. Across 2000, slo
 | percentile interval | 2.5% and 97.5% of the pile |
 | with replacement | some people twice, some never |
 
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| bag / redraw | non-parametric bootstrap resampling |
+| the pile is leftover | empirical distribution of the estimator |
+| percentile interval | bootstrap percentile confidence interval |
+| time redraw | block bootstrap |
 
 ### Use / skip
 

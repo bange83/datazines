@@ -66,6 +66,11 @@ Mean gap **+0.67**. Planted was +0.90. Short past, leftover, a sketch — not a 
 
 People call this **causal impact**. Ugly product name. Friendly job: *gap vs a series that never saw the campaign.* Ordinary forecasting is the neighbour; this is a counterfactual forecast.
 
+> [!note] The one-series trap: simultaneous shocks
+> Projecting would-have from weeks 1–16 assumes **no other outside shock hit in week 17**.
+> If a campus-wide exam changed or a flu outbreak hit right when office hours started, would-have will blame the campaign for the flu.
+> To protect against outside shocks, you bring in an untouched twin from another classroom: a **control series** ([[03 control series]]).
+
 ---
 
 ## Page 4 — A fake start dies
@@ -182,6 +187,14 @@ Naive +1.78 steals the year. Gap vs would-have **+0.67** (planted 0.90 — lefto
 | fake start | same method on a quiet date; should shrug |
 | BSTS | would-have as a bump (prior + walk), not one line |
 
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| would-have | counterfactual |
+| fake start | in-time placebo test |
+| gap | treatment effect |
+| untouched twin | control series / synthetic control ([[03 control series]]) |
 
 ### Use / skip
 

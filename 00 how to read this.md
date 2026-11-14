@@ -44,21 +44,29 @@ Take [[01 gradient descent]]. Picture a bowl, take a step downhill, and change t
 
 Follow the short staircase: [[01 neural net]] → [[02 embeddings]] → [[03 attention]] → [[04 LLM]]. The last stop is next-token prediction, not magic.
 
+### “Did our change actually work, or was it luck?”
+
+Check [[06 AB testing]]. Flip a coin so confounders cannot pick who gets the new button, set your power before launching, and do not shout victory early.
+
+### “What if the data arrives full of holes?”
+
+Open [[05 dirty data]]. Real tables arrive with missing values and text words. Impute and encode inside the pipeline so the test set never whispers to your model.
+
 ---
 
 ## What is inside
 
-**Predict** — lines, probabilities, trees, forests, and margins.
-Start with [[01 linear regression]] or [[01 logistic regression]].
+**Predict** — lines, probabilities, trees, forests, margins, and nearest peers.
+Start with [[01 linear regression]], [[01 logistic regression]], or [[05 knn]].
 
 **Learn** — gradient descent, a tiny neural net, embeddings, attention, and LLMs.
 Start with [[01 gradient descent]] or [[01 neural net]].
 
-**Check** — train/test splits, bias and variance, metrics, t-tests, and bootstrap.
-Start with [[01 train test validate]].
+**Check** — train/test splits, bias and variance, metrics, curves, t-tests, bootstrap, and A/B testing.
+Start with [[01 train test validate]] or [[06 AB testing]].
 
-**See the world differently** — distributions, causes, time, PCA, and clusters.
-Start with [[01 distributions]], [[01 confounding]], [[01 lag trend season]], or [[01 PCA]].
+**See the world differently** — distributions, causes, time, PCA, and density clusters.
+Start with [[01 distributions]], [[01 confounding]], [[01 lag trend season]], [[01 PCA]], or [[03 DBSCAN]].
 
 **Choose and act** — priors, MCMC, rewards, bandits, and Q values.
 Start with [[01 prior]] or [[01 the loop]].
@@ -111,6 +119,10 @@ Then go wherever the next question points.
 | predict a number | [[01 linear regression]] |
 | predict a yes / no | [[01 logistic regression]] |
 | test a model on new people | [[01 train test validate]] |
+| clean holes and words without leakage | [[05 dirty data]] |
+| evaluate rare targets honestly | [[04 curves]] |
+| classify by looking at close peers | [[05 knn]] |
+| test an intervention without confounding | [[06 AB testing]] |
 | understand a leftover | [[01 distributions]] |
 | learn how models change | [[01 gradient descent]] |
 | understand an LLM | [[01 neural net]] → [[04 LLM]] |

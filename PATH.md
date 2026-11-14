@@ -73,7 +73,11 @@ Same pencils as always. Same “one idea per page.” New family = new folder at
 - [[01 train test validate]] — leftover on new people; if you tune, hide a third pile
 - [[02 bias variance]] — jumpy knobs vs shy sit; you buy one with the other
 - [[03 metrics]] — accuracy can clap for always-fail; precision / recall pick a wall
+- [[04 curves]] — ROC scans the crowd; PR watches rare prizes
+- [[05 dirty data]] — MCAR / MAR / MNAR; imputation traps; pipeline kills leakage
 - [[04 SVM]] — fattest street; fence in the middle; only the curb holds it
+- [[05 knn]] — no formula; count the nearest votes; high D void
+- [[06 AB testing]] — two doors; coin breaks the passenger; power and the peeking trap
 - [[01 prior]] — a starting bump; data slides it; posterior is the bump after
 - [[02 MCMC]] — cannot add? walk the height; the pile is the bump
 - [[01 the loop]] — state, action, reward, next; leftover is a score you chose
@@ -111,7 +115,7 @@ Rooms on the map get written. Short. In the wing they belong to. **Which remaini
 
 ![pa-03-next](assets/pa-03-next.svg)
 
-**Written:** [[00 how to read this]] · [[01 gradient descent]] · [[01 distributions]] · [[02 beta]] · [[03 softmax]] · [[01 neural net]] · [[02 embeddings]] · [[03 attention]] · [[04 LLM]] · [[01 t-test]] · [[02 bootstrap]] · [[03 ANOVA]] · [[04 multiple comparisons]] · [[05 confidence intervals]] · [[01 confounding]] · [[02 causal impact]] · [[03 control series]] · [[01 lag trend season]] · [[02 forecasting]] · [[03 ARIMA]] · [[04 ARIMAX]] · [[01 PCA]] · [[02 k-means]] · [[01 train test validate]] · [[02 bias variance]] · [[03 metrics]] · [[04 SVM]] · [[01 prior]] · [[02 MCMC]] · [[01 the loop]] · [[02 bandits]] · [[03 Q]]
+**Written:** [[00 how to read this]] · [[01 gradient descent]] · [[01 distributions]] · [[02 beta]] · [[03 softmax]] · [[01 neural net]] · [[02 embeddings]] · [[03 attention]] · [[04 LLM]] · [[01 t-test]] · [[02 bootstrap]] · [[03 ANOVA]] · [[04 multiple comparisons]] · [[05 confidence intervals]] · [[01 confounding]] · [[02 causal impact]] · [[03 control series]] · [[01 lag trend season]] · [[02 forecasting]] · [[03 ARIMA]] · [[04 ARIMAX]] · [[01 PCA]] · [[02 k-means]] · [[03 DBSCAN]] · [[01 train test validate]] · [[02 bias variance]] · [[03 metrics]] · [[04 SVM]] · [[01 prior]] · [[02 MCMC]] · [[01 the loop]] · [[02 bandits]] · [[03 Q]]
 
 No *y*. The sausage is rotated. The rooms are painted. The loop has a table.
 

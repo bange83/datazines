@@ -74,6 +74,10 @@ Picked **10**. Report 0.748. Looks like the tax won.
 
 The 9 already chose the knob. That number is not a test. People call this **leakage**. Same sin as shuffling weeks into a “test” set ([[01 lag trend season]]). The future voted on the knobs.
 
+> [!caution] The silent leak: scaling before the split
+> Peeking is not just picking knobs. If you calculate the average or scale numbers (`StandardScaler`) on **all thirty people** before you split, the test answers have already whispered their mean into the training room!
+> Split first. Fit the scaler on the trainers only. In sklearn, `make_pipeline` does this automatically.
+
 ---
 
 ## Page 4 — Three piles
@@ -263,6 +267,8 @@ Pride 0.921. Train 0.955, test 0.626 — ordinary hugged. Peek picked α = 10 an
 | validate | development set |
 | CV | k-fold |
 | peek | test-set tuning |
+| silent leak | preprocessing leakage (fit scaler before split) |
+| balanced hide | stratified k-fold (keeps class ratios intact) |
 
 ### Use / skip
 

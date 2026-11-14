@@ -71,6 +71,12 @@ Oracle if you knew study was best: 2 × 80 = **160**. Random leaves **69** on th
 
 ε-greedy almost tied (141). Same story: try a little, cash a lot. UCB is the bonus spelled out.
 
+> [!tip] The Bayesian try: Thompson Sampling
+> What if you don’t want to pick an $\epsilon$ knob or compute UCB square roots?
+> Give each arm a Beta bump from [[02 beta]] ($\text{Beta}(\alpha, \beta)$).
+> Before every pull, roll a random number from each arm’s bump. Pull whichever rolled highest!
+> An arm with few pulls has a wide bump that occasionally rolls high; an arm that proved to be junk has a tight low bump. This is **Thompson Sampling** — Bayes handling the try/cash balance for free.
+
 ---
 
 ## Page 4 — Mini recipe

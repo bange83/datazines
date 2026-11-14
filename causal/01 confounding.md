@@ -67,6 +67,13 @@ Coffee’s slope dies. Hours stays near 1 — the number we planted. R² does no
 
 This is not a new line. It is the old line, with the common cause **held still**. Lasso would fire coffee ([[03 lasso]]). Here we care *why* it should be fired.
 
+> [!caution] The control trap: Colliders
+> You might think: *“Then I should control for every variable in my spreadsheet!”*
+> Do **not** do that.
+> If a variable sits behind both ($X \leftarrow Z \to Y$), that is a **fork** (confounder): hold it still.
+> But if two things *cause* the same outcome ($X \to C \leftarrow Y$), that variable is a **collider**.
+> If you hold a collider $C$ still, you **invent** a fake correlation between $X$ and $Y$ out of thin air (collider bias / Berkson's trap). Hold common causes still. Leave common effects alone.
+
 ---
 
 ## Page 4 — See is not do
@@ -158,6 +165,14 @@ Coffee-only: 0.71 and a proud R². Hours-only: *b* ≈ 1, as planted. Both: coff
 | do(x) | set the lever; break the incoming arrows |
 | hold still | put the confounder in the room |
 
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| fork | confounder (common cause) |
+| do(x) | interventional distribution |
+| passenger b | omitted variable bias |
+| common effect | collider (never control for this) |
 
 ### Use / skip
 

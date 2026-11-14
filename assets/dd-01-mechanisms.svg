@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" role="img" aria-label="Three missing data mechanisms: MCAR, MAR, MNAR">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.07"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+</defs>
+<rect width="760" height="420" rx="18" ry="18" fill="#f4efe4"/>
+<rect width="760" height="420" rx="18" ry="18" fill="#f4efe4" filter="url(#grain)" opacity="0.9"/>
+<text x="380" y="38" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#7a6e5e" text-anchor="middle">why is it missing? the reason decides if dropping rows creates a lie.</text>
+
+<!-- Box 1: MCAR -->
+<rect x="50" y="80" width="195" height="280" rx="8" ry="8" fill="#f4efe4" stroke="#4f6d55" stroke-width="2"/>
+<text x="147" y="115" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#4f6d55" text-anchor="middle">MCAR</text>
+<text x="147" y="140" font-family="Georgia" font-size="12" fill="#7a6e5e" text-anchor="middle">(Completely at Random)</text>
+<text x="65" y="180" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#241c14">• Rain drops on page</text>
+<text x="65" y="210" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#241c14">• Pure random glitch</text>
+<text x="65" y="240" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#241c14">• Independent of all</text>
+<rect x="65" y="280" width="165" height="60" rx="6" ry="6" fill="#4f6d55" opacity="0.15"/>
+<text x="147" y="305" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#4f6d55" text-anchor="middle">Safe to drop or impute</text>
+<text x="147" y="325" font-family="Georgia" font-size="12" fill="#4f6d55" text-anchor="middle">(only loses power)</text>
+
+<!-- Box 2: MAR -->
+<rect x="282" y="80" width="195" height="280" rx="8" ry="8" fill="#f4efe4" stroke="#3d5f86" stroke-width="2"/>
+<text x="379" y="115" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#3d5f86" text-anchor="middle">MAR</text>
+<text x="379" y="140" font-family="Georgia" font-size="12" fill="#7a6e5e" text-anchor="middle">(At Random given X)</text>
+<text x="297" y="180" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#241c14">• Tired students forget</text>
+<text x="297" y="205" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#241c14">  to log their sleep</text>
+<text x="297" y="235" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#241c14">• But we KNOW hours!</text>
+<rect x="297" y="280" width="165" height="60" rx="6" ry="6" fill="#3d5f86" opacity="0.15"/>
+<text x="379" y="305" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#3d5f86" text-anchor="middle">Impute using X</text>
+<text x="379" y="325" font-family="Georgia" font-size="12" fill="#3d5f86" text-anchor="middle">(restores honesty)</text>
+
+<!-- Box 3: MNAR -->
+<rect x="515" y="80" width="195" height="280" rx="8" ry="8" fill="#f4efe4" stroke="#b44a28" stroke-width="2"/>
+<text x="612" y="115" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="18" fill="#b44a28" text-anchor="middle">MNAR</text>
+<text x="612" y="140" font-family="Georgia" font-size="12" fill="#7a6e5e" text-anchor="middle">(Not at Random)</text>
+<text x="530" y="180" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#241c14">• Extreme failers hide</text>
+<text x="530" y="205" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#241c14">  their exam scores</text>
+<text x="530" y="235" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#241c14">• Missingness IS y!</text>
+<rect x="530" y="280" width="165" height="60" rx="6" ry="6" fill="#b44a28" opacity="0.15"/>
+<text x="612" y="305" font-family="Bradley Hand, Apple Chancery, Segoe Script, Comic Sans MS, cursive" font-size="14" fill="#b44a28" text-anchor="middle">Dangerous trap!</text>
+<text x="612" y="325" font-family="Georgia" font-size="12" fill="#b44a28" text-anchor="middle">Dropping biases sample</text>
+</svg>

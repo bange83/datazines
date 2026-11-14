@@ -85,6 +85,11 @@ Always-fail: precision 0, recall 0. Accuracy still 0.54.
 
 Which wall matters is **politics**. Missing a passer (exam: they needed the tutor) vs a false alarm (you booked extra hours for someone who was fine). The 0.5 cut does not know your cost. You do.
 
+> [!tip] The balanced compromise: F1
+> If someone demands **one single number** that cannot cheat by shouting always-fail:
+> $$F_1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}$$
+> It is the harmonic mean. If precision or recall crashes to zero, $F_1$ crashes to zero too (unlike a normal average, which would deceptively clap for 50%).
+
 ---
 
 ## Page 5 — The cut is extra
@@ -219,16 +224,20 @@ Logistic 01 used a milder intercept (−3.2). Pass rate there was ~2/3, so accur
 | true yes / miss / false alarm / true no | the four rooms |
 | precision | of shouted yeses, how many were real |
 | recall | of real yeses, how many we found |
+| F1 | harmonic blend of precision and recall |
 | dummy | always the majority (here: always fail) |
 
 **Also called** (in a room):
 
 | here | there |
 |---|---|
-| miss | false negative |
-| false alarm | false positive |
+| miss | false negative (Type II error) |
+| false alarm | false positive (Type I error) |
+| true yes rate | sensitivity / recall / hit rate |
+| true no rate | specificity ($1 - \text{false alarm rate}$) |
 | four rooms | confusion matrix |
-| dummy | baseline |
+| dummy | persistence baseline |
+| all cuts at once | ROC curve / Precision-Recall curve |
 
 ### Use / skip
 

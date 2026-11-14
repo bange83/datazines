@@ -84,6 +84,9 @@ The condition is the important part:
 
 > **not affected by the intervention, but affected by the same outside world.**
 
+**The spillover trap (interference):** What if Class B students hear about Class A's extra office hours and attend them too? Or what if the teacher spends less time on Class B to prepare Class A's sessions?
+If the intervention leaks across the wall, your control is contaminated. If B rises because of A's campaign, the would-have line for A gets dragged upward too — and the campaign's true lift looks artificially small (or disappears completely). In econometrics, people call the promise of clean walls **SUTVA** (no spillover).
+
 ---
 
 ## Page 5 — One small number
@@ -197,6 +200,15 @@ The control makes this toy band **0.23 hours narrower**. That is a prediction im
 | HDI | shortest interval containing the densest posterior mass |
 | BSTS | Bayesian structural time series: controls + trend / season + uncertainty |
 
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| control series | donor series / untreated group |
+| clean walls | SUTVA / no interference / no spillover |
+| blend of multiple controls | synthetic control method (SCM) |
+| two groups, two time periods | difference-in-differences (DiD) |
+
 ### Use / skip
 
 ![zini-right](../assets/zini/zini-decision.png)
@@ -219,4 +231,4 @@ The control makes this toy band **0.23 hours narrower**. That is a prediction im
 
 ---
 
-*A control carries some of the outside world. BSTS turns that clue into a distribution of would-haves. 
+*A control carries some of the outside world. BSTS turns that clue into a distribution of would-haves. Next shelf: [[01 the loop]] or [[01 prior]].*

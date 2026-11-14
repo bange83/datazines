@@ -65,9 +65,21 @@ That is why an AR forecast settles back toward the structural path instead of co
 
 ## Page 4 — MA remembers the mistake
 
-An **MA** term is not a moving average of the raw series. It remembers old **forecast errors**.
+An **MA** term is not a moving average of the raw series. It remembers old **forecast errors** (shocks):
 
-If the model was surprised upward yesterday, today’s forecast can account for part of that surprise. AR remembers the old leftover. MA remembers the old miss made by the model.
+$$e_t = \epsilon_t + \theta \epsilon_{t-1}$$
+
+Here $\epsilon_t$ is the brand-new surprise, and $\theta \epsilon_{t-1}$ is yesterday’s surprise echoing into today.
+
+Notice the difference:
+- **AR ($p$):** yesterday's leftover echoes into today ($e_t = \phi e_{t-1} + \epsilon_t$). The echo fades geometrically forever (**infinite memory**).
+- **MA ($q$):** yesterday's shock echoes for exactly $q$ steps, then drops cleanly to zero (**finite memory**).
+
+> [!tip] How people choose $p, d, q$ (in a room)
+> - **$d$ (differencing):** difference until the series stops drifting (stationary). Test with ADF (Augmented Dickey-Fuller).
+> - **PACF (partial autocorrelation):** cuts off sharply at lag $p$ for pure AR.
+> - **ACF (autocorrelation):** cuts off sharply at lag $q$ for pure MA.
+> - **Information criteria (AIC/BIC):** automated tools like `auto_arima` try small $(p,d,q)$ combinations and penalize complexity.
 
 Real ARIMA models can use both. This sketchbook keeps one AR echo visible so the idea does not disappear inside a parameter list.
 
@@ -132,13 +144,13 @@ print("MAE", round(np.abs(np.array(forecast) - actual).mean(), 2))
 ```
 
 ```
-estimated AR phi 0.42
+estimated AR phi 0.56
 actual [5.08 5.11 4.79 3.72]
-ARIMA-style forecast [5.37 5.06 4.9 3.61]
-MAE 0.15
+ARIMA-style forecast [5.3  5.   4.85 3.57]
+MAE 0.13
 ```
 
-The old leftover echo helps a little here. It fades each step. This is an ARIMA-style teaching loop, not a claim that four points can identify the best order.
+The old leftover echo helps here (reducing MAE from 0.17 to 0.13). It fades each step. This is an ARIMA-style teaching loop, not a claim that four points can identify the best order.
 
 ---
 
@@ -146,12 +158,22 @@ The old leftover echo helps a little here. It fades each step. This is an ARIMA-
 
 | word | meaning |
 |---|---|
-| AR | old leftover values echo forward |
-| I | difference the series to remove wandering level |
-| MA | old forecast errors echo into the fit |
+| AR ($p$) | old leftover values echo forward (geometric fading) |
+| I ($d$) | difference the series to remove wandering level |
+| MA ($q$) | old forecast errors/shocks echo into the fit |
 | ARIMA | AR + I + MA family |
-| stationary | pattern whose basic behaviour does not drift |
-| order | how many lags / differences / errors you keep |
+| stationary | pattern whose mean and variance do not drift over time |
+| order $(p,d,q)$ | how many lags, differences, and shock errors you keep |
+
+**Also called** (in a room):
+
+| here | there |
+|---|---|
+| Box-Jenkins | classic statistical recipe for fitting ARIMA $(p,d,q)$ |
+| wandering level | unit root / non-stationary (addressed by differencing $d$) |
+| echo fingerprint | ACF (identifies MA) and PACF (identifies AR) |
+| shock / surprise | white noise innovation ($\epsilon_t$) |
+| auto-order search | `auto_arima` / AIC minimization |
 
 ### Use / skip
 
