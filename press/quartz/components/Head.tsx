@@ -89,6 +89,7 @@ export default (() => {
       <head>
         <title>{title}</title>
         <meta charSet="utf-8" />
+        <meta name="google-site-verification" content="KDPRBxGIh-Ryna8ZJq-yeh4zgVUe7_4ik2LmE9TlGoM" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href={canonicalUrl} />
 
