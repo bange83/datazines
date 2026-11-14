@@ -1,4 +1,6 @@
 ---
+title: Datazines — a sketchbook for data science
+description: "Short, visual guides to data science: one idea, one picture, and one honest example at a time."
 tags:
   - sketchbook
   - statistics
