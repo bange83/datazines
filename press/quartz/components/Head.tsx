@@ -140,6 +140,12 @@ export default (() => {
         <meta name="generator" content="Quartz" />
 
         <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="919f3a01-afc7-4d83-8903-d86ef8fdc4ce"
+        />
+
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />

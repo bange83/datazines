@@ -29,7 +29,6 @@ Auf dieser Website gibt es:
 - kein Kontaktformular,
 - keine Kommentarfunktion,
 - keine personalisierte Werbung,
-- keine Analyse- oder Marketingdienste,
 - kein Google Analytics,
 - keine Tracking-Pixel,
 - keine Social-Media-Plugins.
@@ -165,7 +164,25 @@ Gesetzliche Aufbewahrungspflichten können insbesondere für geschäfts- oder st
 
 ---
 
-## 9. Cookies und vergleichbare Technologien
+## 9. Webanalyse mit Umami (cookiefrei & datensparsam)
+
+Wir nutzen zur statistischen Auswertung der Nutzung dieser Website den datenschutzfreundlichen Analysedienst **Umami** (Umami Software, Inc., betrieben über die europäische Cloud-Infrastruktur von Umami unter `cloud.umami.is`).
+
+Umami dient der anonymen Reichweitenmessung, um zu verstehen, welche Zines gelesen werden und wie Besucher auf die Website gelangen.
+
+**Besonderheiten und Datenschutzgarantien:**
+- **Keine Cookies:** Umami speichert keine Cookies, Flash-Cookies oder sonstige Informationen auf Ihrem Endgerät (§ 25 Abs. 1 TDDDG findet keine Anwendung; eine Einwilligung über einen Cookie-Banner ist nicht erforderlich).
+- **Keine Wiedererkennung / Profilbildung:** Umami speichert keine vollständigen IP-Adressen dauerhaft und verwendet keine Browser-Fingerprints zur Wiedererkennung von Nutzern über verschiedene Websites hinweg.
+- **Aggregierte Daten:** Es werden ausschließlich anonyme Kennzahlen erfasst (z. B. aufgerufene Seiten, Referrer-Domain, grobe Herkunftsregion/Land, Gerätetyp und Browserversion).
+
+**Rechtsgrundlage:**  
+Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse besteht in der anonymen statistischen Analyse und Optimierung unseres Wissensangebots, ohne dabei in die Privatsphäre der Nutzer einzugreifen.
+
+Weitere Informationen finden Sie in der [Datenschutzerklärung von Umami](https://umami.is/privacy).
+
+---
+
+## 10. Cookies und vergleichbare Technologien
 
 Diese Website setzt keine Cookies zu Analyse-, Marketing- oder Trackingzwecken ein.
 
@@ -175,7 +192,7 @@ Soweit technisch erforderliche Informationen für die Übertragung der Website o
 
 ---
 
-## 10. Ihre Rechte
+## 11. Ihre Rechte
 
 Betroffene Personen haben nach Maßgabe der gesetzlichen Voraussetzungen insbesondere folgende Rechte:
 
@@ -192,7 +209,7 @@ Zur Ausübung Ihrer Rechte können Sie sich jederzeit an die oben genannte veran
 
 ---
 
-## 11. Beschwerderecht bei einer Aufsichtsbehörde
+## 12. Beschwerderecht bei einer Aufsichtsbehörde
 
 Sie haben gemäß Art. 77 DSGVO das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren, wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen datenschutzrechtliche Vorschriften verstößt.
 
@@ -209,7 +226,7 @@ Das Beschwerderecht kann auch bei einer anderen zuständigen Datenschutzaufsicht
 
 ---
 
-## 12. Datensicherheit
+## 13. Datensicherheit
 
 Wir treffen angemessene technische und organisatorische Maßnahmen, um personenbezogene Daten vor Verlust, Zerstörung, Manipulation sowie vor unbefugtem Zugriff zu schützen.
 
@@ -217,10 +234,10 @@ Die Übertragung der Website erfolgt grundsätzlich über eine verschlüsselte H
 
 ---
 
-## 13. Aktualisierung dieser Datenschutzerklärung
+## 14. Aktualisierung dieser Datenschutzerklärung
 
 Wir behalten uns vor, diese Datenschutzerklärung anzupassen, wenn sich die technischen Gegebenheiten, die eingesetzten Dienste oder die gesetzlichen Anforderungen ändern.
 
 Es gilt jeweils die auf dieser Website veröffentlichte aktuelle Fassung.
 
-**Stand: September 2026**
+**Stand: November 2026**

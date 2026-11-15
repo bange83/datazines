@@ -6,7 +6,9 @@ configuration:
   enablePopovers: false
   prefetch: "off"
   analytics:
-    provider: null
+    provider: umami
+    host: https://cloud.umami.is
+    websiteId: 919f3a01-afc7-4d83-8903-d86ef8fdc4ce
   locale: en-US
   baseUrl: datazines.com
   ignorePatterns:
